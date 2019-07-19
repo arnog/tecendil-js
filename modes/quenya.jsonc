@@ -81,6 +81,7 @@ accent - lambe - malta + right curl.
 		
 		"ae":		"[a]{yanta}",							// ??
 		"ai":		"{yanta}[a]",
+		"aia":		"{yanta}[a]{short-carrier}[a]",
 		"au":		"{uure}[a]",
 		"auy":		"{uure}[a]{anna}[double-dot-below]",
 		"aw$":		"[a]{vala}",
@@ -91,6 +92,7 @@ accent - lambe - malta + right curl.
 		"eu":		"{uure}[e]",								
 
 		"ia":   	"[i]{short-carrier}[a]",					// ??
+		"iau":   	"[i]{short-carrier}[a]{short-carrier}[u]",					// "iaun"
 		"ie":   	"[i]{short-carrier}[e]",
 		"iê":   	"[i]{long-carrier}[e]",
 		"îe":		"{long-carrier}[i]{short-carrier}[e]",
@@ -103,6 +105,7 @@ accent - lambe - malta + right curl.
 		"oio":		"{yanta}[o]{short-carrier}[o]",
 
 		"ui":		"{yanta}[u]",
+		"uia":		"{yanta}[u]{short-carrier}[a]",		// "uial"
 		"uiu":		"{yanta}[u]{short-carrier}[u]",
 		"ua":		"[u]{short-carrier}[a]",
 		"uo":		"[u]{short-carrier}[o]",			// Genitive of "loa" is "luo"
