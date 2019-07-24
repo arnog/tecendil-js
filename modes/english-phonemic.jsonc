@@ -233,7 +233,7 @@ fire sour door
 	"p'w":	"[over-twist]{parma}",
 	"p'y":	"[double-dot-below]{parma}",
 	"r":	"{roomen}",				// {oore}
-	"s":	"{silme}",
+	"s":	"{alt-silme}",
 // 	"ah0"s":	"{silme}",
 	"sh":	"{aha}",
 // 	"ah0"t": "{tinco}",				// Schwa (could it be triple-dot below?)
