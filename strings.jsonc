@@ -337,5 +337,75 @@
         "footer.support-intro": "你喜欢Tecendil吗？",
         "footer.patreon": "在Patreon上支持我",
         "footer.paypal": "捐赠PayPal",
+
+    },
+    "it": {
+        "the-tengwar-transcriber": "Il Trascrittore Tengwar",
+        "font-name.annatar-italic": "Annatar Corsivo",
+        
+        "menu.mode.english": "Inglese",
+        "menu.mode.english-classical": "Inglese Tradizionale",
+        "menu.mode.english-phonemic": "Inglese Fonetico",
+        "menu.mode.spanish": "Spagnolo",
+
+        "label.mode.english": "Inglese",
+        "label.mode.english-classical": "Inglese Tradizionale",
+        "label.mode.english-phonemic": "Inglese Fonetico",
+        "label.mode.spanish": "Spagnolo",
+        "label.mode.sindarin": "Sindarin",
+        "label.mode.quenya": "Quenya",
+        "label.mode.beleriand": "Beleriand",
+        "label.mode.erebor": "Cirth",
+
+        "label.placeholder.try": "Prova: „${placeholder}“",
+        "label.font": "Font: ",
+        "label.mode": "Modalità: ",
+
+        "prompt.install": "Per l'accesso offline, Tecendil può essere installato sul tuo dispositivo.",
+        "button.not-now": "Non ora",
+        "button.install": "Installa",
+
+        "button.open-menu": "Apri menù",
+        "button.close-menu": "Chiudi menù",
+        "button.close": "Chiudi",
+        "button.back": "Indietro",
+        "button.patron": "Diventa un Patreon!",
+
+
+        "welcome": "Benvenuto su Tecendil",
+        "welcome.1": "Ciao! Mi chiamo Arno.",
+        "welcome.2": "Amo la meravigliosa scrittura Tengwar creata da Tolkien per l'universo de <i>Il Signore degli Anelli</i>.",
+        "welcome.3": "Forse anche tu, o forse stai cercando ispirazione per il tuo prossimo tatuaggio?",
+        "welcome.4": "Scrivi una frase o un nome e guardalo trascritto in Tengwar",
+        "welcome.5": "Tieni presente che il testo non è <i>tradotto</i>, ma è semplicemente scritto usando i caratteri Tengwar.",
+        "welcome.6": "Affinché la trascrizione sia corretta, è necessario selezionare la lingua appropriata nel menù <i>Modalità</i>: inglese, spagnolo, Quenya o Sindarin. Sfortunatamente, l'italiano non è attualmente supportato. Se sei interessato a supportare altre lingue, contattami.",
+
+        "tooltip.download": "Scarica",
+
+		"filename.screenshot": "Screenshot di Tecendil",
+
+        "warning.general": "<p><b>ATTENZIONE</b> Questo trascrittore funziona bene solo per l'inglese, spagnolo, Sindarin o Quenya. Il risultato potrebbe non essere accurato altrimenti.</p>",
+        "warning.elvish": "<p><b>ATTENZIONE</b>Questo non sembra inglese. È Sindarin o Quenya? Per una trascrizione precisa, seleziona la modalità Sindarin, Quenya o Beleriand.</p>",
+
+        "dialog-title.settings": "Impostazioni",
+        "settings.dictionaries": "Dizionari",
+        "settings.dictionaries.proto-elvish": "Elfico Primitivo",
+        "settings.dictionaries.other": "Altri",
+        "settings.language": "Lingua",
+        "settings.language.default": "Lingua di default",
+        "settings.dark-mode": "Modalità Scura",
+        "settings.wikipedia": "Wikipedia",
+        "description.settings.wikipedia": "Mostra un articolo di Wikipedia",
+
+        "menu.home": "Benvenuto",
+        "menu.whats-new": "Cosa c'è di nuovo?",
+        "menu.handbook": "Manuale Tengwar",
+        "menu.settings": "Impostazioni",
+
+        "footer.font-credits": "<b>Font</b> Tengwar Annatar di Johan Winge, Parmaite Tengwar e Tengwar Eldamar di Måns Björkman, Tengwar Formal e Free Mono Tengwar da <a href=\"http://freetengwar.sourceforge.net/\">Free Tengwar Font Project</a>, <a href=\"http://www.kreativekorp.com/software/fonts/constructium.shtml\">Constructium</a>, di Rebecca Bettencourt (KreativeKorp), Elfic Caslon di Peter Wiegel.",
+        "footer.contact": "Hai una domanda? Hai qualche commento? Vuoi controllare una trascrizione? Basta chiedere ",
+        "footer.support-intro": "Ti piace Tecendil?",
+        "footer.patreon": "Supportami su Patreon",
+        "footer.paypal": "Dona con PayPal",
     }
 }
