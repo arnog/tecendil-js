@@ -1,8 +1,8 @@
-{
     "en": {
         "warning.spanish": "<p><b>PRECAUCIÓN</b> Para transcribir una oración o nombre en español, use el modo <kbd>español</kbd>.</p>",
         "warning.elvish": "<p><b>CAUTION</b> This doesn't look like English. Is this Sindarin or Quenya? For an accurate transcription, select the Sindarin, Quenya or Beleriand mode.</p>",
         "warning.general": "<p><b>CAUTION</b> This transcriber only works well for English, Spanish, Sindarin or Quenya. The result may be inaccurate otherwise.</p>",
+        "warning.english": "<p><b>CAUTION</b> Tecendil does not translate. What you typed looks like English. For an accurate transcription, select an English mode.</p>",
 
         "font-name.annatar-italic": "Annatar Italic",
         "label.font": "Font:",
@@ -108,7 +108,7 @@
         "tooltip.download": "Herunterladen",
         "tooltip.share": "Tielen",
 
-		"filename.screenshot": "Tecendil Bildschirmfoto",
+        "filename.screenshot": "Tecendil Bildschirmfoto",
 
         "warning.general": "<p><b>VORSICHT</b> Dieser Transkriptor funktioniert nur gut für Englisch, Spanisch, Sindarin oder Quenya. Das Ergebnis kann sonst ungenau sein.</p>",
         "warning.elvish": "p><b>VORSICHT</b>Das sieht nicht nach Englisch aus. Ist das Sindarin oder Quenya? Für eine genaue Transkription wählen Sie den Sindarin-, Quenya- oder Beleriand-Modus</p>",
@@ -183,7 +183,7 @@
         "tooltip.download": "Télécharger",
         "tooltip.share": "Partager",
 
-		"filename.screenshot": "Tecendil capture d'écran",
+        "filename.screenshot": "Tecendil capture d'écran",
 
         "warning.general": "<p><b>ATTENTION</b> Ce transcripteur ne fonctionne que pour l'anglais, l'espagnol, le sindarin ou le quenya. Le résultat peut être inexact autrement.</p>",
         "warning.elvish": "<p><b>ATTENTION</b> Cela ne ressemble pas à l'anglais. Est-ce Sindarin ou Quenya? Pour une transcription précise, sélectionnez le mode Sindarin, Quenya ou Beleriand.</p>",
@@ -210,7 +210,7 @@
         "footer.paypal": "Faites une donation avec PayPal",
         
     },
-   "es": {
+    "es": {
         "the-tengwar-transcriber": "El transcriptor de Tengwar",
         "font-name.annatar-italic": "Annatar Itálico",
         
@@ -253,7 +253,7 @@
 
         "tooltip.download": "Descargar",
 
-		"filename.screenshot": "Captura de pantalla de Tecendil",
+        "filename.screenshot": "Captura de pantalla de Tecendil",
 
         "warning.general": "<p><b>ATENCIÓN</b> Este transcriptor solo trabaja para inglés, español, sindarin o quenya. El resultado puede ser inexacto de lo contrario.</p>",
         "warning.elvish": "<p><b>ATENCIÓN</b>Esto no se parece al inglés. ¿Es esto sindarin o quenya? Para una transcripción precisa, seleccione el modo Sindarin, Quenya o Beleriand</p>",
@@ -322,7 +322,7 @@
 
         "tooltip.download": "下載",
 
-		"filename.screenshot": "Tecendil 截圖",
+        "filename.screenshot": "Tecendil 截圖",
 
         "warning.general": "<p><b>警告</b> 這個抄寫員只適用於英語，西班牙語，辛達林語或昆雅語。 否則結果可能不准確。</p>",
         "warning.elvish": "<p><b>警告</b> 这看起来不像英语。 这是辛达林还是昆雅？ 要获得准确的转录，请选择Sindarin，Quenya或Beleriand模式。</p>",
@@ -382,7 +382,7 @@
 
         "tooltip.download": "Scarica",
 
-		"filename.screenshot": "Screenshot di Tecendil",
+        "filename.screenshot": "Screenshot di Tecendil",
 
         "warning.general": "<p><b>ATTENZIONE</b> Questo trascrittore funziona bene solo per l'inglese, spagnolo, Sindarin o Quenya. Il risultato potrebbe non essere accurato altrimenti.</p>",
         "warning.elvish": "<p><b>ATTENZIONE</b>Questo non sembra inglese. È Sindarin o Quenya? Per una trascrizione precisa, seleziona la modalità Sindarin, Quenya o Beleriand.</p>",
