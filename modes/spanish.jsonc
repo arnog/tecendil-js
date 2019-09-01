@@ -266,7 +266,7 @@ accent - lambe - malta + right curl.
 		"v":			"{ampa}",
 		"w":			"{vala}",
 		"x":			"{calma}[x-curl]",
-		"y":			"{anca]",
+		"y":			"{anca}",
 		"z":			"{suule}",
 
 		// Combinations with "m/n" -- nasalized consonants
