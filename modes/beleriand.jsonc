@@ -30,7 +30,7 @@
 		"ei":	"{yanta}[double-dot]",
 		"ui":	"{uure}[double-dot]",
 		"au":	"{a-tengwa}[over-twist]",
-		"aw$":	"{anna}[a]",
+		"aw":	"{a-tengwa}[over-twist]",
 
 		//
 		// CONSONANTS
