@@ -25,7 +25,6 @@
 
 // father mother wrecked vision interesting own hay try where gooey boyish
 
-
 /*
 Limitations:
 	No s-hook
@@ -55,7 +54,6 @@ Differences:
 	house trouser must bring finger very war star law father far rat
 
 */
-
 
 /*
 toss pool chase coat
@@ -105,175 +103,173 @@ fire sour door
 		"d"ao1"r"
 */
 
-
 {
-	// Short-name
-	"name" : "phonemic",
-	"languageCode": "en",
-	"normalizeVowels": false,
+  // Short-name
+  "name": "phonemic",
+  "languageCode": "en",
+  "normalizeVowels": false,
 
-	// If true, the vowels are represented by diacritics
-	"tehtarFollow": true,
-	
-	// Implement the R-rule
-	"rrule": false,
+  // If true, the vowels are represented by diacritics
+  "tehtarFollow": true,
 
-"map" : {
-	// tenwar (glyphs that can be modified by a diacritic) are in {}
-	// tehtar (diacritics) are in []
-	"aa0":	"[a]",
-	"aa1":	"[a]",
-	"aa1'r": "[a]{roomen}",
-	"aa2":	"[a]",
-	// 
-/*  According to http://at.mansbjorkman.net/teng_general_english.htm, the signs for AE are ommited
+  // Implement the R-rule
+  "rrule": false,
+
+  "map": {
+    // tenwar (glyphs that can be modified by a diacritic) are in {}
+    // tehtar (diacritics) are in []
+    "aa0": "[a]",
+    "aa1": "[a]",
+    "aa1'r": "[a]{roomen}",
+    "aa2": "[a]",
+    //
+    /*  According to http://at.mansbjorkman.net/teng_general_english.htm, the signs for AE are ommited
 	"The samples indicate that short, unstressed vowels may sometimes be disregarded."
 	"ae0":	"[reverse-triple-dot]",
 
 	"ae1":	"[reverse-triple-dot]",
 	"ae2":	"[reverse-triple-dot]",				// Long-a
 */
-	"ae0": "[reverse-triple-dot]",
-	"ae1": "[reverse-triple-dot]",
-	"ae2": "[reverse-triple-dot]",			// The reversed a-tehta is attested for the English /æ/ in both attested phonemic English tehtar “texts” (DTS 39 and DTS 41, both consisting rather of a few doodles than any real text)
+    "ae0": "[reverse-triple-dot]",
+    "ae1": "[reverse-triple-dot]",
+    "ae2": "[reverse-triple-dot]", // The reversed a-tehta is attested for the English /æ/ in both attested phonemic English tehtar “texts” (DTS 39 and DTS 41, both consisting rather of a few doodles than any real text)
 
+    "ah0$": "[dot-below]{short-carrier}", // Schwa
+    "ah0": "[dot-below-after]", // Schwa (could it be triple-dot below?)
+    "ah1$": "[dot-below]{short-carrier}",
+    "ah1": "[dot-below-after]",
+    // 	"ah1"n":	"[dot-below]{nuumen}",
+    "ah2": "[dot-below-after]",
+    "ah2$": "[dot-below]{short-carrier}",
+    "ao0": "[o]{long-carrier}",
+    "ao1": "[o]{long-carrier}",
+    "ao2": "[o]{long-carrier}",
 
-	"ah0$":	"[dot-below]{short-carrier}",	// Schwa
-	"ah0":	"[dot-below-after]",				// Schwa (could it be triple-dot below?)
-	"ah1$":	"[dot-below]{short-carrier}",
-	"ah1":	"[dot-below-after]",
-// 	"ah1"n":	"[dot-below]{nuumen}",
-	"ah2":	"[dot-below-after]",
-	"ah2$":	"[dot-below]{short-carrier}",
-	"ao0":	"[o]{long-carrier}",
-	"ao1":	"[o]{long-carrier}",
-	"ao2":	"[o]{long-carrier}",
+    "uw0'iy0": "[u]{long-carrier}[i]{long-carrier}", // Sinewy
+    "uw0'iy1": "[u]{long-carrier}[i]{long-carrier}", // Louis
+    "uw0'iy2": "[u]{long-carrier}[i]{long-carrier}", // Louisiana
+    "uw1'iy0": "[u]{long-carrier}[i]{long-carrier}", // Gooey
+    "uw2'iy0": "[u]{long-carrier}[i]{long-carrier}", // Vanderkooi
+    "uw2'iy1": "[u]{long-carrier}[i]{long-carrier}", // Yuichi
 
-	"uw0'iy0":	"[u]{long-carrier}[i]{long-carrier}",			// Sinewy
-	"uw0'iy1":	"[u]{long-carrier}[i]{long-carrier}",			// Louis
-	"uw0'iy2":	"[u]{long-carrier}[i]{long-carrier}",			// Louisiana
-	"uw1'iy0":	"[u]{long-carrier}[i]{long-carrier}",			// Gooey
-	"uw2'iy0":	"[u]{long-carrier}[i]{long-carrier}",			// Vanderkooi
-	"uw2'iy1":	"[u]{long-carrier}[i]{long-carrier}",			// Yuichi
+    "aw0": "[a]{vala}",
+    "aw1": "[a]{vala}",
+    "aw2": "[a]{vala}",
+    "ay0": "[a]{anna}",
+    "ay1": "[a]{anna}",
+    "ay2": "[a]{anna}",
+    "b": "{umbar}",
+    "b'y": "{umbar}{anna}",
+    "ch": "{calma}",
+    "d": "{ando}",
+    "d'y": "{ando}{anna}",
+    "d'w": "[over-twist]{ando}",
+    "dh": "{anto}",
+    "eh0": "[e]",
+    "eh1": "[e]",
+    "eh2": "[e]",
+    "er0": "[grave]{roomen}", //
+    "er0$": "[dot-below]{oore}", //	oore as per VT#23 p16
+    "er1$": "[dot-below]{oore}", //
+    "er2$": "[dot-below]{oore}", //
+    "er1": "[dot-below]{oore}",
+    "er2": "[dot-below]{oore}",
+    "ey0": "[andaith]{anna}", // [a]
+    "ey1": "[andaith]{anna}", // [a]
+    "ey2": "[andaith]{anna}", // [a]
+    "ey2$": "[a]{long-carrier}", // [a]
+    "f": "{formen}",
+    "f'y": "{formen}{anna}",
+    "f'w": "[over-twist]{formen}",
+    "g": "{ungwe}",
+    "g'w": "[over-twist]{ungwe}",
+    "g'y": "{ungwe}{anna}",
+    "g'z": "[x-curl]{ungwe}",
+    "hh": "{hyarmen}",
+    "ih0": "[i]",
+    "ih1": "[i]",
+    "ih2": "[i]",
+    "iy0": "[i]{long-carrier}", //	long-i
+    "iy1": "[i]{long-carrier}",
+    "iy2": "[i]{long-carrier}",
+    "jh": "{anga}",
+    "k": "{quesse}",
+    "k'sh": "{quesse}{aha}",
+    "k's": "[x-curl]{quesse}",
+    "k'w": "[over-twist]{quesse}",
+    "k'y": "{quesse}{anna}",
+    "l": "{lambe}",
+    "ah0'l": "[dot-inside]{lambe}",
+    "l'y": "{lambe}{anna}",
+    "m": "{malta}",
+    // 	"ah0'm":	"{malta}",
+    "m'b": "[bar-above]{umbar}",
+    "m'p": "[bar-above]{parma}",
+    "m'w": "[over-twist]{malta}",
+    "m'y": "{malta}{anna}",
+    "n": "{nuumen}",
+    // 	"ah0'n":	"{nuumen}",
+    "n'w": "[over-twist]{nuumen}",
+    "n'y": "{noldo}",
+    "n'd": "[tilde-above]{ando}",
+    "n't": "[tilde-above]{tinco}",
+    "n's$": "[left-following-silme]{nuumen}",
+    "n'sh": "[bar-above]{aha}",
+    "n'zh": "[bar-above]{anca}",
+    "ng": "{nwalme}",
+    "ng'g": "[tilde-above]{ungwe}",
+    "ng'k": "[tilde-above]{ungwe}",
+    "ow0": "[o]{vala}",
+    "ow1": "[o]{vala}",
+    "ow2": "[o]{vala}",
+    "oy0": "[o]{anna}",
+    "oy1": "[o]{anna}",
+    "oy2": "[o]{anna}",
+    "p": "{parma}",
+    "p'w": "[over-twist]{parma}",
+    "p'y": "{parma}{anna}",
+    "r": "{roomen}", // {oore}
+    "s": "{alt-silme}",
+    // 	"ah0"s":	"{silme}",
+    "sh": "{aha}",
+    // 	"ah0"t": "{tinco}",				// Schwa (could it be triple-dot below?)
+    "t": "{tinco}",
+    "t'w": "[over-twist]{tinco}",
+    "t'y": "{tinco}{anna}",
+    "th": "{suule}",
+    "uh0": "[u]", // oo in foot, tour
+    "uh1": "[u]", // oo in foot, tour
+    "uh2": "[u]", // oo in foot, tour
+    "uw0": "[double-u]", // "oo"	in value
+    "uw0$": "[u]{long-carrier}", // "oo"	in value
+    "uw1": "[double-u]", // "oo"	in true
+    "uw1$": "[u]{long-carrier}", // "oo"	in value
+    "uw2": "[double-u]", // "oo"	in true
+    "uw2$": "[u]{long-carrier}", // "oo"	in value
+    "v": "{ampa}",
+    "v'y": "{ampa}{anna}",
+    "w": "{vala}",
+    "x": "[x-curl]{calma}",
+    "y": "[double-dot-below]",
+    "^y": "{anna}",
+    "z": "{esse}",
+    "zh": "{anca}"
+  },
 
-	"aw0":	"[a]{vala}",
-	"aw1":	"[a]{vala}",
-	"aw2":	"[a]{vala}",
-	"ay0":	"[a]{anna}",
-	"ay1":	"[a]{anna}",
-	"ay2":	"[a]{anna}",
-	"b":	"{umbar}",
-	"b'y":	"{umbar}{anna}",
-	"ch":	"{calma}",
-	"d":	"{ando}",
-	"d'y":	"{ando}{anna}",
-	"d'w":	"[over-twist]{ando}",
-	"dh":	"{anto}",
-	"eh0":	"[e]",
-	"eh1":	"[e]",
-	"eh2":	"[e]",
-	"er0":	"[grave]{roomen}",			//
-	"er0$":	"[dot-below]{oore}",			//	oore as per VT#23 p16
-	"er1$":	"[dot-below]{oore}",			//
-	"er2$":	"[dot-below]{oore}",			//
-	"er1":	"[dot-below]{oore}",
-	"er2":	"[dot-below]{oore}",
-	"ey0":	"[andaith]{anna}",					// [a] 
-	"ey1":	"[andaith]{anna}",					// [a] 
-	"ey2":	"[andaith]{anna}",					// [a] 
-	"ey2$":	"[a]{long-carrier}",					// [a] 
-	"f":	"{formen}",
-	"f'y":	"{formen}{anna}",
-	"f'w":	"[over-twist]{formen}",
-	"g":	"{ungwe}",
-	"g'w":	"[over-twist]{ungwe}",
-	"g'y":	"{ungwe}{anna}",
-	"g'z":	"[x-curl]{ungwe}",
-	"hh":	"{hyarmen}",
-	"ih0":	"[i]",
-	"ih1":	"[i]",
-	"ih2":	"[i]",
-	"iy0":	"[i]{long-carrier}",		//	long-i
-	"iy1":	"[i]{long-carrier}",
-	"iy2":	"[i]{long-carrier}",
-	"jh":	"{anga}",
-	"k":	"{quesse}",
-	"k'sh":	"{quesse}{aha}",
-	"k's":	"[x-curl]{quesse}",
-	"k'w":	"[over-twist]{quesse}",
-	"k'y":	"{quesse}{anna}",
-	"l":	"{lambe}",
- 	"ah0'l": "[dot-inside]{lambe}",
-	"l'y":	"{lambe}{anna}",
-	"m":	"{malta}",
-// 	"ah0'm":	"{malta}",
-	"m'b":	"[bar-above]{umbar}",
-	"m'p":	"[bar-above]{parma}",
-	"m'w":	"[over-twist]{malta}",
-	"m'y":	"{malta}{anna}",
-	"n":	"{nuumen}",
-// 	"ah0'n":	"{nuumen}",
-	"n'w":	"[over-twist]{nuumen}",
-	"n'y":	"{noldo}",
-	"n'd":	"[tilde-above]{ando}",
-	"n't":	"[tilde-above]{tinco}",
-	"n's$":	"[left-following-silme]{nuumen}",
-	"n'sh":	"[bar-above]{aha}",
-	"n'zh":	"[bar-above]{anca}",
-	"ng":	"{nwalme}",
-	"ng'g":	"[tilde-above]{ungwe}",
-	"ng'k":	"[tilde-above]{ungwe}",
-	"ow0":	"[o]{vala}",
-	"ow1":	"[o]{vala}",
-	"ow2":	"[o]{vala}",
-	"oy0":	"[o]{anna}",
-	"oy1":	"[o]{anna}",
-	"oy2":	"[o]{anna}",
-	"p":	"{parma}",
-	"p'w":	"[over-twist]{parma}",
-	"p'y":	"{parma}{anna}",
-	"r":	"{roomen}",				// {oore}
-	"s":	"{alt-silme}",
-// 	"ah0"s":	"{silme}",
-	"sh":	"{aha}",
-// 	"ah0"t": "{tinco}",				// Schwa (could it be triple-dot below?)
-	"t":	"{tinco}",
-	"t'w":	"[over-twist]{tinco}",
-	"t'y":	"{tinco}{anna}",
-	"th":	"{suule}",
-	"uh0":	"[u]",			// oo in foot, tour
-	"uh1":	"[u]",			// oo in foot, tour
-	"uh2":	"[u]",			// oo in foot, tour
-	"uw0":	"[double-u]",			// "oo"	in value
-	"uw0$":	"[u]{long-carrier}",			// "oo"	in value
-	"uw1":	"[double-u]",			// "oo"	in true
-	"uw1$":	"[u]{long-carrier}",			// "oo"	in value
-	"uw2":	"[double-u]",			// "oo"	in true
-	"uw2$":	"[u]{long-carrier}",			// "oo"	in value
-	"v":	"{ampa}",
-	"v'y":	"{ampa}{anna}",
-	"w":	"{vala}",
-	"x":	"[x-curl]{calma}",
-	"y":	"[double-dot-below]",
-	"^y":	"{anna}",
-	"z":	"{esse}",
-	"zh":	"{anca}"
-},
+  "words": {
+    "ofthe": "{ofthe}",
+    "of": "{of}",
+    "the": "{the}",
+    "and": "{and}",
 
-"words" : {
-	"ofthe":			"{ofthe}",
-	"of":				"{of}",
-	"the":				"{the}",
-	"and":				"{and}",
-	
-	"loch":				"{lambe}{hwesta}[o]",
-	"what":				"{hwesta-sindarinwa}{tinco}[o]",
-	"when":				"{hwesta-sindarinwa}{nuumen}[e]",
-	"where":			"{hwesta-sindarinwa}{roomen}[e]",
-	"who":				"{hwesta-sindarinwa}{long-carrier}[u]",
-	"which":			"{hwesta-sindarinwa}{calma}[i]",
-	"for": 				"{formen}{roomen}"					//  In DTS 39 the o in "for" is ignored
+    "loch": "{lambe}{hwesta}[o]",
+    "what": "{hwesta-sindarinwa}{tinco}[o]",
+    "when": "{hwesta-sindarinwa}{nuumen}[e]",
+    "where": "{hwesta-sindarinwa}{roomen}[e]",
+    "who": "{hwesta-sindarinwa}{long-carrier}[u]",
+    "which": "{hwesta-sindarinwa}{calma}[i]",
+    "for": "{formen}{roomen}" //  In DTS 39 the o in "for" is ignored
 
-//	"sofa":				"{silme}{vala}[o]{formen}[dot-below]",
-}
+    //	"sofa":				"{silme}{vala}[o]{formen}[dot-below]",
+  }
 }

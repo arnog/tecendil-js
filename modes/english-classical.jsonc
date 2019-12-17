@@ -4,12 +4,11 @@
 //
 // As close to Tolkien as possible
 //
-// Based on http://at.mansbjorkman.net/teng_general.htm// 
+// Based on http://at.mansbjorkman.net/teng_general.htm//
 // -----------------------------------------------------------------------------
 
 // Need switch for nuquerna
-// 
-
+//
 
 // Endorion Inscription
 /*
@@ -37,278 +36,264 @@ For Michael son of Middle-earth
 */
 
 {
-	"name" : "english-classical",
-    "languageCode": "en",
-	"normalizeVowels": false,
+  "name": "english-classical",
+  "languageCode": "en",
+  "normalizeVowels": false,
 
-	"tehtarFollow": 	true, 
-	"rrule": true,        // Implement the R-rule
-	"map" : {
-		// Consonants
-		"b":	"{umbar}",
-		"c":	"{quesse}",
-		// soft-c uses silme-nuquerna
-		"ce":		"{}{silme-nuquerna}[e]",
-		"ci":		"{}{silme-nuquerna}[i]",
-		"cy":		"{}{silme-nuquerna}[chevron]",
-		// In English, /c/ is pronounced [s] before e, i, y
-		"nce$":	"{nuumen}[dot-below]{silme-nuquerna}",	// necessary to override "nc"
-		"ce$":	"[dot-below]{silme-nuquerna}",
-		"sci$":	"{}{calma}[i]",						// S I, e.g. "pesci"
-		"cci$":	"{}{calma}[i]",						// CH, e.g. "gucci"
-		"ci$":	"{}{calma}[i]",						// CH, e.g. "domenici" except S (ceci, medici, vinci) or K (loci)
-		"cy$":	"{}{silme-nuquerna}[chevron]{short-carrier}",		// "icy"
-		"^mc":	"{malta}[a]{quesse}",		// "Mc" -> "mac"
+  "tehtarFollow": true,
+  "rrule": true, // Implement the R-rule
+  "map": {
+    // Consonants
+    "b": "{umbar}",
+    "c": "{quesse}",
+    // soft-c uses silme-nuquerna
+    "ce": "{}{silme-nuquerna}[e]",
+    "ci": "{}{silme-nuquerna}[i]",
+    "cy": "{}{silme-nuquerna}[chevron]",
+    // In English, /c/ is pronounced [s] before e, i, y
+    "nce$": "{nuumen}[dot-below]{silme-nuquerna}", // necessary to override "nc"
+    "ce$": "[dot-below]{silme-nuquerna}",
+    "sci$": "{}{calma}[i]", // S I, e.g. "pesci"
+    "cci$": "{}{calma}[i]", // CH, e.g. "gucci"
+    "ci$": "{}{calma}[i]", // CH, e.g. "domenici" except S (ceci, medici, vinci) or K (loci)
+    "cy$": "{}{silme-nuquerna}[chevron]{short-carrier}", // "icy"
+    "^mc": "{malta}[a]{quesse}", // "Mc" -> "mac"
 
-	// ace ice decide spicy vicious paly once gucci icy pace possible
-	// ACE -> quesse
-	// ICE -> quesse
+    // ace ice decide spicy vicious paly once gucci icy pace possible
+    // ACE -> quesse
+    // ICE -> quesse
 
-		"ch":	"{calma}",			// "k" except cht, chr, chl, chn -- (branchless, bichloride)
-		"ck":	"[bar-below]{quesse}",
-		"d":	"{ando}",
-		"f":	"{formen}",
-		"g":	"{ungwe}",
-		"h":	"{hyarmen}",
-		"j":	"{anga}",
-		"k":	"{quesse}",
-		"l":	"{lambe}",
-		"m":	"{malta}",
-		"n":	"{nuumen}",
-		"p":	"{parma}",
-	//	"r":	special case
+    "ch": "{calma}", // "k" except cht, chr, chl, chn -- (branchless, bichloride)
+    "ck": "[bar-below]{quesse}",
+    "d": "{ando}",
+    "f": "{formen}",
+    "g": "{ungwe}",
+    "h": "{hyarmen}",
+    "j": "{anga}",
+    "k": "{quesse}",
+    "l": "{lambe}",
+    "m": "{malta}",
+    "n": "{nuumen}",
+    "p": "{parma}",
+    //	"r":	special case
 
-		"s":	"{alt-silme}",
+    "s": "{alt-silme}",
 
+    // Doubled-consonants
+    "bb": "[bar-below]{umbar}", // rubbish
+    "cc": "[bar-below]{quesse}", // according
+    "dd": "[bar-below]{ando}", // suddenly
+    "ff": "[bar-below]{formen}", // off
+    "gg": "[bar-below]{ungwe}", // suggests
+    "ll": "[bar-inside]{lambe}", // will
+    "mm": "[bar-below]{malta}", // community
+    "nn": "[bar-below]{nuumen}", // dinner
+    "pp": "[bar-below]{parma}", // support
+    "rr": "[bar-below]{oore}", // current
+    "ss": "[bar-below]{alt-silme}", // possible
+    "tt": "[bar-below]{tinco}", // little
+    "vv": "[bar-below]{ampa}", // skivvy
+    "zz": "[bar-below]{esse}", // jazz
 
-		// Doubled-consonants
-		"bb":	"[bar-below]{umbar}",		// rubbish
-		"cc":	"[bar-below]{quesse}",		// according
-		"dd":	"[bar-below]{ando}",		// suddenly
-		"ff":	"[bar-below]{formen}",		// off
-		"gg":	"[bar-below]{ungwe}",		// suggests
-		"ll":	"[bar-inside]{lambe}",		// will
-		"mm":	"[bar-below]{malta}",		// community
-		"nn":	"[bar-below]{nuumen}",		// dinner
-		"pp":	"[bar-below]{parma}",		// support
-		"rr":	"[bar-below]{oore}",		// current
-		"ss":	"[bar-below]{alt-silme}",		// possible
-		"tt":	"[bar-below]{tinco}",		// little
-		"vv":	"[bar-below]{ampa}",		// skivvy
-		"zz":	"[bar-below]{esse}",		// jazz
+    // Special double-character sequences
+    "th": "{suule}",
+    "dh": "{anto}",
+    "sh": "{aha}", // "d" for english v?
+    "kh": "{anca}",
+    "zh": "{anca}", // for /zh/ sound, as in "azure"
+    "gh": "{ungwe-extended}",
 
+    "aly$": "[a]{lambe}[chevron]{short-carrier}",
+    "ely$": "[e]{lambe}[chevron]{short-carrier}",
+    "ily$": "[i]{lambe}[chevron]{short-carrier}",
+    "oly$": "[o]{lambe}[chevron]{short-carrier}",
+    "uly$": "[u]{lambe}[chevron]{short-carrier}",
+    "ly$": "{lambe}{short-carrier}[chevron]",
+    "any$": "[a]{nuumen}[chevron]{short-carrier}",
+    "eny$": "[e]{nuumen}[chevron]{short-carrier}",
+    "iny$": "[i]{nuumen}[chevron]{short-carrier}",
+    "ony$": "[o]{nuumen}[chevron]{short-carrier}",
+    "uny$": "[u]{nuumen}[chevron]{short-carrier}",
+    "yny$": "[chevron]{nuumen}[chevron]{short-carrier}",
 
-		// Special double-character sequences
-		"th":	"{suule}",
-		"dh":	"{anto}",
-		"sh":	"{aha}",		// "d" for english v?
-		"kh":	"{anca}",
-		"zh":	"{anca}",		// for /zh/ sound, as in "azure"
-		"gh":	"{ungwe-extended}",
+    "ng": "{nwalme}", // for english, /ng/ sound
+    //     "rd":	"{arda}",
+    //     "rds": "[sa-rince]{arda}",
 
-		"aly$": "[a]{lambe}[chevron]{short-carrier}",
-		"ely$": "[e]{lambe}[chevron]{short-carrier}",
-		"ily$": "[i]{lambe}[chevron]{short-carrier}",
-		"oly$": "[o]{lambe}[chevron]{short-carrier}",
-		"uly$": "[u]{lambe}[chevron]{short-carrier}",
-		"ly$": 	"{lambe}{short-carrier}[chevron]",
-		"any$": "[a]{nuumen}[chevron]{short-carrier}",
-		"eny$": "[e]{nuumen}[chevron]{short-carrier}",
-		"iny$": "[i]{nuumen}[chevron]{short-carrier}",
-		"ony$": "[o]{nuumen}[chevron]{short-carrier}",
-		"uny$": "[u]{nuumen}[chevron]{short-carrier}",
-		"yny$": "[chevron]{nuumen}[chevron]{short-carrier}",
-		
-		"ng":	"{nwalme}",		// for english, /ng/ sound
-	//     "rd":	"{arda}",
-	//     "rds": "[sa-rince]{arda}",
+    "ph": "{formen}",
+    "^uph": "[u]{parma}{hyarmen}", // Not "ph" sound, e.g. "up-hea-val"
 
-		"ph": "{formen}",
-		"^uph": "[u]{parma}{hyarmen}",		// Not "ph" sound, e.g. "up-hea-val"
-		
-		"tw":	"[over-twist]{tinco}",
-	//     "dw":	"[over-twist]{ando}",
-		"gw":	"[over-twist]{ungwe}",
+    "tw": "[over-twist]{tinco}",
+    //     "dw":	"[over-twist]{ando}",
+    "gw": "[over-twist]{ungwe}",
 
-		"^wh":	"{hwesta-sindarinwa}",
-		"kw":	"[over-twist]{quesse}",
-		"qu":	"[over-twist]{quesse}",
-			
-		
-		// Nasalization mark
-		"nc":	"[tilde-above]{quesse}",
-		"mc":	"[tilde-above]{quesse}",
-	// 	"nd":	"[tilde-above]{ando}",			// not used in Silmarilion ("appended")
-		"md":	"[tilde-above]{ando}",
-		"mb":	"[tilde-above]{umbar}",
-		"nt":	"[tilde-above]{tinco}",
-		"mp":	"[tilde-above]{parma}",
-		"mt":	"[tilde-above]{tinco}",
-		"im":	"[i][tilde-above]",
-		"im$": 	"[i]{malta}",
-		
+    "^wh": "{hwesta-sindarinwa}",
+    "kw": "[over-twist]{quesse}",
+    "qu": "[over-twist]{quesse}",
 
-	//	"anc":	"[a][tilde-high]{quesse}",
+    // Nasalization mark
+    "nc": "[tilde-above]{quesse}",
+    "mc": "[tilde-above]{quesse}",
+    // 	"nd":	"[tilde-above]{ando}",			// not used in Silmarilion ("appended")
+    "md": "[tilde-above]{ando}",
+    "mb": "[tilde-above]{umbar}",
+    "nt": "[tilde-above]{tinco}",
+    "mp": "[tilde-above]{parma}",
+    "mt": "[tilde-above]{tinco}",
+    "im": "[i][tilde-above]",
+    "im$": "[i]{malta}",
 
-		// Vowel
-		"y":	"[chevron]",
-		// Final-y
-		"y$":	"[i]{long-carrier}",
+    //	"anc":	"[a][tilde-high]{quesse}",
 
-		// Double vowels
-		"aa":	"[a]{short-carrier}[a]{short-carrier}",
-		"ee":	"[e]{short-carrier}[e]{short-carrier}",
-		"ii":	"[i]{short-carrier}[i]{short-carrier}",
-		"oo":	"[o]{short-carrier}[o]{short-carrier}",
-		"uu":	"[u]{short-carrier}[u]{short-carrier}",
-		
-		// Long vowels (circumflex)
-		"â":	"[a]{long-carrier}",
-		"ê":	"[e]{long-carrier}",
-		"î":	"[i]{long-carrier}",
-		"ô":	"[o]{long-carrier}",
-		"û":	"[u]{long-carrier}",
+    // Vowel
+    "y": "[chevron]",
+    // Final-y
+    "y$": "[i]{long-carrier}",
 
-		// ----------------------------------------------------------------------------
-		//
-		// DIPHTHONGS
-		//
-		"ai": "[a]{short-carrier}[i]{short-carrier}",
-		"ei": "[e]{short-carrier}[i]{short-carrier}",
-		"oi": "[o]{short-carrier}[i]{short-carrier}",
-		"ui": "[u]{short-carrier}[i]{short-carrier}",
-		"au": "[a]{vala}",		// DTS.10: diphthongs ending in -U use {vala}
-	///    "eu": "[e]{vala}",	
-		"iu": "[i]{vala}",
-		"ou": "[o]{vala}",
-		"ay": "[a]{short-carrier}[chevron]{short-carrier}",
-		"ey": "[e]{short-carrier}[chevron]{short-carrier}",
-		"oy": "[o]{short-carrier}[chevron]{short-carrier}",
-		"uy": "[u]{short-carrier}[chevron]{short-carrier}",
+    // Double vowels
+    "aa": "[a]{short-carrier}[a]{short-carrier}",
+    "ee": "[e]{short-carrier}[e]{short-carrier}",
+    "ii": "[i]{short-carrier}[i]{short-carrier}",
+    "oo": "[o]{short-carrier}[o]{short-carrier}",
+    "uu": "[u]{short-carrier}[u]{short-carrier}",
 
-		"ow": "[o]{vala}",
-		"owe": "[o][dot-below]{vala}",
+    // Long vowels (circumflex)
+    "â": "[a]{long-carrier}",
+    "ê": "[e]{long-carrier}",
+    "î": "[i]{long-carrier}",
+    "ô": "[o]{long-carrier}",
+    "û": "[u]{long-carrier}",
 
-		"ea": "[e][triple-dot-below]{short-carrier}",
-		"ia": "[i]{short-carrier}[a]{short-carrier}",
-		"oa": "[o]{short-carrier}[a]",
-		"ua": "[u]{short-carrier}[a]{short-carrier}",
-		"ae": "[a]{short-carrier}[e]{short-carrier}",
-		"ae$": "[a][dot-below]{short-carrier}",
-	//     "ie": "[i]{short-carrier}[e]{short-carrier}",		// Not in "Tolkien"
-	//    "ie$": "[i][dot-below]{short-carrier}",
-		"ie$":	"[i][dot-below]{short-carrier}",		// Most words end in a "ee" sound, except for a few (die, lie, etc...)
-		"oe": "[o]{short-carrier}[e]{short-carrier}",
-		"oë": "[o]{short-carrier}[e]{short-carrier}",
-		"oe$": "[o][dot-below]{short-carrier}",
-	//     "ue": "[u]{short-carrier}[e]{short-carrier}",
-		"ue$": "[u][dot-below]{short-carrier}",
+    // ----------------------------------------------------------------------------
+    //
+    // DIPHTHONGS
+    //
+    "ai": "[a]{short-carrier}[i]{short-carrier}",
+    "ei": "[e]{short-carrier}[i]{short-carrier}",
+    "oi": "[o]{short-carrier}[i]{short-carrier}",
+    "ui": "[u]{short-carrier}[i]{short-carrier}",
+    "au": "[a]{vala}", // DTS.10: diphthongs ending in -U use {vala}
+    ///    "eu": "[e]{vala}",
+    "iu": "[i]{vala}",
+    "ou": "[o]{vala}",
+    "ay": "[a]{short-carrier}[chevron]{short-carrier}",
+    "ey": "[e]{short-carrier}[chevron]{short-carrier}",
+    "oy": "[o]{short-carrier}[chevron]{short-carrier}",
+    "uy": "[u]{short-carrier}[chevron]{short-carrier}",
 
-		"ya":		"[chevron]{short-carrier}[a]{short-carrier}",	// e.g. "aditya", "ryan"
-		"ye":		"[chevron]{short-carrier}[e]{short-carrier}",	// e.g. 
-		"yi":		"[chevron]{short-carrier}[i]{short-carrier}",	// e.g. 
-		"yo":		"[chevron]{short-carrier}[o]{short-carrier}",	// e.g. 
-		"yu":		"[chevron]{short-carrier}[u]{short-carrier}",	// e.g. 
+    "ow": "[o]{vala}",
+    "owe": "[o][dot-below]{vala}",
 
+    "ea": "[e][triple-dot-below]{short-carrier}",
+    "ia": "[i]{short-carrier}[a]{short-carrier}",
+    "oa": "[o]{short-carrier}[a]",
+    "ua": "[u]{short-carrier}[a]{short-carrier}",
+    "ae": "[a]{short-carrier}[e]{short-carrier}",
+    "ae$": "[a][dot-below]{short-carrier}",
+    //     "ie": "[i]{short-carrier}[e]{short-carrier}",		// Not in "Tolkien"
+    //    "ie$": "[i][dot-below]{short-carrier}",
+    "ie$": "[i][dot-below]{short-carrier}", // Most words end in a "ee" sound, except for a few (die, lie, etc...)
+    "oe": "[o]{short-carrier}[e]{short-carrier}",
+    "oë": "[o]{short-carrier}[e]{short-carrier}",
+    "oe$": "[o][dot-below]{short-carrier}",
+    //     "ue": "[u]{short-carrier}[e]{short-carrier}",
+    "ue$": "[u][dot-below]{short-carrier}",
 
-		
+    "ya": "[chevron]{short-carrier}[a]{short-carrier}", // e.g. "aditya", "ryan"
+    "ye": "[chevron]{short-carrier}[e]{short-carrier}", // e.g.
+    "yi": "[chevron]{short-carrier}[i]{short-carrier}", // e.g.
+    "yo": "[chevron]{short-carrier}[o]{short-carrier}", // e.g.
+    "yu": "[chevron]{short-carrier}[u]{short-carrier}", // e.g.
 
-		
-		// Final-s
-		// Following s can be indicated by a downward hook
-		// "“especially in the combinations ts, ps, ks (x), that were favoured in Quenya”
-		// http://at.mansbjorkman.net/teng_quenya.htm
-		"ays$":	"[a]{anna}[sa-rince]{}",
-		"bs$":	"[swash-curl]{umbar}",
-		"des$": "[sa-rince][dot-below]{ando}",
-		"ds$": "[sa-rince]{ando}",
-		"fs$": "[sa-rince]{formen}",
-		"gs$": "[sa-rince]{ungwe}",
-		"ks$": "[sa-rince]{quesse}",
-		"ngs$": "[swash-curl]{nwalme}",
-		"kes$": "[dot-below][sa-rince]{quesse}",
-		"ls$": "[lifted-curl]{lambe}",
-		"les$": "[sa-rince][dot-inside]{lambe}",
-		"ms$": "[left-following-silme]{malta}",
-		"mes$": "[dot-below][swash-curl]{malta}",
-		"nds$": "[tilde-above][left-following-silme]{ando}",
-		"ns$": "[sa-rince]{nuumen}",
-		"ps$": "[sa-rince]{parma}",
-		"rs$": "[sa-rince]{oore}",
-		"ts$": "[sa-rince]{tinco}",
-		"ves$": "[sa-rince][dot-below]{ampa}",
-		"ys$": "{anna}{sa-rince}",
-		"oes$":	"[o]{short-carrier}[e][sa-rince]{short-carrier}",
-		"s$":	"[sa-rince]",			// /u/machsna: Tolkien has consistently spelled every 
-					// final -S ending with a sa-rince 
-					// (sometimes with the looped variant form that indicates voicedness).
+    // Final-s
+    // Following s can be indicated by a downward hook
+    // "“especially in the combinations ts, ps, ks (x), that were favoured in Quenya”
+    // http://at.mansbjorkman.net/teng_quenya.htm
+    "ays$": "[a]{anna}[sa-rince]{}",
+    "bs$": "[swash-curl]{umbar}",
+    "des$": "[sa-rince][dot-below]{ando}",
+    "ds$": "[sa-rince]{ando}",
+    "fs$": "[sa-rince]{formen}",
+    "gs$": "[sa-rince]{ungwe}",
+    "ks$": "[sa-rince]{quesse}",
+    "ngs$": "[swash-curl]{nwalme}",
+    "kes$": "[dot-below][sa-rince]{quesse}",
+    "ls$": "[lifted-curl]{lambe}",
+    "les$": "[sa-rince][dot-inside]{lambe}",
+    "ms$": "[left-following-silme]{malta}",
+    "mes$": "[dot-below][swash-curl]{malta}",
+    "nds$": "[tilde-above][left-following-silme]{ando}",
+    "ns$": "[sa-rince]{nuumen}",
+    "ps$": "[sa-rince]{parma}",
+    "rs$": "[sa-rince]{oore}",
+    "ts$": "[sa-rince]{tinco}",
+    "ves$": "[sa-rince][dot-below]{ampa}",
+    "ys$": "{anna}{sa-rince}",
+    "oes$": "[o]{short-carrier}[e][sa-rince]{short-carrier}",
+    "s$": "[sa-rince]", // /u/machsna: Tolkien has consistently spelled every
+    // final -S ending with a sa-rince
+    // (sometimes with the looped variant form that indicates voicedness).
 
+    // Final silent "e"
+    "re$": "[dot-below]{oore}",
+    "be$": "[dot-below]{umbar}",
+    //     "ch":	"{calma}",			// "k" except cht, chr, chl, chn -- (branchless, bichloride)
+    //     "ck":	"{quesse}",
+    "de$": "[dot-below]{ando}",
+    "fe$": "[dot-below]{formen}",
+    "ge$": "[dot-below]{ungwe}",
+    "he$": "[dot-below]{hyarmen}",
+    "je$": "[dot-below]{anga}",
+    "ke$": "[dot-below]{quesse}",
+    "le$": "[dot-inside]{lambe}",
+    "me$": "[dot-below]{malta}",
+    "ne$": "[dot-below]{nuumen}",
+    "pe$": "[dot-below]{parma}",
 
-							
-		
-		// Final silent "e"
-		"re$":	"[dot-below]{oore}",
-		"be$":	"[dot-below]{umbar}",
-	//     "ch":	"{calma}",			// "k" except cht, chr, chl, chn -- (branchless, bichloride)
-	//     "ck":	"{quesse}",
-		"de$":	"[dot-below]{ando}",
-		"fe$":	"[dot-below]{formen}",
-		"ge$":	"[dot-below]{ungwe}",
-		"he$":	"[dot-below]{hyarmen}",
-		"je$":	"[dot-below]{anga}",
-		"ke$":	"[dot-below]{quesse}",
-		"le$":	"[dot-inside]{lambe}",
-		"me$":	"[dot-below]{malta}",
-		"ne$":	"[dot-below]{nuumen}",
-		"pe$":	"[dot-below]{parma}",
+    "se$": "[dot-below]{alt-silme}",
 
-		"se$":	"[dot-below]{alt-silme}",
-		
-		"te$":	"[dot-below]{tinco}",
-		"ve$":	"[dot-below]{ampa}",
+    "te$": "[dot-below]{tinco}",
+    "ve$": "[dot-below]{ampa}",
 
-		"t":	"{tinco}",
-		"v":	"{ampa}",
+    "t": "{tinco}",
+    "v": "{ampa}",
 
+    "w": "{vala}",
+    "x": "[x-curl]{quesse}", // for /ks/, Use [x-curl]{ungwe} for /gz/ (PE20-58)
+    "z": "{esse}" // for english (= /zh/, e.g. azure)
+  },
 
-		"w":	"{vala}",
-		"x":	"[x-curl]{quesse}",		// for /ks/, Use [x-curl]{ungwe} for /gz/ (PE20-58)
-		"z":	"{esse}"		// for english (= /zh/, e.g. azure) 
-	},
+  "words": {
+    "and": "{and}",
 
-	"words" : {
-		"and": "{and}",
+    "of": "{of}",
+    "the": "{the}",
+    "ofthe": "{ofthe}",
 
-		"of": "{of}",
-		"the": "{the}",
-		"ofthe": "{ofthe}",
-		
-		"to": "{tinco}[right-curl-below]",
-		
-	//     "reuel": "{roomen}{short-carrier}[e]{short-carrier}[u]{lambe}[e]",	
-		
-		"age":	"{anga}[a][dot-below]",		// /dj/ Silmarilion
-		
-		"is":	"{esse}[i]",
+    "to": "{tinco}[right-curl-below]",
 
-		"herein": "{hyarmen}{roomen}[e][dot-below]{nuumen}[i]",
-		"war": 	"{vala}{oore}[o]",
-		
-		"these":	"{anto}{alt-silme}[dot-below][e]",
-		"this": "{anto}[i][sa-rince]",
+    //     "reuel": "{roomen}{short-carrier}[e]{short-carrier}[u]{lambe}[e]",
 
-		"return": "{roomen}{tinco}[i]{oore}[dot-below]{nuumen}", // VT # 23
+    "age": "{anga}[a][dot-below]", // /dj/ Silmarilion
 
-		"ancient": "{calma}[tilde-above][a]{short-carrier}[i]{tinco}[tilde-above][e]",	// "ci" -> CH I
-		"caesar": "{alt-silme}{long-carrier}[i]{alt-esse}{roomen}[dot-below]",	
-		"caearas": "{alt-silme}{long-carrier}[i]{alt-esse}{roomen}[dot-below][sa-rince]",
-		"facade": "{formen}{alt-silme}[a]{ando}[dot-below][a]",
-		"facades": "{formen}{alt-silme}[a]{ando}[dot-below][a][sa-rince]",
-		"cello": "{calma}{lambe}[bar-inside][e]{short-carrier}[o]",
-		"concerto": "{quesse}{nuumen}[o]{calma}{oore}[e]{tinco}{short-carrier}[o]",
-		"capuccino": "{quesse}{parma}[a]{calma}[u]{nuumen}[i]{short-carrier}[o]",
-		"ciao": 		"{calma}{vala}[a]"
-	}
+    "is": "{esse}[i]",
 
+    "herein": "{hyarmen}{roomen}[e][dot-below]{nuumen}[i]",
+    "war": "{vala}{oore}[o]",
 
+    "these": "{anto}{alt-silme}[dot-below][e]",
+    "this": "{anto}[i][sa-rince]",
+
+    "return": "{roomen}{tinco}[i]{oore}[dot-below]{nuumen}", // VT # 23
+
+    "ancient": "{calma}[tilde-above][a]{short-carrier}[i]{tinco}[tilde-above][e]", // "ci" -> CH I
+    "caesar": "{alt-silme}{long-carrier}[i]{alt-esse}{roomen}[dot-below]",
+    "caearas": "{alt-silme}{long-carrier}[i]{alt-esse}{roomen}[dot-below][sa-rince]",
+    "facade": "{formen}{alt-silme}[a]{ando}[dot-below][a]",
+    "facades": "{formen}{alt-silme}[a]{ando}[dot-below][a][sa-rince]",
+    "cello": "{calma}{lambe}[bar-inside][e]{short-carrier}[o]",
+    "concerto": "{quesse}{nuumen}[o]{calma}{oore}[e]{tinco}{short-carrier}[o]",
+    "capuccino": "{quesse}{parma}[a]{calma}[u]{nuumen}[i]{short-carrier}[o]",
+    "ciao": "{calma}{vala}[a]"
+  }
 }

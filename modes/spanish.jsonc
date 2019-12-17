@@ -8,7 +8,6 @@
 
 // Check: [tbd]
 
-
 /*
 Endorion Dedication - DTS 62
 
@@ -28,261 +27,254 @@ accent - lambe - malta + right curl.
 */
 
 {
-	// Short-name
-	"name" : "spanish",
-	"languageCode": "es", // ISO 639-3
+  // Short-name
+  "name": "spanish",
+  "languageCode": "es", // ISO 639-3
 
-	"rrule": false,
+  "rrule": false,
 
-	"preprocess" :  {
-		// Disambiguate pronounciation, "ce" -> "ze", "ci" -> "zi"
-		"ce":   "ze",
-		"ci":   "zi",
+  "preprocess": {
+    // Disambiguate pronounciation, "ce" -> "ze", "ci" -> "zi"
+    "ce": "ze",
+    "ci": "zi",
 
-		// Disambiguate pronounciation, "ge" -> "je", "gi" -> "ji"
-		"ge":   "je",
-		"gi":   "ji",
+    // Disambiguate pronounciation, "ge" -> "je", "gi" -> "ji"
+    "ge": "je",
+    "gi": "ji",
 
-		// Disambiguate pronounciation, "gue" -> "ge", "gui" -> "gi"
-		"gue":   "je",
-		"gui":      "gi",
+    // Disambiguate pronounciation, "gue" -> "ge", "gui" -> "gi"
+    "gue": "je",
+    "gui": "gi",
 
-		// Disambiguate pronounciation, "que" -> "ke", "qui" -> "ki"
-		"que":      "ke",
-		"qui":      "ki",
+    // Disambiguate pronounciation, "que" -> "ke", "qui" -> "ki"
+    "que": "ke",
+    "qui": "ki",
 
-		// Retain "ü" in "qüe", "qüi", "güe", "güi" as "u"
-		"güe":      "gue",
-		"güi":      "gui",
-		"qüe":      "kue",
-		"qüi":      "kui",
+    // Retain "ü" in "qüe", "qüi", "güe", "güi" as "u"
+    "güe": "gue",
+    "güi": "gui",
+    "qüe": "kue",
+    "qüi": "kui",
 
-		// Strengthen "r" (-> "rr") at beginning or after consonant
-		"^r":       "rr",
-		"([^AaEeIiOoUuÁáÉéÍíÓóÚú])r": "$1rr"
-	},
+    // Strengthen "r" (-> "rr") at beginning or after consonant
+    "^r": "rr",
+    "([^AaEeIiOoUuÁáÉéÍíÓóÚú])r": "$1rr"
+  },
 
-	"map" : {
-		// ----------------------------------------------------------------------------
-		//
-		// VOWELS
-		// y (as a single word)
-		"^y$":		"{short-carrier}[chevron]",
+  "map": {
+    // ----------------------------------------------------------------------------
+    //
+    // VOWELS
+    // y (as a single word)
+    "^y$": "{short-carrier}[chevron]",
 
-		// Accented vowels
-		"á":			"{long-carrier}[a]{}",
-		"é":			"[double-e]{}",
-		"í":			"{long-carrier}[i]{}",
-		"ó":			"[double-o]{}",
-		"ú":			"[double-u]{}",
+    // Accented vowels
+    "á": "{long-carrier}[a]{}",
+    "é": "[double-e]{}",
+    "í": "{long-carrier}[i]{}",
+    "ó": "[double-o]{}",
+    "ú": "[double-u]{}",
 
+    // ----------------------------------------------------------------------------
+    // DIPHTHONGS
+    // Cf. http://www.wikilengua.org/index.php/Lista_de_combinaciones_de_vocales
+    //
 
-		// ----------------------------------------------------------------------------
-		// DIPHTHONGS
-		// Cf. http://www.wikilengua.org/index.php/Lista_de_combinaciones_de_vocales
-		//
+    // Raising diphthongs
+    "ai": "{yanta}[a]{}",
+    "ay$": "{yanta}[a]{}",
+    "au": "{uure}[a]{}",
+    "ái": "{long-carrier}[a]{yanta}{}",
+    "áu": "{long-carrier}[a]{uure}{}",
 
-		// Raising diphthongs
-		"ai":		"{yanta}[a]{}",
-		"ay$":		"{yanta}[a]{}",
-		"au":		"{uure}[a]{}",
-		"ái":		"{long-carrier}[a]{yanta}{}",
-		"áu":		"{long-carrier}[a]{uure}{}",
+    "ei": "{yanta}[e]{}",
+    "ey$": "{yanta}[e]{}",
+    "eu": "{uure}[e]{}",
+    "éi": "{yanta}[double-e]{}",
+    "éu": "{uure}[double-e]{}",
 
-		"ei":		"{yanta}[e]{}",
-		"ey$":		"{yanta}[e]{}",
-		"eu":		"{uure}[e]{}",
-		"éi":		"{yanta}[double-e]{}",
-		"éu":		"{uure}[double-e]{}",
+    "oi": "{yanta}[o]{}",
+    "oy$": "{yanta}[o]{}",
+    "ou": "{uure}[o]{}",
+    "ói": "{yanta}[double-o]{}",
+    "óu": "{uure}[double-o]{}",
 
-		"oi":		"{yanta}[o]{}",
-		"oy$":		"{yanta}[o]{}",
-		"ou":		"{uure}[o]{}",
-		"ói":		"{yanta}[double-o]{}",
-		"óu":		"{uure}[double-o]{}",
+    "uy$": "{yanta}[u]{}", // Marks falling diphthong - vs. "ui$""
 
-		"uy$":		"{yanta}[u]{}",			// Marks falling diphthong - vs. "ui$""
+    // Falling diphthongs
+    "ia": "[double-dot-below][a]{}",
+    "ie": "[double-dot-below][e]{}",
+    "io": "[double-dot-below][o]{}",
+    "iu": "[double-dot-below][u]{}",
 
-		// Falling diphthongs
-		"ia":		"[double-dot-below][a]{}",
-		"ie":		"[double-dot-below][e]{}",
-		"io":		"[double-dot-below][o]{}",
-		"iu":		"[double-dot-below][u]{}",
+    "iá": "[double-dot-below]{long-carrier}[a]{}",
+    "ié": "[double-dot-below][double-e]{}",
+    "ió": "[double-dot-below][double-o]{}",
+    "iú": "[double-dot-below][double-u]{}",
 
-		"iá":		"[double-dot-below]{long-carrier}[a]{}",
-		"ié":		"[double-dot-below][double-e]{}",
-		"ió":		"[double-dot-below][double-o]{}",
-		"iú":		"[double-dot-below][double-u]{}",
+    // The tehtar of u-dipthongs may overlap
+    // Recommend using tengwar Telcontar for this purpose
+    "ua": "[a][u-curl]{}",
+    "ue": "[e][u-curl]{}",
+    "uo": "[o][u-curl]{}",
+    "ui": "[i][u-curl]{}",
 
-		// The tehtar of u-dipthongs may overlap
-		// Recommend using tengwar Telcontar for this purpose
-		"ua":		"[a][u-curl]{}",
-		"ue":		"[e][u-curl]{}",
-		"uo":		"[o][u-curl]{}",
-		"ui":		"[i][u-curl]{}",
+    "uá": "[u-curl]{long-carrier}[a]{}",
+    "ué": "[double-e][u-curl]{}",
+    "uó": "[double-o][u-curl]{}",
+    "uí": "[u-curl]{long-carrier}[i]{}",
 
-		"uá":		"[u-curl]{long-carrier}[a]{}",
-		"ué":		"[double-e][u-curl]{}",
-		"uó":		"[double-o][u-curl]{}",
-		"uí":		"[u-curl]{long-carrier}[i]{}",
+    // TRIPHTHONGS
+    "iai": "[double-dot-below]{yanta}[a]{}",
+    "iay$": "[double-dot-below]{yanta}[a]{}",
+    "iau": "[double-dot-below]{uure}[a]{}",
+    "iái": "[double-dot-below]{long-carrier}[a]{yanta}{}",
+    "iáu": "[double-dot-below]{long-carrier}[a]{uure}{}",
 
-		// TRIPHTHONGS
-		"iai":		"[double-dot-below]{yanta}[a]{}",
-		"iay$":		"[double-dot-below]{yanta}[a]{}",
-		"iau":		"[double-dot-below]{uure}[a]{}",
-		"iái":		"[double-dot-below]{long-carrier}[a]{yanta}{}",
-		"iáu":		"[double-dot-below]{long-carrier}[a]{uure}{}",
+    "iei": "[double-dot-below]{yanta}[e]{}",
+    "iey$": "[double-dot-below]{yanta}[e]{}",
+    "ieu": "[double-dot-below]{uure}[e]{}",
+    "iéi": "[double-dot-below]{yanta}[double-e]{}",
+    "iéu": "[double-dot-below]{uure}[double-e]{}",
 
-		"iei":		"[double-dot-below]{yanta}[e]{}",
-		"iey$":		"[double-dot-below]{yanta}[e]{}",
-		"ieu":		"[double-dot-below]{uure}[e]{}",
-		"iéi":		"[double-dot-below]{yanta}[double-e]{}",
-		"iéu":		"[double-dot-below]{uure}[double-e]{}",
+    "ioi": "[double-dot-below]{yanta}[o]{}",
+    "ioy$": "[double-dot-below]{yanta}[o]{}",
+    "iou": "[double-dot-below]{uure}[o]{}",
+    "iói": "[double-dot-below]{yanta}[double-o]{}",
+    "ióu": "[double-dot-below]{uure}[double-o]{}",
 
-		"ioi":		"[double-dot-below]{yanta}[o]{}",
-		"ioy$":		"[double-dot-below]{yanta}[o]{}",
-		"iou":		"[double-dot-below]{uure}[o]{}",
-		"iói":		"[double-dot-below]{yanta}[double-o]{}",
-		"ióu":		"[double-dot-below]{uure}[double-o]{}",
+    "iuy$": "[double-dot-below]{yanta}[u]{}",
 
-		"iuy$":		"[double-dot-below]{yanta}[u]{}",
+    "uai": "[u-curl]{yanta}[a]{}",
+    "uay$": "[u-curl]{yanta}[a]{}",
+    "uau": "[u-curl]{uure}[a]{}",
+    "uái": "[u-curl]{long-carrier}[a]{yanta}{}",
+    "uáu": "[u-curl]{long-carrier}[a]{uure}{}",
 
-		"uai":		"[u-curl]{yanta}[a]{}",
-		"uay$":		"[u-curl]{yanta}[a]{}",
-		"uau":		"[u-curl]{uure}[a]{}",
-		"uái":		"[u-curl]{long-carrier}[a]{yanta}{}",
-		"uáu":		"[u-curl]{long-carrier}[a]{uure}{}",
+    "uei": "[u-curl]{yanta}[e]{}",
+    "uey$": "[u-curl]{yanta}[e]{}",
+    "ueu": "[u-curl]{uure}[e]{}",
+    "uéi": "[u-curl]{yanta}[double-e]{}",
+    "uéu": "[u-curl]{uure}[double-e]{}",
 
-		"uei":		"[u-curl]{yanta}[e]{}",
-		"uey$":		"[u-curl]{yanta}[e]{}",
-		"ueu":		"[u-curl]{uure}[e]{}",
-		"uéi":		"[u-curl]{yanta}[double-e]{}",
-		"uéu":		"[u-curl]{uure}[double-e]{}",
+    "uoi": "[u-curl]{yanta}[o]{}",
+    "uoy$": "[u-curl]{yanta}[o]{}",
+    "uou": "[u-curl]{uure}[o]{}",
+    "uói": "[u-curl]{yanta}[double-o]{}",
+    "uóu": "[u-curl]{uure}[double-o]{}",
 
-		"uoi":		"[u-curl]{yanta}[o]{}",
-		"uoy$":		"[u-curl]{yanta}[o]{}",
-		"uou":		"[u-curl]{uure}[o]{}",
-		"uói":		"[u-curl]{yanta}[double-o]{}",
-		"uóu":		"[u-curl]{uure}[double-o]{}",
+    // OTHER THREE-VOWEL COMBINATIONS
+    // The diphthong in those cases is with the second and third vowels
+    "aia": "[a]{short-carrier}[double-dot-below][a]{}",
+    "aie": "[a]{short-carrier}[double-dot-below][e]{}",
+    "aio": "[a]{short-carrier}[double-dot-below][o]{}",
+    "aiu": "[a]{short-carrier}[double-dot-below][u]{}",
+    "aiá": "[a]{short-carrier}[double-dot-below]{long-carrier}[a]{}",
+    "aié": "[a]{short-carrier}[double-dot-below][double-e]{}",
+    "aió": "[a]{short-carrier}[double-dot-below][double-o]{}",
+    "aiú": "[a]{short-carrier}[double-dot-below][double-u]{}",
+    "aua": "[a]{short-carrier}[a][u-curl]{}",
+    "aue": "[a]{short-carrier}[e][u-curl]{}",
+    "auo": "[a]{short-carrier}[o][u-curl]{}",
+    "aui": "[a]{short-carrier}[i][u-curl]{}",
+    "auá": "[a]{short-carrier}[u-curl]{long-carrier}[a]{}",
+    "aué": "[a]{short-carrier}[double-e][u-curl]{}",
+    "auó": "[a]{short-carrier}[double-o][u-curl]{}",
+    "auí": "[a]{short-carrier}[u-curl]{long-carrier}[i]{}",
 
-		// OTHER THREE-VOWEL COMBINATIONS
-		// The diphthong in those cases is with the second and third vowels
-		"aia":		"[a]{short-carrier}[double-dot-below][a]{}",
-		"aie":		"[a]{short-carrier}[double-dot-below][e]{}",
-		"aio":		"[a]{short-carrier}[double-dot-below][o]{}",
-		"aiu":		"[a]{short-carrier}[double-dot-below][u]{}",
-		"aiá":		"[a]{short-carrier}[double-dot-below]{long-carrier}[a]{}",
-		"aié":		"[a]{short-carrier}[double-dot-below][double-e]{}",
-		"aió":		"[a]{short-carrier}[double-dot-below][double-o]{}",
-		"aiú":		"[a]{short-carrier}[double-dot-below][double-u]{}",
-		"aua":		"[a]{short-carrier}[a][u-curl]{}",
-		"aue":		"[a]{short-carrier}[e][u-curl]{}",
-		"auo":		"[a]{short-carrier}[o][u-curl]{}",
-		"aui":		"[a]{short-carrier}[i][u-curl]{}",
-		"auá":		"[a]{short-carrier}[u-curl]{long-carrier}[a]{}",
-		"aué":		"[a]{short-carrier}[double-e][u-curl]{}",
-		"auó":		"[a]{short-carrier}[double-o][u-curl]{}",
-		"auí":		"[a]{short-carrier}[u-curl]{long-carrier}[i]{}",
+    "eia": "[e]{short-carrier}[double-dot-below][a]{}",
+    "eie": "[e]{short-carrier}[double-dot-below][e]{}",
+    "eio": "[e]{short-carrier}[double-dot-below][o]{}",
+    "eiu": "[e]{short-carrier}[double-dot-below][u]{}",
+    "eiá": "[e]{short-carrier}[double-dot-below]{long-carrier}[a]{}",
+    "eié": "[e]{short-carrier}[double-dot-below][double-e]{}",
+    "eió": "[e]{short-carrier}[double-dot-below][double-o]{}",
+    "eiú": "[e]{short-carrier}[double-dot-below][double-u]{}",
+    "eua": "[e]{short-carrier}[a][u-curl]{}",
+    "eue": "[e]{short-carrier}[e][u-curl]{}",
+    "euo": "[e]{short-carrier}[o][u-curl]{}",
+    "eui": "[e]{short-carrier}[i][u-curl]{}",
+    "euá": "[e]{short-carrier}[u-curl]{long-carrier}[a]{}",
+    "eué": "[e]{short-carrier}[double-e][u-curl]{}",
+    "euó": "[e]{short-carrier}[double-o][u-curl]{}",
+    "euí": "[e]{short-carrier}[u-curl]{long-carrier}[i]{}",
 
-		"eia":		"[e]{short-carrier}[double-dot-below][a]{}",
-		"eie":		"[e]{short-carrier}[double-dot-below][e]{}",
-		"eio":		"[e]{short-carrier}[double-dot-below][o]{}",
-		"eiu":		"[e]{short-carrier}[double-dot-below][u]{}",
-		"eiá":		"[e]{short-carrier}[double-dot-below]{long-carrier}[a]{}",
-		"eié":		"[e]{short-carrier}[double-dot-below][double-e]{}",
-		"eió":		"[e]{short-carrier}[double-dot-below][double-o]{}",
-		"eiú":		"[e]{short-carrier}[double-dot-below][double-u]{}",
-		"eua":		"[e]{short-carrier}[a][u-curl]{}",
-		"eue":		"[e]{short-carrier}[e][u-curl]{}",
-		"euo":		"[e]{short-carrier}[o][u-curl]{}",
-		"eui":		"[e]{short-carrier}[i][u-curl]{}",
-		"euá":		"[e]{short-carrier}[u-curl]{long-carrier}[a]{}",
-		"eué":		"[e]{short-carrier}[double-e][u-curl]{}",
-		"euó":		"[e]{short-carrier}[double-o][u-curl]{}",
-		"euí":		"[e]{short-carrier}[u-curl]{long-carrier}[i]{}",
+    "oia": "[o]{short-carrier}[double-dot-below][a]{}",
+    "oie": "[o]{short-carrier}[double-dot-below][e]{}",
+    "oio": "[o]{short-carrier}[double-dot-below][o]{}",
+    "oiu": "[o]{short-carrier}[double-dot-below][u]{}",
+    "oiá": "[o]{short-carrier}[double-dot-below]{long-carrier}[a]{}",
+    "oié": "[o]{short-carrier}[double-dot-below][double-e]{}",
+    "oió": "[o]{short-carrier}[double-dot-below][double-o]{}",
+    "oiú": "[o]{short-carrier}[double-dot-below][double-u]{}",
+    "oua": "[o]{short-carrier}[a][u-curl]{}",
+    "oue": "[o]{short-carrier}[e][u-curl]{}",
+    "ouo": "[o]{short-carrier}[o][u-curl]{}",
+    "oui": "[o]{short-carrier}[i][u-curl]{}",
+    "ouá": "[o]{short-carrier}[u-curl]{long-carrier}[a]{}",
+    "oué": "[o]{short-carrier}[double-e][u-curl]{}",
+    "ouó": "[o]{short-carrier}[double-o][u-curl]{}",
+    "ouí": "[o]{short-carrier}[u-curl]{long-carrier}[i]{}",
 
-		"oia":		"[o]{short-carrier}[double-dot-below][a]{}",
-		"oie":		"[o]{short-carrier}[double-dot-below][e]{}",
-		"oio":		"[o]{short-carrier}[double-dot-below][o]{}",
-		"oiu":		"[o]{short-carrier}[double-dot-below][u]{}",
-		"oiá":		"[o]{short-carrier}[double-dot-below]{long-carrier}[a]{}",
-		"oié":		"[o]{short-carrier}[double-dot-below][double-e]{}",
-		"oió":		"[o]{short-carrier}[double-dot-below][double-o]{}",
-		"oiú":		"[o]{short-carrier}[double-dot-below][double-u]{}",
-		"oua":		"[o]{short-carrier}[a][u-curl]{}",
-		"oue":		"[o]{short-carrier}[e][u-curl]{}",
-		"ouo":		"[o]{short-carrier}[o][u-curl]{}",
-		"oui":		"[o]{short-carrier}[i][u-curl]{}",
-		"ouá":		"[o]{short-carrier}[u-curl]{long-carrier}[a]{}",
-		"oué":		"[o]{short-carrier}[double-e][u-curl]{}",
-		"ouó":		"[o]{short-carrier}[double-o][u-curl]{}",
-		"ouí":		"[o]{short-carrier}[u-curl]{long-carrier}[i]{}",
+    "iua": "[i]{short-carrier}[a][u-curl]{}",
+    "iue": "[i]{short-carrier}[e][u-curl]{}",
+    "iuo": "[i]{short-carrier}[o][u-curl]{}",
+    "iui": "[i]{short-carrier}[i][u-curl]{}",
+    "iuá": "[i]{short-carrier}[u-curl]{long-carrier}[a]{}",
+    "iué": "[i]{short-carrier}[double-e][u-curl]{}",
+    "iuó": "[i]{short-carrier}[double-o][u-curl]{}",
+    "iuí": "[i]{short-carrier}[u-curl]{long-carrier}[i]{}",
 
-		"iua":		"[i]{short-carrier}[a][u-curl]{}",
-		"iue":		"[i]{short-carrier}[e][u-curl]{}",
-		"iuo":		"[i]{short-carrier}[o][u-curl]{}",
-		"iui":		"[i]{short-carrier}[i][u-curl]{}",
-		"iuá":		"[i]{short-carrier}[u-curl]{long-carrier}[a]{}",
-		"iué":		"[i]{short-carrier}[double-e][u-curl]{}",
-		"iuó":		"[i]{short-carrier}[double-o][u-curl]{}",
-		"iuí":		"[i]{short-carrier}[u-curl]{long-carrier}[i]{}",
+    "uia": "[i]{short-carrier}[double-dot-below][a]{}",
+    "uie": "[i]{short-carrier}[double-dot-below][e]{}",
+    "uio": "[i]{short-carrier}[double-dot-below][o]{}",
+    "uiu": "[i]{short-carrier}[double-dot-below][u]{}",
+    "uiá": "[i]{short-carrier}[double-dot-below]{long-carrier}[a]{}",
+    "uié": "[i]{short-carrier}[double-dot-below][double-e]{}",
+    "uió": "[i]{short-carrier}[double-dot-below][double-o]{}",
+    "uiú": "[i]{short-carrier}[double-dot-below][double-u]{}",
 
-		"uia":		"[i]{short-carrier}[double-dot-below][a]{}",
-		"uie":		"[i]{short-carrier}[double-dot-below][e]{}",
-		"uio":		"[i]{short-carrier}[double-dot-below][o]{}",
-		"uiu":		"[i]{short-carrier}[double-dot-below][u]{}",
-		"uiá":		"[i]{short-carrier}[double-dot-below]{long-carrier}[a]{}",
-		"uié":		"[i]{short-carrier}[double-dot-below][double-e]{}",
-		"uió":		"[i]{short-carrier}[double-dot-below][double-o]{}",
-		"uiú":		"[i]{short-carrier}[double-dot-below][double-u]{}",
+    // ----------------------------------------------------------------------------
+    // CONSONANTS
+    //
 
+    "b": "{umbar}",
+    "c": "{quesse}",
+    "ch": "{calma}",
+    "d": "{ando}",
+    "f": "{formen}",
+    "g": "{ungwe}",
+    "h": "{hyarmen}",
+    "j": "{hwesta}",
+    "k": "{quesse}",
+    "l": "{lambe}",
+    "ll": "{alda}",
+    "m": "{malta}",
+    "n": "{nuumen}",
+    "ñ": "{noldo}",
+    "p": "{parma}",
+    "q": "{quesse}", // normally replaced in preprocessing
+    "r": "{oore}", // "Soft" "r"
+    "rr": "{roomen}", // "Hard" "r"
+    "s": "{silme}",
+    "s$": "[sa-rince]", // Final "s"
+    "t": "{tinco}",
+    "v": "{ampa}",
+    "w": "{vala}",
+    "x": "{calma}[x-curl]",
+    "y": "{anca}",
+    "z": "{suule}",
 
+    // Combinations with "m/n" -- nasalized consonants
+    "nt": "{tinco}[tilde-above]",
+    "mp": "{parma}[tilde-above]",
+    "nch": "{calma}[tilde-above]",
+    "nc": "{quesse}[tilde-above]",
+    "nk": "{quesse}[tilde-above]",
+    "nd": "{ando}[tilde-above]",
+    "mb": "{umbar}[tilde-above]",
+    "ng": "{ungwe}[tilde-above]"
+  },
 
-		// ----------------------------------------------------------------------------
-		// CONSONANTS
-		//
-
-		"b":			"{umbar}",
-		"c":			"{quesse}",
-		"ch":			"{calma}",
-		"d":			"{ando}",
-		"f":			"{formen}",
-		"g":			"{ungwe}",
-		"h":			"{hyarmen}",
-		"j":			"{hwesta}",
-		"k":			"{quesse}",
-		"l":			"{lambe}",
-		"ll":			"{alda}",
-		"m":			"{malta}",
-		"n":			"{nuumen}",
-		"ñ":			"{noldo}",
-		"p":			"{parma}",
-		"q":			"{quesse}",			// normally replaced in preprocessing
-		"r":			"{oore}",			// "Soft" "r"
-		"rr":			"{roomen}",			// "Hard" "r"
-		"s":			"{silme}",
-		"s$":			"[sa-rince]",			// Final "s"
-		"t":			"{tinco}",
-		"v":			"{ampa}",
-		"w":			"{vala}",
-		"x":			"{calma}[x-curl]",
-		"y":			"{anca}",
-		"z":			"{suule}",
-
-		// Combinations with "m/n" -- nasalized consonants
-		"nt":		"{tinco}[tilde-above]",
-		"mp":		"{parma}[tilde-above]",
-		"nch":		"{calma}[tilde-above]",
-		"nc":		"{quesse}[tilde-above]",
-		"nk":		"{quesse}[tilde-above]",
-		"nd":		"{ando}[tilde-above]",
-		"mb":		"{umbar}[tilde-above]",
-		"ng":		"{ungwe}[tilde-above]"
-		
-	},
-
-	"words": {
-	}
-
-
-	}
+  "words": {}
+}
