@@ -236,6 +236,7 @@
     // For Unicode fonts, rendering vowel+nasalized consonant look better if
     // the vowel is after (above) the bar:
     "anc": "[tilde-above][a]{quesse}",
+    "anci": "[tilde-above][a]{silme-nuquerna}[i]",
     "anch": "[tilde-above][a]{calma}",
     // except melancholy, melancholic, anchor, anchorage, anchoring,
     // anchorman, anchormen
@@ -245,6 +246,17 @@
     "inch": "[tilde-above][i]{calma}",
     // Except inchoate
     "onc": "[tilde-above][o]{quesse}",
+    // Override "onc" rule when followed by e -> soft-C
+    "ance": "[tilde-above][a]{silme-nuquerna}[e]",
+    "ance$": "[tilde-above][a][dot-below]{silme-nuquerna}",
+    "ence": "[tilde-above][e]{silme-nuquerna}[e]",
+    "ence$": "[tilde-above][e][dot-below]{silme-nuquerna}",
+    "ince": "[tilde-above][i]{silme-nuquerna}[e]",
+    "ince$": "[tilde-above][i][dot-below]{silme-nuquerna}",
+    "once": "[tilde-above][o]{silme-nuquerna}[e]",
+    "once$": "[tilde-above][o][dot-below]{silme-nuquerna}",
+    "unce": "[tilde-above][u]{silme-nuquerna}[e]",
+    "unce$": "[tilde-above][u][dot-below]{silme-nuquerna}",
     "onch": "[tilde-above][o]{calma}",
     // Except bronchitis, bronchoscope,
     "unc": "[tilde-above][u]{quesse}",
@@ -333,7 +345,7 @@
     "ci$": "{}{calma}[i]", // CH, e.g. "domenici" except S (ceci, medici, vinci) or K (loci)
     "cy$": "{}{silme-nuquerna}[chevron]{short-carrier}", // "icy"
 
-    // soft-c uses silme-nuquerna
+    // soft-C uses silme-nuquerna
     "ce": "{silme-nuquerna}[e]",
     "ci": "{}{silme-nuquerna}[i]",
     "cy": "{}[chevron]{silme-nuquerna}",
