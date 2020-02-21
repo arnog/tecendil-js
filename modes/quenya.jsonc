@@ -274,7 +274,7 @@ accent - lambe - malta + right curl.
     "mm": "{malta}[bar-below]", // "eMMa"
     "nn": "{nuumen}[bar-below]", // "aNNa"
     "pp": "{parma}[bar-below]", // "naPPa"
-    "rr": "{romen}[bar-below]", // "Palarran"
+    "rr": "{roomen}[bar-below]", // "Palarran"
     "ss": "{esse}", // "aSSa"
     "tt": "{tinco}[bar-below]" // "aTTa"
   },
