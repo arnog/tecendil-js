@@ -1,12 +1,13 @@
 {
     "en": {
-        "warning.spanish": "<p><b>PRECAUCIÓN</b> Para transcribir una oración o nombre en español, use el modo <kbd>español</kbd>.</p>",
+        "warning.spanish": "<p><b>PRECAUCIÓN</b> Para transcribir una oración o nombre en español, use el modo <kbd>Español</kbd>.</p>",
+        "warning.italian": "<p><b>ATTTENZIONE</b> Per trascrivere una frase o un nome in italiano, utilizzare la modalità <kbd>italianio<kbd>.</p>",
         "warning.elvish": "<p><b>CAUTION</b> This doesn't look like English. Is this Sindarin or Quenya? For an accurate transcription, select the Sindarin, Quenya or Beleriand mode.</p>",
         "warning.general": "<p><b>CAUTION</b> This transcriber only works well for English, Spanish, Sindarin or Quenya. The result may be inaccurate otherwise.</p>",
         "warning.english": "<p><b>CAUTION</b> Tecendil does not translate. What you typed looks like English. For an accurate transcription, select an English mode.</p>",
 
         "font-name.annatar-italic": "Annatar Italic",
-        "label.font": "Font:",
+        "label.font": "Font: ",
         "label.mode.english": "English",
         "label.mode.english-classical": "English Traditional",
         "label.mode.english-phonemic": "English Phonemic",
@@ -15,7 +16,7 @@
         "label.mode.quenya": "Quenya",
         "label.mode.beleriand": "Beleriand",
         "label.mode.erebor": "Cirth",
-        "label.mode": "Mode:",
+        "label.mode": "Mode: ",
         "menu.home": "Home",
         "menu.handbook": "Tengwar Handbook",
         "menu.whats-new": "What’s New",
@@ -207,7 +208,8 @@
         "footer.contact": "Vous avez une question? Vous avez des commentaires? Voulez-vous vérifier une transcription? Il suffit de demander: ",
         "footer.support-intro": "Vous appréciez Tecendil?",
         "footer.patreon": "Soutenez-moi sur Patreon",
-        "footer.paypal": "Faites une donation avec PayPal"
+        "footer.paypal": "Faites une donation avec PayPal",
+        "prompt.drop": "Déposez un fichier n‘importe où pour le transcrire."
     },
     "es": {
         "the-tengwar-transcriber": "El transcriptor de Tengwar",
