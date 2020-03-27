@@ -106,10 +106,10 @@
         "ci": "{calma}[i]",
         "ce": "{calma}[e]",
         "cie": "{calma}[e]",
-        "cìa": "{calma}{short carrier}[a]",
-        "cìe": "{calma}{short carrier}[e]",
-        "cii": "{calma}{short carrier}[i]{short carrier}[i]",
-        "cìo": "{calma}{short carrier}[o]",
+        "cìa": "{calma}{short-carrier}[a]",
+        "cìe": "{calma}{short-carrier}[e]",
+        "cii": "{calma}{short-carrier}[i]{short-carrier}[i]",
+        "cìo": "{calma}{short-carrier}[o]",
         "d": "{ando}",
         "dh": "{anto}",
         "f": "{formen}",
@@ -168,7 +168,7 @@
         "ñw": "{nwalme}", // Very rare
         "^nw": "{nwalme}", // "NWalmë"
         "p": "{parma}",
-        "ph": "{formen-extended}",
+        "ph": "{formen}",
         "py": "{parma}[double-dot-below]",
         "qu": "{hwesta}", // Swallow the "u"
         "q": "{hwesta}",
