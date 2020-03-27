@@ -1,0 +1,320 @@
+//------------------------------------------------------------------------------------
+//
+// ITALIAN MODE
+//
+// Contributed by Guido Gyrthrim
+//
+//------------------------------------------------------------------------------------
+{
+    "name": "italian",
+    "languageCode": "it", // Italian ISO 639-2
+
+    // ciao come stai = hello how are you = {calma}[a]{telco}[o] {quesse}[o]{malta}[e] {silme}{tinco}{yanta}[a]
+
+    "normalizevowels": true,
+
+    "tehtarFollow": false,
+
+    "preprocess": {
+        // Disambiguate ch -> k
+        "ch": "k"
+    },
+
+    "words": {
+        // ciao = hello = {calma}[a]{telco}[o]
+        // come = how = {quesse}[o]{malta}[e]
+        // gatto = cat = {ungwe}[a]{tinco}[bar-below][o]
+        // casa = house = {quesse}[a]{silme-nuquerna}[a]
+        // piazza = {parma}[i]{telco}[a]{esse-nuquerna}[bar-below][a]
+    },
+
+    "map": {
+        //---------------------------------------------------------------------------------
+        //
+        // VOWELS
+        //
+
+        // Accented Vowels
+        // Italian does not have long vowels. Accents indicate stress, and
+        // it is significant to distinguish some words (e.g. "incanto" (enchantment) and "incantó" (enchanted)
+        "à": "{long-carrier}[a]",
+        "è": "{long-carrier}[e]",
+        "ì": "{long-carrier}[i]",
+        "ò": "{long-carrier}[o]",
+        "ù": "{long-carrier}[u]",
+
+        // ----------------------------------------------------------------------------
+        //
+        // DIPHTHONGS
+        //
+
+        "ai": "{yanta}[a]",
+        "au": "{uure}[a]",
+        "aia": "{yanta}[a]{short-carrier}[a]",
+        "ae": "[a]{yanta}", // ??
+        "ei": "{short-carrier}[e]{short-carrier}[i]",
+        "ea": "[e]{short-carrier}[a]",
+        "eo": "[e]{short-carrier}[o]", // ??
+        "eu": "{uure}[e]",
+
+        "ia": "[i]{short-carrier}[a]", // ??
+        "iau": "[i]{uure}[a]",
+        "ie": "[i]{short-carrier}[e]",
+        "ìe": "{long-carrier}[i]{short-carrier}[e]",
+        "io": "[i]{short-carrier}[o]",
+        "iu": "[i]{short-carrier}[u]",
+
+        "oa": "[o]{short-carrier}[a]",
+        "oi": "{yanta}[o]",
+        "oia": "{yanta}[o]{short-carrier}[a]",
+        "oio": "{yanta}[o]{short-carrier}[o]",
+        "ii": "{short-carrier}[i]{short-carrier}[i]",
+
+        "ui": "{yanta}[u]",
+        "uia": "{yanta}[u]{short-carrier}[a]",
+        "uiu": "{yanta}[u]{short-carrier}[u]",
+        "ua": "[u]{short-carrier}[a]",
+        "uo": "[u]{short-carrier}[o]",
+
+        "ya": "{anna}[double-dot-below][a]",
+        "ye": "{anna}[double-dot-below][e]",
+        "yo": "{anna}[double-dot-below][o]",
+        "yu": "{anna}[double-dot-below][u]",
+
+        "yà": "{anna}[double-dot-below]{long-carrier}[a]",
+        "yè": "{anna}[double-dot-below]{long-carrier}[e]",
+        "yù": "{anna}[double-dot-below]{long-carrier}[u]",
+        "yò": "{anna}[double-dot-below]{long-carrier}[o]",
+
+        //---------------------------------------------------------------------------
+        //
+        //CONSONANTS
+        //
+
+        "b": "{umbar}",
+        "c": "{calma}",
+        "ca": "{quesse}[a]",
+        "co": "{quesse}[o]",
+        "cu": "{quesse}[u]",
+        "chi": "{quesse}[i]",
+        "che": "{quesse}[e]",
+        "chr": "{extended-quesse}{roomen}",
+        "cia": "{calma}[a]",
+        "cio": "{calma}[o]",
+        "ciò": "{calma}{long-carrier}[o]",
+        "ciu": "{calma}[u]",
+        "ci": "{calma}[i]",
+        "ce": "{calma}[e]",
+        "cie": "{calma}[e]",
+        "cìa": "{calma}{short carrier}[a]",
+        "cìe": "{calma}{short carrier}[e]",
+        "cii": "{calma}{short carrier}[i]{short carrier}[i]",
+        "cìo": "{calma}{short carrier}[o]",
+        "d": "{ando}",
+        "dh": "{anto}",
+        "f": "{formen}",
+        "g": "{ungwe}",
+        "ghi": "{ungwe}[i]",
+        "ghe": "{ungwe}[e]",
+        "gi": "{anga}[i]",
+        "ge": "{anga}[e]",
+        "ga": "{ungwe}[a]",
+        "go": "{ungwe}[o]",
+        "gu": "{ungwe}[u]",
+        "gia": "{anga}[a]",
+        "gio": "{anga}[o]",
+        "giu": "{anga}[u]",
+        "giù": "{anga}{long-carrier}[u]",
+        "già": "{anga}{long-carrier}[a]",
+        "gìa": "{anga}{short-carrier}[a]",
+        "gìe": "{anga}{short-carrier}[e]",
+        "gìo": "{anga}{short-carrier}[o]",
+        "gii": "{anga}{short-carrier}[i]{short-carrier}[i]",
+        "h": "{hyarmen}",
+        "ha": "{hyarmen}[a]",
+        "hai": "{hyarmen}{anna}[a]",
+        "hau": "{hyarmen}[a]{short-carrier}[u]",
+        "he": "{hyarmen}[e]",
+        "hea": "{hyarmen}[e]{short-carrier}[a]",
+        "hi": "{hyarmen}[i]",
+        "hie": "{hyarmen}[i]{short-carrier}[e]",
+        "hiu": "{hyarmen}[i]{short-carrier}[u]",
+        "ho": "{hyarmen}[o]",
+        "hoa": "{hyarmen}[o]{short-carrier}[a]",
+        "hu": "{hyarmen}[u]",
+        "hua": "{hyarmen}[u]{short-carrier}[a]",
+        "hue": "{hyarmen}[u]{short-carrier}[e]",
+        "hui": "{hyarmen}{yanta}[u]",
+        "huo": "{hyarmen}[u]{short-carrier}[o]",
+        "hà": "{hyarmen}{long-carrier}[a]",
+        "hè": "{hyarmen}{long-carrier}[e]",
+        "hì": "{hyarmen}{long-carrier}[i]",
+        "hò": "{hyarmen}{long-carrier}[o]",
+        "hù": "{hyarmen}{long-carrier}[u]",
+
+        "hl": "{halla}{lambe}",
+        "hr": "{halla}{roomen}",
+
+        "k": "{quesse}",
+        "kw": "{quesse}",
+        "hw": "{hwesta}",
+        "l": "{lambe}",
+        "lb": "{lambe}{umbar}",
+        "ld": "{alda}",
+        "m": "{malta}",
+        "n": "{nuumen}",
+        "ñ": "{noldo}", // Very rare
+        "ngw": "{ungwe}",
+        "ñw": "{nwalme}", // Very rare
+        "^nw": "{nwalme}", // "NWalmë"
+        "p": "{parma}",
+        "ph": "{formen-extended}",
+        "py": "{parma}[double-dot-below]",
+        "qu": "{hwesta}", // Swallow the "u"
+        "q": "{hwesta}",
+        "r": "{oore}", // Lonely R is not voiced, so use {oore}
+        // The rules below (ra, re...) handle R + vowel
+        "r$": "{oore}",
+
+        // r is oore before a consonant or if final, but it is roomen if it is before a vowel.
+
+        "ra": "{roomen}[a]{}",
+        "re": "{roomen}[e]{}",
+        "ri": "{roomen}[i]{}",
+        "ro": "{roomen}[o]{}",
+        "ru": "{roomen}[u]{}",
+        "rà": "{roomen}{long-carrier}[a]{}",
+        "rè": "{roomen}{long-carrier}[e]{}",
+        "rì": "{roomen}{long-carrier}[i]{}",
+        "rò": "{roomen}{long-carrier}[o]{}",
+        "rù": "{roomen}{long-carrier}[u]{}",
+        "rb": "{roomen}{umbar}",
+        "rd": "{arda}",
+        "s": "{silme}",
+        "ssa": "{silme-nuquerna}[bar-below][a]",
+        "sse": "{silme-nuquerna}[bar-below][e]",
+        "ssi": "{silme-nuquerna}[bar-below][i]",
+        "sso": "{silme-nuquerna}[bar-below][o]",
+        "ssu": "{silme-nuquerna}[bar-below][u]",
+        "sa": "{silme-nuquerna}[a]",
+        "se": "{silme-nuquerna[e]}",
+        "si": "{silme-nuquerna}[i]",
+        "so": "{silme-nuquerna[o]}",
+        "su": "{silme-nuquerna}[u]",
+        "t": "{tinco}",
+        "th": "{suule}",
+        "þ": "{suule}",
+        "v": "{ampa}",
+        "w": "{vilya}",
+        "x": "{quesse}[x-curl]",
+        "y": "{anna}[double-dot-below]",
+        "z": "{esse}",
+        "za": "{esse-nuquerna}[a]",
+        "ze": "{esse-nuquerna}[e]",
+        "zi": "{esse-nuquerna}[i]",
+        "zo": "{esse-nuquerna}[o]",
+        "zu": "{esse-nuquerna}[u]",
+        "zz": "{esse-nuquerna}[bar-below]",
+        "zza": "{esse-nuquerna}[bar-below][a]",
+        "zze": "{esse-nuquerna}[bar-below][e]",
+        "zzi": "{esse-nuquerna}[bar-below][i]",
+        "zzo": "{esse-nuquerna}[bar-below][o]",
+        "zzu": "{esse-nuquerna}[bar-below][u]",
+
+        // Clusters with "s"
+        "st": "{silme}{tinco}",
+        "sty": "{silme}{tinco}[double-dot-below]",
+        "sc": "{silme}{quesse}",
+        "sci": "{aha}[i]",
+        "scia": "{aha}[a]",
+        "sce": "{aha}",
+        "scie": "{aha}[e]",
+        "scio": "{aha}[o]",
+        "sciu": "{aha}[u]",
+        "scìa": "{aha}[i]{short-carrier}[a]",
+        "scìe": "{aha}[i]{short-carrier}[e]",
+        "scìo": "{aha}[i]{short-carrier}[o]",
+        "sq": "{silme}{hwesta}",
+        "sw": "{suule}{vilya}",
+        "rs": "{oore}{silme-nuquerna}",
+        "rsa": "{oore}{silme-nuquerna}[a]",
+        "rse": "{oore}{silme-nuquerna}[e]",
+        "rsi": "{oore}{silme-nuquerna}[i]",
+        "ros": "{oore}{silme-nuquerna}[o]",
+        "rsu": "{oore}{silme-nuquerna}[u]",
+
+        // Combinations with "m/n" -- nasalized consonants
+        "nc": "[bar-above]{quesse}",
+        "nca": "[bar-above]{quesse}[a]",
+        "nco": "[bar-above]{quesse}[o]",
+        "ncu": "[bar-above]{quesse}[u]",
+        "nche": "[bar-above]{quesse}[e]",
+        "nchi": "[bar-above]{quesse}[i]",
+        "ncia": "[bar-above]{calma}[a]",
+        "nce": "[bar-above]{calma}[e]",
+        "ncie": "[bar-above]{calma}[e]",
+        "ncio": "[bar-above]{calma}[o]",
+        "nci": "[bar-above]{calma}[i]",
+        "nciu": "[bar-above]{calma}[u]",
+        "nk": "[bar-above]{quesse}",
+        "nd": "[bar-above]{ando}",
+        "ng": "[bar-above]{ungwe}",
+        "nga": "[bar-above]{ungwe}[a]",
+        "nghe": "[bar-above]{ungwe}[e]",
+        "nghi": "[bar-above]{ungwe}[i]",
+        "ngo": "[bar-above]{ungwe}[o]",
+        "ngu": "[bar-above]{ungwe}[u]",
+        "ngia": "[bar-above]{anga}[a]",
+        "nge": "[bar-above]{anga}[e]",
+        "ngie": "[bar-above]{anga}[e]",
+        "ngi": "[bar-above]{anga}[i]",
+        "ngio": "[bar-above]{anga}[o]",
+        "ngiu": "[bar-above]{anga}[u]",
+        "nt": "[bar-above]{tinco}",
+        "nq": "[bar-above]{hwesta}",
+        "mb": "[bar-above]{umbar}",
+        "mp": "[bar-above]{parma}",
+        "ns": "[bar-above]{silme-nuquerna}",
+        "nr": "[bar-above]{roomen}",
+        "nl": "[bar-above]{lambe}",
+
+        // Combinations with "s"
+        "ts": "{tinco}[sa-rince]",
+        "ps": "{parma}[sa-rince]",
+        "cs": "{quesse}[x-curl]",
+        "ks": "{quesse}[x-curl]",
+
+        // Combinations with "y"
+        "ndy": "[bar-above]{ando}[double-dot-below]",
+        "nty": "[bar-above]{tinco}[double-dot-below]",
+        "ny": "{nuumen}[double-dot-below]",
+        "gn": "{nuumen}[double-dot-below]", //"gn" has the sound of the quenya "ny", in italian
+        "my": "{malta}[double-dot-below]",
+        "ty": "{tinco}[double-dot-below]",
+        "ry": "{roomen}[double-dot-below]",
+        "ly": "{lambe}[double-dot-inside]",
+        "gl": "{lambe}[double-dot-inside]",
+        "hy": "{hyarmen}[double-dot-below]",
+
+        // ----------------------------------------------------------------------------
+        //
+        // GEMINATED CONSONANTS.
+
+        "cc": "{calma}[bar-below]",
+        "cch": "{calma}[bar-below]",
+        "cche": "{calma}[bar-below]",
+        "cchi": "{calma}[bar-below]",
+        "ccia": "{calma}[bar-below]",
+        "ccio": "{calma}[bar-below]",
+        "cciu": "{calma}[bar-below]",
+        "kk": "{quesse}[bar-below]",
+        "ff": "{formen}[bar-below]",
+        "ll": "{lambe}[bar-inside]",
+        "mm": "{malta}[bar-below]",
+        "nn": "{nuumen}[bar-below]",
+        "pp": "{parma}[bar-below]",
+        "rr": "{roomen}[bar-below]",
+        "ss": "{silme-nuquerna}[bar-below]",
+        "tt": "{tinco}[bar-below]"
+    }
+}
