@@ -98,7 +98,7 @@
         "cui": "{quesse}{yanta}[u]",
         "cau": "{quesse}{uure}[a]",
         "chiu": "{quesse}{uure}[i]",
-        "cqu": "{quesse-extended}"
+        "cqu": "{quesse-extended}",
         "ca": "{quesse}[a]",
         "co": "{quesse}[o]",
         "cu": "{quesse}[u]",
@@ -209,8 +209,8 @@
         "so": "{silme-nuquerna[o]",
         "su": "{silme-nuquerna}[u]",
         "sai": "{silme}{yanta}[a]",
-        "sui": "{silme}{yanta}[u]"
-        "sau": "{silme}{uure}[a]"
+        "sui": "{silme}{yanta}[u]",
+        "sau": "{silme}{uure}[a]",
         "t": "{tinco}",
         "th": "{suule}",
         "v": "{ampa}",
@@ -223,7 +223,6 @@
         "zi": "{esse-nuquerna}[i]",
         "zo": "{esse-nuquerna}[o]",
         "zu": "{esse-nuquerna}[u]",
-        "zz": "{esse-nuquerna}[bar-below]",
         "zza": "{esse-nuquerna}[bar-below][a]",
         "zze": "{esse-nuquerna}[bar-below][e]",
         "zzi": "{esse-nuquerna}[bar-below][i]",
@@ -301,7 +300,7 @@
         "mb": "{umbar}[bar-above]",
         "mp": "{parma}[bar-above]",
         "ns": "{silme-nuquerna}[bar-above]",
-        "nsai": "{silme-nuquerna}[bar-above]{yanta}[a]"
+        "nsai": "{silme-nuquerna}[bar-above]{yanta}[a]",
         "nr": "{roomen}[bar-above]",
         "nrai": "{roomen}[bar-above]{uure}[a]",
         "nl": "{lambe}[bar-above]",
@@ -380,9 +379,9 @@
         "ggiu": "{anga}[bar-below][u]",
         "ggià": "{anga}[bar-below]{long-carrier}[a]",
         "ggì": "{anga}[bar-below]{long-carrier}[i]",
-        "gge": "{anga}[bar-below]{long-carrier}[e]",
-        "ggio": "{anga}[bar-below]{long-carrier}[o]",
-        "ggiu": "{anga}[bar-below]{long-carrier}[u]",
+        "ggè": "{anga}[bar-below]{long-carrier}[e]",
+        "ggiò": "{anga}[bar-below]{long-carrier}[o]",
+        "ggiù": "{anga}[bar-below]{long-carrier}[u]",
         "ggai": "{ungwe}[bar-below]{yanta}[a]",
         "ggui": "{ungwe}[bar-below]{yanta}[u]",
         "ggau": "{ungwe}[bar-below]{uure}[a]",
@@ -395,13 +394,12 @@
         "rr": "{roomen}[bar-below]",
         "rrai": "{roomen}[bar-below]{uure}[a]",
         "ss": "{silme-nuquerna}[bar-below]",
-        "ssai": "{silme-nuquerna}[bar-below]{yanta}[a]"
-        "tt": "{tinco}[bar-below]"
-        "qq": "{hwesta}[bar-below]"
-        "vv": "{ampa}[bar-below]"
-        "bb": "{umbar}[bar-below]"
-        "dd": "{ando}[bar-below]"
-        "ff": "{formen}[bar-below]"
+        "ssai": "{silme-nuquerna}[bar-below]{yanta}[a]",
+        "tt": "{tinco}[bar-below]",
+        "qq": "{hwesta}[bar-below]",
+        "vv": "{ampa}[bar-below]",
+        "bb": "{umbar}[bar-below]",
+        "dd": "{ando}[bar-below]",
         "zz": "{esse-nuquerna}[bar-below]"
     }
 }
