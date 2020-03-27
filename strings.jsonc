@@ -9,13 +9,23 @@
         "font-name.annatar-italic": "Annatar Italic",
         "label.font": "Font: ",
         "label.mode.english": "English",
+        "menu.mode.english": "English",
         "label.mode.english-classical": "English Traditional",
+        "menu.mode.english-classical": "English Traditional",
         "label.mode.english-phonemic": "English Phonemic",
+        "menu.mode.english-phonemic": "English Phonemic",
         "label.mode.spanish": "Español",
+        "menu.mode.spanish": "Español (Spanish)",
+        "label.mode.italian": "Italian",
+        "menu.mode.italian": "Italiano (Italian)",
         "label.mode.sindarin": "Sindarin",
+        "menu.mode.sindarin": "Sindarin",
         "label.mode.quenya": "Quenya",
+        "menu.mode.quenya": "Quenya",
         "label.mode.beleriand": "Beleriand",
+        "menu.mode.beleriand": "Beleriand",
         "label.mode.erebor": "Cirth",
+        "menu.mode.erebor": "Cirth: Angerthas Erebor",
         "label.mode": "Mode: ",
         "menu.home": "Home",
         "menu.handbook": "Tengwar Handbook",
@@ -29,14 +39,6 @@
         "prompt.install": "For offline access, Tecendil can be installed on your device.",
         "button.not-now": "Not now",
         "button.install": "Install",
-        "menu.mode.english": "English",
-        "menu.mode.english-classical": "English Traditional",
-        "menu.mode.english-phonemic": "English Phonemic",
-        "menu.mode.spanish": "Español (Spanish)",
-        "menu.mode.sindarin": "Sindarin",
-        "menu.mode.quenya": "Quenya",
-        "menu.mode.beleriand": "Beleriand",
-        "menu.mode.erebor": "Cirth: Angerthas Erebor",
         "welcome": "Welcome to Tecendil",
         "welcome.1": "Hello! My name's Arno.",
         "welcome.2": "I love the beautiful Tengwar script created by Tolkien for the world of <i>Lord of the Rings</i>.",
@@ -84,6 +86,9 @@
         "label.mode.quenya": "Quenya",
         "label.mode.beleriand": "Beleriand",
         "label.mode.erebor": "Cirth",
+
+        "label.mode.italian": "Italienisch",
+        "menu.mode.italian": "Italiano (Italienisch)",
 
         "label.placeholder.try": "Versuchen: „${placeholder}“",
         "label.font": "Schriftart : ",
@@ -159,6 +164,9 @@
         "label.mode.beleriand": "beleriand",
         "label.mode.erebor": "cirth",
 
+        "label.mode.italian": "Italien",
+        "menu.mode.italian": "Italiano (Italien)",
+
         "label.placeholder.try": "Essayez : «${placeholder}»",
         "label.font": "Police : ",
         "label.mode": "Mode : ",
@@ -229,6 +237,9 @@
         "label.mode.beleriand": "beleriand",
         "label.mode.erebor": "cirth",
 
+        "label.mode.italian": "Italiano",
+        "menu.mode.italian": "Italiano",
+
         "label.placeholder.try": "Pruebe : «${placeholder}»",
         "label.font": "Fuente : ",
         "label.mode": "Modo : ",
@@ -297,6 +308,9 @@
         "label.mode.beleriand": "貝爾蘭",
         "label.mode.erebor": "切斯文",
 
+        "label.mode.italian": "義大利文",
+        "menu.mode.italian": "Italiano (義大利文)",
+
         "label.placeholder.try": "嘗試： 「${placeholder}」",
         "label.font": "字體：",
         "label.mode": "模式: ",
@@ -353,6 +367,9 @@
         "label.mode.quenya": "Quenya",
         "label.mode.beleriand": "Beleriand",
         "label.mode.erebor": "Cirth",
+
+        "label.mode.italian": "Italiano",
+        "menu.mode.italian": "Italiano",
 
         "label.placeholder.try": "Prova: „${placeholder}“",
         "label.font": "Font: ",
