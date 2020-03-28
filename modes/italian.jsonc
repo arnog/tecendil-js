@@ -58,13 +58,12 @@
         "aia": "{yanta}[a]{short-carrier}[a]",
         "ae": "[a]{short-carrier}[e]",
         "ao": "[a]{short-carrier}[o]",
-        
+
         "ei": "[e]{short-carrier}[i]",
         "ea": "[e]{short-carrier}[a]",
         "eo": "[e]{short-carrier}[o]", // ??
         "eu": "{uure}[e]",
-        
-        "ie": "[i]{short-carrier}[e]
+
         "ia": "[i]{short-carrier}[a]", // ??
         "iau": "[i]{uure}[a]",
         "ie": "[i]{short-carrier}[e]",
@@ -137,9 +136,9 @@
         "ghe": "{ungwe}[e]",
         "gi": "{anga}[i]",
         "ge": "{anga}[e]",
-        "ga": "{ungwe}[a]",
-        "go": "{ungwe}[o]",
-        "gu": "{ungwe}[u]",
+        // "ga": "{ungwe}[a]",   // Default. Redundant rule.
+        // "go": "{ungwe}[o]",   // Default. Redundant rule.
+        // "gu": "{ungwe}[u]",   // Default. Redundant rule.
         "gia": "{anga}[a]",
         "gio": "{anga}[o]",
         "giu": "{anga}[u]",
@@ -149,33 +148,33 @@
         "gìe": "{anga}{short-carrier}[e]",
         "gìo": "{anga}{short-carrier}[o]",
         "gii": "{anga}{short-carrier}[i]{short-carrier}[i]",
-        "gai": "{ungwe}{yanta}[a]",
-        "gui": "{ungwe}{yanta}[u]",
-        "gau": "{ungwe}{uure}[a]",
+        // "gai": "{ungwe}{yanta}[a]",    // Default. Redundant rule: 'g' + 'ai'
+        // "gui": "{ungwe}{yanta}[u]",    // Default. Redundant rule. 'g' + 'ui'
+        // "gau": "{ungwe}{uure}[a]",    // Default. Redundant rule. 'g' + 'au'
         "giai": "{anga}{yanta}[a]",
         "gioi": "{anga}{yanta}[o]",
         "giau": "{anga}{uure}[a]",
         "h": "{hyarmen}",
-        "ha": "{hyarmen}[a]",
+        // "ha": "{hyarmen}[a]",    // Default. Redundant rule.
         "hai": "{hyarmen}{anna}[a]",
         "hau": "{hyarmen}[a]{short-carrier}[u]",
-        "he": "{hyarmen}[e]",
-        "hea": "{hyarmen}[e]{short-carrier}[a]",
-        "hi": "{hyarmen}[i]",
-        "hie": "{hyarmen}[i]{short-carrier}[e]",
+        // "he": "{hyarmen}[e]", // Default. Redundant rule.
+        // "hea": "{hyarmen}[e]{short-carrier}[a]",// Default. Redundant rule.
+        // "hi": "{hyarmen}[i]", // Default. Redundant rule.
+        // "hie": "{hyarmen}[i]{short-carrier}[e]", // Default. Redundant rule.
         "hiu": "{hyarmen}[i]{short-carrier}[u]",
-        "ho": "{hyarmen}[o]",
-        "hoa": "{hyarmen}[o]{short-carrier}[a]",
-        "hu": "{hyarmen}[u]",
-        "hua": "{hyarmen}[u]{short-carrier}[a]",
-        "hue": "{hyarmen}[u]{short-carrier}[e]",
-        "hui": "{hyarmen}{yanta}[u]",
-        "huo": "{hyarmen}[u]{short-carrier}[o]",
-        "hà": "{hyarmen}{long-carrier}[a]",
-        "hè": "{hyarmen}{long-carrier}[e]",
-        "hì": "{hyarmen}{long-carrier}[i]",
-        "hò": "{hyarmen}{long-carrier}[o]",
-        "hù": "{hyarmen}{long-carrier}[u]",
+        // "ho": "{hyarmen}[o]", // Default. Redundant rule.
+        // "hoa": "{hyarmen}[o]{short-carrier}[a]", // Default. Redundant rule.
+        // "hu": "{hyarmen}[u]", // Default. Redundant rule.
+        // "hua": "{hyarmen}[u]{short-carrier}[a]",// Default. Redundant rule.
+        // "hue": "{hyarmen}[u]{short-carrier}[e]",// Default. Redundant rule.
+        // "hui": "{hyarmen}{yanta}[u]",// Default. Redundant rule.
+        // "huo": "{hyarmen}[u]{short-carrier}[o]",// Default. Redundant rule.
+        // "hà": "{hyarmen}{long-carrier}[a]", // Default. Redundant rule.
+        // "hè": "{hyarmen}{long-carrier}[e]", // Default. Redundant rule.
+        // "hì": "{hyarmen}{long-carrier}[i]", // Default. Redundant rule.
+        // "hò": "{hyarmen}{long-carrier}[o]", // Default. Redundant rule.
+        // "hù": "{hyarmen}{long-carrier}[u]", // Default. Redundant rule.
 
         "k": "{quesse}",
         "l": "{lambe}",
@@ -187,6 +186,7 @@
         "ph": "{parma-extended}",
         "qu": "{hwesta}", // Swallow the "u"
         "q": "{hwesta}",
+
         "r": "{oore}", // Lonely R is not voiced, so use {oore}
         // The rules below (ra, re...) handle R + vowel
         "r$": "{oore}",
@@ -211,19 +211,19 @@
         "riu": "{roomen}{uure}[i]",
         "rd": "{arda}",
         "s": "{silme}",
-        "ssa": "{silme-nuquerna}[bar-below][a]",
-        "sse": "{silme-nuquerna}[bar-below][e]",
-        "ssi": "{silme-nuquerna}[bar-below][i]",
-        "sso": "{silme-nuquerna}[bar-below][o]",
-        "ssu": "{silme-nuquerna}[bar-below][u]",
-        "sa": "{silme-nuquerna}[a]",
-        "se": "{silme-nuquerna}[e]",
-        "si": "{silme-nuquerna}[i]",
-        "so": "{silme-nuquerna}[o]",
-        "su": "{silme-nuquerna}[u]",
-        "sai": "{silme}{yanta}[a]",
-        "sui": "{silme}{yanta}[u]",
-        "sau": "{silme}{uure}[a]",
+        // "ssa": "{silme-nuquerna}[bar-below][a]", // Default. Redundant rule.
+        // "sse": "{silme-nuquerna}[bar-below][e]", // Default. Redundant rule.
+        // "ssi": "{silme-nuquerna}[bar-below][i]", // Default. Redundant rule.
+        // "sso": "{silme-nuquerna}[bar-below][o]", // Default. Redundant rule.
+        // "ssu": "{silme-nuquerna}[bar-below][u]", // Default. Redundant rule.
+        // "sa": "{silme-nuquerna}[a]", // Default. Redundant rule.
+        // "se": "{silme-nuquerna}[e]", // Default. Redundant rule.
+        // "si": "{silme-nuquerna}[i]", // Default. Redundant rule.
+        // "so": "{silme-nuquerna}[o]", // Default. Redundant rule.
+        // "su": "{silme-nuquerna}[u]", // Default. Redundant rule.
+        // "sai": "{silme}{yanta}[a]", // Default. Redundant rule.
+        // "sui": "{silme}{yanta}[u]", // Default. Redundant rule.
+        // "sau": "{silme}{uure}[a]", // Default. Redundant rule.
         "t": "{tinco}",
         "th": "{suule}",
         "v": "{ampa}",
@@ -231,20 +231,20 @@
         "x": "{quesse}[x-curl]",
         "y": "{anna}[double-dot-below]",
         "z": "{esse}",
-        "za": "{esse-nuquerna}[a]",
-        "ze": "{esse-nuquerna}[e]",
-        "zi": "{esse-nuquerna}[i]",
-        "zo": "{esse-nuquerna}[o]",
-        "zu": "{esse-nuquerna}[u]",
-        "zza": "{esse-nuquerna}[bar-below][a]",
-        "zze": "{esse-nuquerna}[bar-below][e]",
-        "zzi": "{esse-nuquerna}[bar-below][i]",
-        "zzo": "{esse-nuquerna}[bar-below][o]",
-        "zzu": "{esse-nuquerna}[bar-below][u]",
+        // "za": "{esse-nuquerna}[a]",  // Default. Redundant rule. esse->esse-nuquerna with omatehta
+        // "ze": "{esse-nuquerna}[e]", // Default. Redundant rule. esse->esse-nuquerna with omatehta
+        // "zi": "{esse-nuquerna}[i]", // Default. Redundant rule. esse->esse-nuquerna with omatehta
+        // "zo": "{esse-nuquerna}[o]", // Default. Redundant rule. esse->esse-nuquerna with omatehta
+        // "zu": "{esse-nuquerna}[u]", // Default. Redundant rule. esse->esse-nuquerna with omatehta
+        // "zza": "{esse-nuquerna}[bar-below][a]",
+        // "zze": "{esse-nuquerna}[bar-below][e]", // Default. Redundant rule. esse->esse-nuquerna with omatehta
+        // "zzi": "{esse-nuquerna}[bar-below][i]", // Default. Redundant rule. esse->esse-nuquerna with omatehta
+        // "zzo": "{esse-nuquerna}[bar-below][o]", // Default. Redundant rule. esse->esse-nuquerna with omatehta
+        // "zzu": "{esse-nuquerna}[bar-below][u]", // Default. Redundant rule. esse->esse-nuquerna with omatehta
 
         // Clusters with "s"
-        "st": "{silme}{tinco}",
-        "sty": "{silme}{tinco}[double-dot-below]",
+        // "st": "{silme}{tinco}",  // Default. Redundant rule.
+        // "sty": "{silme}{tinco}[double-dot-below]",   // Default. Redundant rule.
         "sc": "{silme}{quesse}",
         "sch": "{silme}{quesse}",
         "sci": "{aha}[i]",
@@ -257,24 +257,24 @@
         "scìe": "{aha}[i]{short-carrier}[e]",
         "scìo": "{aha}[i]{short-carrier}[o]",
         "sq": "{silme}{hwesta}",
-        "rs": "{oore}{silme-nuquerna}",
-        "rsa": "{oore}{silme-nuquerna}[a]",
-        "rse": "{oore}{silme-nuquerna}[e]",
-        "rsi": "{oore}{silme-nuquerna}[i]",
-        "rso": "{oore}{silme-nuquerna}[o]",
-        "rsu": "{oore}{silme-nuquerna}[u]",
-        "rsai": "{oore}{silme}{yanta}[a]",
+        "rs": "{oore}{alt-silme-nuquerna}", // Force silme-nuquerna
+        // "rsa": "{oore}{silme-nuquerna}[a]",// Default. Redundant rule.
+        // "rse": "{oore}{silme-nuquerna}[e]",// Default. Redundant rule.
+        // "rsi": "{oore}{silme-nuquerna}[i]",// Default. Redundant rule.
+        // "rso": "{oore}{silme-nuquerna}[o]",// Default. Redundant rule.
+        // "rsu": "{oore}{silme-nuquerna}[u]",// Default. Redundant rule.
+        // "rsai": "{oore}{silme}{yanta}[a]", // Default. Redundant rule.
 
         // Combinations with "m/n" -- nasalized consonants
         "nc": "{quesse}[bar-above]",
-        "nca": "{quesse}[bar-above][a]",
-        "nco": "{quesse}[bar-above][o]",
-        "ncu": "{quesse}[bar-above][u]",
+        // "nca": "{quesse}[bar-above][a]", // Default. Redundant rule.
+        // "nco": "{quesse}[bar-above][o]", // Default. Redundant rule.
+        // "ncu": "{quesse}[bar-above][u]", // Default. Redundant rule.
         "nche": "{quesse}[bar-above][e]",
         "nchi": "{quesse}[bar-above][i]",
-        "ncà": "{quesse}[bar-above]{long-carrier}[a]",
-        "ncò": "{quesse}[bar-above]{long-carrier}[o]",
-        "ncù": "{quesse}[bar-above]{long-carrier}[u]",
+        // "ncà": "{quesse}[bar-above]{long-carrier}[a]",// Default. Redundant rule.
+        // "ncò": "{quesse}[bar-above]{long-carrier}[o]",// Default. Redundant rule.
+        // "ncù": "{quesse}[bar-above]{long-carrier}[u]",// Default. Redundant rule.
         "nchè": "{quesse}[bar-above]{long-carrier}[e]",
         "nchì": "{quesse}[bar-above]{long-carrier}[i]",
         "ncia": "{calma}[bar-above][a]",
@@ -289,17 +289,17 @@
         "nciò": "{calma}[bar-above]{long-carrier}[o]",
         "nciù": "{calma}[bar-above]{long-carrier}[u]",
         "nk": "{quesse}[bar-above]",
-        "ncai": "{quesse}[bar-above]{yanta}[a]",
-        "ncoi": "{quesse}[bar-above]{yanta}[o]",
-        "ncui": "{quesse}[bar-above]{yanta}[u]",
-        "ncau": "{quesse}[bar-above]{uure}[a]",
+        // "ncai": "{quesse}[bar-above]{yanta}[a]",// Default. Redundant rule.
+        // "ncoi": "{quesse}[bar-above]{yanta}[o]",// Default. Redundant rule.
+        // "ncui": "{quesse}[bar-above]{yanta}[u]",// Default. Redundant rule.
+        // "ncau": "{quesse}[bar-above]{uure}[a]",// Default. Redundant rule.
         "nchiu": "{quesse}[bar-above]{uure}[i]",
         "nd": "{ando}[bar-above]",
         "ng": "{ungwe}[bar-above]",
-        "nga": "{ungwe}[bar-above][a]",
+        // "nga": "{ungwe}[bar-above][a]",  // Default. Redundant rule.
         "nghe": "{ungwe}[bar-above][e]",
         "nghi": "{ungwe}[bar-above][i]",
-        "ngo": "[bar-above]{ungwe}[o]",
+        "ngo": "[bar-above]{ungwe}[o]", // Is this right? Or {ungwe}[bar-above][o]
         "ngu": "{ungwe}[bar-above][u]",
         "ngia": "{anga}[bar-above][a]",
         "nge": "{anga}[bar-above][e]",
@@ -347,16 +347,16 @@
         // GEMINATED CONSONANTS.
 
         "cc": "{quesse}[bar-below]",
-        "cca": "{quesse}[bar-below][a]",
+        // "cca": "{quesse}[bar-below][a]",  // Default. Redundant rule.
         "cche": "{quesse}[bar-below][e]",
         "cchi": "{quesse}[bar-below][i]",
-        "cco": "{quesse}[bar-below][o]",
-        "ccu": "{quesse}[bar-below][u]",
-        "ccà": "{quesse}[bar-below]{long-carrier}[a]",
+        // "cco": "{quesse}[bar-below][o]",  // Default. Redundant rule.
+        // "ccu": "{quesse}[bar-below][u]",  // Default. Redundant rule.
+        // "ccà": "{quesse}[bar-below]{long-carrier}[a]",  // Default. Redundant rule.
         "cchè": "{quesse}[bar-below]{long-carrier}[e]",
         "cchì": "{quesse}[bar-below]{long-carrier}[i]",
-        "ccò": "{quesse}[bar-below]{long-carrier}[o]",
-        "ccù": "{quesse}[bar-below]{long-carrier}[u]",
+        // "ccò": "{quesse}[bar-below]{long-carrier}[o]",  // Default. Redundant rule.
+        // "ccù": "{quesse}[bar-below]{long-carrier}[u]",  // Default. Redundant rule.
         "ccia": "{calma}[bar-below][a]",
         "ccie": "{calma}[bar-below][e]",
         "cce": "{calma}[bar-below][e]",
@@ -377,16 +377,16 @@
         "cchiu": "{quesse}[bar-below]{uure}[i]",
         "kk": "{quesse}[bar-below]",
         "gg": "{ingwe}[bar-below]",
-        "gga": "{ingwe}[bar-below][a]",
+        // "gga": "{ingwe}[bar-below][a]",   // Default. Redundant rule.
         "gghe": "{ingwe}[bar-below][e]",
         "gghi": "{ingwe}[bar-below][i]",
-        "ggo": "{ingwe}[bar-below][o]",
-        "ggu": "{ingwe}[bar-below][u]",
-        "ggà": "{ingwe}[bar-below]{long-carrier}[a]",
+        // "ggo": "{ingwe}[bar-below][o]",  // Default. Redundant rule.
+        // "ggu": "{ingwe}[bar-below][u]",  // Default. Redundant rule.
+        // "ggà": "{ingwe}[bar-below]{long-carrier}[a]",  // Default. Redundant rule.
         "gghè": "{ingwe}[bar-below]{long-carrier}[e]",
         "gghì": "{ingwe}[bar-below]{long-carrier}[i]",
-        "ggò": "{ingwe}[bar-below]{long-carrier}[o]",
-        "ggù": "{ingwe}[bar-below]{long-carrier}[u]",
+        // "ggò": "{ingwe}[bar-below]{long-carrier}[o]",  // Default. Redundant rule.
+        // "ggù": "{ingwe}[bar-below]{long-carrier}[u]",  // Default. Redundant rule.
         "ggia": "{anga}[bar-below][a]",
         "ggi": "{anga}[bar-below][i]",
         "ggie": "{anga}[bar-below][e]",
