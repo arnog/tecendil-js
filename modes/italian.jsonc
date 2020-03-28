@@ -56,6 +56,8 @@
         "ai": "{yanta}[a]",
         "au": "{uure}[a]",
         "aia": "{yanta}[a]{short-carrier}[a]",
+        "aio": "{yanta}[a]{short-carrier}[o]",
+        "aiu": "{yanta}[a]{short-carrier}[u]",
         "ae": "[a]{short-carrier}[e]",
         "ao": "[a]{short-carrier}[o]",
 
@@ -83,6 +85,7 @@
 
         "ui": "{yanta}[u]",
         "uia": "{yanta}[u]{short-carrier}[a]",
+        "uio": "{uure}[i]{short-carrier}[o]",
         "uiu": "{yanta}[u]{short-carrier}[u]",
         "ua": "[u]{short-carrier}[a]",
         "ue": "[u]{short-carrier}[e]",
@@ -97,12 +100,12 @@
         "yè": "{anna}[double-dot-below]{long-carrier}[e]",
         "yù": "{anna}[double-dot-below]{long-carrier}[u]",
         "yò": "{anna}[double-dot-below]{long-carrier}[o]",
-            
-        "uai": "{short carrier}[u]{yanta}[a]",
-        "uaio": "{short carrier}[u]{yanta}[a]{short carrier}[o]",
-        "uaia": "{short carrier}[u]{yanta}[a]{short carrier}[a]",
-        "uaie": "{short carrier}[u]{yanta}[a]{short carrier}[e]",
-        "uaio": "{short carrier}[u]{yanta}[a]{short carrier}[u]",
+
+        "uai": "{short-carrier}[u]{yanta}[a]",
+        "uaio": "{short-carrier}[u]{yanta}[a]{short-carrier}[o]",
+        "uaia": "{short-carrier}[u]{yanta}[a]{short-carrier}[a]",
+        "uaie": "{short-carrier}[u]{yanta}[a]{short-carrier}[e]",
+        "uaiu": "{short-carrier}[u]{yanta}[a]{short-carrier}[u]",
 
         //---------------------------------------------------------------------------
         //
@@ -165,8 +168,6 @@
         "gia": "{anga}[a]",
         "gio": "{anga}[o]",
         "giu": "{anga}[u]",
-        "giù": "{anga}{long-carrier}[u]",
-        "già": "{anga}{long-carrier}[a]",
         "gìa": "{anga}[i]{short-carrier}[a]",
         "gìe": "{anga}[i]{short-carrier}[e]",
         "gìo": "{anga}[i]{short-carrier}[o]",
@@ -180,12 +181,12 @@
         "giai": "{anga}{yanta}[a]",
         "gioi": "{anga}{yanta}[o]",
         "giau": "{anga}{uure}[a]",
-        "geo": "{anga}[e]{short-carrier}[o]"
-        "gei": "{anga}[e]{short-carrier}[i]"
-        "giuo": "{anga}[u]{short-carrier}[o]"
-        "gea": "{anga}[e]{short-carrier}[a]"
-        "gioa": "{anga}[o]{short-carrier}[a]"
-        "gioe": "{anga}[o]{short-carrier}[e]"
+        "geo": "{anga}[e]{short-carrier}[o]",
+        "gei": "{anga}[e]{short-carrier}[i]",
+        "giuo": "{anga}[u]{short-carrier}[o]",
+        "gea": "{anga}[e]{short-carrier}[a]",
+        "gioa": "{anga}[o]{short-carrier}[a]",
+        "gioe": "{anga}[o]{short-carrier}[e]",
         "h": "{hyarmen}",
         // "ha": "{hyarmen}[a]",    // Default. Redundant rule.
         "hai": "{hyarmen}{anna}[a]",
@@ -349,6 +350,7 @@
         "ngie": "{anga}[bar-above][e]",
         "ngi": "{anga}[bar-above][i]",
         "ngio": "{anga}[bar-above][o]",
+        "ngiò": "{anga}[bar-above]{long-carrier}[o]",
         "ngiu": "{anga}][bar-above][u",
         "ngui": "{ungwe}[bar-above]{yanta}[u]",
         "ngiai": "{anga}[bar-above]{yanta}[a]",
