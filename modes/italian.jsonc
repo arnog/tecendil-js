@@ -11,22 +11,27 @@
 
     // ciao come stai = hello how are you = {calma}[a]{telco}[o] {quesse}[o]{malta}[e] {silme}{tinco}{yanta}[a]
 
-    "normalizevowels": true,
+    "normalizevowels": false,
 
     "tehtarFollow": false,
 
     "preprocess": {
-        // Disambiguate ch -> k
-        "ch": "k"
+        // In Italian, "e" can have an acute or grave accent.
+        // For the purpose of transcribing in Tengwar, they are treated the same
+        "é": "è",
+        // Some loan words can include other accents
+        "á": "à",
+        "ó": "ò",
+        "ú": "ù",
+        "í": "ì",
+        "â": "a", // "châssis"
+        "ê": "e",
+        "ô": "o",
+        "û": "u",
+        "ç": "s" // "garçonnière"
     },
 
-    "words": {
-        // ciao = hello = {calma}[a]{telco}[o]
-        // come = how = {quesse}[o]{malta}[e]
-        // gatto = cat = {ungwe}[a]{tinco}[bar-below][o]
-        // casa = house = {quesse}[a]{silme-nuquerna}[a]
-        // piazza = {parma}[i]{telco}[a]{esse-nuquerna}[bar-below][a]
-    },
+    "words": {},
 
     "map": {
         //---------------------------------------------------------------------------------
