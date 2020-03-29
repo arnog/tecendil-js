@@ -148,10 +148,6 @@
         "g": "{ungwe}",
         "ghi": "{ungwe}[i]{}",
         "ghe": "{ungwe}[e]",
-        "ghia": "{ungwe}[i]{short-carrier}[a]",
-        "ghio": "{ungwe}[i]{short-carrier}[o]",
-        "ghie": "{ungwe}[i]{short-carrier}[e]",
-        "ghiu": "{ungwe}[i]{short-carrier}[u]",
         "gi": "{anga}[i]",
         "ge": "{anga}[e]",
         "gia": "{anga}[a]",
@@ -252,8 +248,6 @@
         "nch": "{quesse}[bar-above]",
         "nche": "{quesse}[bar-above][e]",
         "nchi": "{quesse}[bar-above][i]{}",
-        "nchè": "{quesse}[bar-above]{long-carrier}[e]",
-        "nchì": "{quesse}[bar-above]{long-carrier}[i]",
         "ncia": "{calma}[bar-above][a]",
         "nce": "{calma}[bar-above][e]",
         "ncie": "{calma}[bar-above][e]",
@@ -322,7 +316,7 @@
         "ndy": "[bar-above]{ando}[double-dot-below]",
         "nty": "[bar-above]{tinco}[double-dot-below]",
         "ny": "{nuumen}[double-dot-below]",
-        "gn": "{nuumen}[double-dot-below]",      //"gn" has the sound of the quenya "ny", in italian
+        "gn": "{nuumen}[double-dot-below]", //"gn" has the sound of the quenya "ny", in italian
         "my": "{malta}[double-dot-below]",
         "ty": "{tinco}[double-dot-below]",
         "ry": "{roomen}[double-dot-below]",
@@ -338,11 +332,9 @@
         // GEMINATED CONSONANTS.
 
         "cc": "{quesse}[bar-below]",
-        "cch": "{quesse}[bar-below]",   /// the same of cc but it's important
+        "cch": "{quesse}[bar-below]", /// the same of cc but it's important
         "cche": "{quesse}[bar-below][e]",
         "cchi": "{quesse}[bar-below][i]{}",
-        "cchè": "{quesse}[bar-below]{long-carrier}[e]",
-        "cchì": "{quesse}[bar-below]{long-carrier}[i]",
         "ccia": "{calma}[bar-below][a]",
         "ccie": "{calma}[bar-below][e]",
         "cce": "{calma}[bar-below][e]",
@@ -359,11 +351,9 @@
         "cchiu": "{quesse}[bar-below]{uure}[i]",
         "kk": "{quesse}[bar-below]",
         "gg": "{ungwe}[bar-below]",
-        "ggh": "{ungwe}[bar-below]",      // the same of gg, but it's important
+        "ggh": "{ungwe}[bar-below]", // the same of gg, but it's important
         "gghe": "{ungwe}[bar-below][e]",
         "gghi": "{ungwe}[bar-below][i]{}",
-        "gghè": "{ungwe}[bar-below]{long-carrier}[e]",
-        "gghì": "{ungwe}[bar-below]{long-carrier}[i]",
         "ggia": "{anga}[bar-below][a]",
         "ggi": "{anga}[bar-below][i]",
         "ggie": "{anga}[bar-below][e]",
