@@ -243,7 +243,7 @@
         "scìo": "{aha}[i]{short-carrier}[o]",
         "rs": "{oore}{alt-silme-nuquerna}", // Force silme-nuquerna
 
-        // Combinations with "m/n" -- nasalized consonants
+        // Combinations with "m/n" -- nasalized consonants 
         "nc": "{quesse}[bar-above]",
         "nch": "{quesse}[bar-above]",
         "nche": "{quesse}[bar-above][e]",
