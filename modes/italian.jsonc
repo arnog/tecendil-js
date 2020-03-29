@@ -1,10 +1,10 @@
-//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 //
 // ITALIAN MODE
 //
 // Contributed by Guido Laudenzi (IG: @guido_laudenzi)
 //
-//------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 {
     "name": "italian",
     "languageCode": "it", // Italian ISO 639-2
@@ -34,14 +34,15 @@
     "words": {},
 
     "map": {
-        //---------------------------------------------------------------------------------
+        // --------------------------------------------------------------------
         //
         // VOWELS
         //
 
         // Accented Vowels
         // Italian does not have long vowels. Accents indicate stress, and
-        // it is significant to distinguish some words (e.g. "incanto" (enchantment) and "incantó" (enchanted)
+        // it is significant to distinguish some words
+        // e.g. "incanto" (enchantment) and "incantó" (enchanted)
         "à": "{long-carrier}[a]",
         "è": "{long-carrier}[e]",
         "ì": "{long-carrier}[i]",
@@ -50,7 +51,7 @@
 
         "é": "{long-carrier}[e]",
 
-        // ----------------------------------------------------------------------------
+        // --------------------------------------------------------------------
         //
         // DIPHTHONGS
         //
@@ -107,39 +108,39 @@
         "uaie": "[u]{yanta}[a]{short-carrier}[e]",
         "uaiu": "[u]{yanta}[a]{short-carrier}[u]",
 
-        //---------------------------------------------------------------------------
+        //---------------------------------------------------------------------
         //
         //CONSONANTS
         //
 
         "b": "{umbar}",
         "c": "{calma}",
-        "ch": "{quesse}",
-        "chi": "{quesse}[i]{}",
-        "cr": "{quesse}{roomen}",
-        "cl": "{quesse}{lambe}",
-        "ct": "{quesse}{tinco}",
-        "cn": "{quesse}{nuumen}",
-        "cp": "{quesse}{parma}",
-        "cm": "{quesse}{malta}",
+        "ca": "{quesse}[a]",
         "cai": "{quesse}{yanta}[a]",
-        "coi": "{quesse}{yanta}[o]",
-        "cui": "{quesse}{yanta}[u]",
-        "cau": "{quesse}{uure}[a]",
-        "cuo": "{quesse}[u]{short-carrier}[o]",
         "cae": "{quesse}[a]{short-carrier}[e]",
         "cao": "{quesse}[a]{short-carrier}[o]",
+        "cau": "{quesse}{uure}[a]",
+        "co": "{quesse}[o]",
+        "coi": "{quesse}{yanta}[o]",
         "coa": "{quesse}[o]{short-carrier}[a]",
         "coe": "{quesse}[o]{short-carrier}[e]",
-        "cue": "{quesse}[u]{short-carrier}[e]",
-        "cqu": "{quesse-extended}",
-        "ca": "{quesse}[a]",
-        "co": "{quesse}[o]",
         "cu": "{quesse}[u]",
+        "cue": "{quesse}[u]{short-carrier}[e]",
+        "cui": "{quesse}{yanta}[u]",
+        "cuo": "{quesse}[u]{short-carrier}[o]",
         "cia": "{calma}[a]",
         "cio": "{calma}[o]",
         "ciu": "{calma}[u]",
         "cie": "{calma}[e]",
+        "ch": "{quesse}",
+        "chi": "{quesse}[i]{}", // The {} indicate that no additional tehta should be added
+        "cl": "{quesse}{lambe}",
+        "cm": "{quesse}{malta}",
+        "cn": "{quesse}{nuumen}",
+        "cp": "{quesse}{parma}",
+        "cr": "{quesse}{roomen}",
+        "ct": "{quesse}{tinco}",
+        "cqu": "{quesse-extended}",
         "cii": "{calma}{short-carrier}[i]{short-carrier}[i]",
         "ciao": "{calma}[a]{short-carrier}[o]",
         "d": "{ando}",
@@ -147,7 +148,7 @@
         "f": "{formen}",
         "g": "{ungwe}",
         "ghi": "{ungwe}[i]{}",
-        "ghe": "{ungwe}[e]",
+        "ghe": "{ungwe}[e]{}",
         "gi": "{anga}[i]",
         "ge": "{anga}[e]",
         "gia": "{anga}[a]",
@@ -181,8 +182,8 @@
         "n": "{nuumen}",
         "p": "{parma}",
         "ph": "{parma-extended}",
-        "qu": "{hwesta}", // Swallow the "u"
         "q": "{hwesta}",
+        "qu": "{hwesta}", // Swallow the "u"
 
         "r": "{oore}", // Lonely R is not voiced, so use {oore}
         // The rules below (ra, re...) handle R + vowel
@@ -227,9 +228,9 @@
         "y": "{anna}[double-dot-below]",
         "z": "{esse}",
 
+        //---------------------------------------------------------------------
         // Clusters with "s"
-        // "st": "{silme}{tinco}",  // Default. Redundant rule.
-        // "sty": "{silme}{tinco}[double-dot-below]",   // Default. Redundant rule.
+
         "sc": "{silme}{quesse}",
         "sch": "{silme}{quesse}",
         "sci": "{aha}[i]",
@@ -243,10 +244,20 @@
         "scìo": "{aha}[i]{short-carrier}[o]",
         "rs": "{oore}{alt-silme-nuquerna}", // Force silme-nuquerna
 
+        //---------------------------------------------------------------------
+        // "gl" digraphs
+
+        "glia": "{lambe}[double-dot-inside][a]",
+        "glie": "{lambe}[double-dot-inside][e]",
+        "gli": "{lambe}[double-dot-inside][i]",
+        "glio": "{lambe}[double-dot-inside][o]",
+        "gliu": "{lambe}[double-dot-inside][u]",
+
+        //---------------------------------------------------------------------
         // Combinations with "m/n" -- nasalized consonants
         "nc": "{quesse}[bar-above]",
         "nch": "{quesse}[bar-above]",
-        "nche": "{quesse}[bar-above][e]",
+        "nche": "{quesse}[bar-above][e]}{}",
         "nchi": "{quesse}[bar-above][i]{}",
         "ncia": "{calma}[bar-above][a]",
         "nce": "{calma}[bar-above][e]",
@@ -264,7 +275,7 @@
         "nd": "{ando}[bar-above]",
         "ng": "{ungwe}[bar-above]",
         "ngh": "{ungwe}[bar-above]",
-        "nghe": "{ungwe}[bar-above][e]",
+        "nghe": "{ungwe}[bar-above][e]{}",
         "nghi": "{ungwe}[bar-above][i]{}",
         "ngo": "[bar-above]{ungwe}[o]", // Is this right? Or {ungwe}[bar-above][o]
         "ngu": "{ungwe}[bar-above][u]",
@@ -306,34 +317,32 @@
         "nv": "{ampa}[bar-above][x-curl]",
         "nz": "{esse-nuquerna}[bar-above]",
 
+        //---------------------------------------------------------------------
         // Combinations with "s"
         "ts": "{tinco}[sa-rince]",
         "ps": "{parma}[sa-rince]",
         "cs": "{quesse}[x-curl]",
         "ks": "{quesse}[x-curl]",
 
+        //---------------------------------------------------------------------
         // Combinations with "y"
         "ndy": "[bar-above]{ando}[double-dot-below]",
         "nty": "[bar-above]{tinco}[double-dot-below]",
         "ny": "{nuumen}[double-dot-below]",
         "gn": "{nuumen}[double-dot-below]", //"gn" has the sound of the quenya "ny", in italian
-        "my": "{malta}[double-dot-below]",
-        "ty": "{tinco}[double-dot-below]",
-        "ry": "{roomen}[double-dot-below]",
         "ly": "{lambe}[double-dot-inside]",
-        "glia": "{lambe}[double-dot-inside][a]",
-        "glie": "{lambe}[double-dot-inside][e]",
-        "gli": "{lambe}[double-dot-inside][i]",
-        "glio": "{lambe}[double-dot-inside][o]",
-        "gliu": "{lambe}[double-dot-inside][u]",
+        "my": "{malta}[double-dot-below]",
+        "ry": "{roomen}[double-dot-below]",
+        "ty": "{tinco}[double-dot-below]",
 
-        // ----------------------------------------------------------------------------
+        // ---------------------------------------------------------------------
         //
         // GEMINATED CONSONANTS.
 
+        "bb": "{umbar}[bar-below]",
         "cc": "{quesse}[bar-below]",
         "cch": "{quesse}[bar-below]", /// the same of cc but it's important
-        "cche": "{quesse}[bar-below][e]",
+        "cche": "{quesse}[bar-below][e]{}",
         "cchi": "{quesse}[bar-below][i]{}",
         "ccia": "{calma}[bar-below][a]",
         "ccie": "{calma}[bar-below][e]",
@@ -349,10 +358,11 @@
         "cciò": "{calma}[bar-below]{long-carrier}[o]",
         "cciù": "{calma}[bar-below]{long-carrier}[u]",
         "cchiu": "{quesse}[bar-below]{uure}[i]",
-        "kk": "{quesse}[bar-below]",
+        "dd": "{ando}[bar-below]",
+        "ff": "{formen}[bar-below]",
         "gg": "{ungwe}[bar-below]",
         "ggh": "{ungwe}[bar-below]", // the same of gg, but it's important
-        "gghe": "{ungwe}[bar-below][e]",
+        "gghe": "{ungwe}[bar-below][e]{}",
         "gghi": "{ungwe}[bar-below][i]{}",
         "ggia": "{anga}[bar-below][a]",
         "ggi": "{anga}[bar-below][i]",
@@ -370,19 +380,17 @@
         "ggiai": "{anga}[bar-below]{yanta}[a]",
         "ggue": "{ungwe}[bar-below][u]{short-carrier}[e]",
         "ggua": "{ungwe}[bar-below][u]{short-carrier}[a]",
-        "ff": "{formen}[bar-below]",
+        "kk": "{quesse}[bar-below]",
         "ll": "{lambe}[bar-inside]",
         "mm": "{malta}[bar-below]",
         "nn": "{nuumen}[bar-below]",
         "pp": "{parma}[bar-below]",
+        "qq": "{hwesta}[bar-below]",
         "rr": "{roomen}[bar-below]",
         "rrai": "{roomen}[bar-below]{uure}[a]",
         "ss": "{silme-nuquerna}[bar-below]",
         "tt": "{tinco}[bar-below]",
-        "qq": "{hwesta}[bar-below]",
         "vv": "{ampa}[bar-below]",
-        "bb": "{umbar}[bar-below]",
-        "dd": "{ando}[bar-below]",
         "zz": "{esse-nuquerna}[bar-below]"
     }
 }
