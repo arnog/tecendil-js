@@ -1,97 +1,97 @@
 {
-  "name": "beleriand",
-  "languageCode": "sjn", // Sindarin
+    "name": "beleriand",
+    "languageCode": "sjn", // Sindarin
 
-  "normalizeVowels": true,
+    "normalizeVowels": true,
 
-  "map": {
-    //
-    // VOWELS
-    //
-    "a": "{a-tengwa}", // NOTE: the (dot-above} is optional and mostly use in handwriting
-    "e": "{yanta}",
-    "i": "{i-tengwa}", // NOTE: the (dot-above} is optional and mostly use in handwriting
-    "o": "{anna}",
-    "u": "{uure}",
+    "map": {
+        //
+        // VOWELS
+        //
+        "a": "{a-tengwa}", // NOTE: the (dot-above} is optional and mostly use in handwriting
+        "e": "{yanta}",
+        "i": "{i-tengwa}", // NOTE: the (dot-above} is optional and mostly use in handwriting
+        "o": "{anna}",
+        "u": "{uure}",
 
-    "â": "{a-tengwa}[andaith]",
-    "ê": "{yanta}[andaith]",
-    "î": "{i-tengwa}[andaith]",
-    "ô": "{anna}[andaith]",
-    "û": "{uure}[andaith]",
-    "ŷ": "{alt-silme-nuquerna}[andaith]",
+        "â": "{a-tengwa}[andaith]",
+        "ê": "{yanta}[andaith]",
+        "î": "{i-tengwa}[andaith]",
+        "ô": "{anna}[andaith]",
+        "û": "{uure}[andaith]",
+        "ŷ": "{alt-silme-nuquerna}[andaith]",
 
-    //
-    // DIPHTHONGS
-    //
-    //	"ae":	"[circumflex]{a-tengwa}",
-    "oe": "{anna}[circumflex]",
-    "ai": "{a-tengwa}[double-dot]",
-    "ei": "{yanta}[double-dot]",
-    "ui": "{uure}[double-dot]",
-    "au": "{a-tengwa}[over-twist]",
-    "aw": "{a-tengwa}[over-twist]",
+        //
+        // DIPHTHONGS
+        //
+        //	"ae":	"[circumflex]{a-tengwa}",
+        "oe": "{anna}[circumflex]",
+        "ai": "{a-tengwa}[double-dot]",
+        "ei": "{yanta}[double-dot]",
+        "ui": "{uure}[double-dot]",
+        "au": "{a-tengwa}[over-twist]",
+        "aw": "{a-tengwa}[over-twist]",
 
-    //
-    // CONSONANTS
-    //
-    "b": "{umbar}",
-    "c": "{calma}", // {quesse} in Classical
-    "d": "{ando}",
-    "dh": "{anto}",
-    "f": "{formen}",
-    "f$": "{ampa}",
-    "g": "{anga}", // {ungwe} in Classical
-    "h": "{hyarmen}",
-    "l": "{lambe}",
-    "^lh": "{alda}",
-    "m": "{vala}", // {malta} in Classical
-    "n": "{oore}", // {nuumen} in Classical
-    "ng": "{anga}[bar-above]", // {ungwe}[bar-above] in Classical
-    "ng$": "{nwalme}",
-    "p": "{parma}",
-    "ph": "{formen}",
-    "r": "{roomen}",
-    "^rh": "{arda}",
-    "s": "{silme}",
-    "t": "{tinco}",
-    "th": "{suule}",
-    "v": "{ampa}",
-    "w": "{vilya}", // {vala} in Classical
-    "y": "{silme-nuquerna}",
-    "z": "{esse-nuquerna}",
+        //
+        // CONSONANTS
+        //
+        "b": "{umbar}",
+        "c": "{calma}", // {quesse} in Classical
+        "d": "{ando}",
+        "dh": "{anto}",
+        "f": "{formen}",
+        "f$": "{ampa}",
+        "g": "{anga}", // {ungwe} in Classical
+        "h": "{hyarmen}",
+        "l": "{lambe}",
+        "^lh": "{alda}",
+        "m": "{vala}", // {malta} in Classical
+        "n": "{oore}", // {nuumen} in Classical
+        "ng": "{anga}[bar-above]", // {ungwe}[bar-above] in Classical
+        "ng$": "{nwalme}",
+        "p": "{parma}",
+        "ph": "{formen}",
+        "r": "{roomen}",
+        "^rh": "{arda}",
+        "s": "{silme}",
+        "t": "{tinco}",
+        "th": "{suule}",
+        "v": "{ampa}",
+        "w": "{vilya}", // {vala} in Classical
+        "y": "{silme-nuquerna}",
+        "z": "{esse-nuquerna}",
 
-    //
-    // Nasal
-    //
-    "nt": "{tinco}[bar-above]",
-    "nd": "{ando}[bar-above]",
-    "mp": "{parma}[bar-above]",
-    "mb": "{umbar}[bar-above]",
-    "nc": "{quesse}[bar-above]",
+        //
+        // Nasal
+        //
+        "nt": "{tinco}[bar-above]",
+        "nd": "{ando}[bar-above]",
+        "mp": "{parma}[bar-above]",
+        "mb": "{umbar}[bar-above]",
+        "nc": "{quesse}[bar-above]",
 
-    //
-    // Labialized
-    //
-    "gw": "{ungwe}[over-twist]",
-    "dw": "{ando}[over-twist]",
+        //
+        // Labialized
+        //
+        "gw": "{ungwe}[over-twist]",
+        "dw": "{ando}[over-twist]",
 
-    "ch": "{aha}", // {hwesta} in Classical
-    "sh": "{aha}",
-    "qu": "{quesse}[over-twist]", // TODO: check?
+        "ch": "{aha}", // {hwesta} in Classical
+        "sh": "{aha}",
+        "qu": "{quesse}[over-twist]", // TODO: check?
 
-    //
-    // Geminated consonants.
-    //
-    // Only ss, ll, mm and nn allowed in Sindarin
-    //
-    "ss": "{esse}",
-    "ll": "{lambe}{lambe}",
-    "mm": "{malta}", // [bar-above]{malta} in Classical
-    "nn": "{nuumen}" // [bar-above]{nuumen} in Classical
-  },
+        //
+        // Geminated consonants.
+        //
+        // Only ss, ll, mm and nn allowed in Sindarin
+        //
+        "ss": "{esse}",
+        // "ll": "{lambe}{lambe}",
+        "mm": "{malta}", // [bar-above]{malta} in Classical
+        "nn": "{nuumen}" // [bar-above]{nuumen} in Classical
+    },
 
-  "words": {
-    "ashnazgdurbatulûk": "[a]{aha}{nuumen}[a]{esse-nuquerna}{ungwe}{ando}[u]{oore}{umbar}[a]{tinco}[u]{lambe}[u]{long-carrier}{quesse}"
-  }
+    "words": {
+        "ashnazgdurbatulûk": "[a]{aha}{nuumen}[a]{esse-nuquerna}{ungwe}{ando}[u]{oore}{umbar}[a]{tinco}[u]{lambe}[u]{long-carrier}{quesse}"
+    }
 }

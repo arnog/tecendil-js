@@ -376,7 +376,7 @@
         "rs$": "[sa-rince]{oore}",
         "ts$": "[sa-rince]{tinco}",
         "ves$": "[sa-rince][dot-below]{ampa}",
-        "ys$": "{anna}{sa-rince}",
+        "ys$": "{anna}[sa-rince]",
 
         // Final "re"
         "re$": "[dot-below]{oore}"
