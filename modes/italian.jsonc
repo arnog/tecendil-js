@@ -224,7 +224,7 @@
         "roe": "{roomen}[o]{short-carrier}[e]",
         "rua": "{roomen}[u]{short-carrier}[a]",
         "rue": "{roomen}[u]{short-carrier}[e]",
-        "raio": "{roomen}{yanta}[a]{short-carrier}[o]"
+        "raio": "{roomen}{yanta}[a]{short-carrier}[o]",
         "rd": "{arda}",
         "s": "{silme}",
         "t": "{tinco}",
