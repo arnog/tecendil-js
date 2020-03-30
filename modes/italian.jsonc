@@ -274,11 +274,11 @@
         //---------------------------------------------------------------------
         // "gl" digraphs
 
-        "glia": "{lambe}[double-dot-inside][a]",
-        "glie": "{lambe}[double-dot-inside][e]",
         "gli": "{lambe}[double-dot-inside][i]",
-        "glio": "{lambe}[double-dot-inside][o]",
-        "gliu": "{lambe}[double-dot-inside][u]",
+        "glia": "{lambe}[double-dot-inside][a]{}",
+        "glie": "{lambe}[double-dot-inside][e]{}",
+        "glio": "{lambe}[double-dot-inside][o]{}",
+        "gliu": "{lambe}[double-dot-inside][u]{}",
 
         //---------------------------------------------------------------------
         // Combinations with "m/n" -- nasalized consonants
