@@ -393,6 +393,9 @@
         "welcome.5": "Tieni presente che il testo non è <i>tradotto</i>, ma è semplicemente scritto usando i caratteri Tengwar.",
         "welcome.6": "Affinché la trascrizione sia corretta, è necessario selezionare la lingua appropriata nel menù <i>Modalità</i>: inglese, spagnolo, Quenya o Sindarin. Sfortunatamente, l'italiano non è attualmente supportato. Se sei interessato a supportare altre lingue, contattami.",
 
+        "label.wikipedia.intro": "Esercitati a leggere Tengwar con questo articolo su  “",
+        "label.wikipedia.intro.close": "” di Wikipedia:",
+
         "tooltip.download": "Scarica",
 
         "filename.screenshot": "Screenshot di Tecendil",
