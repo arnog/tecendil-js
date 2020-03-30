@@ -86,10 +86,10 @@
         "y$": "[chevron]{short-carrier}",
         "e$": "[dot-below]",
         "ya": "[chevron]{short-carrier}[a]{short-carrier}", // e.g. "aditya", "ryan"
-        "ye": "[chevron]{short-carrier}[e]{short-carrier}", // e.g.
+        "ye": "[chevron]{short-carrier}[e]{short-carrier}", // e.g. "bye"
         "yi": "[chevron]{short-carrier}[i]{short-carrier}", // e.g.
-        "yo": "[chevron]{short-carrier}[o]{short-carrier}", // e.g.
-        "yu": "[chevron]{short-carrier}[u]{short-carrier}", // e.g.
+        "yo": "[chevron]{short-carrier}[o]{short-carrier}", // e.g. "mayo"
+        "yu": "[chevron]{short-carrier}[u]{short-carrier}", // e.g. "yurt"
 
         // Long vowels
         "â": "[a]{short-carrier}[a]{short-carrier}",
@@ -124,10 +124,10 @@
         //     "ey": 		"[e]{anna}",
 
         "ia": "[i]{short-carrier}[a]{short-carrier}",
-        "ie$": "[i][dot-below]{short-carrier}", // Most words end in a "ee' sound, except for a few (die, lie, etc...)
+        // "ie$": "[i][dot-below]{short-carrier}", // Most words end in a "ee' sound, except for a few (die, lie, etc...)
         "iu": "[i]{vala}", // Christopher Tolkien used {uure}
 
-        "oa": "[o]{short-carrier}[a]",
+        // "oa": "[o]{short-carrier}[a]",
         "oe": "[o]{short-carrier}[e]{short-carrier}",
         "oe$": "[o][dot-below]{short-carrier}",
         "oi": "[o]{anna}",
@@ -180,18 +180,18 @@
         "gh": "{ungwe-extended}", // Purely ortographic (e.g. "hugh"
         //        "ny":	"{noldo}",		// Only used for phonemic spelling (new, canyon)
 
-        "aly$": "[a]{lambe}[chevron]{short-carrier}",
-        "ely$": "[e]{lambe}[chevron]{short-carrier}",
-        "ily$": "[i]{lambe}[chevron]{short-carrier}",
-        "oly$": "[o]{lambe}[chevron]{short-carrier}",
-        "uly$": "[u]{lambe}[chevron]{short-carrier}",
-        "ly$": "{lambe}[chevron]{short-carrier}",
-        "any$": "[a]{nuumen}[chevron]{short-carrier}",
-        "eny$": "[e]{nuumen}[chevron]{short-carrier}",
-        "iny$": "[i]{nuumen}[chevron]{short-carrier}",
-        "ony$": "[o]{nuumen}[chevron]{short-carrier}",
-        "uny$": "[u]{nuumen}[chevron]{short-carrier}",
-        "yny$": "[chevron]{nuumen}[chevron]{short-carrier}",
+        // "aly$": "[a]{lambe}[chevron]{short-carrier}",
+        // "ely$": "[e]{lambe}[chevron]{short-carrier}",
+        // "ily$": "[i]{lambe}[chevron]{short-carrier}",
+        // "oly$": "[o]{lambe}[chevron]{short-carrier}",
+        // "uly$": "[u]{lambe}[chevron]{short-carrier}",
+        // "ly$": "{lambe}[chevron]{short-carrier}",
+        // "any$": "[a]{nuumen}[chevron]{short-carrier}",
+        // "eny$": "[e]{nuumen}[chevron]{short-carrier}",
+        // "iny$": "[i]{nuumen}[chevron]{short-carrier}",
+        // "ony$": "[o]{nuumen}[chevron]{short-carrier}",
+        // "uny$": "[u]{nuumen}[chevron]{short-carrier}",
+        // "yny$": "[chevron]{nuumen}[chevron]{short-carrier}",
         //        "ny$":	"[double-dot-below]{nuumen}",
 
         "ng": "{nwalme}", // for english, /ng/ sound
@@ -233,80 +233,80 @@
 
         // For Unicode fonts, rendering vowel+nasalized consonant look better if
         // the vowel is after (above) the bar:
-        "anc": "[tilde-above][a]{quesse}",
+        // "anc": "[tilde-above][a]{quesse}",
+        "ance": "[tilde-above][a]{silme-nuquerna}[e]",
+        "ance$": "[tilde-above][a][dot-below]{silme-nuquerna}",
         "anci": "[tilde-above][a]{silme-nuquerna}[i]",
         "anch": "[tilde-above][a]{calma}",
         // except melancholy, melancholic, anchor, anchorage, anchoring,
         // anchorman, anchormen
-        "enc": "[tilde-above][e]{quesse}",
-        "ench": "[tilde-above][e]{calma}",
-        "inc": "[tilde-above][i]{quesse}",
-        "inch": "[tilde-above][i]{calma}",
-        // Except inchoate
-        "onc": "[tilde-above][o]{quesse}",
-        // Override "onc" rule when followed by e -> soft-C
-        "ance": "[tilde-above][a]{silme-nuquerna}[e]",
-        "ance$": "[tilde-above][a][dot-below]{silme-nuquerna}",
+        // "enc": "[tilde-above][e]{quesse}",
         "ence": "[tilde-above][e]{silme-nuquerna}[e]",
         "ence$": "[tilde-above][e][dot-below]{silme-nuquerna}",
+        "ench": "[tilde-above][e]{calma}",
+        // "inc": "[tilde-above][i]{quesse}",
         "ince": "[tilde-above][i]{silme-nuquerna}[e]",
         "ince$": "[tilde-above][i][dot-below]{silme-nuquerna}",
+        "inch": "[tilde-above][i]{calma}",
+        // Except inchoate
+        // "onc": "[tilde-above][o]{quesse}",
+        // Override "onc" rule when followed by e -> soft-C
         "once": "[tilde-above][o]{silme-nuquerna}[e]",
         "once$": "[tilde-above][o][dot-below]{silme-nuquerna}",
+        // "unc": "[tilde-above][u]{quesse}",
         "unce": "[tilde-above][u]{silme-nuquerna}[e]",
         "unce$": "[tilde-above][u][dot-below]{silme-nuquerna}",
         "onch": "[tilde-above][o]{calma}",
         // Except bronchitis, bronchoscope,
-        "unc": "[tilde-above][u]{quesse}",
         "unch": "[tilde-above][u]{calma}",
         // Except uncharacteristic, uncharacteristically
 
-        "amc": "[tilde-above][a]{quesse}",
-        "amch": "[tilde-above][a]{calma}",
-        "emc": "[tilde-above][e]{quesse}",
+        // "amc": "[tilde-above][a]{quesse}",
+        "amch": "[tilde-above][a]{calma}", // "Kamchatka"
+        // "emc": "[tilde-above][e]{quesse}",
         "emch": "[tilde-above][e]{calma}",
-        "imc": "[tilde-above][i]{quesse}",
-        "imch": "[tilde-above][i]{calma}",
-        "omc": "[tilde-above][o]{quesse}",
-        // "omch": "[tilde-above][o]{calma}",	: No english words
-        "umc": "[tilde-above][u]{quesse}",
-        // "umch": "[tilde-above][u]{calma}",	: No english words
+        // "imc": "[tilde-above][i]{quesse}",
+        "imch": "[tilde-above][i]{calma}", // "kimchi"
+        // "omc": "[tilde-above][o]{quesse}",
+        "omch": "[tilde-above][o]{calma}", // "Jeomchon"
+        // "umc": "[tilde-above][u]{quesse}",
+        "umch": "[tilde-above][u]{calma}", // "numchuck"
 
-        "and": "[tilde-above][a]{ando}",
-        "end": "[tilde-above][e]{ando}",
-        "ind": "[tilde-above][i]{ando}",
-        "ond": "[tilde-above][o]{ando}",
-        "und": "[tilde-above][u]{ando}",
+        // "and": "[tilde-above][a]{ando}",
+        // "end": "[tilde-above][e]{ando}",
+        // "ind": "[tilde-above][i]{ando}",
+        // "ond": "[tilde-above][o]{ando}",
+        // "und": "[tilde-above][u]{ando}",
 
-        "amd": "[tilde-above][a]{ando}",
-        "emd": "[tilde-above][e]{ando}",
-        "imd": "[tilde-above][i]{ando}",
-        "omd": "[tilde-above][o]{ando}",
-        "umd": "[tilde-above][u]{ando}",
+        // "amd": "[tilde-above][a]{ando}",
+        // "emd": "[tilde-above][e]{ando}",
+        // "imd": "[tilde-above][i]{ando}",
+        // "omd": "[tilde-above][o]{ando}",
+        // "umd": "[tilde-above][u]{ando}",
 
-        "amb": "[tilde-above][a]{umbar}",
-        "emb": "[tilde-above][e]{umbar}",
-        "imb": "[tilde-above][i]{umbar}",
-        "omb": "[tilde-above][o]{umbar}",
-        "umb": "[tilde-above][u]{umbar}",
+        // "amb": "[tilde-above][a]{umbar}",
+        // "emb": "[tilde-above][e]{umbar}",
+        // "imb": "[tilde-above][i]{umbar}",
+        // "omb": "[tilde-above][o]{umbar}",
+        // "umb": "[tilde-above][u]{umbar}",
 
-        "ant": "[tilde-above][a]{tinco}",
-        "ent": "[tilde-above][e]{tinco}",
-        "int": "[tilde-above][i]{tinco}",
-        "ont": "[tilde-above][o]{tinco}",
-        "unt": "[tilde-above][u]{tinco}",
+        // "ant": "[tilde-above][a]{tinco}",
+        // "ent": "[tilde-above][e]{tinco}",
+        // "int": "[tilde-above][i]{tinco}",
+        // "ont": "[tilde-above][o]{tinco}",
+        // "unt": "[tilde-above][u]{tinco}",
 
-        "amp": "[tilde-above][a]{parma}",
-        "emp": "[tilde-above][e]{parma}",
-        "imp": "[tilde-above][i]{parma}",
-        "omp": "[tilde-above][o]{parma}",
-        "ump": "[tilde-above][u]{parma}",
+        // "amp": "[tilde-above][a]{parma}",
+        // "emp": "[tilde-above][e]{parma}",
+        // "imp": "[tilde-above][i]{parma}",
+        // "omp": "[tilde-above][o]{parma}",
+        // "ump": "[tilde-above][u]{parma}",
 
-        "amt": "[tilde-above][a]{tinco}",
-        "emt": "[tilde-above][e]{tinco}",
-        "imt": "[tilde-above][i]{tinco}",
-        "omt": "[tilde-above][o]{tinco}",
-        "umt": "[tilde-above][u]{tinco}",
+        // "amt": "[tilde-above][a]{tinco}",
+        // "emt": "[tilde-above][e]{tinco}",
+        // "imt": "[tilde-above][i]{tinco}",
+        // "omt": "[tilde-above][o]{tinco}",
+        // "umt": "[tilde-above][u]{tinco}",
 
         "q": "{quesse}",
 

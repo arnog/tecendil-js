@@ -221,7 +221,7 @@ accent - lambe - malta + right curl.
 
         // Clusters with "s"
         // "st": "{silme}{tinco}", // "puSTa"
-        "sty": "{silme}{tinco}[double-dot-below]", //	"iSTYa"
+        // "sty": "{silme}{tinco}[double-dot-below]", //	"iSTYa"
         // "sc": "{silme}{calma}", // "ruSCo"
         // "sq": "{silme}{quesse}", // "uSQe"
         "sw": "{suule}{vilya}", // "hiSWa"
