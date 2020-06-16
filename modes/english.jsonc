@@ -417,7 +417,7 @@
         "herein": "{hyarmen}{roomen}[e][dot-below]{nuumen}[i]",
         "his": "{hyarmen}{esse-nuquerna}[i]",
         "hers": "{hyarmen}{oore}[sa-rince][e]",
-        "is": "{esse-nuquerna}[i]",
+        "is": "{alt-esse}[i]",
         "joel": "{ANGA}{short-carrier}[o]{lambe}[e]", // like "jo-el"
         "larceny": "{lambe}{oore}[a]{silme}{nuumen}[e]{short-carrier}[chevron]",
         "lie": "{lambe}{yanta}[i]", // End in "a-y" sound
@@ -578,8 +578,8 @@
         "teethe": "{tinco}{short-carrier}[e]{anto}[dot-below][e]",
         "tether": "{tinco}{anto}[e]{oore}[e]",
         "thames": "{TINCO-EXTENDED}ames", // "th" pronounced /t/ uses extended tinco
-        "thing": "{anto}{nwalme}[i]",
-        "things": "{anto}{nwalme}[i][sa-rince]",
+        "thing": "th'ing",
+        "things": "{suule}{nwalme}[i][sa-rince]",
         "this": "{anto}[i][sa-rince]",
         "than": "{anto}{nuumen}[a]",
         "that": "{anto}{tinco}[a]",
