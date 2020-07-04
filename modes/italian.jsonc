@@ -61,6 +61,7 @@
         "aia": "{yanta}[a]{short-carrier}[a]",
         "aio": "{yanta}[a]{short-carrier}[o]",
         "aiu": "{yanta}[a]{short-carrier}[u]",
+        "aiuo": "{yanta}[a]{short-carrier}[u]{short-carrier}[o]",
         "ae": "[a]{short-carrier}[e]",
         "ao": "[a]{short-carrier}[o]",
 
