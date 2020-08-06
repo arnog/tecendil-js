@@ -87,6 +87,7 @@ accent - lambe - malta + right curl.
         "ea": "[e]{short-carrier}[a]", // ??
         "ei": "{yanta}[e]", // ??
         "eo": "[e]{short-carrier}[o]", // ??
+        "eoi": "[e]{yanta}[o]",
         "eu": "{uure}[e]",
 
         "ia": "[i]{short-carrier}[a]", // ??
