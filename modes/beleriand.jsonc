@@ -48,7 +48,7 @@
         "m": "{vala}", // {malta} in Classical
         "n": "{oore}", // {nuumen} in Classical
         "ng": "{anga}[bar-above]", // {ungwe}[bar-above] in Classical
-        "ng$": "{noldo}",
+        // "ng$": "{noldo}",  // as per guido_laudenzi, final ng should be {anga}[bar-above]
         "^ng": "{noldo}", // as per guido_laudenzi
         "p": "{parma}",
         "ph": "{formen}",
