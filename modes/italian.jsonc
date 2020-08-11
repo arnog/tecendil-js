@@ -74,6 +74,7 @@
         "iau": "[i]{uure}[a]",
         "iai": "[i]{yanta}[a]",
         "ie": "[i]{short-carrier}[e]",
+        "iei": "[i]{short-carrier}[e]{short-carrier}[i]",
         "ìe": "[i]{short-carrier}[e]",
         "ìa": "[i]{short-carrier}[a]",
         "ìo": "[i]{short-carrier}[o]",
