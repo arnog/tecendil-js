@@ -103,6 +103,8 @@ accent - lambe - malta + right curl.
         "oia": "{yanta}[o]{short-carrier}[a]",
         "oio": "{yanta}[o]{short-carrier}[o]",
 
+        "ou": "{short-carrier}[o]{short-carrier}[u]", // Not in Quenya, but for loanwords
+
         "ui": "{yanta}[u]",
         "uia": "{yanta}[u]{short-carrier}[a]", // "uial"
         "uiu": "{yanta}[u]{short-carrier}[u]",
@@ -142,7 +144,7 @@ accent - lambe - malta + right curl.
         "χ": "{aha}", // CHI -- GREEK SMALL LETTER CHI
         "ha": "{hyarmen}[a]",
         "hai": "{hyarmen}{anna}[a]",
-        "hau": "{hyarmen}[a]{short-carrier}[u]",
+        "hau": "{hyarmen}{uure}[a]",
         "he": "{hyarmen}[e]",
         "hea": "{hyarmen}[e]{short-carrier}[a]",
         "hi": "{hyarmen}[i]",
@@ -177,6 +179,7 @@ accent - lambe - malta + right curl.
         "ñw": "{nwalme}", // Very rare
         "^nw": "{nwalme}", // "NWalmë"
         "p": "{parma}",
+        "piu": "{parma}[i]{short-carrier}[u]",
         "ph": "{formen}", // Very rare. "PHanto" (whale)
         "py": "{parma}[double-dot-below]",
         // In the Quenya phonotactic, "qu" is always followed by a vowel
@@ -195,6 +198,7 @@ accent - lambe - malta + right curl.
         // ignored otherwise
 
         "ra": "{roomen}[a]{}",
+        "rai": "{roomen}{yanta}[a]",
         "re": "{roomen}[e]{}",
         "ri": "{roomen}[i]{}",
         "ro": "{roomen}[o]{}",
