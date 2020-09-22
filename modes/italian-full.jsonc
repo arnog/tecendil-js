@@ -1,0 +1,433 @@
+//------------------------------------------------------------------------------
+//
+// ITALIAN MODE
+//
+// Contributed by Guido Laudenzi (IG: @guido_laudenzi)
+//
+//------------------------------------------------------------------------------
+{
+    "name": "italian-full",
+    "languageCode": "it", // Italian ISO 639-2
+
+    // ciao come stai = hello how are you = {calma}[a]{telco}[o] {quesse}[o]{malta}[e] {silme}{tinco}{yanta}[a]
+
+    /* the choice between the tengwar, rómen and óre to represent the sound r is based on position in a word. When preceding a vowel (as initially, or between two vowels) or a semivowel (like y or w), rómen was used; but when final, or preceding a full consonant, óre was used. It is the same rule of Quenya.
+     */
+
+    "normalizeVowels": false,
+
+    "tehtarFollow": false,
+    "rrule": false, // Do  *not* implement the R-rule
+
+    "preprocess": {
+        // Disambiguate ch -> k "ch": "k"
+    },
+
+    // ciao = hello = {calma}{osse}{anna}
+    // come = how = {quesse}{anna}{malta}{yanta}
+    // gatto = cat = {ungwe}{osse}{tinco}{tinco}{anna}
+    "words": {
+        "baggins": "Begghins",
+        "samwise": "Samvise",
+        "nazgûl": "Nazgùl",
+        "Brandibuck": "Brandibuk",
+        "Sackville": "Sakvil",
+        "Hobbiville": "hobbivil",
+        "Celeborn": "Celeborn",
+        "Bergil": "Berghil",
+        "Cìrdan": "Chìrdan",
+        "Ecthelion": "Ekthelion",
+        "Gamgee": "Gamgi",
+        "Ghân-buri-ghân": "gan buri gan",
+        "Gildor": "Ghildor",
+        "Gimli": "ghimli",
+        "Irimë": "irime",
+        "Khamûl": "khamùl"
+    },
+
+    "map": {
+        //---------------------------------------------------------------------------------
+        //
+        // VOWELS
+        //
+        "a": "{a-tengwa}", // NOTE: the {dot-above} is optional and mostly use in handwriting
+        "e": "{yanta}",
+        "i": "{i-tengwa}", // NOTE: the {dot-above} is optional and mostly use in handwriting
+        "o": "{anna}",
+        "u": "{uure}",
+
+        "ä": "{osse}",
+        "ë": "{yanta}",
+        "ï": "{i-tengwa}", // NOTE: the {dot-above} is optional and mostly use in handwriting
+        "ö": "{anna}",
+        "ü": "{uure}",
+
+        // Long Vowels
+        "â": "{osse}[andaith]",
+        "ê": "{yanta}[andaith]",
+        "î": "{short-carrier}[andaith]",
+        "ô": "{anna}[andaith]",
+        "û": "{uure}[andaith]",
+
+        "à": "{osse}[andaith]",
+        "è": "{yanta}[andaith]",
+        "ì": "{short-carrier}[andaith]",
+        "ò": "{anna}[andaith]",
+        "ù": "{uure}[andaith]",
+
+        "á": "{osse}[andaith]",
+        "é": "{yanta}[andaith]",
+        "í": "{short-carrier}[andaith]",
+        "ó": "{anna}[andaith]",
+        "ú": "{uure}[andaith]",
+
+        // ----------------------------------------------------------------------------
+        //
+        // DIPHTHONGS
+        //
+        "ai": "{osse}[double-dot]",
+        "au": "{osse}[over-twist]",
+        "ae": "{osse}[circumflex]",
+        "ei": "{yanta}[double-dot]",
+        "eu": "{yanta}[over-twist]",
+        "oi": "{anna}[double-dot]",
+        "ui": "{uure}[double-dot]",
+        "ue": "{uure}[circumflex]",
+        "oe": "{anna}[circumflex]",
+
+        //---------------------------------------------------------------------------
+        //
+        //CONSONANTS
+        //
+
+        "b": "{umbar}",
+        "c": "{calma}",
+        "cai": "{quesse}{osse}[double-dot]",
+        "cau": "{quesse}{osse}[over-twist]",
+        // "cheu": "{quesse}{yanta}[over-twist]",
+        "cae": "{quesse}{osse}[circumflex]",
+        // "chei": "{quesse}{yanta}[double-dot]",
+        "coi": "{quesse}{anna}[double-dot]",
+        "cui": "{quesse}{uure}[double-dot]",
+        "cue": "{quesse}{uure}[circumflex]",
+        "coe": "{quesse}{anna}[circumflex]",
+
+        "cca": "{quesse}{quesse}{osse}",
+        "ccai": "{quesse}{quesse}{osse}[double-dot]",
+        "ccau": "{quesse}{quesse}{osse}[over-twist]",
+        "ccae": "{quesse}{quesse}{osse}[circumflex]",
+        "cce": "{calma}{calma}{yanta}",
+        "cceu": "{calma}{calma}{yanta}[over-twist]",
+        // "cche": "{quesse}{quesse}{yanta}",
+        // "ccheu": "{quesse}{quesse}{yanta}[over-twist]",
+        // "cchei": "{quesse}{quesse}{yanta}[double-dot]",
+        "cchi": "{quesse}{quesse}{short-carrier}",
+        "cco": "{quesse}{quesse}{anna}",
+        "ccu": "{quesse}{quesse}{uure}",
+        // "ccia": "{calma}{calma}{osse}",
+        "cci": "{calma}{calma}{short-carrier}",
+        "cciae": "{calma}{calma}{osse}[circumflex]",
+        "cciai": "{calma}{calma}{osse}[double-dot]",
+        "cciau": "{calma}{calma}{osse}[over-twist]",
+        "ccie": "{calma}{calma}{yanta}",
+        "ccioi": "{calma}{calma}{anna}[double-dot]",
+        "ccei": "{calma}{calma}{yanta}[double-dot]",
+        "cciui": "{calma}{calma}{uure}[double-dot]",
+        "cciue": "{calma}{calma}{uure}[circumflex]",
+        "ccioe": "{calma}{calma}{anna}[circumflex]",
+        // "ccio": "{calma}{calma}{anna}",
+        // "cciu": "{calma}{calma}{uure}",
+        "ccoi": "{quesse}{quesse}{anna}[double-dot]",
+        "ccui": "{quesse}{quesse}{uure}[double-dot]",
+        "ccue": "{quesse}{quesse}{uure}[circumflex]",
+        "ccoe": "{quesse}{quesse}{anna}[circumflex]",
+
+        "ch": "{hwesta}",
+        "chr": "{quesse-extended}{roomen}",
+        "ci": "{calma}{short-carrier}",
+        "cia": "{calma}{osse}",
+        "cìa": "{calma}{short-carrier}{osse}",
+        "ciai": "{calma}{osse}[double-dot]",
+        "ciau": "{calma}{osse}[over-twist]",
+        "ciae": "{calma}{osse}[circumflex]",
+        "cie": "{calma}{yanta}",
+        "cii": "{calma}{short-carrier}{short-carrier}",
+        "cìe": "{calma}{short-carrier}{yanta}",
+        "cio": "{calma}{anna}",
+        "ciò": "{calma}{anna}[e]",
+        "cìo": "{calma}{short-carrier}{anna}",
+        "cioe": "{calma}{anna}[circumflex]",
+        "cioi": "{calma}{anna}[double-dot]",
+        "ciu": "{calma}{uure}",
+        // "ce": "{calma}{yanta}",
+        // "ceu": "{calma}{yanta}[over-twist]",
+        // "cei": "{calma}{yanta}[double-dot]",
+        "ciui": "{calma}{uure}[double-dot]",
+        "ciue": "{calma}{uure}[circumflex]",
+
+        "d": "{ando}",
+        "dh": "{anto}",
+        "f": "{formen}",
+
+        "g": "{ungwe}",
+        "gh": "{ungwe}",
+        "gi": "{anga}{short-carrier}",
+        "ge": "{anga}{yanta}",
+        "gia": "{anga}{osse}",
+        "gio": "{anga}{anna}",
+        "giu": "{anga}{uure}",
+        "giù": "{anga}{uure}[e]",
+        "già": "{anga}{osse}[e]",
+        "gìa": "{anga}{short-carrier}{osse}",
+        "gìe": "{anga}{short-carrier}{yanta}",
+        "gìo": "{anga}{short-carrier}{anna}",
+        "gii": "{anga}{short-carrier}{short-carrier}",
+        "giai": "{anga}{osse}[double-dot]",
+        "giau": "{anga}{osse}[over-twist]",
+        "geu": "{anga}{yanta}[over-twist]",
+        "giae": "{anga}{osse}[circumflex]",
+        "gei": "{anga}{yanta}[double-dot]",
+        "gioi": "{anga}{anna}[double-dot]",
+        "giui": "{anga}{uure}[double-dot]",
+        "giue": "{anga}{uure}[circumflex]",
+        "gioe": "{anga}{anna}[circumflex]",
+
+        "gn": "{noldo}", //"gn" has the sound of the quenya "ny", in italian
+
+        "gw": "{ungwe}[over-twist]",
+        "gwa": "{ungwe}[over-twist]{osse}",
+        "gwe": "{ungwe}[over-twist]{yanta}",
+        "gwi": "{ungwe}[over-twist]{short-carrier}{}",
+        "gwo": "{ungwe}[over-twist]{anna}",
+
+        "h": "{hyarmen}",
+        "hy": "{hyarmen}[double-dot-below]",
+
+        "hl": "{halla}{lambe}",
+        "hr": "{halla}{roomen}",
+
+        "j": "{anga-extended}",
+        "sh": "{aha}",
+
+        "k": "{quesse}",
+        "hw": "{hwesta}",
+        "l": "{lambe}",
+        // "lb": "{lambe}{umbar}",
+        // "ld": "{alda}",
+        "m": "{vala}",
+        "mb": "{umbar}[bar-above]",
+        "mm": "{malta}",
+        "mp": "{parma}[bar-above]",
+
+        "n": "{oore}",
+        "nd": "{ando}[bar-above]",
+        "nf": "{formen}[bar-above]",
+        "ng": "{ungwe}[bar-above]",
+        "nk": "{quesse}[bar-above]",
+        "nl": "{lambe}[bar-above]", // Not [bar-inside], as it's a nasal, not a geminated
+        "nn": "{nuumen}",
+        "nt": "{tinco}[bar-above]",
+        "nv": "{ampa}[bar-above]",
+        "nz": "{esse-nuquerna}[bar-above]",
+        "nq": "{hwesta}[bar-above]",
+        // "ns": "{oore}{silme}",
+        "nr": "{roomen}[bar-above]",
+
+        "p": "{parma}",
+        "ph": "{parma-extended}",
+        "qu": "{quesse}[over-twist]",
+        "cqu": "{quesse}{quesse}[over-twist]",
+        "qqu": "{quesse}{quesse}[over-twist]",
+        "nqu": "{quesse}[bar-above][over-twist]",
+
+        "cr": "{quesse}{roomen}",
+        "cl": "{quesse}{lambe}",
+        "ccr": "{quesse}{quesse}{roomen}",
+        "ccl": "{quesse}{quesse}{lambe}",
+
+        "cn": "{quesse}{oore}",
+        "cm": "{quesse}{vala}",
+        "ct": "{quesse}{tinco}",
+
+        "ca": "{quesse}{osse}",
+        "co": "{quesse}{anna}",
+        "cu": "{quesse}{uure}",
+
+        "q": "{hwesta}",
+
+        "r": "{roomen}",
+
+        "s": "{silme}",
+        "t": "{tinco}",
+        "th": "{suule}",
+        "þ": "{suule}",
+        "v": "{ampa}",
+        "w": "{vilya}",
+        "x": "{quesse}[x-curl]",
+        "y": "{silme-nuquerna}",
+        "ya": "{anca}{osse}",
+        "ye": "{anca}{yanta}",
+        "yi": "{anca}{short-carrier}",
+        "yo": "{anca}{anna}",
+        "yu": "{anca}{uure}",
+
+        "z": "{esse-nuquerna}",
+
+        // Clusters with "sc"
+        "sc": "{silme}{quesse}",
+        "sce": "{aha}{yanta}",
+        "scei": "{aha}{yanta}[double-dot]",
+        "sceu": "{aha}{yanta}[over-twist]",
+        "sci": "{aha}{short-carrier}",
+        "scia": "{aha}{short-carrier}{osse}",
+        "scie": "{aha}{yanta}",
+        "scio": "{aha}{anna}",
+        "sciu": "{aha}{uure}",
+        "sciai": "{aha}{osse}[double-dot]",
+        "sciau": "{aha}{osse}[over-twist]",
+        "sciae": "{aha}{osse}[circumflex]",
+        "scioi": "{aha}{anna}[double-dot]",
+        "sciui": "{aha}{uure}[double-dot]",
+        "sciue": "{aha}{uure}[circumflex]",
+        "scioe": "{aha}{anna}[circumflex]",
+
+        // Combinations with "m/n" -- nasalized consonants
+        "nc": "{quesse}[bar-above]",
+        "nca": "{quesse}[bar-above]{osse}",
+        // "nco": "{quesse}[bar-above]{anna}",
+        // "ncu": "{quesse}[bar-above]{uure}",
+        "nche": "{quesse}[bar-above]{yanta}",
+        "nché": "{quesse}[bar-above]{yanta}[e]",
+        "nchè": "{quesse}[bar-above]{yanta}[e]",
+        "ncheu": "{quesse}[bar-above]{yanta}[over-twist]",
+        "nchi": "{quesse}[bar-above]{short-carrier}",
+
+        "nce": "{calma}[bar-above]{yanta}",
+        "nceu": "{calma}[bar-above]{yanta}[over-twist]",
+
+        "nci": "{calma}[bar-above]{short-carrier}",
+        "ncia": "{calma}[bar-above]{osse}",
+        "nciau": "{calma}[bar-above]{osse}[over-twist]",
+        "ncie": "{calma}[bar-above]{yanta}",
+        "ncio": "{calma}[bar-above]{anna}",
+        "nciò": "{calma}[bar-above]{anna}[e]",
+        "ncioe": "{calma}[bar-above]{anna}[circumflex]",
+        "nciu": "{calma}[bar-above]{uure}",
+        "nciue": "{calma}[bar-above]{uure}[circumflex]",
+        "nciui": "{calma}[bar-above]{uure}[double-dot]",
+
+        "ncai": "{quesse}[bar-above]{osse}[double-dot]",
+        "ncau": " {quesse}[bar-above]{osse}[over-twist]",
+        "ncae": "{quesse}[bar-above]{osse}[circumflex]",
+        "nciai": "{calma}[bar-above]{osse}[double-dot]",
+        "ncei": "{calma}[bar-above]{yanta}[double-dot]",
+        "nciae": "{calma}[bar-above]{osse}[circumflex]",
+        "ncioi": "{calma}[bar-above]{anna}[double-dot]",
+        "nchei": "{quesse}[bar-above]{yanta}[double-dot]",
+        // "ncoi": "{quesse}[bar-above]{anna}[double-dot]",
+        // "ncui": "{quesse}[bar-above]{uure}[double-dot]",
+        // "ncue": "{quesse}[bar-above]{uure}[circumflex]",
+        // "ncoe": "{quesse}[bar-above]{anna}[circumflex]",
+
+        "nga": "{ungwe}[bar-above]{osse}",
+        "nghe": "{ungwe}[bar-above]{yanta}",
+        "nghi": "{ungwe}[bar-above]{short-carrier}",
+        // "ngo": "{ungwe}[bar-above]{anna}",
+        // "ngu": "{ungwe}[bar-above]{uure}",
+        "ngia": "{anga}[bar-above]{osse}",
+        "nge": "{anga}[bar-above]{yanta}",
+
+        "ngai": "{ungwe}[bar-above]{osse}[double-dot]",
+        "ngau": "{ungwe}[bar-above]{osse}[over-twist]",
+        "ngheu": "{ungwe}[bar-above]{yanta}[over-twist]",
+        "ngae": "{ungwe}[bar-above]{osse}[circumflex]",
+        "nghei": "{ungwe}[bar-above]{yanta}[double-dot]",
+        // "ngoi": "{ungwe}[bar-above]{anna}[double-dot]",
+        // "ngui": "{ungwe}[bar-above]{uure}[double-dot]",
+        // "ngue": "{ungwe}[bar-above]{uure}[circumflex]",
+        // "ngoe": "{ungwe}[bar-above]{anna}[circumflex]",
+
+        "ngiau": "{anga}[bar-above]{osse}[over-twist]",
+        "ngei": "{anga}[bar-above]{yanta}[double-dot]",
+        "ngeu": "{anga}[bar-above]{yanta}[over-twist]",
+        "ngi": "{anga}[bar-above]{short-carrier}",
+        "ngiai": "{anga}[bar-above]{osse}[double-dot]",
+        "ngiae": "{anga}[bar-above]{osse}[circumflex]",
+        "ngie": "{anga}[bar-above]{yanta}",
+        "ngioe": "{anga}[bar-above]{anna}[circumflex]",
+        "ngioi": "{anga}[bar-above]{anna}[double-dot]",
+        "ngiui": "{anga}[bar-above]{uure}[double-dot]",
+        "ngiue": "{anga}[bar-above]{uure}[circumflex]",
+        "ngio": "{anga}[bar-above]{anna}",
+        "ngiu": "{anga}[bar-above]{uure}",
+
+        // Combinations with "s"
+        "cs": "{quesse}[x-curl]",
+        "ks": "{quesse}[x-curl]",
+
+        // Combinations with "gl"
+
+        "gl": "{alda}",
+        // "gli": "{alda}{short-carrier}",
+        "glie": "{alda}{yanta}", // the "i" is silent
+        "glia": "{alda}{osse}", // the "i" is silent
+        "glio": "{alda}{anna}", // the "i" is silent
+        "gliu": "{alda}{uure}", // the "i" is silent
+        // "gliò": "{lambe}[double-dot-inside]{anna}[e]",
+
+        // ----------------------------------------------------------------------------
+        //
+        // GEMINATED CONSONANTS.
+
+        "cc": "{quesse}{calma}",
+        "cch": "{quesse}{quesse}",
+        "ccia": "{calma}{calma}{osse}",
+        "ccio": "{calma}{calma}{anna}",
+        "cciu": "{calma}{calma}{uure}",
+        "gg": "{ungwe}{calma}",
+        "ggh": "{ungwe}{quesse}",
+        "ggia": "{anga}{anga}{osse}",
+        "ggio": "{anga}{anga}{anna}",
+        "ggiu": "{anga}{anga}{uure}",
+        "gga": "{ungwe}{ungwe}{osse}",
+        "ggai": "{ungwe}{ungwe}{osse}[double-dot]",
+        "ggau": "{ungwe}{ungwe}{osse}[over-twist]",
+        "ggae": "{ungwe}{ungwe}{osse}[circumflex]",
+        "ggheu": "{ungwe}{ungwe}{yanta}[over-twist]",
+        "gghei": "{ungwe}{ungwe}{yanta}[double-dot]",
+        "ggoi": "{ungwe}{ungwe}{anna}[double-dot]",
+        "ggui": "{ungwe}{ungwe}{uure}[double-dot]",
+        "ggue": "{ungwe}{ungwe}{uure}[circumflex]",
+        "ggoe": "{ungwe}{ungwe}{anna}[circumflex]",
+        // "gau": "{ungwe}{osse}[over-twist]",
+        // "gheu": "{ungwe}{yanta}[over-twist]",
+        // "gae": "{ungwe}{osse}[circumflex]",
+        // "gai": "{ungwe}{osse}[double-dot]",
+        // "ghei": "{ungwe}{yanta}[double-dot]",
+        // "goi": "{ungwe}{anna}[double-dot]",
+        // "gui": "{ungwe}{uure}[double-dot]",
+        // "gue": "{ungwe}{uure}[circumflex]",
+        // "goe": "{ungwe}{anna}[circumflex]",
+        "gghe": "{ungwe}{ungwe}{yanta}",
+        "gghi": "{ungwe}{ungwe}{short-carrier}",
+        "ggo": "{ungwe}{ungwe}{anna}",
+        "ggu": "{ungwe}{ungwe}{uure}",
+        // "ggia": "{anga}{anga}{osse}",
+        "gge": "{anga}{anga}{yanta}",
+        // "ggio": "{anga}{anga}{anna}",
+        // "ggiu": "{anga}{anga}{uure}",
+        "ggi": "{anga}{anga}{short-carrier}",
+        "ggie": "{anga}{anga}{yanta}",
+        "ggiai": "{anga}{anga}{osse}[double-dot]",
+        "ggiau": "{anga}{anga}{osse}[over-twist]",
+        "ggeu": "{anga}{anga}{yanta}[over-twist]",
+        "ggiae": "{anga}{anga}{osse}[circumflex]",
+        "ggei": "{anga}{anga}{yanta}[double-dot]",
+        "ggioi": "{anga}{anga}{anna}[double-dot]",
+        "ggiui": "{anga}{anga}{uure}[double-dot]",
+        "ggiue": "{anga}{anga}{uure}[circumflex]",
+        "ggioe": "{anga}{anga}{anna}[circumflex]",
+
+        "ss": "{alt-esse}"
+    }
+}

@@ -144,7 +144,7 @@
         //
         // CONSONANTS
         //
-        "ĥ": "{hwesta}", // esperanto
+        // "ĥ": "{hwesta}", // esperanto
         "hh": "{hwesta}", // esperanto
 
         // Combinations with "s"

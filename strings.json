@@ -369,7 +369,9 @@
         "label.mode.erebor": "Cirth",
 
         "label.mode.italian": "Italiano",
+        "label.mode.italian-full": "Italiano Esteso",
         "menu.mode.italian": "Italiano",
+        "menu.mode.italian-full": "Italiano Esteso",
 
         "label.placeholder.try": "Prova: „${placeholder}“",
         "label.font": "Font: ",
