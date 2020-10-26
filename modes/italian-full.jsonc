@@ -19,8 +19,7 @@
     "tehtarFollow": false,
     "rrule": false, // Do  *not* implement the R-rule
 
-    "preprocess": {
-    },
+    "preprocess": {},
 
     // ciao = hello = {calma}{osse}{anna}
     // come = how = {quesse}{anna}{malta}{yanta}
@@ -100,6 +99,7 @@
         //
 
         "b": "{umbar}",
+        "bw": "{umbar}[over-twist]",
 
         "c": "{calma}",
         "ca": "{quesse}{osse}",
@@ -141,7 +141,7 @@
         "ccue": "{quesse}{quesse}{uure}[circumflex]",
         "ccoe": "{quesse}{quesse}{anna}[circumflex]",
 
-        "ch": "{hwesta}",
+        "ch": "{quesse}",
         "chr": "{quesse-extended}{roomen}",
         "ci": "{calma}{short-carrier}",
         "cia": "{calma}{osse}",
@@ -161,20 +161,22 @@
         "ciui": "{calma}{uure}[double-dot]",
         "ciue": "{calma}{uure}[circumflex]",
 
-        "cr": "{quesse}{roomen}",
-        "cl": "{quesse}{lambe}",
         "ccr": "{quesse}{quesse}{roomen}",
         "ccl": "{quesse}{quesse}{lambe}",
 
-        "cn": "{quesse}{oore}",
+        "cl": "{quesse}{lambe}",
         "cm": "{quesse}{vala}",
-        "ct": "{quesse}{tinco}",
-
+        "cn": "{quesse}{oore}",
         "cqu": "{quesse}{quesse}[over-twist]",
+        "cr": "{quesse}{roomen}",
+        "ct": "{quesse}{tinco}",
+        "cw": "{quesse}[over-twist]",
 
         "d": "{ando}",
+        "dw": "{ando}[over-twist]",
         "dh": "{anto}",
         "f": "{formen}",
+        "fw": "{formen}[over-twist]",
 
         "g": "{ungwe}",
         "ge": "{anga}{yanta}",
@@ -212,6 +214,7 @@
         "gl": "{alda}",
         "glie": "{alda}{yanta}", // the "i" is silent
         "glia": "{alda}{osse}", // the "i" is silent
+        "gliai": "{alda}{osse}[double-dot]", // ai -> osse double-dot
         "glio": "{alda}{anna}", // the "i" is silent
         "gliu": "{alda}{uure}", // the "i" is silent
 
@@ -219,21 +222,24 @@
         "hl": "{halla}{lambe}",
         "hr": "{halla}{roomen}",
         "hy": "{hyarmen}[double-dot-below]",
+        "hw": "{hyarmen}[overt-twist]",
 
-        "j": "{anga-extended}",
+        "j": "{anca}",
 
         "k": "{quesse}",
-        "hw": "{hwesta}",
         "l": "{lambe}",
+        "lw": "{lambe}[over-twist]",
         "m": "{vala}",
         "mb": "{umbar}[bar-above]",
         "mm": "{malta}",
         "mp": "{parma}[bar-above]",
+        "mw": "{vala}[over-twist]",
 
         "n": "{oore}",
         "nd": "{ando}[bar-above]",
         "nf": "{formen}[bar-above]",
         "ng": "{ungwe}[bar-above]",
+        "ngw": "{ungwe}[over-twist][bar-above]",
         "nk": "{quesse}[bar-above]",
         "nl": "{lambe}[bar-above]", // Not [bar-inside], as it's a nasal, not a geminated
         "nn": "{nuumen}",
@@ -241,17 +247,19 @@
         "nv": "{ampa}[bar-above]",
         "nz": "{esse-nuquerna}[bar-above]",
         "nq": "{hwesta}[bar-above]",
-        "nqu": "{quesse}[bar-above][over-twist]",
+        "nqu": "{quesse}[over-twist][bar-above]",
         "nr": "{roomen}[bar-above]",
+        "nw": "{roomen}[over-twist]",
 
         // Combinations with "m/n" -- nasalized consonants
         "nc": "{quesse}[bar-above]",
         "nca": "{quesse}[bar-above]{osse}",
         "nche": "{quesse}[bar-above]{yanta}",
-        "nché": "{quesse}[bar-above]{yanta}[e]",
-        "nchè": "{quesse}[bar-above]{yanta}[e]",
+        "nché": "{quesse}[bar-above]{yanta}[andaith]",
+        "nchè": "{quesse}[bar-above]{yanta}[andaith]",
         "ncheu": "{quesse}[bar-above]{yanta}[over-twist]",
         "nchi": "{quesse}[bar-above]{short-carrier}",
+        "nchì": "{quesse}[bar-above]{short-carrier}[andaith]",
 
         "nce": "{calma}[bar-above]{yanta}",
         "nceu": "{calma}[bar-above]{yanta}[over-twist]",
@@ -301,13 +309,16 @@
         "ngiue": "{anga}[bar-above]{uure}[circumflex]",
 
         "p": "{parma}",
+        "pw": "{parma}[over-twist]",
         "ph": "{parma-extended}",
-        "q": "{hwesta}",
+        "q": "{qwesse}",
         "qu": "{quesse}[over-twist]",
         "qqu": "{quesse}{quesse}[over-twist]",
         "r": "{roomen}",
+        "rw": "{roomen}[over-twist]",
         "s": "{silme}",
         "ss": "{alt-esse}",
+        "sw": "{silme}[over-twist]",
         "sh": "{aha}",
 
         // Clusters with "sc"
@@ -331,35 +342,47 @@
         "t": "{tinco}",
         "th": "{suule}",
         "þ": "{suule}",
+        "tw": "{tinco}[over-twist]",
         "v": "{ampa}",
         "w": "{vilya}",
         "x": "{quesse}[x-curl]",
 
         "y": "{silme-nuquerna}",
-        "ya": "{anca}{osse}",
-        "ye": "{anca}{yanta}",
-        "yi": "{anca}{short-carrier}",
-        "yo": "{anca}{anna}",
-        "yu": "{anca}{uure}",
+        "ya": "{anga-extended}{osse}",
+        "yà": "{anga-extended}{osse}[andaith]",
+        "ye": "{anga-extended}{yanta}",
+        "yè": "{anga-extended}{yanta}[andaith]",
+        "yi": "{anga-extended}{short-carrier}",
+        "yì": "{anga-extended}{short-carrier}[andaith]",
+        "yo": "{anga-extended}{anna}",
+        "yò": "{anga-extended}{anna}[andaith]",
+        "yu": "{anga-extended}{uure}",
+        "yù": "{anga-extended}{uure}[andaith]",
 
         "z": "{esse-nuquerna}",
+        "zw": "{esse-nuquerna}[over-twist]",
 
         // Combinations with "s"
         "cs": "{quesse}[x-curl]",
         "ks": "{quesse}[x-curl]",
 
-
         // ----------------------------------------------------------------------------
         //
         // GEMINATED CONSONANTS.
 
-        "cc": "{quesse}{calma}",
+        "cc": "{quesse}{quesse}",
+        "ccè": "{quesse}{yanta}[andaith]",
         "cch": "{quesse}{quesse}",
+        "cchè": "{quesse}{quesse}{yanta}[andaith]",
         "ccia": "{calma}{calma}{osse}",
+        "ccià": "{calma}{calma}{osse}[andaith]",
+        "cciè": "{calma}{calma}{yanta}[andaith]",
         "ccio": "{calma}{calma}{anna}",
+        "cciò": "{calma}{calma}{anna}[andaith]",
         "cciu": "{calma}{calma}{uure}",
+        "cciù": "{calma}{calma}{uure}[andaith]",
 
-        "gg": "{ungwe}{calma}",
+        "gg": "{ungwe}{ungwe}",
         "ggh": "{ungwe}{quesse}",
         "ggia": "{anga}{anga}{osse}",
         "ggio": "{anga}{anga}{anna}",
