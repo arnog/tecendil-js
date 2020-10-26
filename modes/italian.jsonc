@@ -327,6 +327,7 @@
 
         "gli": "{lambe}[double-dot-inside][i]",
         "glia": "{lambe}[double-dot-inside][a]{}",
+        "gliai": "{lambe}[double-dot-inside]{yanta}[a]{}",
         "glie": "{lambe}[double-dot-inside][e]{}",
         "glio": "{lambe}[double-dot-inside][o]{}",
         "gliu": "{lambe}[double-dot-inside][u]{}",
