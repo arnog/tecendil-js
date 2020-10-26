@@ -96,6 +96,7 @@ accent - lambe - malta + right curl.
         "iê": "[i]{long-carrier}[e]",
         "îe": "{long-carrier}[i]{short-carrier}[e]",
         "io": "[i]{short-carrier}[o]", // silmarilion
+        "iu": "{uure}[i]{}", // ciuca (thigh)
 
         "oa": "[o]{short-carrier}[a]", // hroa
         "oe": "{yanta}[o]", // ??
