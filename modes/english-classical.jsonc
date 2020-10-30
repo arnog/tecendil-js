@@ -120,7 +120,7 @@ For Michael son of Middle-earth
         //     "rd":	"{arda}",
         //     "rds": "[sa-rince]{arda}",
 
-        "ph": "{formen}",
+        "ph": "{parma-extended}",
         "^uph": "[u]{parma}{hyarmen}", // Not "ph" sound, e.g. "up-hea-val"
 
         "tw": "[over-twist]{tinco}",

@@ -199,7 +199,7 @@
         "rds": "[sa-rince]{arda}",
         //     "ld":		"{alda}",	For all we know, it does not represent LD in this particular mode, since in this particular mode, Tolkien has written LD with the sequence lambe, ando (see DTS 5 “Ronald”). If anything, then we can hypothesize that alda is a sign for double LL in this particular mode, since that is what it represents in the corresponding full writing mode (see DTS 13, DTS 45, DTS 48).
 
-        "ph": "{formen}",
+        "ph": "{parma-extended}",
         "^uph": "[u]{parma}{hyarmen}", // Not "ph' sound, e.g. "up-hea-val'
 
         "wh": "{hwesta-sindarinwa}",
@@ -324,7 +324,7 @@
         "n": "{nuumen}",
         "p": "{parma}",
         //	"r":	special case
-        "s": "{silme}",
+        "s": "{alt-silme}",
         "t": "{tinco}",
         "tz": "{tinco}{silme}", // 80% of the time /ts/ (exceptions: hertzog, nietzsche, pretzel, schultze, spitzer, waltz, ...)
         "v": "{ampa}",
