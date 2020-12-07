@@ -19,7 +19,19 @@
     "tehtarFollow": false,
     "rrule": false, // Do  *not* implement the R-rule
 
-    "preprocess": {},
+    "preprocess": {
+        "á": "à",
+        "é": "è",
+        "í": "ì",
+        "ó": "ò",
+        "ú": "ù",
+
+        "â": "à",
+        "ê": "è",
+        "î": "ì",
+        "ô": "ò",
+        "û": "ù"
+    },
 
     // ciao = hello = {calma}{osse}{anna}
     // come = how = {quesse}{anna}{malta}{yanta}
@@ -61,23 +73,12 @@
         "ü": "{uure}",
 
         // Long Vowels
-        "â": "{osse}[andaith]",
-        "ê": "{yanta}[andaith]",
-        "î": "{short-carrier}[andaith]",
-        "ô": "{anna}[andaith]",
-        "û": "{uure}[andaith]",
 
         "à": "{osse}[andaith]",
         "è": "{yanta}[andaith]",
         "ì": "{short-carrier}[andaith]",
         "ò": "{anna}[andaith]",
         "ù": "{uure}[andaith]",
-
-        "á": "{osse}[andaith]",
-        "é": "{yanta}[andaith]",
-        "í": "{short-carrier}[andaith]",
-        "ó": "{anna}[andaith]",
-        "ú": "{uure}[andaith]",
 
         // ----------------------------------------------------------------------------
         //
@@ -212,7 +213,8 @@
 
         // Combinations with "gl"
         // "gl": "{ungwe}{lambe}",
-        "glì": "{ungwe}{short-carrier}[andaith]",
+        "gli": "{alda}{short-carrier}",
+        "glì": "{alda}{short-carrier}[andaith]",
         "glia": "{alda}{osse}", // the "i" is silent
         "glià": "{alda}{osse}[andaith]", // the "i" is silent
         "glie": "{alda}{yanta}", // the "i" is silent
@@ -260,7 +262,6 @@
         "nc": "{quesse}[bar-above]",
         "nca": "{quesse}[bar-above]{osse}",
         "nche": "{quesse}[bar-above]{yanta}",
-        "nché": "{quesse}[bar-above]{yanta}[andaith]",
         "nchè": "{quesse}[bar-above]{yanta}[andaith]",
         "ncheu": "{quesse}[bar-above]{yanta}[over-twist]",
         "nchi": "{quesse}[bar-above]{short-carrier}",

@@ -102,6 +102,11 @@
         "ì": "[i]{long-carrier}",
         "ò": "[o]{long-carrier}",
         "ù": "[u]{long-carrier}",
+        "á": "[a]{long-carrier}",
+        "é": "[e]{long-carrier}",
+        "í": "[i]{long-carrier}",
+        "ó": "[o]{long-carrier}",
+        "ú": "[u]{long-carrier}",
 
         // ----------------------------------------------------------------------------
         //
@@ -580,7 +585,7 @@
         "thames": "{TINCO-EXTENDED}ames", // "th" pronounced /t/ uses extended tinco
         "thing": "th'ing",
         "things": "{suule}{nwalme}[i][sa-rince]",
-        "this": "{anto}[i][sa-rince]",
+        "this": "{anto}{short-carrier}[i][sa-rince]",
         "than": "{anto}{nuumen}[a]",
         "that": "{anto}{tinco}[a]",
         "thee": "{anto}{short-carrier}[e]{short-carrier}[e]",
