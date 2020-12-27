@@ -179,6 +179,17 @@ accent - lambe - malta + right curl.
         "ngw": "{ungwe}",
         "ñw": "{nwalme}", // Very rare
         "^nw": "{nwalme}", // "NWalmë"
+        // Dreamingfifi:
+        // > So, the history of Nwalme and the NW that it represents is that it
+        // > used to be pronounced /ŋʷ/ and was Romanized ÑW. It's a sound in
+        // > Quenya that only occurred at the beginnings of words. In the Exilic
+        // > dialect of Quenya, the word-initial Ñ became N. The only source of NW
+        // > at the beginnings of words is this old /ŋʷ/. Therefore, the only way
+        // > to use Nwalme is to have it used for word-initial NW and ÑW.
+
+        // > Therefore, you'd never write "Vanwa" with Nwalme. Instead, the NW
+        // > would be rendered with Númen and Vilya.
+
         "p": "{parma}",
         "piu": "{parma}[i]{short-carrier}[u]",
         "ph": "{formen}", // Very rare. "PHanto" (whale)
