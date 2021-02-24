@@ -89,11 +89,21 @@ accent - lambe - malta + right curl.
     "eo": "[e]{short-carrier}[o]", // ??
     "eoi": "[e]{yanta}[o]",
     "eu": "{uure}[e]",
+    "êa": "{long-carrier}[e]{short-carrier}[a]",
+    // "êe": // Looks good by default (double-[e] over long carrier)
+    "êi": "{long-carrier}[e]{short-carrier}[i]",
+    "êo": "{long-carrier}[e]{short-carrier}[o]",
+    "êu": "{long-carrier}[e]{short-carrier}[u]",
 
     "ia": "[i]{short-carrier}[a]", // ??
     "iau": "[i]{short-carrier}[a]{short-carrier}[u]", // "iaun"
     "ie": "[i]{short-carrier}[e]",
     "iê": "[i]{long-carrier}[e]",
+    "iêa": "[i]{long-carrier}[e]{short-carrier}[o]",
+    "iêe": "[i]{long-carrier}[double-e]",
+    "iêi": "[i]{long-carrier}[e]{short-carrier}[i]",
+    "iêo": "[i]{long-carrier}[e]{short-carrier}[o]", // "morniêo"
+    "iêu": "[i]{long-carrier}[e]{short-carrier}[u]",
     "îe": "{long-carrier}[i]{short-carrier}[e]",
     "io": "[i]{short-carrier}[o]", // silmarilion
     "iu": "{uure}[i]{}", // ciuca (thigh)
