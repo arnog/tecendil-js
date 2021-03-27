@@ -30,6 +30,7 @@
     "menu.home": "Home",
     "menu.handbook": "Tengwar Handbook",
     "menu.whats-new": "What’s New",
+    "menu.install": "Install",
     "menu.settings": "Settings",
     "footer.font-credits": "<b>Fonts</b> Tengwar Annatar and Tengwar Telcontar by Johan Winge, Parmaite Tengwar and Tengwar Eldamar by M&aring;ns Bj&ouml;rkman, Tengwar Formal by the <a href=\"http://freetengwar.sourceforge.net/\">Free Tengwar Font Project</a>. Some fonts adapted for the web by Ben Talagan Babut of the Glaemscribe project.",
     "footer.contact": "Got a question? Have some feedback? Want to check a transcription? Just ask ",
@@ -122,7 +123,8 @@
     "warning.elvish": "p><b>VORSICHT</b>Das sieht nicht nach Englisch aus. Ist das Sindarin oder Quenya? Für eine genaue Transkription wählen Sie den Sindarin-, Quenya- oder Beleriand-Modus</p>",
 
     "menu.home": "Zuhause",
-    "menu.whats-new": "Was gibt's Neues?",
+    "menu.whats-new": "Installieren",
+    "menu.install": "Was gibt's Neues?",
     "menu.handbook": "Tengwar Handbuch",
     "menu.settings": "Einstellungen",
 
@@ -209,6 +211,7 @@
 
     "menu.home": "Accueil",
     "menu.whats-new": "Quoi de neuf?",
+    "menu.install": "Installer",
     "menu.handbook": "Manuel de Tengwar",
     "menu.settings": "Réglages",
 
@@ -281,6 +284,7 @@
 
     "menu.home": "Bienvenida",
     "menu.whats-new": "¿Qué hay de nuevo?",
+    "menu.install": "Instalar",
     "menu.handbook": "Manual de Tengwar",
     "menu.settings": "Ajustes",
 
@@ -342,6 +346,7 @@
 
     "menu.home": "家",
     "menu.whats-new": "什麼是新的？",
+    "menu.install": "安裝",
     "menu.handbook": "騰格手冊",
     "menu.settings": "設置",
 
@@ -417,6 +422,7 @@
 
     "menu.home": "Benvenuto",
     "menu.whats-new": "Cosa c'è di nuovo?",
+    "menu.install": "Installare",
     "menu.handbook": "Manuale Tengwar",
     "menu.settings": "Impostazioni",
 
