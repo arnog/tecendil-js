@@ -43,180 +43,180 @@
 // http://digiphile.wordpress.com/2009/01/23/online-jrrtolkein-translators-and-font-converters/
 
 {
-    // Short-name
-    "name": "sindarin",
-    "languageCode": "sjn", // Sindarin
+  // Short-name
+  "name": "sindarin",
+  "languageCode": "sjn", // Sindarin
 
-    "normalizeVowels": true,
+  "normalizeVowels": true,
 
-    "tehtarFollow": true,
+  "tehtarFollow": true,
 
-    "preprocess": {
-        // Expand ae/oe ligatures (rare, but used by Tolking in The Etymologies e.g. for glaer)
-        "œ": "oe",
-        "æ": "ae",
+  "preprocess": {
+    // Expand ae/oe ligatures (rare, but used by Tolking in The Etymologies e.g. for glaer)
+    "œ": "oe",
+    "æ": "ae",
 
-        // Disambiguate "qu" -> "q"
-        "qu": "q",
+    // Disambiguate "qu" -> "q"
+    "qu": "q",
 
-        // Suppress intraword dash
-        "([^0-9\\s]+)-([^0-9\\s]+)": "$1$2",
-        "(\\w)\\.(\\w)": "$1·$2"
-    },
+    // Suppress intraword dash
+    "([^0-9\\s]+)-([^0-9\\s]+)": "$1$2",
+    "(\\w)\\.(\\w)": "$1·$2"
+  },
 
-    "map": {
-        // ----------------------------------------------------------------------------
-        //
-        // VOWELS
-        //
+  "map": {
+    // ----------------------------------------------------------------------------
+    //
+    // VOWELS
+    //
 
-        "y": "[double-dot]",
+    "y": "[double-dot]",
 
-        // Long vowels
-        "â": "[a]{long-carrier}",
-        "ê": "[e]{long-carrier}",
-        "î": "[i]{long-carrier}",
-        "ô": "[o]{long-carrier}",
-        "û": "[u]{long-carrier}",
-        "ŷ": "[double-dot]{long-carrier}",
+    // Long vowels
+    "â": "[a]{long-carrier}",
+    "ê": "[e]{long-carrier}",
+    "î": "[i]{long-carrier}",
+    "ô": "[o]{long-carrier}",
+    "û": "[u]{long-carrier}",
+    "ŷ": "[double-dot]{long-carrier}",
 
-        // ----------------------------------------------------------------------------
-        //
-        // DIPHTHONGS
-        //
-        "ae": "[a]{yanta}",
-        "ai": "[a]{anna}",
-        "au": "[a]{vala}",
-        "oe": "[o]{yanta}",
-        "ei": "[e]{anna}",
-        "ui": "[u]{anna}",
-        "aw": "[a]{vala}",
+    // ----------------------------------------------------------------------------
+    //
+    // DIPHTHONGS
+    //
+    "ae": "[a]{yanta}",
+    "ai": "[a]{anna}",
+    "au": "[a]{vala}",
+    "oe": "[o]{yanta}",
+    "ei": "[e]{anna}",
+    "ui": "[u]{anna}",
+    "aw": "[a]{vala}",
 
-        // Initial i + vowel is a consonantal y written with yanta
-        "^ia": "{yanta}[a]", // "iant" (bridge)
-        "^ie": "{yanta}[e]", // "ier" (as)
-        "^io": "{yanta}[o]", // "ion" (son)
-        "^iu": "{yanta}[u]", // "iuith" (use)
-        "^iâ": "{yanta}[a]{long-carrier}", // "iaa" (chasm)
-        "^iê": "{yanta}[e]{long-carrier}",
-        "^iô": "{yanta}[o]{long-carrier}",
-        "^iû": "{yanta}[u]{long-carrier}", // "iuul"? (embers)
+    // Initial i + vowel is a consonantal y written with yanta
+    "^ia": "{yanta}[a]", // "iant" (bridge)
+    "^ie": "{yanta}[e]", // "ier" (as)
+    "^io": "{yanta}[o]", // "ion" (son)
+    "^iu": "{yanta}[u]", // "iuith" (use)
+    "^iâ": "{yanta}[a]{long-carrier}", // "iaa" (chasm)
+    "^iê": "{yanta}[e]{long-carrier}",
+    "^iô": "{yanta}[o]{long-carrier}",
+    "^iû": "{yanta}[u]{long-carrier}", // "iuul"? (embers)
 
-        "ia-$": "[i]{short-carrier}[a]{short-carrier}{dash}", // miiria-
+    "ia-$": "[i]{short-carrier}[a]{short-carrier}{dash}", // miiria-
 
-        // ----------------------------------------------------------------------------
-        //
-        // CONSONANTS
-        //
+    // ----------------------------------------------------------------------------
+    //
+    // CONSONANTS
+    //
 
-        "b": "{umbar}",
-        "bh": "{ampa}",
-        "c": "{quesse}",
-        "ch": "{hwesta}",
+    "b": "{umbar}",
+    "bh": "{ampa}",
+    "c": "{quesse}",
+    "ch": "{hwesta}",
 
-        "d": "{ando}",
+    "d": "{ando}",
 
-        "đ": "{anto}", // Latin Small Letter D with Stroke
-        "dh": "{anto}",
-        "ð": "{anto}",
-        "ðh": "{anto}",
+    "đ": "{anto}", // Latin Small Letter D with Stroke
+    "dh": "{anto}",
+    "ð": "{anto}",
+    "ðh": "{anto}",
 
-        "f": "{formen}",
-        "ff": "{formen}",
-        "f$": "{ampa}", // Final-f is pronounced "v"
-        "g": "{ungwe}",
-        "h": "{hyarmen}", // vowel + h
-        "hw": "{hwesta-sindarinwa}", // vowel + hw
-        "j": "{yanta}",
-        "k": "{quesse}",
-        "l": "{lambe}",
-        "^lh": "{alda}",
-        "m": "{malta}",
-        "^mh": "{malta-with-curl}",
-        "n": "{nuumen}",
-        "^ng": "{nwalme}",
-        "p": "{parma}",
-        "ph": "{formen}",
-        "r": "{roomen}",
-        "^rh": "{arda}",
-        "r$": "{oore}",
-        "s": "{silme}",
-        "t": "{tinco}",
-        "th": "{suule}",
-        "þ": "{suule}",
-        "v": "{ampa}",
-        "w": "{vala}",
-        // 	"z":		"{esse-nuquerna}",
+    "f": "{formen}",
+    "ff": "{formen}",
+    "f$": "{ampa}", // Final-f is pronounced "v"
+    "g": "{ungwe}",
+    "h": "{hyarmen}", // vowel + h
+    "hw": "{hwesta-sindarinwa}", // vowel + hw
+    "j": "{yanta}",
+    "k": "{quesse}",
+    "l": "{lambe}",
+    "^lh": "{alda}",
+    "m": "{malta}",
+    "^mh": "{malta-with-curl}",
+    "n": "{nuumen}",
+    "^ng": "{nwalme}",
+    "p": "{parma}",
+    "ph": "{formen}",
+    "r": "{roomen}",
+    "^rh": "{arda}",
+    "r$": "{oore}",
+    "s": "{silme}",
+    "t": "{tinco}",
+    "th": "{suule}",
+    "þ": "{suule}",
+    "v": "{ampa}",
+    "w": "{vala}",
+    // 	"z":		"{esse-nuquerna}",
 
-        // Nasal
-        "nc": "[bar-above]{calma}", // "Ancalagon" (proper n., rare)
-        "nch": "[bar-above]{hwesta}", // "eNCHui" (six = 6)
-        "nd": "[bar-above]{ando}", // "glaNDagol" (boundary mark)
-        "nf": "[bar-above]{formen}", // "aNFang" (proper n., rare)
-        "ng": "[bar-above]{ungwe}", // "uNGol" (spider)
-        "angw": "[bar-above][over-twist][a]{ungwe}", // "angwedh" (chain)
-        "ngw": "[over-twist]{ungwe}", // "angwedh" (chain)
-        "nk": "[bar-above]{calma}", // n/a
-        "nt": "[bar-above]{tinco}", // "ceNTu" (?)
-        "nth": "[bar-above]{suule}", // "caNTHui" (fourth), "laNTHir" (waterfall)
-        "mb": "[bar-above]{umbar}", // "laMBar" (fate)
-        "mp": "[bar-above]{parma}", // n/a
-        "mph": "[bar-above]{formen}", // "aMPHala" (death, agony)
+    // Nasal
+    "nc": "[bar-above]{calma}", // "Ancalagon" (proper n., rare)
+    "nch": "[bar-above]{hwesta}", // "eNCHui" (six = 6)
+    "nd": "[bar-above]{ando}", // "glaNDagol" (boundary mark)
+    "nf": "[bar-above]{formen}", // "aNFang" (proper n., rare)
+    "ng": "[bar-above]{ungwe}", // "uNGol" (spider)
+    "angw": "[bar-above][over-twist][a]{ungwe}", // "angwedh" (chain)
+    "ngw": "[over-twist]{ungwe}", // "angwedh" (chain)
+    "nk": "[bar-above]{calma}", // n/a
+    "nt": "[bar-above]{tinco}", // "ceNTu" (?)
+    "nth": "[bar-above]{suule}", // "caNTHui" (fourth), "laNTHir" (waterfall)
+    "mb": "[bar-above]{umbar}", // "laMBar" (fate)
+    "mp": "[bar-above]{parma}", // n/a
+    "mph": "[bar-above]{formen}", // "aMPHala" (death, agony)
 
-        // Combinations with "d"
-        // Not strictly necessary, but these combinations look better with the unicode fonts
-        // (the bar is placed below the diacritic)
-        "and": "[bar-above][a]{ando}",
-        "end": "[bar-above][e]{ando}",
-        "ind": "[bar-above][i]{ando}",
-        "ond": "[bar-above][o]{ando}",
-        "und": "[bar-above][u]{ando}",
+    // Combinations with "d"
+    // Not strictly necessary, but these combinations look better with the unicode fonts
+    // (the bar is placed below the diacritic)
+    "and": "[bar-above][a]{ando}",
+    "end": "[bar-above][e]{ando}",
+    "ind": "[bar-above][i]{ando}",
+    "ond": "[bar-above][o]{ando}",
+    "und": "[bar-above][u]{ando}",
 
-        // Combinations with "s"
+    // Combinations with "s"
 
-        "ans": "[bar-above][a]{silme-nuquerna}",
-        "ens": "[bar-above][e]{silme-nuquerna}",
-        "ins": "[bar-above][i]{silme-nuquerna}",
-        "ons": "[bar-above][o]{silme-nuquerna}",
-        "uns": "[bar-above][u]{silme-nuquerna}",
+    "ans": "[bar-above][a]{silme-nuquerna}",
+    "ens": "[bar-above][e]{silme-nuquerna}",
+    "ins": "[bar-above][i]{silme-nuquerna}",
+    "ons": "[bar-above][o]{silme-nuquerna}",
+    "uns": "[bar-above][u]{silme-nuquerna}",
 
-        // Combinations with "w" -- labialized consonants
-        // The combination of the over-twist with a vowel tethar looks OK with Unicode font,
-        // but too busy with non-Unicode fonts.
-        // According to http://www.forodrim.org/daeron/teng-sin.pdf
-        // this is only used for gw and dw
-        "dw": "[over-twist]{ando}", //
-        "adw": "[a]{short-carrier}[over-twist]{ando}", // "caDWor"
-        "edw": "[e]{short-carrier}[over-twist]{ando}", // "eDWen" (second)
-        "idw": "[i]{short-carrier}[over-twist]{ando}", //
-        "odw": "[o]{short-carrier}[over-twist]{ando}", //
-        "udw": "[u]{short-carrier}[over-twist]{ando}", //
-        "gw": "[over-twist]{ungwe}", // "GWaen" (stained), "GWee" (living creature)
-        "agw": "[a]{short-carrier}[over-twist]{ungwe}",
-        "egw": "[e]{short-carrier}[over-twist]{ungwe}",
-        "igw": "[i]{short-carrier}[over-twist]{ungwe}",
-        "ogw": "[o]{short-carrier}[over-twist]{ungwe}",
-        "ugw": "[u]{short-carrier}[over-twist]{ungwe}",
-        // 	"lw":		"{}{lambe}[over-twist]",			// "aLWed" (prosperous)
-        //  	"nw":		"{}{nuumen}[over-twist]",		// "daNWedh" (ransom)
-        // 	"mw":		"{}{malta}[over-twist]",			// n/a
-        // 	"tw":		"{}{tinco}[over-twist]",			// n/a
-        // 	"rw":		"[over-twist]{roomen}",		// "naRWain" (January), "aRWen" (proper n.)
-        // 	"ngw":		"{ungwe}",
+    // Combinations with "w" -- labialized consonants
+    // The combination of the over-twist with a vowel tethar looks OK with Unicode font,
+    // but too busy with non-Unicode fonts.
+    // According to http://www.forodrim.org/daeron/teng-sin.pdf
+    // this is only used for gw and dw
+    "dw": "[over-twist]{ando}", //
+    "adw": "[a]{short-carrier}[over-twist]{ando}", // "caDWor"
+    "edw": "[e]{short-carrier}[over-twist]{ando}", // "eDWen" (second)
+    "idw": "[i]{short-carrier}[over-twist]{ando}", //
+    "odw": "[o]{short-carrier}[over-twist]{ando}", //
+    "udw": "[u]{short-carrier}[over-twist]{ando}", //
+    "gw": "[over-twist]{ungwe}", // "GWaen" (stained), "GWee" (living creature)
+    "agw": "[a]{short-carrier}[over-twist]{ungwe}",
+    "egw": "[e]{short-carrier}[over-twist]{ungwe}",
+    "igw": "[i]{short-carrier}[over-twist]{ungwe}",
+    "ogw": "[o]{short-carrier}[over-twist]{ungwe}",
+    "ugw": "[u]{short-carrier}[over-twist]{ungwe}",
+    // 	"lw":		"{}{lambe}[over-twist]",			// "aLWed" (prosperous)
+    //  	"nw":		"{}{nuumen}[over-twist]",		// "daNWedh" (ransom)
+    // 	"mw":		"{}{malta}[over-twist]",			// n/a
+    // 	"tw":		"{}{tinco}[over-twist]",			// n/a
+    // 	"rw":		"[over-twist]{roomen}",		// "naRWain" (January), "aRWen" (proper n.)
+    // 	"ngw":		"{ungwe}",
 
-        // Geminated
-        // Only ss, ll, mm and nn found in Sindarin
-        "ss": "{esse-nuquerna}",
-        "ll": "[bar-inside]{lambe}",
-        "mm": "[bar-above]{malta}", // "raMMas" (great wall)
-        "nn": "[bar-above]{nuumen}" // "eNNyn" (doors), "eNNa" (there), "peNNas" (history)
-    },
+    // Geminated
+    // Only ss, ll, mm and nn found in Sindarin
+    "ss": "{esse-nuquerna}",
+    "ll": "[bar-inside]{lambe}",
+    "mm": "[bar-above]{malta}", // "raMMas" (great wall)
+    "nn": "[bar-above]{nuumen}" // "eNNyn" (doors), "eNNa" (there), "peNNas" (history)
+  },
 
-    "words": {
-        // "panthael" -> "pan"thael"
-        "panthael": "{parma}{tinco}[bar-above][a]{hyarmen}{yanta}[a]{lambe}",
+  "words": {
+    // "panthael" -> "pan"thael"
+    "panthael": "{parma}{tinco}[bar-above][a]{hyarmen}{yanta}[a]{lambe}",
 
-        // Sometimes "oe" is pronounced as a diphthongs "ö"
-        "arnoediad": "{roomen}[a]{nuumen}{ando}[e]{short-carrier}[i]{ando}[a]"
-    }
+    // Sometimes "oe" is pronounced as a diphthongs "ö"
+    "arnoediad": "{roomen}[a]{nuumen}{ando}[e]{short-carrier}[i]{ando}[a]"
+  }
 }
