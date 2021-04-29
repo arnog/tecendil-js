@@ -25,7 +25,8 @@
     // "ĥ":    "gh").		// {hwesta}
     "ĵ": "zh",
     "ŝ": "sh",
-    "ŭ": "w"
+    "ŭ": "w",
+    "s*": "ç"
     // ch gh hh jh sh w
     // cx gx hx jx sx
     // ch  j X
@@ -103,10 +104,15 @@
     "ò": "[o]{long-carrier}",
     "ù": "[u]{long-carrier}",
     "á": "[a]{long-carrier}",
+    "a*": "[a]{long-carrier}",
     "é": "[e]{long-carrier}",
+    "e*": "[e]{long-carrier}",
     "í": "[i]{long-carrier}",
+    "i*": "[i]{long-carrier}",
     "ó": "[o]{long-carrier}",
+    "o*": "[o]{long-carrier}",
     "ú": "[u]{long-carrier}",
+    "u*": "[u]{long-carrier}",
 
     // ----------------------------------------------------------------------------
     //
@@ -329,9 +335,11 @@
     "n": "{nuumen}",
     "p": "{parma}",
     //	"r":	special case
+    "r*": "{roomen}",
     "re$": "[dot-below]{oore}", // Final "re"
     "^reali": "{roomen}[e]{short-carrier}[a]{lambe}[i]", // "reality", "realiti": "ea" is not a diphtong (but it is for "real")
     "s": "{alt-silme}",
+    "ç": "{silme-nuquerna}",
     "t": "{tinco}",
     "tz": "{tinco}{silme}", // 80% of the time /ts/ (exceptions: hertzog, nietzsche, pretzel, schultze, spitzer, waltz, ...)
     "v": "{ampa}",
