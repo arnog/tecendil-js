@@ -158,53 +158,55 @@ The symbol TENGWA-NAME can be one of the following, taken from the proposed
 Unicode encoding. Note that they are not case sensitive, so "TINCO", "tinco" and
 "Tinco" are equivalent.
 
-- TINCO
-- PARMA
-- CALMA
-- QUESSE
-- ANDO
-- UMBAR
-- ANGWA
-- UNGWE
-- THUULE
-- FORMEN
-- AHA aka HARMA
-- HWESTA
-- ANTO
-- AMPA
-- ANCA
-- UNQUE
-- NUUMEN
-- MALTA
-- NOLDO
-- NWALME
-- OORE
-- VALA
-- ANNA
-- VILYA
-- EXTENDED-TINCO
-- EXTENDED-PARMA
-- EXTENDED-CALMA
-- EXTENDED-QUESSE
-- EXTENDED-ANDO
-- EXTENDED-UMBAR
-- EXTENDED-ANGA
-- EXTENDED-UNGUE
-- ROOMEN
-- ARDA
-- LAMBE
-- ALDA
-- SILME
-- SILME-NUQUERNA
+- `{tinco}` = TINCO
+- `{tinco-extended}
+- `{parma}` = PARMA
+- `{parma-extended}`
+- `{calma}` = CALMA
+- `{calma-extended}`
+- `{quesse}` = QUESSE
+- `{quesse-extended}`
+- `{ando}` = ANDO
+- `{ando-extended}`
+- `{umbar}` = UMBAR
+- `{umbar-extended}`
+- `{angwa}` = ANGWA
+- `{anga-extended}`
+- `{ungwe}` = UNGWE
+- `{ungwe-extended}`
+- `{suule}` = THUULE
+- `{formen}` = FORMEN
+- `{formen-extended}`
+- `{aha}` AHA aka HARMA
+- `{hwesta}` HWESTA
+- `{hwesta-sindarinwa}` HWESTA-SINDARINWA - wh
+- `{anto}` ANTO
+- `{ampa}` AMPA
+- `{anca}` ANCA
+- `{unque}` UNQUE
+- `{nuumen}` NUUMEN
+- `{malta}` MALTA
+- `{noldo}` NOLDO
+- `{nwalme}` NWALME
+- `{oore}` OORE
+- `{vala}` VALA
+- `{anna}` ANNA
+- `{vilya}` VILYA
+- `{roomen}` ROOMEN
+- `{arda}` ARDA
+- `{lambe}` LAMBE
+- `{alda}` ALDA
+- `{silme}` SILME
+- `{silme-nuquerna}` SILME-NUQUERNA
 - AARE
 - AARE-NUQUERNA
-- HYARMEN
-- HWESTA-SINDARINWA - wh
-- YANTA
-- UURE
-- LONG-CARRIER
-- HALLA
-- SHORT-CARRIER
+- `{hyarmen}` HYARMEN
+- `{yanta}` YANTA
+- `{uure}` UURE
+- `{long-carrier}` LONG-CARRIER
+- `{halla}` HALLA
+- `{osse}`
+- `{short-carrier}` SHORT-CARRIER
 - STEMLESS-VALA used as \[w\] in some english modes
 - A-TENGWA = STEMLESS-ANNA used as "a" vowel in the mode of Beleriand
 - OPEN-ANNA
@@ -219,78 +221,85 @@ Unicode encoding. Note that they are not case sensitive, so "TINCO", "tinco" and
 
 ### Tehta Name
 
-A tengwa letter may be accompanied of zero or more tehta. The order of the tehta
+A tengwa letter may be accompanied of zero or more tehta.
 
 The symbol TEHTA-NAME is one of the following.
 
-- A = THREE-DOTS-ABOVE
-- A-BELOW = THREE-DOTS-BELOW
-- E = ACUTE = andaith, long mark
-- NUNTICSE = dot below, silent-e
-- EE = DOUBLE-ACUTE
-- EE-BELOW = DOUBLE-ACUTE-BELOW
-- I = AMATICSE = dot above
-- II = TWO-DOTS-ABOVE
-- II-BELOW = TWO-DOTS-BELOW
-- O = RIGHT-CURL
-- OO = DOUBLE-RIGHT-CURL
-- O-BELOW = RIGHT-CURL-BELOW
-- U = LEFT-CURL
-- UU = DOUBLE-LEFT-CURL
-- U-BELOW = LEFT-CURL-BELOW
+- `[a]` = THREE-DOTS-ABOVE
+- `[a-below]` = THREE-DOTS-BELOW
+- `[reverse-triple-dot]`
+- `[reverse-triple-dot-below]`
+- `[e]` = ACUTE = andaith, long mark
+- `[dot-below]` = NUNTICSE = dot below, silent-e
+- `[double-e]` = EE = DOUBLE-ACUTE
+- `[double-acute-below]` = EE-BELOW = DOUBLE-ACUTE-BELOW
+- `[i]` = I = AMATICSE = dot above
+- `[double-dot]` = II = TWO-DOTS-ABOVE
+- `[double-dot-below]` = II-BELOW = TWO-DOTS-BELOW
+- `[o]` = O = RIGHT-CURL
+- `[double-o]` = OO = DOUBLE-RIGHT-CURL
+- `[curl-below]` = O-BELOW = RIGHT-CURL-BELOW
+- `[u]` = U = LEFT-CURL
+- `[double-u]` = UU = DOUBLE-LEFT-CURL
+- `[accent-below]` = U-BELOW = LEFT-CURL-BELOW
 - E-BELOW = ACUTE-BELOW
 
-- BAR-ABOVE = NASALIZER
-- BAR-BELOW = DOUBLER
-- TWIST = TILDE
-- BREVE
-- GRAVE
+- `[bar-above]` = BAR-ABOVE = NASALIZER
+- `[bar-below]` = BAR-BELOW = DOUBLER
+- `[tilde-above]` = TWIST = TILDE
+- `[tilde-high]`
+- `[tilde-below]`
+- `[chevron]` = BREVE
+- `[grave]` = GRAVE
 - YANTA-ABOVE = CIRCUMFLEX?
 - THREE-INVERTED-DOTS-ABOVE
 - LONG-CARRIER-BELOW
 
-- LEFT-HOOK for use with QUESSE and similar shapes
-- RIGHT-HOOK
-- CURLY-HOOK
-- UP-HOOK
+- `[x-curl]` = LEFT-HOOK for use with QUESSE and similar shapes
+- `[left-follow-silme]` = RIGHT-HOOK
+- `[swarsh-curl]` = CURLY-HOOK
+- `[upward-curl]` = UP-HOOK
 
 ?? CURL-BELOW = RIGHT-CURL-BELOW ?? ACCENT-BELOW = LEFT-CURL-BELOW
 
 ### Numbers
 
-- ZERO
-- ONE
-- TWO
-- THREE
-- FOUR
-- FIVE
-- SIX
-- SEVEN
-- EIGHT
-- NINE
-- TEN
-- ELEVEN
-- TWELVE
-- RING-BELOW = OPEN-DOT-BELOW? = LEAST-SIGNIFICANT-MARK
+- `{0}` ZERO
+- `{1} ONE
+- `{2}` TWO
+- `{3}` THREE
+- `{4}` FOUR
+- `{5}` FIVE
+- `{6}` SIX
+- `{7}` SEVEN
+- `{8}` EIGHT
+- `{9}` NINE
+- `{10}` TEN
+- `{11}` ELEVEN
+- `{12}` TWELVE
+- `[ring-below]` = RING-BELOW = OPEN-DOT-BELOW? = LEAST-SIGNIFICANT-MARK
 
 ### Punctuation
 
-- PUSTA
-- DOUBLE-PUSTA
-- TRIPLE-PUSTA
+- `{comma}` PUSTA
+- `{full-stop}` DOUBLE-PUSTA
+- `{colon}` TRIPLE-PUSTA
 - QUADRUPLE-PUSTA
 - QUINTUPLE-PUSTA
-- EXCLAMATION-MARK
-- QUESTION-MARK
-- PARENTHESIS-MARK
+- `{exclamation-mark}` EXCLAMATION-MARK
+- `{question-mark}` QUESTION-MARK
+- `{left-parenthesis}` and `{right-parenthesis}` PARENTHESIS-MARK
 - SECTION-MARK
 - DOUBLE-SECTION-MARK
 
 # References
 
-[1] Dan Smith Encoding [2]
-http://www.evertype.com/standards/iso10646/pdf/tengwar.pdf [3] Tengwar and
-LaTex:
-http://get-software.net/macros/latex/contrib/tengwarscript/tengwarscript.pdf [4]
-Telcontar Unicode encoding:
+[1] Dan Smith Encoding
+
+[2] http://www.evertype.com/standards/iso10646/pdf/tengwar.pdf
+
+[3] Tengwar and LaTex:
+http://get-software.net/macros/latex/contrib/tengwarscript/tengwarscript.pdf
+
+[4] Telcontar Unicode encoding:
 http://freetengwar.sourceforge.net/html-files/tengtelc-discussion-008.pdf
