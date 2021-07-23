@@ -293,7 +293,7 @@ For Michael son of Middle-earth
     "facades": "{formen}{alt-silme}[a]{ando}[dot-below][a][sa-rince]",
     "cello": "{calma}{lambe}[bar-inside][e]{short-carrier}[o]",
     "concerto": "{quesse}{nuumen}[o]{calma}{oore}[e]{tinco}{short-carrier}[o]",
-    "capuccino": "{quesse}{parma}[a]{calma}[u]{nuumen}[i]{short-carrier}[o]",
+    "cappuccino": "{quesse}{parma}[a][bar-below]{calma}[u]{nuumen}[i]{short-carrier}[o]",
     "ciao": "{calma}{vala}[a]"
   }
 }
