@@ -1,6 +1,7 @@
 {
   "en": {
     "the-tengwar-transcriber": "The Tengwar Transcriber",
+    
     "button.open-menu": "Open Menu",
     "button.close-menu": "Close Menu",
     "menu.home": "Home",
@@ -8,18 +9,24 @@
     "menu.whats-new": "What’s New",
     "menu.install": "Install",
     "menu.settings": "Settings",
+    
     "footer.font-credits": "<b>Fonts</b> Tengwar Annatar and Tengwar Telcontar by Johan Winge, Parmaite Tengwar and Tengwar Eldamar by M&aring;ns Bj&ouml;rkman, Tengwar Formal by the <a href=\"http://freetengwar.sourceforge.net/\">Free Tengwar Font Project</a>. Some fonts adapted for the web by Ben Talagan Babut of the Glaemscribe project.",
     "footer.contact": "Got a question? Have some feedback? Want to check a transcription? Just ask ",
     "footer.support-intro": "Enjoying Tecendil?",
     "footer.patreon": "Support me on Patreon",
     "footer.paypal": "Donate with PayPal",
+    
     "prompt.install": "For offline access, Tecendil can be installed on your device.",
     "button.install": "Install",
     "button.not-now": "Not now",
+    
     "prompt.drop": "Drop a file anywhere to transcribe it.",
+    
     "label.placeholder.try": "Try: “${placeholder}”",
+    
     "label.font": "Font: ",
     "font-name.annatar-italic": "Annatar Italic",
+    
     "label.mode": "Mode: ",
     "label.mode.english": "English",
     "menu.mode.english": "English",
@@ -41,14 +48,17 @@
     "menu.mode.beleriand": "Beleriand",
     "label.mode.erebor": "Cirth",
     "menu.mode.erebor": "Cirth: Angerthas Erebor",
+    
     "warning.general": "<p><b>CAUTION</b> This transcriber only works well for English, Spanish, Sindarin or Quenya. The result may be inaccurate otherwise.</p>",
     "warning.english": "<p><b>CAUTION</b> Tecendil does not translate. What you typed looks like English. For an accurate transcription, select an English mode.</p>",
     "warning.spanish": "<p><b>PRECAUCIÓN</b> Para transcribir una oración o nombre en español, use el modo <kbd>Español</kbd>.</p>",
     "warning.italian": "<p><b>ATTTENZIONE</b> Per trascrivere una frase o un nome in italiano, utilizzare la modalità <kbd>italianio<kbd>.</p>",
     "warning.elvish": "<p><b>CAUTION</b> This doesn't look like English. Is this Sindarin or Quenya? For an accurate transcription, select the Sindarin, Quenya or Beleriand mode.</p>",
+    
     "tooltip.download": "download",
     "filename.screenshot": "Tecendil screenshot",
     "tooltip.share": "share",
+    
     "button.patron": "Become a Patron!",
     "welcome": "Welcome to Tecendil",
     "welcome.1": "Hello! My name's Arno.",
@@ -58,9 +68,11 @@
     "welcome.5": "Note the text is not <i>translated</i>, it is simply written using the Tengwar characters.",
     "welcome.6": "For the transcription to be correct, you must select the appropriate language in the <i>Mode</i> menu: English, Spanish, Quenya or Sindarin. If you're interested in support for other languages, contact me.",
     "label.source-eldamo": "Source: <a href=\"https://eldamo.org\">Eldamo</a>",
+    
     "label.wikipedia.intro-random": "Practice reading Tengwar with this random article from Wikipedia:",
     "label.wikipedia.intro": "Practice reading Tengwar with this article about “",
     "label.wikipedia.intro.close": "” from Wikipedia:",
+    
     "dialog-title.settings": "Settings",
     "button.close": "Close",
     "button.back": "Back",
@@ -77,6 +89,7 @@
   },
   "de": {
     "the-tengwar-transcriber": "Der Tengwar Transkriptor",
+    
     "button.open-menu": "Menü öffnen",
     "button.close-menu": "Menü schließen",
     "menu.home": "Zuhause",
@@ -84,17 +97,22 @@
     "menu.whats-new": "Installieren",
     "menu.install": "Was gibt's Neues?",
     "menu.settings": "Einstellungen",
+    
     "footer.font-credits": "<b>Schriften </b> Tengwar Annatar und Tengwar Telcontar von Johan Winge, Parmaite Tengwar und Tengwar Eldamar von M&aring; Björkman, Tengwar Formal von der <a href='http://freetengwar.sourceforge.net/'> Free Tengwar Font Project </a>.",
     "footer.contact": "Hast du eine Frage? Hast du Feedback? Möchten Sie eine Transkription überprüfen? Einfach fragen",
     "footer.support-intro": "Tecendil genießen?",
     "footer.patreon": "Unterstütze mich auf Patreon",
     "footer.paypal": "Spende mit PayPal",
+    
     "prompt.install": "Für den Offline-Zugriff kann Tecendil auf Ihrem Gerät installiert werden.",
     "button.install": "Installieren",
     "button.not-now": "Nicht jetzt",
+    
     "label.placeholder.try": "Versuchen: „${placeholder}“",
+    
     "label.font": "Schriftart : ",
     "font-name.annatar-italic": "Annatar Kursiv",
+    
     "label.mode": "Modus : ",
     "label.mode.english": "Englische",
     "menu.mode.english": "Englische Sprache",
@@ -110,11 +128,14 @@
     "label.mode.quenya": "Quenya",
     "label.mode.beleriand": "Beleriand",
     "label.mode.erebor": "Cirth",
+    
     "warning.general": "<p><b>VORSICHT</b> Dieser Transkriptor funktioniert nur gut für Englisch, Spanisch, Sindarin oder Quenya. Das Ergebnis kann sonst ungenau sein.</p>",
     "warning.elvish": "<p><b>VORSICHT</b>Das sieht nicht nach Englisch aus. Ist das Sindarin oder Quenya? Für eine genaue Transkription wählen Sie den Sindarin-, Quenya- oder Beleriand-Modus</p>",
+    
     "tooltip.download": "Herunterladen",
     "filename.screenshot": "Tecendil Bildschirmfoto",
     "tooltip.share": "Tielen",
+    
     "button.patron": "Werden Sie Schirmherr!",
     "welcome": "Willkommen bei Tecendil",
     "welcome.1": "Hallo! Ich heiße Arno.",
@@ -123,6 +144,7 @@
     "welcome.4": "Geben Sie einen Satz oder Namen ein und sehen Sie, wie er in Tengwar transkribiert wird.",
     "welcome.5": "Beachten Sie, dass der Text nicht <i> übersetzt </i> ist. Er wird einfach mit den Tengwar-Zeichen geschrieben.",
     "welcome.6": "Damit die Transkription korrekt ist, müssen Sie im Menü <i>Modus</i> die entsprechende Sprache auswählen: Englisch, Spanisch, Quenya oder Sindarin. Wenn Sie an Unterstützung für andere Sprachen interessiert sind, kontaktieren Sie mich",
+    
     "dialog-title.settings": "Einstellungen",
     "button.close": "Schließen",
     "button.back": "Zurück",
@@ -139,6 +161,7 @@
   },
   "es": {
     "the-tengwar-transcriber": "El transcriptor de Tengwar",
+    
     "button.open-menu": "Abrir el menú",
     "button.close-menu": "Cerrar el menú",
     "menu.home": "Bienvenida",
@@ -146,16 +169,20 @@
     "menu.whats-new": "¿Qué hay de nuevo?",
     "menu.install": "Instalar",
     "menu.settings": "Ajustes",
+    
     "footer.font-credits": "<b>Fuentes</b> Tengwar Annatar y Tengwar Telcontar de Johan Winge, Parmaite Tengwar y Tengwar Eldamar de M&aring;ns Bj&ouml;rkman, Tengwar Formal del <a href = 'http: //freetengwar.sourceforge.net/'> Free Tengwar Font Project </a>.",
     "footer.contact": "¿Tienes alguna pregunta? ¿Tienes comentarios? ¿Quieres revisar una transcripción? Solo pregunta: ",
     "footer.support-intro": "¿Te gusta Tecendil?",
     "footer.patreon": "Apoyame en Patreon",
     "footer.paypal": "Dona con PayPal",
+    
     "prompt.install": "Para el acceso sin conexión, Tecendil se puede instalar en su dispositivo.",
     "button.install": "Instalar",
     "button.not-now": "Ahora no",
+    
     "label.placeholder.try": "Pruebe : «${placeholder}»",
     "label.font": "Fuente : ",
+    
     "font-name.annatar-italic": "Annatar Itálico",
     "label.mode": "Modo : ",
     "label.mode.english": "inglés",
@@ -172,10 +199,13 @@
     "label.mode.quenya": "quenya",
     "label.mode.beleriand": "beleriand",
     "label.mode.erebor": "cirth",
+    
     "warning.general": "<p><b>ATENCIÓN</b> Este transcriptor solo trabaja para inglés, español, sindarin o quenya. El resultado puede ser inexacto de lo contrario.</p>",
     "warning.elvish": "<p><b>ATENCIÓN</b>Esto no se parece al inglés. ¿Es esto sindarin o quenya? Para una transcripción precisa, seleccione el modo Sindarin, Quenya o Beleriand</p>",
+    
     "tooltip.download": "Descargar",
     "filename.screenshot": "Captura de pantalla de Tecendil",
+    
     "button.patron": "¡Conviértete en un patrón!",
     "welcome": "Bienvenido a Tecendil",
     "welcome.1": "¡Hola! Me llamo Arno.",
@@ -184,6 +214,7 @@
     "welcome.4": "Grabe una frase o nombre y véala transcrita en Tengwar",
     "welcome.5": "Tenga en cuenta que el texto no está <i> traducido </i>, simplemente se escribe usando los caracteres Tengwar.",
     "welcome.6": "Para que la transcripción sea correcta, debe seleccionar el idioma apropiado en el menú <i> Modo </i>: inglés, español, quenya o sindarin. Por desgracia, el francés no es compatible en este momento. Si estás interesado en apoyar otros idiomas, contáctame..",
+    
     "dialog-title.settings": "Ajustes",
     "button.close": "Cerrar",
     "button.back": "Regresar",
@@ -198,6 +229,7 @@
   },
   "fr": {
     "the-tengwar-transcriber": "Le Transcripteur de Tengwar",
+    
     "button.open-menu": "Ouvrir le menu",
     "button.close-menu": "Fermer le menu",
     "menu.home": "Accueil",
@@ -205,18 +237,24 @@
     "menu.whats-new": "Quoi de neuf?",
     "menu.install": "Installer",
     "menu.settings": "Réglages",
+    
     "footer.font-credits": "<b>Polices</b> Tengwar Annatar et Tengwar Telcontar par Johan Winge, Parmaite Tengwar et Tengwar Eldamar par M&aring;ns Bj&ouml;rkman, Tengwar Formal par <a href = 'http: //freetengwar.sourceforge.net/'> Free Tengwar Font Project </a>.",
     "footer.contact": "Vous avez une question? Vous avez des commentaires? Voulez-vous vérifier une transcription? Il suffit de demander: ",
     "footer.support-intro": "Vous appréciez Tecendil?",
     "footer.patreon": "Soutenez-moi sur Patreon",
     "footer.paypal": "Faites une donation avec PayPal",
+    
     "prompt.install": "Pour un accès hors ligne, Tecendil peut être installé sur votre appareil.",
     "button.install": "Installer",
     "button.not-now": "Pas maintenant",
+    
     "prompt.drop": "Déposez un fichier n‘importe où pour le transcrire.",
+    
     "label.placeholder.try": "Essayez : «${placeholder}»",
+    
     "label.font": "Police : ",
     "font-name.annatar-italic": "Annatar Italique",
+    
     "label.mode": "Mode : ",
     "label.mode.english": "anglais",
     "menu.mode.english": "Anglais",
@@ -232,11 +270,14 @@
     "label.mode.quenya": "quenya",
     "label.mode.beleriand": "beleriand",
     "label.mode.erebor": "cirth",
+    
     "warning.general": "<p><b>ATTENTION</b> Ce transcripteur ne fonctionne que pour l'anglais, l'espagnol, le sindarin ou le quenya. Le résultat peut être inexact autrement.</p>",
     "warning.elvish": "<p><b>ATTENTION</b> Cela ne ressemble pas à l'anglais. Est-ce Sindarin ou Quenya? Pour une transcription précise, sélectionnez le mode Sindarin, Quenya ou Beleriand.</p>",
+    
     "tooltip.download": "Télécharger",
     "filename.screenshot": "Tecendil capture d'écran",
     "tooltip.share": "Partager",
+    
     "button.patron": "Devenez mécène !",
     "welcome": "Bienvenue à Tecendil",
     "welcome.1": "Salut ! Je m'appelle Arno.",
@@ -245,6 +286,7 @@
     "welcome.4": "Tape une phrase ou un nom et vois-le transcrit en Tengwar",
     "welcome.5": "Note que le texte n'est pas <i> traduit </i>, il est simplement écrit en utilisant les caractères Tengwar.",
     "welcome.6": "Pour que la transcription soit correcte, tu dois sélectionner la langue appropriée dans le menu <i> Mode </i>: anglais, espagnol, quenya ou sindarin. Malheureusement, le francais n'est pas supporté pour l'instant. Si tu es intéressé à supporter d'autres langues, contacte moi.",
+    
     "dialog-title.settings": "Réglages",
     "button.close": "Fermer",
     "button.back": "Retour",
@@ -259,6 +301,7 @@
   },
   "it": {
     "the-tengwar-transcriber": "Il Trascrittore Tengwar",
+    
     "button.open-menu": "Apri menù",
     "button.close-menu": "Chiudi menù",
     "menu.home": "Benvenuto",
@@ -266,17 +309,22 @@
     "menu.whats-new": "Cosa c'è di nuovo?",
     "menu.install": "Installare",
     "menu.settings": "Impostazioni",
+    
     "footer.font-credits": "<b>Font</b> Tengwar Annatar e Tengar Telcontar di Johan Winge, Parmaite Tengwar e Tengwar Eldamar di Måns Björkman, Tengwar Formal da <a href=\"http://freetengwar.sourceforge.net/\">Free Tengwar Font Project</a>.",
     "footer.contact": "Hai una domanda? Hai qualche commento? Vuoi controllare una trascrizione? Basta chiedere ",
     "footer.support-intro": "Ti piace Tecendil?",
     "footer.patreon": "Supportami su Patreon",
     "footer.paypal": "Dona con PayPal",
+    
     "prompt.install": "Per l'accesso offline, Tecendil può essere installato sul tuo dispositivo.",
     "button.install": "Installa",
     "button.not-now": "Non ora",
+    
     "label.placeholder.try": "Prova: „${placeholder}“",
+    
     "label.font": "Font: ",
     "font-name.annatar-italic": "Annatar Corsivo",
+    
     "label.mode": "Modalità: ",
     "label.mode.english": "Inglese",
     "menu.mode.english": "Inglese",
@@ -294,10 +342,13 @@
     "label.mode.quenya": "Quenya",
     "label.mode.beleriand": "Beleriand",
     "label.mode.erebor": "Cirth",
+    
     "warning.general": "<p><b>ATTENZIONE</b> Questo trascrittore funziona bene solo per l'inglese, spagnolo, Sindarin o Quenya. Il risultato potrebbe non essere accurato altrimenti.</p>",
     "warning.elvish": "<p><b>ATTENZIONE</b>Questo non sembra inglese. È Sindarin o Quenya? Per una trascrizione precisa, seleziona la modalità Sindarin, Quenya o Beleriand.</p>",
+    
     "tooltip.download": "Scarica",
     "filename.screenshot": "Screenshot di Tecendil",
+    
     "button.patron": "Diventa un Patreon!",
     "welcome": "Benvenuto su Tecendil",
     "welcome.1": "Ciao! Mi chiamo Arno.",
@@ -306,8 +357,10 @@
     "welcome.4": "Scrivi una frase o un nome e guardalo trascritto in Tengwar",
     "welcome.5": "Tieni presente che il testo non è <i>tradotto</i>, ma è semplicemente scritto usando i caratteri Tengwar.",
     "welcome.6": "Affinché la trascrizione sia corretta, è necessario selezionare la lingua appropriata nel menù <i>Modalità</i>: inglese, spagnolo, Quenya o Sindarin. Sfortunatamente, l'italiano non è attualmente supportato. Se sei interessato a supportare altre lingue, contattami.",
+    
     "label.wikipedia.intro": "Esercitati a leggere Tengwar con questo articolo su  “",
     "label.wikipedia.intro.close": "” di Wikipedia:",
+    
     "dialog-title.settings": "Impostazioni",
     "button.close": "Chiudi",
     "button.back": "Indietro",
@@ -318,26 +371,34 @@
     "description.settings.wikipedia": "Mostra un articolo di Wikipedia",
     "settings.language": "Lingua",
     "settings.language.default": "Lingua di default",
+    "settings.dark-mode": "Modalità Scura"
   },
   "pl": {
     "the-tengwar-transcriber": "The Tengwar Transcriber",
+    
     "menu.home": "Strona główna",
     "menu.handbook": "Podręcznik Tengwaru (ang.)",
     "menu.whats-new": "Co nowego?",
     "menu.install": "Zainstaluj (Chrome)",
     "menu.settings": "Ustawienia",
+    
     "footer.font-credits": "<b>Użyto fontów</b> Tengwar Annatar oraz Tengwar Telcontar autorstwa Johana Winge, Parmaite Tengwar oraz Tengwar Eldamar autorstwa M&aring;ns Bj&ouml;rkman, Tengwar Formal pochodzi z serwisu <a href=\"http://freetengwar.sourceforge.net/\">Free Tengwar Font Project</a>. Niektóre z fontów zaadaptował do wersji web Ben Talagan Babut z projektu Glaemscribe.",
     "footer.contact": "Masz pytanie? Potrzebujesz wsparcia? Chcesz sprawdzić transkrypcję? Po prostu zapytaj (j. ang.) ",
     "footer.support-intro": "Podoba Ci się Tecendil?",
     "footer.patreon": "Wspieraj mnie przez Patreon",
     "footer.paypal": "Przekaż darowiznę przez PayPal",
+    
     "prompt.install": "Możesz zainstalować Tecendil na swoim urządzeniu, by korzystać z niego off-line",
     "button.install": "Zainstaluj",
     "button.not-now": "Nie teraz",
+    
     "prompt.drop": "Przeciągnij i upuść plik by rozpocząć transkrypcję!",
+    
     "label.placeholder.try": "Wypróbuj: “${placeholder}”",
+    
     "label.font": "Font: ",
     "font-name.annatar-italic": "Annatar Italic",
+    
     "label.mode": "Mod: ",
     "label.mode.english": "Angielski",
     "menu.mode.english": "Angielski",
@@ -361,15 +422,18 @@
     "menu.mode.derdzinski-polish": "Polski mod (R.Derdziński)",
     "label.mode.erebor": "Cirth",
     "menu.mode.erebor": "Cirth: Angerthas Erebor",
+    
     "warning.general": "<p><b>CAUTION</b> This transcriber only works well for English, Spanish, Sindarin or Quenya. The result may be inaccurate otherwise.</p>",
     "warning.english": "<p><b>CAUTION</b> Tecendil does not translate. What you typed looks like English. For an accurate transcription, select an English mode.</p>",
     "warning.spanish": "<p><b>PRECAUCIÓN</b> Para transcribir una oración o nombre en español, use el modo <kbd>Español</kbd>.</p>",
     "warning.italian": "<p><b>ATTTENZIONE</b> Per trascrivere una frase o un nome in italiano, utilizzare la modalità <kbd>italianio<kbd>.</p>",
     "warning.polish": "<p><b>UWAGA!</b> Tecendil <b>nie jest</b> programem tłumaczącym! By osiągnąć najlepszy rezultat użyj modu właściwego dla danego języka</p>",
     "warning.elvish": "<p><b>CAUTION</b> This doesn't look like English. Is this Sindarin or Quenya? For an accurate transcription, select the Sindarin, Quenya or Beleriand mode.</p>",
+    
     "tooltip.download": "pobierz",
     "filename.screenshot": "Tecendil_screenshot",
     "tooltip.share": "udostępnij",
+    
     "button.patron": "Zostań Patronem!",
     "welcome": "Witaj w serwisie Tecendil",
     "welcome.1": "Cześć! Jestem Arno.",
@@ -379,8 +443,10 @@
     "welcome.5": "Pamiętaj, że <i>to nie jest tłumaczenie na języki elfów</i>, to po prostu zapis przy użyciu znakow Tengwaru.",
     "welcome.6": "Żeby transkrypcja przebiegła poprawnie, w menu <i>Mod</i> należy wybrać właściwy język: angielski, hiszpanski, quenya lub sindarin. Jeżeli chciałbyś pomóc w utworzeniu innych modów, skontaktuj się ze mną.",
     "label.source-eldamo": "Źródło: <a href=\"https://eldamo.org\">Eldamo</a>",
+    
     "label.wikipedia.intro": "Poćwicz czytanie Tengwaru zapoznając się z artykułem o “",
     "label.wikipedia.intro.close": "” z Wikipedii:",
+    
     "dialog-title.settings": "Ustawienia",
     "button.close": "Zamknij",
     "settings.dictionaries": "Słowniki",
@@ -396,6 +462,7 @@
   },
   "zh": {
     "the-tengwar-transcriber": "滕格瓦转写器",
+    
     "button.open-menu": "打开菜单",
     "button.close-menu": "关闭菜单",
     "menu.home": "首页",
@@ -403,18 +470,21 @@
     "menu.whats-new": "最新消息",
     "menu.install": "安装",
     "menu.settings": "设置",
+    
     "footer.contact": "有任何问题？希望提供反馈？想要确认转写结果是否正确？请联系 ",
-    "footer.contact": "你有问题吗？ 你有评论吗？ 你想查看成绩单吗？ 请问 ",
     "footer.support-intro": "你喜欢Tecendil吗？",
     "footer.patreon": "在Patreon上支持我",
     "footer.paypal": "捐赠PayPal",
+    
     "prompt.install": "您可以在设备安装Tecendil以用于离线访问。",
-    "prompt.install": "對於離線訪問，可以在您的設備上安裝 Tecendil。",
     "button.install": "安裝",
     "button.not-now": "稍后",
+    
     "label.placeholder.try": "尝试：“${placeholder}”",
+    
     "label.font": "字体：",
     "font-name.annatar-italic": "Annatar 斜体",
+    
     "label.mode": "模式：",
     "label.mode.english": "英语",
     "menu.mode.english": "English（英语）",
@@ -433,11 +503,14 @@
     "label.mode.beleriand": "贝尔兰",
     "menu.mode.beleriand": "Beleriand（贝尔兰）",
     "label.mode.erebor": "切斯文",
+    
     "warning.general": "<p><b>警告</b> 這個抄寫員只適用於英語，西班牙語，辛達林語或昆雅語。 否則結果可能不准確。</p>",
     "warning.elvish": "<p><b>警告</b> 这看起来不像英语。 这是辛达林还是昆雅？ 要获得准确的转录，请选择Sindarin，Quenya或Beleriand模式。</p>",
+    
     "tooltip.download": "下载",
     "filename.screenshot": "Tecendil截图",
     "tooltip.share": "分享",
+    
     "button.patron": "成為贊助人！",
     "welcome": "欢迎来到Tecendil",
     "welcome.1": "你好！我叫Arno。",
@@ -446,6 +519,7 @@
     "welcome.4": "输入一句话或一个名字，然后将其转写为滕格瓦文字（Tengwar）。",
     "welcome.5": "請注意，文本未翻譯，只需使用Tengwar字符編寫。",
     "welcome.6": "要使轉錄正確，您必須在“模式”菜單中選擇適當的語言：英語，西班牙語，昆雅語或辛達林語。",
+    
     "dialog-title.settings": "设置",
     "button.close": "关闭",
     "button.back": "返回",
@@ -461,6 +535,7 @@
   },
   "zh-hk": {
     "the-tengwar-transcriber": "談格瓦轉寫器",
+    
     "button.open-menu": "開啟選單",
     "button.close-menu": "關閉選單",
     "menu.home": "首頁",
@@ -468,16 +543,21 @@
     "menu.whats-new": "最新消息",
     "menu.install": "安裝",
     "menu.settings": "設定",
+    
     "footer.contact": "有任何問題？希望提供意見回饋？想要確認轉寫結果是否正確？請聯絡 ",
     "footer.support-intro": "你喜欢Tecendil吗？",
     "footer.patreon": "在Patreon上支持我",
     "footer.paypal": "捐赠PayPal",
+    
     "prompt.install": "您可以在裝置安裝Tecendil以用於離線存取。",
     "button.install": "安裝",
     "button.not-now": "稍後",
+    
     "label.placeholder.try": "嘗試：「${placeholder}」",
+    
     "label.font": "字型：",
     "font-name.annatar-italic": "Annatar 斜體",
+    
     "label.mode": "模式：",
     "label.mode.english": "英語",
     "menu.mode.english": "English（英語）",
@@ -496,11 +576,14 @@
     "label.mode.beleriand": "貝爾蘭",
     "menu.mode.beleriand": "Beleriand（貝爾蘭）",
     "label.mode.erebor": "切斯文",
+    
     "warning.general": "<p><b>警告</b> 這個抄寫員只適用於英語，西班牙語，辛達林語或昆雅語。 否則結果可能不准確。</p>",
     "warning.elvish": "<p><b>警告</b> 这看起来不像英语。 这是辛达林还是昆雅？ 要获得准确的转录，请选择Sindarin，Quenya或Beleriand模式。</p>",
+    
     "tooltip.download": "下載",
     "filename.screenshot": "Tecendil截圖",
     "tooltip.share": "分享",
+    
     "button.patron": "成為贊助人！",
     "welcome": "歡迎來到Tecendil",
     "welcome.1": "你好！我叫Arno。",
@@ -509,6 +592,7 @@
     "welcome.4": "輸入一句話或一個名字，然後將其轉寫為談格瓦文字（Tengwar）。",
     "welcome.5": "請注意，文本未翻譯，只需使用Tengwar字符編寫。",
     "welcome.6": "要使轉錄正確，您必須在“模式”菜單中選擇適當的語言：英語，西班牙語，昆雅語或辛達林語。",
+    
     "dialog-title.settings": "設定",
     "button.close": "關閉",
     "button.back": "返回",
@@ -524,6 +608,7 @@
   },
   "zh-tw": {
     "the-tengwar-transcriber": "談格瓦轉寫器",
+    
     "button.open-menu": "開啟選單",
     "button.close-menu": "關閉選單",
     "menu.home": "首頁",
@@ -531,16 +616,21 @@
     "menu.whats-new": "最新消息",
     "menu.install": "安裝",
     "menu.settings": "設定",
+    
     "footer.contact": "有任何問題？希望提供意見回饋？想要確認轉寫結果是否正確？請聯絡 ",
     "footer.support-intro": "你喜欢Tecendil吗？",
     "footer.patreon": "在Patreon上支持我",
     "footer.paypal": "捐赠PayPal",
+    
     "prompt.install": "您可以在裝置安裝Tecendil以用於離線存取。",
     "button.install": "安裝",
     "button.not-now": "稍後",
+    
     "label.placeholder.try": "嘗試：「${placeholder}」",
+    
     "label.font": "字型：",
     "font-name.annatar-italic": "Annatar 斜體",
+    
     "label.mode": "模式：",
     "label.mode.english": "英語",
     "menu.mode.english": "English（英語）",
@@ -559,11 +649,14 @@
     "label.mode.beleriand": "貝爾蘭",
     "menu.mode.beleriand": "Beleriand（貝爾蘭）",
     "label.mode.erebor": "切斯文",
+    
     "warning.general": "<p><b>警告</b> 這個抄寫員只適用於英語，西班牙語，辛達林語或昆雅語。 否則結果可能不准確。</p>",
     "warning.elvish": "<p><b>警告</b> 这看起来不像英语。 这是辛达林还是昆雅？ 要获得准确的转录，请选择Sindarin，Quenya或Beleriand模式。</p>",
+    
     "tooltip.download": "下載",
     "filename.screenshot": "Tecendil截圖",
     "tooltip.share": "分享",
+    
     "button.patron": "成為贊助人！",
     "welcome": "歡迎來到Tecendil",
     "welcome.1": "你好！我叫Arno。",
@@ -572,6 +665,7 @@
     "welcome.4": "輸入一句話或一個名字，然後將其轉寫為談格瓦文字（Tengwar）。",
     "welcome.5": "請注意，文本未翻譯，只需使用Tengwar字符編寫。",
     "welcome.6": "要使轉錄正確，您必須在“模式”菜單中選擇適當的語言：英語，西班牙語，昆雅語或辛達林語。",
+    
     "dialog-title.settings": "設定",
     "button.close": "關閉",
     "button.back": "返回",
