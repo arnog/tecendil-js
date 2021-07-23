@@ -181,9 +181,10 @@
     "button.not-now": "Ahora no",
     
     "label.placeholder.try": "Pruebe : «${placeholder}»",
-    "label.font": "Fuente : ",
     
+    "label.font": "Fuente : ",
     "font-name.annatar-italic": "Annatar Itálico",
+    
     "label.mode": "Modo : ",
     "label.mode.english": "inglés",
     "menu.mode.english": "Inglés",
