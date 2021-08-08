@@ -442,8 +442,8 @@
     "she": "{aha}{long-carrier}[i]", // non-silent final-e
     "reuel": "{ROOMEN}{short-carrier}[e]{short-carrier}[u]{lambe}[e]", // Tolkien's middle name
     "sure": "{aha}{oore}[u][dot-below]",
-    "time": "{tinco}{short-carrier}[i]{malta}[dot-below]",
-    "times": "{tinco}{short-carrier}[i]{malta}[dot-below][swash-curl]",
+    // "time": "{tinco}{malta}[i][dot-below]",
+    // "times": "{tinco}{malta}[i][dot-below][swash-curl]",
     "tolkien": "{TINCO}{lambe}[o]{quesse}{long-carrier}[i]{nuumen}[e]",
     "tie": "{ampa}{yanta}[i]", // End in "a-y" sound
     "underlie": "{ando}[u][tilde-above]{oore}[e]{lambe}{yanta}[i]", // End in "a-y" sound
