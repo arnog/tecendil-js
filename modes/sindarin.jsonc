@@ -5,6 +5,7 @@
 // -----------------------------------------------------------------------------
 
 // See http://www.forodrim.org/daeron/teng-sin.pdf
+
 // nen = water = {nuumen}[e]{nuumen}
 // pedo = speak = {parma}[e]{ando}[o]{short-carrier}
 // mellon = friend = {malta}[e][bar-inside]{lambe}[o]{nuumen}
@@ -48,7 +49,12 @@
 
   "normalizeVowels": true,
 
+  "suppressIntrawordDash": true,
+
   "tehtarFollow": true,
+
+  // Include "dashes" as part of words in Sindarin
+  "wordPattern": "^[A-Za-zÀ-ÖØ-öø-ÿ\\*]+",
 
   "preprocess": {
     // Expand ae/oe ligatures (rare, but used by Tolking in The Etymologies e.g. for glaer)
@@ -58,9 +64,10 @@
     // Disambiguate "qu" -> "q"
     "qu": "q",
 
-    // Suppress intraword dash
-    "([^0-9\\s]+)-([^0-9\\s]+)": "$1$2",
-    "(\\w)\\.(\\w)": "$1·$2"
+    "-": " ",
+    "/(\\w)\\.(\\w)/": "$1·$2",
+    "/, /": " , ",
+    "/\\./": " ."
   },
 
   "map": {

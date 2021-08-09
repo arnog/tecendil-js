@@ -24,7 +24,7 @@
     //
     // DIPHTHONGS
     //
-    //	"ae":	"[circumflex]{a-tengwa}",
+    "ae": "{a-tengwa}[circumflex]", // as per guido_laudenzi
     "oe": "{anna}[circumflex]",
     "ai": "{a-tengwa}[double-dot]",
     "ei": "{yanta}[double-dot]",
@@ -48,7 +48,8 @@
     "m": "{vala}", // {malta} in Classical
     "n": "{oore}", // {nuumen} in Classical
     "ng": "{anga}[bar-above]", // {ungwe}[bar-above] in Classical
-    "ng$": "{nwalme}",
+    // "ng$": "{noldo}",  // as per guido_laudenzi, final ng should be {anga}[bar-above]
+    "^ng": "{noldo}", // as per guido_laudenzi
     "p": "{parma}",
     "ph": "{formen}",
     "r": "{roomen}",
@@ -73,7 +74,7 @@
     //
     // Labialized
     //
-    "gw": "{ungwe}[over-twist]",
+    "gw": "{anga}[over-twist]",
     "dw": "{ando}[over-twist]",
 
     "ch": "{aha}", // {hwesta} in Classical
@@ -86,7 +87,7 @@
     // Only ss, ll, mm and nn allowed in Sindarin
     //
     "ss": "{esse}",
-    "ll": "{lambe}{lambe}",
+    // "ll": "{lambe}{lambe}",
     "mm": "{malta}", // [bar-above]{malta} in Classical
     "nn": "{nuumen}" // [bar-above]{nuumen} in Classical
   },

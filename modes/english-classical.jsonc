@@ -120,7 +120,7 @@ For Michael son of Middle-earth
     //     "rd":	"{arda}",
     //     "rds": "[sa-rince]{arda}",
 
-    "ph": "{formen}",
+    "ph": "{parma-extended}",
     "^uph": "[u]{parma}{hyarmen}", // Not "ph" sound, e.g. "up-hea-val"
 
     "tw": "[over-twist]{tinco}",
@@ -228,7 +228,7 @@ For Michael son of Middle-earth
     "rs$": "[sa-rince]{oore}",
     "ts$": "[sa-rince]{tinco}",
     "ves$": "[sa-rince][dot-below]{ampa}",
-    "ys$": "{anna}{sa-rince}",
+    "ys$": "{anna}[sa-rince]",
     "oes$": "[o]{short-carrier}[e][sa-rince]{short-carrier}",
     "s$": "[sa-rince]", // /u/machsna: Tolkien has consistently spelled every
     // final -S ending with a sa-rince
@@ -293,7 +293,7 @@ For Michael son of Middle-earth
     "facades": "{formen}{alt-silme}[a]{ando}[dot-below][a][sa-rince]",
     "cello": "{calma}{lambe}[bar-inside][e]{short-carrier}[o]",
     "concerto": "{quesse}{nuumen}[o]{calma}{oore}[e]{tinco}{short-carrier}[o]",
-    "capuccino": "{quesse}{parma}[a]{calma}[u]{nuumen}[i]{short-carrier}[o]",
+    "cappuccino": "{quesse}{parma}[a][bar-below]{calma}[u]{nuumen}[i]{short-carrier}[o]",
     "ciao": "{calma}{vala}[a]"
   }
 }

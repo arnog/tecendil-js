@@ -81,26 +81,40 @@ accent - lambe - malta + right curl.
     "ai": "{yanta}[a]",
     "aia": "{yanta}[a]{short-carrier}[a]",
     "au": "{uure}[a]",
-    "auy": "{uure}[a]{anna}[double-dot-below]",
+    // "auy": "{uure}[a]{anna}[double-dot-below]",
     "aw$": "[a]{vala}",
 
     "ea": "[e]{short-carrier}[a]", // ??
     "ei": "{yanta}[e]", // ??
     "eo": "[e]{short-carrier}[o]", // ??
+    "eoi": "[e]{yanta}[o]",
     "eu": "{uure}[e]",
+    "êa": "{long-carrier}[e]{short-carrier}[a]",
+    // "êe": // Looks good by default (double-[e] over long carrier)
+    "êi": "{long-carrier}[e]{short-carrier}[i]",
+    "êo": "{long-carrier}[e]{short-carrier}[o]",
+    "êu": "{long-carrier}[e]{short-carrier}[u]",
 
     "ia": "[i]{short-carrier}[a]", // ??
     "iau": "[i]{short-carrier}[a]{short-carrier}[u]", // "iaun"
     "ie": "[i]{short-carrier}[e]",
     "iê": "[i]{long-carrier}[e]",
+    "iêa": "[i]{long-carrier}[e]{short-carrier}[o]",
+    "iêe": "[i]{long-carrier}[double-e]",
+    "iêi": "[i]{long-carrier}[e]{short-carrier}[i]",
+    "iêo": "[i]{long-carrier}[e]{short-carrier}[o]", // "morniêo"
+    "iêu": "[i]{long-carrier}[e]{short-carrier}[u]",
     "îe": "{long-carrier}[i]{short-carrier}[e]",
     "io": "[i]{short-carrier}[o]", // silmarilion
+    "iu": "{uure}[i]{}", // ciuca (thigh)
 
     "oa": "[o]{short-carrier}[a]", // hroa
     "oe": "{yanta}[o]", // ??
     "oi": "{yanta}[o]",
     "oia": "{yanta}[o]{short-carrier}[a]",
     "oio": "{yanta}[o]{short-carrier}[o]",
+
+    "ou": "{short-carrier}[o]{short-carrier}[u]", // Not in Quenya, but for loanwords
 
     "ui": "{yanta}[u]",
     "uia": "{yanta}[u]{short-carrier}[a]", // "uial"
@@ -113,10 +127,10 @@ accent - lambe - malta + right curl.
     "yo": "{anna}[double-dot-below][o]",
     "yu": "{anna}[double-dot-below][u]",
 
-    "yâ": "{anna}[double-dot-below]{long-carrier}[a]",
-    "yê": "{anna}[double-dot-below]{long-carrier}[e]",
-    "yû": "{anna}[double-dot-below]{long-carrier}[u]",
-    "yô": "{anna}[double-dot-below]{long-carrier}[o]",
+    // "yâ": "{anna}[double-dot-below]{long-carrier}[a]",
+    // "yê": "{anna}[double-dot-below]{long-carrier}[e]",
+    // "yû": "{anna}[double-dot-below]{long-carrier}[u]",
+    // "yô": "{anna}[double-dot-below]{long-carrier}[o]",
 
     // Alternate long-vowels
     // Tolkien"s Namarie has example of both double-e and long-carrier (yeeni)
@@ -141,7 +155,7 @@ accent - lambe - malta + right curl.
     "χ": "{aha}", // CHI -- GREEK SMALL LETTER CHI
     "ha": "{hyarmen}[a]",
     "hai": "{hyarmen}{anna}[a]",
-    "hau": "{hyarmen}[a]{short-carrier}[u]",
+    "hau": "{hyarmen}{uure}[a]",
     "he": "{hyarmen}[e]",
     "hea": "{hyarmen}[e]{short-carrier}[a]",
     "hi": "{hyarmen}[i]",
@@ -168,7 +182,6 @@ accent - lambe - malta + right curl.
     "kw": "{quesse}",
     "hw": "{hwesta}",
     "l": "{lambe}",
-    "lb": "{lambe}{umbar}",
     "ld": "{alda}",
     "m": "{malta}",
     "n": "{nuumen}",
@@ -176,7 +189,19 @@ accent - lambe - malta + right curl.
     "ngw": "{ungwe}",
     "ñw": "{nwalme}", // Very rare
     "^nw": "{nwalme}", // "NWalmë"
+    // Dreamingfifi:
+    // > So, the history of Nwalme and the NW that it represents is that it
+    // > used to be pronounced /ŋʷ/ and was Romanized ÑW. It's a sound in
+    // > Quenya that only occurred at the beginnings of words. In the Exilic
+    // > dialect of Quenya, the word-initial Ñ became N. The only source of NW
+    // > at the beginnings of words is this old /ŋʷ/. Therefore, the only way
+    // > to use Nwalme is to have it used for word-initial NW and ÑW.
+
+    // > Therefore, you'd never write "Vanwa" with Nwalme. Instead, the NW
+    // > would be rendered with Númen and Vilya.
+
     "p": "{parma}",
+    "piu": "{parma}[i]{short-carrier}[u]",
     "ph": "{formen}", // Very rare. "PHanto" (whale)
     "py": "{parma}[double-dot-below]",
     // In the Quenya phonotactic, "qu" is always followed by a vowel
@@ -195,6 +220,8 @@ accent - lambe - malta + right curl.
     // ignored otherwise
 
     "ra": "{roomen}[a]{}",
+    "rai": "{roomen}{yanta}[a]",
+    "rau": "{roomen}{uure}[a]", // Valarauco
     "re": "{roomen}[e]{}",
     "ri": "{roomen}[i]{}",
     "ro": "{roomen}[o]{}",
@@ -221,10 +248,10 @@ accent - lambe - malta + right curl.
     "z": "{esse}",
 
     // Clusters with "s"
-    "st": "{silme}{tinco}", // "puSTa"
-    "sty": "{silme}{tinco}[double-dot-below]", //	"iSTYa"
-    "sc": "{silme}{calma}", // "ruSCo"
-    "sq": "{silme}{quesse}", // "uSQe"
+    // "st": "{silme}{tinco}", // "puSTa"
+    // "sty": "{silme}{tinco}[double-dot-below]", //	"iSTYa"
+    // "sc": "{silme}{calma}", // "ruSCo"
+    // "sq": "{silme}{quesse}", // "uSQe"
     "sw": "{suule}{vilya}", // "hiSWa"
     "rs": "{oore}{suule}", // "uRSa"
 
