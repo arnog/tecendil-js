@@ -37,24 +37,36 @@ accent - lambe - malta + right curl.
     // Disambiguate pronounciation, "ce" -> "ze", "ci" -> "zi"
     "ce": "ze",
     "ci": "zi",
+    "cé": "zé",
+    "cí": "zí",
 
     // Disambiguate pronounciation, "ge" -> "je", "gi" -> "ji"
     "ge": "je",
     "gi": "ji",
+    "gé": "jé",
+    "gí": "jí",
 
     // Disambiguate pronounciation, "gue" -> "ge", "gui" -> "gi"
-    "gue": "je",
+    "gue": "ge",
     "gui": "gi",
+    "gué": "gé",
+    "guí": "gí",
 
     // Disambiguate pronounciation, "que" -> "ke", "qui" -> "ki"
     "que": "ke",
     "qui": "ki",
+    "qué": "ké",
+    "quí": "kí",
 
     // Retain "ü" in "qüe", "qüi", "güe", "güi" as "u"
     "güe": "gue",
     "güi": "gui",
+    "güé": "gué",
+    "güí": "guí",
     "qüe": "kue",
     "qüi": "kui",
+    "qüé": "kué",
+    "qüí": "kuí",
 
     // Strengthen "r" (-> "rr") at beginning or after consonant
     "^r": "rr",
