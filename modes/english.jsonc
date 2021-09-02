@@ -527,6 +527,7 @@
     "christmas": "{QUESSE-EXTENDED}ristmas",
     "clothing": "{quesse}{lambe}{anto}[o]{nwalme}[i]",
     "either": "{anna}[e]{anto}{oore}[e]",
+    "epitome": "epitom'í", // user request (GEONE)
     "esther": "Es{tinco-extended}er", // "th" pronounced /t/ uses extended tinco
     "father": "{formen}{anto}[a]{oore}[e]",
     "fathers": "{formen}{anto}[a]{oore}[e]{esse-nuquerna}",
@@ -575,12 +576,14 @@
     "somebody": "{silme}{malta}[o][dot-below]{umbar}{ando}[o]{short-carrier}[chevron]",
     "someday": "some'day",
     "somehow": "some'how",
-    "someplace": "some'place",
     "someone": "some'one",
+    "someplace": "some'place",
     "something": "some'thing",
     "sometime": "some'time",
     "sometimes": "{silme}{malta}[o][dot-below]{tinco}{malta}[i][dot-below]{swash-curl}",
+    "somewhat": "some'what",
     "someways": "some'ways",
+    "somewhen": "some'when",
     "somewhere": "some'where",
     "soothe": "{silme}{anto}[double-o][dot-below]",
     "soothing": "{silme}{short-carrier}[o]{anto}[o]{nwalme}[i]",
