@@ -568,7 +568,7 @@
     "outhouse": "out'house",
     "pothead": "pot'head",
     "rather": "{roomen}{anto}[a]{oore}[e]",
-    "rythm": "{roomen}{anto}[chevron]{malta}",
+    "rhythm": "{roomen}{hyarmen}{anto}[chevron]{malta}",
     "school": "s{quesse-extended}ool", // <ch> pronounced as /k/
     "seethe": "{silme}{short-carrier}[e]{anto}[dot-below][e]",
     "slither": "{silme}{lambe}{anto}[i]{oore}[e]",
@@ -608,7 +608,7 @@
     "theirs": "{anto}{anna}[e]{oore}{esse-nuquerna}",
     "themselves": "{anto}{malta}[e]{silme}{lambe}[e]{ampa}{silme}[e]",
     "there": "{anto}{oore}[e][dot-below]",
-    "therby": "{anto}{roomen}[e]{umbar}[e]{short-carrier}[chevron]",
+    "thereby": "{anto}{roomen}[e]{umbar}[e]{short-carrier}[chevron]",
     "therein": "{anto}{roomen}[e]{anna}[e]{nuumen}",
     "therefore": "{anto}{oore}[e][dot-below]{formen}[e]{oore}[dot-below][o]",
     "those": "{anto}{esse-nuquerna}[o][dot-below]",
