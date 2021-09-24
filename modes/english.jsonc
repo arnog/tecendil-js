@@ -349,8 +349,8 @@
     "z": "{esse}", // for english (= /zh/, e.g. azure)
 
     // In English, /c/ is pronounced [s] before e, i, y
-    "mce": "{malta}[e]{silme-nuquerna}", // necessary to override "mc'
-    "nce": "{nuumen}[e]{silme-nuquerna}", // necessary to override "nc'
+    "mce": "{malta}{silme-nuquerna}[e]", // necessary to override "mc'
+    "nce": "{nuumen}{silme-nuquerna}[e]", // necessary to override "nc'
     "nce$": "{nuumen}[dot-below]{silme-nuquerna}", // necessary to override "nc'
     "ce$": "[dot-below]{silme-nuquerna}",
     "sci$": "{}{calma}[i]", // S I, e.g. "pesci"
@@ -359,12 +359,12 @@
     "cy$": "{}{silme-nuquerna}[chevron]{short-carrier}", // "icy"
 
     // soft-C uses silme-nuquerna
-    "ce": "{silme-nuquerna}[e]",
+    "ce": "{}{silme-nuquerna}[e]",
     "ci": "{}{silme-nuquerna}[i]",
-    "cy": "{}[chevron]{silme-nuquerna}",
+    "cy": "{}{silme-nuquerna}[chevron]",
     // "ce" is S except cello CH, celt K, celtic K, concerto CH,
     // "ci" is S except ancient CH, capuccino CH, ciao CH,
-    // "cy" is S
+    // "cy" is S (cyan, recycle, cymbal)
 
     "^mc": "{malta}[a]{quesse}", // "Mc" -> "mac"
 
@@ -394,6 +394,7 @@
     "ys$": "{anna}[sa-rince]"
   },
 
+  // Note: all the entries should be lower-case only
   "words": {
     "and": "{and}",
 
@@ -630,20 +631,21 @@
     "worthy": "{vala}{oore}[o]{anto}{short-carrier}[chevron]",
 
     // Sindarin words with [ce] that are pronounced /k/ rather than /s/
-    "Celebdil": "{quesse}{lambe}[e]{umbar}[e]{ando}{lambe}[i]",
-    "Celebros": "{quesse}{lambe}[e]{umbar}[e]{roomen}{silme}[o]",
-    "Celegorm": "{quesse}{lambe}[e]{ungwe}[e]{roomen}[o]{malta}",
-    "Celebrían": "{quesse}{lambe}[e]{umbar}[e]{roomen}{long-carrier}[i]{nuumen}[a]",
-    "Celebrian": "{quesse}{lambe}[e]{umbar}[e]{roomen}{long-carrier}[i]{nuumen}[a]",
-    "Celecormë": "{quesse}{lambe}[e]{quesse}[e]{roomen}[o]{malta}{short-carrier}[e]",
-    "Celecorme": "{quesse}{lambe}[e]{quesse}[e]{roomen}[o]{malta}{short-carrier}[e]",
-    "Celeborn": "{quesse}{lambe}[e]{umbar}[e]{roomen}[o]{nuumen}",
-    "Celepharn": "{quesse}{lambe}[e]{formen}[e]{roomen}[a]{nuumen}",
-    "Celebrimbor": "{quesse}{lambe}[e]{umbar}[e]{roomen}{umbar}[bar-above][i]{oore}[o]",
-    "Celebrindor": "{quesse}{lambe}[e]{umbar}[e]{roomen}{ando}[bar-above][i]{oore}[o]",
-    "Celebrindal": "{quesse}{lambe}[e]{umbar}[e]{roomen}{ando}[bar-above][i]{lambe}[a]",
-    "Celerdain": "{quesse}{lambe}[e]{roomen}[e]{ando}{anna}[a]{nuumen}",
-    "Celebrant": "{quesse}{lambe}[e]{umbar}[e]{roomen}{tinco}[bar-above][a]",
+    // "celebdil": "{QUESSE}{lambe}[e]{umbar}[e]{ando}{lambe}[i]",
+    "celebdil": "Kelebdil",
+    "celebros": "Kelebros",
+    "celegorm": "Kelegorm",
+    "celebrían": "{QUESSE}{lambe}[e]{umbar}[e]{roomen}{long-carrier}[i]{nuumen}[a]",
+    "celebrian": "{QUESSE}{lambe}[e]{umbar}[e]{roomen}{long-carrier}[i]{nuumen}[a]",
+    "celecormë": "{QUESSE}{lambe}[e]{quesse}[e]{roomen}[o]{malta}{short-carrier}[e]",
+    "celecorme": "Kelekorme",
+    "celeborn": "Keleborn",
+    "celepharn": "{QUESSE}{lambe}[e]{formen}[e]{roomen}[a]{nuumen}",
+    "celebrimbor": "Kelebrimbor",
+    "celebrindor": "Kelebrindor",
+    "celebrindal": "Kelebrindal",
+    "celerdain": "Kelerdain",
+    "celebrant": "Kelebrant",
 
     // Ordinal numbers
     // See http://www.gweep.net/~slarti/Gweep/Tengwar/#ordinal
