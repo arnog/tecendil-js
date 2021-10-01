@@ -196,7 +196,7 @@
     "rer$": "{roomen}[dot-below]{oore}",
     "ser$": "{alt-silme}[dot-below]{oore}",
     "ter$": "{tinco}[dot-below]{oore}",
-    "ver$": "{ampa}[dot-below]{oore}",
+    "ver$": "{ampa}[dot-below]{oore}"
 
     // Special rules:
     // "er$": "{oore}[dot-below]" //dot under oore represents that the r is ə
