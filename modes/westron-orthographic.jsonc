@@ -35,14 +35,22 @@
     "oo": "{anna}[tilde-below]", // look
     "uu": "{vala}[tilde-below]", //vacuum
 
-    // Following y
+    // Following i/y
+    "ai": "{vilya}[double-dot]", //daisy
+    "ei": "{yanta}[double-dot]", // eight
+    "oi": "{anna}[double-dot]", // voice
+    "ui": "{vala}[double-dot]", // baranduin
+
     "ay": "{vilya}[double-dot]", //fray
     "ey": "{yanta}[double-dot]", // key
-    // "iy": "{i-tengwa}[andaith][tilde-below]", // I think there are no words where y is semivowel in iy
+    // I think there are no words where y is semivowel in iy
     "oy": "{anna}[double-dot]", // enjoy
     "uy": "{vala}[double-dot]", // buyer
 
-    // Following w
+    // Following u/w
+    "au": "{vilya}[over-twist]", // daughter
+    "ou": "{anna}[over-twist]", // doubt
+
     "aw": "{vilya}[over-twist]", // thaw
     "ew": "{yanta}[over-twist]", // slew
     // "iw": "{i-tengwa}[andaith][over-twist]", // I think there are no words where w is semivowel in iw
@@ -151,15 +159,10 @@
     // After vowels
     "ays$": "{vilya}[double-dot][swash-curl]",
     "ees$": "{yanta}[bar-below][swash-curl]",
-    "es$": "{}[dot-below][swash-curl]",
-    "is$": "{i-tengwa}[andaith][swash-curl]",
-    "os$": "{anna}[swash-curl]",
     "ows$": "{anna}[over-twist][swash-curl]",
     "oys$": "{anna}[double-dot][swash-curl]",
+    "res$": "{oore}[dot-below][swash-curl]",
     //"ys$": "{long-carrier}[swash-curl]",
-    "s$": "[sa-rince]", // /u/machsna: Tolkien has consistently spelled every
-    // final -S ending with a sa-rince
-    // (sometimes with the looped variant form that indicates voicedness).
 
     // Final silent "e"
     "be$": "{umbar}[dot-below]",
@@ -173,30 +176,50 @@
     "me$": "{malta}[dot-below]",
     "ne$": "{nuumen}[dot-below]",
     "pe$": "{parma}[dot-below]",
-    "re$": "{oore}[dot-below]",
+    "re$": "{roomen}[dot-below]",
     "se$": "{alt-silme}[dot-below]",
     "te$": "{tinco}[dot-below]",
     "ve$": "{ampa}[dot-below]",
 
+    // Final silent "e" before r
+    "ber$": "{umbar}[dot-below]{oore}",
+    "der$": "{ando}[dot-below]{oore}",
+    "fer$": "{formen}[dot-below]{oore}",
+    "ger$": "{ungwe}[dot-below]{oore}",
+    "her$": "{hyarmen}[dot-below]{oore}",
+    "jer$": "{anga}[dot-below]{oore}",
+    "ker$": "{quesse}[dot-below]{oore}",
+    "ler$": "{lambe}[dot-inside]{oore}",
+    "mer$": "{malta}[dot-below]{oore}",
+    "ner$": "{nuumen}[dot-below]{oore}",
+    "per$": "{parma}[dot-below]{oore}",
+    "rer$": "{roomen}[dot-below]{oore}",
+    "ser$": "{alt-silme}[dot-below]{oore}",
+    "ter$": "{tinco}[dot-below]{oore}",
+    "ver$": "{ampa}[dot-below]{oore}",
+
     // Special rules:
-    "er$": "{oore}[dot-below]" //dot under oore represents that the r is ə
+    // "er$": "{oore}[dot-below]" //dot under oore represents that the r is ə
   },
 
   "words": {
     // Tecendil, of course
-    "tecendil": "te{quesse}endil",
+    "tecendil": "tekendil",
+
+    // In the King's Letter, Gondor and Arnor end with roomen, not oore
+    "Gondor": "Gondo{roomen}",
+    "Arnor": "Arno{roomen}",
 
     // Common abbreviations
     "and": "{and}",
     "of": "{of}",
     "the": "{the}",
     "of the": "{ofthe}",
+    "or": "{anna}{roomen}", // attested
 
     // Short words
-    "in": "{i-tengwa}[andaith][tilde-high]", // attested
+    // "in": "{i-tengwa}[andaith][tilde-high]", // attested, but in the King's Letter it's used as {i-tengwa}{nuumen}
     "on": "{anna}[tilde-above]", // attested
-    "is": "{i-tengwa}{esse}", // attested
-    "as": "{vilya}{esse}", // it should be similar to "is"
     "be": "{umbar}{yanta}", // non-silent final-e
     "he": "{hyarmen}{yanta}", // non-silent final-e
     "me": "{malta}{yanta}", // non-silent final-e
@@ -240,12 +263,12 @@
     "anarchism": "anar{quesse}[thinnas]ism",
     "anarchist": "anar{quesse}[thinnas]ist",
     "anarchy": "anar{quesse}[thinnas]y",
-    "anchor": "an{quesse}[thinnas]or",
-    "anchorage": "an{quesse}[thinnas]orage",
-    "anchoring": "an{quesse}[thinnas]oring",
-    "anchorite": "an{quesse}[thinnas]orite",
-    "anchorman": "an{quesse}[thinnas]orman",
-    "anchormen": "an{quesse}[thinnas]ormen",
+    "anchor": "a{quesse}[thinnas][tilde-above]or",
+    "anchorage": "a{quesse}[thinnas][tilde-above]orage",
+    "anchoring": "a{quesse}[thinnas][tilde-above]oring",
+    "anchorite": "a{quesse}[thinnas][tilde-above]orite",
+    "anchorman": "a{quesse}[thinnas][tilde-above]orman",
+    "anchormen": "a{quesse}[thinnas][tilde-above]ormen",
     "arachnid": "ara{quesse}[thinnas]nid",
     "archaeological": "ar{quesse}[thinnas]aeological",
     "archaeologist": "ar{quesse}[thinnas]aeologist",
@@ -271,12 +294,12 @@
     "bellyache": "bellya{quesse}[dot-below][thinnas]",
     "biochemistry": "bio{quesse}[thinnas]emistry",
     "biotechnology": "biote{quesse}[thinnas]nology",
-    "bronchi": "bron{quesse}[thinnas]i",
-    "bronchial": "bron{quesse}[thinnas]ial",
-    "bronchitic": "bron{quesse}[thinnas]itic",
-    "bronchitis": "bron{quesse}[thinnas]itis",
-    "bronchoscope": "bron{quesse}[thinnas]oscope",
-    "bronchus": "bron{quesse}[thinnas]us",
+    "bronchi": "bro{quesse}[thinnas][tilde-above]i",
+    "bronchial": "bro{quesse}[thinnas][tilde-above]ial",
+    "bronchitic": "bro{quesse}[thinnas][tilde-above]itic",
+    "bronchitis": "bro{quesse}[thinnas][tilde-above]itis",
+    "bronchoscope": "bro{quesse}[thinnas][tilde-above]oscope",
+    "bronchus": "bro{quesse}[thinnas][tilde-above]us",
     "catechise": "cate{quesse}[thinnas]ise",
     "catechism": "cate{quesse}[thinnas]ism",
     "catechize": "cate{quesse}[thinnas]ize",
@@ -356,10 +379,10 @@
     "chronometer": "{quesse}[thinnas]ronometer",
     "chrysalis": "{quesse}[thinnas]rysalis",
     "chrysanthemum": "{quesse}[thinnas]rysanthemum",
-    "cinchona": "cin{quesse}[thinnas]ona",
+    "cinchona": "ci{quesse}[thinnas][tilde-above]ona",
     "clavichord": "clavi{quesse}[thinnas]ord",
     "cochlea": "co{quesse}[thinnas]lea",
-    "conch": "con{quesse}[thinnas]",
+    "conch": "co{quesse}[thinnas][tilde-above]",
     "Czech": "Cze{quesse}[thinnas]",
     "Czechia": "Cze{quesse}[thinnas]ia",
     "dachshund": "da{quesse}[thinnas]shund",
@@ -380,7 +403,7 @@
     "hierarchy": "hierar{quesse}[thinnas]y",
     "hypochondria": "hypo{quesse}[thinnas]ondria",
     "hypochondriac": "hypo{quesse}[thinnas]ondriac",
-    "inchoate": "in{quesse}[thinnas]oate",
+    "inchoate": "i{quesse}[thinnas][tilde-above]oate",
     "lachrymal": "la{quesse}[thinnas]rymal",
     "lachrymose": "la{quesse}[thinnas]rymose",
     "leprechaun": "lepre{quesse}[thinnas]aun",
@@ -406,9 +429,9 @@
     "mechanistically": "me{quesse}[thinnas]anistically",
     "mechanization": "me{quesse}[thinnas]anization",
     "mechanize": "me{quesse}[thinnas]anize",
-    "melancholia": "melan{quesse}[thinnas]olia",
-    "melancholic": "melan{quesse}[thinnas]olic",
-    "melancholy": "melan{quesse}[thinnas]oly",
+    "melancholia": "mela{quesse}[thinnas][tilde-above]olia",
+    "melancholic": "mela{quesse}[thinnas][tilde-above]olic",
+    "melancholy": "mela{quesse}[thinnas][tilde-above]oly",
     "Michael": "Mi{quesse}[thinnas]ael",
     "mocha": "mo{quesse}[thinnas]a",
     "monarch": "monar{quesse}[thinnas]",
@@ -429,7 +452,7 @@
     "orchestration": "or{quesse}[thinnas]estration",
     "orchid": "or{quesse}[thinnas]id",
     "pachyderm": "pa{quesse}[thinnas]yderm",
-    "panchromatic": "pan{quesse}[thinnas]romatic",
+    "panchromatic": "pa{quesse}[thinnas][tilde-above]romatic",
     "pantechnicon": "pante{quesse}[thinnas]nicon",
     "parochial": "paro{quesse}[thinnas]ial",
     "parochialism": "paro{quesse}[thinnas]ialism",
@@ -509,11 +532,11 @@
     "stomach": "stoma{quesse}[thinnas]",
     "stomachache": "stoma{quesse}[thinnas]a{quesse}[dot-below][thinnas]", // it looks better in Telcontar in that order
     "strychnine": "stry{quesse}[thinnas]nine",
-    "synchronisation": "syn{quesse}[thinnas]ronisation",
-    "synchronise": "syn{quesse}[thinnas]ronise",
-    "synchronization": "syn{quesse}[thinnas]ronization",
-    "synchronize": "syn{quesse}[thinnas]ronize",
-    "synchronous": "syn{quesse}[thinnas]ronous",
+    "synchronisation": "sy{quesse}[thinnas][tilde-above]ronisation",
+    "synchronise": "sy{quesse}[thinnas][tilde-above]ronise",
+    "synchronization": "sy{quesse}[thinnas][tilde-above]ronization",
+    "synchronize": "sy{quesse}[thinnas][tilde-above]ronize",
+    "synchronous": "sy{quesse}[thinnas][tilde-above]ronous",
     "tachograph": "ta{quesse}[thinnas]ograph",
     "tech": "te{quesse}[thinnas]",
     "technetium": "te{quesse}[thinnas]netium",
@@ -531,8 +554,8 @@
     "trachea": "tra{quesse}[thinnas]ea",
     "tracheae": "tra{quesse}[thinnas]eae",
     "triptych": "tripty{quesse}[thinnas]",
-    "uncharacteristic": "un{quesse}[thinnas]aracteristic",
-    "uncharacteristically": "un{quesse}[thinnas]aracteristically",
+    "uncharacteristic": "u{quesse}[thinnas][tilde-above]aracteristic",
+    "uncharacteristically": "u{quesse}[thinnas][tilde-above]aracteristically",
     "zucchini": "zuc{quesse}[thinnas]ini",
 
     // These words have a voiced th, so they must be written with anto, not suule. I changed those th for dh.
@@ -922,7 +945,7 @@
     "themselves": "dhemselves",
     "then": "dhen",
     "thence": "dhence",
-    "thenceforth": "dhenceforth",
+    "thenceforth": "dhence'forth",
     "therat": "dherat",
     "there": "dhere",
     "thereabouts": "dhereabouts",
