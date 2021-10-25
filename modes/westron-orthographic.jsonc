@@ -64,14 +64,12 @@
     "ce": "{silme-nuquerna}{yanta}",
     "ci": "{silme-nuquerna}{i-tengwa}[andaith]",
     "cy": "{silme-nuquerna}{long-carrier}",
-    "nce$": "{silme-nuquerna}[tilde-above][dot-below]", // necessary to override "nc" below
-    "ce$": "{silme-nuquerna}[dot-below]",
-    "sci$": "{}{calma}{i-tengwa}[andaith]", // SI, e.g. "pesci"
-    "cci$": "{}{calma}{i-tengwa}[andaith]", // CH, e.g. "gucci"
-    "ci$": "{}{calma}{i-tengwa}[andaith]", // CH, e.g. "domenici" except S (ceci, medici, vinci) or K (loci)
-    "cy$": "{}{silme-nuquerna}{long-carrier}", // "icy"
+    //"sci$": "{}{calma}{i-tengwa}[andaith]", // SI, e.g. "pesci"
+    //"cci$": "{}{calma}{i-tengwa}[andaith]", // CH, e.g. "gucci"
+    //"ci$": "{}{calma}{i-tengwa}[andaith]", // CH, e.g. "domenici" except S (ceci, medici, vinci) or K (loci)
+    //"cy$": "{}{silme-nuquerna}{long-carrier}", // "icy"
     "^mc": "{malta}{vilya}{quesse}", // "Mc" -> "mac"
-    "ch": "{calma}", // "k" except cht, chr, chl, chn -- (branchless, bichloride)
+    "ch": "{calma}",
     "d": "{ando}",
     "f": "{formen}",
     "g": "{ungwe}",
@@ -88,7 +86,7 @@
     "t": "{tinco}",
     "v": "{ampa}",
     "w": "{uure}",
-    "x": "{quesse}[x-curl]", // I reserved x-curl for x, k + s is quesse + sa-rince (see below)
+    "x": "{quesse}[x-curl]",
     "z": "{esse}",
 
     // Doubled-consonants
@@ -98,7 +96,7 @@
     "ff": "{formen}[bar-below]", // off
     "gg": "{ungwe}[bar-below]", // suggests
     "ll": "{alda}", // will
-    "mm": "{malta}[bar-below]", // community
+    "mm": "{malta}[tilde-above]", // community, source page gives an example with nasalizer
     "nn": "{nuumen}[tilde-above]", // dinner, source page gives an example with nasalizer
     "pp": "{parma}[bar-below]", // support
     "rr": "{oore}[bar-below]", // current
@@ -113,22 +111,32 @@
     "gh": "{unque}",
     "th": "{suule}",
     "sh": "{aha}",
-    "ng": "{nwalme}", // /ŋ/ sound
+    "ng$": "{nwalme}", // /ŋ/ sound only at the end
     "dw": "{ando}[over-twist]",
     "kw": "{quesse}[over-twist]",
     "gw": "{ungwe}[over-twist]",
     "qu": "{quesse}[over-twist]",
     "tw": "{tinco}[over-twist]",
 
-    // Nasalization mark (barring nn, see above)
-    "nc": "{quesse}[tilde-above]",
-    "mc": "{quesse}[tilde-above]",
-    "nd": "{ando}[tilde-above]",
-    "md": "{ando}[tilde-above]",
+    // Nasalization mark (barring mm and nn, see above)
     "mb": "{umbar}[tilde-above]",
-    "nt": "{tinco}[tilde-above]",
+    "mc": "{quesse}[tilde-above]",
+    "md": "{ando}[tilde-above]",
     "mp": "{parma}[tilde-above]",
     "mt": "{tinco}[tilde-above]",
+    "nc": "{quesse}[tilde-above]",
+    "nd": "{ando}[tilde-above]",
+    "ng": "{ungwe}[tilde-above]", // /ŋg/ sound inside words
+    "nk": "{quesse}[tilde-above]",
+    "ns": "{alt-silme}[tilde-above]",
+    "nt": "{tinco}[tilde-above]",
+    "nth": "{suule}[tilde-above]",
+    "ndh": "{anto}[tilde-above]",
+    // Special c as /s/ cases
+    "nce": "{silme-nuquerna}[tilde-above]{yanta}",
+    "nce$": "{silme-nuquerna}[tilde-above][dot-below]",
+    "nci": "{silme-nuquerna}[tilde-above]{i-tengwa}[andaith]",
+    "ncy": "{silme-nuquerna}[tilde-above]{long-carrier}",
 
     // Final-s
     // After voiceless sounds (p, t, k, f, θ, h, ʃ) it is pronounced /s/, so sa-rince
@@ -137,7 +145,9 @@
     // Voiceless
     "ps$": "{parma}[sa-rince]",
     "ts$": "{tinco}[sa-rince]",
-    "ks$": "{quesse}[sa-rince]", // x-curl is reserved for x (see above)
+    "cs$": "{quesse}[x-curl]",
+    "ks$": "{quesse}[x-curl]",
+    "nks$": "{quesse}[x-curl][tilde-above]",
     "fs$": "{formen}[sa-rince]",
     "ghs$": "{unque}[sa-rince]",
     "shs$": "{aha}[sa-rince]",
@@ -166,6 +176,7 @@
 
     // Final silent "e"
     "be$": "{umbar}[dot-below]",
+    "ce$": "{silme-nuquerna}[dot-below]",
     "de$": "{ando}[dot-below]",
     "fe$": "{formen}[dot-below]",
     "ge$": "{ungwe}[dot-below]",
@@ -192,6 +203,7 @@
     "ler$": "{lambe}[dot-inside]{oore}",
     "mer$": "{malta}[dot-below]{oore}",
     "ner$": "{nuumen}[dot-below]{oore}",
+    "nger$": "{ungwe}[tilde-above][dot-below]{oore}",
     "per$": "{parma}[dot-below]{oore}",
     "rer$": "{roomen}[dot-below]{oore}",
     "ser$": "{alt-silme}[dot-below]{oore}",
@@ -219,6 +231,7 @@
 
     // Short words
     // "in": "{i-tengwa}[andaith][tilde-high]", // attested, but in the King's Letter it's used as {i-tengwa}{nuumen}
+    "an": "{vilya}[tilde-above]", // attested
     "on": "{anna}[tilde-above]", // attested
     "be": "{umbar}{yanta}", // non-silent final-e
     "he": "{hyarmen}{yanta}", // non-silent final-e
@@ -228,14 +241,17 @@
 
     // Some composed words that induce confusion (t+h is not th, silent e's, etc.)
     "anthill": "ant'hill",
+    "english": "eng'lish",
     "epitome": "epitom'e",
     "goatherd": "goat'herd",
+    "hanger": "hang'er",
     "knighthood": "knight'hood",
     "lightheaded": "light'headed",
     "lighthouse": "light'house",
     "noone": "no'one",
     "outhouse": "out'house",
     "pothead": "pot'head",
+    "singer": "sing'er",
     "somebody": "some'body",
     "someday": "some'day",
     "somehow": "some'how",
@@ -253,7 +269,7 @@
     // These words have a ch combination with the silent h. These ch are written with quesse and a thinnas
     "achalasia": "a{quesse}[thinnas]alasia",
     "ache": "a{quesse}[dot-below][thinnas]",
-    "Achilles": "A{quesse}[thinnas]illes",
+    "achilles": "{VILYA}{quesse}[thinnas]illes",
     "alchemist": "al{quesse}[thinnas]emist",
     "alchemy": "al{quesse}[thinnas]emy",
     "anachronism": "ana{quesse}[thinnas]ronism",
@@ -290,10 +306,10 @@
     "archive": "ar{quesse}[thinnas]ive",
     "archivist": "ar{quesse}[thinnas]ivist",
     "bacchanalian": "bac{quesse}[thinnas]analian",
-    "backache": "backa{quesse}[dot-below][thinnas]",
-    "bellyache": "bellya{quesse}[dot-below][thinnas]",
+    "backache": "back'ache",
+    "bellyache": "belly'ache",
     "biochemistry": "bio{quesse}[thinnas]emistry",
-    "biotechnology": "biote{quesse}[thinnas]nology",
+    "biotechnology": "biot'e{quesse}[thinnas]nology",
     "bronchi": "bro{quesse}[thinnas][tilde-above]i",
     "bronchial": "bro{quesse}[thinnas][tilde-above]ial",
     "bronchitic": "bro{quesse}[thinnas][tilde-above]itic",
@@ -310,13 +326,13 @@
     "chaotic": "{quesse}[thinnas]aotic",
     "chaotically": "{quesse}[thinnas]aotically",
     "character": "{quesse}[thinnas]aracter",
-    "characterisation": "{quesse}[thinnas]aracterisation",
-    "characterise": "{quesse}[thinnas]aracterise",
-    "characteristic": "{quesse}[thinnas]aracteristic",
-    "characteristically": "{quesse}[thinnas]aracteristically",
-    "characterization": "{quesse}[thinnas]aracterization",
-    "characterize": "{quesse}[thinnas]aracterize",
-    "characterless": "{quesse}[thinnas]aracterless",
+    "characterisation": "characte'risation",
+    "characterise": "characte'rise",
+    "characteristic": "characte'ristic",
+    "characteristically": "characte'ristically",
+    "characterization": "characte'rization",
+    "characterize": "characte'rize",
+    "characterless": "character'less",
     "charisma": "{quesse}[thinnas]arisma",
     "charismatic": "{quesse}[thinnas]arismatic",
     "chasm": "{quesse}[thinnas]asm",
@@ -335,7 +351,7 @@
     "chiropodist": "{quesse}[thinnas]iropodist",
     "chiropody": "{quesse}[thinnas]iropody",
     "chiropractor": "{quesse}[thinnas]iropractor",
-    "Chloe": "{quesse}[thinnas]loe",
+    "chloe": "{quesse}[thinnas]loe",
     "chloride": "{quesse}[thinnas]loride",
     "chlorinate": "{quesse}[thinnas]lorinate",
     "chlorination": "{quesse}[thinnas]lorination",
@@ -354,17 +370,17 @@
     "choreography": "{quesse}[thinnas]oreography",
     "chorister": "{quesse}[thinnas]orister",
     "chorus": "{quesse}[thinnas]orus",
-    "Chris": "{quesse}[thinnas]ris",
-    "Christ": "{quesse}[thinnas]rist",
+    "chris": "{quesse}[thinnas]ris",
+    "christ": "{quesse}[thinnas]rist",
     "christen": "{quesse}[thinnas]risten",
-    "Christendom": "{quesse}[thinnas]ristendom",
+    "christendom": "{quesse}[thinnas]ristendom",
     "christening": "{quesse}[thinnas]ristening",
-    "Christian": "{quesse}[thinnas]ristian",
-    "Christianity": "{quesse}[thinnas]ristianity",
-    "Christine": "{quesse}[thinnas]ristine",
-    "Christmas": "{quesse}[thinnas]ristmas",
-    "Christoph": "{quesse}[thinnas]ristoph",
-    "Christopher": "{quesse}[thinnas]ristopher",
+    "christian": "{quesse}[thinnas]ristian",
+    "christianity": "{quesse}[thinnas]ristianity",
+    "christine": "{quesse}[thinnas]ristine",
+    "christmas": "{quesse}[thinnas]ristmas",
+    "christoph": "{quesse}[thinnas]ristoph",
+    "christopher": "{quesse}[thinnas]ristopher",
     "chromatic": "{quesse}[thinnas]romatic",
     "chrome": "{quesse}[thinnas]rome",
     "chromium": "{quesse}[thinnas]romium",
@@ -383,20 +399,20 @@
     "clavichord": "clavi{quesse}[thinnas]ord",
     "cochlea": "co{quesse}[thinnas]lea",
     "conch": "co{quesse}[thinnas][tilde-above]",
-    "Czech": "Cze{quesse}[thinnas]",
-    "Czechia": "Cze{quesse}[thinnas]ia",
-    "dachshund": "da{quesse}[thinnas]shund",
+    "czech": "cze{quesse}[thinnas]",
+    "czechia": "cze{quesse}[thinnas]ia",
+    "dachshund": "da{quesse}[thinnas]{silme}hund",
     "diarchy": "diar{quesse}[thinnas]y",
     "dichotomy": "di{quesse}[thinnas]otomy",
     "drachma": "dra{quesse}[thinnas]ma",
-    "earache": "eara{quesse}[dot-below][thinnas]", // it looks better in Telcontar in that order
+    "earache": "ear'ache", // it looks better in Telcontar in that order
     "echo": "e{quesse}[thinnas]o",
     "epoch": "epo{quesse}[thinnas]",
-    "Eucharist": "Eu{quesse}[thinnas]arist",
+    "eucharist": "eu{quesse}[thinnas]arist",
     "eunuch": "eunu{quesse}[thinnas]",
     "harpsichord": "harpsi{quesse}[thinnas]ord",
-    "headache": "heada{quesse}[dot-below][thinnas]", // it looks better in Telcontar in that order
-    "heartache": "hearta{quesse}[dot-below][thinnas]", // it looks better in Telcontar in that order
+    "headache": "head'ache", // it looks better in Telcontar in that order
+    "heartache": "heartache", // it looks better in Telcontar in that order
     "hematochezia": "hemato{quesse}[thinnas]ezia",
     "hierarch": "hierar{quesse}[thinnas]",
     "hierarchic": "hierar{quesse}[thinnas]ic",
@@ -408,7 +424,7 @@
     "lachrymose": "la{quesse}[thinnas]rymose",
     "leprechaun": "lepre{quesse}[thinnas]aun",
     "lichen": "li{quesse}[thinnas]en",
-    "Mach": "Ma{quesse}[thinnas]",
+    "mach": "Ma{quesse}[thinnas]",
     "machination": "ma{quesse}[thinnas]ination",
     "malachite": "mala{quesse}[thinnas]ite",
     "maraschino": "maras{quesse}[thinnas]ino",
@@ -418,21 +434,21 @@
     "matriarch": "matriar{quesse}[thinnas]",
     "matriarchal": "matriar{quesse}[thinnas]al",
     "matriarchy": "matriar{quesse}[thinnas]y",
-    "mechanic": "me{quesse}[thinnas]anic",
-    "mechanical": "me{quesse}[thinnas]anical",
-    "mechanically": "me{quesse}[thinnas]anically",
-    "mechanics": "me{quesse}[thinnas]anics",
-    "mechanisation": "me{quesse}[thinnas]anisation",
-    "mechanise": "me{quesse}[thinnas]anise",
-    "mechanism": "me{quesse}[thinnas]anism",
-    "mechanistic": "me{quesse}[thinnas]anistic",
-    "mechanistically": "me{quesse}[thinnas]anistically",
-    "mechanization": "me{quesse}[thinnas]anization",
-    "mechanize": "me{quesse}[thinnas]anize",
+    "mechanic": "m[dot-below]{quesse}[thinnas]anic",
+    "mechanical": "m[dot-below]{quesse}[thinnas]anical",
+    "mechanically": "m[dot-below]{quesse}[thinnas]anically",
+    "mechanics": "m[dot-below]{quesse}[thinnas]anics",
+    "mechanisation": "m[dot-below]{quesse}[thinnas]anisation",
+    "mechanise": "m[dot-below]{quesse}[thinnas]anise",
+    "mechanism": "m[dot-below]{quesse}[thinnas]anism",
+    "mechanistic": "m[dot-below]{quesse}[thinnas]anistic",
+    "mechanistically": "m[dot-below]{quesse}[thinnas]anistically",
+    "mechanization": "m[dot-below]{quesse}[thinnas]anization",
+    "mechanize": "m[dot-below]{quesse}[thinnas]anize",
     "melancholia": "mela{quesse}[thinnas][tilde-above]olia",
     "melancholic": "mela{quesse}[thinnas][tilde-above]olic",
     "melancholy": "mela{quesse}[thinnas][tilde-above]oly",
-    "Michael": "Mi{quesse}[thinnas]ael",
+    "michael": "mi{quesse}[thinnas]ael",
     "mocha": "mo{quesse}[thinnas]a",
     "monarch": "monar{quesse}[thinnas]",
     "monarchic": "monar{quesse}[thinnas]ic",
@@ -440,17 +456,17 @@
     "monarchist": "monar{quesse}[thinnas]ist",
     "monarchy": "monar{quesse}[thinnas]y",
     "monochrome": "mono{quesse}[thinnas]rome",
-    "nanotechnology": "nanote{quesse}[thinnas]nology",
-    "Nicholas": "Ni{quesse}[thinnas]olas",
-    "ocher": "o{quesse}[thinnas]er",
+    "nanotechnology": "nanot'e{quesse}[thinnas]nology",
+    "nicholas": "ni{quesse}[thinnas]olas",
+    "ocher": "o{quesse}[dot-below][thinnas]r",
     "ochre": "o{quesse}[thinnas]re",
     "oligarch": "oligar{quesse}[thinnas]",
     "oligarchy": "oligar{quesse}[thinnas]y",
-    "orchestra": "or{quesse}[thinnas]estra",
-    "orchestral": "or{quesse}[thinnas]estral",
-    "orchestrate": "or{quesse}[thinnas]estrate",
-    "orchestration": "or{quesse}[thinnas]estration",
-    "orchid": "or{quesse}[thinnas]id",
+    "orchestra": "o{oore}{quesse}[dot-below][thinnas]stra",
+    "orchestral": "o{oore}{quesse}[dot-below][thinnas]stral",
+    "orchestrate": "o{oore}{quesse}[dot-below][thinnas]strate",
+    "orchestration": "o{oore}{quesse}[dot-below][thinnas]stration",
+    "orchid": "o{oore}{quesse}[thinnas]id",
     "pachyderm": "pa{quesse}[thinnas]yderm",
     "panchromatic": "pa{quesse}[thinnas][tilde-above]romatic",
     "pantechnicon": "pante{quesse}[thinnas]nicon",
@@ -462,10 +478,10 @@
     "patriarchal": "patriar{quesse}[thinnas]al",
     "patriarchy": "patriar{quesse}[thinnas]y",
     "petrochemical": "petro{quesse}[thinnas]emical",
-    "playschool": "plays{quesse}[thinnas]ool",
-    "polytechnic": "polyte{quesse}[thinnas]nic",
+    "playschool": "play{silme}{quesse}[thinnas]ool",
+    "polytechnic": "polyt'e{quesse}[thinnas]nic",
     "psyche": "psy{quesse}[dot-below][thinnas]", // it looks better in Telcontar in that order
-    "psychedelic": "psy{quesse}[thinnas]edelic",
+    "psychedelic": "psyche'delic",
     "psychiatric": "psy{quesse}[thinnas]iatric",
     "psychiatrist": "psy{quesse}[thinnas]iatrist",
     "psychiatry": "psy{quesse}[thinnas]iatry",
@@ -488,8 +504,8 @@
     "psychotherapy": "psy{quesse}[thinnas]otherapy",
     "psychotic": "psy{quesse}[thinnas]otic",
     "pulchritude": "pul{quesse}[thinnas]ritude",
-    "pyrotechnic": "pyrote{quesse}[thinnas]nic",
-    "pyrotechnics": "pyrote{quesse}[thinnas]nics",
+    "pyrotechnic": "pyrot'e{quesse}[thinnas]nic",
+    "pyrotechnics": "pyrot'e{quesse}[thinnas]nics",
     "saccharin": "sac{quesse}[thinnas]arin",
     "saccharine": "sac{quesse}[thinnas]arine",
     "sadomasochism": "sadomaso{quesse}[thinnas]ism",
@@ -513,24 +529,24 @@
     "scholastic": "s{quesse}[thinnas]olastic",
     "scholasticism": "s{quesse}[thinnas]olasticism",
     "school": "s{quesse}[thinnas]ool",
-    "schoolboy": "s{quesse}[thinnas]oolboy",
-    "schoolchild": "s{quesse}[thinnas]oolchild",
-    "schoolchildren": "s{quesse}[thinnas]oolchildren",
-    "schooldays": "s{quesse}[thinnas]ooldays",
-    "schoolgirl": "s{quesse}[thinnas]oolgirl",
-    "schoolhouse": "s{quesse}[thinnas]oolhouse",
-    "schooling": "s{quesse}[thinnas]ooling",
-    "schoolmaster": "s{quesse}[thinnas]oolmaster",
-    "schoolmate": "s{quesse}[thinnas]oolmate",
-    "schoolmistress": "s{quesse}[thinnas]oolmistress",
-    "schoolroom": "s{quesse}[thinnas]oolroom",
-    "schoolteacher": "s{quesse}[thinnas]oolteacher",
+    "schoolboy": "school'boy",
+    "schoolchild": "school'child",
+    "schoolchildren": "school'children",
+    "schooldays": "school'days",
+    "schoolgirl": "school'girl",
+    "schoolhouse": "school'house",
+    "schooling": "school'ing",
+    "schoolmaster": "school'master",
+    "schoolmate": "school'mate",
+    "schoolmistress": "school'mistress",
+    "schoolroom": "school'room",
+    "schoolteacher": "school'teacher",
     "schooner": "s{quesse}[thinnas]ooner",
-    "sepulcher": "sepul{quesse}[thinnas]er",
+    "sepulcher": "sepul{quesse}[dot-below][thinnas]r",
     "sepulchre": "sepul{quesse}[thinnas]re",
     "sepulchral": "sepul{quesse}[thinnas]ral",
     "stomach": "stoma{quesse}[thinnas]",
-    "stomachache": "stoma{quesse}[thinnas]a{quesse}[dot-below][thinnas]", // it looks better in Telcontar in that order
+    "stomachache": "stomach'ache", // it looks better in Telcontar in that order
     "strychnine": "stry{quesse}[thinnas]nine",
     "synchronisation": "sy{quesse}[thinnas][tilde-above]ronisation",
     "synchronise": "sy{quesse}[thinnas][tilde-above]ronise",
@@ -538,19 +554,19 @@
     "synchronize": "sy{quesse}[thinnas][tilde-above]ronize",
     "synchronous": "sy{quesse}[thinnas][tilde-above]ronous",
     "tachograph": "ta{quesse}[thinnas]ograph",
-    "tech": "te{quesse}[thinnas]",
-    "technetium": "te{quesse}[thinnas]netium",
-    "technical": "te{quesse}[thinnas]nical",
-    "technicality": "te{quesse}[thinnas]nicality",
-    "technically": "te{quesse}[thinnas]nically",
-    "technician": "te{quesse}[thinnas]nician",
-    "technique": "te{quesse}[thinnas]nique",
-    "technocracy": "te{quesse}[thinnas]nocracy",
-    "technocrat": "te{quesse}[thinnas]nocrat",
-    "technological": "te{quesse}[thinnas]nological",
-    "technologist": "te{quesse}[thinnas]nologist",
-    "technology": "te{quesse}[thinnas]nology",
-    "toothache": "tootha{quesse}[dot-below][thinnas]", // it looks better in Telcontar in that order
+    "tech": "t'e{quesse}[thinnas]",
+    "technetium": "t'e{quesse}[thinnas]netium",
+    "technical": "t'e{quesse}[thinnas]nical",
+    "technicality": "t'e{quesse}[thinnas]nicality",
+    "technically": "t'e{quesse}[thinnas]nically",
+    "technician": "t'e{quesse}[thinnas]nician",
+    "technique": "t'e{quesse}[thinnas]nique",
+    "technocracy": "t'e{quesse}[thinnas]nocracy",
+    "technocrat": "t'e{quesse}[thinnas]nocrat",
+    "technological": "t'e{quesse}[thinnas]nological",
+    "technologist": "t'e{quesse}[thinnas]nologist",
+    "technology": "t'e{quesse}[thinnas]nology",
+    "toothache": "tooth'ache", // it looks better in Telcontar in that order
     "trachea": "tra{quesse}[thinnas]ea",
     "tracheae": "tra{quesse}[thinnas]eae",
     "triptych": "tripty{quesse}[thinnas]",
@@ -1053,6 +1069,11 @@
     "yother": "yodher",
     "youths": "youdhs",
     "zither": "zidher",
+
+    // Marginal words where a ch is /x/. u/jakoboss suggests using hwesta, that is used in the Westron phonemic mode
+    "bach": "ba{hwesta}",
+    "chanukah": "{hwesta}anukah",
+    "loch": "lo{hwesta}",
 
     // Sindarin words with [ce] that are pronounced /k/ rather than /s/
     "Celebdil": "{quesse}elebdil",
