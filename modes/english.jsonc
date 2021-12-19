@@ -4,8 +4,8 @@
 //
 // -----------------------------------------------------------------------------
 // Target:
-// agencies: {anga}[a]{nuumen}[e]{alt-silme}[double-dot][swash-curl]
-// (current: {ungwe}[a]{quesse}[tilde-above][e]{short-carrier}[i]{silme}[e])
+// agencies: {anga}[triple-dot-above]{nuumen}[acute]{alt-silme}[double-dot-below][swash-hook]
+// (current: {ungwe}[triple-dot-above]{quesse}[tilde-above][acute]{telco}[dot-above]{silme}[acute])
 
 {
   "name": "english",
@@ -16,7 +16,7 @@
 
   // BECAUSE THIS IS A TEHTAR FOLLOW MODE, THE SEQUENCE OF TEHTAR/TENGWA SHOULD BE
   // INVERTED, i.e.
-  //     "ae": 		"[a]{short-carrier}[e]{short-carrier}'
+  //     "ae": 		"[triple-dot-above]{telco}[acute]{telco}'
 
   "preprocess": {
     // For esperanto...
@@ -82,74 +82,75 @@
     // VOWELS
     //
 
-    "y": "[chevron]",
+    "y": "[breve]",
     "^y": "{anna}", // e.g. "you"
-    "y$": "[chevron]{short-carrier}",
+    "y$": "[breve]{telco}",
     "e$": "[dot-below]",
-    "ya": "[chevron]{short-carrier}[a]{short-carrier}", // e.g. "aditya", "ryan"
-    "ye": "[chevron]{short-carrier}[e]{short-carrier}", // e.g. "bye"
-    "yi": "[chevron]{short-carrier}[i]{short-carrier}", // e.g.
-    "yo": "[chevron]{short-carrier}[o]{short-carrier}", // e.g. "mayo"
-    "yu": "[chevron]{short-carrier}[u]{short-carrier}", // e.g. "yurt"
+    "ya": "[breve]{telco}[triple-dot-above]{telco}", // e.g. "aditya", "ryan"
+    "ye": "[breve]{telco}[acute]{telco}", // e.g. "bye"
+    "yi": "[breve]{telco}[dot-above]{telco}", // e.g.
+    "yo": "[breve]{telco}[right-curl]{telco}", // e.g. "mayo"
+    "yu": "[breve]{telco}[left-curl]{telco}", // e.g. "yurt"
 
     // Long vowels
-    "â": "[a]{short-carrier}[a]{short-carrier}",
-    "ê": "[e]{short-carrier}[e]{short-carrier}",
-    "î": "[i]{short-carrier}[i]{short-carrier}",
-    "ô": "[o]{short-carrier}[o]{short-carrier}",
-    "û": "[u]{short-carrier}[u]{short-carrier}",
-    "à": "[a]{long-carrier}",
-    "è": "[e]{long-carrier}",
-    "ì": "[i]{long-carrier}",
-    "ò": "[o]{long-carrier}",
-    "ù": "[u]{long-carrier}",
-    "á": "[a]{long-carrier}",
-    "a*": "[a]{long-carrier}",
-    "é": "[e]{long-carrier}",
-    "e*": "[e]{long-carrier}",
-    "í": "[i]{long-carrier}",
-    "i*": "[i]{long-carrier}",
-    "ó": "[o]{long-carrier}",
-    "o*": "[o]{long-carrier}",
-    "ú": "[u]{long-carrier}",
-    "u*": "[u]{long-carrier}",
+    "â": "[triple-dot-above]{telco}[triple-dot-above]{telco}",
+    "ê": "[acute]{telco}[acute]{telco}",
+    "î": "[dot-above]{telco}[dot-above]{telco}",
+    "ô": "[right-curl]{telco}[right-curl]{telco}",
+    "û": "[left-curl]{telco}[left-curl]{telco}",
+    "à": "[triple-dot-above]{aara}",
+    "è": "[acute]{aara}",
+    "ì": "[dot-above]{aara}",
+    "ò": "[right-curl]{aara}",
+    "ù": "[left-curl]{aara}",
+    "á": "[triple-dot-above]{aara}",
+    "a*": "[triple-dot-above]{aara}",
+    "é": "[acute]{aara}",
+    "e*": "[acute]{aara}",
+    "í": "[dot-above]{aara}",
+    "i*": "[dot-above]{aara}",
+    "ó": "[right-curl]{aara}",
+    "o*": "[right-curl]{aara}",
+    "ú": "[left-curl]{aara}",
+    "u*": "[left-curl]{aara}",
 
     // ----------------------------------------------------------------------------
     //
     // DIPHTHONGS
     //
 
-    "ae": "[a]{short-carrier}[e]{short-carrier}",
-    "ae$": "[a][dot-below]{short-carrier}",
-    "ai": "[a]{anna}", // Also acceptable: [a]{short-carrier}[i]. Christopher Tolkien: vowel+yanta = Quenya style.
-    "au": "[a]{vala}", // DTS-10: diphthongs ending in -U use {vala}
-    "ay": "[a]{anna}", // Use anna for the following -Y in the word “say”, not yanta.
+    "ae": "[triple-dot-above]{telco}[acute]{telco}",
+    "ae$": "[triple-dot-above][dot-below]{telco}",
+    "ai": "[triple-dot-above]{anna}", // Also acceptable: [triple-dot-above]{telco}[dot-above]. Christopher Tolkien: vowel+yanta = Quenya style.
+    "au": "[triple-dot-above]{vala}", // DTS-10: diphthongs ending in -U use {vala}
+    "ay": "[triple-dot-above]{anna}", // Use anna for the following -Y in the word “say”, not yanta.
     // The sign anna is attested for following -E (DTS 62 “Michael”),
     // while yanta is presumably attested for Y (DTS 10 “you”) and presumably also for following -Y (DTS 37 “lay”?).
 
-    "ea": "[e]{osse}", // There are two options: Either with osse carrying the preceding e-tehta (DTS 62 “earth”) or with a separate a-tehta, putting the preceding e-tehta on its own carrier (DTS 10 “dear”).
-    "ee$": "[e]{short-carrier}[e]{short-carrier}", // as seen in DTS 5.
+    "ea": "[acute]{osse}", // There are two options: Either with osse carrying the preceding e-tehta (DTS 62 “earth”) or with a separate a-tehta, putting the preceding e-tehta on its own carrier (DTS 10 “dear”).
+    "ee$": "[acute]{telco}[acute]{telco}", // as seen in DTS 5.
 
-    "ei": "[e]{anna}",
-    "eu": "[e]{vala}", // Christopher Tolkien used {uure}
-    //     "ey": 		"[e]{anna}",
+    "ei": "[acute]{anna}",
+    "eu": "[acute]{vala}", // Christopher Tolkien used {uure}
+    //     "ey": 		"[acute]{anna}",
 
-    "ia": "[i]{short-carrier}[a]{short-carrier}",
-    // "ie$": "[i][dot-below]{short-carrier}", // Most words end in a "ee' sound, except for a few (die, lie, etc...)
-    "iu": "[i]{vala}", // Christopher Tolkien used {uure}
+    "ia": "[dot-above]{telco}[triple-dot-above]{telco}",
+    // "ie$": "[dot-above][dot-below]{telco}", // Most words end in a "ee' sound, except for a few (die, lie, etc...)
+    "iu": "[dot-above]{vala}", // Christopher Tolkien used {uure}
 
-    // "oa": "[o]{short-carrier}[a]",
-    "oe": "[o]{short-carrier}[e]{short-carrier}",
-    "oe$": "[o][dot-below]{short-carrier}",
-    "oi": "[o]{anna}",
-    "ou": "[o]{vala}", // Christopher Tolkien used {uure}
-    //     "oy": 		"[o]{anna}",
+    // "oa": "[right-curl]{telco}[triple-dot-above]",
+    "oe": "[right-curl]{telco}[acute]{telco}",
+    "oe$": "[right-curl][dot-below]{telco}",
+    "oi": "[right-curl]{anna}",
+    "ou": "[right-curl]{vala}", // Christopher Tolkien used {uure}
+    //     "oy": 		"[right-curl]{anna}",
 
-    "ua": "[u]{short-carrier}[a]{short-carrier}",
-    "ue": "[u]{short-carrier}[e]{short-carrier}",
-    "ue$": "[u][dot-below]{short-carrier}",
-    "ui": "[u]{anna}",
-    //     "uy": 		"[u]{anna}",
+    "ua": "[left-curl]{telco}[triple-dot-above]{telco}",
+    "ue": "[left-curl]{telco}[acute]{telco}",
+    "ue$": "[left-curl][dot-below]{telco}",
+    "ui": "[left-curl]{anna}",
+    "oo": "[double-right-curl]",
+    //     "uy": 		"[left-curl]{anna}",
 
     // ----------------------------------------------------------------------------
     //
@@ -181,37 +182,38 @@
 
     // Special double-character sequences
     "ch": "{calma}", // "march"
-    "chr": "{quesse-extended}{roomen}", // "christmas", "chronic"
-    "^chl": "{quesse-extended}{roomen}", // "chlorophyl"
+    "chr": "{extended-quesse}{roomen}", // "christmas", "chronic"
+    "^chem": "{extended-quesse}em", // chemical, chemistry, chemists
+    "^chl": "{extended-quesse}{roomen}", // "chlorophyl"
     "ck": "[bar-below]{quesse}", // "check"
-    "th": "{suule}",
+    "th": "{thuule}",
     "dh": "{anto}",
-    "sh": "{aha}", // aka harma
+    "sh": "{harma}", // aka harma
     "zh": "{anca}", // for /zh/ sound, as in "azure"
-    "gh": "{ungwe-extended}", // Purely ortographic (e.g. "hugh"
+    "gh": "{extended-ungwe}", // Purely ortographic (e.g. "hugh"
     //        "ny":	"{noldo}",		// Only used for phonemic spelling (new, canyon)
 
-    // "aly$": "[a]{lambe}[chevron]{short-carrier}",
-    // "ely$": "[e]{lambe}[chevron]{short-carrier}",
-    // "ily$": "[i]{lambe}[chevron]{short-carrier}",
-    // "oly$": "[o]{lambe}[chevron]{short-carrier}",
-    // "uly$": "[u]{lambe}[chevron]{short-carrier}",
-    // "ly$": "{lambe}[chevron]{short-carrier}",
-    // "any$": "[a]{nuumen}[chevron]{short-carrier}",
-    // "eny$": "[e]{nuumen}[chevron]{short-carrier}",
-    // "iny$": "[i]{nuumen}[chevron]{short-carrier}",
-    // "ony$": "[o]{nuumen}[chevron]{short-carrier}",
-    // "uny$": "[u]{nuumen}[chevron]{short-carrier}",
-    // "yny$": "[chevron]{nuumen}[chevron]{short-carrier}",
+    // "aly$": "[triple-dot-above]{lambe}[breve]{telco}",
+    // "ely$": "[acute]{lambe}[breve]{telco}",
+    // "ily$": "[dot-above]{lambe}[breve]{telco}",
+    // "oly$": "[right-curl]{lambe}[breve]{telco}",
+    // "uly$": "[left-curl]{lambe}[breve]{telco}",
+    // "ly$": "{lambe}[breve]{telco}",
+    // "any$": "[triple-dot-above]{nuumen}[breve]{telco}",
+    // "eny$": "[acute]{nuumen}[breve]{telco}",
+    // "iny$": "[dot-above]{nuumen}[breve]{telco}",
+    // "ony$": "[right-curl]{nuumen}[breve]{telco}",
+    // "uny$": "[left-curl]{nuumen}[breve]{telco}",
+    // "yny$": "[breve]{nuumen}[breve]{telco}",
     //        "ny$":	"[double-dot-below]{nuumen}",
 
     "ng": "{nwalme}", // for english, /ng/ sound
     "rd": "{arda}",
-    "rds": "[sa-rince]{arda}",
+    "rds": "[hook]{arda}",
     //     "ld":		"{alda}",	For all we know, it does not represent LD in this particular mode, since in this particular mode, Tolkien has written LD with the sequence lambe, ando (see DTS 5 “Ronald”). If anything, then we can hypothesize that alda is a sign for double LL in this particular mode, since that is what it represents in the corresponding full writing mode (see DTS 13, DTS 45, DTS 48).
 
-    "ph": "{parma-extended}",
-    "^uph": "[u]{parma}{hyarmen}", // Not "ph' sound, e.g. "up-hea-val'
+    "ph": "{extended-parma}",
+    "^uph": "[left-curl]{parma}{hyarmen}", // Not "ph' sound, e.g. "up-hea-val'
 
     "wh": "{hwesta-sindarinwa}",
     "tw": "[over-twist]{tinco}", // except egrep "tw" ~/cmu.txt | grep -v "T W" | awk "{printf $1 ", "}'
@@ -219,10 +221,10 @@
     //	"pw":	"[over-twist]{parma}",	english words with pw are compounds like top-wise.
     "kw": "[over-twist]{quesse}",
     "qu": "[over-twist]{quesse}",
-    /*	"akw":	"[a]{short-carrier}[over-twist]{quesse}",
-	"aqu":	"[a]{short-carrier}[over-twist]{quesse}",
-	"ikw":	"[i]{short-carrier}[over-twist]{quesse}",	// Insert short-carrier to make the glyph more readable
-	"iqu":	"[i]{short-carrier}[over-twist]{quesse}",	// Insert short-carrier to make the glyph more readable
+    /*	"akw":	"[triple-dot-above]{telco}[over-twist]{quesse}",
+	"aqu":	"[triple-dot-above]{telco}[over-twist]{quesse}",
+	"ikw":	"[dot-above]{telco}[over-twist]{quesse}",	// Insert short-carrier to make the glyph more readable
+	"iqu":	"[dot-above]{telco}[over-twist]{quesse}",	// Insert short-carrier to make the glyph more readable
 */
     //	"dw":	"[over-twist]{ando}",
     //	"bw":	"[over-twist]{umbar}",
@@ -239,85 +241,85 @@
     "nt": "[tilde-above]{tinco}",
     "mp": "[tilde-above]{parma}",
     "mt": "[tilde-above]{tinco}",
-    //	"am":	"[a][tilde-above]",		family -> should not use a nasalization mark
-    // "im": "[i][tilde-above]",        animal -> should not use a nasalization mark
+    //	"am":	"[triple-dot-above][tilde-above]",		family -> should not use a nasalization mark
+    // "im": "[dot-above][tilde-above]",        animal -> should not use a nasalization mark
 
     // For Unicode fonts, rendering vowel+nasalized consonant look better if
     // the vowel is after (above) the bar:
-    // "anc": "[tilde-above][a]{quesse}",
-    "ance": "[tilde-above][a]{silme-nuquerna}[e]",
-    "ance$": "[tilde-above][a][dot-below]{silme-nuquerna}",
-    "anci": "[tilde-above][a]{silme-nuquerna}[i]",
-    "anch": "[tilde-above][a]{calma}",
+    // "anc": "[tilde-above][triple-dot-above]{quesse}",
+    "ance": "[tilde-above][triple-dot-above]{silme-nuquerna}[acute]",
+    "ance$": "[tilde-above][triple-dot-above][dot-below]{silme-nuquerna}",
+    "anci": "[tilde-above][triple-dot-above]{silme-nuquerna}[dot-above]",
+    "anch": "[tilde-above][triple-dot-above]{calma}",
     // except melancholy, melancholic, anchor, anchorage, anchoring,
     // anchorman, anchormen
-    // "enc": "[tilde-above][e]{quesse}",
-    "ence": "[tilde-above][e]{silme-nuquerna}[e]",
-    "ence$": "[tilde-above][e][dot-below]{silme-nuquerna}",
-    "ench": "[tilde-above][e]{calma}",
-    // "inc": "[tilde-above][i]{quesse}",
-    "ince": "[tilde-above][i]{silme-nuquerna}[e]",
-    "ince$": "[tilde-above][i][dot-below]{silme-nuquerna}",
-    "inch": "[tilde-above][i]{calma}",
+    // "enc": "[tilde-above][acute]{quesse}",
+    "ence": "[tilde-above][acute]{silme-nuquerna}[acute]",
+    "ence$": "[tilde-above][acute][dot-below]{silme-nuquerna}",
+    "ench": "[tilde-above][acute]{calma}",
+    // "inc": "[tilde-above][dot-above]{quesse}",
+    "ince": "[tilde-above][dot-above]{silme-nuquerna}[acute]",
+    "ince$": "[tilde-above][dot-above][dot-below]{silme-nuquerna}",
+    "inch": "[tilde-above][dot-above]{calma}",
     // Except inchoate
-    // "onc": "[tilde-above][o]{quesse}",
+    // "onc": "[tilde-above][right-curl]{quesse}",
     // Override "onc" rule when followed by e -> soft-C
-    "once": "[tilde-above][o]{silme-nuquerna}[e]",
-    "once$": "[tilde-above][o][dot-below]{silme-nuquerna}",
-    // "unc": "[tilde-above][u]{quesse}",
-    "unce": "[tilde-above][u]{silme-nuquerna}[e]",
-    "unce$": "[tilde-above][u][dot-below]{silme-nuquerna}",
-    "onch": "[tilde-above][o]{calma}",
+    "once": "[tilde-above][right-curl]{silme-nuquerna}[acute]",
+    "once$": "[tilde-above][right-curl][dot-below]{silme-nuquerna}",
+    // "unc": "[tilde-above][left-curl]{quesse}",
+    "unce": "[tilde-above][left-curl]{silme-nuquerna}[acute]",
+    "unce$": "[tilde-above][left-curl][dot-below]{silme-nuquerna}",
+    "onch": "[tilde-above][right-curl]{calma}",
     // Except bronchitis, bronchoscope,
-    "unch": "[tilde-above][u]{calma}",
+    "unch": "[tilde-above][left-curl]{calma}",
     // Except uncharacteristic, uncharacteristically
 
-    // "amc": "[tilde-above][a]{quesse}",
-    "amch": "[tilde-above][a]{calma}", // "Kamchatka"
-    // "emc": "[tilde-above][e]{quesse}",
-    "emch": "[tilde-above][e]{calma}",
-    // "imc": "[tilde-above][i]{quesse}",
-    "imch": "[tilde-above][i]{calma}", // "kimchi"
-    // "omc": "[tilde-above][o]{quesse}",
-    "omch": "[tilde-above][o]{calma}", // "Jeomchon"
-    // "umc": "[tilde-above][u]{quesse}",
-    "umch": "[tilde-above][u]{calma}", // "numchuck"
+    // "amc": "[tilde-above][triple-dot-above]{quesse}",
+    "amch": "[tilde-above][triple-dot-above]{calma}", // "Kamchatka"
+    // "emc": "[tilde-above][acute]{quesse}",
+    "emch": "[tilde-above][acute]{calma}",
+    // "imc": "[tilde-above][dot-above]{quesse}",
+    "imch": "[tilde-above][dot-above]{calma}", // "kimchi"
+    // "omc": "[tilde-above][right-curl]{quesse}",
+    "omch": "[tilde-above][right-curl]{calma}", // "Jeomchon"
+    // "umc": "[tilde-above][left-curl]{quesse}",
+    "umch": "[tilde-above][left-curl]{calma}", // "numchuck"
 
-    // "and": "[tilde-above][a]{ando}",
-    // "end": "[tilde-above][e]{ando}",
-    // "ind": "[tilde-above][i]{ando}",
-    // "ond": "[tilde-above][o]{ando}",
-    // "und": "[tilde-above][u]{ando}",
+    // "and": "[tilde-above][triple-dot-above]{ando}",
+    // "end": "[tilde-above][acute]{ando}",
+    // "ind": "[tilde-above][dot-above]{ando}",
+    // "ond": "[tilde-above][right-curl]{ando}",
+    // "und": "[tilde-above][left-curl]{ando}",
 
-    // "amd": "[tilde-above][a]{ando}",
-    // "emd": "[tilde-above][e]{ando}",
-    // "imd": "[tilde-above][i]{ando}",
-    // "omd": "[tilde-above][o]{ando}",
-    // "umd": "[tilde-above][u]{ando}",
+    // "amd": "[tilde-above][triple-dot-above]{ando}",
+    // "emd": "[tilde-above][acute]{ando}",
+    // "imd": "[tilde-above][dot-above]{ando}",
+    // "omd": "[tilde-above][right-curl]{ando}",
+    // "umd": "[tilde-above][left-curl]{ando}",
 
-    // "amb": "[tilde-above][a]{umbar}",
-    // "emb": "[tilde-above][e]{umbar}",
-    // "imb": "[tilde-above][i]{umbar}",
-    // "omb": "[tilde-above][o]{umbar}",
-    // "umb": "[tilde-above][u]{umbar}",
+    // "amb": "[tilde-above][triple-dot-above]{umbar}",
+    // "emb": "[tilde-above][acute]{umbar}",
+    // "imb": "[tilde-above][dot-above]{umbar}",
+    // "omb": "[tilde-above][right-curl]{umbar}",
+    // "umb": "[tilde-above][left-curl]{umbar}",
 
-    // "ant": "[tilde-above][a]{tinco}",
-    // "ent": "[tilde-above][e]{tinco}",
-    // "int": "[tilde-above][i]{tinco}",
-    // "ont": "[tilde-above][o]{tinco}",
-    // "unt": "[tilde-above][u]{tinco}",
+    // "ant": "[tilde-above][triple-dot-above]{tinco}",
+    // "ent": "[tilde-above][acute]{tinco}",
+    // "int": "[tilde-above][dot-above]{tinco}",
+    // "ont": "[tilde-above][right-curl]{tinco}",
+    // "unt": "[tilde-above][left-curl]{tinco}",
 
-    // "amp": "[tilde-above][a]{parma}",
-    // "emp": "[tilde-above][e]{parma}",
-    // "imp": "[tilde-above][i]{parma}",
-    // "omp": "[tilde-above][o]{parma}",
-    // "ump": "[tilde-above][u]{parma}",
+    // "amp": "[tilde-above][triple-dot-above]{parma}",
+    // "emp": "[tilde-above][acute]{parma}",
+    // "imp": "[tilde-above][dot-above]{parma}",
+    // "omp": "[tilde-above][right-curl]{parma}",
+    // "ump": "[tilde-above][left-curl]{parma}",
 
-    // "amt": "[tilde-above][a]{tinco}",
-    // "emt": "[tilde-above][e]{tinco}",
-    // "imt": "[tilde-above][i]{tinco}",
-    // "omt": "[tilde-above][o]{tinco}",
-    // "umt": "[tilde-above][u]{tinco}",
+    // "amt": "[tilde-above][triple-dot-above]{tinco}",
+    // "emt": "[tilde-above][acute]{tinco}",
+    // "imt": "[tilde-above][dot-above]{tinco}",
+    // "omt": "[tilde-above][right-curl]{tinco}",
+    // "umt": "[tilde-above][left-curl]{tinco}",
 
     "q": "{quesse}",
 
@@ -337,7 +339,7 @@
     //	"r":	special case
     "r*": "{roomen}",
     "re$": "[dot-below]{oore}", // Final "re"
-    "^reali": "{roomen}[e]{short-carrier}[a]{lambe}[i]", // "reality", "realiti": "ea" is not a diphtong (but it is for "real")
+    "^reali": "{roomen}[acute]{telco}[triple-dot-above]{lambe}[dot-above]", // "reality", "realiti": "ea" is not a diphtong (but it is for "real")
     "s": "{alt-silme}",
     "ç": "{silme-nuquerna}",
     "t": "{tinco}",
@@ -345,125 +347,124 @@
     "v": "{ampa}",
     //	TODO "w": special case... "w":	mode === "english' && vowelLength(previous) < 0 ? "\xea' : "y",
     "w": "{vala}",
-    "x": "[x-curl]{quesse}", // for /ks/, Use [x-curl]{ungwe} for /gz/ (PE20-58)
+    "x": "[right-curl-below]{quesse}", // for /ks/, Use [right-curl-below]{ungwe} for /gz/ (PE20-58)
     "z": "{esse}", // for english (= /zh/, e.g. azure)
 
     // In English, /c/ is pronounced [s] before e, i, y
-    "mce": "{malta}{silme-nuquerna}[e]", // necessary to override "mc'
-    "nce": "{nuumen}{silme-nuquerna}[e]", // necessary to override "nc'
+    "mce": "{malta}{silme-nuquerna}[acute]", // necessary to override "mc'
+    "nce": "{nuumen}{silme-nuquerna}[acute]", // necessary to override "nc'
     "nce$": "{nuumen}[dot-below]{silme-nuquerna}", // necessary to override "nc'
     "ce$": "[dot-below]{silme-nuquerna}",
-    "sci$": "{}{calma}[i]", // S I, e.g. "pesci"
-    "cci$": "{}{calma}[i]", // CH, e.g. "gucci"
-    "ci$": "{}{calma}[i]", // CH, e.g. "domenici" except S (ceci, medici, vinci) or K (loci)
-    "cy$": "{}{silme-nuquerna}[chevron]{short-carrier}", // "icy"
+    "sci$": "{}{calma}[dot-above]", // S I, e.g. "pesci"
+    "cci$": "{}{calma}[dot-above]", // CH, e.g. "gucci"
+    "ci$": "{}{calma}[dot-above]", // CH, e.g. "domenici" except S (ceci, medici, vinci) or K (loci)
+    "cy$": "{}{silme-nuquerna}[breve]{telco}", // "icy"
 
     // soft-C uses silme-nuquerna
-    "ce": "{}{silme-nuquerna}[e]",
-    "ci": "{}{silme-nuquerna}[i]",
-    "cy": "{}{silme-nuquerna}[chevron]",
+    "ce": "{}{silme-nuquerna}[acute]",
+    "ci": "{}{silme-nuquerna}[dot-above]",
+    "cy": "{}{silme-nuquerna}[breve]",
     // "ce" is S except cello CH, celt K, celtic K, concerto CH,
     // "ci" is S except ancient CH, capuccino CH, ciao CH,
     // "cy" is S (cyan, recycle, cymbal)
 
-    "^mc": "{malta}[a]{quesse}", // "Mc" -> "mac"
+    "^mc": "{malta}[triple-dot-above]{quesse}", // "Mc" -> "mac"
 
     // Final-s
     // Following s can be indicated by a downward hook
     // "“especially in the combinations ts, ps, ks (x), that were favoured in Quenya”
     // http://at.mansbjorkman.net/teng_quenya.htm
-    "ays$": "[a]{anna}[sa-rince]{}",
-    "bs$": "[swash-curl]{umbar}",
-    "des$": "[sa-rince][dot-below]{ando}",
-    "ds$": "[sa-rince]{ando}",
-    "fs$": "[sa-rince]{formen}",
-    "gs$": "[sa-rince]{ungwe}",
-    "ks$": "[sa-rince]{quesse}",
-    "ngs$": "[swash-curl]{nwalme}",
-    "kes$": "[dot-below][sa-rince]{quesse}",
-    "ls$": "[lifted-curl]{lambe}",
-    "les$": "[sa-rince][dot-inside]{lambe}",
-    "ms$": "[left-following-silme]{malta}",
-    "mes$": "[dot-below][swash-curl]{malta}",
-    "nds$": "[tilde-above][left-following-silme]{ando}",
-    "ns$": "[sa-rince]{nuumen}",
-    "ps$": "[sa-rince]{parma}",
-    "rs$": "[sa-rince]{oore}",
-    "ts$": "[sa-rince]{tinco}",
-    "ves$": "[sa-rince][dot-below]{ampa}",
-    "ys$": "{anna}[sa-rince]"
+    "ays$": "[triple-dot-above]{anna}[hook]{}",
+    "bs$": "[swash-hook]{umbar}",
+    "des$": "[hook][dot-below]{ando}",
+    "ds$": "[hook]{ando}",
+    "fs$": "[hook]{formen}",
+    "gs$": "[hook]{ungwe}",
+    "ks$": "[hook]{quesse}",
+    "ngs$": "[swash-hook]{nwalme}",
+    "kes$": "[dot-below][hook]{quesse}",
+    "ls$": "[lifted-hook]{lambe}",
+    "les$": "[hook][dot-inside]{lambe}",
+    "ms$": "[hook]{malta}",
+    "mes$": "[dot-below][swash-hook]{malta}",
+    "nds$": "[tilde-above][hook]{ando}",
+    "ns$": "[hook]{nuumen}",
+    "ps$": "[hook]{parma}",
+    "rs$": "[hook]{oore}",
+    "ts$": "[hook]{tinco}",
+    "ves$": "{ampa}[dot-below][hook]"
   },
 
   // Note: all the entries should be lower-case only
   "words": {
-    "and": "{and}",
+    "and": "{and-shorthand}",
 
-    "of": "{of}",
-    "the": "{the}",
-    "ofthe": "{ofthe}",
+    "of": "{of-shorthand}",
+    "the": "{the-shorthand}",
+    "ofthe": "{of-the-shorthand}",
 
     // "to": "{tinco}[right-curl-below]", // Christopher Tolkien: Used in the Silmarilion inscription
 
-    "alexander": "{lambe}[a]{ungwe}[e][x-curl]{ando}[a][tilde-above]{oore}[e]", // ale-gz-ander
-    "are": "{oore}[dot-below][a]",
-    // "age": "{anga}[a][dot-below]", // a-zh   -- Christopher Tolkien-ism
-    "as": "{esse-nuquerna}[a]",
-    "bach": "{umbar}{hwesta}[a]",
-    "be": "{umbar}{long-carrier}[i]", // non-silent final-e
-    "because": "{umbar}{quesse}[e]{vala}[a]{esse-nuquerna}[dot-below]",
-    "by": "{umbar}{long-carrier}[chevron]", // b-a-i
-    "choose": "{calma}{esse-nuquerna}[double-o][dot-below]", // "s'->'z'
-    "chose": "{calma}{esse-nuquerna}[o][dot-below]", // "s'->'z'
-    "create": "{quesse}{roomen}{short-carrier}[e]{tinco}[a][dot-below]", // "ea' -> "e' + "a'
-    "die": "{ando}{yanta}[i]", // End in "ay" sound
-    "does": "{ando}{short-carrier}[o]{esse-nuquerna}[e]", // "s' -> "z'
-    "exact": "{ungwe}[e][x-curl]{quesse}[a]{tinco}", // e-gz-act
-    "exactly": "{ungwe}[e][x-curl]{quesse}[a]{tinco}{lambe}[chevron]",
-    "example": "{ungwe}[e][x-curl]{malta}[a]{parma}{lambe}[dot-inside]",
-    "examine": "{ungwe}[e][x-curl]{malta}[a]{nuumen}[i][dot-below]",
-    "fernanda": "{FORMEN}{oore}[e]{nuumen}{nuumen}[a]{ando}{short-carrier}[a]",
-    "fie": "{formen}{yanta}[i]", // End in "ay" sound
-    "goes": "{ungwe}{short-carrier}[o]{short-carrier}[e]{esse}", // "s' -> "z'
-    "giant": "{ungwe}{short-carrier}[i]{short-carrier}[a]{nuumen}{tinco}", // dj-iant
-    "has": "{hyarmen}{esse-nuquerna}[a]",
-    "he": "{hyarmen}{long-carrier}[i]", // non-silent final-e
-    "herein": "{hyarmen}{roomen}[e][dot-below]{nuumen}[i]",
-    "his": "{hyarmen}{esse-nuquerna}[i]",
-    "hers": "{hyarmen}{oore}[sa-rince][e]",
-    "is": "{alt-esse}[i]",
-    "joel": "{ANGA}{short-carrier}[o]{lambe}[e]", // like "jo-el"
-    "larceny": "{lambe}{oore}[a]{silme}{nuumen}[e]{short-carrier}[chevron]",
-    "lie": "{lambe}{yanta}[i]", // End in "a-y" sound
-    "loch": "{lambe}{hwesta}[o]",
-    "me": "{malta}{long-carrier}[i]", // non-silent final-e
-    "music": "{malta}{esse-nuquerna}[u]{quesse}[i]",
-    "ocean": "{silme}[o]{short-carrier}[e]{nuumen}[a]",
-    "pie": "{parma}{yanta}[i]", // End in "a-y" sound
-    "please": "{parma}{lambe}{short-carrier}[chevron]{esse-nuquerna}",
-    "she": "{aha}{long-carrier}[i]", // non-silent final-e
-    "reuel": "{ROOMEN}{short-carrier}[e]{short-carrier}[u]{lambe}[e]", // Tolkien's middle name
-    "sure": "{aha}{oore}[u][dot-below]",
-    // "time": "{tinco}{malta}[i][dot-below]",
-    // "times": "{tinco}{malta}[i][dot-below][swash-curl]",
-    "tolkien": "{TINCO}{lambe}[o]{quesse}{long-carrier}[i]{nuumen}[e]",
-    "tie": "{ampa}{yanta}[i]", // End in "a-y" sound
-    "underlie": "{ando}[u][tilde-above]{oore}[e]{lambe}{yanta}[i]", // End in "a-y" sound
-    "untie": "{tinco}[u][tilde-above]{yanta}[i]", // End in "ay" sound
-    "vie": "{ampa}{yanta}[i]", // End in "ay" sound
-    "war": "{vala}{oore}[o]", // wor
-    "we": "{vala}{long-carrier}[i]", // non-silent final-e
-    "xanadu": "{ungwe}[x-curl]{nuumen}[a]{ando}[a]{short-carrier}[u]",
-    "zoe": "{ESSE-NUQUERNA}{short-carrier}[o]{short-carrier}[e]",
+    "alexander": "{lambe}[triple-dot-above]{ungwe}[acute][right-curl-below]{ando}[triple-dot-above][tilde-above]{oore}[acute]", // ale-gz-ander
+    "are": "{oore}[dot-below][triple-dot-above]",
+    // "age": "{anga}[triple-dot-above][dot-below]", // a-zh   -- Christopher Tolkien-ism
+    "as": "{esse-nuquerna}[triple-dot-above]",
+    "bach": "{umbar}{hwesta}[triple-dot-above]",
+    "be": "{umbar}{aara}[dot-above]", // non-silent final-e
+    "because": "{umbar}{quesse}[acute]{vala}[triple-dot-above]{esse-nuquerna}[dot-below]",
+    "by": "{umbar}{aara}[breve]", // b-a-i
+    "choose": "{calma}{esse-nuquerna}[double-acute][dot-below]", // "s'->'z'
+    "chose": "{calma}{esse-nuquerna}[right-curl][dot-below]", // "s'->'z'
+    "create": "{quesse}{roomen}{telco}[acute]{tinco}[triple-dot-above][dot-below]", // "ea' -> "e' + "a'
+    "die": "{ando}{yanta}[dot-above]", // End in "ay" sound
+    "does": "{ando}{telco}[right-curl]{esse-nuquerna}[acute]", // "s' -> "z'
+    "exact": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}", // e-gz-act
+    "exactly": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}{lambe}[breve]",
+    "example": "{ungwe}[acute][right-curl-below]{malta}[triple-dot-above]{parma}{lambe}[dot-inside]",
+    "examine": "{ungwe}[acute][right-curl-below]{malta}[triple-dot-above]{nuumen}[dot-above][dot-below]",
+    "fernanda": "{FORMEN}{oore}[acute]{nuumen}{nuumen}[triple-dot-above]{ando}{telco}[triple-dot-above]",
+    "fie": "{formen}{yanta}[dot-above]", // End in "ay" sound
+    "goes": "{ungwe}{telco}[right-curl]{telco}[acute]{esse}", // "s' -> "z'
+    "giant": "{ungwe}{telco}[dot-above]{telco}[triple-dot-above]{nuumen}{tinco}", // dj-iant
+    "has": "{hyarmen}{esse-nuquerna}[triple-dot-above]",
+    "he": "{hyarmen}{aara}[dot-above]", // non-silent final-e
+    "herein": "{hyarmen}{roomen}[acute][dot-below]{nuumen}[dot-above]",
+    "his": "{hyarmen}{esse-nuquerna}[dot-above]",
+    "hers": "{hyarmen}{oore}[acute]{esse}",
+    "is": "{alt-esse}[dot-above]",
+    "joel": "{ANGA}{telco}[right-curl]{lambe}[acute]", // like "jo-el"
+    "larceny": "{lambe}{oore}[triple-dot-above]{silme}{nuumen}[acute]{telco}[breve]",
+    "lie": "{lambe}{yanta}[dot-above]", // End in "a-y" sound
+    "loch": "{lambe}{hwesta}[right-curl]",
+    "me": "{malta}{aara}[dot-above]", // non-silent final-e
+    "music": "{malta}{esse-nuquerna}[left-curl]{quesse}[dot-above]",
+    "ocean": "{silme}[right-curl]{telco}[acute]{nuumen}[triple-dot-above]",
+    "pie": "{parma}{yanta}[dot-above]", // End in "a-y" sound
+    "please": "{parma}{lambe}{telco}[breve]{esse-nuquerna}",
+    "she": "{harma}{aara}[dot-above]", // non-silent final-e
+    "reuel": "{ROOMEN}{telco}[acute]{telco}[left-curl]{lambe}[acute]", // Tolkien's middle name
+    "sure": "{harma}{oore}[left-curl][dot-below]",
+    // "time": "{tinco}{malta}[dot-above][dot-below]",
+    // "times": "{tinco}{malta}[dot-above][dot-below][swash-hook]",
+    "tolkien": "{TINCO}{lambe}[right-curl]{quesse}{aara}[dot-above]{nuumen}[acute]",
+    "tie": "{ampa}{yanta}[dot-above]", // End in "a-y" sound
+    "underlie": "{ando}[left-curl][tilde-above]{oore}[acute]{lambe}{yanta}[dot-above]", // End in "a-y" sound
+    "untie": "{tinco}[left-curl][tilde-above]{yanta}[dot-above]", // End in "ay" sound
+    "vie": "{ampa}{yanta}[dot-above]", // End in "ay" sound
+    "war": "{vala}{oore}[right-curl]", // wor
+    "we": "{vala}{aara}[dot-above]", // non-silent final-e
+    "xanadu": "{ungwe}[right-curl-below]{nuumen}[triple-dot-above]{ando}[triple-dot-above]{telco}[left-curl]",
+    "zoe": "{ESSE-NUQUERNA}{telco}[right-curl]{telco}[acute]",
 
-    "ancient": "{calma}[tilde-above][a]{short-carrier}[i]{tinco}[tilde-above][e]", // "ci' -> CH I
-    "caesar": "{alt-silme}{long-carrier}[i]{alt-esse}{roomen}[dot-below]",
-    "caearas": "{alt-silme}{long-carrier}[i]{alt-esse}{roomen}[dot-below][sa-rince]",
-    "facade": "{formen}{alt-silme}[a]{ando}[dot-below][a]",
-    "facades": "{formen}{alt-silme}[a]{ando}[dot-below][a][sa-rince]",
-    "cello": "{calma}{lambe}[bar-inside][e]{short-carrier}[o]",
-    "concerto": "{quesse}{nuumen}[o]{calma}{oore}[e]{tinco}{short-carrier}[o]",
-    "capuccino": "{quesse}{parma}[a]{calma}[u]{nuumen}[i]{short-carrier}[o]",
-    "ciao": "{calma}{vala}[a]",
+    "ancient": "{calma}[tilde-above][triple-dot-above]{telco}[dot-above]{tinco}[tilde-above][acute]", // "ci' -> CH I
+    "caesar": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below]",
+    "caearas": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below][hook]",
+    "facade": "{formen}{alt-silme}[triple-dot-above]{ando}[dot-below][triple-dot-above]",
+    "facades": "{formen}{alt-silme}[triple-dot-above]{ando}[dot-below][triple-dot-above][hook]",
+    "cello": "{calma}{lambe}[bar-inside][acute]{telco}[right-curl]",
+    "concerto": "{quesse}{nuumen}[right-curl]{calma}{oore}[acute]{tinco}{telco}[right-curl]",
+    "capuccino": "{quesse}{parma}[triple-dot-above]{calma}[left-curl]{nuumen}[dot-above]{telco}[right-curl]",
+    "ciao": "{calma}{vala}[triple-dot-above]",
 
     // Voiced TH -> suule -> anto
     // th is TH except it's DH for egrep "th(.)*DH" ~/cmu.txt | awk "{printf $1 ", "}'
@@ -494,153 +495,149 @@
     // githa, godfather, godfather's, godfathers, godmother, godmothers,
     // goldsworthy, grandfather, grandfather(2), grandfather's, grandfather's(2), grandfathered, grandfathered(2), grandfathering, grandfathering(2), grandfatherly, grandfatherly(2), grandfathers, grandfathers(2), grandmother, grandmother's, grandmotherly, grandmothers, great-grandfather, grether, grothe, guinther, gytha, hatheway, heathen, heather, heather's, heatherington, heatherly, heathers, hesther, hetherington, hither, hitherto, huether, kenworthy, koether, kothe, kuether, lamothe, langworthy, lathe, lather, lathers, lathes, lawther, leather, leatherback, leatherbacks, leatherberry, leatherbury, leatherman, leathers, leatherwood, leathery, leitha, leithia, lithe, loathe, loathed, loathsome, logarithm, logarithmic, logarithms, lowther, luthi, manthe, manthei, margarethe, marthe, mathai, mathe, mathea, matheis, mather, matherly, mathern, mathers, matheus, mathey, mathia, matthea, mattheis, matthey, matthia, mauthe, mayweather, melantha, meriweather, meriwether, merriweather, merriwether, mother, mother's, mother-in-law, motherboard, mothercare, motherfucker, motherfucker's, motherfuckers, motherfucking, motherhood, mothering, motherland, motherless, motherly, mothers, mothers-in-law, mothershead, mothershed, mothership, mothership's, motherships, mouthed, mouthing, mouths, nasworthy, nathe, neither, neither(2), nether, netherland, netherlandic, netherlands, nethers, netherton, netherworld, nethery, nevertheless, newsworthy, nonetheless, norsworthy, norther, northerly, northern, northern's, northerner, northerners, northernmost, northey, noseworthy, noteworthy, nother, oaths, oldfather, otha, other, other's, otherness, others, others", otherwise, otherworldly, paths, praiseworthy, prather, prothero, raether, rathe, rather, rather(2), rather's, reither, reuther, rhythm, rhythmic, rhythmically, rhythms, ring-around-the-rosy, roether, rothe, ryther, sather, scathing, schultheis, seaworthy, seethe, seething, seither, sether, sheathe, sheathed, sheathing, sithe, slather, slathered, slathering, slathers, slither, slithering, smather, smathers, smethers, smither, smithereen, smithereens, smitherman, smithers, smooth, smoothed, smoothen, smoothens, smoother, smoothest, smoothing, smoothly, smoothness, smooths, smother, smothered, smothering, smotherman, smothers, smythe, sociopaths, soothe, soothed, soothes, soothing, soothingly, souther, southerland, southerly, southern, southern's, southerner, southerners, southernmost, southernnet, southernnet's, southers, starkweather, state-of-the-art, stepfather, stepmother, stikeleather, stikeleather(2), stikeleather(3), strother, strothers, struthers, sunbathe, sunbathing, suther, sutherland, sutherland's, sutherlin(2), suthers, swarthy, swathe, swathe(2), swathed, talitha, teethe, teething, tether, tethered, tethers, than, than(2), thao, that, that(2), that'd, that'll, that's, that've, thau, the, thee, thee's, their, theirs, theirself, theirselves, theis, them, them(2), themself, themself(2), themselves, themselves(2), then, thence, thenceforth, therat, there, there'd, there'll, there're, there's, there've, thereabouts, thereafter, thereby, therefore, therein, thereof, thereon, thereto, thereupon, these, thesing, theus, they, they'd, they'll, they're, they've, thine, this, this(2), this", this'll, this'll(2), thither, tho, thomann, those, thou, though, thous, thur, thus, thusfar, thusly, thy, thyself, timothea, tithe, tithing, together, togetherness, togethers, tolanthe, toothed(2), totherow, trustworthiness, trustworthy, unfathomable, unscathed, untrustworthy, unworthy, uthe, uther(2), weather, weather's, weatherall, weatherbee, weatherby, weathered, weatherford, weatherhead, weatherholt, weatherholtz, weathering, weatherington, weatherly, weatherman, weathermen, weatherproof, weathers, weathersbee, weathersby, weatherspoon, weatherstone, weatherwax, werther, wetherbee, wetherington, wetherly, wherewithal, wherewithal(2), whether, whether(2), whither, whither(2), with, with(4), withdraw, withdrawal, withdrawals(2), withdrawing(2), withdrawn(2), withdraws, withdrew(2), wither, withered, withering, withers, witherspoon, within, without(2), worthey, worthier, worthies, worthiest, worthiness, worthington, worthy, wotherspoon, wrather, wreaths(2), writhing, wuthering, wythe, xanthe, yother, youths, zither
 
-    "ache": "a{quesse-extended}e", // <ch> pronounced as /k/
-    "anchor": "{quesse-extended}[a][tilde-above]{oore}[o]",
-    "anchorage": "{quesse-extended}[a][tilde-above]{roomen}[o]{ungwe}[a][dot-below]",
-    "anchoring": "{quesse-extended}[a][tilde-above]{roomen}[o]{nwalme}[i] ",
-    "anchorman": "{quesse-extended}[a][tilde-above]{oore}[o]{malta}{nuumen}[a]",
-    "anchormen": "{quesse-extended}[a][tilde-above]{oore}[o]{malta}{nuumen}[e] ",
+    "ache": "a{extended-quesse}e", // <ch> pronounced as /k/
+    "anchor": "{extended-quesse}[triple-dot-above][tilde-above]{oore}[right-curl]",
+    "anchorage": "{extended-quesse}[triple-dot-above][tilde-above]{roomen}[right-curl]{ungwe}[triple-dot-above][dot-below]",
+    "anchoring": "{extended-quesse}[triple-dot-above][tilde-above]{roomen}[right-curl]{nwalme}[dot-above] ",
+    "anchorman": "{extended-quesse}[triple-dot-above][tilde-above]{oore}[right-curl]{malta}{nuumen}[triple-dot-above]",
+    "anchormen": "{extended-quesse}[triple-dot-above][tilde-above]{oore}[right-curl]{malta}{nuumen}[acute] ",
     "anthill": "ant'hill",
-    "although": "{lambe}[a]{anto}{vala}[o]{ungwe-extended}",
-    "altogether": "{lambe}[a]{tinco}{ungwe}[o]{anto}[e]{oore}[e]",
-    "another": "{nuumen}[a]{anto}[o]{oore}[e]",
-    "bathe": "{umbar}{anto}[dot-below][a]",
-    "beyond": "{umbar}{short-carrier}[e]{anna}{short-carrier}[o]{ando}[tilde-above]",
-    "bathing": "{umbar}{anto}[a]{nwalme}[i]",
-    "breathe": "{umbar}{roomen}{osse}[e]{anto}[dot-below]",
-    "breathing": "{umbar}{roomen}{osse}[e]{anto}{nwalme}[i]",
-    "bronchitis": "{umbar}{roomen}{quesse-extended}[o][tilde-above]{tinco}[i]{silme}[i] ",
-    "bronchoscope": "{umbar}{roomen}{quesse-extended}[o][tilde-above]{silme}[o]{quesse}{parma}[o][dot-below]",
-    "brother": "{umbar}{roomen}{anto}[o]{oore}[e]",
-    "brotherly": "{umbar}{roomen}{anto}[o]{oore}[e]{lambe}[chevron]",
-    "brothers": "{umbar}{roomen}{anto}[o]{oore}[e]{esse-nuquerna}",
-    "chemical": "{quesse-extended}emical",
-    "chemist": "{quesse-extended}emist",
-    "chemists": "{quesse-extended}emists",
-    "chemistry": "{quesse-extended}emistry",
-    "chemo": "{quesse-extended}emo",
-    "chianti": "{quesse-extended}ianti",
-    "chiaoscuro": "{quesse-extended}iaoscuro",
-    "choir": "{quesse-extended}oir", // <ch> pronounced as /k/
-    "christ": "{QUESSE-EXTENDED}rist",
-    "christoph": "{QUESSE-EXTENDED}ristoph",
-    "christopher": "{QUESSE-EXTENDED}ristopher",
-    "christmas": "{QUESSE-EXTENDED}ristmas",
-    "clothing": "{quesse}{lambe}{anto}[o]{nwalme}[i]",
-    "either": "{anna}[e]{anto}{oore}[e]",
+    "alchemy": "al{extended-quesse}emy", // quesse-extended
+    "although": "{lambe}[triple-dot-above]{anto}{vala}[right-curl]{extended-ungwe}",
+    "altogether": "{lambe}[triple-dot-above]{tinco}{ungwe}[right-curl]{anto}[acute]{oore}[acute]",
+    "another": "{nuumen}[triple-dot-above]{anto}[right-curl]{oore}[acute]",
+    "bathe": "{umbar}{anto}[dot-below][triple-dot-above]",
+    "beyond": "{umbar}{telco}[acute]{anna}{telco}[right-curl]{ando}[tilde-above]",
+    "bathing": "{umbar}{anto}[triple-dot-above]{nwalme}[dot-above]",
+    "breathe": "{umbar}{roomen}{osse}[acute]{anto}[dot-below]",
+    "breathing": "{umbar}{roomen}{osse}[acute]{anto}{nwalme}[dot-above]",
+    "bronchitis": "{umbar}{roomen}{extended-quesse}[right-curl][tilde-above]{tinco}[dot-above]{silme}[dot-above] ",
+    "bronchoscope": "{umbar}{roomen}{extended-quesse}[right-curl][tilde-above]{silme}[right-curl]{quesse}{parma}[right-curl][dot-below]",
+    "brother": "{umbar}{roomen}{anto}[right-curl]{oore}[acute]",
+    "brotherly": "{umbar}{roomen}{anto}[right-curl]{oore}[acute]{lambe}[breve]",
+    "brothers": "{umbar}{roomen}{anto}[right-curl]{oore}[acute]{esse-nuquerna}",
+    "chianti": "{extended-quesse}ianti",
+    "chiaoscuro": "{extended-quesse}iaoscuro",
+    "choir": "{extended-quesse}oir", // <ch> pronounced as /k/
+    "clothing": "{quesse}{lambe}{anto}[right-curl]{nwalme}[dot-above]",
+    "either": "{anna}[acute]{anto}{oore}[acute]",
     "epitome": "epitom'í", // user request (GEONE)
-    "esther": "Es{tinco-extended}er", // "th" pronounced /t/ uses extended tinco
-    "father": "{formen}{anto}[a]{oore}[e]",
-    "fathers": "{formen}{anto}[a]{oore}[e]{esse-nuquerna}",
-    "fatherhood": "{formen}{anto}[a]{oore}[e]{hyarmen}{short-carrier}[o]{ando}[o]",
-    "fatherly": "{formen}{anto}[a]{oore}[e]{lambe}[chevron]",
-    "feather": "{formen}{osse}[e]{anto}{oore}[e]",
-    "further": "{formen}{oore}[u]{anto}{oore}[e]",
-    "gather": "{ungwe}{anto}[a]{oore}[e]",
-    "gathering": "{ungwe}{anto}[a]{roomen}[e]{nwalme}[i]",
+    "esther": "Es{extended-tinco}er", // "th" pronounced /t/ uses extended tinco
+    "father": "{formen}{anto}[triple-dot-above]{oore}[acute]",
+    "fathers": "{formen}{anto}[triple-dot-above]{oore}[acute]{esse-nuquerna}",
+    "fatherhood": "{formen}{anto}[triple-dot-above]{oore}[acute]{hyarmen}{telco}[right-curl]{ando}[right-curl]",
+    "fatherly": "{formen}{anto}[triple-dot-above]{oore}[acute]{lambe}[breve]",
+    "feather": "{formen}{osse}[acute]{anto}{oore}[acute]",
+    "further": "{formen}{oore}[left-curl]{anto}{oore}[acute]",
+    "gather": "{ungwe}{anto}[triple-dot-above]{oore}[acute]",
+    "gathering": "{ungwe}{anto}[triple-dot-above]{roomen}[acute]{nwalme}[dot-above]",
     "goatherd": "goat'herd",
-    "grandfather": "{ungwe}{roomen}{ando}[a][tilde-above]{formen}{anto}[a]{oore}[e]",
-    "grandfathers": "{ungwe}{roomen}{ando}[a][tilde-above]{formen}{anto}[a]{oore}[e]{esse-nuquerna}",
-    "grandmother": "{ungwe}{roomen}{ando}[a][tilde-above]{malta}{anto}[o]{oore}[e]",
-    "grandmothers": "{ungwe}{roomen}{ando}[a][tilde-above]{malta}{anto}[o]{oore}[e]{esse-nuquerna}",
-    "hath": "{hyarmen}{anto}[a]",
-    "inchoate": "{quesse-extended}[i][tilde-above]{short-carrier}[o]{tinco}[a][dot-below]",
+    "glass": "gla{silme}[bar-below]",
+    "grandfather": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{formen}{anto}[triple-dot-above]{oore}[acute]",
+    "grandfathers": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{formen}{anto}[triple-dot-above]{oore}[acute]{esse-nuquerna}",
+    "grandmother": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{malta}{anto}[right-curl]{oore}[acute]",
+    "grandmothers": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{malta}{anto}[right-curl]{oore}[acute]{esse-nuquerna}",
+    "hath": "{hyarmen}{anto}[triple-dot-above]",
+    "inchoate": "{extended-quesse}[dot-above][tilde-above]{telco}[right-curl]{tinco}[triple-dot-above][dot-below]",
     "knighthood": "knight'hood",
-    "lathe": "{lambe}{anto}[dot-below][a]",
-    "leather": "{lambe}{osse}[e]{anto}{oore}[e]",
+    "lathe": "{lambe}{anto}[dot-below][triple-dot-above]",
+    "leather": "{lambe}{osse}[acute]{anto}{oore}[acute]",
     "lightheaded": "light'headed",
     "lighthouse": "light'house",
-    "loathe": "{lambe}{short-carrier}[o]{anto}[dot-below][a]",
-    "mechanics": "me{quesse-extended}anics",
-    "mechanical": "me{quesse-extended}anical",
-    "melancholy": "{malta}{lambe}[e]{quesse-extended}[a][tilde-above]{lambe}[o]{short-carrier}[chevron]",
-    "melancholic": "{malta}{lambe}[e]{quesse-extended}[a][tilde-above]{lambe}[o]{quesse}[i]",
-    "michael": "{MALTA}{quesse-extended}[i]{short-carrier}[a]{lambe}[e]",
-    "mikael": "{MALTA}{hwesta}[i]{short-carrier}[a]{lambe}[e]",
-    "mother": "{malta}{anto}[o]{oore}[e]",
-    "mothers": "{malta}{anto}[o]{oore}[sa-rince][e]",
-    "motherhood": "{malta}{anto}[o]{oore}[e]{hyarmen}{short-carrier}[o]{ando}[o]",
-    "motherly": "{malta}{anto}[o]{oore}[e]{lambe}[chevron]",
-    "neither": "{nuumen}{anna}[e]{anto}{oore}[e]",
+    "loathe": "{lambe}{telco}[right-curl]{anto}[dot-below][triple-dot-above]",
+    "mechanics": "me{extended-quesse}anics",
+    "mechanical": "me{extended-quesse}anical",
+    "melancholy": "{malta}{lambe}[acute]{extended-quesse}[triple-dot-above][tilde-above]{lambe}[right-curl]{telco}[breve]",
+    "melancholic": "{malta}{lambe}[acute]{extended-quesse}[triple-dot-above][tilde-above]{lambe}[right-curl]{quesse}[dot-above]",
+    "michael": "{MALTA}{extended-quesse}[dot-above]{telco}[triple-dot-above]{lambe}[acute]",
+    "mikael": "{MALTA}{hwesta}[dot-above]{telco}[triple-dot-above]{lambe}[acute]",
+    "mother": "{malta}{anto}[right-curl]{oore}[acute]",
+    "mothers": "{malta}{anto}[right-curl]{oore}[hook][acute]",
+    "motherhood": "{malta}{anto}[right-curl]{oore}[acute]{hyarmen}{telco}[right-curl]{ando}[right-curl]",
+    "motherly": "{malta}{anto}[right-curl]{oore}[acute]{lambe}[breve]",
+    "neither": "{nuumen}{anna}[acute]{anto}{oore}[acute]",
     "noone": "no'one",
-    "of the": "{ofthe}",
-    "other": "{anto}[o]{oore}[e]",
+    "of the": "{of-the-shorthand}",
+    "other": "{anto}[right-curl]{oore}[acute]",
     "outhouse": "out'house",
+    "penis": "peni{silme}",
     "pothead": "pot'head",
-    "rather": "{roomen}{anto}[a]{oore}[e]",
-    "rhythm": "{roomen}{hyarmen}{anto}[chevron]{malta}",
-    "school": "s{quesse-extended}ool", // <ch> pronounced as /k/
-    "seethe": "{silme}{short-carrier}[e]{anto}[dot-below][e]",
-    "slither": "{silme}{lambe}{anto}[i]{oore}[e]",
-    "smooth": "{silme}{malta}{anto}[double-o]",
-    "smoothest": "{silme}{malta}{short-carrier}[o]{anto}[o]{silme}[e]{tinco}",
-    "somebody": "{silme}{malta}[o][dot-below]{umbar}{ando}[o]{short-carrier}[chevron]",
+    "rather": "{roomen}{anto}[triple-dot-above]{oore}[acute]",
+    "rhythm": "{roomen}{hyarmen}{anto}[breve]{malta}",
+    "school": "s{extended-quesse}ool", // <ch> pronounced as /k/
+    "seethe": "{silme}{telco}[acute]{anto}[dot-below][acute]",
+    "slither": "{silme}{lambe}{anto}[dot-above]{oore}[acute]",
+    "smooth": "{silme}{malta}{anto}[double-acute]",
+    "smoothest": "{silme}{malta}{telco}[right-curl]{anto}[right-curl]{silme}[acute]{tinco}",
+    "somebody": "{silme}{malta}[right-curl][dot-below]{umbar}{ando}[right-curl]{telco}[breve]",
     "someday": "some'day",
     "somehow": "some'how",
     "someone": "some'one",
     "someplace": "some'place",
     "something": "some'thing",
     "sometime": "some'time",
-    "sometimes": "{silme}{malta}[o][dot-below]{tinco}{malta}[i][dot-below]{swash-curl}",
+    "sometimes": "{silme}{malta}[right-curl][dot-below]{tinco}{malta}[dot-above][dot-below]{silme}",
     "somewhat": "some'what",
-    "someways": "some'ways",
+    "someways": "some'way{silme}",
     "somewhen": "some'when",
     "somewhere": "some'where",
-    "soothe": "{silme}{anto}[double-o][dot-below]",
-    "soothing": "{silme}{short-carrier}[o]{anto}[o]{nwalme}[i]",
-    "southern": "{silme}{vala}[o]{anto}{oore}[e]{nuumen}",
-    "stomach": "stoma{quesse-extended}", // <ch> pronounced as /k/
-    "tecendil": "{tinco}{quesse}[e]{ando}[i][bar-above]{lambe}[i]",
-    "teethe": "{tinco}{short-carrier}[e]{anto}[dot-below][e]",
-    "tether": "{tinco}{anto}[e]{oore}[e]",
-    "thames": "{TINCO-EXTENDED}ames", // "th" pronounced /t/ uses extended tinco
+    "soothe": "{silme}{anto}[double-acute][dot-below]",
+    "soothing": "{silme}{telco}[right-curl]{anto}[right-curl]{nwalme}[dot-above]",
+    "southern": "{silme}{vala}[right-curl]{anto}{oore}[acute]{nuumen}",
+    "stomach": "stoma{extended-quesse}", // <ch> pronounced as /k/
+    "tecendil": "{tinco}{quesse}[acute]{ando}[dot-above][bar-above]{lambe}[dot-above]",
+    "teethe": "{tinco}{telco}[acute]{anto}[dot-below][acute]",
+    "tether": "{tinco}{anto}[acute]{oore}[acute]",
+    "thames": "{extended-tinco}ames", // "th" pronounced /t/ uses extended tinco
     "thing": "th'ing",
-    "things": "{suule}{nwalme}[i][sa-rince]",
-    "this": "{anto}{short-carrier}[i][sa-rince]",
-    "than": "{anto}{nuumen}[a]",
-    "that": "{anto}{tinco}[a]",
-    "thee": "{anto}{short-carrier}[e]{short-carrier}[e]",
-    "them": "{anto}{malta}[e]",
-    "then": "{anto}{nuumen}[e]",
-    "these": "{anto}{esse-nuquerna}[i]",
-    "they": "{anto}{anna}[e]",
-    "their": "{anto}{anna}[e]{oore}",
-    "theirs": "{anto}{anna}[e]{oore}{esse-nuquerna}",
-    "themselves": "{anto}{malta}[e]{silme}{lambe}[e]{ampa}{silme}[e]",
-    "there": "{anto}{oore}[e][dot-below]",
-    "thereby": "{anto}{roomen}[e]{umbar}[e]{short-carrier}[chevron]",
-    "therein": "{anto}{roomen}[e]{anna}[e]{nuumen}",
-    "therefore": "{anto}{oore}[e][dot-below]{formen}[e]{oore}[dot-below][o]",
-    "those": "{anto}{esse-nuquerna}[o][dot-below]",
-    "thou": "{anto}{vala}[o]",
-    "thomas": "{TINCO-EXTENDED}omas", // "th" pronounced /t/ uses extended tinco
-    "though": "{anto}{vala}[o]{unque}",
-    "thus": "{anto}{silme}[u]",
-    "thy": "{anto}{short-carrier}[chevron]",
-    "thyme": "{tinco-extended}yme", // "th" pronounced /t/ uses extended tinco
-    "thyself": "{anto}{silme}[chevron]{lambe}[e]{formen}",
-    "together": "{tinco}{ungwe}[o]{anto}[e]{oore}[e]",
-    "togetherness": "{tinco}{ungwe}[o]{anto}[e]{oore}[e]{nuumen}{silme}[bar-below][e]",
-    "uncharacteristic": "{quesse-extended}[u][tilde-above]{roomen}[a]{quesse}[a]{tinco}{roomen}[e]{silme}[i]{tinco}{quesse}[i]",
-    "uncharacteristically": "{quesse-extended}[u][tilde-above]{roomen}[a]{quesse}[a]{tinco}{roomen}[e]{silme}[i]{tinco}{quesse}[i]{lambe}[a][bar-inside]{short-carrier}[chevron]",
-    "weather": "{vala}{osse}[e]{anto}{oore}[e]",
-    "weatherman": "{vala}{osse}[e]{anto}{oore}[e]{malta}{nuumen}[a]",
-    "with": "{vala}{anto}[i]",
-    "withdraw": "{vala}{anto}[i]{ando}{roomen}{vala}[a]",
-    "withstand": "{vala}{anto}[i]{silme}{tinco}{ando}[a][tilde-above]",
-    "worthy": "{vala}{oore}[o]{anto}{short-carrier}[chevron]",
+    "things": "{thuule}{nwalme}[dot-above][hook]",
+    "this": "{anto}[dot-above][silme]",
+    "than": "{anto}{nuumen}[triple-dot-above]",
+    "that": "{anto}{tinco}[triple-dot-above]",
+    "thee": "{anto}{telco}[acute]{telco}[acute]",
+    "them": "{anto}{malta}[acute]",
+    "then": "{anto}{nuumen}[acute]",
+    "these": "{anto}{esse-nuquerna}[dot-above]",
+    "they": "{anto}{anna}[acute]",
+    "their": "{anto}{anna}[acute]{oore}",
+    "theirs": "{anto}{anna}[acute]{oore}{esse-nuquerna}",
+    "themselves": "{anto}{malta}[acute]{silme}{lambe}[acute]{ampa}{silme}[acute]",
+    "there": "{anto}{oore}[acute][dot-below]",
+    "thereby": "{anto}{roomen}[acute]{umbar}[acute]{telco}[breve]",
+    "therein": "{anto}{roomen}[acute]{anna}[acute]{nuumen}",
+    "therefore": "{anto}{oore}[acute][dot-below]{formen}[acute]{oore}[dot-below][right-curl]",
+    "those": "{anto}{esse-nuquerna}[right-curl][dot-below]",
+    "thou": "{anto}{vala}[right-curl]",
+    "thomas": "{extended-tinco}oma{silme}", // "th" pronounced /t/ uses extended tinco
+    "though": "{anto}{vala}[right-curl]{unque}",
+    "thus": "{anto}{silme}[left-curl]",
+    "thy": "{anto}{telco}[breve]",
+    "thyme": "{extended-tinco}yme", // "th" pronounced /t/ uses extended tinco
+    "thyself": "{anto}{silme}[breve]{lambe}[acute]{formen}",
+    "together": "{tinco}{ungwe}[right-curl]{anto}[acute]{oore}[acute]",
+    "togetherness": "{tinco}{ungwe}[right-curl]{anto}[acute]{oore}[acute]{nuumen}{silme}[bar-below][acute]",
+    "uncharacteristic": "{extended-quesse}[left-curl][tilde-above]{roomen}[triple-dot-above]{quesse}[triple-dot-above]{tinco}{roomen}[acute]{silme}[dot-above]{tinco}{quesse}[dot-above]",
+    "uncharacteristically": "{extended-quesse}[left-curl][tilde-above]{roomen}[triple-dot-above]{quesse}[triple-dot-above]{tinco}{roomen}[acute]{silme}[dot-above]{tinco}{quesse}[dot-above]{lambe}[triple-dot-above][bar-inside]{telco}[breve]",
+    "us": "{silme}[left-curl]",
+    "virus": "viru{silme}",
+    "weather": "{vala}{osse}[acute]{anto}{oore}[acute]",
+    "weatherman": "{vala}{osse}[acute]{anto}{oore}[acute]{malta}{nuumen}[triple-dot-above]",
+    "with": "{vala}{anto}[dot-above]",
+    "withdraw": "{vala}{anto}[dot-above]{ando}{roomen}{vala}[triple-dot-above]",
+    "withstand": "{vala}{anto}[dot-above]{silme}{tinco}{ando}[triple-dot-above][tilde-above]",
+    "worthy": "{vala}{oore}[right-curl]{anto}{telco}[breve]",
 
     // Sindarin words with [ce] that are pronounced /k/ rather than /s/
-    // "celebdil": "{QUESSE}{lambe}[e]{umbar}[e]{ando}{lambe}[i]",
+    // "celebdil": "{QUESSE}{lambe}[acute]{umbar}[acute]{ando}{lambe}[dot-above]",
     "celebdil": "Kelebdil",
-    "celebros": "Kelebros",
+    "celebros": "Kelebro{silme}",
     "celegorm": "Kelegorm",
-    "celebrían": "{QUESSE}{lambe}[e]{umbar}[e]{roomen}{long-carrier}[i]{nuumen}[a]",
-    "celebrian": "{QUESSE}{lambe}[e]{umbar}[e]{roomen}{long-carrier}[i]{nuumen}[a]",
-    "celecormë": "{QUESSE}{lambe}[e]{quesse}[e]{roomen}[o]{malta}{short-carrier}[e]",
+    "celebrían": "{QUESSE}{lambe}[acute]{umbar}[acute]{roomen}{aara}[dot-above]{nuumen}[triple-dot-above]",
+    "celebrian": "{QUESSE}{lambe}[acute]{umbar}[acute]{roomen}{aara}[dot-above]{nuumen}[triple-dot-above]",
+    "celecormë": "{QUESSE}{lambe}[acute]{quesse}[acute]{roomen}[right-curl]{malta}{telco}[acute]",
     "celecorme": "Kelekorme",
     "celeborn": "Keleborn",
-    "celepharn": "{QUESSE}{lambe}[e]{formen}[e]{roomen}[a]{nuumen}",
+    "celepharn": "{QUESSE}{lambe}[acute]{formen}[acute]{roomen}[triple-dot-above]{nuumen}",
     "celebrimbor": "Kelebrimbor",
     "celebrindor": "Kelebrindor",
     "celebrindal": "Kelebrindal",
@@ -649,38 +646,36 @@
 
     // Ordinal numbers
     // See http://www.gweep.net/~slarti/Gweep/Tengwar/#ordinal
-    "1st": "{1}{tinco-extended}",
-    "2nd": "{2}{tinco-extended}",
-    "3rd": "{3}{tinco-extended}",
-    "4th": "{4}{tinco-extended}",
-    "5th": "{5}{tinco-extended}",
-    "6th": "{6}{tinco-extended}",
-    "7th": "{7}{tinco-extended}",
-    "8th": "{8}{tinco-extended}",
-    "9th": "{9}{tinco-extended}",
-    "10th": "{10}{tinco-extended}",
-    "11th": "{11{tinco-extended}",
-    "12th": "{0}[ring-below]{1}{tinco-extended}",
-    "13th": "{1}[ring-below]{1}{tinco-extended}",
-    "14th": "{2}[ring-below]{1}{tinco-extended}",
-    "15th": "{3}[ring-below]{1}{tinco-extended}",
-    "16th": "{4}[ring-below]{1}{tinco-extended}",
-    "17th": "{5}[ring-below]{1}{tinco-extended}",
-    "18th": "{6}[ring-below]{1}{tinco-extended}",
-    "19th": "{7}[ring-below]{1}{tinco-extended}",
-    "20th": "{8}[ring-below]{1}{tinco-extended}",
-    "21st": "{9}[ring-below]{1}{tinco-extended}",
-    "22nd": "{10}[ring-below]{1}{tinco-extended}",
-    "23rd": "{11}[ring-below]{1}{tinco-extended}",
-    "24th": "{0}[ring-below]{2}{tinco-extended}",
-    "25th": "{1}[ring-below]{2}{tinco-extended}",
-    "26th": "{2}[ring-below]{2}{tinco-extended}",
-    "27th": "{3}[ring-below]{2}{tinco-extended}",
-    "28th": "{4}[ring-below]{2}{tinco-extended}",
-    "29th": "{5}[ring-below]{2}{tinco-extended}",
-    "30th": "{6}[ring-below]{2}{tinco-extended}",
-    "31st": "{7}[ring-below]{2}{tinco-extended}"
-
-    //    "to": "[curl-below]{tinco}",
+    "1st": "{one}{extended-tinco}",
+    "2nd": "{two}{extended-tinco}",
+    "3rd": "{three}{extended-tinco}",
+    "4th": "{four}{extended-tinco}",
+    "5th": "{five}{extended-tinco}",
+    "6th": "{six}{extended-tinco}",
+    "7th": "{seven}{extended-tinco}",
+    "8th": "{eight}{extended-tinco}",
+    "9th": "{nine}{extended-tinco}",
+    "10th": "{ten}{extended-tinco}",
+    "11th": "{eleven}{extended-tinco}",
+    "12th": "{zero}[ring-below]{one}{extended-tinco}",
+    "13th": "{one}[ring-below]{one}{extended-tinco}",
+    "14th": "{two}[ring-below]{one}{extended-tinco}",
+    "15th": "{three}[ring-below]{one}{extended-tinco}",
+    "16th": "{four}[ring-below]{one}{extended-tinco}",
+    "17th": "{five}[ring-below]{one}{extended-tinco}",
+    "18th": "{six}[ring-below]{one}{extended-tinco}",
+    "19th": "{seven}[ring-below]{one}{extended-tinco}",
+    "20th": "{eight}[ring-below]{one}{extended-tinco}",
+    "21st": "{nine}[ring-below]{one}{extended-tinco}",
+    "22nd": "{ten}[ring-below]{one}{extended-tinco}",
+    "23rd": "{eleven}[ring-below]{one}{extended-tinco}",
+    "24th": "{zero}[ring-below]{two}{extended-tinco}",
+    "25th": "{one}[ring-below]{two}{extended-tinco}",
+    "26th": "{two}[ring-below]{two}{extended-tinco}",
+    "27th": "{three}[ring-below]{two}{extended-tinco}",
+    "28th": "{four}[ring-below]{two}{extended-tinco}",
+    "29th": "{five}[ring-below]{two}{extended-tinco}",
+    "30th": "{six}[ring-below]{two}{extended-tinco}",
+    "31st": "{seven}[ring-below]{two}{extended-tinco}"
   }
 }

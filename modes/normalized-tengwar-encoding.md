@@ -24,7 +24,7 @@ encoding remains the same.
 
 - **Sindarin-type Modes**: (also used for English) vowels are represented as
   diacritic signs (tehtar) of the consonants that **follows** them. Example:
-  _nen_ (water) is written `{nuumen}[e]{nuumen}`
+  _nen_ (water) is written `{nuumen}[acute]{nuumen}`
 
 The representation is consistent, regardless of the mode used: a tengwar letter,
 followed by zero or more diacritics modifying it. This also means that the order
@@ -34,9 +34,9 @@ in Sindarin mode.
 
 ### Examples
 
-- nelde (Quenya: three) `{nuumen}[e]{alda}[e]`
-- neled (Sindarin: three) `{nuumen}{lambe}[e]{ando}[e]`
-- river (english) `{roomen}{ampa}[i]{oore}[e]`
+- nelde (Quenya: three) `{nuumen}[acute]{alda}[acute]`
+- neled (Sindarin: three) `{nuumen}{lambe}[acute]{ando}[acute]`
+- river (english) `{roomen}{ampa}[dot-above]{oore}[acute]`
 
 ## Syntax
 
@@ -65,20 +65,20 @@ lowercase identically.
 - `{tinco}` = TINCO
 - `{tinco-extended}`
 - `{parma}` = PARMA
-- `{parma-extended}`
+- `{extended-parma}`
 - `{calma}` = CALMA
 - `{calma-extended}`
 - `{quesse}` = QUESSE
-- `{quesse-extended}`
+- `{extended-quesse}`
 - `{ando}` = ANDO
 - `{ando-extended}`
 - `{umbar}` = UMBAR
 - `{umbar-extended}`
 - `{angwa}` = ANGWA
-- `{anga-extended}`
+- `{extended-anga}`
 - `{ungwe}` = UNGWE
 - `{ungwe-extended}`
-- `{suule}` = THUULE
+- `{thuule}` = THUULE
 - `{formen}` = FORMEN
 - `{formen-extended}`
 - `{aha}` AHA aka HARMA
@@ -107,10 +107,10 @@ lowercase identically.
 - `{hyarmen}` HYARMEN
 - `{yanta}` YANTA
 - `{uure}` UURE
-- `{long-carrier}` LONG-CARRIER
+- `{aara}` LONG-CARRIER
 - `{halla}` HALLA
 - `{osse}`
-- `{short-carrier}` SHORT-CARRIER
+- `{telco}` SHORT-CARRIER
 - STEMLESS-VALA used as \[w\] in some english modes
 - A-TENGWA = STEMLESS-ANNA used as "a" vowel in the mode of Beleriand
 - OPEN-ANNA
@@ -131,18 +131,18 @@ The symbol TEHTA-NAME is one of the following.
 - `[a-below]` = THREE-DOTS-BELOW
 - `[reverse-triple-dot]`
 - `[reverse-triple-dot-below]`
-- `[e]` = ACUTE = andaith, long mark
+- `[acute]` = ACUTE = andaith, long mark
 - `[dot-below]` = NUNTICSE = dot below, silent-e
-- `[double-e]` = EE = DOUBLE-ACUTE
+- `[double-acute]` = EE = DOUBLE-ACUTE
 - `[double-acute-below]` = EE-BELOW = DOUBLE-ACUTE-BELOW
-- `[i]` = I = AMATICSE = dot above
-- `[double-dot]` = II = TWO-DOTS-ABOVE
+- `[dot-above]` = I = AMATICSE = dot above
+- `[double-dot-above]` = II = TWO-DOTS-ABOVE
 - `[double-dot-below]` = II-BELOW = TWO-DOTS-BELOW
-- `[o]` = O = RIGHT-CURL
+- `[right-curl]` = O = RIGHT-CURL
 - `[double-o]` = OO = DOUBLE-RIGHT-CURL
 - `[curl-below]` = O-BELOW = RIGHT-CURL-BELOW
-- `[u]` = U = LEFT-CURL
-- `[double-u]` = UU = DOUBLE-LEFT-CURL
+- `[left-curl]` = U = LEFT-CURL
+- `[double-left-curl]` = UU = DOUBLE-LEFT-CURL
 - `[accent-below]` = U-BELOW = LEFT-CURL-BELOW
 - E-BELOW = ACUTE-BELOW
 
@@ -151,7 +151,7 @@ The symbol TEHTA-NAME is one of the following.
 - `[tilde-above]` = TWIST = TILDE
 - `[tilde-high]`
 - `[tilde-below]`
-- `[chevron]` = BREVE
+- `[breve]` = BREVE
 - `[grave]` = GRAVE
 - YANTA-ABOVE = CIRCUMFLEX?
 - THREE-INVERTED-DOTS-ABOVE

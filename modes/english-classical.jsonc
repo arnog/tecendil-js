@@ -47,17 +47,17 @@ For Michael son of Middle-earth
     "b": "{umbar}",
     "c": "{quesse}",
     // soft-c uses silme-nuquerna
-    "ce": "{}{silme-nuquerna}[e]",
-    "ci": "{}{silme-nuquerna}[i]",
-    "cy": "{}{silme-nuquerna}[chevron]",
+    "ce": "{}{silme-nuquerna}[acute]",
+    "ci": "{}{silme-nuquerna}[dot-above]",
+    "cy": "{}{silme-nuquerna}[breve]",
     // In English, /c/ is pronounced [s] before e, i, y
     "nce$": "{nuumen}[dot-below]{silme-nuquerna}", // necessary to override "nc"
     "ce$": "[dot-below]{silme-nuquerna}",
-    "sci$": "{}{calma}[i]", // S I, e.g. "pesci"
-    "cci$": "{}{calma}[i]", // CH, e.g. "gucci"
-    "ci$": "{}{calma}[i]", // CH, e.g. "domenici" except S (ceci, medici, vinci) or K (loci)
-    "cy$": "{}{silme-nuquerna}[chevron]{short-carrier}", // "icy"
-    "^mc": "{malta}[a]{quesse}", // "Mc" -> "mac"
+    "sci$": "{}{calma}[dot-above]", // S I, e.g. "pesci"
+    "cci$": "{}{calma}[dot-above]", // CH, e.g. "gucci"
+    "ci$": "{}{calma}[dot-above]", // CH, e.g. "domenici" except S (ceci, medici, vinci) or K (loci)
+    "cy$": "{}{silme-nuquerna}[breve]{telco}", // "icy"
+    "^mc": "{malta}[triple-dot-above]{quesse}", // "Mc" -> "mac"
 
     // ace ice decide spicy vicious paly once gucci icy pace possible
     // ACE -> quesse
@@ -96,32 +96,32 @@ For Michael son of Middle-earth
     "zz": "[bar-below]{esse}", // jazz
 
     // Special double-character sequences
-    "th": "{suule}",
+    "th": "{thuule}",
     "dh": "{anto}",
-    "sh": "{aha}", // "d" for english v?
+    "sh": "{harma}", // "d" for english v?
     "kh": "{anca}",
     "zh": "{anca}", // for /zh/ sound, as in "azure"
-    "gh": "{ungwe-extended}",
+    "gh": "{extended-ungwe}",
 
-    "aly$": "[a]{lambe}[chevron]{short-carrier}",
-    "ely$": "[e]{lambe}[chevron]{short-carrier}",
-    "ily$": "[i]{lambe}[chevron]{short-carrier}",
-    "oly$": "[o]{lambe}[chevron]{short-carrier}",
-    "uly$": "[u]{lambe}[chevron]{short-carrier}",
-    "ly$": "{lambe}{short-carrier}[chevron]",
-    "any$": "[a]{nuumen}[chevron]{short-carrier}",
-    "eny$": "[e]{nuumen}[chevron]{short-carrier}",
-    "iny$": "[i]{nuumen}[chevron]{short-carrier}",
-    "ony$": "[o]{nuumen}[chevron]{short-carrier}",
-    "uny$": "[u]{nuumen}[chevron]{short-carrier}",
-    "yny$": "[chevron]{nuumen}[chevron]{short-carrier}",
+    "aly$": "[triple-dot-above]{lambe}[breve]{telco}",
+    "ely$": "[acute]{lambe}[breve]{telco}",
+    "ily$": "[dot-above]{lambe}[breve]{telco}",
+    "oly$": "[right-curl]{lambe}[breve]{telco}",
+    "uly$": "[left-curl]{lambe}[breve]{telco}",
+    "ly$": "{lambe}{telco}[breve]",
+    "any$": "[triple-dot-above]{nuumen}[breve]{telco}",
+    "eny$": "[acute]{nuumen}[breve]{telco}",
+    "iny$": "[dot-above]{nuumen}[breve]{telco}",
+    "ony$": "[right-curl]{nuumen}[breve]{telco}",
+    "uny$": "[left-curl]{nuumen}[breve]{telco}",
+    "yny$": "[breve]{nuumen}[breve]{telco}",
 
     "ng": "{nwalme}", // for english, /ng/ sound
     //     "rd":	"{arda}",
-    //     "rds": "[sa-rince]{arda}",
+    //     "rds": "[hook]{arda}",
 
-    "ph": "{parma-extended}",
-    "^uph": "[u]{parma}{hyarmen}", // Not "ph" sound, e.g. "up-hea-val"
+    "ph": "{extended-parma}",
+    "^uph": "[left-curl]{parma}{hyarmen}", // Not "ph" sound, e.g. "up-hea-val"
 
     "tw": "[over-twist]{tinco}",
     //     "dw":	"[over-twist]{ando}",
@@ -140,97 +140,97 @@ For Michael son of Middle-earth
     "nt": "[tilde-above]{tinco}",
     "mp": "[tilde-above]{parma}",
     "mt": "[tilde-above]{tinco}",
-    "im": "[i][tilde-above]",
-    "im$": "[i]{malta}",
+    "im": "[dot-above][tilde-above]",
+    "im$": "[dot-above]{malta}",
 
-    //	"anc":	"[a][tilde-high]{quesse}",
+    //	"anc":	"[triple-dot-above][tilde-high]{quesse}",
 
     // Vowel
-    "y": "[chevron]",
+    "y": "[breve]",
     // Final-y
-    "y$": "[i]{long-carrier}",
+    "y$": "[dot-above]{aara}",
 
     // Double vowels
-    "aa": "[a]{short-carrier}[a]{short-carrier}",
-    "ee": "[e]{short-carrier}[e]{short-carrier}",
-    "ii": "[i]{short-carrier}[i]{short-carrier}",
-    "oo": "[o]{short-carrier}[o]{short-carrier}",
-    "uu": "[u]{short-carrier}[u]{short-carrier}",
+    "aa": "[triple-dot-above]{telco}[triple-dot-above]{telco}",
+    "ee": "[acute]{telco}[acute]{telco}",
+    "ii": "[dot-above]{telco}[dot-above]{telco}",
+    "oo": "[right-curl]{telco}[right-curl]{telco}",
+    "uu": "[left-curl]{telco}[left-curl]{telco}",
 
     // Long vowels (circumflex)
-    "â": "[a]{long-carrier}",
-    "ê": "[e]{long-carrier}",
-    "î": "[i]{long-carrier}",
-    "ô": "[o]{long-carrier}",
-    "û": "[u]{long-carrier}",
+    "â": "[triple-dot-above]{aara}",
+    "ê": "[acute]{aara}",
+    "î": "[dot-above]{aara}",
+    "ô": "[right-curl]{aara}",
+    "û": "[left-curl]{aara}",
 
     // ----------------------------------------------------------------------------
     //
     // DIPHTHONGS
     //
-    "ai": "[a]{short-carrier}[i]{short-carrier}",
-    "ei": "[e]{short-carrier}[i]{short-carrier}",
-    "oi": "[o]{short-carrier}[i]{short-carrier}",
-    "ui": "[u]{short-carrier}[i]{short-carrier}",
-    "au": "[a]{vala}", // DTS.10: diphthongs ending in -U use {vala}
-    ///    "eu": "[e]{vala}",
-    "iu": "[i]{vala}",
-    "ou": "[o]{vala}",
-    "ay": "[a]{short-carrier}[chevron]{short-carrier}",
-    "ey": "[e]{short-carrier}[chevron]{short-carrier}",
-    "oy": "[o]{short-carrier}[chevron]{short-carrier}",
-    "uy": "[u]{short-carrier}[chevron]{short-carrier}",
+    "ai": "[triple-dot-above]{telco}[dot-above]{telco}",
+    "ei": "[acute]{telco}[dot-above]{telco}",
+    "oi": "[right-curl]{telco}[dot-above]{telco}",
+    "ui": "[left-curl]{telco}[dot-above]{telco}",
+    "au": "[triple-dot-above]{vala}", // DTS.10: diphthongs ending in -U use {vala}
+    ///    "eu": "[acute]{vala}",
+    "iu": "[dot-above]{vala}",
+    "ou": "[right-curl]{vala}",
+    "ay": "[triple-dot-above]{telco}[breve]{telco}",
+    "ey": "[acute]{telco}[breve]{telco}",
+    "oy": "[right-curl]{telco}[breve]{telco}",
+    "uy": "[left-curl]{telco}[breve]{telco}",
 
-    "ow": "[o]{vala}",
-    "owe": "[o][dot-below]{vala}",
+    "ow": "[right-curl]{vala}",
+    "owe": "[right-curl][dot-below]{vala}",
 
-    "ea": "[e][triple-dot-below]{short-carrier}",
-    "ia": "[i]{short-carrier}[a]{short-carrier}",
-    "oa": "[o]{short-carrier}[a]",
-    "ua": "[u]{short-carrier}[a]{short-carrier}",
-    "ae": "[a]{short-carrier}[e]{short-carrier}",
-    "ae$": "[a][dot-below]{short-carrier}",
-    //     "ie": "[i]{short-carrier}[e]{short-carrier}",		// Not in "Tolkien"
-    //    "ie$": "[i][dot-below]{short-carrier}",
-    "ie$": "[i][dot-below]{short-carrier}", // Most words end in a "ee" sound, except for a few (die, lie, etc...)
-    "oe": "[o]{short-carrier}[e]{short-carrier}",
-    "oë": "[o]{short-carrier}[e]{short-carrier}",
-    "oe$": "[o][dot-below]{short-carrier}",
-    //     "ue": "[u]{short-carrier}[e]{short-carrier}",
-    "ue$": "[u][dot-below]{short-carrier}",
+    "ea": "[acute][triple-dot-below]{telco}",
+    "ia": "[dot-above]{telco}[triple-dot-above]{telco}",
+    "oa": "[right-curl]{telco}[triple-dot-above]",
+    "ua": "[left-curl]{telco}[triple-dot-above]{telco}",
+    "ae": "[triple-dot-above]{telco}[acute]{telco}",
+    "ae$": "[triple-dot-above][dot-below]{telco}",
+    //     "ie": "[dot-above]{telco}[acute]{telco}",		// Not in "Tolkien"
+    //    "ie$": "[dot-above][dot-below]{telco}",
+    "ie$": "[dot-above][dot-below]{telco}", // Most words end in a "ee" sound, except for a few (die, lie, etc...)
+    "oe": "[right-curl]{telco}[acute]{telco}",
+    "oë": "[right-curl]{telco}[acute]{telco}",
+    "oe$": "[right-curl][dot-below]{telco}",
+    //     "ue": "[left-curl]{telco}[acute]{telco}",
+    "ue$": "[left-curl][dot-below]{telco}",
 
-    "ya": "[chevron]{short-carrier}[a]{short-carrier}", // e.g. "aditya", "ryan"
-    "ye": "[chevron]{short-carrier}[e]{short-carrier}", // e.g.
-    "yi": "[chevron]{short-carrier}[i]{short-carrier}", // e.g.
-    "yo": "[chevron]{short-carrier}[o]{short-carrier}", // e.g.
-    "yu": "[chevron]{short-carrier}[u]{short-carrier}", // e.g.
+    "ya": "[breve]{telco}[triple-dot-above]{telco}", // e.g. "aditya", "ryan"
+    "ye": "[breve]{telco}[acute]{telco}", // e.g.
+    "yi": "[breve]{telco}[dot-above]{telco}", // e.g.
+    "yo": "[breve]{telco}[right-curl]{telco}", // e.g.
+    "yu": "[breve]{telco}[left-curl]{telco}", // e.g.
 
     // Final-s
     // Following s can be indicated by a downward hook
     // "“especially in the combinations ts, ps, ks (x), that were favoured in Quenya”
     // http://at.mansbjorkman.net/teng_quenya.htm
-    "ays$": "[a]{anna}[sa-rince]{}",
-    "bs$": "[swash-curl]{umbar}",
-    "des$": "[sa-rince][dot-below]{ando}",
-    "ds$": "[sa-rince]{ando}",
-    "fs$": "[sa-rince]{formen}",
-    "gs$": "[sa-rince]{ungwe}",
-    "ks$": "[sa-rince]{quesse}",
-    "ngs$": "[swash-curl]{nwalme}",
-    "kes$": "[dot-below][sa-rince]{quesse}",
-    "ls$": "[lifted-curl]{lambe}",
-    "les$": "[sa-rince][dot-inside]{lambe}",
+    "ays$": "[triple-dot-above]{anna}[hook]{}",
+    "bs$": "[swash-hook]{umbar}",
+    "des$": "[hook][dot-below]{ando}",
+    "ds$": "[hook]{ando}",
+    "fs$": "[hook]{formen}",
+    "gs$": "[hook]{ungwe}",
+    "ks$": "[hook]{quesse}",
+    "ngs$": "[swash-hook]{nwalme}",
+    "kes$": "[dot-below][hook]{quesse}",
+    "ls$": "[lifted-hook]{lambe}",
+    "les$": "[hook][dot-inside]{lambe}",
     "ms$": "[left-following-silme]{malta}",
-    "mes$": "[dot-below][swash-curl]{malta}",
+    "mes$": "[dot-below][swash-hook]{malta}",
     "nds$": "[tilde-above][left-following-silme]{ando}",
-    "ns$": "[sa-rince]{nuumen}",
-    "ps$": "[sa-rince]{parma}",
-    "rs$": "[sa-rince]{oore}",
-    "ts$": "[sa-rince]{tinco}",
-    "ves$": "[sa-rince][dot-below]{ampa}",
-    "ys$": "{anna}[sa-rince]",
-    "oes$": "[o]{short-carrier}[e][sa-rince]{short-carrier}",
-    "s$": "[sa-rince]", // /u/machsna: Tolkien has consistently spelled every
+    "ns$": "[hook]{nuumen}",
+    "ps$": "[hook]{parma}",
+    "rs$": "[hook]{oore}",
+    "ts$": "[hook]{tinco}",
+    "ves$": "[hook][dot-below]{ampa}",
+    "ys$": "{anna}[hook]",
+    "oes$": "[right-curl]{telco}[acute][hook]{telco}",
+    "s$": "[hook]", // /u/machsna: Tolkien has consistently spelled every
     // final -S ending with a sa-rince
     // (sometimes with the looped variant form that indicates voicedness).
 
@@ -259,41 +259,41 @@ For Michael son of Middle-earth
     "v": "{ampa}",
 
     "w": "{vala}",
-    "x": "[x-curl]{quesse}", // for /ks/, Use [x-curl]{ungwe} for /gz/ (PE20-58)
+    "x": "[right-curl-below]{quesse}", // for /ks/, Use [right-curl-below]{ungwe} for /gz/ (PE20-58)
     "z": "{esse}" // for english (= /zh/, e.g. azure)
   },
 
   "words": {
-    "and": "{and}",
+    "and": "{and-shorthand}",
 
-    "of": "{of}",
-    "the": "{the}",
-    "ofthe": "{ofthe}",
+    "of": "{of-shorthand}",
+    "the": "{the-shorthand}",
+    "ofthe": "{of-the-shorthand}",
 
     "to": "{tinco}[right-curl-below]",
 
-    //     "reuel": "{roomen}{short-carrier}[e]{short-carrier}[u]{lambe}[e]",
+    //     "reuel": "{roomen}{telco}[acute]{telco}[left-curl]{lambe}[acute]",
 
-    "age": "{anga}[a][dot-below]", // /dj/ Silmarilion
+    "age": "{anga}[triple-dot-above][dot-below]", // /dj/ Silmarilion
 
-    "is": "{esse}[i]",
+    "is": "{esse}[dot-above]",
 
-    "herein": "{hyarmen}{roomen}[e][dot-below]{nuumen}[i]",
-    "war": "{vala}{oore}[o]",
+    "herein": "{hyarmen}{roomen}[acute][dot-below]{nuumen}[dot-above]",
+    "war": "{vala}{oore}[right-curl]",
 
-    "these": "{anto}{alt-silme}[dot-below][e]",
-    "this": "{anto}[i][sa-rince]",
+    "these": "{anto}{alt-silme}[dot-below][acute]",
+    "this": "{anto}[dot-above][hook]",
 
-    "return": "{roomen}{tinco}[i]{oore}[dot-below]{nuumen}", // VT # 23
+    "return": "{roomen}{tinco}[dot-above]{oore}[dot-below]{nuumen}", // VT # 23
 
-    "ancient": "{calma}[tilde-above][a]{short-carrier}[i]{tinco}[tilde-above][e]", // "ci" -> CH I
-    "caesar": "{alt-silme}{long-carrier}[i]{alt-esse}{roomen}[dot-below]",
-    "caearas": "{alt-silme}{long-carrier}[i]{alt-esse}{roomen}[dot-below][sa-rince]",
-    "facade": "{formen}{alt-silme}[a]{ando}[dot-below][a]",
-    "facades": "{formen}{alt-silme}[a]{ando}[dot-below][a][sa-rince]",
-    "cello": "{calma}{lambe}[bar-inside][e]{short-carrier}[o]",
-    "concerto": "{quesse}{nuumen}[o]{calma}{oore}[e]{tinco}{short-carrier}[o]",
-    "cappuccino": "{quesse}{parma}[a][bar-below]{calma}[u]{nuumen}[i]{short-carrier}[o]",
-    "ciao": "{calma}{vala}[a]"
+    "ancient": "{calma}[tilde-above][triple-dot-above]{telco}[dot-above]{tinco}[tilde-above][acute]", // "ci" -> CH I
+    "caesar": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below]",
+    "caearas": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below][hook]",
+    "facade": "{formen}{alt-silme}[triple-dot-above]{ando}[dot-below][triple-dot-above]",
+    "facades": "{formen}{alt-silme}[triple-dot-above]{ando}[dot-below][triple-dot-above][hook]",
+    "cello": "{calma}{lambe}[bar-inside][acute]{telco}[right-curl]",
+    "concerto": "{quesse}{nuumen}[right-curl]{calma}{oore}[acute]{tinco}{telco}[right-curl]",
+    "cappuccino": "{quesse}{parma}[triple-dot-above][bar-below]{calma}[left-curl]{nuumen}[dot-above]{telco}[right-curl]",
+    "ciao": "{calma}{vala}[triple-dot-above]"
   }
 }

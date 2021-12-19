@@ -6,29 +6,29 @@
 
 // See http://www.forodrim.org/daeron/teng-sin.pdf
 
-// nen = water = {nuumen}[e]{nuumen}
-// pedo = speak = {parma}[e]{ando}[o]{short-carrier}
-// mellon = friend = {malta}[e][bar-inside]{lambe}[o]{nuumen}
-// thond = root = {suule}[o][bar-above]{ando}
-// ennorath = middle earth = [e][bar-above]{nuumen}[o]{roomen}[a]{suule}
-// bess = wife = {umbar}[e]{esse}
-// qurunîr = man of skill = wizard = {quesse}[u]{roomen}[u]{nuumen}[i]{long-carrier}{oore}
-// aear eithel baw = sea spring "don"t do it" = [a]{yanta}[a]{oore} [e]{anna}{suule}[e]{lambe} {umbar}[a]{anna}
+// nen = water = {nuumen}[acute]{nuumen}
+// pedo = speak = {parma}[acute]{ando}[right-curl]{telco}
+// mellon = friend = {malta}[acute][bar-inside]{lambe}[right-curl]{nuumen}
+// thond = root = {thuule}[right-curl][bar-above]{ando}
+// ennorath = middle earth = [acute][bar-above]{nuumen}[right-curl]{roomen}[triple-dot-above]{thuule}
+// bess = wife = {umbar}[acute]{esse}
+// qurunîr = man of skill = wizard = {quesse}[left-curl]{roomen}[left-curl]{nuumen}[dot-above]{aara}{oore}
+// aear eithel baw = sea spring "don"t do it" = [triple-dot-above]{yanta}[triple-dot-above]{oore} [acute]{anna}{thuule}[acute]{lambe} {umbar}[triple-dot-above]{anna}
 // alpha = swan
-// nef = on this side = {nuumen}[e]{ampa}
-// thoron galadh = eagle tree = {suule}[o]{roomen}[o]{nuumen} {ungwe}[a]{lambe}[a]{anto}
-// lhûg = snake, dragon = {alda}[u]{long-carrier}{ungwe}
-// rhûn = east = {arda}[u]{long-carrier}{nuumen}
-// ungol = spider = [u][bar-above]{ungwe}[o]{lambe}
-// fang = beard = {formen}[a]{nwalme}
-// gwain edwen = new second = [over-twist]{ungwe}[a]{anna}{nuumen} [e][over-twist]{ando}[e]{nuumen}
+// nef = on this side = {nuumen}[acute]{ampa}
+// thoron galadh = eagle tree = {thuule}[right-curl]{roomen}[right-curl]{nuumen} {ungwe}[triple-dot-above]{lambe}[triple-dot-above]{anto}
+// lhûg = snake, dragon = {alda}[left-curl]{aara}{ungwe}
+// rhûn = east = {arda}[left-curl]{aara}{nuumen}
+// ungol = spider = [left-curl][bar-above]{ungwe}[right-curl]{lambe}
+// fang = beard = {formen}[triple-dot-above]{nwalme}
+// gwain edwen = new second = [over-twist]{ungwe}[triple-dot-above]{anna}{nuumen} [acute][over-twist]{ando}[acute]{nuumen}
 
 // Not all those who wander are lost = i phin û bain idh reniar benrâd
-// = [i]{short-carrier} {formen}[i]{nuumen} [û]{long-carrier} {umbar}[a]{anna}{nuumen} [i]{anto} {roomen}[e]{nuumen}[i]{short-carrier}[a]{oore} {umbar}[e]{nuumen}{roomen}[â]{ando}
+// = [dot-above]{telco} {formen}[dot-above]{nuumen} [û]{aara} {umbar}[triple-dot-above]{anna}{nuumen} [dot-above]{anto} {roomen}[acute]{nuumen}[dot-above]{telco}[triple-dot-above]{oore} {umbar}[acute]{nuumen}{roomen}[â]{ando}
 
 // Special initial and final:
 // aupau awpaw lhawr alho if roror
-// [a]{uure}{parma}[a]{uure} [a]{vilya}{parma}[a]{anna} {lambe}{hyarmen}[a]{vilya}{oore} [a]{lambe}{hyarmen}[o]{short-carrier} [i]{ampa} {roomen}[o]{roomen}[o]{oore}
+// [triple-dot-above]{uure}{parma}[triple-dot-above]{uure} [triple-dot-above]{vilya}{parma}[triple-dot-above]{anna} {lambe}{hyarmen}[triple-dot-above]{vilya}{oore} [triple-dot-above]{lambe}{hyarmen}[right-curl]{telco} [dot-above]{ampa} {roomen}[right-curl]{roomen}[right-curl]{oore}
 
 // TODO
 // Initial i followed by a vowel is pronounced as consonantal y.
@@ -39,7 +39,7 @@
 
 // TODO Check
 // ennyn durin aran moria: pedo mellon a minno
-// [e][bar-above]{nuumen}[double-dot]{short-carrier}{oore} {ando}[u]{roomen}[i]{oore} [a]{roomen}[a]{oore} {vala}[o]{roomen}[i]{short-carrier}[a]{short-carrier} {colon} {parma}[e]{ando}[o]{short-carrier} {vala}[e][bar-inside]{lambe}[o]{oore} [a]{short-carrier} {vala}[i][bar-above]{nuumen}[o]{short-carrier}
+// [acute][bar-above]{nuumen}[double-dot-above]{telco}{oore} {ando}[left-curl]{roomen}[dot-above]{oore} [triple-dot-above]{roomen}[triple-dot-above]{oore} {vala}[right-curl]{roomen}[dot-above]{telco}[triple-dot-above]{telco} {colon} {parma}[acute]{ando}[right-curl]{telco} {vala}[acute][bar-inside]{lambe}[right-curl]{oore} [triple-dot-above]{telco} {vala}[dot-above][bar-above]{nuumen}[right-curl]{telco}
 // http://digiphile.wordpress.com/2009/01/23/online-jrrtolkein-translators-and-font-converters/
 
 {
@@ -54,10 +54,10 @@
   "tehtarFollow": true,
 
   // Include "dashes" as part of words in Sindarin
-  "wordPattern": "^[A-Za-zÀ-ÖØ-öø-ÿ\\*]+",
+  "wordPattern": "^[A-Za-zÀ-ÖØ-öø-ÿĀ-ſ\\*]+",
 
   "preprocess": {
-    // Expand ae/oe ligatures (rare, but used by Tolking in The Etymologies e.g. for glaer)
+    // Expand ae/oe ligatures (rare, but used by Tolkien in The Etymologies e.g. for glaer)
     "œ": "oe",
     "æ": "ae",
 
@@ -76,39 +76,39 @@
     // VOWELS
     //
 
-    "y": "[double-dot]",
+    "y": "[double-dot-above]",
 
     // Long vowels
-    "â": "[a]{long-carrier}",
-    "ê": "[e]{long-carrier}",
-    "î": "[i]{long-carrier}",
-    "ô": "[o]{long-carrier}",
-    "û": "[u]{long-carrier}",
-    "ŷ": "[double-dot]{long-carrier}",
+    "â": "[triple-dot-above]{aara}",
+    "ê": "[acute]{aara}",
+    "î": "[dot-above]{aara}",
+    "ô": "[right-curl]{aara}",
+    "û": "[left-curl]{aara}",
+    "ŷ": "[double-dot-above]{aara}",
 
     // ----------------------------------------------------------------------------
     //
     // DIPHTHONGS
     //
-    "ae": "[a]{yanta}",
-    "ai": "[a]{anna}",
-    "au": "[a]{vala}",
-    "oe": "[o]{yanta}",
-    "ei": "[e]{anna}",
-    "ui": "[u]{anna}",
-    "aw": "[a]{vala}",
+    "ae": "[triple-dot-above]{yanta}",
+    "ai": "[triple-dot-above]{anna}",
+    "au": "[triple-dot-above]{vala}",
+    "oe": "[right-curl]{yanta}",
+    "ei": "[acute]{anna}",
+    "ui": "[left-curl]{anna}",
+    "aw": "[triple-dot-above]{vala}",
 
     // Initial i + vowel is a consonantal y written with yanta
-    "^ia": "{yanta}[a]", // "iant" (bridge)
-    "^ie": "{yanta}[e]", // "ier" (as)
-    "^io": "{yanta}[o]", // "ion" (son)
-    "^iu": "{yanta}[u]", // "iuith" (use)
-    "^iâ": "{yanta}[a]{long-carrier}", // "iaa" (chasm)
-    "^iê": "{yanta}[e]{long-carrier}",
-    "^iô": "{yanta}[o]{long-carrier}",
-    "^iû": "{yanta}[u]{long-carrier}", // "iuul"? (embers)
+    "^ia": "{yanta}[triple-dot-above]", // "iant" (bridge)
+    "^ie": "{yanta}[acute]", // "ier" (as)
+    "^io": "{yanta}[right-curl]", // "ion" (son)
+    "^iu": "{yanta}[left-curl]", // "iuith" (use)
+    "^iâ": "{yanta}[triple-dot-above]{aara}", // "iaa" (chasm)
+    "^iê": "{yanta}[acute]{aara}",
+    "^iô": "{yanta}[right-curl]{aara}",
+    "^iû": "{yanta}[left-curl]{aara}", // "iuul"? (embers)
 
-    "ia-$": "[i]{short-carrier}[a]{short-carrier}{dash}", // miiria-
+    "ia-$": "[dot-above]{telco}[triple-dot-above]{telco}{dash}", // miiria-
 
     // ----------------------------------------------------------------------------
     //
@@ -141,6 +141,7 @@
     "^mh": "{malta-with-curl}",
     "n": "{nuumen}",
     "^ng": "{nwalme}",
+    "^ang": "[triple-dot-above]{nwalme}",
     "p": "{parma}",
     "ph": "{formen}",
     "r": "{roomen}",
@@ -148,8 +149,8 @@
     "r$": "{oore}",
     "s": "{silme}",
     "t": "{tinco}",
-    "th": "{suule}",
-    "þ": "{suule}",
+    "th": "{thuule}",
+    "þ": "{thuule}",
     "v": "{ampa}",
     "w": "{vala}",
     // 	"z":		"{esse-nuquerna}",
@@ -160,31 +161,50 @@
     "nd": "[bar-above]{ando}", // "glaNDagol" (boundary mark)
     "nf": "[bar-above]{formen}", // "aNFang" (proper n., rare)
     "ng": "[bar-above]{ungwe}", // "uNGol" (spider)
-    "angw": "[bar-above][over-twist][a]{ungwe}", // "angwedh" (chain)
+    "angw": "[bar-above][over-twist][triple-dot-above]{ungwe}", // "angwedh" (chain)
     "ngw": "[over-twist]{ungwe}", // "angwedh" (chain)
     "nk": "[bar-above]{calma}", // n/a
     "nt": "[bar-above]{tinco}", // "ceNTu" (?)
-    "nth": "[bar-above]{suule}", // "caNTHui" (fourth), "laNTHir" (waterfall)
+    "nth": "[bar-above]{thuule}", // "caNTHui" (fourth), "laNTHir" (waterfall)
     "mb": "[bar-above]{umbar}", // "laMBar" (fate)
     "mp": "[bar-above]{parma}", // n/a
     "mph": "[bar-above]{formen}", // "aMPHala" (death, agony)
 
+    // Sindarin has two different kinds of voiced stops, normal ones b, d, g and
+    // ones derived from ancient prenasalized stops mb, nd, ŋg, that behave
+    // differently under mutation (the examples are the plural and definite
+    // plural of the words):
+    // mbar7 : bair  , i·mbair     ndor7 : dŷr  , i·ndŷr    
+    // ŋgolodh: gelydh   , i·ñgelydh    
+    // InTolkien’sownromanizationngisambiguousbetweenand ininitialpositionbutthe
+    // structure of the language makes quite clear that they are different sounds
+    // (following the system behind the other voiced stops).
+    "ñg": "[bar-above]{ungwe}",
+    "ñd": "[bar-above]{ando}",
+    "ñb": "[bar-above]{umbar}",
+    "ŋg": "[bar-above]{ungwe}",
+    "ŋd": "[bar-above]{ando}",
+    "ŋb": "[bar-above]{umbar}",
+    "ngg": "[bar-above]{ungwe}",
+    "ndd": "[bar-above]{ando}",
+    "ŋbb": "[bar-above]{umbar}",
+
     // Combinations with "d"
     // Not strictly necessary, but these combinations look better with the unicode fonts
     // (the bar is placed below the diacritic)
-    "and": "[bar-above][a]{ando}",
-    "end": "[bar-above][e]{ando}",
-    "ind": "[bar-above][i]{ando}",
-    "ond": "[bar-above][o]{ando}",
-    "und": "[bar-above][u]{ando}",
+    "and": "[bar-above][triple-dot-above]{ando}",
+    "end": "[bar-above][acute]{ando}",
+    "ind": "[bar-above][dot-above]{ando}",
+    "ond": "[bar-above][right-curl]{ando}",
+    "und": "[bar-above][left-curl]{ando}",
 
     // Combinations with "s"
 
-    "ans": "[bar-above][a]{silme-nuquerna}",
-    "ens": "[bar-above][e]{silme-nuquerna}",
-    "ins": "[bar-above][i]{silme-nuquerna}",
-    "ons": "[bar-above][o]{silme-nuquerna}",
-    "uns": "[bar-above][u]{silme-nuquerna}",
+    "ans": "[bar-above][triple-dot-above]{silme-nuquerna}",
+    "ens": "[bar-above][acute]{silme-nuquerna}",
+    "ins": "[bar-above][dot-above]{silme-nuquerna}",
+    "ons": "[bar-above][right-curl]{silme-nuquerna}",
+    "uns": "[bar-above][left-curl]{silme-nuquerna}",
 
     // Combinations with "w" -- labialized consonants
     // The combination of the over-twist with a vowel tethar looks OK with Unicode font,
@@ -192,17 +212,17 @@
     // According to http://www.forodrim.org/daeron/teng-sin.pdf
     // this is only used for gw and dw
     "dw": "[over-twist]{ando}", //
-    "adw": "[a]{short-carrier}[over-twist]{ando}", // "caDWor"
-    "edw": "[e]{short-carrier}[over-twist]{ando}", // "eDWen" (second)
-    "idw": "[i]{short-carrier}[over-twist]{ando}", //
-    "odw": "[o]{short-carrier}[over-twist]{ando}", //
-    "udw": "[u]{short-carrier}[over-twist]{ando}", //
+    // "adw": "[triple-dot-above]{telco}[over-twist]{ando}", // "caDWor"
+    // "edw": "[acute]{telco}[over-twist]{ando}", // "eDWen" (second)
+    // "idw": "[dot-above]{telco}[over-twist]{ando}", //
+    // "odw": "[right-curl]{telco}[over-twist]{ando}", //
+    // "udw": "[left-curl]{telco}[over-twist]{ando}", //
     "gw": "[over-twist]{ungwe}", // "GWaen" (stained), "GWee" (living creature)
-    "agw": "[a]{short-carrier}[over-twist]{ungwe}",
-    "egw": "[e]{short-carrier}[over-twist]{ungwe}",
-    "igw": "[i]{short-carrier}[over-twist]{ungwe}",
-    "ogw": "[o]{short-carrier}[over-twist]{ungwe}",
-    "ugw": "[u]{short-carrier}[over-twist]{ungwe}",
+    "agw": "[triple-dot-above]{telco}[over-twist]{ungwe}",
+    "egw": "[acute]{telco}[over-twist]{ungwe}",
+    "igw": "[dot-above]{telco}[over-twist]{ungwe}",
+    "ogw": "[right-curl]{telco}[over-twist]{ungwe}",
+    "ugw": "[left-curl]{telco}[over-twist]{ungwe}",
     // 	"lw":		"{}{lambe}[over-twist]",			// "aLWed" (prosperous)
     //  	"nw":		"{}{nuumen}[over-twist]",		// "daNWedh" (ransom)
     // 	"mw":		"{}{malta}[over-twist]",			// n/a
@@ -220,9 +240,9 @@
 
   "words": {
     // "panthael" -> "pan"thael"
-    "panthael": "{parma}{tinco}[bar-above][a]{hyarmen}{yanta}[a]{lambe}",
+    "panthael": "{parma}{tinco}[bar-above][triple-dot-above]{hyarmen}{yanta}[triple-dot-above]{lambe}",
 
     // Sometimes "oe" is pronounced as a diphthongs "ö"
-    "arnoediad": "{roomen}[a]{nuumen}{ando}[e]{short-carrier}[i]{ando}[a]"
+    "arnoediad": "{roomen}[triple-dot-above]{nuumen}{ando}[acute]{telco}[dot-above]{ando}[triple-dot-above]"
   }
 }

@@ -58,86 +58,86 @@ accent - lambe - malta + right curl.
     // Long vowels
     // Tolkien, in the Namarie jacket uses long carrier for U (suurinen) and O
     // (uunootime) and doubled tehta for E (yeeni)
-    "â": "{long-carrier}[a]",
-    "ê": "{long-carrier}[e]",
-    "î": "{long-carrier}[i]",
-    "ô": "{long-carrier}[o]",
-    "û": "{long-carrier}[u]",
+    "â": "{aara}[triple-dot-above]",
+    "ê": "{aara}[acute]",
+    "î": "{aara}[dot-above]",
+    "ô": "{aara}[right-curl]",
+    "û": "{aara}[left-curl]",
 
     // Alternate long-vowels
-    "à": "[reverse-triple-dot]",
-    "è": "[double-e]",
-    "ì": "[double-dot]",
-    "ò": "[double-o]",
-    "ù": "[double-u]",
-    //	"^û": 		"{long-carrier}[u]{}",		// http://at.mansbjorkman.net/teng_quenya.htm#vow_long
+    "à": "[reversed-triple-dot-above]",
+    "è": "[double-acute]",
+    "ì": "[double-dot-above]",
+    "ò": "[double-acute]",
+    "ù": "[double-left-curl]",
+    //	"^û": 		"{aara}[left-curl]{}",		// http://at.mansbjorkman.net/teng_quenya.htm#vow_long
 
     // ----------------------------------------------------------------------------
     //
     // DIPHTHONGS
     //
 
-    "ae": "[a]{yanta}", // ??
-    "ai": "{yanta}[a]",
-    "aia": "{yanta}[a]{short-carrier}[a]",
-    "au": "{uure}[a]",
-    // "auy": "{uure}[a]{anna}[double-dot-below]",
-    "aw$": "[a]{vala}",
+    "ae": "[triple-dot-above]{yanta}", // ??
+    "ai": "{yanta}[triple-dot-above]",
+    "aia": "{yanta}[triple-dot-above]{telco}[triple-dot-above]",
+    "au": "{uure}[triple-dot-above]",
+    // "auy": "{uure}[triple-dot-above]{anna}[double-dot-below]",
+    "aw$": "[triple-dot-above]{vala}",
 
-    "ea": "[e]{short-carrier}[a]", // ??
-    "ei": "{yanta}[e]", // ??
-    "eo": "[e]{short-carrier}[o]", // ??
-    "eoi": "[e]{yanta}[o]",
-    "eu": "{uure}[e]",
-    "êa": "{long-carrier}[e]{short-carrier}[a]",
-    // "êe": // Looks good by default (double-[e] over long carrier)
-    "êi": "{long-carrier}[e]{short-carrier}[i]",
-    "êo": "{long-carrier}[e]{short-carrier}[o]",
-    "êu": "{long-carrier}[e]{short-carrier}[u]",
+    "ea": "[acute]{telco}[triple-dot-above]", // ??
+    "ei": "{yanta}[acute]", // ??
+    "eo": "[acute]{telco}[right-curl]", // ??
+    "eoi": "[acute]{yanta}[right-curl]",
+    "eu": "{uure}[acute]",
+    "êa": "{aara}[acute]{telco}[triple-dot-above]",
+    // "êe": // Looks good by default (double-[acute] over long carrier)
+    "êi": "{aara}[acute]{telco}[dot-above]",
+    "êo": "{aara}[acute]{telco}[right-curl]",
+    "êu": "{aara}[acute]{telco}[left-curl]",
 
-    "ia": "[i]{short-carrier}[a]", // ??
-    "iau": "[i]{short-carrier}[a]{short-carrier}[u]", // "iaun"
-    "ie": "[i]{short-carrier}[e]",
-    "iê": "[i]{long-carrier}[e]",
-    "iêa": "[i]{long-carrier}[e]{short-carrier}[o]",
-    "iêe": "[i]{long-carrier}[double-e]",
-    "iêi": "[i]{long-carrier}[e]{short-carrier}[i]",
-    "iêo": "[i]{long-carrier}[e]{short-carrier}[o]", // "morniêo"
-    "iêu": "[i]{long-carrier}[e]{short-carrier}[u]",
-    "îe": "{long-carrier}[i]{short-carrier}[e]",
-    "io": "[i]{short-carrier}[o]", // silmarilion
-    "iu": "{uure}[i]{}", // ciuca (thigh)
+    "ia": "[dot-above]{telco}[triple-dot-above]", // ??
+    "iau": "[dot-above]{telco}[triple-dot-above]{telco}[left-curl]", // "iaun"
+    "ie": "[dot-above]{telco}[acute]",
+    "iê": "[dot-above]{aara}[acute]",
+    "iêa": "[dot-above]{aara}[acute]{telco}[right-curl]",
+    "iêe": "[dot-above]{aara}[double-acute]",
+    "iêi": "[dot-above]{aara}[acute]{telco}[dot-above]",
+    "iêo": "[dot-above]{aara}[acute]{telco}[right-curl]", // "morniêo"
+    "iêu": "[dot-above]{aara}[acute]{telco}[left-curl]",
+    "îe": "{aara}[dot-above]{telco}[acute]",
+    "io": "[dot-above]{telco}[right-curl]", // silmarilion
+    "iu": "{uure}[dot-above]{}", // ciuca (thigh)
 
-    "oa": "[o]{short-carrier}[a]", // hroa
-    "oe": "{yanta}[o]", // ??
-    "oi": "{yanta}[o]",
-    "oia": "{yanta}[o]{short-carrier}[a]",
-    "oio": "{yanta}[o]{short-carrier}[o]",
+    "oa": "[right-curl]{telco}[triple-dot-above]", // hroa
+    "oe": "{yanta}[right-curl]", // ??
+    "oi": "{yanta}[right-curl]",
+    "oia": "{yanta}[right-curl]{telco}[triple-dot-above]",
+    "oio": "{yanta}[right-curl]{telco}[right-curl]",
 
-    "ou": "{short-carrier}[o]{short-carrier}[u]", // Not in Quenya, but for loanwords
+    "ou": "{telco}[right-curl]{telco}[left-curl]", // Not in Quenya, but for loanwords
 
-    "ui": "{yanta}[u]",
-    "uia": "{yanta}[u]{short-carrier}[a]", // "uial"
-    "uiu": "{yanta}[u]{short-carrier}[u]",
-    "ua": "[u]{short-carrier}[a]",
-    "uo": "[u]{short-carrier}[o]", // Genitive of "loa" is "luo"
+    "ui": "{yanta}[left-curl]",
+    "uia": "{yanta}[left-curl]{telco}[triple-dot-above]", // "uial"
+    "uiu": "{yanta}[left-curl]{telco}[left-curl]",
+    "ua": "[left-curl]{telco}[triple-dot-above]",
+    "uo": "[left-curl]{telco}[right-curl]", // Genitive of "loa" is "luo"
 
-    "ya": "{anna}[double-dot-below][a]",
-    "ye": "{anna}[double-dot-below][e]",
-    "yo": "{anna}[double-dot-below][o]",
-    "yu": "{anna}[double-dot-below][u]",
+    "ya": "{anna}[double-dot-below][triple-dot-above]",
+    "ye": "{anna}[double-dot-below][acute]",
+    "yo": "{anna}[double-dot-below][right-curl]",
+    "yu": "{anna}[double-dot-below][left-curl]",
 
-    // "yâ": "{anna}[double-dot-below]{long-carrier}[a]",
-    // "yê": "{anna}[double-dot-below]{long-carrier}[e]",
-    // "yû": "{anna}[double-dot-below]{long-carrier}[u]",
-    // "yô": "{anna}[double-dot-below]{long-carrier}[o]",
+    // "yâ": "{anna}[double-dot-below]{aara}[triple-dot-above]",
+    // "yê": "{anna}[double-dot-below]{aara}[acute]",
+    // "yû": "{anna}[double-dot-below]{aara}[left-curl]",
+    // "yô": "{anna}[double-dot-below]{aara}[right-curl]",
 
     // Alternate long-vowels
     // Tolkien"s Namarie has example of both double-e and long-carrier (yeeni)
-    "yà": "{anna}[double-dot-below]{long-carrier}[reverse-triple-dot]",
-    "yè": "{anna}[double-dot-below][double-e]",
-    "yù": "{anna}[double-dot-below][double-u]",
-    "yò": "{anna}[double-dot-below][double-o]",
+    "yà": "{anna}[double-dot-below]{aara}[reversed-triple-dot-above]",
+    "yè": "{anna}[double-dot-below][double-acute]",
+    "yù": "{anna}[double-dot-below][double-left-curl]",
+    "yò": "{anna}[double-dot-below][double-acute]",
 
     // ----------------------------------------------------------------------------
     //
@@ -151,28 +151,28 @@ accent - lambe - malta + right curl.
     "f": "{formen}",
     "g": "{ungwe}", // Rare in Quenya, but used by Kun Aguëro
 
-    "h": "{aha}", // other h, in between vowels
-    "χ": "{aha}", // CHI -- GREEK SMALL LETTER CHI
-    "ha": "{hyarmen}[a]",
-    "hai": "{hyarmen}{anna}[a]",
-    "hau": "{hyarmen}{uure}[a]",
-    "he": "{hyarmen}[e]",
-    "hea": "{hyarmen}[e]{short-carrier}[a]",
-    "hi": "{hyarmen}[i]",
-    "hie": "{hyarmen}[i]{short-carrier}[e]",
-    "hiu": "{hyarmen}[i]{short-carrier}[u]",
-    "ho": "{hyarmen}[o]",
-    "hoa": "{hyarmen}[o]{short-carrier}[a]",
-    "hu": "{hyarmen}[u]",
-    "hua": "{hyarmen}[u]{short-carrier}[a]",
-    "hue": "{hyarmen}[u]{short-carrier}[e]",
-    "hui": "{hyarmen}[u]{short-carrier}[i]",
-    "huo": "{hyarmen}[u]{short-carrier}[o]",
-    "hâ": "{hyarmen}{long-carrier}[a]",
-    "hê": "{hyarmen}{long-carrier}[e]",
-    "hî": "{hyarmen}{long-carrier}[i]",
-    "hô": "{hyarmen}{long-carrier}[o]",
-    "hû": "{hyarmen}{long-carrier}[u]",
+    "h": "{harma}", // other h, in between vowels
+    "χ": "{harma}", // CHI -- GREEK SMALL LETTER CHI
+    "ha": "{hyarmen}[triple-dot-above]",
+    "hai": "{hyarmen}{anna}[triple-dot-above]",
+    "hau": "{hyarmen}{uure}[triple-dot-above]",
+    "he": "{hyarmen}[acute]",
+    "hea": "{hyarmen}[acute]{telco}[triple-dot-above]",
+    "hi": "{hyarmen}[dot-above]",
+    "hie": "{hyarmen}[dot-above]{telco}[acute]",
+    "hiu": "{hyarmen}[dot-above]{telco}[left-curl]",
+    "ho": "{hyarmen}[right-curl]",
+    "hoa": "{hyarmen}[right-curl]{telco}[triple-dot-above]",
+    "hu": "{hyarmen}[left-curl]",
+    "hua": "{hyarmen}[left-curl]{telco}[triple-dot-above]",
+    "hue": "{hyarmen}[left-curl]{telco}[acute]",
+    "hui": "{hyarmen}[left-curl]{telco}[dot-above]",
+    "huo": "{hyarmen}[left-curl]{telco}[right-curl]",
+    "hâ": "{hyarmen}{aara}[triple-dot-above]",
+    "hê": "{hyarmen}{aara}[acute]",
+    "hî": "{hyarmen}{aara}[dot-above]",
+    "hô": "{hyarmen}{aara}[right-curl]",
+    "hû": "{hyarmen}{aara}[left-curl]",
 
     "hl": "{halla}{lambe}",
     "hr": "{halla}{roomen}",
@@ -201,7 +201,7 @@ accent - lambe - malta + right curl.
     // > would be rendered with Númen and Vilya.
 
     "p": "{parma}",
-    "piu": "{parma}[i]{short-carrier}[u]",
+    "piu": "{parma}[dot-above]{telco}[left-curl]",
     "ph": "{formen}", // Very rare. "PHanto" (whale)
     "py": "{parma}[double-dot-below]",
     // In the Quenya phonotactic, "qu" is always followed by a vowel
@@ -219,31 +219,31 @@ accent - lambe - malta + right curl.
     // If the next letter is a vowel, it will be replaced by a short/long carrier,
     // ignored otherwise
 
-    "ra": "{roomen}[a]{}",
-    "rai": "{roomen}{yanta}[a]",
-    "rau": "{roomen}{uure}[a]", // Valarauco
-    "re": "{roomen}[e]{}",
-    "ri": "{roomen}[i]{}",
-    "ro": "{roomen}[o]{}",
-    "ru": "{roomen}[u]{}",
-    "râ": "{roomen}{long-carrier}[a]{}",
-    "rê": "{roomen}{long-carrier}[e]{}",
-    "rî": "{roomen}{long-carrier}[i]{}",
-    "rô": "{roomen}{long-carrier}[o]{}",
-    "rû": "{roomen}{long-carrier}[u]{}",
+    "ra": "{roomen}[triple-dot-above]{}",
+    "rai": "{roomen}{yanta}[triple-dot-above]",
+    "rau": "{roomen}{uure}[triple-dot-above]", // Valarauco
+    "re": "{roomen}[acute]{}",
+    "ri": "{roomen}[dot-above]{}",
+    "ro": "{roomen}[right-curl]{}",
+    "ru": "{roomen}[left-curl]{}",
+    "râ": "{roomen}{aara}[triple-dot-above]{}",
+    "rê": "{roomen}{aara}[acute]{}",
+    "rî": "{roomen}{aara}[dot-above]{}",
+    "rô": "{roomen}{aara}[right-curl]{}",
+    "rû": "{roomen}{aara}[left-curl]{}",
 
-    //	"re$":		"{oore}[e]",
+    //	"re$":		"{oore}[acute]",
     "rb": "{roomen}{umbar}", // From LotR App E
     "rd": "{arda}",
 
     "s": "{silme}",
-    // 	"s$":		"[swash-curl]",
+    // 	"s$":		"[swash-hook]",
     "t": "{tinco}",
-    "th": "{suule}",
-    "þ": "{suule}",
+    "th": "{thuule}",
+    "þ": "{thuule}",
     "v": "{vala}",
     "w": "{vilya}",
-    "x": "{calma}[x-curl]",
+    "x": "{calma}[right-curl-below]",
     "y": "{anna}[double-dot-below]",
     "z": "{esse}",
 
@@ -252,8 +252,8 @@ accent - lambe - malta + right curl.
     // "sty": "{silme}{tinco}[double-dot-below]", //	"iSTYa"
     // "sc": "{silme}{calma}", // "ruSCo"
     // "sq": "{silme}{quesse}", // "uSQe"
-    "sw": "{suule}{vilya}", // "hiSWa"
-    "rs": "{oore}{suule}", // "uRSa"
+    "sw": "{thuule}{vilya}", // "hiSWa"
+    "rs": "{oore}{thuule}", // "uRSa"
 
     // Combinations with "m/n" -- nasalized consonants
     "nc": "{anca}",
@@ -266,9 +266,9 @@ accent - lambe - malta + right curl.
     "mp": "{ampa}",
 
     // Combinations with "s"
-    "ts": "{tinco}[sa-rince]",
-    "ps": "{parma}[sa-rince]",
-    "cs": "{calma}[x-curl]", // Rare: "CSara"
+    "ts": "{tinco}[hook]",
+    "ps": "{parma}[hook]",
+    "cs": "{calma}[right-curl-below]", // Rare: "CSara"
 
     // Combinations with "y"
     "ndy": "{ando}[double-dot-below]", // "iNDYel"
@@ -277,14 +277,14 @@ accent - lambe - malta + right curl.
     "my": "{malta}[double-dot-below]", // "aMYa"
     "ty": "{tinco}[double-dot-below]", // "TYe"
     "ry": "{roomen}[double-dot-below]", // "AnaRYa"
-    "ryâ": "{roomen}[double-dot-below]{long-carrier}[a]{}",
-    "ryê": "{roomen}[double-dot-below]{long-carrier}[e]{}",
-    "ryû": "{roomen}[double-dot-below]{long-carrier}[u]{}",
-    "ryô": "{roomen}[double-dot-below]{long-carrier}[o]{}",
-    "ryà": "{roomen}[double-dot-below]{long-carrier}[reverse-triple-dot]{}",
-    "ryè": "{roomen}[double-dot-below][double-e]{}",
-    "ryù": "{roomen}[double-dot-below][double-u]{}",
-    "ryò": "{roomen}[double-dot-below][double-o]{}",
+    "ryâ": "{roomen}[double-dot-below]{aara}[triple-dot-above]{}",
+    "ryê": "{roomen}[double-dot-below]{aara}[acute]{}",
+    "ryû": "{roomen}[double-dot-below]{aara}[left-curl]{}",
+    "ryô": "{roomen}[double-dot-below]{aara}[right-curl]{}",
+    "ryà": "{roomen}[double-dot-below]{aara}[reversed-triple-dot-above]{}",
+    "ryè": "{roomen}[double-dot-below][double-acute]{}",
+    "ryù": "{roomen}[double-dot-below][double-left-curl]{}",
+    "ryò": "{roomen}[double-dot-below][double-acute]{}",
     "ly": "{lambe}[double-dot-inside]", // "aLYa"
     "hy": "{hyarmen}[double-dot-below]", // "HYa"
 
@@ -307,6 +307,33 @@ accent - lambe - malta + right curl.
   },
 
   "words": {
-    "aselye": "{short-carrier}[a]{alt-silme}{short-carrier}[e]{lambe}[double-dot-inside][e]"
+    // Jakob Teuber argues that morpheme boundaries should not be taken
+    // into account
+    // "aselye": "{telco}[triple-dot-above]{alt-silme}{telco}[acute]{lambe}[double-dot-inside][acute]",
+
+    // Words using þúle
+    "hísilóme": "Híþilóme",
+    "isil": "Iþil",
+    "isildur": "Iþildur",
+    "isilmo": "Iþilmo",
+    "nan-tasarion": "Nan-taþarion",
+    "nísimaldar": "Níþimaldar",
+    "nísinen": "Níþinen",
+    "sangahyando": "Þangahyando",
+    "sauron": "Þauron",
+    "serinde": "Þerinde",
+    "sinda": "Þinda",
+    "sindar": "Þindar",
+    "sindarin": "Þindarin",
+    "sindacollo": "Þindacollo",
+    "sindicollo": "Þindicollo",
+    "singollo": "Þingollo",
+    "sorontar": "Þorontar",
+    "sorontil": "Þorontil",
+    "soronto": "Þoronto",
+    "soronúme": "Þoronúme",
+    "súlimo": "Þúlimo",
+    "tarmasundar": "Tarmaþundar",
+    "tasarinan": "Taþarinan"
   }
 }

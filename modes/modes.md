@@ -74,7 +74,7 @@ encoding remains the same.
 
 - **Sindarin-type Modes**: (also used for English) vowels are represented as
   diacritic signs (tehtar) of the consonants that **follows** them. Example: nen
-  (water) is written {nuumen}[e]{nuumen}
+  (water) is written {nuumen}[acute]{nuumen}
 
 The representation is therefore consistent, regardless of the mode used: a
 tengwar letter, followed by zero or more diacritics modifying it. This also
@@ -84,9 +84,9 @@ before it, for example in Sindarin mode.
 
 ## Examples
 
-- nelde (Quenya: three) `{nuumen}[e]{alda}[e]`
-- neled (Sindarin: three) `{nuumen}{lambe}[e]{ando}[e]`
-- river (english) `{roomen}{ampa}[i]{oore}[e]`
+- nelde (Quenya: three) `{nuumen}[acute]{alda}[acute]`
+- neled (Sindarin: three) `{nuumen}{lambe}[acute]{ando}[acute]`
+- river (english) `{roomen}{ampa}[dot-above]{oore}[acute]`
 
 ## Syntax
 

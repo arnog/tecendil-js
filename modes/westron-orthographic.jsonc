@@ -23,29 +23,29 @@
     // Vowels
     "a": "{vilya}",
     "e": "{yanta}",
-    "i": "{i-tengwa}[andaith]",
+    "i": "{telco}[acute]",
     "o": "{anna}",
     "u": "{vala}",
-    "y": "{long-carrier}",
+    "y": "{aara}",
 
     // Double vowels
     "aa": "{vilya}[tilde-below]",
     "ee": "{yanta}[tilde-below]", // seen
-    "ii": "{i-tengwa}[andaith][tilde-below]",
+    "ii": "{telco}[acute][tilde-below]",
     "oo": "{anna}[tilde-below]", // look
     "uu": "{vala}[tilde-below]", //vacuum
 
     // Following i/y
-    "ai": "{vilya}[double-dot]", //daisy
-    "ei": "{yanta}[double-dot]", // eight
-    "oi": "{anna}[double-dot]", // voice
-    "ui": "{vala}[double-dot]", // baranduin
+    "ai": "{vilya}[double-dot-above]", //daisy
+    "ei": "{yanta}[double-dot-above]", // eight
+    "oi": "{anna}[double-dot-above]", // voice
+    "ui": "{vala}[double-dot-above]", // baranduin
 
-    "ay": "{vilya}[double-dot]", //fray
-    "ey": "{yanta}[double-dot]", // key
+    "ay": "{vilya}[double-dot-above]", //fray
+    "ey": "{yanta}[double-dot-above]", // key
     // I think there are no words where y is semivowel in iy
-    "oy": "{anna}[double-dot]", // enjoy
-    "uy": "{vala}[double-dot]", // buyer
+    "oy": "{anna}[double-dot-above]", // enjoy
+    "uy": "{vala}[double-dot-above]", // buyer
 
     // Following u/w
     "au": "{vilya}[over-twist]", // daughter
@@ -53,7 +53,7 @@
 
     "aw": "{vilya}[over-twist]", // thaw
     "ew": "{yanta}[over-twist]", // slew
-    // "iw": "{i-tengwa}[andaith][over-twist]", // I think there are no words where w is semivowel in iw
+    // "iw": "{telco}[acute][over-twist]", // I think there are no words where w is semivowel in iw
     "ow": "{anna}[over-twist]", // sorrow
     // "uw$": "{vala}[over-twist]", // I think there are no words where w is semivowel in uw
 
@@ -62,12 +62,12 @@
     "c": "{quesse}",
     // /c/ pronounced as [s] uses silme-nuquerna, and this happens before e, i, y
     "ce": "{silme-nuquerna}{yanta}",
-    "ci": "{silme-nuquerna}{i-tengwa}[andaith]",
-    "cy": "{silme-nuquerna}{long-carrier}",
-    //"sci$": "{}{calma}{i-tengwa}[andaith]", // SI, e.g. "pesci"
-    //"cci$": "{}{calma}{i-tengwa}[andaith]", // CH, e.g. "gucci"
-    //"ci$": "{}{calma}{i-tengwa}[andaith]", // CH, e.g. "domenici" except S (ceci, medici, vinci) or K (loci)
-    //"cy$": "{}{silme-nuquerna}{long-carrier}", // "icy"
+    "ci": "{silme-nuquerna}{telco}[acute]",
+    "cy": "{silme-nuquerna}{aara}",
+    //"sci$": "{}{calma}{telco}[acute]", // SI, e.g. "pesci"
+    //"cci$": "{}{calma}{telco}[acute]", // CH, e.g. "gucci"
+    //"ci$": "{}{calma}{telco}[acute]", // CH, e.g. "domenici" except S (ceci, medici, vinci) or K (loci)
+    //"cy$": "{}{silme-nuquerna}{aara}", // "icy"
     "^mc": "{malta}{vilya}{quesse}", // "Mc" -> "mac"
     "ch": "{calma}",
     "d": "{ando}",
@@ -86,7 +86,7 @@
     "t": "{tinco}",
     "v": "{ampa}",
     "w": "{uure}",
-    "x": "{quesse}[x-curl]",
+    "x": "{quesse}[right-curl-below]",
     "z": "{esse}",
 
     // Doubled-consonants
@@ -109,8 +109,8 @@
     "ck": "{quesse}[bar-below]",
     "dh": "{anto}",
     "gh": "{unque}",
-    "th": "{suule}",
-    "sh": "{aha}",
+    "th": "{thuule}",
+    "sh": "{harma}",
     "ng$": "{nwalme}", // /ŋ/ sound only at the end
     "dw": "{ando}[over-twist]",
     "kw": "{quesse}[over-twist]",
@@ -130,49 +130,49 @@
     "nk": "{quesse}[tilde-above]",
     "ns": "{alt-silme}[tilde-above]",
     "nt": "{tinco}[tilde-above]",
-    "nth": "{suule}[tilde-above]",
+    "nth": "{thuule}[tilde-above]",
     "ndh": "{anto}[tilde-above]",
     // Special c as /s/ cases
     "nce": "{silme-nuquerna}[tilde-above]{yanta}",
     "nce$": "{silme-nuquerna}[tilde-above][dot-below]",
-    "nci": "{silme-nuquerna}[tilde-above]{i-tengwa}[andaith]",
-    "ncy": "{silme-nuquerna}[tilde-above]{long-carrier}",
+    "nci": "{silme-nuquerna}[tilde-above]{telco}[acute]",
+    "ncy": "{silme-nuquerna}[tilde-above]{aara}",
 
     // Final-s
     // After voiceless sounds (p, t, k, f, θ, h, ʃ) it is pronounced /s/, so sa-rince
     // After voiced sounds (m, n, ŋ, b, d, g, z, v, r, ð) it is pronounced /z/, so swash curl
     // After vowels (including silent e like ə or ɪ) it is pronounces /z/, so swash curl
     // Voiceless
-    "ps$": "{parma}[sa-rince]",
-    "ts$": "{tinco}[sa-rince]",
-    "cs$": "{quesse}[x-curl]",
-    "ks$": "{quesse}[x-curl]",
-    "nks$": "{quesse}[x-curl][tilde-above]",
-    "fs$": "{formen}[sa-rince]",
-    "ghs$": "{unque}[sa-rince]",
-    "shs$": "{aha}[sa-rince]",
-    "ths$": "{suule}[sa-rince]",
+    "ps$": "{parma}[hook]",
+    "ts$": "{tinco}[hook]",
+    "cs$": "{quesse}[right-curl-below]",
+    "ks$": "{quesse}[right-curl-below]",
+    "nks$": "{quesse}[right-curl-below][tilde-above]",
+    "fs$": "{formen}[hook]",
+    "ghs$": "{unque}[hook]",
+    "shs$": "{harma}[hook]",
+    "ths$": "{thuule}[hook]",
 
     // Voiced
-    "bs$": "{umbar}[swash-curl]",
-    "ds$": "{ando}[swash-curl]",
-    "gs$": "{ungwe}[x-curl]", // swash-curl looks horrible :c
-    "ls$": "{lambe}[lifted-curl]", // swash-curl looks horrible :c
-    "ms$": "{malta}[swash-curl]",
-    "ns$": "{nuumen}[swash-curl]",
-    "nds$": "{ando}[tilde-above][swash-curl]",
-    "ngs$": "{nwalme}[swash-curl]",
-    "rs$": "{oore}[swash-curl]",
-    "vs$": "{ampa}[swash-curl]",
-    "dhs$": "{anto}[swash-curl]",
+    "bs$": "{umbar}[swash-hook]",
+    "ds$": "{ando}[swash-hook]",
+    "gs$": "{ungwe}[right-curl-below]", // swash-hook looks horrible :c
+    "ls$": "{lambe}[lifted-hook]", // swash-hook looks horrible :c
+    "ms$": "{malta}[swash-hook]",
+    "ns$": "{nuumen}[swash-hook]",
+    "nds$": "{ando}[tilde-above][swash-hook]",
+    "ngs$": "{nwalme}[swash-hook]",
+    "rs$": "{oore}[swash-hook]",
+    "vs$": "{ampa}[swash-hook]",
+    "dhs$": "{anto}[swash-hook]",
 
     // After vowels
-    "ays$": "{vilya}[double-dot][swash-curl]",
-    "ees$": "{yanta}[bar-below][swash-curl]",
-    "ows$": "{anna}[over-twist][swash-curl]",
-    "oys$": "{anna}[double-dot][swash-curl]",
-    "res$": "{oore}[dot-below][swash-curl]",
-    //"ys$": "{long-carrier}[swash-curl]",
+    "ays$": "{vilya}[double-dot-above][swash-hook]",
+    "ees$": "{yanta}[bar-below][swash-hook]",
+    "ows$": "{anna}[over-twist][swash-hook]",
+    "oys$": "{anna}[double-dot-above][swash-hook]",
+    "res$": "{oore}[dot-below][swash-hook]",
+    //"ys$": "{aara}[swash-hook]",
 
     // Final silent "e"
     "be$": "{umbar}[dot-below]",
@@ -223,20 +223,20 @@
     "Arnor": "Arno{roomen}",
 
     // Common abbreviations
-    "and": "{and}",
-    "of": "{of}",
-    "the": "{the}",
-    "of the": "{ofthe}",
+    "and": "{and-shorthand}",
+    "of": "{of-shorthand}",
+    "the": "{the-shorthand}",
+    "ofthe": "{of-the-shorthand}",
     "or": "{anna}{roomen}", // attested
 
     // Short words
-    // "in": "{i-tengwa}[andaith][tilde-high]", // attested, but in the King's Letter it's used as {i-tengwa}{nuumen}
+    // "in": "{telco}[acute][tilde-high]", // attested, but in the King's Letter it's used as {telco}{nuumen}
     "an": "{vilya}[tilde-above]", // attested
     "on": "{anna}[tilde-above]", // attested
     "be": "{umbar}{yanta}", // non-silent final-e
     "he": "{hyarmen}{yanta}", // non-silent final-e
     "me": "{malta}{yanta}", // non-silent final-e
-    "she": "{aha}{yanta}", // non-silent final-e
+    "she": "{harma}{yanta}", // non-silent final-e
     "we": "{uure}{yanta}", // non-silent final-e
 
     // Some composed words that induce confusion (t+h is not th, silent e's, etc.)
@@ -412,7 +412,7 @@
     "eunuch": "eunu{quesse}[thinnas]",
     "harpsichord": "harpsi{quesse}[thinnas]ord",
     "headache": "head'ache", // it looks better in Telcontar in that order
-    "heartache": "heartache", // it looks better in Telcontar in that order
+    "heartache": "heart'ache", // it looks better in Telcontar in that order
     "hematochezia": "hemato{quesse}[thinnas]ezia",
     "hierarch": "hierar{quesse}[thinnas]",
     "hierarchic": "hierar{quesse}[thinnas]ic",
@@ -575,7 +575,7 @@
     "zucchini": "zuc{quesse}[thinnas]ini",
 
     // These words have a voiced th, so they must be written with anto, not suule. I changed those th for dh.
-    // There are two words that vave two or more th: thenceforth and thither.
+    // There are two words that have two or more th: thenceforth and thither.
     // Thenceforth: first th is anto, second is suule
     // Thither: both th are anto.
     "airworthiness": "airwordhiness",
@@ -1076,19 +1076,19 @@
     "loch": "lo{hwesta}",
 
     // Sindarin words with [ce] that are pronounced /k/ rather than /s/
-    "Celebdil": "{quesse}elebdil",
-    "Celebros": "{quesse}elebros",
-    "Celegorm": "{quesse}elegorm",
-    "Celebrían": "{quesse}elebrian",
-    "Celebrian": "{quesse}elebrian",
-    "Celecormë": "{quesse}elecormë",
-    "Celecorme": "{quesse}elecorme",
-    "Celeborn": "{quesse}eleborn",
-    "Celepharn": "{quesse}elepharn",
-    "Celebrimbor": "{quesse}elebrimbor",
-    "Celebrindor": "{quesse}elebrindor",
-    "Celebrindal": "{quesse}elebrindal",
-    "Celerdain": "{quesse}elerdain",
-    "Celebrant": "{quesse}elebrant"
+    "Celebdil": "{QUESSE}elebdil",
+    "Celebros": "{QUESSE}elebros",
+    "Celegorm": "{QUESSE}elegorm",
+    "Celebrían": "{QUESSE}elebrian",
+    "Celebrian": "{QUESSE}elebrian",
+    "Celecormë": "{QUESSE}elecormë",
+    "Celecorme": "{QUESSE}elecorme",
+    "Celeborn": "{QUESSE}eleborn",
+    "Celepharn": "{QUESSE}elepharn",
+    "Celebrimbor": "{QUESSE}elebrimbor",
+    "Celebrindor": "{QUESSE}elebrindor",
+    "Celebrindal": "{QUESSE}elebrindal",
+    "Celerdain": "{QUESSE}elerdain",
+    "Celebrant": "{QUESSE}elebrant"
   }
 }

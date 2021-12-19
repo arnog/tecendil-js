@@ -118,46 +118,46 @@ fire sour door
   "map": {
     // tenwar (glyphs that can be modified by a diacritic) are in {}
     // tehtar (diacritics) are in []
-    "aa0": "[a]",
-    "aa1": "[a]",
-    "aa1'r": "[a]{roomen}",
-    "aa2": "[a]",
+    "aa0": "[triple-dot-above]",
+    "aa1": "[triple-dot-above]",
+    "aa1'r": "[triple-dot-above]{roomen}",
+    "aa2": "[triple-dot-above]",
     //
     /*  According to http://at.mansbjorkman.net/teng_general_english.htm, the signs for AE are ommited
 	"The samples indicate that short, unstressed vowels may sometimes be disregarded."
-	"ae0":	"[reverse-triple-dot]",
+	"ae0":	"[reversed-triple-dot-above]",
 
-	"ae1":	"[reverse-triple-dot]",
-	"ae2":	"[reverse-triple-dot]",				// Long-a
+	"ae1":	"[reversed-triple-dot-above]",
+	"ae2":	"[reversed-triple-dot-above]",				// Long-a
 */
-    "ae0": "[reverse-triple-dot]",
-    "ae1": "[reverse-triple-dot]",
-    "ae2": "[reverse-triple-dot]", // The reversed a-tehta is attested for the English /æ/ in both attested phonemic English tehtar “texts” (DTS 39 and DTS 41, both consisting rather of a few doodles than any real text)
+    "ae0": "[reversed-triple-dot-above]",
+    "ae1": "[reversed-triple-dot-above]",
+    "ae2": "[reversed-triple-dot-above]", // The reversed a-tehta is attested for the English /æ/ in both attested phonemic English tehtar “texts” (DTS 39 and DTS 41, both consisting rather of a few doodles than any real text)
 
-    "ah0$": "[dot-below]{short-carrier}", // Schwa
+    "ah0$": "[dot-below]{telco}", // Schwa
     "ah0": "[dot-below-after]", // Schwa (could it be triple-dot below?)
-    "ah1$": "[dot-below]{short-carrier}",
+    "ah1$": "[dot-below]{telco}",
     "ah1": "[dot-below-after]",
     // 	"ah1"n":	"[dot-below]{nuumen}",
     "ah2": "[dot-below-after]",
-    "ah2$": "[dot-below]{short-carrier}",
-    "ao0": "[o]{long-carrier}",
-    "ao1": "[o]{long-carrier}",
-    "ao2": "[o]{long-carrier}",
+    "ah2$": "[dot-below]{telco}",
+    "ao0": "[right-curl]{aara}",
+    "ao1": "[right-curl]{aara}",
+    "ao2": "[right-curl]{aara}",
 
-    "uw0'iy0": "[u]{long-carrier}[i]{long-carrier}", // Sinewy
-    "uw0'iy1": "[u]{long-carrier}[i]{long-carrier}", // Louis
-    "uw0'iy2": "[u]{long-carrier}[i]{long-carrier}", // Louisiana
-    "uw1'iy0": "[u]{long-carrier}[i]{long-carrier}", // Gooey
-    "uw2'iy0": "[u]{long-carrier}[i]{long-carrier}", // Vanderkooi
-    "uw2'iy1": "[u]{long-carrier}[i]{long-carrier}", // Yuichi
+    "uw0'iy0": "[left-curl]{aara}[dot-above]{aara}", // Sinewy
+    "uw0'iy1": "[left-curl]{aara}[dot-above]{aara}", // Louis
+    "uw0'iy2": "[left-curl]{aara}[dot-above]{aara}", // Louisiana
+    "uw1'iy0": "[left-curl]{aara}[dot-above]{aara}", // Gooey
+    "uw2'iy0": "[left-curl]{aara}[dot-above]{aara}", // Vanderkooi
+    "uw2'iy1": "[left-curl]{aara}[dot-above]{aara}", // Yuichi
 
-    "aw0": "[a]{vala}",
-    "aw1": "[a]{vala}",
-    "aw2": "[a]{vala}",
-    "ay0": "[a]{anna}",
-    "ay1": "[a]{anna}",
-    "ay2": "[a]{anna}",
+    "aw0": "[triple-dot-above]{vala}",
+    "aw1": "[triple-dot-above]{vala}",
+    "aw2": "[triple-dot-above]{vala}",
+    "ay0": "[triple-dot-above]{anna}",
+    "ay1": "[triple-dot-above]{anna}",
+    "ay2": "[triple-dot-above]{anna}",
     "b": "{umbar}",
     "b'y": "{umbar}{anna}",
     "ch": "{calma}",
@@ -165,37 +165,37 @@ fire sour door
     "d'y": "{ando}{anna}",
     "d'w": "[over-twist]{ando}",
     "dh": "{anto}",
-    "eh0": "[e]",
-    "eh1": "[e]",
-    "eh2": "[e]",
+    "eh0": "[acute]",
+    "eh1": "[acute]",
+    "eh2": "[acute]",
     "er0": "[grave]{roomen}", //
     "er0$": "[dot-below]{oore}", //	oore as per VT#23 p16
     "er1$": "[dot-below]{oore}", //
     "er2$": "[dot-below]{oore}", //
     "er1": "[dot-below]{oore}",
     "er2": "[dot-below]{oore}",
-    "ey0": "[andaith]{anna}", // [a]
-    "ey1": "[andaith]{anna}", // [a]
-    "ey2": "[andaith]{anna}", // [a]
-    "ey2$": "[a]{long-carrier}", // [a]
+    "ey0": "[acute]{anna}", // [triple-dot-above]
+    "ey1": "[acute]{anna}", // [triple-dot-above]
+    "ey2": "[acute]{anna}", // [triple-dot-above]
+    "ey2$": "[triple-dot-above]{aara}", // [triple-dot-above]
     "f": "{formen}",
     "f'y": "{formen}{anna}",
     "f'w": "[over-twist]{formen}",
     "g": "{ungwe}",
     "g'w": "[over-twist]{ungwe}",
     "g'y": "{ungwe}{anna}",
-    "g'z": "[x-curl]{ungwe}",
+    "g'z": "[right-curl-below]{ungwe}",
     "hh": "{hyarmen}",
-    "ih0": "[i]",
-    "ih1": "[i]",
-    "ih2": "[i]",
-    "iy0": "[i]{long-carrier}", //	long-i
-    "iy1": "[i]{long-carrier}",
-    "iy2": "[i]{long-carrier}",
+    "ih0": "[dot-above]",
+    "ih1": "[dot-above]",
+    "ih2": "[dot-above]",
+    "iy0": "[dot-above]{aara}", //	long-i
+    "iy1": "[dot-above]{aara}",
+    "iy2": "[dot-above]{aara}",
     "jh": "{anga}",
     "k": "{quesse}",
-    "k'sh": "{quesse}{aha}",
-    "k's": "[x-curl]{quesse}",
+    "k'sh": "{quesse}{harma}",
+    "k's": "[right-curl-below]{quesse}",
     "k'w": "[over-twist]{quesse}",
     "k'y": "{quesse}{anna}",
     "l": "{lambe}",
@@ -214,42 +214,42 @@ fire sour door
     "n'd": "[tilde-above]{ando}",
     "n't": "[tilde-above]{tinco}",
     "n's$": "[left-following-silme]{nuumen}",
-    "n'sh": "[bar-above]{aha}",
+    "n'sh": "[bar-above]{harma}",
     "n'zh": "[bar-above]{anca}",
     "ng": "{nwalme}",
     "ng'g": "[tilde-above]{ungwe}",
     "ng'k": "[tilde-above]{ungwe}",
-    "ow0": "[o]{vala}",
-    "ow1": "[o]{vala}",
-    "ow2": "[o]{vala}",
-    "oy0": "[o]{anna}",
-    "oy1": "[o]{anna}",
-    "oy2": "[o]{anna}",
+    "ow0": "[right-curl]{vala}",
+    "ow1": "[right-curl]{vala}",
+    "ow2": "[right-curl]{vala}",
+    "oy0": "[right-curl]{anna}",
+    "oy1": "[right-curl]{anna}",
+    "oy2": "[right-curl]{anna}",
     "p": "{parma}",
     "p'w": "[over-twist]{parma}",
     "p'y": "{parma}{anna}",
     "r": "{roomen}", // {oore}
     "s": "{alt-silme}",
     // 	"ah0"s":	"{silme}",
-    "sh": "{aha}",
+    "sh": "{harma}",
     // 	"ah0"t": "{tinco}",				// Schwa (could it be triple-dot below?)
     "t": "{tinco}",
     "t'w": "[over-twist]{tinco}",
     "t'y": "{tinco}{anna}",
-    "th": "{suule}",
-    "uh0": "[u]", // oo in foot, tour
-    "uh1": "[u]", // oo in foot, tour
-    "uh2": "[u]", // oo in foot, tour
-    "uw0": "[double-u]", // "oo"	in value
-    "uw0$": "[u]{long-carrier}", // "oo"	in value
-    "uw1": "[double-u]", // "oo"	in true
-    "uw1$": "[u]{long-carrier}", // "oo"	in value
-    "uw2": "[double-u]", // "oo"	in true
-    "uw2$": "[u]{long-carrier}", // "oo"	in value
+    "th": "{thuule}",
+    "uh0": "[left-curl]", // oo in foot, tour
+    "uh1": "[left-curl]", // oo in foot, tour
+    "uh2": "[left-curl]", // oo in foot, tour
+    "uw0": "[double-left-curl]", // "oo"	in value
+    "uw0$": "[left-curl]{aara}", // "oo"	in value
+    "uw1": "[double-left-curl]", // "oo"	in true
+    "uw1$": "[left-curl]{aara}", // "oo"	in value
+    "uw2": "[double-left-curl]", // "oo"	in true
+    "uw2$": "[left-curl]{aara}", // "oo"	in value
     "v": "{ampa}",
     "v'y": "{ampa}{anna}",
     "w": "{vala}",
-    "x": "[x-curl]{calma}",
+    "x": "[right-curl-below]{calma}",
     "y": "[double-dot-below]",
     "^y": "{anna}",
     "z": "{esse}",
@@ -257,19 +257,19 @@ fire sour door
   },
 
   "words": {
-    "ofthe": "{ofthe}",
-    "of": "{of}",
-    "the": "{the}",
-    "and": "{and}",
+    "ofthe": "{of-the-shorthand}",
+    "of": "{of-shorthand}",
+    "the": "{the-shorthand}",
+    "and": "{and-shorthand}",
 
-    "loch": "{lambe}{hwesta}[o]",
-    "what": "{hwesta-sindarinwa}{tinco}[o]",
-    "when": "{hwesta-sindarinwa}{nuumen}[e]",
-    "where": "{hwesta-sindarinwa}{roomen}[e]",
-    "who": "{hwesta-sindarinwa}{long-carrier}[u]",
-    "which": "{hwesta-sindarinwa}{calma}[i]",
+    "loch": "{lambe}{hwesta}[right-curl]",
+    "what": "{hwesta-sindarinwa}{tinco}[right-curl]",
+    "when": "{hwesta-sindarinwa}{nuumen}[acute]",
+    "where": "{hwesta-sindarinwa}{roomen}[acute]",
+    "who": "{hwesta-sindarinwa}{aara}[left-curl]",
+    "which": "{hwesta-sindarinwa}{calma}[dot-above]",
     "for": "{formen}{roomen}" //  In DTS 39 the o in "for" is ignored
 
-    //	"sofa":				"{silme}{vala}[o]{formen}[dot-below]",
+    //	"sofa":				"{silme}{vala}[right-curl]{formen}[dot-below]",
   }
 }
