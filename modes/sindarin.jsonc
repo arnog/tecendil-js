@@ -100,6 +100,8 @@
 
     // Initial i + vowel is a consonantal y written with yanta
     "^ia": "{yanta}[triple-dot-above]", // "iant" (bridge)
+    "^iau": "{yanta}[triple-dot-above]{vala}", // ... but not if followed by a vowel
+    "^iai": "{yanta}[triple-dot-above]{anna}", // ... but not if followed by a vowel
     "^ie": "{yanta}[acute]", // "ier" (as)
     "^io": "{yanta}[right-curl]", // "ion" (son)
     "^iu": "{yanta}[left-curl]", // "iuith" (use)
@@ -182,6 +184,7 @@
     "ñg": "[bar-above]{ungwe}",
     "ñd": "[bar-above]{ando}",
     "ñb": "[bar-above]{umbar}",
+    "ñ": "{nwalme}",
     "ŋg": "[bar-above]{ungwe}",
     "ŋd": "[bar-above]{ando}",
     "ŋb": "[bar-above]{umbar}",
@@ -231,16 +234,18 @@
     // 	"ngw":		"{ungwe}",
 
     // Geminated
-    // Only ss, ll, mm and nn found in Sindarin
+    // Only ss, mm, nn, ll and rr (Rohirrim) found in Sindarin
     "ss": "{esse-nuquerna}",
-    "ll": "[bar-inside]{lambe}",
     "mm": "[bar-above]{malta}", // "raMMas" (great wall)
-    "nn": "[bar-above]{nuumen}" // "eNNyn" (doors), "eNNa" (there), "peNNas" (history)
+    "nn": "[bar-above]{nuumen}", // "eNNyn" (doors), "eNNa" (there), "peNNas" (history)
+    "ll": "{lambe}{lambe}" // thaLL
   },
 
   "words": {
-    // "panthael" -> "pan"thael"
-    "panthael": "{parma}{tinco}[bar-above][triple-dot-above]{hyarmen}{yanta}[triple-dot-above]{lambe}",
+    // "panthael" -> "pant'hael"
+    // "panthael": "{parma}{tinco}[bar-above][triple-dot-above]{hyarmen}{yanta}[triple-dot-above]{lambe}",
+    "panthael": "pant'hael",
+    "lanthir": "lant'hir",
 
     // Sometimes "oe" is pronounced as a diphthongs "ö"
     "arnoediad": "{roomen}[triple-dot-above]{nuumen}{ando}[acute]{telco}[dot-above]{ando}[triple-dot-above]"

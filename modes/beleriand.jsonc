@@ -70,6 +70,11 @@
     "mp": "{parma}[bar-above]",
     "mb": "{umbar}[bar-above]",
     "nc": "{quesse}[bar-above]",
+    "nth": "{suule}[bar-above]",
+    "ñg": "{ungwe}[bar-above]",
+    "ñd": "{ando}[bar-above]",
+    "ñb": "{umbar}[bar-above]",
+    "ñ": "{nwalme}",
 
     //
     // Labialized
@@ -93,6 +98,7 @@
   },
 
   "words": {
-    "ashnazgdurbatulûk": "[triple-dot-above]{harma}{nuumen}[triple-dot-above]{esse-nuquerna}{ungwe}{ando}[left-curl]{oore}{umbar}[triple-dot-above]{tinco}[left-curl]{lambe}[left-curl]{aara}{quesse}"
+    "panthael": "pan{tinco}[bar-above]{hyarmen}ael",
+    "lanthir": "la{tinco}[bar-above]{hyarmen}ir"
   }
 }
