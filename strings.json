@@ -62,11 +62,11 @@
 
     "button.patron": "Become a Patron!",
     "welcome": "Welcome to Tecendil",
-    "welcome.1": "Hello! My name's Arno.",
+    "welcome.1": "Hello! My name’s Arno.",
     "welcome.2": "I love the beautiful Tengwar script created by Tolkien for the world of <i>Lord of the Rings</i>.",
     "welcome.3": "Perhaps you do too, or perhaps you're looking for inspiration for your next tattoo?",
     "welcome.4": "Type a sentence or name and see it transcribed into Tengwar.",
-    "welcome.5": "Note the text is not <i>translated</i>, it is simply written using the Tengwar characters.",
+    "welcome.5": "Note the text is <b>not translated</b>, it is simply written using the Tengwar characters.",
     "welcome.6": "For a correct transcription, select the appropriate language in the <i>Mode</i> menu: English, Italian, Spanish, Quenya or Sindarin. If you're interested in support for other languages, contact me.",
     "label.source-eldamo": "Source: <a href=\"https://eldamo.org\">Eldamo</a>",
 
@@ -142,11 +142,11 @@
     "button.patron": "Werden Sie Schirmherr!",
     "welcome": "Willkommen bei Tecendil",
     "welcome.1": "Hallo! Ich heiße Arno.",
-    "welcome.2": "Ich liebe das wunderschöne Tengwar-Drehbuch, das Tolkien für die Welt von „Herr der Ringe“ geschrieben hat.",
-    "welcome.3": "Vielleicht auch oder suchen Sie Inspiration für Ihr nächstes Tattoo?",
-    "welcome.4": "Geben Sie einen Satz oder Namen ein und sehen Sie, wie er in Tengwar transkribiert wird.",
-    "welcome.5": "Beachten Sie, dass der Text nicht <i> übersetzt </i> ist. Er wird einfach mit den Tengwar-Zeichen geschrieben.",
-    "welcome.6": "Damit die Transkription korrekt ist, müssen Sie im Menü <i>Modus</i> die entsprechende Sprache auswählen: Englisch, Spanisch, Italianish, Quenya oder Sindarin. Wenn Sie an Unterstützung für andere Sprachen interessiert sind, kontaktieren Sie mich",
+    "welcome.2": "Ich liebe die wunderschöne Tengwar-Schrift, die Tolkien für den <i>Herrn der Ringe</i> erfunden hat.",
+    "welcome.3": "Du vielleicht auch, oder Du suchst nach einer Inspiration für Dein nächstes Tattoo?",
+    "welcome.4": "Gib einen Satz oder Namen ein um ihn in Tengwar zu transkribieren.",
+    "welcome.5": "Beachte, dass der Text <b>nicht übersetzt</b>, sondern nur mit Tengwar-Zeichen geschrieben wird.",
+    "welcome.6": "Um eine korrekte Transkription zu erhalten, muss im Menü Modus die richtige Sprache ausgewählt werden: Englisch, Spanisch, Italienisch, Quenya oder Sindarin. Wenn Du Unterstützung für andere Sprachen brauchst, kontaktiere mich unter",
 
     "dialog-title.settings": "Einstellungen",
     "button.close": "Schließen",
@@ -218,7 +218,7 @@
     "welcome.2": "Me encanta la maravillosa la escritura Tengwar de Tolkien para el mundo de <i>El Señor de los Anillos</i>.",
     "welcome.3": "Tal vez usted también, o tal vez está buscando inspiración para su próximo tatuaje?",
     "welcome.4": "Grabe una frase o nombre y véala transcrita en Tengwar",
-    "welcome.5": "Tenga en cuenta que el texto no está <i> traducido </i>, simplemente se escribe usando los caracteres Tengwar.",
+    "welcome.5": "Tenga en cuenta que el texto <b>no está traducido </b>, simplemente se escribe usando los caracteres Tengwar.",
     "welcome.6": "Para que la transcripción sea correcta, debe seleccionar el idioma apropiado en el menú <i> Modo </i>:  español, italiano, inglés, quenya o sindarin. Si estás interesado en apoyar otros idiomas, contáctame..",
 
     "dialog-title.settings": "Ajustes",
@@ -292,7 +292,7 @@
     "welcome.2": "J'adore le merveilleux script Tengwar créé par Tolkien pour le monde du <i> Seigneur des Anneaux </i>.",
     "welcome.3": "Peut-être que toi aussi, ou peut-être es-tu à la recherche d'inspiration pour ton prochain tatouage ?",
     "welcome.4": "Tape une phrase ou un nom et vois-le transcrit en Tengwar",
-    "welcome.5": "Note que le texte n'est pas <i> traduit </i>, il est simplement écrit en utilisant les caractères Tengwar.",
+    "welcome.5": "Note que le texte <b>n'est pas traduit </b>, il est simplement écrit en utilisant les caractères Tengwar.",
     "welcome.6": "Pour que la transcription soit correcte, sélectionne la langue appropriée dans le menu <i> Mode </i>: anglais, espagnol, italien, quenya ou sindarin. Malheureusement, le francais n'est pas supporté pour l'instant. Si tu es intéressé à supporter d'autres langues, contacte moi.",
 
     "dialog-title.settings": "Réglages",
@@ -363,7 +363,7 @@
     "welcome.2": "Amo la meravigliosa scrittura Tengwar creata da Tolkien per l'universo de <i>Il Signore degli Anelli</i>.",
     "welcome.3": "Forse anche tu, o forse stai cercando ispirazione per il tuo prossimo tatuaggio?",
     "welcome.4": "Scrivi una frase o un nome e guardalo trascritto in Tengwar",
-    "welcome.5": "Tieni presente che il testo non è <i>tradotto</i>, ma è semplicemente scritto usando i caratteri Tengwar.",
+    "welcome.5": "Tieni presente che il testo <b>non è tradotto</b>, ma è semplicemente scritto usando i caratteri Tengwar.",
     "welcome.6": "Affinché la trascrizione sia corretta, è necessario selezionare la lingua appropriata nel menù <i>Modalità</i>: italiano, inglese, spagnolo, Quenya o Sindarin. Se sei interessato a supportare altre lingue, contattami.",
 
     "label.wikipedia.intro": "Esercitati a leggere Tengwar con questo articolo su  “",

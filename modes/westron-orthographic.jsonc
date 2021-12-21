@@ -1070,7 +1070,7 @@
     "youths": "youdhs",
     "zither": "zidher",
 
-    // Marginal words where a ch is /x/. u/jakoboss suggests using hwesta, that is used in the Westron phonemic mode
+    // Marginal words where a ch is /x/. /u/jakoboss suggests using hwesta, that is used in the Westron phonemic mode
     "bach": "ba{hwesta}",
     "chanukah": "{hwesta}anukah",
     "loch": "lo{hwesta}",
