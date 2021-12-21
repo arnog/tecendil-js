@@ -238,7 +238,8 @@
     "ss": "{esse-nuquerna}",
     "mm": "[bar-above]{malta}", // "raMMas" (great wall)
     "nn": "[bar-above]{nuumen}", // "eNNyn" (doors), "eNNa" (there), "peNNas" (history)
-    "ll": "{lambe}{lambe}" // thaLL
+    "ll": "[bar-inside]{lambe}", // thaLL
+    "rr": "[bar-below]{roomen}"
   },
 
   "words": {
