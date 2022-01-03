@@ -192,7 +192,8 @@
     "dh": "{anto}",
     "sh": "{harma}", // aka harma
     "zh": "{anca}", // for /zh/ sound, as in "azure"
-    "gh": "{extended-ungwe}", // Purely ortographic (e.g. "hugh"
+    "gh": "{unque}", // when pronounced /g/
+    "gh$": "{extended-ungwe}", // when silent, purely ortographic, e.g. "hugh"
     //        "ny":	"{noldo}",		// Only used for phonemic spelling (new, canyon)
 
     // "aly$": "[triple-dot-above]{lambe}[breve]{telco}",
@@ -593,7 +594,7 @@
     "thames": "{extended-tinco}ames", // "th" pronounced /t/ uses extended tinco
     "thing": "th'ing",
     "things": "{thuule}{nwalme}[dot-above][hook]",
-    "this": "{anto}[dot-above][silme]",
+    "this": "{anto}{silme}[dot-above]",
     "than": "{anto}{nuumen}[triple-dot-above]",
     "that": "{anto}{tinco}[triple-dot-above]",
     "thee": "{anto}{telco}[acute]{telco}[acute]",
@@ -611,7 +612,7 @@
     "those": "{anto}{esse-nuquerna}[right-curl][dot-below]",
     "thou": "{anto}{vala}[right-curl]",
     "thomas": "{extended-tinco}oma{silme}", // "th" pronounced /t/ uses extended tinco
-    "though": "{anto}{vala}[right-curl]{unque}",
+    "though": "{anto}{vala}[right-curl]{extended-ungwe}",
     "thus": "{anto}{silme}[left-curl]",
     "thy": "{anto}{telco}[breve]",
     "thyme": "{extended-tinco}yme", // "th" pronounced /t/ uses extended tinco
