@@ -11,7 +11,7 @@
     "menu.install": "Install",
     "menu.settings": "Settings",
 
-    "footer.font-credits": "<b>Fonts</b> Tengwar Annatar and Tengwar Telcontar by Johan Winge, Parmaite Tengwar and Tengwar Eldamar by M&aring;ns Bj&ouml;rkman, Tengwar Formal by the <a href=\"http://freetengwar.sourceforge.net/\">Free Tengwar Font Project</a>. Some fonts adapted for the web by Ben Talagan Babut of the Glaemscribe project.",
+    "footer.font-credits": "<b>Fonts</b> Tengwar Annatar and Tengwar Telcontar by Johan Winge, Parmaite Tengwar and Tengwar Eldamar by M&aring;ns Bj&ouml;rkman, Tengwar Formal by the <a href=\"http://freetengwar.sourceforge.net/\">Free Tengwar Font Project</a>. Alcarin by Toshi Omagari. Some fonts adapted for the web by Ben Talagan Babut of the Glaemscribe project.",
     "footer.contact": "Got a question? Have some feedback? Want to check a transcription? Just ask ",
     "footer.support-intro": "Enjoying Tecendil?",
     "footer.patreon": "Support me on Patreon",
