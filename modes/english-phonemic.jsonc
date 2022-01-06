@@ -135,11 +135,11 @@ fire sour door
     "ae2": "[reversed-triple-dot-above]", // The reversed a-tehta is attested for the English /æ/ in both attested phonemic English tehtar “texts” (DTS 39 and DTS 41, both consisting rather of a few doodles than any real text)
 
     "ah0$": "[dot-below]{telco}", // Schwa
-    "ah0": "[dot-below-after]", // Schwa (could it be triple-dot below?)
+    "ah0": "[dot-below]", // Schwa (could it be triple-dot below?)
     "ah1$": "[dot-below]{telco}",
-    "ah1": "[dot-below-after]",
+    "ah1": "[dot-below]",
     // 	"ah1"n":	"[dot-below]{nuumen}",
-    "ah2": "[dot-below-after]",
+    "ah2": "[dot-below]",
     "ah2$": "[dot-below]{telco}",
     "ao0": "[right-curl]{aara}",
     "ao1": "[right-curl]{aara}",
