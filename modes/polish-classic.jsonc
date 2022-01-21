@@ -1,0 +1,210 @@
+// -----------------------------------------------------------------------------
+//
+// POLISH MODE as described by Ryszard 'Galadhorn' Derdziński
+// Minor/optional rules for Tecendil added by Andrzej Zielinski
+//
+// -----------------------------------------------------------------------------
+
+{
+      // Short-name
+    "name": "Polish: Classic",
+    "languageCode": "pl", // Polish
+
+    "normalizeVowels": false,
+
+    "suppressIntrawordDash": true,
+
+    "tehtarFollow": false,
+    "preprocess": {
+    // Expand ae/oe ligatures (rare, but used by Tolking in The Etymologies e.g. for glaer)
+    "œ": "oe",
+    "æ": "ae",
+
+    // Disambiguate "qu" -> "q"
+    // "qu": "q",
+
+    // Disambiguate "ó" -> "u"
+    "ó": "u",
+
+    // Disambiguate
+    "ch": "h",
+    "rz": "ż",
+    // "zi": "źi",
+    // "si": "śi",
+    // "ci": "ći",
+    // "dzi": "dźi",
+    // "ni": "ńi",
+
+    // Denasalisation of ę and ą:
+    "ęl": "el",
+    "ęł": "eł",
+    "ąl": "ol",
+    "ął": "oł",
+    
+    // [minor] nasalization of combined vowels
+    "au": "ał",
+    "ou": "oł",
+    
+    // [optional] consonalised 'y' with other vowels
+    "oy": "oj",
+    "ay": "aj",
+    "ey": "ej",
+    "iy": "ij",
+    "uy": "uj",
+    "ęy": "ęj",
+    "ąy": "ąj",
+
+    // [minor] X is not a letter in polish, but 
+    //is somtimes used nontheless.
+    "x": "ks",
+
+    // [minor] Regressive de-voicing
+    "wc": "fc",
+    "wk": "fk",
+    "dk": "tk",
+
+    "-": " ",
+    "/(\\w)\\.(\\w)/": "$1·$2",
+    "/, /": " , ",
+    "/\\./": " ."
+  },
+
+  "map": {
+    // ----------------------------------------------------------------------------
+    //
+    // VOWELS
+    //
+    // ----------------------------------------------------------------------------
+
+    // Polish soft phones
+    "ź": "{anca}[dot-below]",
+    "ś": "{harma}[dot-below]",
+    "ć": "{calma}[dot-below]",
+    "dź": "{anto}[dot-below]",
+    "ń": "{nuumen}[dot-below]",
+
+    "zi": "{anca}[dot-above]",
+    "si": "{harma}[dot-above]",
+    "ci": "{calma}[dot-above]",
+
+    // [optional] Double volwels
+    "ia": "[dot-below][triple-dot-above]",
+    "ie": "[dot-below][acute]",
+    "ii": "[dot-below][dot-above]",
+    "io": "[dot-below][right-curl]",
+    "iu": "[dot-below][left-curl]",
+    "ię": "[dot-below][double-acute]",
+    "ią": "[dot-below][double-right-curl]",
+
+    // [optional] Double volwels with ć
+    "cia": "{calma}[dot-below][triple-dot-above]",
+    "cie": "{calma}[dot-below][acute]",
+    "cii": "{calma}[dot-below][dot-above]",
+    "cio": "{calma}[dot-below][right-curl]",
+    "ciu": "{calma}[dot-below][left-curl]",
+    "cię": "{calma}[dot-below][double-acute]",
+    "cią": "{calma}[dot-below][double-right-curl]",
+
+    // [optional] Double volwels with ś
+    "sia": "{harma}[dot-below][triple-dot-above]",
+    "sie": "{harma}[dot-below][acute]",
+    "sii": "{harma}[dot-below][dot-above]",
+    "sio": "{harma}[dot-below][right-curl]",
+    "siu": "{harma}[dot-below][left-curl]",
+    "się": "{harma}[dot-below][double-acute]",
+    "sią": "{harma}[dot-below][double-right-curl]",
+
+    // [optional] Double volwels with ś
+    "zia": "{anca}[dot-below][triple-dot-above]",
+    "zie": "{anca}[dot-below][acute]",
+    "zii": "{anca}[dot-below][dot-above]",
+    "zio": "{anca}[dot-below][right-curl]",
+    "ziu": "{anca}[dot-below][left-curl]",
+    "zię": "{anca}[dot-below][double-acute]",
+    "zią": "{anca}[dot-below][double-right-curl]",
+     
+  
+    // Polish vowels ę and ą have a ton of contextual phonemic rules (removed)
+    // There's no exact match for the sound of those vowel in tengwar    
+    "ą": "[double-right-curl]",
+    "ę": "[double-acute]",
+
+    // [minor] disambiguation of ą/ę and oo/ee ooo/eee
+    "ee": "[acute]{telco}[acute]",
+    "eee": "[acute]{telco}[acute]{telco}[acute]",
+    "oo": "[right-curl]{telco}[right-curl]",
+    "ooo": "[right-curl]{telco}[right-curl]{telco}[right-curl]",
+
+
+    // //
+    // Consonants
+    //
+
+    // Core + optional double-consonants
+    "b": "{umbar}",    
+    "bb": "{umbar}[bar-below]",    
+    // c is never 'k', always c (ts)
+    "c": "{thuule}",
+    "d": "{ando}",
+    "dd": "{ando}[bar-below]",
+    "f": "{formen}",
+    "g": "{ungwe}",
+    "gg": "{ungwe}[bar-below]",
+    "h": "{hyarmen}",
+    "k": "{quesse}",
+    "kk": "{quesse}[bar-below]",
+    // J is never {anca}, most of the time it's {anna}
+    "j": "{anna}",
+    "l": "{lambe}",
+    "ll": "{lambe}[bar-below]",
+    "ł": "{vala}",
+    "łł": "{vala}[bar-below]",
+    "m": "{malta}",
+    "mm": "{malta}[bar-below]",
+    "n": "{nuumen}",
+    "nn": "{nuumen}[bar-below]",
+    "p": "{parma}",
+    "pp": "{parma}[bar-below]",
+    "r": "{roomen}",
+    "rr": "{roomen}[bar-below]",
+    "s": "{silme}",
+    "ss": "{silme}[bar-below]",
+    "t": "{tinco}",
+    "tt": "{tinco}[bar-below]",
+    "w": "{ampa}",
+    "ww": "{ampa}[bar-below]",
+    "v": "{ampa}",
+    "vv": "{ampa}[bar-below]",
+    "z": "{esse-nuquerna}",
+    "zz": "{esse-nuquerna}",
+
+     // polish hard phones
+    "ż": "{anca}",
+    "sz": "{harma}",
+    "cz": "{calma}",
+    "dż": "{anga}",
+    "dz": "{anto}",
+
+    // [optional] hard phones and i (these cannot be softened; not used except phonetic transcription of foreign words, but still adding for disambiguation)
+    "żi": "{anca}{telco}[dot-above]",
+    "szi": "{harma}{telco}[dot-above]",
+    "czi": "{calma}{telco}[dot-above]",
+    "dżi": "{anga}{telco}[dot-above]",
+
+    // [minor] eliminating english stuff
+    "zh": "{esse}{hyarmen}",
+    "qu": "{quesse}{vala}",
+    
+    // // [optional] common polish suffix abbreviation
+    "szcz": "{extended-anga}",
+    "ść": "{extended-anga}[dot-below]" ,
+    // // [optional] behavior of the abbreviation with other vowels
+    "ści" : "{extended-anga}[dot-below][dot-above]",
+    "ście" : "{extended-anga}[dot-below][acute]",
+    "ścię" : "{extended-anga}[dot-below][double-acute]",
+    "ściu" : "{extended-anga}[dot-below][left-curl]",
+    "ścia" : "{extended-anga}[dot-below][triple-dot-above]",
+    "ścio" : "{extended-anga}[dot-below][right-curl]",
+    "ścią" : "{extended-anga}[dot-below][double-right-curl]"
+    }
+}
