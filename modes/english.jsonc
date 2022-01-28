@@ -26,7 +26,20 @@
     "ĵ": "zh",
     "ŝ": "sh",
     "ŭ": "w",
-    "s*": "ç"
+    "s*": "ç",
+    // Special "kx" combination for extended-quesse
+    "archi": "arkxi", // Greek archeion: official building, official documents
+    "archeo": "arkxeo", // Greek archaios: ancien
+    "archaeo": "arkxeo", // Greek archaios: ancien
+    "alchem": "alkxem", // Arabic al-kīmiyāʼ: art of transmuting metals
+    "charac": "kxarac", // Greek charasein: to scratch, engrave
+    "chol": "kxol", // Greek, various (melancholy, psychologist...)
+    "chron": "kxron", // Greek chronos: time
+    "christ": "kxrist", // Greek christos: annointed
+    "mech": "mekx", // Greek mēchanē: machine
+    "psych": "psykx", // Greek, mind
+    "sche": "skxe", // Greek skhema: appearance
+    "tech": "tekx" // Greek tekton: craftsman
     // ch gh hh jh sh w
     // cx gx hx jx sx
     // ch  j X
@@ -183,9 +196,10 @@
 
     // Special double-character sequences
     "ch": "{calma}", // "march"
-    "chr": "{extended-quesse}{roomen}", // "christmas", "chronic"
+    "kx": "{extended-quesse}",
     "^chem": "{extended-quesse}em", // chemical, chemistry, chemists
     "^chl": "{extended-quesse}{roomen}", // "chlorophyl"
+    "^chro": "{extended-quesse}ro", // "chrome", "chromium", "chromosone"...
     "ck": "[bar-below]{quesse}", // "check"
     "th": "{thuule}",
     "dh": "{anto}",
@@ -551,20 +565,28 @@
     "lightheaded": "light'headed",
     "lighthouse": "light'house",
     "loathe": "{lambe}{telco}[right-curl]{anto}[dot-below][triple-dot-above]",
-    "mechanics": "me{extended-quesse}anics",
-    "mechanical": "me{extended-quesse}anical",
     "melancholy": "{malta}{lambe}[acute]{extended-quesse}[triple-dot-above][tilde-above]{lambe}[right-curl]{telco}[breve]",
     "melancholic": "{malta}{lambe}[acute]{extended-quesse}[triple-dot-above][tilde-above]{lambe}[right-curl]{quesse}[dot-above]",
     "michael": "{MALTA}{extended-quesse}[dot-above]{telco}[triple-dot-above]{lambe}[acute]",
     "mikael": "{MALTA}{hwesta}[dot-above]{telco}[triple-dot-above]{lambe}[acute]",
+    "mocha": "mokxa",
+    "monarch": "monarkx",
+    "monarchist": "monarkxist",
+    "monarchy": "monarkxy",
     "mother": "{malta}{anto}[right-curl]{oore}[acute]",
     "mothers": "{malta}{anto}[right-curl]{oore}[hook][acute]",
     "motherhood": "{malta}{anto}[right-curl]{oore}[acute]{hyarmen}{telco}[right-curl]{ando}[right-curl]",
     "motherly": "{malta}{anto}[right-curl]{oore}[acute]{lambe}[breve]",
     "neither": "{nuumen}{anna}[acute]{anto}{oore}[acute]",
     "noone": "no'one",
+    "orchestra": "orkxestra",
+    "orchestral": "orkxestral",
+    "orchestrate": "orkxestrate",
+    "orchestration": "orkxestration",
+    "orchid": "orkxid",
     "other": "{anto}[right-curl]{oore}[acute]",
     "outhouse": "out'house", //  not th
+    "parchisi": "par'chisi", // 'arch' does not not use 'extended-quesse' here, pronounced "tch"
     "penis": "peni{silme}", // final /s/, not /z/
     "pothead": "pot'head", //  not "th"
     "rather": "{roomen}{anto}[triple-dot-above]{oore}[acute]",
