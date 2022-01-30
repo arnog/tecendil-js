@@ -273,7 +273,7 @@ accent - lambe - malta + right curl.
     "t": "{tinco}",
     "v": "{ampa}",
     "w": "{vala}",
-    "x": "{calma}[right-curl-below]",
+    "x": "{quesse}[right-curl-below]", // As per http://lambenor.free.fr/tengwar/espanol_2006.html
     "y": "{anca}",
     "z": "{thuule}",
 
