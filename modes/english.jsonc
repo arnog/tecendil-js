@@ -269,14 +269,14 @@
     // the vowel is after (above) the bar:
     // "anc": "[tilde-above][triple-dot-above]{quesse}",
     "ance": "[tilde-above][triple-dot-above]{silme-nuquerna}[acute]",
-    "ance$": "[tilde-above][triple-dot-above][dot-below]{silme-nuquerna}",
+    "ance$": "{}[tilde-above][triple-dot-above][dot-below]{silme-nuquerna}",
     "anci": "[tilde-above][triple-dot-above]{silme-nuquerna}[dot-above]",
     "anch": "[tilde-above][triple-dot-above]{calma}",
     // except melancholy, melancholic, anchor, anchorage, anchoring,
     // anchorman, anchormen
     // "enc": "[tilde-above][acute]{quesse}",
     "ence": "[tilde-above][acute]{silme-nuquerna}[acute]",
-    "ence$": "[tilde-above][acute][dot-below]{silme-nuquerna}",
+    "ence$": "{}[tilde-above][acute][dot-below]{silme-nuquerna}",
     "ench": "[tilde-above][acute]{calma}",
     // "inc": "[tilde-above][dot-above]{quesse}",
     "ince": "[tilde-above][dot-above]{silme-nuquerna}[acute]",
@@ -592,6 +592,11 @@
     "rather": "{roomen}{anto}[triple-dot-above]{oore}[acute]",
     "rhythm": "{roomen}{hyarmen}{anto}[breve]{malta}",
     "school": "s{extended-quesse}ool", // <ch> pronounced as /k/
+    "science": "{silme}{yanta}[dot-above]{silme-nuquerna}[bar-above][dot-below]", // "science", latin "to know"
+    "scientific": "{silme}{yanta}[dot-above]{tinco}[bar-above]ific",
+    "scientist": "{silme}{yanta}[dot-above]{tinco}[bar-above]ist",
+    "scientists": "{silme}{yanta}[dot-above]{tinco}[bar-above]ists",
+
     "seethe": "{silme}{telco}[acute]{anto}[dot-below][acute]",
     "slither": "{silme}{lambe}{anto}[dot-above]{oore}[acute]",
     "smooth": "{silme}{malta}{anto}[double-acute]",
