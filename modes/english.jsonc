@@ -187,7 +187,7 @@
     "nn": "[bar-below]{nuumen}", // dinner
     "pp": "[bar-below]{parma}", // support
     "rr": "[bar-below]{oore}", // current
-    "ss": "[bar-below]{silme}", // possible		/u/machsna argues it should be {silme}
+    "ss": "[bar-below]{alt-silme}", // across. Use regular silme, see DTS-84: https://jteuber.gitlab.io/media/tengwar-nuquerne/dts84-across.png
     "tt": "[bar-below]{tinco}", // little
     "vv": "[bar-below]{ampa}", // skivvy
     "zz": "[bar-below]{esse-nuquerna}", // jazz	= Z 72%, except /T S/ (pizza, pizzeria...)
@@ -467,7 +467,7 @@
     "sure": "{harma}{oore}[left-curl][dot-below]",
     // "time": "{tinco}{malta}[dot-above][dot-below]",
     // "times": "{tinco}{malta}[dot-above][dot-below][swash-hook]",
-    "tolkien": "{TINCO}{lambe}[right-curl]{quesse}{aara}[dot-above]{nuumen}[acute]",
+    "tolkien": "{TINCO}{lambe}[right-curl]{quesse}{aara}[dot-above]{nuumen}[acute]", // JRR Tolkien wrote his name with a long-carrier in DTS-5. Christopher Tolkien used a short-carrier.
     "tie": "{ampa}{yanta}[dot-above]", // End in "a-y" sound
     "underlie": "{ando}[left-curl][tilde-above]{oore}[acute]{lambe}{yanta}[dot-above]", // End in "a-y" sound
     "untie": "{tinco}[left-curl][tilde-above]{yanta}[dot-above]", // End in "ay" sound
@@ -552,7 +552,7 @@
     "gather": "{ungwe}{anto}[triple-dot-above]{oore}[acute]",
     "gathering": "{ungwe}{anto}[triple-dot-above]{roomen}[acute]{nwalme}[dot-above]",
     "goatherd": "goat'herd",
-    "glass": "gla{silme}[bar-below]",
+    "glass": "gla{alt-silme}[bar-below]",
     "grandfather": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{formen}{anto}[triple-dot-above]{oore}[acute]",
     "grandfathers": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{formen}{anto}[triple-dot-above]{oore}[acute]{esse-nuquerna}",
     "grandmother": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{malta}{anto}[right-curl]{oore}[acute]",
@@ -647,7 +647,7 @@
     "thyme": "{extended-tinco}yme", // "th" pronounced /t/ uses extended tinco
     "thyself": "{anto}{silme}[breve]{lambe}[acute]{formen}",
     "together": "{tinco}{ungwe}[right-curl]{anto}[acute]{oore}[acute]",
-    "togetherness": "{tinco}{ungwe}[right-curl]{anto}[acute]{oore}[acute]{nuumen}{silme}[bar-below][acute]",
+    "togetherness": "{tinco}{ungwe}[right-curl]{anto}[acute]{oore}[acute]{nuumen}{alt-silme}[bar-below][acute]",
     "uncharacteristic": "{extended-quesse}[left-curl][tilde-above]{roomen}[triple-dot-above]{quesse}[triple-dot-above]{tinco}{roomen}[acute]{silme}[dot-above]{tinco}{quesse}[dot-above]",
     "uncharacteristically": "{extended-quesse}[left-curl][tilde-above]{roomen}[triple-dot-above]{quesse}[triple-dot-above]{tinco}{roomen}[acute]{silme}[dot-above]{tinco}{quesse}[dot-above]{lambe}[triple-dot-above][bar-inside]{telco}[breve]",
     "us": "{silme}[left-curl]",
