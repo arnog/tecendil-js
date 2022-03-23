@@ -69,7 +69,7 @@ accent - lambe - malta + right curl.
     "qüí": "kuí",
 
     // Strengthen "r" (-> "rr") at beginning or after consonant
-    "^r": "rr",
+    "/^r/": "rr",
     "/([^AaEeIiOoUuÁáÉéÍíÓóÚúRr])r/": "$1rr"
   },
 
