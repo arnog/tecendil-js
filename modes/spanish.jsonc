@@ -84,7 +84,7 @@ accent - lambe - malta + right curl.
     "á": "{aara}[triple-dot-above]{}",
     "é": "[double-acute]{}",
     "í": "{aara}[dot-above]{}",
-    "ó": "[double-acute]{}",
+    "ó": "[double-right-curl]{}",
     "ú": "[double-left-curl]{}",
 
     // ----------------------------------------------------------------------------
