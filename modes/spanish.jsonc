@@ -70,7 +70,7 @@ accent - lambe - malta + right curl.
 
     // Strengthen "r" (-> "rr") at beginning or after consonant
     "^r": "rr",
-    "/([^AaEeIiOoUuÁáÉéÍíÓóÚú])r/": "$1rr"
+    "/([^AaEeIiOoUuÁáÉéÍíÓóÚúRr])r/": "$1rr"
   },
 
   "map": {
