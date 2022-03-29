@@ -10,13 +10,18 @@
 // pedo = speak = {parma}[acute]{ando}[right-curl]{telco}
 // mellon = friend = {malta}[acute][bar-inside]{lambe}[right-curl]{nuumen}
 // thond = root = {thuule}[right-curl][bar-above]{ando}
-// ennorath = middle earth = [acute][bar-above]{nuumen}[right-curl]{roomen}[triple-dot-above]{thuule}
+// ennorath = middle earth =
+// [acute][bar-above]{nuumen}[right-curl]{roomen}[triple-dot-above]{thuule}
 // bess = wife = {umbar}[acute]{esse}
-// qurunîr = man of skill = wizard = {quesse}[left-curl]{roomen}[left-curl]{nuumen}[dot-above]{aara}{oore}
-// aear eithel baw = sea spring "don"t do it" = [triple-dot-above]{yanta}[triple-dot-above]{oore} [acute]{anna}{thuule}[acute]{lambe} {umbar}[triple-dot-above]{anna}
+// qurunîr = man of skill = wizard =
+// {quesse}[left-curl]{roomen}[left-curl]{nuumen}[dot-above]{aara}{oore}
+// aear eithel baw = sea spring "don"t do it" =
+// [triple-dot-above]{yanta}[triple-dot-above]{oore}
+// [acute]{anna}{thuule}[acute]{lambe} {umbar}[triple-dot-above]{anna}
 // alpha = swan
 // nef = on this side = {nuumen}[acute]{ampa}
-// thoron galadh = eagle tree = {thuule}[right-curl]{roomen}[right-curl]{nuumen} {ungwe}[triple-dot-above]{lambe}[triple-dot-above]{anto}
+// thoron galadh = eagle tree = {thuule}[right-curl]{roomen}[right-curl]{nuumen}
+// {ungwe}[triple-dot-above]{lambe}[triple-dot-above]{anto}
 // lhûg = snake, dragon = {alda}[left-curl]{aara}{ungwe}
 // rhûn = east = {arda}[left-curl]{aara}{nuumen}
 // ungol = spider = [left-curl][bar-above]{ungwe}[right-curl]{lambe}
@@ -24,11 +29,18 @@
 // gwain edwen = new second = [over-twist]{ungwe}[triple-dot-above]{anna}{nuumen} [acute][over-twist]{ando}[acute]{nuumen}
 
 // Not all those who wander are lost = i phin û bain idh reniar benrâd
-// = [dot-above]{telco} {formen}[dot-above]{nuumen} [û]{aara} {umbar}[triple-dot-above]{anna}{nuumen} [dot-above]{anto} {roomen}[acute]{nuumen}[dot-above]{telco}[triple-dot-above]{oore} {umbar}[acute]{nuumen}{roomen}[â]{ando}
+// = [dot-above]{telco} {formen}[dot-above]{nuumen} [û]{aara}
+// {umbar}[triple-dot-above]{anna}{nuumen} [dot-above]{anto}
+// {roomen}[acute]{nuumen}[dot-above]{telco}[triple-dot-above]{oore}
+// {umbar}[acute]{nuumen}{roomen}[â]{ando}
 
 // Special initial and final:
 // aupau awpaw lhawr alho if roror
-// [triple-dot-above]{uure}{parma}[triple-dot-above]{uure} [triple-dot-above]{vilya}{parma}[triple-dot-above]{anna} {lambe}{hyarmen}[triple-dot-above]{vilya}{oore} [triple-dot-above]{lambe}{hyarmen}[right-curl]{telco} [dot-above]{ampa} {roomen}[right-curl]{roomen}[right-curl]{oore}
+// [triple-dot-above]{uure}{parma}[triple-dot-above]{uure}
+// [triple-dot-above]{vilya}{parma}[triple-dot-above]{anna}
+// {lambe}{hyarmen}[triple-dot-above]{vilya}{oore}
+// [triple-dot-above]{lambe}{hyarmen}[right-curl]{telco} [dot-above]{ampa}
+// {roomen}[right-curl]{roomen}[right-curl]{oore}
 
 // TODO
 // Initial i followed by a vowel is pronounced as consonantal y.
@@ -39,7 +51,13 @@
 
 // TODO Check
 // ennyn durin aran moria: pedo mellon a minno
-// [acute][bar-above]{nuumen}[double-dot-above]{telco}{oore} {ando}[left-curl]{roomen}[dot-above]{oore} [triple-dot-above]{roomen}[triple-dot-above]{oore} {vala}[right-curl]{roomen}[dot-above]{telco}[triple-dot-above]{telco} {colon} {parma}[acute]{ando}[right-curl]{telco} {vala}[acute][bar-inside]{lambe}[right-curl]{oore} [triple-dot-above]{telco} {vala}[dot-above][bar-above]{nuumen}[right-curl]{telco}
+// [acute][bar-above]{nuumen}[double-dot-above]{telco}{oore}
+// {ando}[left-curl]{roomen}[dot-above]{oore}
+// [triple-dot-above]{roomen}[triple-dot-above]{oore}
+// {vala}[right-curl]{roomen}[dot-above]{telco}[triple-dot-above]{telco} {colon}
+// {parma}[acute]{ando}[right-curl]{telco}
+// {vala}[acute][bar-inside]{lambe}[right-curl]{oore} [triple-dot-above]{telco}
+// {vala}[dot-above][bar-above]{nuumen}[right-curl]{telco}
 // http://digiphile.wordpress.com/2009/01/23/online-jrrtolkein-translators-and-font-converters/
 
 {
@@ -249,6 +267,10 @@
     "lanthir": "lant'hir",
 
     // Sometimes "oe" is pronounced as a diphthongs "ö"
-    "arnoediad": "{roomen}[triple-dot-above]{nuumen}{ando}[acute]{telco}[dot-above]{ando}[triple-dot-above]"
+    "arnoediad": "{roomen}[triple-dot-above]{nuumen}{ando}[acute]{telco}[dot-above]{ando}[triple-dot-above]",
+
+    "Rohan": "Rochan",
+    "Rohir": "Rochir",
+    "Rohirrim": "Rochirrim"
   }
 }
