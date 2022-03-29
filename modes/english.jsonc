@@ -39,6 +39,7 @@
     "mech": "mekx", // Greek mēchanē: machine
     "psych": "psykx", // Greek, mind
     "sche": "skxe", // Greek skhema: appearance
+    "/^scho/": "skxo",
     "tech": "tekx" // Greek tekton: craftsman
     // ch gh hh jh sh w
     // cx gx hx jx sx
@@ -62,33 +63,87 @@
     // hemorrhagic, paraplegic,
 
     // ---- G vs JH
-    // gf is G, except meangingul, meaningully, wrongful, wrongfully
+    // gf is G, except meaningful, meaningfully, wrongful, wrongfully
     // ga is G, except algae, margarine
-    // ^g is G, except gel, gelatin, gelatinous, gem, gemcraft, geminni, gems, gender, gendered, genders, gene, gens, genealogical, ganealogy, general, generalist, generalists, generality, generalization, generalize, generalized, generals, generate, generated, generating, generation, generational, generic, generically, generous, genetic, geneva, genie, genital, genitalia, gentials, genius, geniuses, genocidal, genocide, genocides, genome, genotype, genre, genres, gent, gentell, gentile, gentiles, gentle, gentlelady, gentleman, gentlemanly, gentrlemen, gentler, gentleness, gentlewoman, gentlewomen, gently, gentrification, gentrify, genuine, genus, geo, geocentric, geochemistry, geodesic, geoff, geoffrey, geologic, geological, geologist, geologists, geology, geometric, geometrical, geometry, gephysical, gepolotic, geopolitical, geopolitics, george, georges, georgette, georgia, geothermal, geraniunm, gerard, gerbil, gerbils, gerry, gestate, gestation, giant, giants, gibraltar, gigolo, gin, ginger, gingerly, giraffe, giraffes, gmail, gnarly, gnat, gnocchi, gnome, gnomes, gnats, gnaw, gym, gymnast, gymnasts, gymnastic, gypsum, gyrate, gyrating, gyroscope
+    // ^g is G, except gel, gelatin, gelatinous, gem, gemcraft, geminni, gems,
+    // gender, gendered, genders, gene, gens, genealogical, ganealogy, general,
+    // generalist, generalists, generality, generalization, generalize,
+    // generalized, generals, generate, generated, generating, generation,
+    // generational, generic, generically, generous, genetic, geneva, genie,
+    // genital, genitalia, gentials, genius, geniuses, genocidal, genocide,
+    // genocides, genome, genotype, genre, genres, gent, gentell, gentile,
+    // gentiles, gentle, gentlelady, gentleman, gentlemanly, gentrlemen,
+    // gentler, gentleness, gentlewoman, gentlewomen, gently, gentrification,
+    // gentrify, genuine, genus, geo, geocentric, geochemistry, geodesic, geoff,
+    // geoffrey, geologic, geological, geologist, geologists, geology,
+    // geometric, geometrical, geometry, gephysical, gepolotic, geopolitical,
+    // geopolitics, george, georges, georgette, georgia, geothermal, geraniunm,
+    // gerard, gerbil, gerbils, gerry, gestate, gestation, giant, giants,
+    // gibraltar, gigolo, gin, ginger, gingerly, giraffe, giraffes, gmail,
+    // gnarly, gnat, gnocchi, gnome, gnomes, gnats, gnaw, gym, gymnast,
+    // gymnasts, gymnastic, gypsum, gyrate, gyrating, gyroscope
     // ge is often JH
+
     // 	    egrep "ge" ~/cmu.txt | grep -v "NG E" | grep -v "JH" | grep -v "ZH" | awk "{printf $1 ", "}'
-    // ge is G in "altogether, anger, angered, angerer, angering, angermeier, angers, armageddon, bagel, bjorge, cheeseburger, eager, eagerly, eagerness, finger, fingernail, fingers, fingertip, forget, forgetful, forgets, forgettable, forgetting, gear, gears, geared, gecko, geek, geeks, geeky, geese, get, getaway, gets, getting, hamburger, hanged, jorge, longest, meager, pinged, stronger, strongest, swager, target, targets, targeted, targeting, throunged, tiger, tigers, together, togetherness, unforgettable, volskwagen, warmonger, younger, yougest, zeitgeist"
+    // ge is G in "altogether, anger, angered, angerer, angering, angermeier,
+    // angers, armageddon, bagel, bjorge, cheeseburger, eager, eagerly,
+    // eagerness, finger, fingernail, fingers, fingertip, forget, forgetful,
+    // forgets, forgettable, forgetting, gear, gears, geared, gecko, geek,
+    // geeks, geeky, geese, get, getaway, gets, getting, hamburger, hanged,
+    // jorge, longest, meager, pinged, stronger, strongest, swager, target,
+    // targets, targeted, targeting, throunged, tiger, tigers, together,
+    // togetherness, unforgettable, volskwagen, warmonger, younger, yougest,
+    // zeitgeist"
     // gi
     // JH: 62%
-    // G: 38%	begin, beginner, beginners, beginning, beginnings, boogie, caregiver, caregivers, cataloging, cowgirl, forgivable, forgive, forgiven, forgiving, login, misgivings, schoolgirl, schoolgirls, showgirl, showgirls, unforgivable, unforgiven, unforgiving, yogi,
+    // G: 38% begin, beginner, beginners, beginning, beginnings, boogie,
+    // caregiver, caregivers, cataloging, cowgirl, forgivable, forgive,
+    // forgiven, forgiving, login, misgivings, schoolgirl, schoolgirls,
+    // showgirl, showgirls, unforgivable, unforgiven, unforgiving, yogi,
     // ZH: adagio, belgique, massaging, regime, sabotaging
 
     // go is G, except laryngoscope
     // gu is G, except multilingual, orangutan, tongue
     // gue$ is G, except harangue, merengue
 
-    // ng is NG except arrange, arranged, arranging, arranges, arrangement, congratulate congratulating, congratulated, congratulations, engine, engine's, engines, engine's engineer, engineer's, engineering, engineers, messenger, messengers, orange, oranges, passenger, passengers, passenger's, passengers", revenge,
+    // ng is NG except arrange, arranged, arranging, arranges, arrangement,
+    // congratulate congratulating, congratulated, congratulations, engine,
+    // engine's, engines, engine's engineer, engineer's, engineering, engineers,
+    // messenger, messengers, orange, oranges, passenger, passengers,
+    // passenger's, passengers", revenge,
 
     // dh is never DH. It's D HH (or a variation, D AH...)
 
-    // sh is often SH, except allshouse, altshuler, asshole, assholes, ayesha, bishoff, bosshardt, bosshart, botshabelo, cashmere, cashmeres, chisholm, clotheshorse, courtship, cutshall, cutshaw, dachshund, dachshunds, disharmony, disheartened, disheartening, dishon, dishonest, dishonestly, dishonesty, dishong, dishonor, dishonorable, dishonored, frashier, freakshow, freshour, gayshill, goshawk, gotshal, gotshal's, gotshall, gottshall, grasshopper, grasshoppers, gutshall, hartshorn, hartshorne, hillesheim, hollingshead, hollinshead, holshouser, huishman, khrushchev, khrushchev's, klixshavich, latshaw, mishandle, mishandled, mishandles, mishandling, mishap, mishaps, mishear, misheard, mkhatshwa, mosher, moshood, mossholder, mothershead, nesheim, newshour, nightshade, nightshirt, nightshirts, outshine, outshines, outshining, potshots, ruckelshaus, sermersheim, shead, shouse, t-shirt, t-shirts, welsh, werdesheim, wiltshire
-    // tsh -> T CH, except hartshorn, hotshot, hotshots, lightship, lightships, nutshell, nutshells, outshone, potshot, robertshaw, sweatshirt, sweatshirts, sweatshop, sweatshops, tshisekedi
+    // sh is often SH, except allshouse, altshuler, asshole, assholes, ayesha,
+    // bishoff, bosshardt, bosshart, botshabelo, cashmere, cashmeres, chisholm,
+    // clotheshorse, courtship, cutshall, cutshaw, dachshund, dachshunds,
+    // disharmony, disheartened, disheartening, dishon, dishonest, dishonestly,
+    // dishonesty, dishong, dishonor, dishonorable, dishonored, frashier,
+    // freakshow, freshour, gayshill, goshawk, gotshal, gotshal's, gotshall,
+    // gottshall, grasshopper, grasshoppers, gutshall, hartshorn, hartshorne,
+    // hillesheim, hollingshead, hollinshead, holshouser, huishman, khrushchev,
+    // khrushchev's, klixshavich, latshaw, mishandle, mishandled, mishandles,
+    // mishandling, mishap, mishaps, mishear, misheard, mkhatshwa, mosher,
+    // moshood, mossholder, mothershead, nesheim, newshour, nightshade,
+    // nightshirt, nightshirts, outshine, outshines, outshining, potshots,
+    // ruckelshaus, sermersheim, shead, shouse, t-shirt, t-shirts, welsh,
+    // werdesheim, wiltshire tsh -> T CH, except hartshorn, hotshot, hotshots,
+    // lightship, lightships, nutshell, nutshells, outshone, potshot,
+    // robertshaw, sweatshirt, sweatshirts, sweatshop, sweatshops, tshisekedi
     //
 
-    // zh is ZH except altzheimer, altzheimer's, alzheimer, alzheimer's, azhar, azhar's, banzhaf, bazhan, brezhnev, brezhnev's, , dzerzhinsk, dzhambul, dzhirkvelov, dzhokhar, dzhokhar's, fitzharris, fitzhenry, fitzhugh, guangzhou, holzhauer, holzhauser, holzheimer, itzhak, kitzhaber, lizhi, meinertzhagen, mezhdumarodnom, panzhihua, pforzheimer, runzheimer, ryzhkov, salzhauer, schlotzhauer, solzhenitsyn, straszheim, wenzhou, yitzhak, zhambu, zhan, zheng
+    // zh is ZH except altzheimer, altzheimer's, alzheimer, alzheimer's, azhar,
+    // azhar's, banzhaf, bazhan, brezhnev, brezhnev's, , dzerzhinsk, dzhambul,
+    // dzhirkvelov, dzhokhar, dzhokhar's, fitzharris, fitzhenry, fitzhugh,
+    // guangzhou, holzhauer, holzhauser, holzheimer, itzhak, kitzhaber, lizhi,
+    // meinertzhagen, mezhdumarodnom, panzhihua, pforzheimer, runzheimer,
+    // ryzhkov, salzhauer, schlotzhauer, solzhenitsyn, straszheim, wenzhou,
+    // yitzhak, zhambu, zhan, zheng
 
     // ly$ is L IY
-    // except ally, apply, butterfly, comply, firefly, fly, gadfly, imply, july, misapply, multiply, oversupply, ply, reapply, rely, reply, resupply, supply, underly
+    // except ally, apply, butterfly, comply, firefly, fly, gadfly, imply, july,
+    // misapply, multiply, oversupply, ply, reapply, rely, reply, resupply,
+    // supply, underly
 
     // ----------------------------------------------------------------------------
     //
@@ -145,7 +200,9 @@
     // The sign anna is attested for following -E (DTS 62 “Michael”),
     // while yanta is presumably attested for Y (DTS 10 “you”) and presumably also for following -Y (DTS 37 “lay”?).
 
-    "ea": "[acute]{osse}", // There are two options: Either with osse carrying the preceding e-tehta (DTS 62 “earth”) or with a separate a-tehta, putting the preceding e-tehta on its own carrier (DTS 10 “dear”).
+    "ea": "[acute]{osse}", // There are two options: Either with osse carrying
+    // the preceding e-tehta (DTS 62 “earth”) or with a separate a-tehta,
+    // putting the preceding e-tehta on its own carrier (DTS 10 “dear”).
     "ee$": "[acute]{telco}[acute]{telco}", // as seen in DTS 5.
 
     "ei": "[acute]{anna}",
@@ -238,8 +295,10 @@
 
     "wh": "{hwesta-sindarinwa}",
     "tw": "[over-twist]{tinco}", // except egrep "tw" ~/cmu.txt | grep -v "T W" | awk "{printf $1 ", "}'
-    // boatwright, cartwright, courtwright, scriptwriter, scriptwriters, scriptwriting, two, two's, two-day, two-dimensional, two-thirds, two-way, twofold, twos, twosome, twothirds
-    //	"pw":	"[over-twist]{parma}",	english words with pw are compounds like top-wise.
+    // boatwright, cartwright, courtwright, scriptwriter, scriptwriters,
+    //  scriptwriting, two, two's, two-day, two-dimensional, two-thirds,
+    //  two-way, twofold, twos, twosome, twothirds "pw": "[over-twist]{parma}",
+    //  english words with pw are compounds like top-wise.
     "kw": "[over-twist]{quesse}",
     "qu": "[over-twist]{quesse}",
     /*	"akw":	"[triple-dot-above]{telco}[over-twist]{quesse}",
@@ -426,44 +485,44 @@
 
     // "to": "{tinco}[right-curl-below]", // Christopher Tolkien: Used in the Silmarilion inscription
 
-    "alexander": "{lambe}[triple-dot-above]{ungwe}[acute][right-curl-below]{ando}[triple-dot-above][tilde-above]{oore}[acute]", // ale-gz-ander
+    "alexander": "{LAMBE}[triple-dot-above]{ungwe}[acute][right-curl-below]{ando}[triple-dot-above][tilde-above]{oore}[acute]", // ale-gz-ander
     "are": "{oore}[dot-below][triple-dot-above]",
     // "age": "{anga}[triple-dot-above][dot-below]", // a-zh   -- Christopher Tolkien-ism
     "as": "{esse-nuquerna}[triple-dot-above]",
-    "bach": "{umbar}{hwesta}[triple-dot-above]",
+    "bach": "{UMBAR}{hwesta}[triple-dot-above]",
     "be": "{umbar}{aara}[dot-above]", // non-silent final-e
     "because": "{umbar}{quesse}[acute]{vala}[triple-dot-above]{esse-nuquerna}[dot-below]",
     "by": "{umbar}{aara}[breve]", // b-a-i
-    "choose": "{calma}{esse-nuquerna}[double-acute][dot-below]", // "s'->'z'
+    "choose": "{calma}{esse-nuquerna}[double-right-curl][dot-below]", // "s'->'z'
     "chose": "{calma}{esse-nuquerna}[right-curl][dot-below]", // "s'->'z'
     "create": "{quesse}{roomen}{telco}[acute]{tinco}[triple-dot-above][dot-below]", // "ea' -> "e' + "a'
     "die": "{ando}{yanta}[dot-above]", // End in "ay" sound
     "does": "{ando}{telco}[right-curl]{esse-nuquerna}[acute]", // "s' -> "z'
     "exact": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}", // e-gz-act
     "exactly": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}{lambe}[breve]",
-    "example": "{ungwe}[acute][right-curl-below]{malta}[triple-dot-above]{parma}{lambe}[dot-inside]",
     "examine": "{ungwe}[acute][right-curl-below]{malta}[triple-dot-above]{nuumen}[dot-above][dot-below]",
-    "fernanda": "{FORMEN}{oore}[acute]{nuumen}{nuumen}[triple-dot-above]{ando}{telco}[triple-dot-above]",
+    "example": "{ungwe}[acute][right-curl-below]{malta}[triple-dot-above]{parma}{lambe}[dot-inside]",
+    "fernanda": "{FORMEN}{oore}[acute]{nuumen}[triple-dot-above][bar-above]{ando}{telco}[triple-dot-above]",
     "fie": "{formen}{yanta}[dot-above]", // End in "ay" sound
-    "goes": "{ungwe}{telco}[right-curl]{telco}[acute]{esse}", // "s' -> "z'
-    "giant": "{ungwe}{telco}[dot-above]{telco}[triple-dot-above]{nuumen}{tinco}", // dj-iant
+    "giant": "{ungwe}{telco}[dot-above]{tinco}[triple-dot-above][bar-above]", // dj-iant
+    "goes": "{ungwe}{telco}[right-curl]{esse}[acute]", // "s' -> "z'
     "has": "{hyarmen}{esse-nuquerna}[triple-dot-above]",
     "he": "{hyarmen}{aara}[dot-above]", // non-silent final-e
     "herein": "{hyarmen}{roomen}[acute][dot-below]{nuumen}[dot-above]",
-    "his": "{hyarmen}{esse-nuquerna}[dot-above]",
     "hers": "{hyarmen}{oore}[acute]{esse}",
+    "his": "{hyarmen}{esse-nuquerna}[dot-above]",
     "is": "{alt-esse}[dot-above]",
     "joel": "{ANGA}{telco}[right-curl]{lambe}[acute]", // like "jo-el"
-    "larceny": "{lambe}{oore}[triple-dot-above]{silme}{nuumen}[acute]{telco}[breve]",
+    "larceny": "{lambe}{oore}[triple-dot-above]{silme-nuquerna}{nuumen}[acute]{telco}[breve]",
     "lie": "{lambe}{yanta}[dot-above]", // End in "a-y" sound
     "loch": "{lambe}{hwesta}[right-curl]",
     "me": "{malta}{aara}[dot-above]", // non-silent final-e
     "music": "{malta}{esse-nuquerna}[left-curl]{quesse}[dot-above]",
     "ocean": "{silme}[right-curl]{telco}[acute]{nuumen}[triple-dot-above]",
     "pie": "{parma}{yanta}[dot-above]", // End in "a-y" sound
-    "please": "{parma}{lambe}{telco}[breve]{esse-nuquerna}",
-    "she": "{harma}{aara}[dot-above]", // non-silent final-e
+    "please": "{parma}{lambe}{telco}[dot-above]{esse-nuquerna}",
     "reuel": "{ROOMEN}{telco}[acute]{telco}[left-curl]{lambe}[acute]", // Tolkien's middle name
+    "she": "{harma}{aara}[dot-above]", // non-silent final-e
     "sure": "{harma}{oore}[left-curl][dot-below]",
     // "time": "{tinco}{malta}[dot-above][dot-below]",
     // "times": "{tinco}{malta}[dot-above][dot-below][swash-hook]",
@@ -477,14 +536,14 @@
     "xanadu": "{ungwe}[right-curl-below]{nuumen}[triple-dot-above]{ando}[triple-dot-above]{telco}[left-curl]",
     "zoe": "{ESSE-NUQUERNA}{telco}[right-curl]{telco}[acute]",
 
-    "ancient": "{calma}[tilde-above][triple-dot-above]{telco}[dot-above]{tinco}[tilde-above][acute]", // "ci' -> CH I
+    "ancient": "{calma}[triple-dot-above][tilde-above]{telco}[dot-above]{tinco}[acute][tilde-above]", // "ci' -> CH I
     "caesar": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below]",
-    "caearas": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below][hook]",
-    "facade": "{formen}{alt-silme}[triple-dot-above]{ando}[dot-below][triple-dot-above]",
-    "facades": "{formen}{alt-silme}[triple-dot-above]{ando}[dot-below][triple-dot-above][hook]",
+    "caesars": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below][hook]",
+    "facade": "{formen}{silme}[triple-dot-above]{ando}[dot-below][triple-dot-above]",
+    "facades": "{formen}{silme}[triple-dot-above]{ando}[dot-below][triple-dot-above][hook]",
     "cello": "{calma}{lambe}[bar-inside][acute]{telco}[right-curl]",
     "concerto": "{quesse}{nuumen}[right-curl]{calma}{oore}[acute]{tinco}{telco}[right-curl]",
-    "capuccino": "{quesse}{parma}[triple-dot-above]{calma}[left-curl]{nuumen}[dot-above]{telco}[right-curl]",
+    "cappuccino": "{quesse}{parma}[triple-dot-above]{calma}[left-curl]{nuumen}[dot-above]{telco}[right-curl]",
     "ciao": "{calma}{vala}[triple-dot-above]",
 
     // Voiced TH -> suule -> anto
@@ -514,7 +573,69 @@
     // gatherers, gathering, gatherings, gathers, genther, get-together,
     // get-together(2), get-togethers, get-togethers(2), gethers, ginther,
     // githa, godfather, godfather's, godfathers, godmother, godmothers,
-    // goldsworthy, grandfather, grandfather(2), grandfather's, grandfather's(2), grandfathered, grandfathered(2), grandfathering, grandfathering(2), grandfatherly, grandfatherly(2), grandfathers, grandfathers(2), grandmother, grandmother's, grandmotherly, grandmothers, great-grandfather, grether, grothe, guinther, gytha, hatheway, heathen, heather, heather's, heatherington, heatherly, heathers, hesther, hetherington, hither, hitherto, huether, kenworthy, koether, kothe, kuether, lamothe, langworthy, lathe, lather, lathers, lathes, lawther, leather, leatherback, leatherbacks, leatherberry, leatherbury, leatherman, leathers, leatherwood, leathery, leitha, leithia, lithe, loathe, loathed, loathsome, logarithm, logarithmic, logarithms, lowther, luthi, manthe, manthei, margarethe, marthe, mathai, mathe, mathea, matheis, mather, matherly, mathern, mathers, matheus, mathey, mathia, matthea, mattheis, matthey, matthia, mauthe, mayweather, melantha, meriweather, meriwether, merriweather, merriwether, mother, mother's, mother-in-law, motherboard, mothercare, motherfucker, motherfucker's, motherfuckers, motherfucking, motherhood, mothering, motherland, motherless, motherly, mothers, mothers-in-law, mothershead, mothershed, mothership, mothership's, motherships, mouthed, mouthing, mouths, nasworthy, nathe, neither, neither(2), nether, netherland, netherlandic, netherlands, nethers, netherton, netherworld, nethery, nevertheless, newsworthy, nonetheless, norsworthy, norther, northerly, northern, northern's, northerner, northerners, northernmost, northey, noseworthy, noteworthy, nother, oaths, oldfather, otha, other, other's, otherness, others, others", otherwise, otherworldly, paths, praiseworthy, prather, prothero, raether, rathe, rather, rather(2), rather's, reither, reuther, rhythm, rhythmic, rhythmically, rhythms, ring-around-the-rosy, roether, rothe, ryther, sather, scathing, schultheis, seaworthy, seethe, seething, seither, sether, sheathe, sheathed, sheathing, sithe, slather, slathered, slathering, slathers, slither, slithering, smather, smathers, smethers, smither, smithereen, smithereens, smitherman, smithers, smooth, smoothed, smoothen, smoothens, smoother, smoothest, smoothing, smoothly, smoothness, smooths, smother, smothered, smothering, smotherman, smothers, smythe, sociopaths, soothe, soothed, soothes, soothing, soothingly, souther, southerland, southerly, southern, southern's, southerner, southerners, southernmost, southernnet, southernnet's, southers, starkweather, state-of-the-art, stepfather, stepmother, stikeleather, stikeleather(2), stikeleather(3), strother, strothers, struthers, sunbathe, sunbathing, suther, sutherland, sutherland's, sutherlin(2), suthers, swarthy, swathe, swathe(2), swathed, talitha, teethe, teething, tether, tethered, tethers, than, than(2), thao, that, that(2), that'd, that'll, that's, that've, thau, the, thee, thee's, their, theirs, theirself, theirselves, theis, them, them(2), themself, themself(2), themselves, themselves(2), then, thence, thenceforth, therat, there, there'd, there'll, there're, there's, there've, thereabouts, thereafter, thereby, therefore, therein, thereof, thereon, thereto, thereupon, these, thesing, theus, they, they'd, they'll, they're, they've, thine, this, this(2), this", this'll, this'll(2), thither, tho, thomann, those, thou, though, thous, thur, thus, thusfar, thusly, thy, thyself, timothea, tithe, tithing, together, togetherness, togethers, tolanthe, toothed(2), totherow, trustworthiness, trustworthy, unfathomable, unscathed, untrustworthy, unworthy, uthe, uther(2), weather, weather's, weatherall, weatherbee, weatherby, weathered, weatherford, weatherhead, weatherholt, weatherholtz, weathering, weatherington, weatherly, weatherman, weathermen, weatherproof, weathers, weathersbee, weathersby, weatherspoon, weatherstone, weatherwax, werther, wetherbee, wetherington, wetherly, wherewithal, wherewithal(2), whether, whether(2), whither, whither(2), with, with(4), withdraw, withdrawal, withdrawals(2), withdrawing(2), withdrawn(2), withdraws, withdrew(2), wither, withered, withering, withers, witherspoon, within, without(2), worthey, worthier, worthies, worthiest, worthiness, worthington, worthy, wotherspoon, wrather, wreaths(2), writhing, wuthering, wythe, xanthe, yother, youths, zither
+    // goldsworthy, grandfather, grandfather(2), grandfather's,
+    // grandfather's(2), grandfathered, grandfathered(2), grandfathering,
+    // grandfathering(2), grandfatherly, grandfatherly(2), grandfathers,
+    // grandfathers(2), grandmother, grandmother's, grandmotherly, grandmothers,
+    // great-grandfather, grether, grothe, guinther, gytha, hatheway, heathen,
+    // heather, heather's, heatherington, heatherly, heathers, hesther,
+    // hetherington, hither, hitherto, huether, kenworthy, koether, kothe,
+    // kuether, lamothe, langworthy, lathe, lather, lathers, lathes, lawther,
+    // leather, leatherback, leatherbacks, leatherberry, leatherbury,
+    // leatherman, leathers, leatherwood, leathery, leitha, leithia, lithe,
+    // loathe, loathed, loathsome, logarithm, logarithmic, logarithms, lowther,
+    // luthi, manthe, manthei, margarethe, marthe, mathai, mathe, mathea,
+    // matheis, mather, matherly, mathern, mathers, matheus, mathey, mathia,
+    // matthea, mattheis, matthey, matthia, mauthe, mayweather, melantha,
+    // meriweather, meriwether, merriweather, merriwether, mother, mother's,
+    // mother-in-law, motherboard, mothercare, motherfucker, motherfucker's,
+    // motherfuckers, motherfucking, motherhood, mothering, motherland,
+    // motherless, motherly, mothers, mothers-in-law, mothershead, mothershed,
+    // mothership, mothership's, motherships, mouthed, mouthing, mouths,
+    // nasworthy, nathe, neither, neither(2), nether, netherland, netherlandic,
+    // netherlands, nethers, netherton, netherworld, nethery, nevertheless,
+    // newsworthy, nonetheless, norsworthy, norther, northerly, northern,
+    // northern's, northerner, northerners, northernmost, northey, noseworthy,
+    // noteworthy, nother, oaths, oldfather, otha, other, other's, otherness,
+    // others, others", otherwise, otherworldly, paths, praiseworthy, prather,
+    // prothero, raether, rathe, rather, rather(2), rather's, reither, reuther,
+    // rhythm, rhythmic, rhythmically, rhythms, ring-around-the-rosy, roether,
+    // rothe, ryther, sather, scathing, schultheis, seaworthy, seethe, seething,
+    // seither, sether, sheathe, sheathed, sheathing, sithe, slather, slathered,
+    // slathering, slathers, slither, slithering, smather, smathers, smethers,
+    // smither, smithereen, smithereens, smitherman, smithers, smooth, smoothed,
+    // smoothen, smoothens, smoother, smoothest, smoothing, smoothly,
+    // smoothness, smooths, smother, smothered, smothering, smotherman,
+    // smothers, smythe, sociopaths, soothe, soothed, soothes, soothing,
+    // soothingly, souther, southerland, southerly, southern, southern's,
+    // southerner, southerners, southernmost, southernnet, southernnet's,
+    // southers, starkweather, state-of-the-art, stepfather, stepmother,
+    // stikeleather, stikeleather(2), stikeleather(3), strother, strothers,
+    // struthers, sunbathe, sunbathing, suther, sutherland, sutherland's,
+    // sutherlin(2), suthers, swarthy, swathe, swathe(2), swathed, talitha,
+    // teethe, teething, tether, tethered, tethers, than, than(2), thao, that,
+    // that(2), that'd, that'll, that's, that've, thau, the, thee, thee's,
+    // their, theirs, theirself, theirselves, theis, them, them(2), themself,
+    // themself(2), themselves, themselves(2), then, thence, thenceforth,
+    // therat, there, there'd, there'll, there're, there's, there've,
+    // thereabouts, thereafter, thereby, therefore, therein, thereof, thereon,
+    // thereto, thereupon, these, thesing, theus, they, they'd, they'll,
+    // they're, they've, thine, this, this(2), this", this'll, this'll(2),
+    // thither, tho, thomann, those, thou, though, thous, thur, thus, thusfar,
+    // thusly, thy, thyself, timothea, tithe, tithing, together, togetherness,
+    // togethers, tolanthe, toothed(2), totherow, trustworthiness, trustworthy,
+    // unfathomable, unscathed, untrustworthy, unworthy, uthe, uther(2),
+    // weather, weather's, weatherall, weatherbee, weatherby, weathered,
+    // weatherford, weatherhead, weatherholt, weatherholtz, weathering,
+    // weatherington, weatherly, weatherman, weathermen, weatherproof, weathers,
+    // weathersbee, weathersby, weatherspoon, weatherstone, weatherwax, werther,
+    // wetherbee, wetherington, wetherly, wherewithal, wherewithal(2), whether,
+    // whether(2), whither, whither(2), with, with(4), withdraw, withdrawal,
+    // withdrawals(2), withdrawing(2), withdrawn(2), withdraws, withdrew(2),
+    // wither, withered, withering, withers, witherspoon, within, without(2),
+    // worthey, worthier, worthies, worthiest, worthiness, worthington, worthy,
+    // wotherspoon, wrather, wreaths(2), writhing, wuthering, wythe, xanthe,
+    // yother, youths, zither
 
     "ache": "a{extended-quesse}e", // <ch> pronounced as /k/
     "anchor": "{extended-quesse}[triple-dot-above][tilde-above]{oore}[right-curl]", // <ch> pronounced as /k/
@@ -531,7 +652,7 @@
     "bathing": "{umbar}{anto}[triple-dot-above]{nwalme}[dot-above]",
     "breathe": "{umbar}{roomen}{osse}[acute]{anto}[dot-below]",
     "breathing": "{umbar}{roomen}{osse}[acute]{anto}{nwalme}[dot-above]",
-    "bronchitis": "{umbar}{roomen}{extended-quesse}[right-curl][tilde-above]{tinco}[dot-above]{silme}[dot-above] ",
+    "bronchitis": "{umbar}{roomen}{extended-quesse}[right-curl][tilde-above]{tinco}[dot-above]{alt-silme}[dot-above] ",
     "bronchoscope": "{umbar}{roomen}{extended-quesse}[right-curl][tilde-above]{silme}[right-curl]{quesse}{parma}[right-curl][dot-below]",
     "brother": "{umbar}{roomen}{anto}[right-curl]{oore}[acute]",
     "brotherly": "{umbar}{roomen}{anto}[right-curl]{oore}[acute]{lambe}[breve]",
@@ -547,12 +668,13 @@
     "fathers": "{formen}{anto}[triple-dot-above]{oore}[acute]{esse-nuquerna}",
     "fatherhood": "{formen}{anto}[triple-dot-above]{oore}[acute]{hyarmen}{telco}[right-curl]{ando}[right-curl]",
     "fatherly": "{formen}{anto}[triple-dot-above]{oore}[acute]{lambe}[breve]",
+    "farewell": "fare'well",
     "feather": "{formen}{osse}[acute]{anto}{oore}[acute]",
     "further": "{formen}{oore}[left-curl]{anto}{oore}[acute]",
     "gather": "{ungwe}{anto}[triple-dot-above]{oore}[acute]",
     "gathering": "{ungwe}{anto}[triple-dot-above]{roomen}[acute]{nwalme}[dot-above]",
     "goatherd": "goat'herd",
-    "glass": "gla{alt-silme}[bar-below]",
+    "glass": "gl{alt-silme}[a][bar-below]",
     "grandfather": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{formen}{anto}[triple-dot-above]{oore}[acute]",
     "grandfathers": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{formen}{anto}[triple-dot-above]{oore}[acute]{esse-nuquerna}",
     "grandmother": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{malta}{anto}[right-curl]{oore}[acute]",
@@ -587,20 +709,17 @@
     "other": "{anto}[right-curl]{oore}[acute]",
     "outhouse": "out'house", //  not th
     "parchisi": "par'chisi", // 'arch' does not not use 'extended-quesse' here, pronounced "tch"
-    "penis": "peni{silme}", // final /s/, not /z/
     "pothead": "pot'head", //  not "th"
     "rather": "{roomen}{anto}[triple-dot-above]{oore}[acute]",
     "rhythm": "{roomen}{hyarmen}{anto}[breve]{malta}",
-    "school": "s{extended-quesse}ool", // <ch> pronounced as /k/
     "science": "{silme}{yanta}[dot-above]{silme-nuquerna}[bar-above][dot-below]", // "science", latin "to know"
     "scientific": "{silme}{yanta}[dot-above]{tinco}[bar-above]ific",
     "scientist": "{silme}{yanta}[dot-above]{tinco}[bar-above]ist",
     "scientists": "{silme}{yanta}[dot-above]{tinco}[bar-above]ists",
-
-    "seethe": "{silme}{telco}[acute]{anto}[dot-below][acute]",
+    "seethe": "{silme}{telco}[double-acute]{anto}[dot-below]",
     "slither": "{silme}{lambe}{anto}[dot-above]{oore}[acute]",
-    "smooth": "{silme}{malta}{anto}[double-acute]",
-    "smoothest": "{silme}{malta}{telco}[right-curl]{anto}[right-curl]{silme}[acute]{tinco}",
+    "smooth": "{silme}{malta}{anto}[double-right-curl]",
+    "smoothest": "{silme}{malta}{telco}[right-curl]{telco}[right-curl]{anto}{alt-silme}[acute]{tinco}",
     "somebody": "{silme}{malta}[right-curl][dot-below]{umbar}{ando}[right-curl]{telco}[breve]",
     "someday": "some'day",
     "somehow": "some'how",
@@ -608,22 +727,21 @@
     "someplace": "some'place",
     "something": "some'thing",
     "sometime": "some'time",
-    "sometimes": "{silme}{malta}[right-curl][dot-below]{tinco}{malta}[dot-above][dot-below]{silme}",
+    "sometimes": "{silme}{malta}[right-curl][dot-below]{tinco}{malta}[dot-above][dot-below]{swash-hook}",
     "somewhat": "some'what",
-    "someways": "some'way{silme}",
+    "someways": "some'way{swash-hook}",
     "somewhen": "some'when",
     "somewhere": "some'where",
     "soothe": "{silme}{anto}[double-acute][dot-below]",
     "soothing": "{silme}{telco}[right-curl]{anto}[right-curl]{nwalme}[dot-above]",
     "southern": "{silme}{vala}[right-curl]{anto}{oore}[acute]{nuumen}",
     "stomach": "stoma{extended-quesse}", // <ch> pronounced as /k/
-    "tecendil": "{tinco}{quesse}[acute]{ando}[dot-above][bar-above]{lambe}[dot-above]",
-    "teethe": "{tinco}{telco}[acute]{anto}[dot-below][acute]",
+    "tecendil": "{TINCO}{quesse}[acute]{ando}[acute][bar-above]{lambe}[dot-above]",
+    "teethe": "{tinco}{telco}[double-acute]{anto}[dot-below]",
     "tether": "{tinco}{anto}[acute]{oore}[acute]",
-    "thames": "{extended-tinco}ames", // "th" pronounced /t/ uses extended tinco
-    "thing": "th'ing",
+    "thames": "{EXTENDED-TINCO}ames", // "th" pronounced /t/ uses extended tinco
     "things": "{thuule}{nwalme}[dot-above][hook]",
-    "this": "{anto}{silme}[dot-above]",
+    "this": "{anto}{alt-silme}[dot-above]",
     "than": "{anto}{nuumen}[triple-dot-above]",
     "that": "{anto}{tinco}[triple-dot-above]",
     "thee": "{anto}{telco}[acute]{telco}[acute]",
@@ -635,12 +753,12 @@
     "theirs": "{anto}{anna}[acute]{oore}{esse-nuquerna}",
     "themselves": "{anto}{malta}[acute]{silme}{lambe}[acute]{ampa}{silme}[acute]",
     "there": "{anto}{oore}[acute][dot-below]",
-    "thereby": "{anto}{roomen}[acute]{umbar}[acute]{telco}[breve]",
-    "therein": "{anto}{roomen}[acute]{anna}[acute]{nuumen}",
-    "therefore": "{anto}{oore}[acute][dot-below]{formen}[acute]{oore}[dot-below][right-curl]",
+    "thereby": "there'by",
+    "therein": "there'in",
+    "therefore": "{anto}{oore}[acute][dot-below]{formen}{oore}[dot-below][right-curl]",
     "those": "{anto}{esse-nuquerna}[right-curl][dot-below]",
     "thou": "{anto}{vala}[right-curl]",
-    "thomas": "{extended-tinco}oma{silme}", // "th" pronounced /t/ uses extended tinco
+    "thomas": "{EXTENDED-TINCO}oma{silme}", // "th" pronounced /t/ uses extended tinco
     "though": "{anto}{vala}[right-curl]{extended-ungwe}",
     "thus": "{anto}{silme}[left-curl]",
     "thy": "{anto}{telco}[breve]",
@@ -648,10 +766,9 @@
     "thyself": "{anto}{silme}[breve]{lambe}[acute]{formen}",
     "together": "{tinco}{ungwe}[right-curl]{anto}[acute]{oore}[acute]",
     "togetherness": "{tinco}{ungwe}[right-curl]{anto}[acute]{oore}[acute]{nuumen}{alt-silme}[bar-below][acute]",
-    "uncharacteristic": "{extended-quesse}[left-curl][tilde-above]{roomen}[triple-dot-above]{quesse}[triple-dot-above]{tinco}{roomen}[acute]{silme}[dot-above]{tinco}{quesse}[dot-above]",
-    "uncharacteristically": "{extended-quesse}[left-curl][tilde-above]{roomen}[triple-dot-above]{quesse}[triple-dot-above]{tinco}{roomen}[acute]{silme}[dot-above]{tinco}{quesse}[dot-above]{lambe}[triple-dot-above][bar-inside]{telco}[breve]",
+    "uncharacteristic": "{extended-quesse}[left-curl][tilde-above]{roomen}[triple-dot-above]{quesse}[triple-dot-above]{tinco}{roomen}[acute]{alt-silme}[dot-above]{tinco}{quesse}[dot-above]",
+    "uncharacteristically": "{extended-quesse}[left-curl][tilde-above]{roomen}[triple-dot-above]{quesse}[triple-dot-above]{tinco}{roomen}[acute]{alt-silme}[dot-above]{tinco}{quesse}[dot-above]{lambe}[triple-dot-above][bar-inside]{telco}[breve]",
     "us": "{silme}[left-curl]",
-    "virus": "viru{silme}",
     "weather": "{vala}{osse}[acute]{anto}{oore}[acute]",
     "weatherman": "{vala}{osse}[acute]{anto}{oore}[acute]{malta}{nuumen}[triple-dot-above]",
     "with": "{vala}{anto}[dot-above]",
@@ -660,14 +777,13 @@
     "worthy": "{vala}{oore}[right-curl]{anto}{telco}[breve]",
 
     // Sindarin words with [ce] that are pronounced /k/ rather than /s/
-    // "celebdil": "{QUESSE}{lambe}[acute]{umbar}[acute]{ando}{lambe}[dot-above]",
     "celebdil": "Kelebdil",
     "celebros": "Kelebro{silme}",
     "celegorm": "Kelegorm",
     "celebrían": "{QUESSE}{lambe}[acute]{umbar}[acute]{roomen}{aara}[dot-above]{nuumen}[triple-dot-above]",
     "celebrian": "{QUESSE}{lambe}[acute]{umbar}[acute]{roomen}{aara}[dot-above]{nuumen}[triple-dot-above]",
     "celecormë": "{QUESSE}{lambe}[acute]{quesse}[acute]{roomen}[right-curl]{malta}{telco}[acute]",
-    "celecorme": "Kelekorme",
+    "celecorme": "Kelekormë",
     "celeborn": "Keleborn",
     "celepharn": "{QUESSE}{lambe}[acute]{formen}[acute]{roomen}[triple-dot-above]{nuumen}",
     "celebrimbor": "Kelebrimbor",
@@ -675,6 +791,21 @@
     "celebrindal": "Kelebrindal",
     "celerdain": "Kelerdain",
     "celebrant": "Kelebrant",
+
+    "cemendur": "Kemendur",
+    "cermie": "Kermie",
+    "ciriáran": "Kiriaran",
+    "ciryaher": "Kiryaher",
+    "ciryandil": "Kiryandil",
+    "ciryatan": "Kiryatan",
+    "ciryatur": "Kiryatur",
+    "ciryon": "Kiryon",
+    "círdan": "Kirdan",
+    "cirdan": "Kirdan",
+    "ciril": "Kiril",
+    "cirion": "Kirion",
+    "cirith": "Kirith",
+    "cirth": "Kirth",
 
     // Ordinal numbers
     // See http://www.gweep.net/~slarti/Gweep/Tengwar/#ordinal
