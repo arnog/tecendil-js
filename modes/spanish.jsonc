@@ -69,8 +69,8 @@ accent - lambe - malta + right curl.
     "qüí": "kuí",
 
     // Strengthen "r" (-> "rr") at beginning or after consonant
-    "^r": "rr",
-    "/([^AaEeIiOoUuÁáÉéÍíÓóÚú])r/": "$1rr"
+    "/^r/": "rr",
+    "/([^AaEeIiOoUuÁáÉéÍíÓóÚúRr])r/": "$1rr"
   },
 
   "map": {
@@ -84,7 +84,7 @@ accent - lambe - malta + right curl.
     "á": "{aara}[triple-dot-above]{}",
     "é": "[double-acute]{}",
     "í": "{aara}[dot-above]{}",
-    "ó": "[double-acute]{}",
+    "ó": "[double-right-curl]{}",
     "ú": "[double-left-curl]{}",
 
     // ----------------------------------------------------------------------------
