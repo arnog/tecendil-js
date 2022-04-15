@@ -1,0 +1,142 @@
+// -----------------------------------------------------------------------------
+//
+// CZECH MODE as described at http://tengwar.szm.sk/ct/ by Sven Siegmund
+// Adapted for Tecendil by Jiří Setnička
+//
+// -----------------------------------------------------------------------------
+
+{
+  "name": "Czech",
+  "languageCode": "cs", // Czech
+
+  "normalizeVowels": false,
+
+  "tehtarFollow": false,
+
+  "preprocess": {
+    "dě": "ďe",
+    "ně": "ňe",
+    "tě": "ťe",
+
+    "q": "kv",
+    "ě": "je",
+
+    "di": "ďi",
+    "dí": "ďí",
+    "ni": "ňi",
+    "ní": "ňí",
+    "tí": "ťí",
+    "ti": "ťi"
+  },
+
+  "map": {
+    //
+    // VOWELS
+    //
+    "a": "[triple-dot-above]",
+    "e": "[acute]",
+    "i": "[dot-above]",
+    "y": "[dot-above]", // same as "i"
+    "o": "[right-curl]",
+    "u": "[left-curl]",
+
+    // long vowels - double symbol (if inside word) or as normal vowel over aara
+    // (beginning of the word)
+    "á": "[yanta-above]",
+    "^á": "{aara}[triple-dot-above]",
+    "é": "[double-acute]",
+    "^é": "{aara}[acute]",
+    "í": "[double-dot-above]",
+    "^í": "{aara}[dot-above]",
+    "ý": "[double-dot-above]", // same as "i"
+    "^ý": "{aara}[dot-above]", // same as "i"
+    "ó": "[double-right-curl]",
+    "^ó": "{aara}[right-curl]",
+    "ú": "[double-left-curl]",
+    "^ú": "{aara}[left-curl]",
+    "ů": "[double-left-curl]",
+    "^ů": "{aara}[left-curl]",
+
+    //
+    // DIPHTHONGS - not used because of confusion when to use ou and when o+u
+    //
+    // "ou": "[right-curl]{vala}",
+    // "au": "{vala}",
+    // "eu": "{vala}",
+
+    //
+    // CONSONANTS
+    //
+    "t": "{tinco}",
+    "p": "{parma}",
+    "č": "{calma}",
+    "k": "{quesse}",
+    "kk": "{quesse}[bar-below]",
+    "d": "{ando}",
+    "dd": "{ando}[bar-below]",
+    "b": "{umbar}",
+    "dž": "{anga}",
+    "g": "{ungwe}",
+    "ť": "{thuule}",
+    "f": "{formen}",
+    "š": "{harma}",
+    "ch": "{hwesta}",
+    "ď": "{anto}",
+    "v": "{ampa}",
+    "ž": "{anca}",
+    "h": "{unque}", // also {hyarmen}, but {unque} is better with tehtar
+    "n": "{nuumen}", // also {nwalme} for nasals, cannot distinguish
+    "nn": "{nuumen}[bar-below]",
+    "m": "{malta}",
+    "ň": "{noldo}",
+
+    // ř: http://tengwar.szm.sk/ct/vysvetlivky.html#ore
+    // use oore at the end or with non-vocal consonants
+    "ř": "{arda}",
+    "ř$": "{oore}",
+    // p, f, t, ť, s, š, k, c, č
+    "př": "{parma}{oore}",
+    "fř": "{formen}{oore}",
+    "tř": "{tinco}{oore}",
+    "ťř": "{thuule}{oore}",
+    "sř": "{silme}{oore}",
+    "šř": "{harma}{oore}",
+    "kř": "{quesse}{oore}",
+    "cř": "{extended-tinco}{oore}",
+    "čř": "{calma}{oore}",
+
+    "j": "{anna}",
+    "^j": "{yanta}",
+    "jj": "{anna}[bar-below]",
+    // "jj": "{yanta}[bar-below]",
+
+    "r": "{roomen}",
+    "l": "{lambe}",
+    "ľ": "{alda}",
+
+    // s/z: nuquerna variants automatically used with tehtar
+    "s": "{silme}",
+    "z": "{esse}",
+    "zz": "{esse}[bar-below]",
+
+    //
+    // EXTENDED CONSONANTS
+    //
+    "ts": "{extended-tinco}",
+    "c": "{extended-tinco}", // because "c" pronounced like "ts", see http://tengwar.szm.sk/ct/vysvetlivky.html#tsps
+    "ps": "{extended-parma}",
+    "ťň": "{extended-calma}",
+    "ks": "{extended-quesse}",
+    "x": "{extended-quesse}", // because "x" pronounced like "ks"
+    "dz": "{extended-ando}",
+    "bz": "{extended-umbar}",
+    "ďň": "{extended-anga}",
+    "dň": "{extended-anga}",
+    "gz": "{extended-ungwe}",
+
+    //
+    // MISSING CONSONANTS (foreign words)
+    //
+    "w": "{vilya}"
+  }
+}

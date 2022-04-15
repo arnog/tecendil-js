@@ -88,6 +88,93 @@
     "settings.language.default": "System default",
     "settings.dark-mode": "Dark Mode"
   },
+  "cs": {
+    "the-tengwar-transcriber": "Transkripce do Tengwaru",
+
+    "button.open-menu": "Otevřít menu",
+    "button.close-menu": "Zavřít menu",
+    "menu.home": "Domů",
+    "menu.handbook": "Příručka Tengwar",
+    "menu.inside-tecendil": "Uvnitř Tecendilu",
+    "menu.whats-new": "Co je nového?",
+    "menu.install": "Instalace",
+    "menu.settings": "Nastavení",
+
+    "footer.font-credits": "<b>Fonty</b> Tengwar Annatar a Tengwar Telcontar stvořil Johan Winge, Parmaite Tengwar a Tengwar Eldamar stvořil M&aring;ns Bj&ouml;rkman, Tengwar Formal je z projektu <a href=\"http://freetengwar.sourceforge.net/\">Free Tengwar Font Project</a>. Alcarin stvořil Toshi Omagari. Některé fonty byly přizpůsobil pro web Ben Talagan Babut z projektu Glaemscribe.",
+    "footer.contact": "Máte otázku? Máte nějaký feedback? Chcete opravit přepis? Zeptejte se ",
+    "footer.support-intro": "Líbí se vám Tecendil?",
+    "footer.patreon": "Podpora na Patreonu",
+    "footer.paypal": "Podpora přes PayPal",
+
+    "prompt.install": "Tecendil může být instalován na zařízení pro fungování offline.",
+    "button.install": "Instalovat",
+    "button.not-now": "Teď ne",
+
+    "prompt.drop": "Přetáhněte soubor pro jeho přepis.",
+
+    "label.placeholder.try": "Vyzkoušejte: “${placeholder}”",
+
+    "label.font": "Font: ",
+    "font-name.annatar-italic": "Annatar Italic",
+
+    "label.mode": "Mód: ",
+    "label.mode.english": "Anglicky",
+    "menu.mode.english": "Anglicky",
+    "label.mode.english-classical": "Anglicky tradičně",
+    "menu.mode.english-classical": "Anglicky tradičně",
+    "label.mode.english-phonemic": "Anglicky foneticky",
+    "menu.mode.english-phonemic": "Anglicky foneticky",
+    "label.mode.spanish": "Španělsky",
+    "menu.mode.spanish": "Español (Španělsky)",
+    "label.mode.italian": "Italsky",
+    "menu.mode.italian": "Italiano (Italsky)",
+    "label.mode.italian-full": "Italiano Esteso",
+    "menu.mode.italian-full": "Italiano Esteso (Italsky plný mód)",
+    "label.mode.sindarin": "Sindarština",
+    "menu.mode.sindarin": "Sindarština",
+    "label.mode.quenya": "Quenijština",
+    "menu.mode.quenya": "Quenijština",
+    "label.mode.beleriand": "Beleriand",
+    "menu.mode.beleriand": "Beleriand",
+    "label.mode.erebor": "Cirth",
+    "menu.mode.erebor": "Cirth: Angerthas Erebor",
+
+    "warning.general": "<p><b>POZOR</b> Tento přepis funguje dobře jen pro angličtinu, španělštinu, sindarština a quenijštinu. Výsledný přepis může být nepřesný.</p>",
+    "warning.english": "<p><b>POZOR</b> Tecendil nepřekládá. Co píšete vypadá jako angličtina. Pro správný přepis angličtiny se přepněte do anglického módu.</p>",
+    "warning.elvish": "<p><b>POZOR</b> To nevypadá jako angličtina. Je to sindarština nebo quenijština? Pro správný přepis zvlte prosím sindarijský, quenijský nebo Beleriand mód.</p>",
+
+    "tooltip.download": "stáhnout",
+    "filename.screenshot": "Tecendil přepis",
+    "tooltip.share": "sdílet",
+
+    "button.patron": "Staňte se Patronem!",
+    "welcome": "Vítejte na Tecendilu",
+    "welcome.1": "Zdravím! Jmenuji se Arno.",
+    "welcome.2": "Miluji překrásné písmo Tengwar stvořené Tolkienem pro svět <i>Pána prstenů</i>.",
+    "welcome.3": "Vy možná také… a nebo třeba pátráte po inspiraci na další tetování?",
+    "welcome.4": "Napište větu nebo libovolné jméno a podívejte se, jak vypadá přepsaná do Tengwaru.",
+    "welcome.5": "Pozor, text <b>není přeložený</b>, je jenom přepsaný pomocí znaků Tengwar.",
+    "welcome.6": "Pro správný přepis zvolte odpovídající jazyk v menu <i>Mód</i>: anglicky, italsky, španělsky, česky, quenijsky, sindarijsky. Pokud vás zajímá podpora i pro nějaký jiný jazyk, kontaktujte mě.",
+    "label.source-eldamo": "Zdroj: <a href=\"https://eldamo.org\">Eldamo</a>",
+
+    "label.wikipedia.intro-random": "Procvičte si čtení Tengwaru v tomto náhodném článku z Wikipedie:",
+    "label.wikipedia.intro": "Procvičte si čtení Tengwaru v článku o “",
+    "label.wikipedia.intro.close": "” z Wikipedie:",
+
+    "dialog-title.settings": "Nastavení",
+    "button.close": "Zavřít",
+    "button.back": "Zpět",
+    "settings.dictionaries": "Slovníky",
+    "settings.dictionaries.sindarin": "Sindarin",
+    "settings.dictionaries.quenya": "Quenya",
+    "settings.dictionaries.proto-elvish": "Primitivní elfština",
+    "settings.dictionaries.other": "Jiné",
+    "label.wikipedia": "Wikipedie",
+    "description.settings.wikipedia": "Zobraz článek z Wikipedie",
+    "settings.language": "Jazyky",
+    "settings.language.default": "Výchozí jazyk systému",
+    "settings.dark-mode": "Tmavý režim"
+  },
   "de": {
     "the-tengwar-transcriber": "Der Tengwar Transkriptor",
 
