@@ -56,7 +56,7 @@
     "label.mode.erebor": "Cirth",
     "menu.mode.erebor": "Cirth: Angerthas Erebor",
 
-    "warning.general": "<p><b>CAUTION</b> This transcriber only works well for English, Spanish, Sindarin or Quenya. The result may be inaccurate otherwise.</p>",
+    "warning.general": "<p><b>CAUTION</b> This transcriber only works well for some languages. The result may be inaccurate otherwise.</p>",
     "warning.english": "<p><b>CAUTION</b> Tecendil does not translate. What you typed looks like English. For an accurate transcription, select an English mode.</p>",
     "warning.spanish": "<p><b>PRECAUCIÓN</b> Para transcribir una oración o nombre en español, use el modo <kbd>Español</kbd>.</p>",
     "warning.italian": "<p><b>ATTTENZIONE</b> Per trascrivere una frase o un nome in italiano, utilizzare la modalità <kbd>italianio<kbd>.</p>",
@@ -372,7 +372,7 @@
     "menu.mode.westron": "Westron orthographique",
     "label.mode.westron": "westron",
 
-    "warning.general": "<p><b>ATTENTION</b> Ce transcripteur ne fonctionne que pour l'anglais, l'espagnol, le sindarin ou le quenya. Le résultat peut être inexact autrement.</p>",
+    "warning.general": "<p><b>ATTENTION</b> Ce transcripteur ne fonctionne que pour certaines langues. Le résultat peut être inexact autrement.</p>",
     "warning.elvish": "<p><b>ATTENTION</b> Cela ne ressemble pas à l'anglais. Est-ce Sindarin ou Quenya? Pour une transcription précise, sélectionnez le mode Sindarin, Quenya ou Beleriand.</p>",
 
     "tooltip.download": "Télécharger",

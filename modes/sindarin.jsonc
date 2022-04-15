@@ -194,10 +194,16 @@
     // ones derived from ancient prenasalized stops mb, nd, ŋg, that behave
     // differently under mutation (the examples are the plural and definite
     // plural of the words):
-    // mbar7 : bair  , i·mbair     ndor7 : dŷr  , i·ndŷr    
-    // ŋgolodh: gelydh   , i·ñgelydh    
-    // InTolkien’sownromanizationngisambiguousbetweenand ininitialpositionbutthe
-    // structure of the language makes quite clear that they are different sounds
+    //
+    // mbar7 : bair  ,
+    // i·mbair    
+    // ndor7 : dŷr  ,
+    // i·ndŷr    
+    // ŋgolodh: gelydh   ,
+    // i·ñgelydh    
+    // In Tolkien’s own romanization ng is ambiguous between  and  ininitial
+    // position but the structure of the language makes quite clear that they
+    // are different sounds
     // (following the system behind the other voiced stops).
     "ñg": "[bar-above]{ungwe}",
     "ñd": "[bar-above]{ando}",
