@@ -638,7 +638,11 @@
     "description.settings.wikipedia": "显示维基百科条目",
     "settings.language": "语言",
     "settings.language.default": "系统默认",
-    "settings.dark-mode": "深色模式"
+    "settings.dark-mode": "深色模式",
+    "settings.theme": "主题",
+    "settings.theme.system": "系统默认",
+    "settings.theme.light": "浅色",
+    "settings.theme.dark": "深色"
   },
   "zh-hk": {
     "the-tengwar-transcriber": "談格瓦轉寫器",
@@ -713,7 +717,11 @@
     "description.settings.wikipedia": "顯示維基百科條目",
     "settings.language": "語言",
     "settings.language.default": "系統預設",
-    "settings.dark-mode": "深色模式"
+    "settings.dark-mode": "深色模式",
+    "settings.theme": "主題",
+    "settings.theme.system": "系統預設",
+    "settings.theme.light": "淺色",
+    "settings.theme.dark": "深色"
   },
   "zh-tw": {
     "the-tengwar-transcriber": "談格瓦轉寫器",
@@ -754,7 +762,7 @@
     "menu.mode.spanish": "Español（西班牙語）",
     "label.mode.italian": "義大利語",
     "menu.mode.italian": "Italiano（義大利語）",
-    "label.mode.polish": "Polish",
+    "label.mode.polish": "波蘭語",
     "menu.mode.polish": "polski（波蘭語）",
     "label.mode.sindarin": "辛達林語",
     "menu.mode.sindarin": "Sindarin（辛達林語）",
@@ -763,6 +771,7 @@
     "label.mode.beleriand": "貝爾蘭",
     "menu.mode.beleriand": "Beleriand（貝爾蘭）",
     "label.mode.erebor": "切斯文",
+    "menu.mode.erebor": "Cirth: Angerthas Erebor（切斯文：伊魯伯字體）",
 
     "warning.general": "<p><b>警告</b> 這個轉寫器只適用於英語，西班牙語，辛達林語或昆雅語。 否則結果可能不准確。</p>",
     "warning.elvish": "<p><b>警告</b> 這個看起來不像是英語。這是辛達林語或昆雅語嗎？要獲得準確的轉錄，請選擇Sindarin，Quenya或Beleriand模式。</p>",
@@ -792,6 +801,10 @@
     "description.settings.wikipedia": "顯示維基百科條目",
     "settings.language": "語言",
     "settings.language.default": "系統預設",
-    "settings.dark-mode": "深色模式"
+    "settings.dark-mode": "深色模式",
+    "settings.theme": "主題",
+    "settings.theme.system": "系統預設",
+    "settings.theme.light": "淺色",
+    "settings.theme.dark": "深色"
   }
 }
