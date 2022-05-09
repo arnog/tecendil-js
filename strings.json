@@ -638,7 +638,11 @@
     "description.settings.wikipedia": "显示维基百科条目",
     "settings.language": "语言",
     "settings.language.default": "系统默认",
-    "settings.dark-mode": "深色模式"
+    "settings.dark-mode": "深色模式",
+    "settings.theme": "主题",
+    "settings.theme.system": "系统默认",
+    "settings.theme.light": "浅色",
+    "settings.theme.dark": "深色"
   },
   "zh-hk": {
     "the-tengwar-transcriber": "談格瓦轉寫器",
@@ -713,7 +717,11 @@
     "description.settings.wikipedia": "顯示維基百科條目",
     "settings.language": "語言",
     "settings.language.default": "系統預設",
-    "settings.dark-mode": "深色模式"
+    "settings.dark-mode": "深色模式",
+    "settings.theme": "主題",
+    "settings.theme.system": "系統預設",
+    "settings.theme.light": "淺色",
+    "settings.theme.dark": "深色"
   },
   "zh-tw": {
     "the-tengwar-transcriber": "談格瓦轉寫器",
@@ -793,6 +801,10 @@
     "description.settings.wikipedia": "顯示維基百科條目",
     "settings.language": "語言",
     "settings.language.default": "系統預設",
-    "settings.dark-mode": "深色模式"
+    "settings.dark-mode": "深色模式",
+    "settings.theme": "主題",
+    "settings.theme.system": "系統預設",
+    "settings.theme.light": "淺色",
+    "settings.theme.dark": "深色"
   }
 }
