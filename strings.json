@@ -92,7 +92,11 @@
     "description.settings.wikipedia": "Display a Wikipedia article",
     "settings.language": "Language",
     "settings.language.default": "System default",
-    "settings.dark-mode": "Dark Mode"
+    "settings.dark-mode": "Dark Mode",
+    "settings.theme": "Theme",
+    "settings.theme.system": "System Default",
+    "settings.theme.light": "Light",
+    "settings.theme.dark": "Dark"
   },
   "cs": {
     "the-tengwar-transcriber": "Transkripce do Tengwaru",
