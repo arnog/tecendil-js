@@ -332,8 +332,9 @@
     // except melancholy, melancholic, anchor, anchorage, anchoring,
     // anchorman, anchormen
     // "enc": "[tilde-above][acute]{quesse}",
-    "ence": "[tilde-above][acute]{silme-nuquerna}[acute]",
-    "ence$": "{}[tilde-above][acute][dot-below]{silme-nuquerna}",
+    "ence": "[acute]{nuumen}{silme-nuquerna}[acute]",
+    "ence$": "[acute]{nuumen}[dot-below]{silme-nuquerna}",
+    "enci": "[acute]{nuumen}{silme-nuquerna}[dot-above]",
     "ench": "[tilde-above][acute]{calma}",
     // "inc": "[tilde-above][dot-above]{quesse}",
     "ince": "[tilde-above][dot-above]{silme-nuquerna}[acute]",
@@ -708,6 +709,7 @@
     "orchid": "orkxid",
     "other": "{anto}[right-curl]{oore}[acute]",
     "outhouse": "out'house", //  not th
+    "pancake": "pan'cake",
     "parchisi": "par'chisi", // 'arch' does not not use 'extended-quesse' here, pronounced "tch"
     "pothead": "pot'head", //  not "th"
     "rather": "{roomen}{anto}[triple-dot-above]{oore}[acute]",
