@@ -54,11 +54,8 @@
     // 	    egrep "ca" ~/cmu.txt | grep -v "K A" | grep -v "K E" | grep -v "K " | awk "{printf $1 ", "}'
 
     // "ca" is K except caesar S, caesars S, facade S, facades S
-    // "ce" is S except cello CH, concerto CH,
-    // "ci" is S except ancient CH, capuccino CH, ciao CH,
     // "co" is K
     // "cu" is K
-    // "cy" is S
 
     // boulangerie, collagen, fougere, langevin, legendre, tourangeau
     // hemorrhagic, paraplegic,
@@ -315,6 +312,7 @@
 
     // Nasalization mark
     "nc": "[tilde-above]{quesse}",
+    "nk": "[tilde-above]{quesse}",
     "mc": "[tilde-above]{quesse}",
     "nd": "[tilde-above]{ando}",
     "md": "[tilde-above]{ando}",
@@ -330,7 +328,6 @@
     // "anc": "[tilde-above][triple-dot-above]{quesse}",
     "ance": "[tilde-above][triple-dot-above]{silme-nuquerna}[acute]",
     "ance$": "{}[tilde-above][triple-dot-above][dot-below]{silme-nuquerna}",
-    "anci": "[tilde-above][triple-dot-above]{silme-nuquerna}[dot-above]",
     "anch": "[tilde-above][triple-dot-above]{calma}",
     // except melancholy, melancholic, anchor, anchorage, anchoring,
     // anchorman, anchormen
@@ -342,7 +339,7 @@
     "ince": "[tilde-above][dot-above]{silme-nuquerna}[acute]",
     "ince$": "[tilde-above][dot-above][dot-below]{silme-nuquerna}",
     "inch": "[tilde-above][dot-above]{calma}",
-    // Except inchoate
+    // Except `inchoate`
     // "onc": "[tilde-above][right-curl]{quesse}",
     // Override "onc" rule when followed by e -> soft-C
     "once": "[tilde-above][right-curl]{silme-nuquerna}[acute]",
@@ -351,9 +348,9 @@
     "unce": "[tilde-above][left-curl]{silme-nuquerna}[acute]",
     "unce$": "[tilde-above][left-curl][dot-below]{silme-nuquerna}",
     "onch": "[tilde-above][right-curl]{calma}",
-    // Except bronchitis, bronchoscope,
+    // Except `bronchitis`, `bronchoscope`,
     "unch": "[tilde-above][left-curl]{calma}",
-    // Except uncharacteristic, uncharacteristically
+    // Except `uncharacteristic`, `uncharacteristically`
 
     // "amc": "[tilde-above][triple-dot-above]{quesse}",
     "amch": "[tilde-above][triple-dot-above]{calma}", // "Kamchatka"
@@ -435,6 +432,7 @@
     "mce": "{malta}{silme-nuquerna}[acute]", // necessary to override "mc'
     "nce": "{nuumen}{silme-nuquerna}[acute]", // necessary to override "nc'
     "nce$": "{nuumen}[dot-below]{silme-nuquerna}", // necessary to override "nc'
+    "nci": "[tilde-above]{silme-nuquerna}[dot-above]", // nasalization mark and soft-s (all english words with `nci` are proncounced with a soft-s)
     "ce$": "[dot-below]{silme-nuquerna}",
     "sci$": "{}{calma}[dot-above]", // S I, e.g. "pesci"
     "cci$": "{}{calma}[dot-above]", // CH, e.g. "gucci"
@@ -445,9 +443,9 @@
     "ce": "{}{silme-nuquerna}[acute]",
     "ci": "{}{silme-nuquerna}[dot-above]",
     "cy": "{}{silme-nuquerna}[breve]",
-    // "ce" is S except cello CH, celt K, celtic K, concerto CH,
-    // "ci" is S except ancient CH, capuccino CH, ciao CH,
-    // "cy" is S (cyan, recycle, cymbal)
+    // "ce" is S except `cello` CH, `celt` K, `celtic` K, `concerto` CH,
+    // "ci" is S except `ancient` CH, `capuccino` CH, `ciao` CH,
+    // "cy" is S (`cyan`, `recycle`, `cymbal`)
 
     "^mc": "{malta}[triple-dot-above]{quesse}", // "Mc" -> "mac"
 
