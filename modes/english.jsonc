@@ -26,6 +26,7 @@
     "ĵ": "zh",
     "ŝ": "sh",
     "ŭ": "w",
+    "s**": "ß",
     "s*": "ç",
     // Special "kx" combination for extended-quesse
     "archi": "arkxi", // Greek archeion: official building, official documents
@@ -405,6 +406,7 @@
     "b": "{umbar}",
     "c": "{quesse}",
     "ç": "{silme-nuquerna}",
+    "ß": "{alt-silme}",
     "d": "{ando}",
     "f": "{formen}",
     "g": "{ungwe}",
