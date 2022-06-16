@@ -35,7 +35,9 @@
     "alchem": "alkxem", // Arabic al-kīmiyāʼ: art of transmuting metals
     "charac": "kxarac", // Greek charasein: to scratch, engrave
     "chol": "kxol", // Greek, various (melancholy, psychologist...)
+    "/^chl/": "kxl", // "chlore", "chlorophyl"
     "chron": "kxron", // Greek chronos: time
+    "chrom": "kxrom", // chrome, chromium, chromosone
     "christ": "kxrist", // Greek christos: annointed
     "mech": "mekx", // Greek mēchanē: machine
     "psych": "psykx", // Greek, mind
@@ -252,9 +254,7 @@
     // Special double-character sequences
     "ch": "{calma}", // "march"
     "kx": "{extended-quesse}",
-    "^chem": "{extended-quesse}em", // chemical, chemistry, chemists
-    "^chl": "{extended-quesse}{roomen}", // "chlorophyl"
-    "^chro": "{extended-quesse}ro", // "chrome", "chromium", "chromosone"...
+    "^chem": "{extended-quesse}{malta}[acute]", // chemical, chemistry, chemists
     "ck": "[bar-below]{quesse}", // "check"
     "th": "{thuule}",
     "dh": "{anto}",
