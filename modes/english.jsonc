@@ -34,6 +34,7 @@
     "archaeo": "arkxeo", // Greek archaios: ancien
     "alchem": "alkxem", // Arabic al-kīmiyāʼ: art of transmuting metals
     "charac": "kxarac", // Greek charasein: to scratch, engrave
+    "/^chem/": "kxem", // chemical, chemistry, chemists
     "chol": "kxol", // Greek, various (melancholy, psychologist...)
     "/^chl/": "kxl", // "chlore", "chlorophyl"
     "chron": "kxron", // Greek chronos: time
@@ -254,7 +255,6 @@
     // Special double-character sequences
     "ch": "{calma}", // "march"
     "kx": "{extended-quesse}",
-    "^chem": "{extended-quesse}{malta}[acute]", // chemical, chemistry, chemists
     "ck": "[bar-below]{quesse}", // "check"
     "th": "{thuule}",
     "dh": "{anto}",
