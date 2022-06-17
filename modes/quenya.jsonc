@@ -312,7 +312,7 @@ accent - lambe - malta + right curl.
     // Special case
     // The e verbs ethenta- and all its forms shouldn't be spelled with
     // þúle, but with {tinco}{harma}[e] because it contains the prefix et-.
-    "^ethent": "[telco]{acute}[tinco][hyarmen]{acute}[anto]{triple-dot-above}"
+    "^ethent": "{telco}[acute]{tinco}{hyarmen}[acute]{anto}[triple-dot-above]"
   },
 
   "words": {
