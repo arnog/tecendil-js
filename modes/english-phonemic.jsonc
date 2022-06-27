@@ -134,13 +134,14 @@ fire sour door
     "ae1": "[reversed-triple-dot-above]",
     "ae2": "[reversed-triple-dot-above]", // The reversed a-tehta is attested for the English /æ/ in both attested phonemic English tehtar “texts” (DTS 39 and DTS 41, both consisting rather of a few doodles than any real text)
 
+    "^ah0": "[grave]", // Initial schwa
     "ah0$": "[dot-below]{telco}", // Schwa
-    "ah0": "[dot-below]", // Schwa (could it be triple-dot below?)
+    "ah0": "[dot-below]{telco}", // Schwa (could it be triple-dot below?)
     "ah1$": "[dot-below]{telco}",
-    "ah1": "[dot-below]",
+    "ah1": "[grave]", // ʌ
     // 	"ah1"n":	"[dot-below]{nuumen}",
-    "ah2": "[dot-below]",
-    "ah2$": "[dot-below]{telco}",
+    "ah2": "[grave]", // ʌ
+    "ah2$": "[grave]{telco}",
     "ao0": "[right-curl]{aara}",
     "ao1": "[right-curl]{aara}",
     "ao2": "[right-curl]{aara}",
@@ -168,12 +169,12 @@ fire sour door
     "eh0": "[acute]",
     "eh1": "[acute]",
     "eh2": "[acute]",
-    "er0": "[grave]{roomen}", //
+    "er0": "[grave]{oore}", //
     "er0$": "[dot-below]{oore}", //	oore as per VT#23 p16
     "er1$": "[dot-below]{oore}", //
-    "er2$": "[dot-below]{oore}", //
+    "er2$": "[grave]{oore}", //
     "er1": "[dot-below]{oore}",
-    "er2": "[dot-below]{oore}",
+    "er2": "[grave]{oore}",
     "ey0": "[acute]{anna}", // [triple-dot-above]
     "ey1": "[acute]{anna}", // [triple-dot-above]
     "ey2": "[acute]{anna}", // [triple-dot-above]
