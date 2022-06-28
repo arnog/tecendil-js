@@ -135,9 +135,9 @@ fire sour door
     "ae2": "[reversed-triple-dot-above]", // The reversed a-tehta is attested for the English /æ/ in both attested phonemic English tehtar “texts” (DTS 39 and DTS 41, both consisting rather of a few doodles than any real text)
 
     "^ah0": "[grave]", // Initial schwa
-    "ah0$": "[dot-below]{telco}", // Schwa
-    "ah0": "[dot-below]{telco}", // Schwa (could it be triple-dot below?)
-    "ah1$": "[dot-below]{telco}",
+    "ah0$": "[dot-below]", // Schwa
+    "ah0": "[dot-below]", // Schwa (could it be triple-dot below?)
+    "ah1$": "[dot-below]",
     "ah1": "[grave]", // ʌ
     // 	"ah1"n":	"[dot-below]{nuumen}",
     "ah2": "[grave]", // ʌ
@@ -200,7 +200,6 @@ fire sour door
     "k'w": "[over-twist]{quesse}",
     "k'y": "{quesse}{anna}",
     "l": "{lambe}",
-    "ah0'l": "[dot-inside]{lambe}",
     "l'y": "{lambe}{anna}",
     "m": "{malta}",
     // 	"ah0'm":	"{malta}",
@@ -214,7 +213,7 @@ fire sour door
     "n'y": "{noldo}",
     "n'd": "[tilde-above]{ando}",
     "n't": "[tilde-above]{tinco}",
-    "n's$": "[left-following-silme]{nuumen}",
+    "n's$": "[hook]{nuumen}",
     "n'sh": "[bar-above]{harma}",
     "n'zh": "[bar-above]{anca}",
     "ng": "{nwalme}",
