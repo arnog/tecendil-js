@@ -1,0 +1,85 @@
+/*
+
+ LOJBAN MODE
+
+ This mode follows 'Elrond's revised mapping - mode 3', as documented at
+
+   http://www.raphael.poss.name/tengwar/
+
+ and as linked by
+
+   https://mw.lojban.org/papri/Tengwar
+
+*/
+{
+  "name": "lojban",
+  "languageCode": "jbo",
+
+  "normalizeVowels": false,
+
+  "preprocess": {
+    // Standard orthography says ' but h is in semi-common use too. Map here
+    // to avoid having to process separately.
+    "'": "h"
+  },
+
+  "map": {
+    // Always pusta for dot.
+    ".": "{pusta}",
+
+    // Separator
+    "h": "{halla}",
+
+    // Vowels
+    "^a": "{osse}",
+    "^e": "{yanta}",
+    "^i": "{telco}",
+    "^o": "{anna}",
+    "^u": "{vala}",
+    "^y": "{aara}",
+    "a": "[triple-dot-above]",
+    "e": "[acute]",
+    "i": "[dot-above]",
+    "o": "[right-curl]",
+    "u": "[left-curl]",
+    "y": "[dot-below]",
+
+    //
+    // Consonants
+    //
+    "t": "{tinco}",
+    "d": "{ando}",
+
+    "p": "{parma}",
+    "b": "{umbar}",
+
+    "k": "{quesse}",
+    "g": "{ungwe}",
+
+    "f": "{formen}",
+    "v": "{ampa}",
+
+    "c": "{harma}",
+    "j": "{anca}",
+
+    // Later - s & z should not be nuquerna if followed by consonant, or at end of word.
+    "s": "{silme-nuquerna}",
+    "z": "{esse-nuquerna}",
+
+    "x": "{hwesta}",
+
+    "m": "{malta}",
+    "n": "{nuumen}",
+
+    // Later - r should be roomen if followed by consonant, or at end of word.
+    "r": "{oore}",
+    "l": "{lambe}"
+  },
+
+  "words": {
+    // Special for bridi, topic, and end of text separators
+    ".i": "{double-pusta}",
+    "niho": "{triple-pusta}",
+    "faho": "{quadruple-pusta}"
+  }
+}
