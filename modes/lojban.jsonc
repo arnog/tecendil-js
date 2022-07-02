@@ -2,7 +2,8 @@
 
  LOJBAN MODE
 
- This mode follows 'Elrond's revised mapping - mode 3', as documented at
+ This mode attempts to follow 'Elrond's revised mapping - mode 3', as
+ documented at
 
    http://www.raphael.poss.name/tengwar/
 
@@ -10,12 +11,21 @@
 
    https://mw.lojban.org/papri/Tengwar
 
+ There are some omissions:
+
+ - S curls at the end of cmene.
+ - commas and capitals for indicating stress.
+ - Diphthong usage in samples appears to be irregular. I've gone for what I
+   believe is the most beautiful of the alternatives provided.
+
 */
 {
-  "name": "lojban",
+  "name": "jbobau (Lojban)",
   "languageCode": "jbo",
 
   "normalizeVowels": false,
+
+  "wordPattern": "^[A-Za-zÀ-ÖØ-öø-ÿ\\*\\'\\.]+",
 
   "preprocess": {
     // Standard orthography says ' but h is in semi-common use too. Map here
@@ -31,18 +41,63 @@
     "h": "{halla}",
 
     // Vowels
+
+    // At the start of words, use the free-standing vowels.
     "^a": "{osse}",
     "^e": "{yanta}",
     "^i": "{telco}",
     "^o": "{anna}",
     "^u": "{vala}",
     "^y": "{aara}",
-    "a": "[triple-dot-above]",
-    "e": "[acute]",
-    "i": "[dot-above]",
-    "o": "[right-curl]",
-    "u": "[left-curl]",
-    "y": "[dot-below]",
+
+    // Normal tehta for following vowels. These are commented out as it
+    // matches default rules.
+    // "a": "[triple-dot-above]",
+    // "e": "[acute]",
+    // "i": "[dot-above]",
+    // "o": "[right-curl]",
+    // "u": "[left-curl]",
+    // "y": "[dot-below]",
+
+    // Full vowels following halla - halla never gets tehta.
+    "ha": "{halla}{osse}",
+    "he": "{halla}{yanta}",
+    "hi": "{halla}{telco}",
+    "ho": "{halla}{anna}",
+    "hu": "{halla}{vala}",
+    "hy": "{halla}{aara}",
+
+    // Full vowels following pusta. Note .i also makes the validator sad, but
+    // it is necessary for everything to come out right.
+    ".a": "{pusta}{osse}",
+    ".e": "{pusta}{yanta}",
+    ".i": "{pusta}{telco}",
+    ".o": "{pusta}{anna}",
+    ".u": "{pusta}{vala}",
+    ".y": "{pusta}{aara}",
+
+    // Explicit mapping for diphthongs - these should not combine with the
+    // preceding consonant. Note that the validator says these are not
+    // necessary, but they are! Otherwise 'bai' comes out as
+    // {umbar}[triple-dot-above]{telco}[dot-above] - with this it correctly
+    // comes out as {umbar}{osse}[dot-above].
+
+    "ai": "{osse}[dot-above]",
+    "au": "{osse}[left-curl]",
+    "ei": "{yanta}[dot-above]",
+    "ia": "{telco}[triple-dot-above]",
+    "ie": "{telco}[acute]",
+    "ii": "{telco}[dot-above]",
+    "io": "{telco}[right-curl]",
+    "iu": "{telco}[left-curl]",
+    "iy": "{telco}[dot-below]",
+    "oi": "{anna}[dot-above]",
+    "ua": "{vala}[triple-dot-above]",
+    "ue": "{vala}[acute]",
+    "ui": "{vala}[dot-above]",
+    "uo": "{vala}[right-curl]",
+    "uu": "{vala}[left-curl]",
+    "uy": "{vala}[dot-below]",
 
     //
     // Consonants
@@ -62,24 +117,98 @@
     "c": "{harma}",
     "j": "{anca}",
 
-    // Later - s & z should not be nuquerna if followed by consonant, or at end of word.
-    "s": "{silme-nuquerna}",
-    "z": "{esse-nuquerna}",
+    // s & z should be nuquerna if they have a tehta. This require specific
+    // definitions of all SV combos. And then, because we've defined these, we
+    // need to re-define all SVV combos to get the combining forms right.
+    "s": "{silme}",
+    "sa": "{silme-nuquerna}[triple-dot-above]",
+    "se": "{silme-nuquerna}[acute]",
+    "si": "{silme-nuquerna}[dot-above]",
+    "so": "{silme-nuquerna}[right-curl]",
+    "su": "{silme-nuquerna}[left-curl]",
+    "sy": "{silme-nuquerna}[dot-below]",
+    "sai": "{silme}{osse}[dot-above]",
+    "sau": "{silme}{osse}[left-curl]",
+    "sei": "{silme}{yanta}[dot-above]",
+    "sia": "{silme}{telco}[triple-dot-above]",
+    "sie": "{silme}{telco}[acute]",
+    "sii": "{silme}{telco}[dot-above]",
+    "sio": "{silme}{telco}[right-curl]",
+    "siu": "{silme}{telco}[left-curl]",
+    "siy": "{silme}{telco}[dot-below]",
+    "soi": "{silme}{anna}[dot-above]",
+    "sua": "{silme}{vala}[triple-dot-above]",
+    "sue": "{silme}{vala}[acute]",
+    "sui": "{silme}{vala}[dot-above]",
+    "suo": "{silme}{vala}[right-curl]",
+    "suu": "{silme}{vala}[left-curl]",
+    "suy": "{silme}{vala}[dot-below]",
+    "z": "{esse}",
+    "za": "{esse-nuquerna}[triple-dot-above]",
+    "ze": "{esse-nuquerna}[acute]",
+    "zi": "{esse-nuquerna}[dot-above]",
+    "zo": "{esse-nuquerna}[right-curl]",
+    "zu": "{esse-nuquerna}[left-curl]",
+    "zy": "{esse-nuquerna}[dot-below]",
+    "zai": "{esse}{osse}[dot-above]",
+    "zau": "{esse}{osse}[left-curl]",
+    "zei": "{esse}{yanta}[dot-above]",
+    "zia": "{esse}{telco}[triple-dot-above]",
+    "zie": "{esse}{telco}[acute]",
+    "zii": "{esse}{telco}[dot-above]",
+    "zio": "{esse}{telco}[right-curl]",
+    "ziu": "{esse}{telco}[left-curl]",
+    "ziy": "{esse}{telco}[dot-below]",
+    "zoi": "{esse}{anna}[dot-above]",
+    "zua": "{esse}{vala}[triple-dot-above]",
+    "zue": "{esse}{vala}[acute]",
+    "zui": "{esse}{vala}[dot-above]",
+    "zuo": "{esse}{vala}[right-curl]",
+    "zuu": "{esse}{vala}[left-curl]",
+    "zuy": "{esse}{vala}[dot-below]",
 
     "x": "{hwesta}",
 
     "m": "{malta}",
     "n": "{nuumen}",
 
-    // Later - r should be roomen if followed by consonant, or at end of word.
-    "r": "{oore}",
-    "l": "{lambe}"
+    "l": "{lambe}",
+    // R has the same rules as s & z, except oore if it has a tehta.
+    "r": "{roomen}",
+    "ra": "{oore}[triple-dot-above]",
+    "re": "{oore}[acute]",
+    "ri": "{oore}[dot-above]",
+    "ro": "{oore}[right-curl]",
+    "ru": "{oore}[left-curl]",
+    "ry": "{oore}[dot-below]",
+    "rai": "{roomen}{osse}[dot-above]",
+    "rau": "{roomen}{osse}[left-curl]",
+    "rei": "{roomen}{yanta}[dot-above]",
+    "ria": "{roomen}{telco}[triple-dot-above]",
+    "rie": "{roomen}{telco}[acute]",
+    "rii": "{roomen}{telco}[dot-above]",
+    "rio": "{roomen}{telco}[right-curl]",
+    "riu": "{roomen}{telco}[left-curl]",
+    "riy": "{roomen}{telco}[dot-below]",
+    "roi": "{roomen}{anna}[dot-above]",
+    "rua": "{roomen}{vala}[triple-dot-above]",
+    "rue": "{roomen}{vala}[acute]",
+    "rui": "{roomen}{vala}[dot-above]",
+    "ruo": "{roomen}{vala}[right-curl]",
+    "ruu": "{roomen}{vala}[left-curl]",
+    "ruy": "{roomen}{vala}[dot-below]"
   },
 
   "words": {
-    // Special for bridi, topic, and end of text separators
+    // Special for bridi and topic separators.
     ".i": "{double-pusta}",
-    "niho": "{triple-pusta}",
-    "faho": "{quadruple-pusta}"
+    "niho": "{dash}",
+    "ni'o": "{dash}",
+    // Bar inside la le li lo lu to make them stand out.
+    "la": "{lambe}[bar-inside][triple-dot-above]",
+    "le": "{lambe}[bar-inside][acute]",
+    "li": "{lambe}[bar-inside][dot-above]",
+    "lo": "{lambe}[bar-inside][right-curl]",
+    "lu": "{lambe}[bar-inside][left-curl]"
   }
 }
