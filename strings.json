@@ -55,6 +55,8 @@
     "menu.mode.beleriand": "Beleriand",
     "label.mode.erebor": "Cirth",
     "menu.mode.erebor": "Cirth: Angerthas Erebor",
+    "label.mode.lojban": "Lojban",
+    "menu.mode.lojban": "jbobau (Lojban)",
 
     "warning.general": "<p><b>CAUTION</b> This transcriber only works well for some languages. The result may be inaccurate otherwise.</p>",
     "warning.english": "<p><b>CAUTION</b> Tecendil does not translate. What you typed looks like English. For an accurate transcription, select an English mode.</p>",
@@ -148,6 +150,7 @@
     "menu.mode.beleriand": "Beleriand",
     "label.mode.erebor": "Cirth",
     "menu.mode.erebor": "Cirth: Angerthas Erebor",
+    "label.mode.lojban": "Lojban",
 
     "warning.general": "<p><b>POZOR</b> Tento přepis funguje dobře jen pro angličtinu, španělštinu, sindarština a quenijštinu. Výsledný přepis může být nepřesný.</p>",
     "warning.english": "<p><b>POZOR</b> Tecendil nepřekládá. Co píšete vypadá jako angličtina. Pro správný přepis angličtiny se přepněte do anglického módu.</p>",
@@ -228,6 +231,7 @@
     "label.mode.erebor": "Cirth",
     "menu.mode.westron": "Westron orthographisch",
     "label.mode.westron": "Westron",
+    "label.mode.lojban": "Lojban",
 
     "warning.general": "<p><b>VORSICHT</b> Dieser Transkriptor funktioniert nur gut für Englisch, Spanisch, Sindarin oder Quenya. Das Ergebnis kann sonst ungenau sein.</p>",
     "warning.elvish": "<p><b>VORSICHT</b>Das sieht nicht nach Englisch aus. Ist das Sindarin oder Quenya? Für eine genaue Transkription wählen Sie den Sindarin-, Quenya- oder Beleriand-Modus</p>",
@@ -302,6 +306,7 @@
     "label.mode.erebor": "cirth",
     "menu.mode.westron": "Westron ortográfico",
     "label.mode.westron": "westron",
+    "label.mode.lojban": "Lojban",
 
     "warning.general": "<p><b>ATENCIÓN</b> Este transcriptor solo trabaja para inglés, español, sindarin o quenya. El resultado puede ser inexacto de lo contrario.</p>",
     "warning.elvish": "<p><b>ATENCIÓN</b>Esto no se parece al inglés. ¿Es esto sindarin o quenya? Para una transcripción precisa, seleccione el modo Sindarin, Quenya o Beleriand</p>",
@@ -375,6 +380,7 @@
     "label.mode.erebor": "cirth",
     "menu.mode.westron": "Westron orthographique",
     "label.mode.westron": "westron",
+    "label.mode.lojban": "Lojban",
 
     "warning.general": "<p><b>ATTENTION</b> Ce transcripteur ne fonctionne que pour certaines langues. Le résultat peut être inexact autrement.</p>",
     "warning.elvish": "<p><b>ATTENTION</b> Cela ne ressemble pas à l'anglais. Est-ce Sindarin ou Quenya? Pour une transcription précise, sélectionnez le mode Sindarin, Quenya ou Beleriand.</p>",
@@ -447,6 +453,7 @@
     "label.mode.quenya": "Quenya",
     "label.mode.beleriand": "Beleriand",
     "label.mode.erebor": "Cirth",
+    "label.mode.lojban": "Lojban",
 
     "warning.general": "<p><b>ATTENZIONE</b> Questo trascrittore funziona bene solo per l'inglese, spagnolo, Sindarin o Quenya. Il risultato potrebbe non essere accurato altrimenti.</p>",
     "warning.elvish": "<p><b>ATTENZIONE</b>Questo non sembra inglese. È Sindarin o Quenya? Per una trascrizione precisa, seleziona la modalità Sindarin, Quenya o Beleriand.</p>",
@@ -527,6 +534,7 @@
     "menu.mode.derdzinski-polish": "polski – metodą Derdzińskiego",
     "label.mode.erebor": "Cirth",
     "menu.mode.erebor": "Cirth: Angerthas Erebor",
+    "label.mode.lojban": "Lojban",
 
     "warning.general": "<p><b>CAUTION</b> This transcriber only works well for English, Spanish, Sindarin or Quenya. The result may be inaccurate otherwise.</p>",
     "warning.english": "<p><b>CAUTION</b> Tecendil does not translate. What you typed looks like English. For an accurate transcription, select an English mode.</p>",
@@ -609,6 +617,7 @@
     "label.mode.beleriand": "贝尔兰",
     "menu.mode.beleriand": "Beleriand（贝尔兰）",
     "label.mode.erebor": "切斯文",
+    "label.mode.lojban": "逻辑语",
 
     "warning.general": "<p><b>警告</b> 此转写器只适用于英语、西班牙语、辛达林语或昆雅语。 否则结果可能不准确。</p>",
     "warning.elvish": "<p><b>警告</b> 这看起来不像英语。 这是辛达林语还是昆雅语？ 要获得准确的转录，请选择Sindarin，Quenya或Beleriand模式。</p>",
@@ -688,6 +697,7 @@
     "label.mode.beleriand": "貝爾蘭",
     "menu.mode.beleriand": "Beleriand（貝爾蘭）",
     "label.mode.erebor": "切斯文",
+    "label.mode.lojban": "逻辑语",
 
     "warning.general": "<p><b>警告</b> 這個抄寫員只適用於英語，西班牙語，辛達林語或昆雅語。 否則結果可能不准確。</p>",
     "warning.elvish": "<p><b>警告</b> 这看起来不像英语。 这是辛达林还是昆雅？ 要获得准确的转录，请选择Sindarin，Quenya或Beleriand模式。</p>",
@@ -772,6 +782,7 @@
     "menu.mode.beleriand": "Beleriand（貝爾蘭）",
     "label.mode.erebor": "切斯文",
     "menu.mode.erebor": "Cirth: Angerthas Erebor（切斯文：伊魯伯字體）",
+    "label.mode.lojban": "邏輯語",
 
     "warning.general": "<p><b>警告</b> 這個轉寫器只適用於英語，西班牙語，辛達林語或昆雅語。 否則結果可能不准確。</p>",
     "warning.elvish": "<p><b>警告</b> 這個看起來不像是英語。這是辛達林語或昆雅語嗎？要獲得準確的轉錄，請選擇Sindarin，Quenya或Beleriand模式。</p>",
