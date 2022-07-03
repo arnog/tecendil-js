@@ -116,17 +116,22 @@
     "ui": "[left-curl]{anna}",
     "aw": "[triple-dot-above]{vala}",
 
-    // Initial i + vowel is a consonantal y written with yanta
+    // Initial i + vowel is a consonantal y written with yanta...
     "^ia": "{yanta}[triple-dot-above]", // "iant" (bridge)
-    "^iau": "{yanta}[triple-dot-above]{vala}", // ... but not if followed by a vowel
-    "^iai": "{yanta}[triple-dot-above]{anna}", // ... but not if followed by a vowel
     "^ie": "{yanta}[acute]", // "ier" (as)
     "^io": "{yanta}[right-curl]", // "ion" (son)
-    "^iu": "{yanta}[left-curl]", // "iuith" (use)
+    "^iu": "{yanta}[left-curl]", // "iuith" (use), but see diphthongs below
     "^iâ": "{yanta}[triple-dot-above]{aara}", // "iaa" (chasm)
     "^iê": "{yanta}[acute]{aara}",
     "^iô": "{yanta}[right-curl]{aara}",
     "^iû": "{yanta}[left-curl]{aara}", // "iuul"? (embers)
+    // ... but if what follows is a diphthong, the diphthong must be written correctly
+    "^iae": "{yanta}[triple-dot-above]{yanta}",  // "iaew" (scorn; neologism)
+    "^iai": "{yanta}[triple-dot-above]{anna}",  // "iain" (pronoun who, that, neologism? see "Na-vaer!" in elfdict.com)
+    "^iau": "{yanta}[triple-dot-above]{vala}",  // "iaun" (wide)
+    "^ioe": "{yanta}[right-curl]{yanta}",  // no words start with this, according to elfdict.com
+    "^iei": "{yanta}[acute]{anna}",  // no words start with this, according to elfdict.com
+    "^iui": "{yanta}[left-curl]{anna}",  // "iuith" (use)
 
     "ia-$": "[dot-above]{telco}[triple-dot-above]{telco}{dash}", // miiria-
 
@@ -149,7 +154,7 @@
 
     "f": "{formen}",
     "ff": "{formen}",
-    "f$": "{ampa}", // Final-f is pronounced "v"
+    "f$": "{ampa}", // Final f is pronounced "v"
     "g": "{ungwe}",
     "h": "{hyarmen}", // vowel + h
     "hw": "{hwesta-sindarinwa}", // vowel + hw
