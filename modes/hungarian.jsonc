@@ -110,6 +110,6 @@
     "ny": "{nuumen}[double-dot-below]",
     "nny": "{nuumen}[double-dot-below][tilde-above]",
     "ly": "{lambe}[double-dot-below]",
-    "lly": "{lambe}[double-dot-below][bar-below],
+    "lly": "{lambe}[double-dot-below][bar-below]
   }
 }
