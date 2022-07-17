@@ -1,0 +1,101 @@
+// -----------------------------------------------------------------------------
+//
+// HUNGARIAN MODE as described at https://www.tolkien.hu/tengwar by Tamás Füzessy 
+// Adapted for Tecendil by Marcell Kiss-Rédey
+//
+// -----------------------------------------------------------------------------
+
+{
+  "name": "Hungarian",
+  "languageCode": "hu", // Hungarian
+
+  "normalizeVowels": false,
+
+  "tehtarFollow": true,
+
+  "preprocess": {
+    "qu": "kv",
+    "q": "k",
+    "w": "v",
+    "x": "ksz",
+    "y": "i",
+  },
+
+  "map": {
+    //
+    // VOWELS
+    // short vowels
+    "a": "[triple-dot-above]",
+    "e": "[acute]",
+    "i": "[dot-above]",
+    "o": "[right-curl]",
+    "u": "[left-curl]",
+    "ö": "[double-dot-above]",
+    "ü": "[breve]",
+
+    // long vowels
+    "á": "{aara}[triple-dot-above]",
+    "é": "{aara}[acute]",
+    "í": "{aara}[dot-above]",
+    "ó": "{aara}[right-curl]",
+    "ú": "{aara}[left-curl]",
+    "ő": "{aara}[double-dot-above]",
+    "ű": "{aara}[breve]",
+
+    //
+    // CONSONANTS
+    //
+    "t": "{tinco}",
+    "tt": "{tinco}[bar-below]",
+    "p": "{parma}",
+    "pp": "{parma}[bar-below]",
+    "cs": "{calma}",
+    "ccs": "{calma}[bar-below]",
+    "k": "{quesse}",
+    "kk": "{quesse}[bar-below]",
+    "d": "{ando}",
+    "dd": "{ando}[bar-below]",
+    "b": "{umbar}",
+    "bb": "{umbar}[bar-below]",
+    "dzs": "{anga}",
+    "ddzs": "{anga}[bar-below]",
+    "g": "{ungwe}",
+    "gg": "{ungwe}[bar-below]",
+    "f": "{formen}",
+    "ff": "{formen}[bar-below]",
+    "s": "{harma}",
+    "ss": "{harma}[bar-below]",
+    "c": "{hwesta}",
+    "cc": "{hwesta}[bar-below]",
+    "v": "{ampa}",
+    "vv": "{ampa}[bar-below]",
+    "zs": "{anca}",
+    "zzs": "{anca}[bar-below]",
+    "dz": "{unque}",
+    "ddz": "{unque}[bar-below]",
+    "n": "{nuumen}",
+    "nn": "{nuumen}[bar-below]",
+    "m": "{malta}",
+    "mm": "{malta}[bar-below]",
+    "j": "{anna}",
+    "jj": "{anna}[bar-below]",
+    "r": "{roomen}",
+    "rr": "{roomen}[bar-below]",
+    "l": "{lambe}",
+    "ll": "{lambe}[bar-below]",
+    "sz": "{silme}",
+    "ssz": "{silme}[bar-below]",
+    "z": "{esse}",
+    "zz": "{esse}[bar-below]",
+    "h": "{hyarmen}",
+    "hh": "{hyarmen}[bar-below]",
+      
+    // Nasalization
+    "nt": "{tinco}[tilde-above]",
+    "nty": "{tinco}[double-dot-below][tilde-above]",
+    "nd": "{ando}[tilde-above]",
+    "ngy": "{ando}[double-dot-below][tilde-above]",
+    "nc": "{hwesta}[tilde-above]",
+    
+  }
+}
