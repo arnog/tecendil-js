@@ -1,9 +1,9 @@
-// -----------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
 //
 // HUNGARIAN MODE as described at https://www.tolkien.hu/tengwar by Tamás Füzessy 
-// Adapted for Tecendil by Marcell Kiss-Redey
+// Adapted for Tecendil by Marcell Kiss-Rédey
 //
-// -----------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
 
 {
   "name": "Hungarian",
@@ -94,16 +94,16 @@
     "hh": "[bar-below]{hyarmen}",
       
     // Nasalization
-    "nt": "{tinco}[tilde-above]",
-    "nť": "{tinco}[double-dot-below][tilde-above]",
-    "nd": "{ando}[tilde-above]",
-    "nǧ": "{ando}[double-dot-below][tilde-above]",
-    "nc": "{hwesta}[tilde-above]",
-    "ndz": "{unque}[tilde-above]",
-    "mp": "{parma}[tilde-above]",
-    "mb": "{umbar}[tilde-above]",
-    "mf": "{formen}[tilde-above]",
-    "mv": "{ampa}[tilde-above]",
+    "nt": "[tilde-above]{tinco}",
+    "nť": "[double-dot-below][tilde-above]{tinco}",
+    "nd": "[tilde-above]{ando}",
+    "nǧ": "[double-dot-below][tilde-above]{ando}",
+    "nc": "[tilde-above]{hwesta}",
+    "ndz": "[tilde-above]{unque}",
+    "mp": "[tilde-above]{parma}",
+    "mb": "[tilde-above]{umbar}",
+    "mf": "[tilde-above]{formen}",
+    "mv": "[tilde-above]{ampa}",
     
     // Palatalization
     "ť": "[double-dot-below]{tinco}",
