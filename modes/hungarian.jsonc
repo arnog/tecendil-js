@@ -74,11 +74,11 @@
     "dz": "{unque}",
     "ddz": "{unque}[bar-below]",
     "n": "{nuumen}",
-    "nn": "{nuumen}[bar-below]",
+    "nn": "{nuumen}[tilde-above]",
     "m": "{malta}",
-    "mm": "{malta}[bar-below]",
+    "mm": "{malta}[tilde-above]",
     "j": "{anna}",
-    "jj": "{anna}[bar-below]",
+    "jj": "{anna}[double-dot-below]",
     "r": "{roomen}",
     "rr": "{roomen}[bar-below]",
     "l": "{lambe}",
@@ -96,6 +96,20 @@
     "nd": "{ando}[tilde-above]",
     "ngy": "{ando}[double-dot-below][tilde-above]",
     "nc": "{hwesta}[tilde-above]",
+    "ndz": "{unque}[tilde-above]",
+    "mp": "{parma}[tilde-above]",
+    "mb": "{umbar}[tilde-above]",
+    "mf": "{formen}[tilde-above]",
+    "mv": "{ampa}[tilde-above]",
     
+    // Palatalization
+    "ty": "{tinco}[double-dot-below]",
+    "tty": "{tinco}[double-dot-below][bar-below]"
+    "gy": "{ando}[double-dot-below]",
+    "ggy": "{ando}[double-dot-below][bar-below]",
+    "ny": "{nuumen}[double-dot-below]",
+    "nny": "{nuumen}[double-dot-below][tilde-above]",
+    "ly": "{lambe}[double-dot-below]",
+    "lly": "{lambe}[double-dot-below][bar-below],
   }
 }
