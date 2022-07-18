@@ -1,0 +1,138 @@
+// -----------------------------------------------------------------------
+//
+// HUNGARIAN MODE based on https://www.tolkien.hu/tengwar by Tamás Füzessy
+// and https://omniglot.com/conscripts/tengwar_hu.php by Balázs Radványi
+// Adapted for Tecendil by Marcell Kiss-Rédey
+//
+// -----------------------------------------------------------------------
+
+{
+  "name": "Hungarian",
+  "languageCode": "hu", // Hungarian
+
+  "normalizeVowels": false,
+
+  "tehtarFollow": true,
+
+  "preprocess": {
+    "qu": "kv",
+    "q": "k",
+    "w": "v",
+    "x": "ksz",
+    "cs": "č",
+    "dz": "ď",
+    "dzs": "đ",
+    "gy": "ǧ",
+    "ly": "ľ",
+    "ny": "ň",
+    "sz": "š",
+    "ty": "ť",
+    "zs": "ž"
+  },
+
+  "map": {
+    //
+    // VOWELS
+    // short vowels
+    "a": "[triple-dot-above]",
+    "e": "[acute]",
+    "i": "[dot-above]",
+    "o": "[right-curl]",
+    "u": "[left-curl]",
+    "ö": "[double-dot-above]",
+    "ü": "[breve]",
+
+    // long vowels
+    "á": "[triple-dot-above]{aara}",
+    "é": "[acute]{aara}",
+    "í": "[dot-above]{aara}",
+    "ó": "[right-curl]{aara}",
+    "ú": "[left-curl]{aara}",
+    "ő": "[double-dot-above]{aara}",
+    "ű": "[breve]{aara}",
+	
+	// vowel clusters
+	"ee": "[acute]{telco}[acute]",
+	"eé": "[acute]{telco}[acute]{aara}",
+	"ii": "[dot-above]{telco}[dot-above]",
+	"ií": "[dot-above]{telco}[dot-above]{aara}",
+	"oo": "[right-curl]{telco}[right-curl]",
+	"oó": "[right-curl]{telco}[right-curl]{aara}",
+	"uu": "[left-curl]{telco}[left-curl]",
+	"uú": "[left-curl]{telco}[left-curl]{aara}",
+	"üü": "[breve]{telco}[breve]",
+	"üű": "[breve]{telco}[breve]{aara}",
+
+    //
+    // CONSONANTS
+    //
+    "t": "{tinco}",
+    "tt": "[bar-below]{tinco}",
+    "p": "{parma}",
+    "pp": "[bar-below]{parma}",
+    "č": "{calma}",
+    "cč": "[bar-below]{calma}",
+    "k": "{quesse}",
+    "kk": "[bar-below]{quesse}",
+    "d": "{ando}",
+    "dd": "[bar-below]{ando}",
+    "b": "{umbar}",
+    "bb": "[bar-below]{umbar}",
+    "đ": "{anga}",
+    "dđ": "[bar-below]{anga}",
+    "g": "{ungwe}",
+    "gg": "[bar-below]{ungwe}",
+    "f": "{formen}",
+    "ff": "[bar-below]{formen}",
+    "s": "{harma}",
+    "ss": "[bar-below]{harma}",
+    "c": "{thuule}",
+    "cc": "[bar-below]{thuule}",
+    "v": "{ampa}",
+    "vv": "[bar-below]{ampa}",
+    "ž": "{anca}",
+    "zž": "[bar-below]{anca}",
+    "ď": "{anto}",
+    "dď": "[bar-below]{anto}",
+    "n": "{nuumen}",
+    "nn": "[tilde-above]{nuumen}",
+    "m": "{malta}",
+    "mm": "[tilde-above]{malta}",
+    "j": "{anna}",
+    "jj": "[double-dot-below]{anna}",
+    "r": "{roomen}",
+    "rr": "[bar-below]{roomen}",
+    "l": "{lambe}",
+    "ll": "[bar-below]{lambe}",
+    "š": "{silme}",
+    "sš": "[bar-below]{silme}",
+    "z": "{esse}",
+    "zz": "[bar-below]{esse}",
+    "h": "{hyarmen}",
+    "hh": "[bar-below]{hyarmen}",
+      
+    // Nasalization
+    "nt": "[tilde-above]{tinco}",
+    "nť": "[double-dot-below][tilde-above]{tinco}",
+    "nd": "[tilde-above]{ando}",
+    "nǧ": "[double-dot-below][tilde-above]{ando}",
+    "nc": "[tilde-above]{thuule}",
+    "nď": "[tilde-above]{anto}",
+    "mp": "[tilde-above]{parma}",
+    "mb": "[tilde-above]{umbar}",
+    "mf": "[tilde-above]{formen}",
+    "mv": "[tilde-above]{ampa}",
+    
+    // Palatalization
+    "ť": "[double-dot-below]{tinco}",
+    "tť": "[double-dot-below][bar-below]{tinco}",
+    "ǧ": "[double-dot-below]{ando}",
+    "gǧ": "[double-dot-below][bar-below]{ando}",
+    "ň": "[double-dot-below]{nuumen}",
+    "nň": "[double-dot-below][tilde-above]{nuumen}",
+    "ľ": "[double-dot-below]{lambe}",
+    "lľ": "[double-dot-below][bar-below]{lambe}",
+    
+    "y": "[dot-above]"
+  }
+}
