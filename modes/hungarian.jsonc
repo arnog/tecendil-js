@@ -1,9 +1,9 @@
-// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 //
-// HUNGARIAN MODE as described at https://www.tolkien.hu/tengwar by Tamás Füzessy 
+// HUNGARIAN MODE based on https://www.tolkien.hu/tengwar by Tamás Füzessy, slightly modified
 // Adapted for Tecendil by Marcell Kiss-Rédey
 //
-// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 {
   "name": "Hungarian",
@@ -73,14 +73,14 @@
     "ff": "[bar-below]{formen}",
     "s": "{harma}",
     "ss": "[bar-below]{harma}",
-    "c": "{hwesta}",
-    "cc": "[bar-below]{hwesta}",
+    "c": "{thuule}",
+    "cc": "[bar-below]{thuule}",
     "v": "{ampa}",
     "vv": "[bar-below]{ampa}",
     "ž": "{anca}",
     "zž": "[bar-below]{anca}",
-    "ď": "{unque}",
-    "dď": "[bar-below]{unque}",
+    "ď": "{anto}",
+    "dď": "[bar-below]{anto}",
     "n": "{nuumen}",
     "nn": "[tilde-above]{nuumen}",
     "m": "{malta}",
@@ -103,8 +103,8 @@
     "nť": "[double-dot-below][tilde-above]{tinco}",
     "nd": "[tilde-above]{ando}",
     "nǧ": "[double-dot-below][tilde-above]{ando}",
-    "nc": "[tilde-above]{hwesta}",
-    "nď": "[tilde-above]{unque}",
+    "nc": "[tilde-above]{thuule}",
+    "nď": "[tilde-above]{anto}",
     "mp": "[tilde-above]{parma}",
     "mb": "[tilde-above]{umbar}",
     "mf": "[tilde-above]{formen}",
