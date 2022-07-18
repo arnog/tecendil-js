@@ -1,9 +1,10 @@
-// ------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------
 //
-// HUNGARIAN MODE based on https://www.tolkien.hu/tengwar by Tamás Füzessy, slightly modified
+// HUNGARIAN MODE based on https://www.tolkien.hu/tengwar by Tamás Füzessy
+// and https://omniglot.com/conscripts/tengwar_hu.php by Balázs Radványi
 // Adapted for Tecendil by Marcell Kiss-Rédey
 //
-// ------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------
 
 {
   "name": "Hungarian",
@@ -49,6 +50,18 @@
     "ú": "[left-curl]{aara}",
     "ő": "[double-dot-above]{aara}",
     "ű": "[breve]{aara}",
+	
+	// vowel clusters
+	"ee": "[acute]{telco}[acute]",
+	"eé": "[acute]{telco}[acute]{aara}",
+	"ii": "[dot-above]{telco}[dot-above]",
+	"ií": "[dot-above]{telco}[dot-above]{aara}",
+	"oo": "[right-curl]{telco}[right-curl]",
+	"oó": "[right-curl]{telco}[right-curl]{aara}",
+	"uu": "[left-curl]{telco}[left-curl]",
+	"uú": "[left-curl]{telco}[left-curl]{aara}",
+	"üü": "[breve]{telco}[breve]",
+	"üű": "[breve]{telco}[breve]{aara}",
 
     //
     // CONSONANTS
