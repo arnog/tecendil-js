@@ -491,7 +491,7 @@
     // "age": "{anga}[triple-dot-above][dot-below]", // a-zh   -- Christopher Tolkien-ism
     "as": "{esse-nuquerna}[triple-dot-above]",
     "bach": "{UMBAR}{hwesta}[triple-dot-above]",
-    "be": "{umbar}{aara}[dot-above]", // non-silent final-e
+    "be": "{umbar}{telco}[acute]", // non-silent final-e
     "because": "{umbar}{quesse}[acute]{vala}[triple-dot-above]{esse-nuquerna}[dot-below]",
     "by": "{umbar}{aara}[breve]", // b-a-i
     "choose": "{calma}{esse-nuquerna}[double-right-curl][dot-below]", // "s'->'z'
@@ -508,7 +508,7 @@
     "giant": "{ungwe}{telco}[dot-above]{tinco}[triple-dot-above][bar-above]", // dj-iant
     "goes": "{ungwe}{telco}[right-curl]{esse}[acute]", // "s' -> "z'
     "has": "{hyarmen}{esse-nuquerna}[triple-dot-above]",
-    "he": "{hyarmen}{aara}[dot-above]", // non-silent final-e
+    "he": "{hyarmen}{telco}[acute]", // non-silent final-e
     "herein": "{hyarmen}{roomen}[acute][dot-below]{nuumen}[dot-above]",
     "hers": "{hyarmen}{oore}[acute]{esse}",
     "his": "{hyarmen}{esse-nuquerna}[dot-above]",
@@ -517,13 +517,13 @@
     "larceny": "{lambe}{oore}[triple-dot-above]{silme-nuquerna}{nuumen}[acute]{telco}[breve]",
     "lie": "{lambe}{yanta}[dot-above]", // End in "a-y" sound
     "loch": "{lambe}{hwesta}[right-curl]",
-    "me": "{malta}{aara}[dot-above]", // non-silent final-e
+    "me": "{malta}{telco}[acute]", // non-silent final-e
     "music": "{malta}{esse-nuquerna}[left-curl]{quesse}[dot-above]",
     "ocean": "{silme}[right-curl]{telco}[acute]{nuumen}[triple-dot-above]",
     "pie": "{parma}{yanta}[dot-above]", // End in "a-y" sound
     "please": "{parma}{lambe}{telco}[dot-above]{esse-nuquerna}",
     "reuel": "{ROOMEN}{telco}[acute]{telco}[left-curl]{lambe}[acute]", // Tolkien's middle name
-    "she": "{harma}{aara}[dot-above]", // non-silent final-e
+    "she": "{harma}{telco}[acute]", // non-silent final-e
     "sure": "{harma}{oore}[left-curl][dot-below]",
     // "time": "{tinco}{malta}[dot-above][dot-below]",
     // "times": "{tinco}{malta}[dot-above][dot-below][swash-hook]",
@@ -533,7 +533,7 @@
     "untie": "{tinco}[left-curl][tilde-above]{yanta}[dot-above]", // End in "ay" sound
     "vie": "{ampa}{yanta}[dot-above]", // End in "ay" sound
     "war": "{vala}{oore}[right-curl]", // wor, Tolkien spelling
-    "we": "{vala}{aara}[dot-above]", // non-silent, long, final-e
+    "we": "{vala}{telco}[acute]", // non-silent, long, final-e
     "xanadu": "{ungwe}[right-curl-below]{nuumen}[triple-dot-above]{ando}[triple-dot-above]{telco}[left-curl]",
     "zoe": "{ESSE-NUQUERNA}{telco}[right-curl]{telco}[acute]",
 
