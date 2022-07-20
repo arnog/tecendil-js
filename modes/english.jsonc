@@ -493,7 +493,7 @@
     "bach": "{UMBAR}{hwesta}[triple-dot-above]",
     "be": "{umbar}{telco}[acute]", // non-silent final-e
     "because": "{umbar}{quesse}[acute]{vala}[triple-dot-above]{esse-nuquerna}[dot-below]",
-    "by": "{umbar}{aara}[breve]", // b-a-i
+    "by": "{umbar}{telco}[breve]", // b-a-i
     "choose": "{calma}{esse-nuquerna}[double-right-curl][dot-below]", // "s'->'z'
     "chose": "{calma}{esse-nuquerna}[right-curl][dot-below]", // "s'->'z'
     "create": "{quesse}{roomen}{telco}[acute]{tinco}[triple-dot-above][dot-below]", // "ea' -> "e' + "a'
