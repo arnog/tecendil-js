@@ -498,7 +498,7 @@
     "chose": "{calma}{esse-nuquerna}[right-curl][dot-below]", // "s'->'z'
     "create": "{quesse}{roomen}{telco}[acute]{tinco}[triple-dot-above][dot-below]", // "ea' -> "e' + "a'
     "die": "{ando}{yanta}[dot-above]", // End in "ay" sound
-    "does": "{ando}{telco}[right-curl]{esse-nuquerna}[acute]", // "s' -> "z'
+    "does": "d{yanta}[o][hook]",
     "exact": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}", // e-gz-act
     "exactly": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}{lambe}[breve]",
     "examine": "{ungwe}[acute][right-curl-below]{malta}[triple-dot-above]{nuumen}[dot-above][dot-below]",
@@ -774,6 +774,7 @@
     "weather": "{vala}{osse}[acute]{anto}{oore}[acute]",
     "weatherman": "{vala}{osse}[acute]{anto}{oore}[acute]{malta}{nuumen}[triple-dot-above]",
     "with": "{vala}{anto}[dot-above]",
+    "wither": "widher",
     "withdraw": "{vala}{anto}[dot-above]{ando}{roomen}{vala}[triple-dot-above]",
     "withstand": "{vala}{anto}[dot-above]{silme}{tinco}{ando}[triple-dot-above][tilde-above]",
     "worthy": "{vala}{oore}[right-curl]{anto}{telco}[breve]",
