@@ -25,7 +25,7 @@
 
   "normalizeVowels": false,
 
-  "wordPattern": "^[A-Za-zÀ-ÖØ-öø-ÿ\\*\\'\\.]+",
+  "wordPattern": "A-Za-zÀ-ÖØ-öø-ÿ\\*\\'\\.",
 
   "preprocess": {
     // Standard orthography says ' but h is in semi-common use too. Map here

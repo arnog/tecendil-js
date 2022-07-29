@@ -71,9 +71,6 @@
 
   "tehtarFollow": true,
 
-  // Include "dashes" as part of words in Sindarin
-  "wordPattern": "^[A-Za-zÀ-ÖØ-öø-ÿĀ-ſ\\*]+",
-
   "preprocess": {
     // Expand ae/oe ligatures (rare, but used by Tolkien in The Etymologies e.g. for glaer)
     "œ": "oe",
@@ -82,6 +79,7 @@
     // Disambiguate "qu" -> "q"
     "qu": "q",
 
+    // "Dashes" can be included in Sindarin words
     "-": " ",
     "/(\\w)\\.(\\w)/": "$1·$2",
     "/, /": " , ",
@@ -126,12 +124,12 @@
     "^iô": "{yanta}[right-curl]{aara}",
     "^iû": "{yanta}[left-curl]{aara}", // "iuul"? (embers)
     // ... but if what follows is a diphthong, the diphthong must be written correctly
-    "^iae": "{yanta}[triple-dot-above]{yanta}",  // "iaew" (scorn; neologism)
-    "^iai": "{yanta}[triple-dot-above]{anna}",  // "iain" (pronoun who, that, neologism? see "Na-vaer!" in elfdict.com)
-    "^iau": "{yanta}[triple-dot-above]{vala}",  // "iaun" (wide)
-    "^ioe": "{yanta}[right-curl]{yanta}",  // no words start with this, according to elfdict.com
-    "^iei": "{yanta}[acute]{anna}",  // no words start with this, according to elfdict.com
-    "^iui": "{yanta}[left-curl]{anna}",  // "iuith" (use)
+    "^iae": "{yanta}[triple-dot-above]{yanta}", // "iaew" (scorn; neologism)
+    "^iai": "{yanta}[triple-dot-above]{anna}", // "iain" (pronoun who, that, neologism? see "Na-vaer!" in elfdict.com)
+    "^iau": "{yanta}[triple-dot-above]{vala}", // "iaun" (wide)
+    "^ioe": "{yanta}[right-curl]{yanta}", // no words start with this, according to elfdict.com
+    "^iei": "{yanta}[acute]{anna}", // no words start with this, according to elfdict.com
+    "^iui": "{yanta}[left-curl]{anna}", // "iuith" (use)
 
     "ia-$": "[dot-above]{telco}[triple-dot-above]{telco}{dash}", // miiria-
 
