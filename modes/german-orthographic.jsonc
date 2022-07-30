@@ -1,0 +1,84 @@
+// ---------------------------------------------------------------------------
+//
+// GERMAN ORTHOGRAPHIC MODE
+//
+// ---------------------------------------------------------------------------
+
+// TODO ADD SOURCES, EXPLANATION, ...
+
+{
+  // Short-name
+  "name": "german-orthographic",
+  "languageCode": "de",
+
+  "normalizeVowels": false,
+
+  "tehtarFollow": true,
+
+  "rrule": true,
+
+  "preprocess":
+  {
+  },
+
+  "map":
+  {
+    // -----------------------------------------------------------------------
+    //
+    // VOWELS
+    //
+
+    // -----------------------------------------------------------------------
+    //
+    // DIPHTHONGS
+    //
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: DENTALS
+    //
+    "t": "{tinco}",
+    "d": "{ando}",
+    "n": "{nuumen}",
+    // r implemented by rrule
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: LABIALS
+    "p": "{parma}",
+    "b": "{umbar}",
+    "f": "{formen}",
+    "v": "{ampa}",
+    "m": "{malta}",
+    "w": "{vala}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: POSTALVEOLARS/PALATALS (SCH VARIANTS AND J)
+    "tsch": "{calma}",
+
+	// TODO: maybe only for foreign words like dschungel and remove from map
+    "dsch": "{anga}",
+    "sch": "{harma}",
+
+	// TODO: anca could be used for voiced sch as in 'garage'
+
+    "j": "{anna}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: VELARS
+    "k": "{quesse}",
+    "g": "{ungwe}",
+
+	// TODO: note on the two distinct sounds
+    "ch": "{hwesta}",
+
+	// TODO: exceptions like Kongo, Mango, ungerade
+	"ng": "{nwalme}"
+  },
+
+  "words":
+  {
+  }
+}
