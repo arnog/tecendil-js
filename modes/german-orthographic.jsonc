@@ -33,6 +33,7 @@
     // DIPHTHONGS
     //
 
+
     // -----------------------------------------------------------------------
     //
     // CONSONANTS: DENTALS
@@ -40,7 +41,8 @@
     "t": "{tinco}",
     "d": "{ando}",
     "n": "{nuumen}",
-    // r implemented by rrule
+	"z": "{extended-tinco}",
+    // r ore implemented by rrule
 
     // -----------------------------------------------------------------------
     //
@@ -51,18 +53,20 @@
     "v": "{ampa}",
     "m": "{malta}",
     "w": "{vala}",
+	// TODO check for problems at morphem boundaries
+	"pf" : "{extended-parma}"
 
     // -----------------------------------------------------------------------
     //
     // CONSONANTS: POSTALVEOLARS/PALATALS (SCH VARIANTS AND J)
+	// TODO check for problems at morphem boundaries
     "tsch": "{calma}",
-
 	// TODO: maybe only for foreign words like dschungel and remove from map
+	// because of words like 'Grundschule'
     "dsch": "{anga}",
+	// TODO check for problems at morphem boundaries
     "sch": "{harma}",
-
 	// TODO: anca could be used for voiced sch as in 'garage'
-
     "j": "{anna}",
 
     // -----------------------------------------------------------------------
@@ -70,12 +74,35 @@
     // CONSONANTS: VELARS
     "k": "{quesse}",
     "g": "{ungwe}",
-
 	// TODO: note on the two distinct sounds
     "ch": "{hwesta}",
-
 	// TODO: exceptions like Kongo, Mango, ungerade
-	"ng": "{nwalme}"
+	"ng": "{nwalme}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: MISC
+	// r romen implemented by rrule
+	// TODO: check for problems at morphem boundaries
+    "rh": "{arda}",
+	"l": "{lambe}",
+	// TODO: silme nuquerna with tengwar
+	"s": "{silme}",
+	// TODO: check for problems at morphem boundaries / check triple s
+	"ss": "{esse}",
+	// TODO ß
+	// TODO: Dehnungs-h
+	"h": "{hyarnen}"
+
+	// TODO: consonant diacritics (-h, double, nasal, final s, following w)
+	// TODO: c
+	// TODO: ck
+	// TODO: sp, st
+	// TODO: tz
+	// TODO: x
+	// TODO: Q ->K, QU -> KW
+	// TODO: consonant diacritics (-h, double, nasal, final s
+
   },
 
   "words":
