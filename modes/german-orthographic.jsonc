@@ -19,6 +19,33 @@
 
   "preprocess":
   {
+    // Ensure that ii and uu are not interpreted as long vowels by the
+    // built-in rules.
+    "ii": "i'i",
+    "uu": "u'u",
+
+
+    // -i diphthongs with {anna}
+    "ai": "aj",
+    "ei": "ej",
+    // -u diphthongs with {vala}
+    "au": "aw",
+    "eu": "ew",
+
+
+    // Replace c+vowel by z or k, depending on following vowel
+    // c -> z
+    "cä": "zä",
+    "ce": "ze",
+    "ci": "zi",
+    "cö": "zö",
+    "cy": "zy",
+
+    // c -> k
+    "ca": "ka",
+    "co": "ko",
+    "cu": "ku",
+    "cü": "kü"
   },
 
   "map":
@@ -27,11 +54,32 @@
     //
     // VOWELS
     //
+    // a,e,i,o,u,y: built-in rules
+    "ä": "[reversed-triple-dot-above]",
+    "ö": "[double-acute]",
+    "ü": "[double-dot-above]",
 
     // -----------------------------------------------------------------------
     //
-    // DIPHTHONGS
+    // DIPHTHONGS AND DOUBLE VOWELS
     //
+    // -a
+    "aa": "[triple-dot-above]{osse}",
+    // -e
+    // TODO explain that we do not transcribe ae, oe, ue as diphthongs
+    "ee": "[acute]{yanta}",
+    // TODO non-diphthong ie like 'petersilie', 'serviette'
+    "ie": "[dot-above]{yanta}",
+    // -i
+    // ai and ei handled by preprocessing
+    // TODO oi/ui. Sometimes diphthong, sometimes o-i.
+    // -o
+    // implemented by built-in rule
+    // "oo": "[double-right-curl]",
+    // -u
+    // au and eu handled by preprocessing
+
+    // TODO consonantic i (ia, io, iu) in certain situations
 
 
     // -----------------------------------------------------------------------
@@ -41,7 +89,7 @@
     "t": "{tinco}",
     "d": "{ando}",
     "n": "{nuumen}",
-	"z": "{extended-tinco}",
+    "z": "{extended-tinco}",
     // r ore implemented by rrule
 
     // -----------------------------------------------------------------------
@@ -53,20 +101,20 @@
     "v": "{ampa}",
     "m": "{malta}",
     "w": "{vala}",
-	// TODO check for problems at morphem boundaries
-	"pf" : "{extended-parma}"
+    // TODO check for problems at morphem boundaries
+    "pf" : "{extended-parma}",
 
     // -----------------------------------------------------------------------
     //
     // CONSONANTS: POSTALVEOLARS/PALATALS (SCH VARIANTS AND J)
-	// TODO check for problems at morphem boundaries
+    // TODO check for problems at morphem boundaries
     "tsch": "{calma}",
-	// TODO: maybe only for foreign words like dschungel and remove from map
-	// because of words like 'Grundschule'
+    // TODO: maybe only for foreign words like dschungel and remove from map
+    // because of words like 'Grundschule'
     "dsch": "{anga}",
-	// TODO check for problems at morphem boundaries
+    // TODO check for problems at morphem boundaries
     "sch": "{harma}",
-	// TODO: anca could be used for voiced sch as in 'garage'
+    // TODO: anca could be used for voiced sch as in 'garage'
     "j": "{anna}",
 
     // -----------------------------------------------------------------------
@@ -74,35 +122,48 @@
     // CONSONANTS: VELARS
     "k": "{quesse}",
     "g": "{ungwe}",
-	// TODO: note on the two distinct sounds
+    // TODO: note on the two distinct sounds
     "ch": "{hwesta}",
-	// TODO: exceptions like Kongo, Mango, ungerade
-	"ng": "{nwalme}",
+    // TODO: exceptions like Kongo, Mango, ungerade
+    "ng": "{nwalme}",
 
     // -----------------------------------------------------------------------
     //
-    // CONSONANTS: MISC
-	// r romen implemented by rrule
-	// TODO: check for problems at morphem boundaries
+    // CONSONANTS: MISC SINGLE TENGWAR
+    // r romen implemented by rrule
+    // TODO: check for problems at morphem boundaries
     "rh": "{arda}",
-	"l": "{lambe}",
-	// TODO: silme nuquerna with tengwar
-	"s": "{silme}",
-	// TODO: check for problems at morphem boundaries / check triple s
-	"ss": "{esse}",
-	// TODO ß
-	// TODO: Dehnungs-h
-	"h": "{hyarnen}"
+    "l": "{lambe}",
+    "s": "{silme}", // automatically becomes nuquerna with tengwar
+    // TODO: check for problems at morphem boundaries / check triple s
+    "ss": "{esse}", // automatically becomes nuquerna with tengwar
+    // TODO explain (e.g., Masse/Maße)
+    "ß": "{thuule}",
+    // TODO ß
+    // TODO: Dehnungs-h
+    // TODO: consonantic y
+    "h": "{hyarmen}",
 
-	// TODO: consonant diacritics (-h, double, nasal, final s, following w)
-	// TODO: c
-	// TODO: ck
-	// TODO: sp, st
-	// TODO: tz
-	// TODO: x
-	// TODO: Q ->K, QU -> KW
-	// TODO: consonant diacritics (-h, double, nasal, final s
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: SINGLE CONSONANT SPECIAL CASES
+    // This is only used if the following letter is not a vowel (these are
+    // handled by preprocessing) and the c is not part of one of the
+    // multiconsonant graphems below.
+    "c": "{quesse}",
+    // We should not use preprocess to k(w) here because of words like
+    // 'Backware'
+    "qu": "[over-twist]{quesse}",
+    // Does this ever happen?
+    "q": "{quesse}",
+    // We should preprocess too ks here because of words like 'wirksam'
+    "x": "[right-curl-below]{quesse}"
 
+    // TODO: consonant diacritics (-h, double, nasal, final s, following w)
+    // TODO: ck
+    // TODO: sp, st
+    // TODO: tz
+    // TODO: consonant diacritics (-h, double, nasal, final s)
   },
 
   "words":
