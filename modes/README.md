@@ -77,7 +77,7 @@ A mode file contains the following properties:
 - `name`: the name of the mode, typically including the language for which it is
   a mode of, e.g. `"English Phonemic"`
 - `languageCode`: the ISO 639-2/3 code of the language. The language code for
-  sindarin is `sjn` and for quenya it is `qya1`
+  sindarin is `sjn` and for quenya it is `qya`
 - `normalizeVowels`: if `true`, vowels with a macron or grave accent and
   double-vowels are replaced with a circumflexed vowel. Vowels with a diaeresis
   and converted to a vowel with no diacritic. While this might be useful for
