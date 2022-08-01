@@ -1,7 +1,7 @@
 # tecendil-js
 
 This project includes the mode files and localization strings for
-[Tecendil](tecendil.com), the best Tengwar transcriber on the web.
+[Tecendil](https://www.tecendil.com), the best Tengwar transcriber on the web.
 
 ## Mode Files
 
