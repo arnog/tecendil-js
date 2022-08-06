@@ -24,15 +24,6 @@
     "ii": "i'i",
     "uu": "u'u",
 
-
-    // -i diphthongs with {anna}
-    "ai": "aj",
-    "ei": "ej",
-    // -u diphthongs with {vala}
-    "au": "aw",
-    "eu": "ew",
-
-
     // Replace c+vowel by z or k, depending on following vowel
     // c -> z
     "cä": "zä",
@@ -70,14 +61,16 @@
     "ee": "[acute]{yanta}",
     // TODO non-diphthong ie like 'petersilie', 'serviette'
     "ie": "[dot-above]{yanta}",
-    // -i
-    // ai and ei handled by preprocessing
+    // -i diphthongs with {anna}
+    "ai": "[triple-dot-above]{anna}",
+    "ei": "[acute]{anna}",
     // TODO oi/ui. Sometimes diphthong, sometimes o-i.
     // -o
     // implemented by built-in rule
     // "oo": "[double-right-curl]",
     // -u
-    // au and eu handled by preprocessing
+    "au": "[triple-dot-above]{vala}",
+    "eu": "[acute]{vala}",
 
     // TODO consonantic i (ia, io, iu) in certain situations
 
@@ -91,6 +84,8 @@
     "n": "{nuumen}",
     "z": "{extended-tinco}",
     // r ore implemented by rrule
+    // TODO final -r can appear in the middle of a composite word and should
+    // be ore there
 
     // -----------------------------------------------------------------------
     //
@@ -131,8 +126,6 @@
     //
     // CONSONANTS: MISC SINGLE TENGWAR
     // r romen implemented by rrule
-    // TODO: check for problems at morphem boundaries
-    "rh": "{arda}",
     "l": "{lambe}",
     "s": "{silme}", // automatically becomes nuquerna with tengwar
     // TODO: check for problems at morphem boundaries / check triple s
@@ -156,14 +149,33 @@
     "qu": "[over-twist]{quesse}",
     // Does this ever happen?
     "q": "{quesse}",
-    // We should preprocess too ks here because of words like 'wirksam'
-    "x": "[right-curl-below]{quesse}"
+    // We should not preprocess to ks here because of words like 'wirksam'
+    "x": "[right-curl-below]{quesse}",
 
-    // TODO: consonant diacritics (-h, double, nasal, final s, following w)
-    // TODO: ck
-    // TODO: sp, st
-    // TODO: tz
-    // TODO: consonant diacritics (-h, double, nasal, final s)
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: -H
+    // TODO: this could cause too many problems with composites. could be
+    // better to put the
+    // known words into the words list
+    // TODO are there more consonants with following h?
+    "th": "[thinnas]{tinco}",
+    "rh": "{arda}",
+    "ph": "[thinnas]{parma}",
+    "gh": "[thinnas]{ungwe}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: FINAL -E and -S
+    // TODO use prettier inside dots for "large" tengwar
+    "e$": "[dot-below]",
+    // TODO: check, does not work with some consonantsn
+    // also should not be used after vowel
+    "s$": "[hook]",
+    // TODO: does not work; the diacritic encondings should be before the
+    // tengwar (but this is ok for e$ above)
+    "es$": "[hook][dot-below]"
+
   },
 
   "words":
