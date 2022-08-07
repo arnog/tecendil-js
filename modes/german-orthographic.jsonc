@@ -132,7 +132,6 @@
     "ss": "{esse}", // automatically becomes nuquerna with tengwar
     // TODO explain (e.g., Masse/Maße)
     "ß": "{thuule}",
-    // TODO ß
     // TODO: Dehnungs-h
     // TODO: consonantic y
     "h": "{hyarmen}",
@@ -154,6 +153,42 @@
 
     // -----------------------------------------------------------------------
     //
+    // CONSONANTS: DOUBLED CONSONANTS
+    // Note: tripled consonants are handled correctly, i.e., ff-f, same is
+    // true for ck-k
+    // TODO check for problems at morphem boundaries
+    "tt": "[bar-below]{tinco}",
+    "dd": "[bar-below]{ando}",
+    "nn": "[bar-below]{nuumen}",
+    "rr": "[bar-below]{roomen}",
+    "zz": "[bar-below]{extended-tinco}",
+    "tz": "[bar-below]{extended-tinco}",
+
+    "pp": "[bar-below]{parma}",
+    "bb": "[bar-below]{umbar}",
+    "ff": "[bar-below]{formen}",
+    // vv does not occur
+    "mm": "[bar-below]{malta}",
+    // ww does not occur
+
+    "kk": "[bar-below]{quesse}",
+    "ck": "[bar-below]{quesse}",
+    // TODO: cce not working because of preprocessing
+    "cc": "[bar-below]{quesse}",
+    "gg": "[bar-below]{ungwe}",
+
+    "ll": "[bar-below]{lambe}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: -W
+    "schw": "[over-twist]{harma}",
+    "zw": "[over-twist]{extended-tinco}",
+    // tz-w occours only in composites tz-w, therefore there is no over-twist.
+    // This is already correctly handled because of the tz rule before.
+
+    // -----------------------------------------------------------------------
+    //
     // CONSONANTS: -H
     // TODO: this could cause too many problems with composites. could be
     // better to put the
@@ -166,15 +201,19 @@
 
     // -----------------------------------------------------------------------
     //
-    // CONSONANTS: FINAL -E and -S
-    // TODO use prettier inside dots for "large" tengwar
-    "e$": "[dot-below]",
+    // CONSONANTS: FINAL -E
+    // TODO CHECK WITH NEW STUFF
+    "e$": "[dot-below]"
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: FINAL -S
     // TODO: check, does not work with some consonantsn
     // also should not be used after vowel
-    "s$": "[hook]",
+    // "s$": "[hook]",
     // TODO: does not work; the diacritic encondings should be before the
     // tengwar (but this is ok for e$ above)
-    "es$": "[hook][dot-below]"
+    //"es$": "[hook][dot-below]"
 
   },
 
