@@ -173,7 +173,7 @@
 
     "kk": "[bar-below]{quesse}",
     "ck": "[bar-below]{quesse}",
-    // TODO: cce not working because of preprocessing
+    // TODO: cce/cci not working because of preprocessing
     "cc": "[bar-below]{quesse}",
     "gg": "[bar-below]{ungwe}",
 
@@ -184,7 +184,7 @@
     // CONSONANTS: -W
     "schw": "[over-twist]{harma}",
     "zw": "[over-twist]{extended-tinco}",
-    // tz-w occours only in composites tz-w, therefore there is no over-twist.
+    // tz-w usually occours only in composites tz-w, therefore there is no over-twist.
     // This is already correctly handled because of the tz rule before.
 
     // -----------------------------------------------------------------------
@@ -198,6 +198,55 @@
     "rh": "{arda}",
     "ph": "[thinnas]{parma}",
     "gh": "[thinnas]{ungwe}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: NASALIZED CONSONANTS
+    // Note: For the labial series, we encode m+consonant with the tilde.
+    // There are some cases where n+labial occurs with prefixes such as an- or
+    // un-. However, m+labial seems to be more frequent. This is also
+    // consistent with the velar series because the 'n' for the first two
+    // combinations is actually a velar nasal and not the usual dental nasal
+    // 'n'.
+    // TODO check for problems at morphem boundaries
+    "nt": "[tilde-above]{tinco}",
+    "nd": "[tilde-above]{ando}",
+    "nz": "[tilde-above]{extended-tinco}",
+
+    "mp": "[tilde-above]{parma}",
+    "mb": "[tilde-above]{umbar}",
+    "mf": "[tilde-above]{formen}",
+    // mv does not occur TODO CHECK
+    "mw": "[tilde-above]{vala}", 
+    "mpf" : "[tilde-above]{extended-parma}",
+
+    // ntsch, ndsch do not occur TODO CHECK
+    "nsch": "[tilde-above]{harma}",
+    // nj better handled as n + palatalization symbol
+
+    "nk": "[tilde-above]{quesse}",
+    // TODO ng-g cases
+    //"ng": "[tilde-above]{ungwe}",
+    "nch": "[tilde-above]{hwesta}",
+
+    // TODO what about nl?
+    // "nl": "[tilde-above]{lambe}",
+    "ns": "[tilde-above]{silme}", // automatically becomes nuquerna with tengwar
+    // TODO nh?
+
+    // nc covered by c+vowel preprocess and n+ch TODO CHECK
+    // nq nx do not occur TODO CHECK
+
+    // ntz is usually nt+z at a morphem boundary, therefore there is no
+    // special rule and it is encoded nt+z TODO CHECK
+
+    // Only known remaining case for n+double consonant TODO CHECK
+    "nck": "[tilde-above][bar-below]{quesse}",
+
+    // nasal + consonant + w should be fine
+    // known cases for nasal+consonant+h TODO CHECK
+    "nth": "[tilde-above][thinnas]{tinco}",
+    "mph": "[tilde-above][thinnas]{parma}",
 
     // -----------------------------------------------------------------------
     //
