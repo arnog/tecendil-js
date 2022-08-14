@@ -270,6 +270,16 @@
 
     // -----------------------------------------------------------------------
     //
+    // CONSONANTS: -SION, -SSION, -TION
+    // Special cases where the I is always consonantic. This is a frequent
+    // morphem ending.
+    // TODO check for problems at morphem boundaries
+    "sion": "[double-dot-below]{silme}[right-curl]{nuumen}",
+    "ssion": "[double-dot-inside]{esse}[right-curl]{nuumen}",
+    "tion": "[double-dot-below]{extended-tinco}[right-curl]{nuumen}",
+
+    // -----------------------------------------------------------------------
+    //
     // CONSONANTS: FINAL -E
     // TODO CHECK WITH NEW STUFF
     "e$": "[dot-below]"
