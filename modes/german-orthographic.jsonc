@@ -36,7 +36,25 @@
     "ca": "ka",
     "co": "ko",
     "cu": "ku",
-    "cü": "kü"
+    "cü": "kü",
+
+    // Consonantic y + vowel
+    // TODO CHECK problems at morphem boundaries
+    "ya": "ja",
+    "ye": "je",
+    // yi not known to occur TODO CHECK
+    "yo": "jo",
+    "yu": "ju",
+    // TODO CHECK y+umlaut
+
+    // vowel + y: diphthong
+    "ay": "ai",
+    // ey and ei are not pronounced in the same way, but I have no better idea
+    "ey": "ei"
+    // iy not known to occur TODO CHECK
+    // oy will be directly encoded under diphthongs because oi is not always a
+    // diphthong
+    // uy not known to occur TODO CHECK
   },
 
   "map":
@@ -71,6 +89,8 @@
     // -u
     "au": "[triple-dot-above]{vala}",
     "eu": "[acute]{vala}",
+    // -y when not handled by preprocess
+    "oy": "[right-curl]{anna}",
 
     // TODO consonantic i (ia, io, iu) in certain situations
 
