@@ -280,20 +280,74 @@
 
     // -----------------------------------------------------------------------
     //
-    // CONSONANTS: FINAL -E
+    // FINAL -E
     // TODO CHECK WITH NEW STUFF
-    "e$": "[dot-below]"
+    "e$": "[dot-below]",
 
     // -----------------------------------------------------------------------
     //
-    // CONSONANTS: FINAL -S
-    // TODO: check, does not work with some consonantsn
+    // FINAL -E
     // also should not be used after vowel
-    // "s$": "[hook]",
-    // TODO: does not work; the diacritic encondings should be before the
-    // tengwar (but this is ok for e$ above)
-    //"es$": "[hook][dot-below]"
+    "aas$": "[triple-dot-above][hook]{osse}",
+    "ees$": "[acute][hook]{yanta}",
+    "ies$": "[dot-above][hook]{yanta}",
+    "ais$": "[triple-dot-above][hook]{anna}",
+    "eis$": "[acute][hook]{anna}",
+    "aus$": "[triple-dot-above][hook]{vala}",
+    "eus$": "[acute][hook]{vala}",
+    "oys$": "[right-curl][hook]{anna}",
 
+    "ts$": "[hook]{tinco}",
+    "ds$": "[hook]{ando}",
+    "ns$": "[hook]{nuumen}",
+    "rs$": "[hook]{oore}",
+
+    "ps$": "[hook]{parma}",
+    "bs$": "[hook]{umbar}",
+    "fs$": "[hook]{formen}",
+    // vs does not occur TODO CHECK
+    "ms$": "[hook]{malta}",
+    // ws does not occur TODO CHECK
+    "pfs$" : "[hook]{extended-parma}",
+
+    // -schs, -js does not occur TODO CHECK
+    
+    "ks$": "[hook]{quesse}",
+    "gs$": "[hook]{ungwe}",
+    "chs$": "[hook]{hwesta}",
+    "ngs$": "[hook]{nwalme}",
+
+    // -----------------------------------------------------------------------
+    //
+    // FINAL -ES
+    // -aaes, -eees, -iees, -yoes do not occur TODO CHECK
+    "aies$": "[triple-dot-above][hook][dot-below]{anna}",
+    "eies$": "[acute][hook][dot-below]{anna}",
+    "aues$": "[triple-dot-above][hook][dot-below]{vala}",
+    "eues$": "[acute][hook][dot-below]{vala}",
+
+    "tes$": "[hook][dot-below]{tinco}",
+    "des$": "[hook][dot-below]{ando}",
+    "nes$": "[hook][dot-below]{nuumen}",
+    // does not look good
+    // "res$": "[hook][dot-below]{roomen}"
+
+    "pes$": "[hook][dot-below]{parma}",
+    "bes$": "[hook][dot-below]{umbar}",
+    "fes$": "[hook][dot-below]{formen}",
+    "ves$": "[hook][dot-below]{ampa}",
+    "mes$": "[hook][dot-below]{malta}",
+    "wes$": "[hook][dot-below]{vala}",
+    "pfes$" : "[hook][dot-below]{extended-parma}",
+
+    // -dsches, -jes does not occur TODO CHECK
+    "tsches$": "[hook][dot-below]{calma}",
+    "sches$": "[hook][dot-below]{harma}",
+
+    // -kes does not occur, only -nkes and -ckes TODO CHECK
+    "ges$": "[hook][dot-below]{ungwe}",
+    "ches$": "[hook][dot-below]{hwesta}",
+    "nges$": "[hook][dot-below]{nwalme}"
   },
 
   "words":
