@@ -70,6 +70,18 @@
 
     // -----------------------------------------------------------------------
     //
+    // DEHNUNGS-H
+    // TODO DISCUSS
+    "ah": "[triple-dot-above]{aara}",
+    "eh": "[acute]{aara}",
+    "oh": "[right-curl]{aara}",
+    "uh": "[left-curl]{aara}",
+    "äh": "[reversed-triple-dot-above]{aara}",
+    "öh": "[double-acute]{aara}",
+    "üh": "[double-dot-above]{aara}",
+
+    // -----------------------------------------------------------------------
+    //
     // DIPHTHONGS AND DOUBLE VOWELS
     //
     // -a
@@ -91,6 +103,8 @@
     "eu": "[acute]{vala}",
     // -y when not handled by preprocess
     "oy": "[right-curl]{anna}",
+
+    // TODO use thinnas for diphthong+h, maybe only at end of word?
 
     // TODO consonantic i (ia, io, iu) in certain situations?
 
