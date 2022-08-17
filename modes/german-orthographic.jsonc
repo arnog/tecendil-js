@@ -92,7 +92,7 @@
     // -y when not handled by preprocess
     "oy": "[right-curl]{anna}",
 
-    // TODO consonantic i (ia, io, iu) in certain situations
+    // TODO consonantic i (ia, io, iu) in certain situations?
 
 
     // -----------------------------------------------------------------------
@@ -153,7 +153,6 @@
     // TODO explain (e.g., Masse/Maße)
     "ß": "{thuule}",
     // TODO: Dehnungs-h
-    // TODO: consonantic y
     "h": "{hyarmen}",
 
     // -----------------------------------------------------------------------
@@ -277,6 +276,8 @@
     "sion": "[double-dot-below]{silme}[right-curl]{nuumen}",
     "ssion": "[double-dot-inside]{esse}[right-curl]{nuumen}",
     "tion": "[double-dot-below]{extended-tinco}[right-curl]{nuumen}",
+    "xion": "[double-dot-below][right-curl-below]{quesse}[right-curl]{nuumen}",
+    "xiom": "[double-dot-below][right-curl-below]{quesse}[right-curl]{malta}",
 
     // TODO NOTES on -E/-S in composites. We could add more -s/-es rules to
     // allow for encoding in composites when an apostroph is input at the
@@ -350,7 +351,8 @@
     "nths$": "[tilde-above][thinnas][hook]{tinco}",
     "mphs$": "[tilde-above][thinnas][hook]{parma}",
 
-    // -sions, -ssions, -tions do not occur TODO CHECK
+    // -sions, -ssions, -tions, -xions do not occur TODO CHECK
+    "xioms$": "[double-dot-below][right-curl-below]{quesse}[right-curl][hook]{malta}",
 
     // -----------------------------------------------------------------------
     //
@@ -424,7 +426,7 @@
     // "nthes$": "[tilde-above][thinnas][hook][dot-below]{tinco}",
     // "mphes$": "[tilde-above][thinnas][hook][dot-below]{parma}"
 
-    // -siones, -ssiones, -tiones do not occur TODO CHECK
+    // -siones, -ssiones, -tiones, -xiones, -xiomes do not occur TODO CHECK
   },
 
   "words":
