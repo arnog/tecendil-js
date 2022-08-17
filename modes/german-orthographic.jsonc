@@ -153,7 +153,10 @@
     "g": "{ungwe}",
     // TODO: note on the two distinct sounds
     "ch": "{hwesta}",
-    // TODO: exceptions like Kongo, Mango, ungerade
+    // In the vast majority of cases, ng is a velar nasal. This includes the
+    // common combinations -ing and -ung.
+    // Exceptions where the g is pronounced, i.e., ng-g, are transcribed
+    // later.
     "ng": "{nwalme}",
 
     // -----------------------------------------------------------------------
@@ -234,7 +237,7 @@
 
     // -----------------------------------------------------------------------
     //
-    // CONSONANTS: NASALIZED CONSONANTS
+    // CONSONANTS: NASAL + CONSONANTS
     // Note: For the labial series, we encode m+consonant with the tilde.
     // There are some cases where n+labial occurs with prefixes such as an- or
     // un-. However, m+labial seems to be more frequent. This is also
@@ -258,9 +261,22 @@
     "nj": "[tilde-above]{anna}",
 
     "nk": "[tilde-above]{quesse}",
-    // TODO ng-g cases
-    //"ng": "[tilde-above]{ungwe}",
+    // ng see below
     "nch": "[tilde-above]{hwesta}",
+
+    // Some exceptions where ng is pronounced ng-g, transcribed as nasalized g.
+    // Usually happens when a prefix ending with n is used (ungerade) or when
+    // ng is followed by an open vowel (Kongo).
+    // In the vast majority of cases, ng is just a (velar) nasal and
+    // transcribed with ngwalme (defined above).
+    "nga": "[tilde-above]{ungwe}[triple-dot-above]",
+    "ngeh": "[tilde-above]{ungwe}[acute]{aara}",
+    "ngie": "[tilde-above]{ungwe}[dot-above]{yanta}",
+    "ngo": "[tilde-above]{ungwe}[right-curl]",
+    // What about ngi, ngu? TODO CHECK
+    "^ang": "[triple-dot-above][tilde-above]{ungwe}",
+    "^ung": "[left-curl][tilde-above]{ungwe}",
+    "^eing": "[acute]{anna}[tilde-above]{ungwe}",
 
     // TODO what about nl?
     // "nl": "[tilde-above]{lambe}",
@@ -445,5 +461,6 @@
 
   "words":
   {
+      // TODO further ng special cases such as 'Angelika'
   }
 }
