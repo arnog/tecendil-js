@@ -242,7 +242,7 @@
 
     // ntsch, ndsch do not occur TODO CHECK
     "nsch": "[tilde-above]{harma}",
-    // nj better handled as n + palatalization symbol
+    "nj": "[tilde-above]{anna}",
 
     "nk": "[tilde-above]{quesse}",
     // TODO ng-g cases
@@ -278,7 +278,9 @@
     "ssion": "[double-dot-inside]{esse}[right-curl]{nuumen}",
     "tion": "[double-dot-below]{extended-tinco}[right-curl]{nuumen}",
 
-    // TODO NOTES on -E/-S in composites
+    // TODO NOTES on -E/-S in composites. We could add more -s/-es rules to
+    // allow for encoding in composites when an apostroph is input at the
+    // morphem boundary. The rules here are for actual word endings only.
 
     // -----------------------------------------------------------------------
     //
@@ -332,6 +334,23 @@
     "cks$": "[bar-below][hook]{quesse}",
     "lls$": "[bar-below][hook]{lambe}",
 
+    // -schws, -zws do not occur
+    
+    // -rhs, -ghs, do not occur TODO CHECK
+    "ths$": "[thinnas][hook]{tinco}",
+    "phs$": "[thinnas][hook]{parma}",
+
+    // -nzs, -mbs, -mfs, -mws, -nschs, -njs, -nchs do not occur TODO CHECK
+    "nts$": "[tilde-above][hook]{tinco}",
+    "nds$": "[tilde-above][hook]{ando}",
+    "mps$": "[tilde-above][hook]{parma}",
+    "mpfs$" : "[tilde-above][hook]{extended-parma}",
+    "nks$": "[tilde-above][hook]{quesse}",
+    "ncks$": "[tilde-above][bar-below][hook]{quesse}",
+    "nths$": "[tilde-above][thinnas][hook]{tinco}",
+    "mphs$": "[tilde-above][thinnas][hook]{parma}",
+
+    // -sions, -ssions, -tions do not occur TODO CHECK
 
     // -----------------------------------------------------------------------
     //
@@ -382,13 +401,30 @@
     "ffes$": "[bar-below][hook][dot-below]{formen}",
     "mmes$": "[bar-below][hook][dot-below]{malta}",
     "ckes$": "[bar-below][hook][dot-below]{quesse}",
-    "lles$": "[bar-below][hook][dot-below]{lambe}"
+    "lles$": "[bar-below][hook][dot-below]{lambe}",
 
+    // -schwes, -zwes do not occur
 
+    // -rhes, -ghes, do not occur TODO CHECK
+    // possible, but does not look good
+    // "thes$": "[thinnas][hook][dot-below]{tinco}",
+    // "phes$": "[thinnas][hook][dot-below]{parma}"
 
+    // -mfes, -mwes, -njes, -nckes do not occur TODO CHECK
+    "ntes$": "[tilde-above][hook][dot-below]{tinco}",
+    "ndes$": "[tilde-above][hook][dot-below]{ando}",
+    "nzes$": "[tilde-above][hook][dot-below]{extended-tinco}",
+    "mpes$": "[tilde-above][hook][dot-below]{parma}",
+    "mbes$": "[tilde-above][hook][dot-below]{umbar}",
+    "mpfes$" : "[tilde-above][hook][dot-below]{extended-parma}",
+    "nsches$": "[tilde-above][hook][dot-below]{harma}",
+    "nkes$": "[tilde-above][hook][dot-below]{quesse}",
+    "nches$": "[tilde-above][hook][dot-below]{hwesta}"
+    // possible, but does not look good
+    // "nthes$": "[tilde-above][thinnas][hook][dot-below]{tinco}",
+    // "mphes$": "[tilde-above][thinnas][hook][dot-below]{parma}"
 
-
-
+    // -siones, -ssiones, -tiones do not occur TODO CHECK
   },
 
   "words":
