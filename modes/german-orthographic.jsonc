@@ -278,15 +278,16 @@
     "ssion": "[double-dot-inside]{esse}[right-curl]{nuumen}",
     "tion": "[double-dot-below]{extended-tinco}[right-curl]{nuumen}",
 
-    // -----------------------------------------------------------------------
-    //
-    // FINAL -E
-    // TODO CHECK WITH NEW STUFF
-    "e$": "[dot-below]",
+    // TODO NOTES on -E/-S in composites
 
     // -----------------------------------------------------------------------
     //
     // FINAL -E
+    "e$": "[dot-below]",
+
+    // -----------------------------------------------------------------------
+    //
+    // FINAL -S
     // also should not be used after vowel
     "aas$": "[triple-dot-above][hook]{osse}",
     "ees$": "[acute][hook]{yanta}",
@@ -311,11 +312,26 @@
     "pfs$" : "[hook]{extended-parma}",
 
     // -schs, -js does not occur TODO CHECK
-    
     "ks$": "[hook]{quesse}",
     "gs$": "[hook]{ungwe}",
     "chs$": "[hook]{hwesta}",
     "ngs$": "[hook]{nwalme}",
+
+    "ls$": "[hook]{lambe}",
+    // TODO: Dehnungs-h + s
+
+    "cs$": "[hook]{quesse}",
+    // -qus, -qs, -xs does not occur TODO CHECK
+
+    // -dds, -rrs, -zzs, -tzs, -bbs, -kks, -ccs, -ggs do not occur TODO CHECK
+    "tts$": "[bar-below][hook]{tinco}",
+    "nns$": "[bar-below][hook]{nuumen}",
+    "pps$": "[bar-below][hook]{parma}",
+    "ffs$": "[bar-below][hook]{formen}",
+    "mms$": "[bar-below][hook]{malta}",
+    "cks$": "[bar-below][hook]{quesse}",
+    "lls$": "[bar-below][hook]{lambe}",
+
 
     // -----------------------------------------------------------------------
     //
@@ -347,7 +363,32 @@
     // -kes does not occur, only -nkes and -ckes TODO CHECK
     "ges$": "[hook][dot-below]{ungwe}",
     "ches$": "[hook][dot-below]{hwesta}",
-    "nges$": "[hook][dot-below]{nwalme}"
+    "nges$": "[hook][dot-below]{nwalme}",
+
+    "les$": "[hook][dot-below]{lambe}",
+    // TODO: Dehnungs-h + es
+
+    // -ces, -ques, -qes does not occur TODO CHECK
+    "xes$": "[right-curl-below][hook][dot-below]{quesse}",
+
+    // -ddes, -bbes, -kkes, -cces, -gges do not occur TODO CHECK
+    "ttes$": "[bar-below][hook][dot-below]{tinco}",
+    "nnes$": "[bar-below][hook][dot-below]{nuumen}",
+    // does not look good
+    //"rres$": "[bar-below][hook][dot-below]{roomen}",
+    "zzes$": "[bar-below][hook][dot-below]{extended-tinco}",
+    "tzes$": "[bar-below][hook][dot-below]{extended-tinco}",
+    "ppes$": "[bar-below][hook][dot-below]{parma}",
+    "ffes$": "[bar-below][hook][dot-below]{formen}",
+    "mmes$": "[bar-below][hook][dot-below]{malta}",
+    "ckes$": "[bar-below][hook][dot-below]{quesse}",
+    "lles$": "[bar-below][hook][dot-below]{lambe}"
+
+
+
+
+
+
   },
 
   "words":
