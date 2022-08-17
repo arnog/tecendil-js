@@ -6,6 +6,11 @@
 
 // TODO ADD SOURCES, EXPLANATION, ...
 
+// TODO LATER check out the following sources
+// https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Phoneme_und_Grapheme
+// https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Zweifelsf%C3%A4lle_der_Phonem-Graphem-Zuordnung/Konsonanten
+// https://deutsch.lingolia.com/de/rechtschreibung/konsonanten/th-und-rh
+
 {
   // Short-name
   "name": "german-orthographic",
@@ -39,22 +44,22 @@
     "cü": "kü",
 
     // Consonantic y + vowel
-    // TODO CHECK problems at morphem boundaries
+    // TODO LATER CHECK problems at morphem boundaries
     "ya": "ja",
     "ye": "je",
-    // yi not known to occur TODO CHECK
+    // yi not known to occur TODO LATER CHECK
     "yo": "jo",
     "yu": "ju",
-    // TODO CHECK y+umlaut
+    // TODO LATER CHECK y+umlaut
 
     // vowel + y: diphthong
     "ay": "ai",
     // ey and ei are not pronounced in the same way, but I have no better idea
     "ey": "ei"
-    // iy not known to occur TODO CHECK
+    // iy not known to occur TODO LATER CHECK
     // oy will be directly encoded under diphthongs because oi is not always a
     // diphthong
-    // uy not known to occur TODO CHECK
+    // uy not known to occur TODO LATER CHECK
   },
 
   "map":
@@ -89,12 +94,12 @@
     // -e
     // TODO explain that we do not transcribe ae, oe, ue as diphthongs
     "ee": "[acute]{yanta}",
-    // TODO non-diphthong ie like 'petersilie', 'serviette'
+    // TODO LATER non-diphthong ie like 'petersilie', 'serviette'
     "ie": "[dot-above]{yanta}",
     // -i diphthongs with {anna}
     "ai": "[triple-dot-above]{anna}",
     "ei": "[acute]{anna}",
-    // TODO oi/ui. Sometimes diphthong, sometimes o-i.
+    // TODO LATER oi/ui. Sometimes diphthong, sometimes o-i.
     // -o
     // implemented by built-in rule
     // "oo": "[double-right-curl]",
@@ -104,9 +109,9 @@
     // -y when not handled by preprocess
     "oy": "[right-curl]{anna}",
 
-    // TODO use thinnas for diphthong+h, maybe only at end of word?
+    // TODO LATER use thinnas for diphthong+h, maybe only at end of word?
 
-    // TODO consonantic i (ia, io, iu) in certain situations?
+    // TODO LATER consonantic i (ia, io, iu) in certain situations?
 
 
     // -----------------------------------------------------------------------
@@ -118,7 +123,7 @@
     "n": "{nuumen}",
     "z": "{extended-tinco}",
     // r ore implemented by rrule
-    // TODO final -r can appear in the middle of a composite word and should
+    // TODO LATER final -r can appear in the middle of a composite word and should
     // be ore there
 
     // -----------------------------------------------------------------------
@@ -130,28 +135,30 @@
     "v": "{ampa}",
     "m": "{malta}",
     "w": "{vala}",
-    // TODO check for problems at morphem boundaries
+    // TODO LATER check for problems at morphem boundaries
     "pf" : "{extended-parma}",
 
     // -----------------------------------------------------------------------
     //
     // CONSONANTS: POSTALVEOLARS/PALATALS (SCH VARIANTS AND J)
-    // TODO check for problems at morphem boundaries
+    // TODO LATER check for problems at morphem boundaries
     "tsch": "{calma}",
-    // TODO: maybe only for foreign words like dschungel and remove from map
+    // TODO LATER maybe only for foreign words like dschungel and remove from map
     // because of words like 'Grundschule'
     "dsch": "{anga}",
-    // TODO check for problems at morphem boundaries
+    // TODO LATER check for problems at morphem boundaries
     "sch": "{harma}",
-    // TODO: anca could be used for voiced sch as in 'garage'
+    // TODO LATER anca could be used for voiced sch as in 'garage'
     "j": "{anna}",
+
+    // TODO DISCUSS ST AND SP
 
     // -----------------------------------------------------------------------
     //
     // CONSONANTS: VELARS
     "k": "{quesse}",
     "g": "{ungwe}",
-    // TODO: note on the two distinct sounds
+    // TODO note on the two distinct sounds
     "ch": "{hwesta}",
     // In the vast majority of cases, ng is a velar nasal. This includes the
     // common combinations -ing and -ung.
@@ -165,11 +172,11 @@
     // r romen implemented by rrule
     "l": "{lambe}",
     "s": "{silme}", // automatically becomes nuquerna with tengwar
-    // TODO: check for problems at morphem boundaries / check triple s
+    // TODO LATER check for problems at morphem boundaries / check triple s
     "ss": "{esse}", // automatically becomes nuquerna with tengwar
     // TODO explain (e.g., Masse/Maße)
     "ß": "{thuule}",
-    // TODO: Dehnungs-h
+    // Dehnungs-h transcribed in vowel section
     "h": "{hyarmen}",
 
     // -----------------------------------------------------------------------
@@ -192,7 +199,7 @@
     // CONSONANTS: DOUBLED CONSONANTS
     // Note: tripled consonants are handled correctly, i.e., ff-f, same is
     // true for ck-k
-    // TODO check for problems at morphem boundaries
+    // TODO LATER check for problems at morphem boundaries
     "tt": "[bar-below]{tinco}",
     "dd": "[bar-below]{ando}",
     "nn": "[bar-below]{nuumen}",
@@ -209,7 +216,7 @@
 
     "kk": "[bar-below]{quesse}",
     "ck": "[bar-below]{quesse}",
-    // TODO: cce/cci not working because of preprocessing
+    // TODO LATER cce/cci not working because of preprocessing
     "cc": "[bar-below]{quesse}",
     "gg": "[bar-below]{ungwe}",
 
@@ -226,10 +233,10 @@
     // -----------------------------------------------------------------------
     //
     // CONSONANTS: -H
-    // TODO: this could cause too many problems with composites. could be
+    // TODO LATER this could cause too many problems with composites. could be
     // better to put the
     // known words into the words list
-    // TODO are there more consonants with following h?
+    // TODO LATER are there more consonants with following h?
     "th": "[thinnas]{tinco}",
     "rh": "{arda}",
     "ph": "[thinnas]{parma}",
@@ -244,7 +251,7 @@
     // consistent with the velar series because the 'n' for the first two
     // combinations is actually a velar nasal and not the usual dental nasal
     // 'n'.
-    // TODO check for problems at morphem boundaries
+    // TODO LATER check for problems at morphem boundaries
     "nt": "[tilde-above]{tinco}",
     "nd": "[tilde-above]{ando}",
     "nz": "[tilde-above]{extended-tinco}",
@@ -252,11 +259,11 @@
     "mp": "[tilde-above]{parma}",
     "mb": "[tilde-above]{umbar}",
     "mf": "[tilde-above]{formen}",
-    // mv does not occur TODO CHECK
+    // mv does not occur TODO LATER CHECK
     "mw": "[tilde-above]{vala}", 
     "mpf" : "[tilde-above]{extended-parma}",
 
-    // ntsch, ndsch do not occur TODO CHECK
+    // ntsch, ndsch do not occur TODO LATER CHECK
     "nsch": "[tilde-above]{harma}",
     "nj": "[tilde-above]{anna}",
 
@@ -273,27 +280,27 @@
     "ngeh": "[tilde-above]{ungwe}[acute]{aara}",
     "ngie": "[tilde-above]{ungwe}[dot-above]{yanta}",
     "ngo": "[tilde-above]{ungwe}[right-curl]",
-    // What about ngi, ngu? TODO CHECK
+    // What about ngi, ngu? TODO LATER CHECK
     "^ang": "[triple-dot-above][tilde-above]{ungwe}",
     "^ung": "[left-curl][tilde-above]{ungwe}",
     "^eing": "[acute]{anna}[tilde-above]{ungwe}",
 
-    // TODO what about nl?
+    // TODO LATER what about nl?
     // "nl": "[tilde-above]{lambe}",
     "ns": "[tilde-above]{silme}", // automatically becomes nuquerna with tengwar
-    // TODO nh?
+    // TODO LATER nh?
 
-    // nc covered by c+vowel preprocess and n+ch TODO CHECK
-    // nq nx do not occur TODO CHECK
+    // nc covered by c+vowel preprocess and n+ch TODO LATER CHECK
+    // nq nx do not occur TODO LATER CHECK
 
     // ntz is usually nt+z at a morphem boundary, therefore there is no
-    // special rule and it is encoded nt+z TODO CHECK
+    // special rule and it is encoded nt+z TODO LATER CHECK
 
-    // Only known remaining case for n+double consonant TODO CHECK
+    // Only known remaining case for n+double consonant TODO LATER CHECK
     "nck": "[tilde-above][bar-below]{quesse}",
 
     // nasal + consonant + w should be fine
-    // known cases for nasal+consonant+h TODO CHECK
+    // known cases for nasal+consonant+h TODO LATER CHECK
     "nth": "[tilde-above][thinnas]{tinco}",
     "mph": "[tilde-above][thinnas]{parma}",
 
@@ -302,7 +309,7 @@
     // CONSONANTS: -SION, -SSION, -TION
     // Special cases where the I is always consonantic. This is a frequent
     // morphem ending.
-    // TODO check for problems at morphem boundaries
+    // TODO LATER check for problems at morphem boundaries
     "sion": "[double-dot-below]{silme}[right-curl]{nuumen}",
     "ssion": "[double-dot-inside]{esse}[right-curl]{nuumen}",
     "tion": "[double-dot-below]{extended-tinco}[right-curl]{nuumen}",
@@ -339,12 +346,12 @@
     "ps$": "[hook]{parma}",
     "bs$": "[hook]{umbar}",
     "fs$": "[hook]{formen}",
-    // vs does not occur TODO CHECK
+    // vs does not occur TODO LATER CHECK
     "ms$": "[hook]{malta}",
-    // ws does not occur TODO CHECK
+    // ws does not occur TODO LATER CHECK
     "pfs$" : "[hook]{extended-parma}",
 
-    // -schs, -js does not occur TODO CHECK
+    // -schs, -js does not occur TODO LATER CHECK
     "ks$": "[hook]{quesse}",
     "gs$": "[hook]{ungwe}",
     "chs$": "[hook]{hwesta}",
@@ -354,9 +361,9 @@
     // TODO: Dehnungs-h + s
 
     "cs$": "[hook]{quesse}",
-    // -qus, -qs, -xs does not occur TODO CHECK
+    // -qus, -qs, -xs does not occur TODO LATER CHECK
 
-    // -dds, -rrs, -zzs, -tzs, -bbs, -kks, -ccs, -ggs do not occur TODO CHECK
+    // -dds, -rrs, -zzs, -tzs, -bbs, -kks, -ccs, -ggs do not occur TODO LATER CHECK
     "tts$": "[bar-below][hook]{tinco}",
     "nns$": "[bar-below][hook]{nuumen}",
     "pps$": "[bar-below][hook]{parma}",
@@ -367,11 +374,11 @@
 
     // -schws, -zws do not occur
     
-    // -rhs, -ghs, do not occur TODO CHECK
+    // -rhs, -ghs, do not occur TODO LATER CHECK
     "ths$": "[thinnas][hook]{tinco}",
     "phs$": "[thinnas][hook]{parma}",
 
-    // -nzs, -mbs, -mfs, -mws, -nschs, -njs, -nchs do not occur TODO CHECK
+    // -nzs, -mbs, -mfs, -mws, -nschs, -njs, -nchs do not occur TODO LATER CHECK
     "nts$": "[tilde-above][hook]{tinco}",
     "nds$": "[tilde-above][hook]{ando}",
     "mps$": "[tilde-above][hook]{parma}",
@@ -381,13 +388,13 @@
     "nths$": "[tilde-above][thinnas][hook]{tinco}",
     "mphs$": "[tilde-above][thinnas][hook]{parma}",
 
-    // -sions, -ssions, -tions, -xions do not occur TODO CHECK
+    // -sions, -ssions, -tions, -xions do not occur TODO LATER CHECK
     "xioms$": "[double-dot-below][right-curl-below]{quesse}[right-curl][hook]{malta}",
 
     // -----------------------------------------------------------------------
     //
     // FINAL -ES
-    // -aaes, -eees, -iees, -yoes do not occur TODO CHECK
+    // -aaes, -eees, -iees, -yoes do not occur TODO LATER CHECK
     "aies$": "[triple-dot-above][hook][dot-below]{anna}",
     "eies$": "[acute][hook][dot-below]{anna}",
     "aues$": "[triple-dot-above][hook][dot-below]{vala}",
@@ -407,11 +414,11 @@
     "wes$": "[hook][dot-below]{vala}",
     "pfes$" : "[hook][dot-below]{extended-parma}",
 
-    // -dsches, -jes does not occur TODO CHECK
+    // -dsches, -jes does not occur TODO LATER CHECK
     "tsches$": "[hook][dot-below]{calma}",
     "sches$": "[hook][dot-below]{harma}",
 
-    // -kes does not occur, only -nkes and -ckes TODO CHECK
+    // -kes does not occur, only -nkes and -ckes TODO LATER CHECK
     "ges$": "[hook][dot-below]{ungwe}",
     "ches$": "[hook][dot-below]{hwesta}",
     "nges$": "[hook][dot-below]{nwalme}",
@@ -419,10 +426,10 @@
     "les$": "[hook][dot-below]{lambe}",
     // TODO: Dehnungs-h + es
 
-    // -ces, -ques, -qes does not occur TODO CHECK
+    // -ces, -ques, -qes does not occur TODO LATER CHECK
     "xes$": "[right-curl-below][hook][dot-below]{quesse}",
 
-    // -ddes, -bbes, -kkes, -cces, -gges do not occur TODO CHECK
+    // -ddes, -bbes, -kkes, -cces, -gges do not occur TODO LATER CHECK
     "ttes$": "[bar-below][hook][dot-below]{tinco}",
     "nnes$": "[bar-below][hook][dot-below]{nuumen}",
     // does not look good
@@ -437,12 +444,12 @@
 
     // -schwes, -zwes do not occur
 
-    // -rhes, -ghes, do not occur TODO CHECK
+    // -rhes, -ghes, do not occur TODO LATER CHECK
     // possible, but does not look good
     // "thes$": "[thinnas][hook][dot-below]{tinco}",
     // "phes$": "[thinnas][hook][dot-below]{parma}"
 
-    // -mfes, -mwes, -njes, -nckes do not occur TODO CHECK
+    // -mfes, -mwes, -njes, -nckes do not occur TODO LATER CHECK
     "ntes$": "[tilde-above][hook][dot-below]{tinco}",
     "ndes$": "[tilde-above][hook][dot-below]{ando}",
     "nzes$": "[tilde-above][hook][dot-below]{extended-tinco}",
@@ -456,11 +463,11 @@
     // "nthes$": "[tilde-above][thinnas][hook][dot-below]{tinco}",
     // "mphes$": "[tilde-above][thinnas][hook][dot-below]{parma}"
 
-    // -siones, -ssiones, -tiones, -xiones, -xiomes do not occur TODO CHECK
+    // -siones, -ssiones, -tiones, -xiones, -xiomes do not occur TODO LATER CHECK
   },
 
   "words":
   {
-      // TODO further ng special cases such as 'Angelika'
+      // TODO LATER further ng special cases such as 'Angelika'
   }
 }
