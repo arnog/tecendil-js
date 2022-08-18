@@ -2,14 +2,43 @@
 //
 // GERMAN ORTHOGRAPHIC MODE
 //
-// ---------------------------------------------------------------------------
-
-// TODO ADD SOURCES, EXPLANATION, ...
-
+// This a tehtar mode for German which follows German orthography closely.
+// It is based on https://web.archive.org/web/20140227102534/http://my.opera.com/tengwarblog/blog/tengwar-orthografischer-deutscher-tehtar-modus
+// I have taken a few elements from other German modes published on the
+// internet and also added some elements of my own.
+//
+//
+// One particular challenge is the encoding of multi-lettered graphemes.
+// Many have natural tengwar candidates which should be used for
+// transcriptions. However, these letter combinations can also occur in cases
+// where they do not constitute one single grapheme, e.g., in composite words
+// or within a prefixed morpheme. For example, the grapheme DSCH, which occurs
+// in words such as Dschungel, is encoded with anga. However, the letter
+// combination also occurs in words such as Grund-schule (hyphen for emphasis
+// only). Here, DSCH is not a single grapheme, but there are two graphemes D
+// and SCH resulting from the individual parts of the composite words. This is
+// also pronounced differently.
+//
+// It is probably impossible for Tecendil to distinguish these cases since it
+// requires semantic knowledge. Moreover, the decomposition into word parts is
+// not even unique in some rare cases: Wachstube could be both Wach-stube and
+// Wachs-tube.
+//
+// This mode errs on the side of "overcollapsing" letters into graphemes,
+// i.e., there are mapping rules for a lot of letter clusters. One can
+// separate word parts by an apostrophe ' in Tecendil input, which prevents
+// mapping rules from being applied "across" the apostrophe. For example,
+// using Grund'schule as input would give the correct transcription.
+// Further mapping or word rules may be added later to make the transcription
+// more accurate, but it is never going to be perfect.
+//
+//
 // TODO LATER check out the following sources
 // https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Phoneme_und_Grapheme
 // https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Zweifelsf%C3%A4lle_der_Phonem-Graphem-Zuordnung/Konsonanten
 // https://deutsch.lingolia.com/de/rechtschreibung/konsonanten/th-und-rh
+// ---------------------------------------------------------------------------
+
 
 {
   // Short-name
@@ -76,7 +105,18 @@
     // -----------------------------------------------------------------------
     //
     // DEHNUNGS-H
-    // TODO DISCUSS
+    //
+    // NOTES: Vowel+h usually marks a long vowel in German. This is not
+    // transcribed as vowel+hyarmen for different reasons:
+    // First, the h is not pronounced by itself. Second, placing a tehtar on
+    // hyarmen is a bit of a squeeze. This is a problem of tengwar itself, not
+    // of any particular font. In the original tengwar use cases, there are
+    // not too many cases where one has a tehtar on hyarmen, but this would be
+    // different for German. For these reasons, these letter combinations have
+    // their own transcription, using the long vowel carriar aara. An
+    // alternative choice would be vilya, which is not in use and would be a
+    // good fit for the h sound -- but this sound does not occur in these
+    // combinations as mentioned previously.
     "ah": "[triple-dot-above]{aara}",
     "eh": "[acute]{aara}",
     "oh": "[right-curl]{aara}",
@@ -92,7 +132,11 @@
     // -a
     "aa": "[triple-dot-above]{osse}",
     // -e
-    // TODO explain that we do not transcribe ae, oe, ue as diphthongs
+    // NOTE: ae, oe, ue are sometimes used as substitues for the umlauts ä, ö,
+    // ü. However, they can also occur in other cases where they usually belong
+    // to two syllables, e.g., aktuell. In order to preserve these cases,
+    // there are no rules for ae, oe, ue. This means, however, that umlauts
+    // have to be input as umlauts, and their substitutes cannot be used.
     "ee": "[acute]{yanta}",
     // TODO LATER non-diphthong ie like 'petersilie', 'serviette'
     "ie": "[dot-above]{yanta}",
@@ -151,14 +195,22 @@
     // TODO LATER anca could be used for voiced sch as in 'garage'
     "j": "{anna}",
 
-    // TODO DISCUSS ST AND SP
+    // TODO LATER: ST and SP are sometimes pronounced SCHT/SCHP. Therefore,
+    // they could be transcribed as harma+tinco/parma, but this depends on the
+    // position within a word. For now, they are simply transcribed as
+    // silme+tinco/parma.
 
     // -----------------------------------------------------------------------
     //
     // CONSONANTS: VELARS
     "k": "{quesse}",
     "g": "{ungwe}",
-    // TODO note on the two distinct sounds
+    // CH represents two phonemes, depending on the preceding vowel. Hwesta is
+    // the natural choice for the velar fricativ as in Loch. The other phonem
+    // is a palatal fricative such as in Ich. Ngoldo is unused and could be
+    // used to represent this sound. However, this is an orthographic mode, so
+    // we stick with one tengwar for both phonemes represented by this
+    // graphem.
     "ch": "{hwesta}",
     // In the vast majority of cases, ng is a velar nasal. This includes the
     // common combinations -ing and -ung.
@@ -174,7 +226,21 @@
     "s": "{silme}", // automatically becomes nuquerna with tengwar
     // TODO LATER check for problems at morphem boundaries / check triple s
     "ss": "{esse}", // automatically becomes nuquerna with tengwar
-    // TODO explain (e.g., Masse/Maße)
+    // NOTES: It seems prudent to have a distinct tengwar for ß. This letter
+    // can be transcribed as ss when no ß is available, but ss and ß are two
+    // distinct graphemes, and it is better to keep this distinction to
+    // distinguish certain word pairs, e.g., Masse/Maße. Both ß and ss are
+    // pronounced as voiceless s, but there is still a distinction in
+    // pronounciation of the word, namely ß always follows a long vowel while
+    // ss follows a short one.
+    // Thúle is a good fit for several reasons. First, it is yet unused and
+    // also used for voiceless s in Quenya. Second, it is visually quite
+    // similar to ß. Third, the two different graphemes for voiceless s (ss/ß)
+    // have some historic/linguistic background, and the same is true for
+    // Quenya: Thúle was pronounced as a dental fricative in Aman, but it
+    // became a voiceless s in Middle-Earch. Yet the distinction was kept in
+    // writing, and thúle and silme are both used for the same voiceless s
+    // sound.
     "ß": "{thuule}",
     // Dehnungs-h transcribed in vowel section
     "h": "{hyarmen}",
@@ -225,6 +291,7 @@
     // -----------------------------------------------------------------------
     //
     // CONSONANTS: -W
+    // TODO LATER check for problems at morphem boundaries
     "schw": "[over-twist]{harma}",
     "zw": "[over-twist]{extended-tinco}",
     // tz-w usually occours only in composites tz-w, therefore there is no over-twist.
@@ -316,13 +383,20 @@
     "xion": "[double-dot-below][right-curl-below]{quesse}[right-curl]{nuumen}",
     "xiom": "[double-dot-below][right-curl-below]{quesse}[right-curl]{malta}",
 
-    // TODO NOTES on -E/-S in composites. We could add more -s/-es rules to
-    // allow for encoding in composites when an apostroph is input at the
-    // morphem boundary. The rules here are for actual word endings only.
+    // NOTES: The following rules for final -e/-s/-es can also be used within
+    // words at the end of a word part, e.g., for the s in Lachsforelle. One
+    // can separate word parts by an apostrophe ' in Tecendil input, which
+    // also marks the part before the apostrophe as a word ending.
+    // As of now, -e/-s/-es is only encoded for cases that can appear at the
+    // actual end of a word. More combinations are possible when -e/-s/-es
+    // appear as a Fugenlaut.
+    
+    // TODO LATER add -e/-s/-es combinations for Fugenlaut.
 
     // -----------------------------------------------------------------------
     //
     // FINAL -E
+    // NOTES: In some fonts, dot under aara does not look good.
     "e$": "[dot-below]",
 
     // -----------------------------------------------------------------------
