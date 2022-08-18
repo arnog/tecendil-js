@@ -390,7 +390,7 @@
     // As of now, -e/-s/-es is only encoded for cases that can appear at the
     // actual end of a word. More combinations are possible when -e/-s/-es
     // appear as a Fugenlaut.
-    
+
     // TODO LATER add -e/-s/-es combinations for Fugenlaut.
 
     // -----------------------------------------------------------------------
@@ -403,6 +403,13 @@
     //
     // FINAL -S
     // also should not be used after vowel
+
+    // -ahs, -ohs, do not occur TODO LATER CHECK
+    // TODO LATER check if -ähs, -öhs, -ühs occur
+    // NOTES: Only looks good in some fonts.
+    "ehs$": "[acute][hook]{aara}",
+    "uhs$": "[left-curl][hook]{aara}",
+
     "aas$": "[triple-dot-above][hook]{osse}",
     "ees$": "[acute][hook]{yanta}",
     "ies$": "[dot-above][hook]{yanta}",
@@ -432,7 +439,6 @@
     "ngs$": "[hook]{nwalme}",
 
     "ls$": "[hook]{lambe}",
-    // TODO: Dehnungs-h + s
 
     "cs$": "[hook]{quesse}",
     // -qus, -qs, -xs does not occur TODO LATER CHECK
@@ -468,6 +474,14 @@
     // -----------------------------------------------------------------------
     //
     // FINAL -ES
+    // -ehes, öhes do not occur TODO LATER CHECK
+    "ahes$": "[triple-dot-above][hook][dot-below]{aara}",
+    "ehes$": "[acute][hook][dot-below]{aara}",
+    "ohes$": "[right-curl][hook][dot-below]{aara}",
+    "uhes$": "[left-curl][hook][dot-below]{aara}",
+    "ähes$": "[reversed-triple-dot-above][hook][dot-below]{aara}",
+    "ühes$": "[double-dot-above][hook][dot-below]{aara}",
+
     // -aaes, -eees, -iees, -yoes do not occur TODO LATER CHECK
     "aies$": "[triple-dot-above][hook][dot-below]{anna}",
     "eies$": "[acute][hook][dot-below]{anna}",
@@ -498,7 +512,6 @@
     "nges$": "[hook][dot-below]{nwalme}",
 
     "les$": "[hook][dot-below]{lambe}",
-    // TODO: Dehnungs-h + es
 
     // -ces, -ques, -qes does not occur TODO LATER CHECK
     "xes$": "[right-curl-below][hook][dot-below]{quesse}",
