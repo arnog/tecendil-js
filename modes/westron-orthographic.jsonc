@@ -8,6 +8,7 @@
 {
   "name": "westron-orthographic",
   "languageCode": "en",
+
   "normalizeVowels": false,
 
   "preprocess": {
