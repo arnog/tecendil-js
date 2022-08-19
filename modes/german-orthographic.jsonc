@@ -1,0 +1,560 @@
+// ---------------------------------------------------------------------------
+//
+// GERMAN ORTHOGRAPHIC MODE
+//
+// This a tehtar mode for German which follows German orthography closely.
+// It is based on https://web.archive.org/web/20140227102534/http://my.opera.com/tengwarblog/blog/tengwar-orthografischer-deutscher-tehtar-modus
+// I have taken a few elements from other German modes published on the
+// internet and also added some elements of my own.
+//
+//
+// One particular challenge is the encoding of multi-lettered graphemes.
+// Many have natural tengwar candidates which should be used for
+// transcriptions. However, these letter combinations can also occur in cases
+// where they do not constitute one single grapheme, e.g., in composite words
+// or within a prefixed morpheme. For example, the grapheme DSCH, which occurs
+// in words such as Dschungel, is encoded with anga. However, the letter
+// combination also occurs in words such as Grund-schule (hyphen for emphasis
+// only). Here, DSCH is not a single grapheme, but there are two graphemes D
+// and SCH resulting from the individual parts of the composite words. This is
+// also pronounced differently.
+//
+// It is probably impossible for Tecendil to distinguish these cases since it
+// requires semantic knowledge. Moreover, the decomposition into word parts is
+// not even unique in some rare cases: Wachstube could be both Wach-stube and
+// Wachs-tube.
+//
+// This mode errs on the side of "overcollapsing" letters into graphemes,
+// i.e., there are mapping rules for a lot of letter clusters. One can
+// separate word parts by an apostrophe ' in Tecendil input, which prevents
+// mapping rules from being applied "across" the apostrophe. For example,
+// using Grund'schule as input would give the correct transcription.
+// Further mapping or word rules may be added later to make the transcription
+// more accurate, but it is never going to be perfect.
+//
+//
+// TODO LATER check out the following sources
+// https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Phoneme_und_Grapheme
+// https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Zweifelsf%C3%A4lle_der_Phonem-Graphem-Zuordnung/Konsonanten
+// https://deutsch.lingolia.com/de/rechtschreibung/konsonanten/th-und-rh
+// ---------------------------------------------------------------------------
+
+
+{
+  // Short-name
+  "name": "german-orthographic",
+  "languageCode": "de",
+
+  "normalizeVowels": false,
+
+  "tehtarFollow": true,
+
+  "rrule": true,
+
+  "preprocess":
+  {
+    // Ensure that ii and uu are not interpreted as long vowels by the
+    // built-in rules.
+    "ii": "i'i",
+    "uu": "u'u",
+
+    // Replace c+vowel by z or k, depending on following vowel
+    // c -> z
+    "cä": "zä",
+    "ce": "ze",
+    "ci": "zi",
+    "cö": "zö",
+    "cy": "zy",
+
+    // c -> k
+    "ca": "ka",
+    "co": "ko",
+    "cu": "ku",
+    "cü": "kü",
+
+    // Consonantic y + vowel
+    // TODO LATER CHECK problems at morphem boundaries
+    "ya": "ja",
+    "ye": "je",
+    // yi not known to occur TODO LATER CHECK
+    "yo": "jo",
+    "yu": "ju",
+    // TODO LATER CHECK y+umlaut
+
+    // vowel + y: diphthong
+    "ay": "ai",
+    // ey and ei are not pronounced in the same way, but I have no better idea
+    "ey": "ei"
+    // iy not known to occur TODO LATER CHECK
+    // oy will be directly encoded under diphthongs because oi is not always a
+    // diphthong
+    // uy not known to occur TODO LATER CHECK
+  },
+
+  "map":
+  {
+    // -----------------------------------------------------------------------
+    //
+    // VOWELS
+    //
+    // a,e,i,o,u,y: built-in rules
+    "ä": "[reversed-triple-dot-above]",
+    "ö": "[double-acute]",
+    "ü": "[double-dot-above]",
+
+    // -----------------------------------------------------------------------
+    //
+    // DEHNUNGS-H
+    //
+    // NOTES: Vowel+h usually marks a long vowel in German. This is not
+    // transcribed as vowel+hyarmen for different reasons:
+    // First, the h is not pronounced by itself. Second, placing a tehtar on
+    // hyarmen is a bit of a squeeze. This is a problem of tengwar itself, not
+    // of any particular font. In the original tengwar use cases, there are
+    // not too many cases where one has a tehtar on hyarmen, but this would be
+    // different for German. For these reasons, these letter combinations have
+    // their own transcription, using the long vowel carriar aara. An
+    // alternative choice would be vilya, which is not in use and would be a
+    // good fit for the h sound -- but this sound does not occur in these
+    // combinations as mentioned previously.
+    "ah": "[triple-dot-above]{aara}",
+    "eh": "[acute]{aara}",
+    "oh": "[right-curl]{aara}",
+    "uh": "[left-curl]{aara}",
+    "äh": "[reversed-triple-dot-above]{aara}",
+    "öh": "[double-acute]{aara}",
+    "üh": "[double-dot-above]{aara}",
+
+    // -----------------------------------------------------------------------
+    //
+    // DIPHTHONGS AND DOUBLE VOWELS
+    //
+    // -a
+    "aa": "[triple-dot-above]{osse}",
+    // -e
+    // NOTE: ae, oe, ue are sometimes used as substitues for the umlauts ä, ö,
+    // ü. However, they can also occur in other cases where they usually belong
+    // to two syllables, e.g., aktuell. In order to preserve these cases,
+    // there are no rules for ae, oe, ue. This means, however, that umlauts
+    // have to be input as umlauts, and their substitutes cannot be used.
+    "ee": "[acute]{yanta}",
+    // TODO LATER non-diphthong ie like 'petersilie', 'serviette'
+    "ie": "[dot-above]{yanta}",
+    // -i diphthongs with {anna}
+    "ai": "[triple-dot-above]{anna}",
+    "ei": "[acute]{anna}",
+    // TODO LATER oi/ui. Sometimes diphthong, sometimes o-i.
+    // -o
+    // implemented by built-in rule
+    // "oo": "[double-right-curl]",
+    // -u
+    "au": "[triple-dot-above]{vala}",
+    "eu": "[acute]{vala}",
+    // -y when not handled by preprocess
+    "oy": "[right-curl]{anna}",
+
+    // TODO LATER use thinnas for diphthong+h, maybe only at end of word?
+
+    // TODO LATER consonantic i (ia, io, iu) in certain situations?
+
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: DENTALS
+    //
+    "t": "{tinco}",
+    "d": "{ando}",
+    "n": "{nuumen}",
+    "z": "{extended-tinco}",
+    // r ore implemented by rrule
+    // TODO LATER final -r can appear in the middle of a composite word and should
+    // be ore there
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: LABIALS
+    "p": "{parma}",
+    "b": "{umbar}",
+    "f": "{formen}",
+    "v": "{ampa}",
+    "m": "{malta}",
+    "w": "{vala}",
+    // TODO LATER check for problems at morphem boundaries
+    "pf" : "{extended-parma}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: POSTALVEOLARS/PALATALS (SCH VARIANTS AND J)
+    // TODO LATER check for problems at morphem boundaries
+    "tsch": "{calma}",
+    // TODO LATER maybe only for foreign words like dschungel and remove from map
+    // because of words like 'Grundschule'
+    "dsch": "{anga}",
+    // TODO LATER check for problems at morphem boundaries
+    "sch": "{harma}",
+    // TODO LATER anca could be used for voiced sch as in 'garage'
+    "j": "{anna}",
+
+    // TODO LATER: ST and SP are sometimes pronounced SCHT/SCHP. Therefore,
+    // they could be transcribed as harma+tinco/parma, but this depends on the
+    // position within a word. For now, they are simply transcribed as
+    // silme+tinco/parma.
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: VELARS
+    "k": "{quesse}",
+    "g": "{ungwe}",
+    // CH represents two phonemes, depending on the preceding vowel. Hwesta is
+    // the natural choice for the velar fricativ as in Loch. The other phonem
+    // is a palatal fricative such as in Ich. Ngoldo is unused and could be
+    // used to represent this sound. However, this is an orthographic mode, so
+    // we stick with one tengwar for both phonemes represented by this
+    // graphem.
+    "ch": "{hwesta}",
+    // In the vast majority of cases, ng is a velar nasal. This includes the
+    // common combinations -ing and -ung.
+    // Exceptions where the g is pronounced, i.e., ng-g, are transcribed
+    // later.
+    "ng": "{nwalme}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: MISC SINGLE TENGWAR
+    // r romen implemented by rrule
+    "l": "{lambe}",
+    "s": "{silme}", // automatically becomes nuquerna with tengwar
+    // TODO LATER check for problems at morphem boundaries / check triple s
+    "ss": "{esse}", // automatically becomes nuquerna with tengwar
+    // NOTES: It seems prudent to have a distinct tengwar for ß. This letter
+    // can be transcribed as ss when no ß is available, but ss and ß are two
+    // distinct graphemes, and it is better to keep this distinction to
+    // distinguish certain word pairs, e.g., Masse/Maße. Both ß and ss are
+    // pronounced as voiceless s, but there is still a distinction in
+    // pronounciation of the word, namely ß always follows a long vowel while
+    // ss follows a short one.
+    // Thúle is a good fit for several reasons. First, it is yet unused and
+    // also used for voiceless s in Quenya. Second, it is visually quite
+    // similar to ß. Third, the two different graphemes for voiceless s (ss/ß)
+    // have some historic/linguistic background, and the same is true for
+    // Quenya: Thúle was pronounced as a dental fricative in Aman, but it
+    // became a voiceless s in Middle-Earch. Yet the distinction was kept in
+    // writing, and thúle and silme are both used for the same voiceless s
+    // sound.
+    "ß": "{thuule}",
+    // Dehnungs-h transcribed in vowel section
+    "h": "{hyarmen}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: SINGLE CONSONANT SPECIAL CASES
+    // This is only used if the following letter is not a vowel (these are
+    // handled by preprocessing) and the c is not part of one of the
+    // multiconsonant graphems below.
+    "c": "{quesse}",
+    // We should not use preprocess to k(w) here because of words like
+    // 'Backware'
+    "qu": "[over-twist]{quesse}",
+    // Does this ever happen?
+    "q": "{quesse}",
+    // We should not preprocess to ks here because of words like 'wirksam'
+    "x": "[right-curl-below]{quesse}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: DOUBLED CONSONANTS
+    // Note: tripled consonants are handled correctly, i.e., ff-f, same is
+    // true for ck-k
+    // TODO LATER check for problems at morphem boundaries
+    "tt": "[bar-below]{tinco}",
+    "dd": "[bar-below]{ando}",
+    "nn": "[bar-below]{nuumen}",
+    "rr": "[bar-below]{roomen}",
+    "zz": "[bar-below]{extended-tinco}",
+    "tz": "[bar-below]{extended-tinco}",
+
+    "pp": "[bar-below]{parma}",
+    "bb": "[bar-below]{umbar}",
+    "ff": "[bar-below]{formen}",
+    // vv does not occur
+    "mm": "[bar-below]{malta}",
+    // ww does not occur
+
+    "kk": "[bar-below]{quesse}",
+    "ck": "[bar-below]{quesse}",
+    // TODO LATER cce/cci not working because of preprocessing
+    "cc": "[bar-below]{quesse}",
+    "gg": "[bar-below]{ungwe}",
+
+    "ll": "[bar-below]{lambe}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: -W
+    // TODO LATER check for problems at morphem boundaries
+    "schw": "[over-twist]{harma}",
+    "zw": "[over-twist]{extended-tinco}",
+    // tz-w usually occours only in composites tz-w, therefore there is no over-twist.
+    // This is already correctly handled because of the tz rule before.
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: -H
+    // TODO LATER this could cause too many problems with composites. could be
+    // better to put the
+    // known words into the words list
+    // TODO LATER are there more consonants with following h?
+    "th": "[thinnas]{tinco}",
+    "rh": "{arda}",
+    "ph": "[thinnas]{parma}",
+    "gh": "[thinnas]{ungwe}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: NASAL + CONSONANTS
+    // Note: For the labial series, we encode m+consonant with the tilde.
+    // There are some cases where n+labial occurs with prefixes such as an- or
+    // un-. However, m+labial seems to be more frequent. This is also
+    // consistent with the velar series because the 'n' for the first two
+    // combinations is actually a velar nasal and not the usual dental nasal
+    // 'n'.
+    // TODO LATER check for problems at morphem boundaries
+    "nt": "[tilde-above]{tinco}",
+    "nd": "[tilde-above]{ando}",
+    "nz": "[tilde-above]{extended-tinco}",
+
+    "mp": "[tilde-above]{parma}",
+    "mb": "[tilde-above]{umbar}",
+    "mf": "[tilde-above]{formen}",
+    // mv does not occur TODO LATER CHECK
+    "mw": "[tilde-above]{vala}", 
+    "mpf" : "[tilde-above]{extended-parma}",
+
+    // ntsch, ndsch do not occur TODO LATER CHECK
+    "nsch": "[tilde-above]{harma}",
+    "nj": "[tilde-above]{anna}",
+
+    "nk": "[tilde-above]{quesse}",
+    // ng see below
+    "nch": "[tilde-above]{hwesta}",
+
+    // Some exceptions where ng is pronounced ng-g, transcribed as nasalized g.
+    // Usually happens when a prefix ending with n is used (ungerade) or when
+    // ng is followed by an open vowel (Kongo).
+    // In the vast majority of cases, ng is just a (velar) nasal and
+    // transcribed with ngwalme (defined above).
+    "nga": "[tilde-above]{ungwe}[triple-dot-above]",
+    "ngeh": "[tilde-above]{ungwe}[acute]{aara}",
+    "ngie": "[tilde-above]{ungwe}[dot-above]{yanta}",
+    "ngo": "[tilde-above]{ungwe}[right-curl]",
+    // What about ngi, ngu? TODO LATER CHECK
+    "^ang": "[triple-dot-above][tilde-above]{ungwe}",
+    "^ung": "[left-curl][tilde-above]{ungwe}",
+    "^eing": "[acute]{anna}[tilde-above]{ungwe}",
+
+    // TODO LATER what about nl?
+    // "nl": "[tilde-above]{lambe}",
+    "ns": "[tilde-above]{silme}", // automatically becomes nuquerna with tengwar
+    // TODO LATER nh?
+
+    // nc covered by c+vowel preprocess and n+ch TODO LATER CHECK
+    // nq nx do not occur TODO LATER CHECK
+
+    // ntz is usually nt+z at a morphem boundary, therefore there is no
+    // special rule and it is encoded nt+z TODO LATER CHECK
+
+    // Only known remaining case for n+double consonant TODO LATER CHECK
+    "nck": "[tilde-above][bar-below]{quesse}",
+
+    // nasal + consonant + w should be fine
+    // known cases for nasal+consonant+h TODO LATER CHECK
+    "nth": "[tilde-above][thinnas]{tinco}",
+    "mph": "[tilde-above][thinnas]{parma}",
+
+    // -----------------------------------------------------------------------
+    //
+    // CONSONANTS: -SION, -SSION, -TION
+    // Special cases where the I is always consonantic. This is a frequent
+    // morphem ending.
+    // TODO LATER check for problems at morphem boundaries
+    "sion": "[double-dot-below]{silme}[right-curl]{nuumen}",
+    "ssion": "[double-dot-inside]{esse}[right-curl]{nuumen}",
+    "tion": "[double-dot-below]{extended-tinco}[right-curl]{nuumen}",
+    "xion": "[double-dot-below][right-curl-below]{quesse}[right-curl]{nuumen}",
+    "xiom": "[double-dot-below][right-curl-below]{quesse}[right-curl]{malta}",
+
+    // NOTES: The following rules for final -e/-s/-es can also be used within
+    // words at the end of a word part, e.g., for the s in Lachsforelle. One
+    // can separate word parts by an apostrophe ' in Tecendil input, which
+    // also marks the part before the apostrophe as a word ending.
+    // As of now, -e/-s/-es is only encoded for cases that can appear at the
+    // actual end of a word. More combinations are possible when -e/-s/-es
+    // appear as a Fugenlaut.
+
+    // TODO LATER add -e/-s/-es combinations for Fugenlaut.
+
+    // -----------------------------------------------------------------------
+    //
+    // FINAL -E
+    // NOTES: In some fonts, dot under aara does not look good.
+    "e$": "[dot-below]",
+
+    // -----------------------------------------------------------------------
+    //
+    // FINAL -S
+    // also should not be used after vowel
+
+    // -ahs, -ohs, do not occur TODO LATER CHECK
+    // TODO LATER check if -ähs, -öhs, -ühs occur
+    // NOTES: Only looks good in some fonts.
+    "ehs$": "[acute][hook]{aara}",
+    "uhs$": "[left-curl][hook]{aara}",
+
+    "aas$": "[triple-dot-above][hook]{osse}",
+    "ees$": "[acute][hook]{yanta}",
+    "ies$": "[dot-above][hook]{yanta}",
+    "ais$": "[triple-dot-above][hook]{anna}",
+    "eis$": "[acute][hook]{anna}",
+    "aus$": "[triple-dot-above][hook]{vala}",
+    "eus$": "[acute][hook]{vala}",
+    "oys$": "[right-curl][hook]{anna}",
+
+    "ts$": "[hook]{tinco}",
+    "ds$": "[hook]{ando}",
+    "ns$": "[hook]{nuumen}",
+    "rs$": "[hook]{oore}",
+
+    "ps$": "[hook]{parma}",
+    "bs$": "[hook]{umbar}",
+    "fs$": "[hook]{formen}",
+    // vs does not occur TODO LATER CHECK
+    "ms$": "[hook]{malta}",
+    // ws does not occur TODO LATER CHECK
+    "pfs$" : "[hook]{extended-parma}",
+
+    // -schs, -js does not occur TODO LATER CHECK
+    "ks$": "[hook]{quesse}",
+    "gs$": "[hook]{ungwe}",
+    "chs$": "[hook]{hwesta}",
+    "ngs$": "[hook]{nwalme}",
+
+    "ls$": "[hook]{lambe}",
+
+    "cs$": "[hook]{quesse}",
+    // -qus, -qs, -xs does not occur TODO LATER CHECK
+
+    // -dds, -rrs, -zzs, -tzs, -bbs, -kks, -ccs, -ggs do not occur TODO LATER CHECK
+    "tts$": "[bar-below][hook]{tinco}",
+    "nns$": "[bar-below][hook]{nuumen}",
+    "pps$": "[bar-below][hook]{parma}",
+    "ffs$": "[bar-below][hook]{formen}",
+    "mms$": "[bar-below][hook]{malta}",
+    "cks$": "[bar-below][hook]{quesse}",
+    "lls$": "[bar-below][hook]{lambe}",
+
+    // -schws, -zws do not occur
+    
+    // -rhs, -ghs, do not occur TODO LATER CHECK
+    "ths$": "[thinnas][hook]{tinco}",
+    "phs$": "[thinnas][hook]{parma}",
+
+    // -nzs, -mbs, -mfs, -mws, -nschs, -njs, -nchs do not occur TODO LATER CHECK
+    "nts$": "[tilde-above][hook]{tinco}",
+    "nds$": "[tilde-above][hook]{ando}",
+    "mps$": "[tilde-above][hook]{parma}",
+    "mpfs$" : "[tilde-above][hook]{extended-parma}",
+    "nks$": "[tilde-above][hook]{quesse}",
+    "ncks$": "[tilde-above][bar-below][hook]{quesse}",
+    "nths$": "[tilde-above][thinnas][hook]{tinco}",
+    "mphs$": "[tilde-above][thinnas][hook]{parma}",
+
+    // -sions, -ssions, -tions, -xions do not occur TODO LATER CHECK
+    "xioms$": "[double-dot-below][right-curl-below]{quesse}[right-curl][hook]{malta}",
+
+    // -----------------------------------------------------------------------
+    //
+    // FINAL -ES
+    // -ehes, öhes do not occur TODO LATER CHECK
+    "ahes$": "[triple-dot-above][hook][dot-below]{aara}",
+    "ehes$": "[acute][hook][dot-below]{aara}",
+    "ohes$": "[right-curl][hook][dot-below]{aara}",
+    "uhes$": "[left-curl][hook][dot-below]{aara}",
+    "ähes$": "[reversed-triple-dot-above][hook][dot-below]{aara}",
+    "ühes$": "[double-dot-above][hook][dot-below]{aara}",
+
+    // -aaes, -eees, -iees, -yoes do not occur TODO LATER CHECK
+    "aies$": "[triple-dot-above][hook][dot-below]{anna}",
+    "eies$": "[acute][hook][dot-below]{anna}",
+    "aues$": "[triple-dot-above][hook][dot-below]{vala}",
+    "eues$": "[acute][hook][dot-below]{vala}",
+
+    "tes$": "[hook][dot-below]{tinco}",
+    "des$": "[hook][dot-below]{ando}",
+    "nes$": "[hook][dot-below]{nuumen}",
+    // does not look good
+    // "res$": "[hook][dot-below]{roomen}"
+
+    "pes$": "[hook][dot-below]{parma}",
+    "bes$": "[hook][dot-below]{umbar}",
+    "fes$": "[hook][dot-below]{formen}",
+    "ves$": "[hook][dot-below]{ampa}",
+    "mes$": "[hook][dot-below]{malta}",
+    "wes$": "[hook][dot-below]{vala}",
+    "pfes$" : "[hook][dot-below]{extended-parma}",
+
+    // -dsches, -jes does not occur TODO LATER CHECK
+    "tsches$": "[hook][dot-below]{calma}",
+    "sches$": "[hook][dot-below]{harma}",
+
+    // -kes does not occur, only -nkes and -ckes TODO LATER CHECK
+    "ges$": "[hook][dot-below]{ungwe}",
+    "ches$": "[hook][dot-below]{hwesta}",
+    "nges$": "[hook][dot-below]{nwalme}",
+
+    "les$": "[hook][dot-below]{lambe}",
+
+    // -ces, -ques, -qes does not occur TODO LATER CHECK
+    "xes$": "[right-curl-below][hook][dot-below]{quesse}",
+
+    // -ddes, -bbes, -kkes, -cces, -gges do not occur TODO LATER CHECK
+    "ttes$": "[bar-below][hook][dot-below]{tinco}",
+    "nnes$": "[bar-below][hook][dot-below]{nuumen}",
+    // does not look good
+    //"rres$": "[bar-below][hook][dot-below]{roomen}",
+    "zzes$": "[bar-below][hook][dot-below]{extended-tinco}",
+    "tzes$": "[bar-below][hook][dot-below]{extended-tinco}",
+    "ppes$": "[bar-below][hook][dot-below]{parma}",
+    "ffes$": "[bar-below][hook][dot-below]{formen}",
+    "mmes$": "[bar-below][hook][dot-below]{malta}",
+    "ckes$": "[bar-below][hook][dot-below]{quesse}",
+    "lles$": "[bar-below][hook][dot-below]{lambe}",
+
+    // -schwes, -zwes do not occur
+
+    // -rhes, -ghes, do not occur TODO LATER CHECK
+    // possible, but does not look good
+    // "thes$": "[thinnas][hook][dot-below]{tinco}",
+    // "phes$": "[thinnas][hook][dot-below]{parma}"
+
+    // -mfes, -mwes, -njes, -nckes do not occur TODO LATER CHECK
+    "ntes$": "[tilde-above][hook][dot-below]{tinco}",
+    "ndes$": "[tilde-above][hook][dot-below]{ando}",
+    "nzes$": "[tilde-above][hook][dot-below]{extended-tinco}",
+    "mpes$": "[tilde-above][hook][dot-below]{parma}",
+    "mbes$": "[tilde-above][hook][dot-below]{umbar}",
+    "mpfes$" : "[tilde-above][hook][dot-below]{extended-parma}",
+    "nsches$": "[tilde-above][hook][dot-below]{harma}",
+    "nkes$": "[tilde-above][hook][dot-below]{quesse}",
+    "nches$": "[tilde-above][hook][dot-below]{hwesta}"
+    // possible, but does not look good
+    // "nthes$": "[tilde-above][thinnas][hook][dot-below]{tinco}",
+    // "mphes$": "[tilde-above][thinnas][hook][dot-below]{parma}"
+
+    // -siones, -ssiones, -tiones, -xiones, -xiomes do not occur TODO LATER CHECK
+  },
+
+  "words":
+  {
+      // TODO LATER further ng special cases such as 'Angelika'
+  }
+}
