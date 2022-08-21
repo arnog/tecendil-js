@@ -85,6 +85,8 @@
     "label.wikipedia.intro-random": "Practice reading Tengwar with this random article from Wikipedia:",
     "label.wikipedia.intro": "Practice reading Tengwar with this article about “",
     "label.wikipedia.intro.close": "” from Wikipedia:",
+    "button.wikipedia.next": "Next Article",
+    "button.wikipedia.next-random": "Random Wikipedia Article",
 
     "dialog-title.settings": "Settings",
     "button.close": "Close",
@@ -258,6 +260,12 @@
     "welcome.4": "Gib einen Satz oder Namen ein um ihn in Tengwar zu transkribieren.",
     "welcome.5": "Beachte, dass der Text <b>nicht übersetzt</b>, sondern nur mit Tengwar-Zeichen geschrieben wird.",
     "welcome.6": "Um eine korrekte Transkription zu erhalten, muss im Menü Modus die richtige Sprache ausgewählt werden: Englisch, Spanisch, Italienisch, Quenya oder Sindarin. Wenn Du Unterstützung für andere Sprachen brauchst, kontaktiere mich unter",
+
+    "label.wikipedia.intro-random": "Üben Sie das Lesen von Tengwar mit diesem zufälligen Artikel aus Wikipedia:",
+    "label.wikipedia.intro": "Üben Sie das Lesen von Tengwar mit diesem Artikel über„",
+    "label.wikipedia.intro.close": "“ von Wikipedia:",
+    "button.wikipedia.next": "Nächster Artikel",
+    "button.wikipedia.next-random": "Zufälliger Wikipedia-Artikel",
 
     "dialog-title.settings": "Einstellungen",
     "button.close": "Schließen",
