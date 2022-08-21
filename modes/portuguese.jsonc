@@ -20,6 +20,8 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
   "name": "Português BR",
   "languageCode": "pt-br", // ISO 639-1
 
+  "info": "Baseado no <a href='https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/'>Modo Tengwar Português</a> criado por Deriel, adaptado por Bruno Romualdo.",
+
   "rrule": false,
 
   //
@@ -105,7 +107,7 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     // ****** Desambiguar pronúncia, "r": Quando é simples e forte
 
     // Início das palavras: R forte. Exs.: rato, rua, riso
-    "/^[rR]/": "rr",
+    //"/^[rR]/": "rr",
     
     // Entre duas vogais: R simples. Exs.: moradia, era, tira
     "/([aeiouà-úAEIOUÀ-Ú])[rR]([aeiouà-úAEIOUÀ-Ú])/": "$1r$2",
@@ -138,13 +140,11 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     //
     // Resolvidos com QU e GU
 
-    "/[sS]$/": "_fhook_",
-
 
     // WORDS:
     //
     // Algumas palavras contém muitas variações porém com o mesmo som da pronúncia, portanto pode ser adicionado a parte
-    // de mesma pronúncia no regex para alterar apenas a parte necessária.
+    // de mesma pronúncia no regex para alterar apenas a parte necessária
     //
     // Atente-se aos caracteres especiais como ditongos e sons nasais que são adicionados nas regras acima
 
@@ -154,7 +154,6 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
   },
 
   "map": {
-    "_fhook_": "[hook]", // hack para resolver S final no som de X(ks) usando tengwa literal -> anex[o]
     // 'Hack' para sons nasais
     "_nzl_": "[tilde-above]{}", // Sons nazais
 
@@ -245,12 +244,13 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     "qu": "{quesse}",
     "qü": "{quesse}",
     "r": "{oore}", // "R" simples (caro, moradia, beira, barata)
-    "rr": "{roomen}", // "R" forte, arrastado (carro, terra, roma, rato)
+    "^r": "{roomen}", // "R" forte, arrastado (carro, terra, roma, rato)
+    "rr": "{roomen}", // "R" forte
     
     "s": "{silme}",
     "ss": "{silme}",
     "^s": "{silme}",
-    //"s$": "[hook]", // Final "s" moved to preprocess
+    "s$": "[hook]", // Final "s" moved to preprocess
 
     "t": "{tinco}",
     "v": "{ampa}",
@@ -264,10 +264,10 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
   "words": {
     // Banana -> som nasal de banãna
     "banana": "{umbar}[triple-dot-above]{nuumen}[triple-dot-above][tilde-above]{nuumen}[triple-dot-above]",
-    "banana_fhook_": "{umbar}[triple-dot-above]{nuumen}[triple-dot-above][tilde-above]{nuumen}[triple-dot-above][hook]",
+    "bananas": "{umbar}[triple-dot-above]{nuumen}[triple-dot-above][tilde-above]{nuumen}[triple-dot-above][hook]",
     // Cama -> som nasal de cãma
     "cama": "{calma}[triple-dot-above][tilde-above]{malta}[triple-dot-above]",
-    "cama_fhook_": "{calma}[triple-dot-above][tilde-above]{malta}[triple-dot-above][hook]",
+    "camas": "{calma}[triple-dot-above][tilde-above]{malta}[triple-dot-above][hook]",
     "porém": "{parma}[right-curl]{uure}[tilde-above]{malta}{yanta}[tilde-above]"
   }
 
