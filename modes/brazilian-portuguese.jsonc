@@ -20,6 +20,8 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
   "name": "Português BR",
   "languageCode": "pt-br", // ISO 639-1
 
+  "info": "Baseada no &ldquo;Modo Tengwar Português 3 - RC5&rdquo;. <a href='https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/'> <svg class=icon1em style='vertical-align:-.1em'><use role=none xlink:href=icons.svg#arrow-right></use></svg> Saber mais</a>",
+
   "rrule": false,
 
   //
@@ -35,7 +37,6 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
   "wordPattern": "A-Za-zÀ-ÖØ-öø-ÿĀ-ſãe͂i͂õu͂_*",
 
   "preprocess": {
-
     // Desambiguar pronúncia, "sc", "sç"/"ç" -> "ss". Exs.: crescer, crescido, cresça. calça
     "sç": "ss",
     "ç": "ss",
@@ -46,7 +47,6 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     "/([aeiouà-úAEIOUÀ-Ú])[xX]($|[aeiouà-úAEIOUÀ-Ú])/": "$1cs$2", // som de KS Ex.: anexo, oxigenio, tórax, sedex
     "/([aeiouà-úAEIOUÀ-Ú])[xX]([^aeiouà-úAEIOUÀ-Ú])/": "$1s$2", // som de S Ex.: excluir, exclamação
 
-
     // -- ************* Tratamento de alguns ditongos especiais
     "/([^qgQG])(ue|UE)([sS])?$/": "$1_dtcxi_i$3", // Ditongo crescente  ................................................................................. Tuto: tênue(i)
     "/(ul|UL)($|[^aeiouà-úAEIOUÀ-Ú])/": "_dtdxu_u$2", // Ditongo decrescente  ................................................................................. Tuto: pulmão, oculto, azul
@@ -55,7 +55,7 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     "/([ãõÃÕ])[eE]([sS])?$/": "$1i$2",
     "/([^aeiouà-úAEIOUÀ-Ú]||(qu|QU))[eE]$/": "$1i", // ******************* adicionar opcional S??? melhore(i)s
     "/([^aeiouà-úAEIOUÀ-Ú]||[ãÃ])[oO]([sS])?$/": "$1u$2", // ...................................................................... Tuto: ditongo final IO, sério -> sériú, comércio -> comérciú
-    "/([eE])[oO]([sS])?$/": "_dtcxu_u$2", 
+    "/([eE])[oO]([sS])?$/": "_dtcxu_u$2",
     "/([aãAÃ])([mnMN])$/": "ãu",
     "/([eéEÉ])([mnMN])([sS])?$/": "ei_nzl_$3",
     "/([aeiouà-úAEIOU]||[ãÃ])[lL]$/": "$1u",
@@ -64,7 +64,6 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     // Consoantes nasais "m/n" -------------------------------------------- O simbolo _nzl_ é substituído no MAP por ~ para indicar o som nasal na vogal antecessora
     //"/([aeiouà-úAEIOUÀ-Ú])[nmNM]($|[^haeiouà-úHAEIOUÀ-Ú])/": "$1_nzl_$2",
     "/([aeiouà-úAEIOUÀ-Ú])[nmNM]((s)?$|[^haeiouà-úHAEIOUÀ-Ú_])/": "$1_nzl_$2",
-    
 
     // Desambiguar pronúncia, "ce" -> "se", "ci" -> "si"
     "/^[cC]([eéiíEÉIÍ])/": "s$1", // 'centro' mostrava {silme} duplicado no início
@@ -89,33 +88,29 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     // Desambiguar pronúncia, "que" -> "ke", "qui" -> "ki". Exs.: queijo, quiabo, quero, quinto
     "/(qu|QU)([eéiíEÉIÍ])/": "k$2",
 
-
     // Manter o som "ü" in "qüe", "qüi", "güe", "güi" as "u" ............................................................ Tuto
     //"/gü([eéèêëiíìEÉÈÊËIÍÌ])/": "gu$1", movido para o map
     //"/qü([eéèêëiíìEÉÈÊËIÍÌ])/": "qu$1", movido para o map
 
-
     // Desambiguar som "di" (dji). Exs: dia, veredito, didático
     "/[dD]([iíìIÍÌ])/": "_dfric_$1", // .......................................................................... Tuto: í usado para som    fricativo - dia, tia, tio
-    
+
     // Desambiguar som "ti" (tchi). Exs: tatica, time, caatinga
     "/[tT]([iíìIÍÌ])/": "_tfric_$1",
-    
 
     // ****** Desambiguar pronúncia, "r": Quando é simples e forte
 
     // Início das palavras: R forte. Exs.: rato, rua, riso
     "/^[rR]/": "rr",
-    
+
     // Entre duas vogais: R simples. Exs.: moradia, era, tira
     "/([aeiouà-úAEIOUÀ-Ú])[rR]([aeiouà-úAEIOUÀ-Ú])/": "$1r$2",
-    
+
     // Final das palavras: R simples, Exs.: mar, comer, abrir
     "/([^AaEeIiOoUuÁáÉéÍíÓóÚúRr])[rR]/": "$1r", // falta o $???
-    
+
     // R forte depois de L e N seguido por vogal. Exs.: enredo, enroscado, (lr existe palavras???)
     "/([lLnN])[rR]/": "$1rr",
-
 
     // ----------------------------------------------------------------------------
     // DITONGOS
@@ -132,14 +127,12 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     "/([aãâeéêoóõuAÃÂEÉOÓÕU])[iI]/": "_ditxi_$1", // x-i
     "/([aáãâeéoóiuAÁÃÂEÉIOÓU])[uU]/": "_ditxu_$1", // x-u
 
-
     // ----------------------------------------------------------------------------
     // TRITONGOS
     //
     // Resolvidos com QU e GU
 
     "/[sS]$/": "_fhook_",
-
 
     // WORDS:
     //
@@ -150,7 +143,6 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
 
     // muito, muita, muitos, muitas, muitíssimo, muitíssima, etc...
     "/m_ditxi_ut/": "m_ditxi_u_nzl_t"
-
   },
 
   "map": {
@@ -171,7 +163,6 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     "_dtcxu_": "{anna}", // Ditongos crescentes finalizados com u
     "_dtcxi_": "{vilya}", // Ditongos crescentes finalizados com i
     "_dtdxu_": "{uure}", // Ditongos decrescentes finalizados com u
-    
 
     // ----------------------------------------------------------------------------
     //
@@ -246,7 +237,7 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     "qü": "{quesse}",
     "r": "{oore}", // "R" simples (caro, moradia, beira, barata)
     "rr": "{roomen}", // "R" forte, arrastado (carro, terra, roma, rato)
-    
+
     "s": "{silme}",
     "ss": "{silme}",
     "^s": "{silme}",
@@ -258,7 +249,6 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     "x": "{harma}", // Demais sons (CH, Z, SS) transferidos para pré processamento
     //"y": "{anca}", ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Som de I - letra estrangeira
     "z": "{esse-nuquerna}"
-
   },
 
   "words": {
@@ -270,5 +260,4 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     "cama_fhook_": "{calma}[triple-dot-above][tilde-above]{malta}[triple-dot-above][hook]",
     "porém": "{parma}[right-curl]{uure}[tilde-above]{malta}{yanta}[tilde-above]"
   }
-
 }
