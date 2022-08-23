@@ -8,6 +8,7 @@
 {
   "name": "italian-full",
   "languageCode": "it", // Italian ISO 639-2
+  "info": "Contribuito da Guido Laudenzi",
 
   // ciao come stai = hello how are you = {calma}[triple-dot-above]{telco}[right-curl] {quesse}[right-curl]{malta}[acute] {silme}{tinco}{yanta}[triple-dot-above]
 

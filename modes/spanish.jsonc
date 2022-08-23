@@ -30,6 +30,7 @@ accent - lambe - malta + right curl.
   // Short-name
   "name": "spanish",
   "languageCode": "es", // ISO 639-3
+  "info": "Basado en <a href='http://lambenor.free.fr/tengwar/espanol_2006.html'>Modo de escritura Tengwar para el castellano</a>, adaptado por Helios De Rosario",
 
   "rrule": false,
 
