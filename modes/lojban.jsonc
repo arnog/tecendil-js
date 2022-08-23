@@ -23,7 +23,7 @@
   "name": "jbobau (Lojban)",
   "languageCode": "jbo",
 
-  "info": "Based on <a href='http://www.raphael.poss.name/tengwar/'>Elrond's revised mapping - mode 3</a>",
+  "info": "info.mode.lojban|Based on <a href='http://www.raphael.poss.name/tengwar/'>Elrond's revised mapping - mode 3</a>",
 
   "normalizeVowels": false,
 
