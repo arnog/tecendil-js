@@ -66,8 +66,8 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     "/([aeiouà-úAEIOUÀ-Ú])[nmNM]((s)?$|[^haeiouà-úHAEIOUÀ-Ú_])/": "$1_nzl_$2",
 
     // Desambiguar pronúncia, "ce" -> "se", "ci" -> "si"
-    "/^[cC]([eéiíEÉIÍ])/": "s$1", // 'centro' mostrava {silme} duplicado no início
-    "/[cC]([eéiíEÉIÍ])/": "ss$1",
+    "/^[cC]([eéêiíEÉÊIÍ])/": "s$1", // 'centro' mostrava {silme} duplicado no início
+    "/[cC]([eéêiíEÉÊIÍ])/": "ss$1",
 
     // Desambiguar pronúncia, "s" -> "z". Usa-se S com som de Z entre duas vogais. Exs.: crise, aviso, empresa, raposa, tesouro
     "/([aeiouà-úAEIOUÀ-Ú])[sS]([aeiouà-úAEIOUÀ-Ú])/": "$1z$2",
@@ -83,10 +83,10 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
 
     // Desambiguar pronúncia, "gue" -> "ge", "gui" -> "gi"
     "/(gu|GU)([aáãoóõAÁÃOÓÕ])/": "gü$2",
-    "/(gu|GU)([eéiíEÉIÍ])/": "g$2",
+    "/(gu|GU)([eéêiíEÉÊIÍ])/": "g$2",
 
     // Desambiguar pronúncia, "que" -> "ke", "qui" -> "ki". Exs.: queijo, quiabo, quero, quinto
-    "/(qu|QU)([eéiíEÉIÍ])/": "k$2",
+    "/(qu|QU)([eéêiíEÉÊIÍ])/": "k$2",
 
     // Manter o som "ü" in "qüe", "qüi", "güe", "güi" as "u" ............................................................ Tuto
     //"/gü([eéèêëiíìEÉÈÊËIÍÌ])/": "gu$1", movido para o map
