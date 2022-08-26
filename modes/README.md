@@ -170,7 +170,7 @@ with an encoding matching the one of your local font.
 
 [3] Tengwar and LaTeX:
 
-- http://get-software.net/macros/latex/contrib/tengwarscript/tengwarscript.pdf
+- https://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/tengwarscript/tengwarscript.pdf
 - https://tex.stackexchange.com/a/169156/170418
 
 [4] Telcontar Unicode encoding:
