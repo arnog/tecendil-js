@@ -163,7 +163,8 @@ with an encoding matching the one of your local font.
 [2] http://www.evertype.com/standards/iso10646/pdf/tengwar.pdf
 
 [3] Tengwar and LaTex:
-http://get-software.net/macros/latex/contrib/tengwarscript/tengwarscript.pdf
+- http://get-software.net/macros/latex/contrib/tengwarscript/tengwarscript.pdf
+- https://tex.stackexchange.com/a/169156/170418
 
 [4] Telcontar Unicode encoding:
 http://freetengwar.sourceforge.net/html-files/tengtelc-discussion-008.pdf
