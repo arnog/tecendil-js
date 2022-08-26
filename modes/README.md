@@ -16,6 +16,8 @@ files. The simplest are `beleriand.jsonc` and `sindarin.json`.
 
 The mode file describes how groupings of letters should be transcribed.
 
+### `map`
+
 These are described as **rules** in the `map` table of the mode file. The left
 hand-side of the rule indicates when the rule should apply, and the right hand
 side describes the corresponding transcription.
@@ -48,9 +50,8 @@ So the pattern "^t" would only apply if a word begins with "t" and a pattern of
 "s$" would only apply if a word ends with "s".
 
 The right hand side of a rule indicate which tengwa (in `{...}`) and which
-diacritics (in `[...]`) to replace the target with. These Normalized Tengwar
-Codes are described here:
-[Tengwar Normalized Encoding](https://www.tecendil.com/inside-tecendil/)
+diacritics (in `[...]`) to replace the target with.
+Read more about [Tengwar Literals](https://www.tecendil.com/inside-tecendil/)
 
 The Tecendil engine will apply these rules to the letters in a word to derive
 the transcription.
@@ -60,11 +61,33 @@ vowels/diacritics are combined. In some cases, the combinations may be
 undesirable. You can prevent vowels to be combined by using an "empty" tengwa:
 `{}`.
 
+### `preprocess`
+
 If your target language has digraphs or diacritics, you can use the `preprocess`
 table to specify how to handle them.
 
 For example, in German you could indicate that the `ß` letter maps to `ss` or
 that `ö` maps to `oe`.
+
+This can be useful to normalize some notations. Each key is a string that will be
+interpreted as a regular expression, and the value is the value it will be
+replaced with. For example:
+
+```
+"ĉ":      "ch"
+```
+
+would replace all circumflex-C with "ch".
+
+The entry:
+
+```
+"^r":       "rr"
+```
+
+would replace all "r" at the begining of a word with 'rr'
+
+### `words`
 
 If some words are exceptions to the rules, you can provide a custom
 transcription for them in the `words` table. Some languages may not need any.
@@ -78,6 +101,8 @@ A mode file contains the following properties:
   a mode of, e.g. `"English Phonemic"`
 - `languageCode`: the ISO 639-2/3 code of the language. The language code for
   sindarin is `sjn` and for quenya it is `qya`
+- `info`: a short snippet of HTML markup that provides additional information
+  about the mode, such as its source and author.
 - `normalizeVowels`: if `true`, vowels with a macron or grave accent and
   double-vowels are replaced with a circumflexed vowel. Vowels with a diaeresis
   and converted to a vowel with no diacritic. While this might be useful for
@@ -85,31 +110,12 @@ A mode file contains the following properties:
   spanish, etc...) you'll want this option set to `false`
 - `tehtarFollow`: if `true`, tehtar are expected to be on the following tengwa:
   "cat" would be "c" + "t with a above".
-- `preprocess`: a list of conversions to do before processing the text. This can
-  be useful to normalize some notations. Each key is a string that will be
-  interpreted as a regular expression, and the value is the value it will be
-  replaced with. For example:
-
-```
-"ĉ":      "ch"
-```
-
-would replace all circumflex-C with "ch".
-
-The entry:
-
-```
-"^r":       "rr",
-```
-
-would replace all "r" at the begining of a word with 'rr'
-
+- `preprocess`: a list of conversions to do before processing the text.
 - `words` is an optional list of words that will be replaced directly. The key
-  is the word itself, and the value is the replacement in Tengward Normalized
-  Encoding.
+  is the word itself, and the value is the replacement in Literal Tengwar.
 - `map`, finally, maps the input characters to tengwar. For each entry, the key
   is a string of up to 7 characters, with `^` representing the beginning of a
-  word and `$` the end. The value is a Tengward Normalized Encoding.
+  word and `$` the end. The value is a Literal Tengwar.
 
 Note that punctuations and numbers are handled by default and don't need to be
 specified in the mode file.
@@ -117,7 +123,7 @@ specified in the mode file.
 ## Testing a Mode File
 
 Once you have a first draft of a mode file written and saved to a file with a
-`.jsonc` extension, you can try out this mode file in Tecendil.
+`.jsonc` extension, you can try it out in Tecendil.
 
 Open [Tecendil](https://tecendil.com) in a desktop browser, then drag the mode
 file into the Tecendil window. The mode will be available in the **Mode** menu.
@@ -148,7 +154,7 @@ this encoding, to represent "hello" you would need to type <kbd>9j$¸`N</kbd> on
 your keyboard.
 
 A more recent Unicode encoding [2] has also been proposed, but it has not been
-formalized yet and there several variants of it in use. Most of the characters
+formalized yet and there are several variants of it in use. Most of the characters
 in this encoding cannot readily be typed on keyboards, i.e. <kbd></kbd>.
 
 Therefore, it is generally quite tricky to get Tengwar to display correctly in
@@ -162,7 +168,8 @@ with an encoding matching the one of your local font.
 
 [2] http://www.evertype.com/standards/iso10646/pdf/tengwar.pdf
 
-[3] Tengwar and LaTex:
+[3] Tengwar and LaTeX:
+
 - http://get-software.net/macros/latex/contrib/tengwarscript/tengwarscript.pdf
 - https://tex.stackexchange.com/a/169156/170418
 
