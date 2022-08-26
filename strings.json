@@ -64,6 +64,8 @@
     "label.mode.erebor": "Cirth",
     "menu.mode.erebor": "Cirth: Angerthas Erebor",
 
+    "info.mode.lojban": "Based on <a href='http://www.raphael.poss.name/tengwar/'>Elrond's revised mapping - mode 3</a>",
+
     "warning.english": "<p><b>CAUTION</b> Tecendil does not translate. What you typed looks like English. For an accurate transcription, select an English mode.</p>",
     "warning.elvish": "<p><b>CAUTION</b> This doesn't look like English. Is this Sindarin or Quenya? For an accurate transcription, select the Sindarin, Quenya or Beleriand mode.</p>",
 
@@ -951,6 +953,8 @@
     "label.mode.erebor": "切斯文",
     "menu.mode.erebor": "切斯文（Cirth: Angerthas Erebor）",
 
+    "info.mode.lojban": "基於 <a href='http://www.raphael.poss.name/tengwar/'>Elrond 的映射表修訂 - 模式 3</a>",
+
     "warning.elvish": "<p><b>警告：</b>这看起来不像英语。这是辛达林还是昆雅？要获得准确的转录，请选择Sindarin，Quenya或Beleriand模式。</p>",
 
     "tooltip.download": "下載",
@@ -1049,7 +1053,9 @@
     "label.mode.erebor": "切斯文",
     "menu.mode.erebor": "切斯文：伊魯伯字體（Cirth: Angerthas Erebor）",
 
-    "warning.elvish": "<p><b>警告</b> 這個看起來不像是英語。這是辛達林語或昆雅語嗎？要獲得準確的轉錄，請選擇Sindarin，Quenya或Beleriand模式。</p>",
+    "info.mode.lojban": "基於 <a href='http://www.raphael.poss.name/tengwar/'>Elrond 的映射表修訂 - 模式 3</a>",
+
+    "warning.elvish": "<p><b>警告：</b>這個看起來不像是英語。這是辛達林語或昆雅語嗎？要獲得準確的轉錄，請選擇Sindarin，Quenya或Beleriand模式。</p>",
 
     "tooltip.download": "下載",
     "filename.screenshot": "Tecendil截圖",
