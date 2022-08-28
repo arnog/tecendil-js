@@ -4,7 +4,7 @@
 //
 // -----------------------------------------------------------------------------
 // Target:
-// agencies: {anga}[triple-dot-above]{nuumen}[acute]{alt-silme}[double-dot-below][swash-hook]
+// agencies: {anga}[triple-dot-above]{nuumen}[acute]{alt-silme}[double-dot-below][hook-looped-left]
 // (current: {ungwe}[triple-dot-above]{quesse}[tilde-above][acute]{telco}[dot-above]{silme}[acute])
 
 {
@@ -457,18 +457,18 @@
     // "“especially in the combinations ts, ps, ks (x), that were favoured in Quenya”
     // http://at.mansbjorkman.net/teng_quenya.htm
     "ays$": "[triple-dot-above]{anna}[hook]{}",
-    "bs$": "[swash-hook]{umbar}",
+    "bs$": "[hook-looped-left]{umbar}",
     "des$": "[hook][dot-below]{ando}",
     "ds$": "[hook]{ando}",
     "fs$": "[hook]{formen}",
     "gs$": "[hook]{ungwe}",
     "ks$": "[hook]{quesse}",
-    "ngs$": "[swash-hook]{nwalme}",
+    "ngs$": "[hook-looped-left]{nwalme}",
     "kes$": "[dot-below][hook]{quesse}",
     "ls$": "[lifted-hook]{lambe}",
     "les$": "[hook][dot-inside]{lambe}",
     "ms$": "[hook]{malta}",
-    "mes$": "[dot-below][swash-hook]{malta}",
+    "mes$": "[dot-below][hook-looped-left]{malta}",
     "nds$": "[tilde-above][hook]{ando}",
     "ns$": "[hook]{nuumen}",
     "ps$": "[hook]{parma}",
@@ -500,7 +500,7 @@
     "chose": "{calma}{esse-nuquerna}[right-curl][dot-below]", // "s'->'z'
     "create": "{quesse}{roomen}{telco}[acute]{tinco}[triple-dot-above][dot-below]", // "ea' -> "e' + "a'
     "die": "{ando}{yanta}[dot-above]", // End in "ay" sound
-    "does": "d{yanta}[o][hook]",
+    "does": "d{yanta}[right-curl][hook]",
     "exact": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}", // e-gz-act
     "exactly": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}{lambe}[breve]",
     "examine": "{ungwe}[acute][right-curl-below]{malta}[triple-dot-above]{nuumen}[dot-above][dot-below]",
@@ -528,7 +528,7 @@
     "she": "{harma}{telco}[acute]", // non-silent final-e
     "sure": "{harma}{oore}[left-curl][dot-below]",
     // "time": "{tinco}{malta}[dot-above][dot-below]",
-    // "times": "{tinco}{malta}[dot-above][dot-below][swash-hook]",
+    // "times": "{tinco}{malta}[dot-above][dot-below][hook-looped-left]",
     "tolkien": "{TINCO}{lambe}[right-curl]{quesse}{aara}[dot-above]{nuumen}[acute]", // JRR Tolkien wrote his name with a long-carrier in DTS-5. Christopher Tolkien used a short-carrier.
     "tie": "{ampa}{yanta}[dot-above]", // End in "a-y" sound
     "underlie": "{ando}[left-curl][tilde-above]{oore}[acute]{lambe}{yanta}[dot-above]", // End in "a-y" sound
@@ -736,9 +736,9 @@
     "someplace": "some'place",
     "something": "some'thing",
     "sometime": "some'time",
-    "sometimes": "{silme}{malta}[right-curl][dot-below]{tinco}{malta}[dot-above][dot-below]{swash-hook}",
+    "sometimes": "{silme}{malta}[right-curl][dot-below]{tinco}{malta}[dot-above][dot-below]{hook-looped-left}",
     "somewhat": "some'what",
-    "someways": "some'way{swash-hook}",
+    "someways": "some'way{hook-looped-left}",
     "somewhen": "some'when",
     "somewhere": "some'where",
     "soothe": "{silme}{anto}[double-acute][dot-below]",
