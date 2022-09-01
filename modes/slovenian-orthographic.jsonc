@@ -1,0 +1,130 @@
+//
+//Slovenian Tengwar mode
+//Modeled heavily after the influence of hirnamae's project for the Slovene Tengwar phonemic mode on GitHub(1) and my own (u/Zellas06) post on this mode on the r/Tengwar subreddit(2)
+//(1) Link: https://github.com/arnog/tecendil-js/pull/38/commits/6269feff83abb0a228cfa9939fb456de9ae4e0fd
+//(2) Link: https://www.reddit.com/r/Tengwar/comments/wnktkx/updated_draft_for_the_slovenian_mode/?utm_source=share&utm_medium=web2x&context=3
+//Created by u/Zellas06
+//
+{
+  "name": "Slovenian Orthographic",
+  "languageCode": "slv", //Slovenian in ISO 639-2/3
+  "info": "Priredil Žiga Virtič (u/Zellas06)",
+  "normalizeVowels": true,
+
+  "tehtarFollow": false,
+  "preprocess": {},
+
+  "map": {
+    //
+    //Consonants (all but for "C" and "DZ" directly taken from hirnamae)
+    //
+    "t": "{tinco}",
+    "p": "{parma}",
+    "č": "{calma}",
+    "k": "{quesse}",
+    "d": "{ando}",
+    "b": "{umbar}",
+    "dž": "{anga}",
+    "g": "{ungwe}",
+    "f": "{formen}",
+    "š": "{harma}",
+    "v": "{ampa}",
+    "ž": "{anca}",
+    "n": "{nuumen}",
+    "m": "{malta}",
+    "r": "{roomen}",
+    "l": "{lambe}",
+    "s": "{silme}",
+    "z": "{esse}",
+    "h": "{hyarmen}",
+    "j": "{yanta}",
+    "c": "{tinco}[right-hook-below]",
+    "dz": "{ando}[right-hook-below]",
+    //
+    //Diphthongs (directly taken from hirnamae)
+    //
+    "ai": "[triple-dot-above]{anna}",
+    "au": "[triple-dot-above]{vala}",
+    "ei": "[acute]{anna}",
+    "oi": "[right-curl]{anna}",
+    "ui": "[left-curl]{anna}",
+    "aw": "[triple-dot-above]{vala}",
+    "iu": "[dot-above]{vala}",
+    "eu": "[acute]{vala}",
+    "ou": "[right-curl]{vala}",
+    //
+    //Palatalization
+    //
+    //NJ
+    "nj$": "[double-dot-below]{nuumen}",
+    "njt": "[double-dot-below]{nuumen}{tinco}",
+    "njp": "[double-dot-below]{nuumen}{parma}",
+    "njč": "[double-dot-below]{nuumen}{calma}",
+    "njk": "[double-dot-below]{nuumen}{quesse}",
+    "njd": "[double-dot-below]{nuumen}{ando}",
+    "njb": "[double-dot-below]{nuumen}{umbar}",
+    "njdž": "[double-dot-below]{nuumen}{anga}",
+    "njg": "[double-dot-below]{nuumen}{ungwe}",
+    "njf": "[double-dot-below]{nuumen}{formen}",
+    "njš": "[double-dot-below]{nuumen}{harma}",
+    "njv": "[double-dot-below]{nuumen}{ampa}",
+    "njž": "[double-dot-below]{nuumen}{anca}",
+    "njn": "[double-dot-below]{nuumen}{nuumen}",
+    "njm": "[double-dot-below]{nuumen}{malta}",
+    "njr": "[double-dot-below]{nuumen}{roomen}",
+    "njl": "[double-dot-below]{nuumen}{lambe}",
+    "njs": "[double-dot-below]{nuumen}{silme}",
+    "njz": "[double-dot-below]{nuumen}{esse}",
+    "njh": "[double-dot-below]{nuumen}{hyarmen}",
+    "njc": "[double-dot-below]{nuumen}{tinco}[right-hook-below]",
+    "njdz": "[double-dot-below]{nuumen}{ando}[right-hook-below]",
+    //LJ
+    "lj$": "[double-dot-below]{lambe}",
+    "ljt": "[double-dot-below]{lambe}{tinco}",
+    "ljp": "[double-dot-below]{lambe}{parma}",
+    "ljč": "[double-dot-below]{lambe}{calma}",
+    "ljk": "[double-dot-below]{lambe}{quesse}",
+    "ljd": "[double-dot-below]{lambe}{ando}",
+    "ljb": "[double-dot-below]{lambe}{umbar}",
+    "ljdž": "[double-dot-below]{lambe}{anga}",
+    "ljg": "[double-dot-below]{lambe}{ungwe}",
+    "ljf": "[double-dot-below]{lambe}{formen}",
+    "ljš": "[double-dot-below]{lambe}{harma}",
+    "ljv": "[double-dot-below]{lambe}{ampa}",
+    "ljž": "[double-dot-below]{lambe}{anca}",
+    "ljn": "[double-dot-below]{lambe}{nuumen}",
+    "ljm": "[double-dot-below]{lambe}{malta}",
+    "ljr": "[double-dot-below]{lambe}{roomen}",
+    "ljl": "[double-dot-below]{lambe}{lambe}",
+    "ljs": "[double-dot-below]{lambe}{silme}",
+    "ljz": "[double-dot-below]{lambe}{esse}",
+    "ljh": "[double-dot-below]{lambe}{hyarmen}",
+    "ljc": "[double-dot-below]{lambe}{tinco}[right-hook-below]",
+    "ljdz": "[double-dot-below]{lambe}{ando}[right-hook-below]",
+    //
+    //Doubled consonants
+    //
+    "tt": "[bar-below]{tinco}",
+    "pp": "[bar-below]{parma}",
+    "čč": "[bar-below]{calma}",
+    "kk": "[bar-below]{quesse}",
+    "dd": "[bar-below]{ando}",
+    "bb": "[bar-below]{umbar}",
+    "dždž": "[bar-below]{anga}",
+    "gg": "[bar-below]{ungwe}",
+    "ff": "[bar-below]{formen}",
+    "šš": "[bar-below]{harma}",
+    "vv": "[bar-below]{ampa}",
+    "žž": "[bar-below]{anca}",
+    "nn": "[bar-below]{nuumen}",
+    "mm": "[bar-below]{malta}",
+    "rr": "[bar-below]{roomen}",
+    "ll": "[bar-inside]{lambe}",
+    "ss": "[bar-below]{silme}",
+    "zz": "[bar-below]{esse}",
+    "hh": "[bar-below]{hyarmen}",
+    "jj": "[bar-below]{yanta}",
+    "cc": "[bar-below][right-hook-below]{tinco}",
+    "dzdz": "[bar-below][right-hook-below]{ando}"
+  }
+}
