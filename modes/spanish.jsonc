@@ -122,7 +122,7 @@ accent - lambe - malta + right curl.
 
     "iá": "[double-dot-below]{aara}[triple-dot-above]{}",
     "ié": "[double-dot-below][double-acute]{}",
-    "ió": "[double-dot-below][double-acute]{}",
+    "ió": "[double-dot-below][double-right-curl]{}",
     "iú": "[double-dot-below][double-left-curl]{}",
 
     // The tehtar of u-dipthongs may overlap
