@@ -9,10 +9,42 @@
   "name": "Slovenian Orthographic",
   "languageCode": "slv", //Slovenian in ISO 639-2/3
   "info": "Priredil u/Zellas06",
-  "normalizeVowels": true,
+  "normalizeVowels": false,
 
   "tehtarFollow": false,
-  "preprocess": {},
+  "preprocess": {
+    "à": "a",
+    "è": "e",
+    "ì": "i",
+    "ò": "o",
+    "ù": "u",
+
+    "á": "a",
+    "é": "e",
+    "ẹ́": "e",
+    "í": "i",
+    "ó": "o",
+    "ú": "u",
+
+    "ȁ": "a",
+    "ȅ": "e",
+    "ə̀": "e",
+    "ȉ": "i",
+    "ȍ": "o",
+    "ȕ": "u",
+
+    "â": "a",
+    "ê": "e",
+    "ẹ̑": "e",
+    "î": "i",
+    "ọ̑": "o",
+    "ô": "o",
+    "û": "u",
+
+    "ŕ": "r",
+    "ə": "e",
+    "ł": "l"
+  },
 
   "map": {
     //
@@ -20,7 +52,7 @@
     //
     "t": "{tinco}",
     "p": "{parma}",
-    "č": "{calma}",
+    "đ": "{calma}",
     "k": "{quesse}",
     "d": "{ando}",
     "b": "{umbar}",
