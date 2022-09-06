@@ -43,7 +43,13 @@
 
     "ŕ": "r",
     "ə": "e",
-    "ł": "l"
+    "ł": "l",
+
+    "đ": "dj",
+    "Đ": "Dj",
+    "Š": "{HARMA}",
+    "Ž": "{ANCA}",
+    "Č": "{CALMA}"
   },
 
   "map": {
@@ -71,6 +77,7 @@
     "h": "{hyarmen}",
     "j": "{yanta}",
     "c": "{tinco}[right-hook-below]",
+    "č": "{calma}",
     "dz": "{ando}[right-hook-below]",
     //
     //Diphthongs (directly taken from hirnamae)
