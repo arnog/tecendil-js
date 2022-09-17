@@ -37,7 +37,11 @@ accent - lambe - malta + right curl.
 
   "rrule": true,
 
-  /* the choice between the tengwar, rómen and óre to represent the sound r is based on position in a word. When preceding a vowel (as initially, or between two vowels) or a semivowel (like y or w), rómen was used; but when final, or preceding a full consonant, óre was used.  -- http://www.elvish.org/gwaith/ringpoemq.htm */
+  /* the choice between the tengwar, rómen and óre to represent the sound r is
+  based on position in a word. When preceding a vowel (as initially, or between
+  two vowels) or a semivowel (like y or w), rómen was used; but when final, or
+  preceding a full consonant, óre was used.  --
+  http://www.elvish.org/gwaith/ringpoemq.htm */
 
   "preprocess": {
     // Disambiguate "qu" -> "q"
@@ -303,7 +307,12 @@ accent - lambe - malta + right curl.
     "pp": "{parma}[bar-below]", // "naPPa"
     "rr": "{roomen}[bar-below]", // "Palarran"
     "ss": "{esse}", // "aSSa"
-    "tt": "{tinco}[bar-below]" // "aTTa"
+    "tt": "{tinco}[bar-below]", // "aTTa"
+
+    // Special case
+    // The e verbs ethenta- and all its forms shouldn't be spelled with
+    // þúle, but with {tinco}{harma}[e] because it contains the prefix et-.
+    "^ethent": "{telco}[acute]{tinco}{hyarmen}[acute]{anto}[triple-dot-above]"
   },
 
   "words": {
@@ -334,6 +343,7 @@ accent - lambe - malta + right curl.
     "soronúme": "Þoronúme",
     "súlimo": "Þúlimo",
     "tarmasundar": "Tarmaþundar",
+    "tasarion": "taþarion", // willows
     "tasarinan": "Taþarinan"
   }
 }

@@ -43,6 +43,7 @@
     "f$": "{ampa}",
     "g": "{anga}", // {ungwe} in Classical
     "h": "{hyarmen}",
+    "k": "{calma}",
     "l": "{lambe}",
     "^lh": "{alda}",
     "m": "{vala}", // {malta} in Classical
@@ -70,7 +71,7 @@
     "mp": "{parma}[bar-above]",
     "mb": "{umbar}[bar-above]",
     "nc": "{quesse}[bar-above]",
-    "nth": "{suule}[bar-above]",
+    "nth": "{thuule}[bar-above]",
     "ñg": "{ungwe}[bar-above]",
     "ñd": "{ando}[bar-above]",
     "ñb": "{umbar}[bar-above]",
@@ -99,6 +100,9 @@
 
   "words": {
     "panthael": "pan{tinco}[bar-above]{hyarmen}ael",
-    "lanthir": "la{tinco}[bar-above]{hyarmen}ir"
+    "lanthir": "la{tinco}[bar-above]{hyarmen}ir",
+    "Rohan": "Rochan",
+    "Rohir": "Rochir",
+    "Rohirrim": "Rochirrim"
   }
 }

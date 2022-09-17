@@ -1,0 +1,258 @@
+// -----------------------------------------------------------------------------
+//
+// BRAZILIAN PORTUGUESE MODE
+// MODO TENGWAR PORTUGUES BRASILEIRO
+//
+// By Bruno Romualdo - Varnion Ómacolindo
+//
+// -----------------------------------------------------------------------------
+
+/*
+
+Todo essa transcrição é baseada única e inteiramente baseada no Modo Tengwar Português 3 - RC5, onde pode ser baixado e estudado no link diretamente por ele sugerido:
+
+https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
+
+*/
+
+{
+  // Short-name
+  "name": "Português BR",
+  "languageCode": "pt-br", // ISO 639-1
+
+  "info": "Baseado no <a href='https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/' target='_blank'>Modo Tengwar Português</a> criado por Deriel, adaptado por Bruno Romualdo.",
+
+  "rrule": false,
+
+  //
+  // Carecteres especiais usados para sons do IPA
+  //
+  // _dfric_ - dji, som D africada
+  // _tfric_ - tji, som T africada
+  // _nzl_ - ~, som nasal
+  //
+  //
+
+  // Adicionado _ para caracteres de sons especiais
+  "wordPattern": "A-Za-zÀ-ÖØ-öø-ÿĀ-ſãe͂i͂õu͂_*",
+
+  "preprocess": {
+    // Desambiguar pronúncia, "sc", "sç"/"ç" -> "ss". Exs.: crescer, crescido, cresça. calça
+    "sç": "ss",
+    "ç": "ss",
+    "/(sc|SC)([eiEI])/": "c$2",
+
+    // Desambiguar as diversas pronúncias do "x"................................ Tuto som de CH e Z
+    "/(xc|XC)([eiEI])/": "c$1", // som de S(mudo) Ex: exceto, exceção
+    "/([aeiouà-úAEIOUÀ-Ú])[xX]($|[aeiouà-úAEIOUÀ-Ú])/": "$1cs$2", // som de KS Ex.: anexo, oxigenio, tórax, sedex
+    "/([aeiouà-úAEIOUÀ-Ú])[xX]([^aeiouà-úAEIOUÀ-Ú])/": "$1s$2", // som de S Ex.: excluir, exclamação
+
+    // -- ************* Tratamento de alguns ditongos especiais
+    "/([^qgQG])(ue|UE)([sS])?$/": "$1_dtcxi_i$3", // Ditongo crescente  ................................................................................. Tuto: tênue(i)
+    "/(ul|UL)($|[^aeiouà-úAEIOUÀ-Ú])/": "_dtdxu_u$2", // Ditongo decrescente  ................................................................................. Tuto: pulmão, oculto, azul
+
+    // Redução da vogal tônica final ................................................. Tuto Em nomes próprios usar *
+    "/([ãõÃÕ])[eE]([sS])?$/": "$1i$2",
+    "/([^aeiouà-úAEIOUÀ-Ú]||(qu|QU))[eE]$/": "$1i", // ******************* adicionar opcional S??? melhore(i)s
+    "/([^aeiouà-úAEIOUÀ-Ú]||[ãÃ])[oO]([sS])?$/": "$1u$2", // ...................................................................... Tuto: ditongo final IO, sério -> sériú, comércio -> comérciú
+    "/([eE])[oO]([sS])?$/": "_dtcxu_u$2",
+    "/([aãAÃ])([mnMN])$/": "ãu",
+    "/([eéEÉ])([mnMN])([sS])?$/": "ei_nzl_$3",
+    "/([aeiouà-úAEIOU]||[ãÃ])[lL]$/": "$1u",
+    "/([aeiouà-úAEIOU])[lL]([^haeiouà-úHAEIOUÀ-Ú])/": "$1u$2",
+
+    // Consoantes nasais "m/n" -------------------------------------------- O simbolo _nzl_ é substituído no MAP por ~ para indicar o som nasal na vogal antecessora
+    //"/([aeiouà-úAEIOUÀ-Ú])[nmNM]($|[^haeiouà-úHAEIOUÀ-Ú])/": "$1_nzl_$2",
+    "/([aeiouà-úAEIOUÀ-Ú])[nmNM]((s)?$|[^haeiouà-úHAEIOUÀ-Ú_])/": "$1_nzl_$2",
+
+    // Desambiguar pronúncia, "ce" -> "se", "ci" -> "si"
+    "/^[cC]([eéêiíEÉÊIÍ])/": "s$1", // 'centro' mostrava {silme} duplicado no início
+    "/[cC]([eéêiíEÉÊIÍ])/": "ss$1",
+
+    // Desambiguar pronúncia, "s" -> "z". Usa-se S com som de Z entre duas vogais. Exs.: crise, aviso, empresa, raposa, tesouro
+    "/([aeiouà-úAEIOUÀ-Ú])[sS]([aeiouà-úAEIOUÀ-Ú])/": "$1z$2",
+
+    // Desambiguar pronúncia, "z" -> "s". Usa-se Z com som de S antes de uma consoante ou no final das palavras. Exs.: nariz, dez, xadrez
+    "/[zZ]$/": "s",
+
+    // Desambiguar pronúncia, "ch" -> "x". Exs.: chícara, choque, cheiro, churrasco
+    "ch": "x",
+
+    // Desambiguar pronúncia, "ge" -> "je", "gi" -> "ji". Exs.: gênio, girafa, gíria
+    "/[gG]([eéèêëiíìEÉÈÊËIÍÌ])/": "j$1",
+
+    // Desambiguar pronúncia, "gue" -> "ge", "gui" -> "gi"
+    "/(gu|GU)([aáãoóõAÁÃOÓÕ])/": "gü$2",
+    "/(gu|GU)([eéêiíEÉÊIÍ])/": "g$2",
+
+    // Desambiguar pronúncia, "que" -> "ke", "qui" -> "ki". Exs.: queijo, quiabo, quero, quinto
+    "/(qu|QU)([eéêiíEÉÊIÍ])/": "k$2",
+
+    // Manter o som "ü" in "qüe", "qüi", "güe", "güi" as "u" ............................................................ Tuto
+    //"/gü([eéèêëiíìEÉÈÊËIÍÌ])/": "gu$1", movido para o map
+    //"/qü([eéèêëiíìEÉÈÊËIÍÌ])/": "qu$1", movido para o map
+
+    // Desambiguar som "di" (dji). Exs: dia, veredito, didático
+    "/[dD]([iíìIÍÌ])/": "_dfric_$1", // .......................................................................... Tuto: í usado para som    fricativo - dia, tia, tio
+
+    // Desambiguar som "ti" (tchi). Exs: tatica, time, caatinga
+    "/[tT]([iíìIÍÌ])/": "_tfric_$1",
+
+    // ****** Desambiguar pronúncia, "r": Quando é simples e forte
+
+    // Entre duas vogais: R simples. Exs.: moradia, era, tira
+    "/([aeiouà-úAEIOUÀ-Ú])[rR]([aeiouà-úAEIOUÀ-Ú])/": "$1r$2",
+
+    // Final das palavras: R simples, Exs.: mar, comer, abrir
+    "/([^AaEeIiOoUuÁáÉéÍíÓóÚúRr])[rR]/": "$1r", // falta o $???
+
+    // R forte depois de L e N seguido por vogal. Exs.: enredo, enroscado, (lr existe palavras???)
+    "/([lLnN])[rR]/": "$1rr",
+
+    // ----------------------------------------------------------------------------
+    // DITONGOS
+    //
+
+    // Crescentes
+
+    "/[iI]([aeioAEIO])/": "_ditix_$1", // i-x
+    "/([^qgQG])[uU]([aeouAEOU])/": "$1_ditux_$2", // u-x
+
+    "/[iI][úÚ]([sS])?$/": "_dtcxu_u$1", // ................................................................................. Tuto: sabios - sabiús, sériú
+
+    // Decrescentes
+    "/([aãâeéêoóõuAÃÂEÉOÓÕU])[iI]/": "_ditxi_$1", // x-i
+    "/([aáãâeéoóiuAÁÃÂEÉIOÓU])[uU]/": "_ditxu_$1", // x-u
+
+    // ----------------------------------------------------------------------------
+    // TRITONGOS
+    //
+    // Resolvidos com QU e GU
+
+    // WORDS:
+    //
+    // Algumas palavras contém muitas variações porém com o mesmo som da pronúncia, portanto pode ser adicionado a parte
+    // de mesma pronúncia no regex para alterar apenas a parte necessária.
+    //
+    // Atente-se aos caracteres especiais como ditongos e sons nasais que são adicionados nas regras acima
+
+    // muito, muita, muitos, muitas, muitíssimo, muitíssima, etc...
+    "/m_ditxi_ut/": "m_ditxi_u_nzl_t"
+  },
+
+  "map": {
+    // 'Hack' para sons nasais
+    "_nzl_": "[tilde-above]{}", // Sons nazais
+
+    // 'Hack' para consoantes fricativas
+    "_dfric_": "{anto}", // dji
+    "_tfric_": "{thuule}", // tji
+
+    // 'Hack' para ditongos
+    "_ditix_": "{anna}", // Crescentes iniciados com i
+    "_ditux_": "{vilya}", // Crescentes iniciados com u
+    "_ditxi_": "{yanta}", // Decrescentes finalizados com i
+    "_ditxu_": "{uure}", // Decrescentes finalizados com u
+
+    "_dtcxu_": "{anna}", // Ditongos crescentes finalizados com u
+    "_dtcxi_": "{vilya}", // Ditongos crescentes finalizados com i
+    "_dtdxu_": "{uure}", // Ditongos decrescentes finalizados com u
+
+    // ----------------------------------------------------------------------------
+    //
+    // VOGAIS
+    // y (como som de "i")
+    // "y": "[dot-above]{}",
+
+    "a": "[triple-dot-above]{}",
+    "e": "[acute]{}",
+    "i": "[dot-above]{}",
+    "o": "[right-curl]{}",
+    "u": "[left-curl]{}",
+
+    // Vogais literais (para não sofre redução átona)
+    "a*": "[triple-dot-above]{}",
+    "e*": "[acute]{}",
+    "i*": "[dot-above]{}",
+    "o*": "[right-curl]{}",
+    "u*": "[left-curl]{}",
+
+    // Nasalizadas
+    "ã": "[triple-dot-above][tilde-above]{}",
+    "e͂": "[acute][tilde-above]{}",
+    "i͂": "[dot-above][tilde-above]{}",
+    "õ": "[right-curl][tilde-above]{}",
+    "u͂": "[left-curl][tilde-above]{}",
+
+    // Com Entonação
+    "é": "[double-dot-above]{}",
+    "ó": "[breve]{}",
+
+    // Acentuação que não altera a pronúncia da vogal no MTP
+    // (^)
+    "â": "[triple-dot-above]{}",
+    "ê": "[acute]{}",
+    "ô": "[right-curl]{}",
+    // (´)
+    "á": "[triple-dot-above]{}",
+    "í": "[dot-above]{}",
+    "ú": "[left-curl]{}",
+    // (`)
+    "à": "[triple-dot-above]{}",
+    // (¨)
+    "ä": "[triple-dot-above]{}",
+    "ë": "[acute]{}",
+    "ö": "[right-curl]{}",
+    "ü": "[left-curl]{}",
+
+    // ----------------------------------------------------------------------------
+    // CONSONANTS
+    //
+
+    "b": "{umbar}",
+    "c": "{calma}",
+    //"ch": "{harma}", pré-processado para som de x
+    "d": "{ando}",
+    "f": "{formen}",
+    "g": "{anga}",
+    //"gu": "{ungwe}", transferido para pré processamento
+    "gü": "{ungwe}",
+    //"h": "{hyarmen}", não tem som no portugues, apenas quando usado com Lh, Ch, Nh
+    "j": "{anca}",
+    "k": "{calma}",
+    "l": "{lambe}",
+    "lh": "{alda}",
+    "m": "{malta}",
+    "n": "{nuumen}",
+    "nh": "{noldo}",
+    "p": "{parma}",
+    "q": "{quesse}", // normally replaced in preprocessing
+    "qu": "{quesse}",
+    "qü": "{quesse}",
+    "r": "{oore}", // "R" simples (caro, moradia, beira, barata)
+    "^r": "{roomen}", // "R" forte, arrastado (rua, roma, rato)
+    "rr": "{roomen}", // "R" forte, arrastado (carro, terra, correr)
+
+    "s": "{silme}",
+    "ss": "{silme}",
+    "^s": "{silme}",
+    "s$": "[hook]",
+
+    "t": "{tinco}",
+    "v": "{ampa}",
+    //"w": "{vala}", ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Som de U ou V - letra estrangeira
+    "x": "{harma}", // Demais sons (CH, Z, SS) transferidos para pré processamento
+    //"y": "{anca}", ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Som de I - letra estrangeira
+    "z": "{esse-nuquerna}"
+  },
+
+  "words": {
+    // Banana -> som nasal de banãna
+    "banana": "{umbar}[triple-dot-above]{nuumen}[triple-dot-above][tilde-above]{nuumen}[triple-dot-above]",
+    "bananas": "{umbar}[triple-dot-above]{nuumen}[triple-dot-above][tilde-above]{nuumen}[triple-dot-above][hook]",
+    // Cama -> som nasal de cãma
+    "cama": "{calma}[triple-dot-above][tilde-above]{malta}[triple-dot-above]",
+    "camas": "{calma}[triple-dot-above][tilde-above]{malta}[triple-dot-above][hook]",
+    "porém": "{parma}[right-curl]{uure}[tilde-above]{malta}{yanta}[tilde-above]"
+  }
+}

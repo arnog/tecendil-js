@@ -8,6 +8,7 @@
 {
   "name": "westron-orthographic",
   "languageCode": "en",
+
   "normalizeVowels": false,
 
   "preprocess": {
@@ -154,25 +155,25 @@
     "ths$": "{thuule}[hook]",
 
     // Voiced
-    "bs$": "{umbar}[swash-hook]",
-    "ds$": "{ando}[swash-hook]",
-    "gs$": "{ungwe}[right-curl-below]", // swash-hook looks horrible :c
-    "ls$": "{lambe}[lifted-hook]", // swash-hook looks horrible :c
-    "ms$": "{malta}[swash-hook]",
-    "ns$": "{nuumen}[swash-hook]",
-    "nds$": "{ando}[tilde-above][swash-hook]",
-    "ngs$": "{nwalme}[swash-hook]",
-    "rs$": "{oore}[swash-hook]",
-    "vs$": "{ampa}[swash-hook]",
-    "dhs$": "{anto}[swash-hook]",
+    "bs$": "{umbar}[hook-looped-left]",
+    "ds$": "{ando}[hook-looped-left]",
+    "gs$": "{ungwe}[right-curl-below]", // hook-looped-left looks horrible :c
+    "ls$": "{lambe}[lifted-hook]", // hook-looped-left looks horrible :c
+    "ms$": "{malta}[hook-looped-left]",
+    "ns$": "{nuumen}[hook-looped-left]",
+    "nds$": "{ando}[tilde-above][hook-looped-left]",
+    "ngs$": "{nwalme}[hook-looped-left]",
+    "rs$": "{oore}[hook-looped-left]",
+    "vs$": "{ampa}[hook-looped-left]",
+    "dhs$": "{anto}[hook-looped-left]",
 
     // After vowels
-    "ays$": "{vilya}[double-dot-above][swash-hook]",
-    "ees$": "{yanta}[bar-below][swash-hook]",
-    "ows$": "{anna}[over-twist][swash-hook]",
-    "oys$": "{anna}[double-dot-above][swash-hook]",
-    "res$": "{oore}[dot-below][swash-hook]",
-    //"ys$": "{aara}[swash-hook]",
+    "ays$": "{vilya}[double-dot-above][hook-looped-left]",
+    "ees$": "{yanta}[bar-below][hook-looped-left]",
+    "ows$": "{anna}[over-twist][hook-looped-left]",
+    "oys$": "{anna}[double-dot-above][hook-looped-left]",
+    "res$": "{oore}[dot-below][hook-looped-left]",
+    //"ys$": "{aara}[hook-looped-left]",
 
     // Final silent "e"
     "be$": "{umbar}[dot-below]",
