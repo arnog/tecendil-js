@@ -715,7 +715,7 @@
     "welcome.6": "Żeby transkrypcja przebiegła poprawnie, w menu <i>Tryb</i> należy wybrać właściwy język: angielski, polski, quenya, sindarin, lub inny. Jeżeli chcesz pomóc w implementowaniu innych trybów, skontaktuj się ze mną.",
     "label.source-eldamo": "Źródło: <a href=\"https://eldamo.org\">Eldamo</a>",
 
-    "label.wikipedia.intro-random": "Poćwicz czytanie Tengwaru zapoznając się z tym losowo wybranym artykułem z Wikipedii:",    
+    "label.wikipedia.intro-random": "Poćwicz czytanie Tengwaru zapoznając się z tym losowo wybranym artykułem z Wikipedii:",
     "label.wikipedia.intro": "Poćwicz czytanie Tengwaru zapoznając się z artykułem o “",
     "label.wikipedia.intro.close": "” z Wikipedii:",
 
@@ -731,7 +731,7 @@
     "description.settings.wikipedia": "Wyświetl artykuł z Wikipedii",
     "settings.language": "Język",
     "settings.language.default": "Domyślny systemowy",
-    "settings.dark-mode": "Tryb ciemny"
+    "settings.dark-mode": "Tryb ciemny",
     "settings.theme": "Motyw",
     "settings.theme.system": "Domyślny systemowy",
     "settings.theme.light": "Jasny",
