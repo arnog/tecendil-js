@@ -10,6 +10,8 @@
   "name": "Hungarian",
   "languageCode": "hu", // Hungarian
 
+  "info": "<a href='https://www.tolkien.hu/tengwar'>Füzessy Tamás</a> és <a href='https://omniglot.com/conscripts/tengwar_hu.php'>Radványi Balázs</a> munkája alapján, Kiss-Rédey Marcell adaptálta",
+
   "normalizeVowels": false,
 
   "tehtarFollow": true,
@@ -50,18 +52,18 @@
     "ú": "[left-curl]{aara}",
     "ő": "[double-dot-above]{aara}",
     "ű": "[breve]{aara}",
-	
-	// vowel clusters
-	"ee": "[acute]{telco}[acute]",
-	"eé": "[acute]{telco}[acute]{aara}",
-	"ii": "[dot-above]{telco}[dot-above]",
-	"ií": "[dot-above]{telco}[dot-above]{aara}",
-	"oo": "[right-curl]{telco}[right-curl]",
-	"oó": "[right-curl]{telco}[right-curl]{aara}",
-	"uu": "[left-curl]{telco}[left-curl]",
-	"uú": "[left-curl]{telco}[left-curl]{aara}",
-	"üü": "[breve]{telco}[breve]",
-	"üű": "[breve]{telco}[breve]{aara}",
+
+    // vowel clusters
+    "ee": "[acute]{telco}[acute]",
+    "eé": "[acute]{telco}[acute]{aara}",
+    "ii": "[dot-above]{telco}[dot-above]",
+    "ií": "[dot-above]{telco}[dot-above]{aara}",
+    "oo": "[right-curl]{telco}[right-curl]",
+    "oó": "[right-curl]{telco}[right-curl]{aara}",
+    "uu": "[left-curl]{telco}[left-curl]",
+    "uú": "[left-curl]{telco}[left-curl]{aara}",
+    "üü": "[breve]{telco}[breve]",
+    "üű": "[breve]{telco}[breve]{aara}",
 
     //
     // CONSONANTS
@@ -110,7 +112,7 @@
     "zz": "[bar-below]{esse}",
     "h": "{hyarmen}",
     "hh": "[bar-below]{hyarmen}",
-      
+
     // Nasalization
     "nt": "[tilde-above]{tinco}",
     "nť": "[double-dot-below][tilde-above]{tinco}",
@@ -122,7 +124,7 @@
     "mb": "[tilde-above]{umbar}",
     "mf": "[tilde-above]{formen}",
     "mv": "[tilde-above]{ampa}",
-    
+
     // Palatalization
     "ť": "[double-dot-below]{tinco}",
     "tť": "[double-dot-below][bar-below]{tinco}",
@@ -132,7 +134,7 @@
     "nň": "[double-dot-below][tilde-above]{nuumen}",
     "ľ": "[double-dot-below]{lambe}",
     "lľ": "[double-dot-below][bar-below]{lambe}",
-    
+
     "y": "[dot-above]"
   }
 }

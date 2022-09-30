@@ -4,7 +4,7 @@
 //
 // -----------------------------------------------------------------------------
 // Target:
-// agencies: {anga}[triple-dot-above]{nuumen}[acute]{alt-silme}[double-dot-below][swash-hook]
+// agencies: {anga}[triple-dot-above]{nuumen}[acute]{alt-silme}[double-dot-below][hook-looped-left]
 // (current: {ungwe}[triple-dot-above]{quesse}[tilde-above][acute]{telco}[dot-above]{silme}[acute])
 
 {
@@ -262,6 +262,8 @@
     "zh": "{anca}", // for /zh/ sound, as in "azure"
     "gh": "{unque}", // when pronounced /g/
     "gh$": "{extended-ungwe}", // when silent, purely ortographic, e.g. "hugh"
+    "ough$": "{}[right-curl]{vala}{formen}",
+    "augh$": "{}[triple-dot-above]{vala}{formen}",
     //        "ny":	"{noldo}",		// Only used for phonemic spelling (new, canyon)
 
     // "aly$": "[triple-dot-above]{lambe}[breve]{telco}",
@@ -455,18 +457,18 @@
     // "“especially in the combinations ts, ps, ks (x), that were favoured in Quenya”
     // http://at.mansbjorkman.net/teng_quenya.htm
     "ays$": "[triple-dot-above]{anna}[hook]{}",
-    "bs$": "[swash-hook]{umbar}",
+    "bs$": "[hook-looped-left]{umbar}",
     "des$": "[hook][dot-below]{ando}",
     "ds$": "[hook]{ando}",
     "fs$": "[hook]{formen}",
     "gs$": "[hook]{ungwe}",
     "ks$": "[hook]{quesse}",
-    "ngs$": "[swash-hook]{nwalme}",
+    "ngs$": "[hook-looped-left]{nwalme}",
     "kes$": "[dot-below][hook]{quesse}",
     "ls$": "[lifted-hook]{lambe}",
     "les$": "[hook][dot-inside]{lambe}",
     "ms$": "[hook]{malta}",
-    "mes$": "[dot-below][swash-hook]{malta}",
+    "mes$": "[dot-below][hook-looped-left]{malta}",
     "nds$": "[tilde-above][hook]{ando}",
     "ns$": "[hook]{nuumen}",
     "ps$": "[hook]{parma}",
@@ -498,7 +500,7 @@
     "chose": "{calma}{esse-nuquerna}[right-curl][dot-below]", // "s'->'z'
     "create": "{quesse}{roomen}{telco}[acute]{tinco}[triple-dot-above][dot-below]", // "ea' -> "e' + "a'
     "die": "{ando}{yanta}[dot-above]", // End in "ay" sound
-    "does": "{ando}{telco}[right-curl]{esse-nuquerna}[acute]", // "s' -> "z'
+    "does": "d{yanta}[right-curl][hook]",
     "exact": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}", // e-gz-act
     "exactly": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}{lambe}[breve]",
     "examine": "{ungwe}[acute][right-curl-below]{malta}[triple-dot-above]{nuumen}[dot-above][dot-below]",
@@ -526,7 +528,7 @@
     "she": "{harma}{telco}[acute]", // non-silent final-e
     "sure": "{harma}{oore}[left-curl][dot-below]",
     // "time": "{tinco}{malta}[dot-above][dot-below]",
-    // "times": "{tinco}{malta}[dot-above][dot-below][swash-hook]",
+    // "times": "{tinco}{malta}[dot-above][dot-below][hook-looped-left]",
     "tolkien": "{TINCO}{lambe}[right-curl]{quesse}{aara}[dot-above]{nuumen}[acute]", // JRR Tolkien wrote his name with a long-carrier in DTS-5. Christopher Tolkien used a short-carrier.
     "tie": "{ampa}{yanta}[dot-above]", // End in "a-y" sound
     "underlie": "{ando}[left-curl][tilde-above]{oore}[acute]{lambe}{yanta}[dot-above]", // End in "a-y" sound
@@ -651,6 +653,8 @@
     "another": "{nuumen}[triple-dot-above]{anto}[right-curl]{oore}[acute]",
     "bathe": "{umbar}{anto}[dot-below][triple-dot-above]",
     "bathing": "{umbar}{anto}[triple-dot-above]{nwalme}[dot-above]",
+    "borough": "borou{extended-ungwe}", // `ough$` exception
+    "breakthrough": "breakthrou{extended-ungwe}", // `ough$` exception
     "breathe": "{umbar}{roomen}{osse}[acute]{anto}[dot-below]",
     "breathing": "{umbar}{roomen}{osse}[acute]{anto}{nwalme}[dot-above]",
     "bronchitis": "{umbar}{roomen}{extended-quesse}[right-curl][tilde-above]{tinco}[dot-above]{alt-silme}[dot-above] ",
@@ -671,6 +675,7 @@
     "fatherly": "{formen}{anto}[triple-dot-above]{oore}[acute]{lambe}[breve]",
     "farewell": "fare'well",
     "feather": "{formen}{osse}[acute]{anto}{oore}[acute]",
+    "furlough": "furlou{extended-ungwe}", // `ough$` exception
     "further": "{formen}{oore}[left-curl]{anto}{oore}[acute]",
     "gather": "{ungwe}{anto}[triple-dot-above]{oore}[acute]",
     "gathering": "{ungwe}{anto}[triple-dot-above]{roomen}[acute]{nwalme}[dot-above]",
@@ -711,6 +716,7 @@
     "outhouse": "out'house", //  not th
     "pancake": "pan'cake",
     "parchisi": "par'chisi", // 'arch' does not not use 'extended-quesse' here, pronounced "tch"
+    "plough": "plow",
     "pothead": "pot'head", //  not "th"
     "rather": "{roomen}{anto}[triple-dot-above]{oore}[acute]",
     "rhythm": "{roomen}{hyarmen}{anto}[breve]{malta}",
@@ -720,6 +726,7 @@
     "scientists": "{silme}{yanta}[dot-above]{tinco}[bar-above]ists",
     "seethe": "{silme}{telco}[double-acute]{anto}[dot-below]",
     "slither": "{silme}{lambe}{anto}[dot-above]{oore}[acute]",
+    "slough": "slou{extended-ungwe}", // `ough$` exception
     "smooth": "{silme}{malta}{anto}[double-right-curl]",
     "smoothest": "{silme}{malta}{telco}[right-curl]{telco}[right-curl]{anto}{alt-silme}[acute]{tinco}",
     "somebody": "{silme}{malta}[right-curl][dot-below]{umbar}{ando}[right-curl]{telco}[breve]",
@@ -729,13 +736,14 @@
     "someplace": "some'place",
     "something": "some'thing",
     "sometime": "some'time",
-    "sometimes": "{silme}{malta}[right-curl][dot-below]{tinco}{malta}[dot-above][dot-below]{swash-hook}",
+    "sometimes": "{silme}{malta}[right-curl][dot-below]{tinco}{malta}[dot-above][dot-below]{hook-looped-left}",
     "somewhat": "some'what",
-    "someways": "some'way{swash-hook}",
+    "someways": "some'way{hook-looped-left}",
     "somewhen": "some'when",
     "somewhere": "some'where",
     "soothe": "{silme}{anto}[double-acute][dot-below]",
     "soothing": "{silme}{telco}[right-curl]{anto}[right-curl]{nwalme}[dot-above]",
+    "sourdough": "sourdou{extended-ungwe}", // `ough$` exception
     "southern": "{silme}{vala}[right-curl]{anto}{oore}[acute]{nuumen}",
     "stomach": "stoma{extended-quesse}", // <ch> pronounced as /k/
     "tecendil": "{TINCO}{quesse}[acute]{ando}[acute][bar-above]{lambe}[dot-above]",
@@ -758,10 +766,12 @@
     "thereby": "there'by",
     "therein": "there'in",
     "therefore": "{anto}{oore}[acute][dot-below]{formen}{oore}[dot-below][right-curl]",
+    "thorough": "thorou{extended-ungwe}", // `ough$` exception
     "those": "{anto}{esse-nuquerna}[right-curl][dot-below]",
     "thou": "{anto}{vala}[right-curl]",
     "thomas": "{EXTENDED-TINCO}oma{silme}", // "th" pronounced /t/ uses extended tinco
     "though": "{anto}{vala}[right-curl]{extended-ungwe}",
+    "through": "throu{extended-ungwe}", // `ough$` exception
     "thus": "{anto}{alt-silme}[left-curl]",
     "thy": "{anto}{telco}[breve]",
     "thyme": "{extended-tinco}yme", // "th" pronounced /t/ uses extended tinco
@@ -774,6 +784,7 @@
     "weather": "{vala}{osse}[acute]{anto}{oore}[acute]",
     "weatherman": "{vala}{osse}[acute]{anto}{oore}[acute]{malta}{nuumen}[triple-dot-above]",
     "with": "{vala}{anto}[dot-above]",
+    "wither": "widher",
     "withdraw": "{vala}{anto}[dot-above]{ando}{roomen}{vala}[triple-dot-above]",
     "withstand": "{vala}{anto}[dot-above]{silme}{tinco}{ando}[triple-dot-above][tilde-above]",
     "worthy": "{vala}{oore}[right-curl]{anto}{telco}[breve]",

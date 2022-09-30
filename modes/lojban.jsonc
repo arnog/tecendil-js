@@ -23,9 +23,11 @@
   "name": "jbobau (Lojban)",
   "languageCode": "jbo",
 
+  "info": "info.mode.lojban|Based on <a href='http://www.raphael.poss.name/tengwar/'>Elrond's revised mapping - mode 3</a>",
+
   "normalizeVowels": false,
 
-  "wordPattern": "^[A-Za-zÀ-ÖØ-öø-ÿ\\*\\'\\.]+",
+  "wordPattern": "A-Za-zÀ-ÖØ-öø-ÿ\\*\\'\\.",
 
   "preprocess": {
     // Standard orthography says ' but h is in semi-common use too. Map here

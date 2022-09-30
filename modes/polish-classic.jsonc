@@ -6,16 +6,17 @@
 // -----------------------------------------------------------------------------
 
 {
-      // Short-name
-    "name": "Polish: Classic",
-    "languageCode": "pl", // Polish
+  // Short-name
+  "name": "Polish: Classic",
+  "languageCode": "pl", // Polish
+  "info": "Na podstawie pracy Ryszarda „Galadhorna” Derdzińskiego, adaptacja Andrzeja Zielińskiego",
 
-    "normalizeVowels": false,
+  "normalizeVowels": false,
 
-    "suppressIntrawordDash": true,
+  "suppressIntrawordDash": true,
 
-    "tehtarFollow": false,
-    "preprocess": {
+  "tehtarFollow": false,
+  "preprocess": {
     // Expand ae/oe ligatures (rare, but used by Tolking in The Etymologies e.g. for glaer)
     "œ": "oe",
     "æ": "ae",
@@ -40,11 +41,11 @@
     "ęł": "eł",
     "ąl": "ol",
     "ął": "oł",
-    
+
     // [minor] nasalization of combined vowels
     "au": "ał",
     "ou": "oł",
-    
+
     // [optional] consonalised 'y' with other vowels
     "oy": "oj",
     "ay": "aj",
@@ -54,7 +55,7 @@
     "ęy": "ęj",
     "ąy": "ąj",
 
-    // [minor] X is not a letter in polish, but 
+    // [minor] X is not a letter in polish, but
     //is somtimes used nontheless.
     "x": "ks",
 
@@ -122,10 +123,9 @@
     "ziu": "{anca}[dot-below][left-curl]",
     "zię": "{anca}[dot-below][double-acute]",
     "zią": "{anca}[dot-below][double-right-curl]",
-     
-  
+
     // Polish vowels ę and ą have a ton of contextual phonemic rules (removed)
-    // There's no exact match for the sound of those vowel in tengwar    
+    // There's no exact match for the sound of those vowel in tengwar
     "ą": "[double-right-curl]",
     "ę": "[double-acute]",
 
@@ -135,14 +135,13 @@
     "oo": "[right-curl]{telco}[right-curl]",
     "ooo": "[right-curl]{telco}[right-curl]{telco}[right-curl]",
 
-
     // //
     // Consonants
     //
 
     // Core + optional double-consonants
-    "b": "{umbar}",    
-    "bb": "{umbar}[bar-below]",    
+    "b": "{umbar}",
+    "bb": "{umbar}[bar-below]",
     // c is never 'k', always c (ts)
     "c": "{thuule}",
     "d": "{ando}",
@@ -178,7 +177,7 @@
     "z": "{esse-nuquerna}",
     "zz": "{esse-nuquerna}",
 
-     // polish hard phones
+    // polish hard phones
     "ż": "{anca}",
     "sz": "{harma}",
     "cz": "{calma}",
@@ -194,17 +193,17 @@
     // [minor] eliminating english stuff
     "zh": "{esse}{hyarmen}",
     "qu": "{quesse}{vala}",
-    
+
     // // [optional] common polish suffix abbreviation
     "szcz": "{extended-anga}",
-    "ść": "{extended-anga}[dot-below]" ,
+    "ść": "{extended-anga}[dot-below]",
     // // [optional] behavior of the abbreviation with other vowels
-    "ści" : "{extended-anga}[dot-below][dot-above]",
-    "ście" : "{extended-anga}[dot-below][acute]",
-    "ścię" : "{extended-anga}[dot-below][double-acute]",
-    "ściu" : "{extended-anga}[dot-below][left-curl]",
-    "ścia" : "{extended-anga}[dot-below][triple-dot-above]",
-    "ścio" : "{extended-anga}[dot-below][right-curl]",
-    "ścią" : "{extended-anga}[dot-below][double-right-curl]"
-    }
+    "ści": "{extended-anga}[dot-below][dot-above]",
+    "ście": "{extended-anga}[dot-below][acute]",
+    "ścię": "{extended-anga}[dot-below][double-acute]",
+    "ściu": "{extended-anga}[dot-below][left-curl]",
+    "ścia": "{extended-anga}[dot-below][triple-dot-above]",
+    "ścio": "{extended-anga}[dot-below][right-curl]",
+    "ścią": "{extended-anga}[dot-below][double-right-curl]"
+  }
 }

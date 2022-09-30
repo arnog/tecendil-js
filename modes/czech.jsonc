@@ -9,6 +9,8 @@
   "name": "Czech",
   "languageCode": "cs", // Czech
 
+  "info": "Jak popisuje <a href='http://tengwar.szm.sk/ct/'>Sven Siegmund</a>, adaptoval Jiří Setnička",
+
   "normalizeVowels": false,
 
   "tehtarFollow": false,
