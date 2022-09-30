@@ -10,7 +10,7 @@
   "name": "Hungarian",
   "languageCode": "hu", // Hungarian
 
-  "info": "<a href='https://www.tolkien.hu/tengwar'>Füzessy Tamás</a> és <a href='https://omniglot.com/conscripts/tengwar_hu.php'>Radványi Balázs</a> munkája alapján, Kiss-Rédey Marcell adaptálta",
+  "info": "<a href='https://www.tolkien.hu/tengwar'>Füzessy Tamás</a> és <a href='https://omniglot.com/conscripts/tengwar_hu.php'>Radványi Balázs</a> munkája alapján Kiss-Rédey Marcell adaptálta",
 
   "normalizeVowels": false,
 
