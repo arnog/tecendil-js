@@ -24,10 +24,6 @@
     "ggy": "ddy",
     "gy": "dy"
   },
-  
-  "words": {
-    "Batthyány": "{UMBAR}{extended-tinco}[a][tilde-below][double-dot-below]{aara}[a]{nuumen}[double-dot-below]"
-  },
 
   "map": {
     //
@@ -136,6 +132,37 @@
 	"uy$": "[acute][double-dot-below]{telco}",
 	"úy$": "[acute][double-dot-below]{telco}",
 	"üy$": "[acute][double-dot-below]{telco}",
-	"űy$": "[acute][double-dot-below]{telco}"
+	"űy$": "[acute][double-dot-below]{telco}",
+	
+	"^rh": "{arda}"
+  },
+  
+  "words": {
+    // Names with special orthography
+    "batthyány": "{UMBAR}{extended-tinco}[a][double-dot-below][tilde-below]{aara}[a]{nuumen}[double-dot-below]",
+	"tóth": "{TINCO}{aara}[o]{extended-tinco}",
+	"németh": "{NUUMEN}{aara}[e]{malta}{extended-tinco}[e]",
+	"horváth": "{HYARMEN}{roomen}[o]{ampa}{aara}[a]{extended-tinco}",
+	"kossuth": "{QUESSE}{harma}[bar-below][o]{extended-tinco}[u]",
+	"madách": "{MALTA}{ando}[a]{aara}[a]{extended-calma}",
+	"széchenyi": "{SILME}{aara}[e]{extended-calma}{nuumen}[double-dot-below][e]{telco}[i]",
+	"széchényi": "{SILME}{aara}[e]{extended-calma}{aara}[e]{nuumen}[double-dot-below]{telco}[i]",
+	"balogh": "{UMBAR}{lambe}[a]{extended-ungwe}[o]",
+	"damjanich": "{ANDO}{malte}[a]{anna}{nuumen}[a}{extended-calma}[i]",
+	"dessewffy": "{ANDO}{silme}[bar-below][e]{vala}[e]{formen}[double-dot-below][bar-below]",
+	
+	// Important names of foreign origin 
+	// German: Alexander Körschgen's mode
+	"aulich": "{VALA}[a]{lambe}{hwesta}[i]",
+	"pöltenberg": "{PARMA}{lambe}[double-acute]{tinco}{nuumen}[e]{umbar}{oore}[e]{ungwe}",
+	"poeltenberg": "{PARMA}{lambe}[double-acute]{tinco}{nuumen}[e]{umbar}{oore}[e]{ungwe}",
+	"lahner": "{LAMBE}{aara}[a]{nuumen}{oore}[e]",
+	"leiningen": "{LAMBE}{anna}[e]{nuumen}{nwalme}[i]{nuumen}[e]",
+	"westerburg": "{VALA}{silme}[e]{tinco}{oore}[e]{umbar}{oore}[u]{ungwe}",
+	"schweidel": "{HARMA}[over-twist]{anna}[e]{ando}{lambe}[e]",
+	"habsburg": "{HYARMEN}{umbar}[a]{silme}{umbar}{oore}[u]{ungwe}",
+	
+	// Croatian: currently following Hungarian rules, to be fixed when a Croatian mode becomes available
+	"knezić": "{QUESSE}{aara}[e]{esse}{extended-calma}[i]"
   }
 }
