@@ -337,7 +337,7 @@
     // Combinations with "m/n" -- nasalized consonants
     "nc": "{quesse}[bar-above]",
     "nch": "{quesse}[bar-above]",
-    "nche": "{quesse}[bar-above][acute]}{}",
+    "nche": "{quesse}[bar-above][acute]{}",
     "nchi": "{quesse}[bar-above][dot-above]{}",
     "ncia": "{calma}[bar-above][triple-dot-above]",
     "nce": "{calma}[bar-above][acute]",
