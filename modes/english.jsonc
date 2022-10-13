@@ -39,7 +39,8 @@
     "/^chl/": "kxl", // "chlore", "chlorophyl"
     "chron": "kxron", // Greek chronos: time
     "chrom": "kxrom", // chrome, chromium, chromosone
-    "christ": "kxrist", // Greek christos: annointed
+    "/^christ/": "kxrist", // Greek christos: anointed
+    "/^Christ/": "{EXTENDED-QUESSE}rist", // Greek christos: anointed
     "mech": "mekx", // Greek mēchanē: machine
     "psych": "psykx", // Greek, mind
     "sche": "skxe", // Greek skhema: appearance
@@ -211,6 +212,7 @@
     "ey": "[acute]{anna}",
 
     "ia": "[dot-above]{telco}[triple-dot-above]{telco}",
+    "ian": "[dot-above]{telco}[triple-dot-above]{nuumen}",
     // "ie$": "[dot-above][dot-below]{telco}", // Most words end in a "ee' sound, except for a few (die, lie, etc...)
     "iu": "[dot-above]{vala}", // Christopher Tolkien used {uure}
 
