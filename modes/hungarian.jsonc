@@ -20,9 +20,7 @@
     "qu": "kv",
     "q": "k",
     "w": "v",
-    "x": "ksz",
-    "ggy": "ddy",
-    "gy": "dy"
+    "x": "ksz"
   },
 
   "map": {
@@ -105,34 +103,28 @@
     "zz": "[bar-below]{esse}",
     "h": "{hyarmen}",
     "hh": "[bar-below]{hyarmen}",
-      
+	
+	// Palatals
+	"gy": "[double-dot-below]{ando}",
+	"ggy": "[double-dot-below][bar-below]{ando}",
+	"ly": "[double-dot-below]{lambe}",
+	"lly": "[double-dot-below][bar-below]{lambe}",
+	"ny": "[double-dot-below]{nuumen}",
+	"nny": "[double-dot-below][bar-below]{nuumen}",	
+	"ty": "[double-dot-below]{tinco}",
+	"tty": "[double-dot-below][bar-below]{tinco}",
+	
     // Nasalization
     "nt": "[tilde-above]{tinco}",
     "nd": "[tilde-above]{ando}",
     "nc": "[tilde-above]{thuule}",
-    "nď": "[tilde-above]{anto}",
+    "ndz": "[tilde-above]{anto}",
     "mp": "[tilde-above]{parma}",
     "mb": "[tilde-above]{umbar}",
     "mf": "[tilde-above]{formen}",
     "mv": "[tilde-above]{ampa}",
     
-    "y": "[double-dot-below]",
-	
-	// Special orthographies
-	"ay$": "[acute][double-dot-below]{telco}",
-	"áy$": "[acute][double-dot-below]{telco}",
-	"ey$": "[acute][double-dot-below]{telco}",
-	"éy$": "[acute][double-dot-below]{telco}",
-	"iy$": "[acute][double-dot-below]{telco}",
-	"íy$": "[acute][double-dot-below]{telco}",
-	"oy$": "[acute][double-dot-below]{telco}",
-	"óy$": "[acute][double-dot-below]{telco}",
-	"öy$": "[acute][double-dot-below]{telco}",
-	"őy$": "[acute][double-dot-below]{telco}",
-	"uy$": "[acute][double-dot-below]{telco}",
-	"úy$": "[acute][double-dot-below]{telco}",
-	"üy$": "[acute][double-dot-below]{telco}",
-	"űy$": "[acute][double-dot-below]{telco}",
+    "y": "[dot-above]",
 	
 	"^rh": "{arda}"
   },
@@ -150,6 +142,7 @@
 	"balogh": "{UMBAR}{lambe}[a]{extended-ungwe}[o]",
 	"damjanich": "{ANDO}{malte}[a]{anna}{nuumen}[a}{extended-calma}[i]",
 	"dessewffy": "{ANDO}{silme}[bar-below][e]{vala}[e]{formen}[double-dot-below][bar-below]",
+	"horthy": "{HYARMEN}{roomen}[o]{extended-tinco}[double-dot-below]",
 	
 	// Important names of foreign origin 
 	// German: Alexander Körschgen's mode
