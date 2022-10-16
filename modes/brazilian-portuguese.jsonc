@@ -56,7 +56,6 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     "/([aãAÃ])([mnMN])$/": "ãu",
     "/([eéEÉ])([mnMN])([sS])?$/": "ei_nzl_$3",
     "/([aeiouà-úAEIOU]||[ãÃ])[lL]$/": "$1u",
-    "/([aeiouà-úAEIOU])[lL]([^haeiouà-úHAEIOUÀ-Ú])/": "$1u$2", 
 
     // Consoantes nasais "m/n" -------------------------------------------- O simbolo _nzl_ é substituído no MAP por ~ para indicar o som nasal na vogal antecessora
     //"/([aeiouà-úAEIOUÀ-Ú])[nmNM]($|[^haeiouà-úHAEIOUÀ-Ú])/": "$1_nzl_$2",
@@ -68,6 +67,8 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
 
     // Desambiguar pronúncia, "s" -> "z". Usa-se S com som de Z entre duas vogais. Exs.: crise, aviso, empresa, raposa, tesouro
     "/([aeiouà-úAEIOUÀ-Ú])[sS]([aeiouà-úAEIOUÀ-Ú])/": "$1z$2",
+
+    "/([aeiouà-úAEIOU])[lL]([^haeiouà-úHAEIOUÀ-Ú])/": "$1u$2", 
 
     // Desambiguar pronúncia, "z" -> "s". Usa-se Z com som de S antes de uma consoante ou no final das palavras. Exs.: nariz, dez, xadrez
     "/[zZ]$/": "s",
@@ -134,7 +135,7 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     // Atente-se aos caracteres especiais como ditongos e sons nasais que são adicionados nas regras acima
 
     // muito, muita, muitos, muitas, muitíssimo, muitíssima, etc...
-    "/m_ditxi_ut/": "m_ditxi_u_nzl_t"
+    "/([mM])_ditxi_([uU])([tT]||_tfric_)/": "$1_ditxi_$2_nzl_$3"
   },
 
   "map": {
