@@ -476,7 +476,7 @@
 
     "prompt.install": "A Tecendil telepíthető az eszközödre offline használatra is.",
     "button.install": "Telepítés",
-    "button.not-now": "Nem most",
+    "button.not-now": "Most nem",
 
     "prompt.drop": "Húzz egy fájlt bárhová az átíráshoz.",
 
@@ -496,6 +496,8 @@
     "menu.mode.westron-orthographic": "nyugori",
     "label.mode.czech": "Cseh",
     "menu.mode.czech": "čeština (cseh)",
+    "label.mode.german-orthographic": "Német",
+    "menu.mode.german-orthographic": "Deutsch (német)",
     "label.mode.spanish": "Spanyol",
     "menu.mode.spanish": "Español (spanyol)",
     "label.mode.hungarian": "Magyar",
@@ -508,6 +510,10 @@
     "menu.mode.lojban": "jbobau (lojban)",
     "label.mode.polish-classic": "Lengyel",
     "menu.mode.polish-classic": "polski (lengyel)",
+    "label.mode.brazilian-portuguese": "Brazil portugál",
+    "menu.mode.brazilian-portuguese": "Portugues do Brasil (brazil portugál)",
+    "label.mode.slovenian-orthographic": "Slovenian",
+    "menu.mode.slovenian-orthographic": "Slovenščina (Slovenian)",
     "label.mode.sindarin": "Sindarin",
     "menu.mode.sindarin": "sindarin",
     "label.mode.quenya": "Quenya",

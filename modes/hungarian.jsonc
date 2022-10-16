@@ -9,8 +9,8 @@
 {
   "name": "Hungarian",
   "languageCode": "hu", // Hungarian
-
-  "info": "<a href='https://www.tolkien.hu/tengwar'>Füzessy Tamás</a> és <a href='https://omniglot.com/conscripts/tengwar_hu.php'>Radványi Balázs</a> munkája alapján, Kiss-Rédey Marcell adaptálta",
+  
+  "info": "<a href='https://www.tolkien.hu/tengwar'>Füzessy Tamás</a> és <a href='https://omniglot.com/conscripts/tengwar_hu.php'>Radványi Balázs</a> munkája alapján Kiss-Rédey Marcell adaptálta",
 
   "normalizeVowels": false,
 
@@ -20,16 +20,7 @@
     "qu": "kv",
     "q": "k",
     "w": "v",
-    "x": "ksz",
-    "cs": "č",
-    "dz": "ď",
-    "dzs": "đ",
-    "gy": "ǧ",
-    "ly": "ľ",
-    "ny": "ň",
-    "sz": "š",
-    "ty": "ť",
-    "zs": "ž"
+    "x": "ksz"
   },
 
   "map": {
@@ -52,18 +43,18 @@
     "ú": "[left-curl]{aara}",
     "ő": "[double-dot-above]{aara}",
     "ű": "[breve]{aara}",
-
-    // vowel clusters
-    "ee": "[acute]{telco}[acute]",
-    "eé": "[acute]{telco}[acute]{aara}",
-    "ii": "[dot-above]{telco}[dot-above]",
-    "ií": "[dot-above]{telco}[dot-above]{aara}",
-    "oo": "[right-curl]{telco}[right-curl]",
-    "oó": "[right-curl]{telco}[right-curl]{aara}",
-    "uu": "[left-curl]{telco}[left-curl]",
-    "uú": "[left-curl]{telco}[left-curl]{aara}",
-    "üü": "[breve]{telco}[breve]",
-    "üű": "[breve]{telco}[breve]{aara}",
+	
+	// vowel clusters
+	"ee": "[acute]{telco}[acute]",
+	"eé": "[acute]{telco}[acute]{aara}",
+	"ii": "[dot-above]{telco}[dot-above]",
+	"ií": "[dot-above]{telco}[dot-above]{aara}",
+	"oo": "[right-curl]{telco}[right-curl]",
+	"oó": "[right-curl]{telco}[right-curl]{aara}",
+	"uu": "[left-curl]{telco}[left-curl]",
+	"uú": "[left-curl]{telco}[left-curl]{aara}",
+	"üü": "[breve]{telco}[breve]",
+	"üű": "[breve]{telco}[breve]{aara}",
 
     //
     // CONSONANTS
@@ -72,16 +63,16 @@
     "tt": "[bar-below]{tinco}",
     "p": "{parma}",
     "pp": "[bar-below]{parma}",
-    "č": "{calma}",
-    "cč": "[bar-below]{calma}",
+    "cs": "{calma}",
+    "ccs": "[bar-below]{calma}",
     "k": "{quesse}",
     "kk": "[bar-below]{quesse}",
     "d": "{ando}",
     "dd": "[bar-below]{ando}",
     "b": "{umbar}",
     "bb": "[bar-below]{umbar}",
-    "đ": "{anga}",
-    "dđ": "[bar-below]{anga}",
+    "dzs": "{anga}",
+    "ddzs": "[bar-below]{anga}",
     "g": "{ungwe}",
     "gg": "[bar-below]{ungwe}",
     "f": "{formen}",
@@ -92,10 +83,10 @@
     "cc": "[bar-below]{thuule}",
     "v": "{ampa}",
     "vv": "[bar-below]{ampa}",
-    "ž": "{anca}",
-    "zž": "[bar-below]{anca}",
-    "ď": "{anto}",
-    "dď": "[bar-below]{anto}",
+    "zs": "{anca}",
+    "zzs": "[bar-below]{anca}",
+    "dz": "{anto}",
+    "ddz": "[bar-below]{anto}",
     "n": "{nuumen}",
     "nn": "[tilde-above]{nuumen}",
     "m": "{malta}",
@@ -106,35 +97,65 @@
     "rr": "[bar-below]{roomen}",
     "l": "{lambe}",
     "ll": "[bar-below]{lambe}",
-    "š": "{silme}",
-    "sš": "[bar-below]{silme}",
+    "sz": "{silme}",
+    "ssz": "[bar-below]{silme}",
     "z": "{esse}",
     "zz": "[bar-below]{esse}",
     "h": "{hyarmen}",
     "hh": "[bar-below]{hyarmen}",
-
+	
+	// Palatals
+	"gy": "[double-dot-below]{ando}",
+	"ggy": "[double-dot-below][bar-below]{ando}",
+	"ly": "[double-dot-below]{lambe}",
+	"lly": "[double-dot-below][bar-below]{lambe}",
+	"ny": "[double-dot-below]{nuumen}",
+	"nny": "[double-dot-below][bar-below]{nuumen}",	
+	"ty": "[double-dot-below]{tinco}",
+	"tty": "[double-dot-below][bar-below]{tinco}",
+	
     // Nasalization
     "nt": "[tilde-above]{tinco}",
-    "nť": "[double-dot-below][tilde-above]{tinco}",
     "nd": "[tilde-above]{ando}",
-    "nǧ": "[double-dot-below][tilde-above]{ando}",
     "nc": "[tilde-above]{thuule}",
-    "nď": "[tilde-above]{anto}",
+    "ndz": "[tilde-above]{anto}",
     "mp": "[tilde-above]{parma}",
     "mb": "[tilde-above]{umbar}",
     "mf": "[tilde-above]{formen}",
     "mv": "[tilde-above]{ampa}",
-
-    // Palatalization
-    "ť": "[double-dot-below]{tinco}",
-    "tť": "[double-dot-below][bar-below]{tinco}",
-    "ǧ": "[double-dot-below]{ando}",
-    "gǧ": "[double-dot-below][bar-below]{ando}",
-    "ň": "[double-dot-below]{nuumen}",
-    "nň": "[double-dot-below][tilde-above]{nuumen}",
-    "ľ": "[double-dot-below]{lambe}",
-    "lľ": "[double-dot-below][bar-below]{lambe}",
-
-    "y": "[dot-above]"
+    
+    "y": "[dot-above]",
+	
+	"^rh": "{arda}"
+  },
+  
+  "words": {
+    // Names with special orthography
+    "batthyány": "{UMBAR}{extended-tinco}[a][double-dot-below][tilde-below]{aara}[a]{nuumen}[double-dot-below]",
+	"tóth": "{TINCO}{aara}[o]{extended-tinco}",
+	"németh": "{NUUMEN}{aara}[e]{malta}{extended-tinco}[e]",
+	"horváth": "{HYARMEN}{roomen}[o]{ampa}{aara}[a]{extended-tinco}",
+	"kossuth": "{QUESSE}{harma}[bar-below][o]{extended-tinco}[u]",
+	"madách": "{MALTA}{ando}[a]{aara}[a]{extended-calma}",
+	"széchenyi": "{SILME}{aara}[e]{extended-calma}{nuumen}[double-dot-below][e]{telco}[i]",
+	"széchényi": "{SILME}{aara}[e]{extended-calma}{aara}[e]{nuumen}[double-dot-below]{telco}[i]",
+	"balogh": "{UMBAR}{lambe}[a]{extended-ungwe}[o]",
+	"damjanich": "{ANDO}{malte}[a]{anna}{nuumen}[a}{extended-calma}[i]",
+	"dessewffy": "{ANDO}{silme}[bar-below][e]{vala}[e]{formen}[double-dot-below][bar-below]",
+	"horthy": "{HYARMEN}{roomen}[o]{extended-tinco}[double-dot-below]",
+	
+	// Important names of foreign origin 
+	// German: Alexander Körschgen's mode
+	"aulich": "{VALA}[a]{lambe}{hwesta}[i]",
+	"pöltenberg": "{PARMA}{lambe}[double-acute]{tinco}{nuumen}[e]{umbar}{oore}[e]{ungwe}",
+	"poeltenberg": "{PARMA}{lambe}[double-acute]{tinco}{nuumen}[e]{umbar}{oore}[e]{ungwe}",
+	"lahner": "{LAMBE}{aara}[a]{nuumen}{oore}[e]",
+	"leiningen": "{LAMBE}{anna}[e]{nuumen}{nwalme}[i]{nuumen}[e]",
+	"westerburg": "{VALA}{silme}[e]{tinco}{oore}[e]{umbar}{oore}[u]{ungwe}",
+	"schweidel": "{HARMA}[over-twist]{anna}[e]{ando}{lambe}[e]",
+	"habsburg": "{HYARMEN}{umbar}[a]{silme}{umbar}{oore}[u]{ungwe}",
+	
+	// Croatian: currently following Hungarian rules, to be fixed when a Croatian mode becomes available
+	"knezić": "{QUESSE}{aara}[e]{esse}{extended-calma}[i]"
   }
 }
