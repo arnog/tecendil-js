@@ -458,7 +458,7 @@
     // Following s can be indicated by a downward hook
     // "“especially in the combinations ts, ps, ks (x), that were favoured in Quenya”
     // http://at.mansbjorkman.net/teng_quenya.htm
-    "ays$": "[triple-dot-above]{anna}[hook]{}",
+    "ays$": "[triple-dot-above][hook]{anna}",
     "bs$": "[hook-looped-left]{umbar}",
     "des$": "[hook][dot-below]{ando}",
     "ds$": "[hook]{ando}",
