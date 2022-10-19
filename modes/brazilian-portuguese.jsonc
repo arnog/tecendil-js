@@ -168,11 +168,12 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     "o": "[right-curl]{}",
     "u": "[left-curl]{}",
 
-    // Vogais literais (para não sofre redução átona)
+    // Vogais literais (para não sofrer redução átona)
     "a*": "[triple-dot-above]{}",
     "e*": "[acute]{}",
     "i*": "[dot-above]{}",
     "o*": "[right-curl]{}",
+    "ó*": "[breve]{}",
     "u*": "[left-curl]{}",
 
     // Nasalizadas
@@ -184,6 +185,7 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
 
     // Com Entonação
     "é": "[double-dot-above]{}",
+    "ió": "[dot-above]{telco}[breve]{}",
     "ó": "[breve]{}",
 
     // Acentuação que não altera a pronúncia da vogal no MTP
