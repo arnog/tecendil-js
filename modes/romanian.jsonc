@@ -1,0 +1,86 @@
+{
+  "name": "Romanian",
+  "languageCode": "ro",
+
+  "info": "Romanian mode created by Robert & Iulia. Contains all the diacritics of Romanian and (c, ch, g, gh)+vowel groups",
+
+  "normalizeVowels": false,
+
+  "tehtarFollow": true,
+
+  "preprocess": {
+    "ş": "ş",
+    "ţ": "ţ",
+    "ș": "ş",
+    "ț": "ţ"
+  },
+
+  "map": {
+    //VOWELS
+
+    "ă": "[grave]",
+    "î": "[yanta-above]",
+    "â": "[yanta-above]",
+
+    //for the last two there is no equivalent in tengwar but they kinda make the sound EU when said so i used yanta because it looks like the acute and the curl combined
+
+    //LONG VOWEL
+
+    "ii": "[dot-above]{aara}",
+    "iii": "[double-dot-above]{aara}",
+
+    // CONSONANTS
+
+    "t": "{tinco}",
+    "p": "{parma}",
+    "k": "{quesse}",
+    "d": "{ando}",
+    "b": "{umbar}",
+    "g": "{ungwe}",
+    "f": "{formen}",
+    "ş": "{harma}",
+    "v": "{ampa}",
+    "n": "{nuumen}",
+    "m": "{malta}",
+    "r": "{roomen}",
+    "l": "{lambe}",
+    "s": "{silme}",
+    "z": "{esse}",
+    "h": "{hyarmen}",
+    "j": "{yanta}",
+    "c": "{calma}",
+    "q": "{quesse}",
+    "ţ": "[bar-below]{extended-tinco}",
+    "w": "{vala}",
+    "x": "[right-curl-below]{quesse}",
+    "y": "[dot-above]{telco}",
+
+    // N AND M BEFORE CONSONANTS
+
+    "nd": "[tilde-above]{nuumen}",
+    "nt": "[tilde-above]{tinco}",
+    "nc": "[tilde-above]{calma}",
+    "ng": "[tilde-above]{ungwe}",
+    "mp": "[tilde-above]{parma}",
+    "mb": "[tilde-above]{umbar}",
+    "nci": "{}[tilde-above][dot-above]{calma}",
+    "nce": "{}[tilde-above][acute]{calma}",
+    "nche": "{}[tilde-above][acute]{quesse}",
+    "nchi": "{}[tilde-above][dot-above]{quesse}",
+    "nge": "{}[tilde-above][acute]{anga}",
+    "ngi": "{}[tilde-above][dot-above]{anga}",
+    "nghe": "{}[tilde-above][acute]{ungwe}",
+    "nghi": "{}[tilde-above][dot-above]{ungwe}",
+
+    //CONSONANTS AND VOWELS GROUPS
+
+    "ce": "[acute]{calma}",
+    "ci": "[dot-above]{calma}",
+    "che": "[acute]{quesse}",
+    "chi": "[dot-above]{quesse}",
+    "ge": "[acute]{anga}",
+    "gi": "[dot-above]{anga}",
+    "ghe": "[acute]{ungwe}",
+    "ghi": "[dot-above]{ungwe}"
+  }
+}
