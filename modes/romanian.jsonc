@@ -5,13 +5,13 @@
   "info": "Romanian mode created by Robert & Iulia. Contains all the diacritics of Romanian and (c, ch, g, gh)+vowel groups",
 
   "normalizeVowels": false,
-
+  "wordPattern": "A-Za-zÀ-ÖØ-öø-ÿĀ-ſ\u0218-\u021b*",
   "tehtarFollow": true,
 
   "preprocess": {
-    "ş": "ş",
-    "ţ": "ţ",
+    "Ș": "ş",
     "ș": "ş",
+    "Ț": "Ţ",
     "ț": "ţ"
   },
 
