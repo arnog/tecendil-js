@@ -11,17 +11,21 @@
     "menu.install": "Install",
     "menu.settings": "Settings",
 
+    "message.loading": "Loading...",
+
     "footer.font-credits": "<b>Fonts</b> Tengwar Annatar and Tengwar Telcontar by Johan Winge, Parmaite Tengwar and Tengwar Eldamar by M&aring;ns Bj&ouml;rkman, Tengwar Formal by the <a href=\"http://freetengwar.sourceforge.net/\">Free Tengwar Font Project</a>. Alcarin by Toshi Omagari. Some fonts adapted for the web by Ben Talagan Babut of the Glaemscribe project.",
     "footer.contact": "Got a question? Have some feedback? Want to check a transcription? Just ask ",
     "footer.support-intro": "Enjoying Tecendil?",
     "footer.patreon": "Support me on Patreon",
     "footer.paypal": "Donate with PayPal",
 
+    "prompt.title.javascript": "Tecendil requires JavaScript",
+
     "prompt.install": "For offline access, Tecendil can be installed on your device.",
     "button.install": "Install",
     "button.not-now": "Not now",
 
-    "prompt.drop": "Drop a file anywhere to transcribe it.",
+    "prompt.drop-file": "Drop a file anywhere to transcribe it.",
 
     "label.placeholder.try": "Try: “${placeholder}”",
 
@@ -58,7 +62,7 @@
     "label.mode.slovenian-orthographic": "Slovenian",
     "menu.mode.slovenian-orthographic": "Slovenščina (Slovenian)",
     "label.mode.romanian": "Romanian",
-    "menu.mode.romanian": "Română (Romenian)",
+    "menu.mode.romanian": "Română (Romanian)",
     "label.mode.sindarin": "Sindarin",
     "menu.mode.sindarin": "Sindarin",
     "label.mode.quenya": "Quenya",
@@ -131,7 +135,7 @@
     "button.install": "Instalovat",
     "button.not-now": "Teď ne",
 
-    "prompt.drop": "Přetáhněte soubor pro jeho přepis.",
+    "prompt.drop-file": "Přetáhněte soubor pro jeho přepis.",
 
     "label.placeholder.try": "Vyzkoušejte: “${placeholder}”",
 
@@ -382,7 +386,9 @@
     "menu.install": "Installer",
     "menu.settings": "Réglages",
 
-    "footer.font-credits": "<b>Polices</b> Tengwar Annatar et Tengwar Telcontar par Johan Winge, Parmaite Tengwar et Tengwar Eldamar par M&aring;ns Bj&ouml;rkman, Tengwar Formal par <a href = 'http: //freetengwar.sourceforge.net/'> Free Tengwar Font Project </a>.",
+    "message.loading": "Chargement en cours...",
+
+    "footer.font-credits": "<b>Polices</b> Tengwar Annatar et Tengwar Telcontar par Johan Winge, Parmaite Tengwar et Tengwar Eldamar par M&aring;ns Bj&ouml;rkman, Tengwar Formal par <a href = 'http: //freetengwar.sourceforge.net/'> Free Tengwar Font Project </a>. Certains polices adaptées pour le web par Ben Talagan Babut pour le project Glaemscribe",
     "footer.contact": "Tu as une question? Tu as des commentaires? Tu veux vérifier une transcription? Il suffit de demander: ",
     "footer.support-intro": "Tu apprécies Tecendil?",
     "footer.patreon": "Soutiens-moi sur Patreon",
@@ -392,7 +398,7 @@
     "button.install": "Installer",
     "button.not-now": "Pas maintenant",
 
-    "prompt.drop": "Dépose un fichier n‘importe où pour le transcrire.",
+    "prompt.drop-file": "Dépose un fichier n‘importe où pour le transcrire.",
 
     "label.placeholder.try": "Essaye: «${placeholder}»",
 
@@ -401,14 +407,14 @@
 
     "label.mode": "Mode : ",
     "label.mode.english": "anglais",
-    "menu.mode.english": "English (Anglais)",
+    "menu.mode.english": "English (anglais)",
     "label.mode.english-classical": "anglais traditionnel",
     "menu.mode.english-classical": "English Traditional (anglais traditionnel)",
     "label.mode.english-phonemic": "anglais phonémique",
     "menu.mode.english-phonemic": "English Phonemic (anglais phonémique)",
     "label.mode.westron": "westron",
-    "menu.mode.westron-orthographic": "Westron orthographique",
-    "label.mode.czech": "Tchèque",
+    "menu.mode.westron-orthographic": "westron orthographique",
+    "label.mode.czech": "tchèque",
     "menu.mode.czech": "čeština (tchèque)",
     "label.mode.german-orthographic": "allemand",
     "menu.mode.german-orthographic": "Deutsch (allemand)",
@@ -417,21 +423,29 @@
     "label.mode.hungarian": "hongrois",
     "menu.mode.hungarian": "magyar (hongrois)",
     "label.mode.italian": "italien",
-    "menu.mode.italian": "Italiano (Italien)",
-    "label.mode.italian-full": "italient étendu",
-    "menu.mode.italian-full": "Italiano Esteso (italian Etendu)",
+    "menu.mode.italian": "Italiano (italien)",
+    "label.mode.italian-full": "italien étendu",
+    "menu.mode.italian-full": "Italiano Esteso (italien étendu)",
     "label.mode.lojban": "lojban",
     "menu.mode.lojban": "jbobau (lojban)",
     "label.mode.polish-classic": "polonais",
     "menu.mode.polish-classic": "polski (polonais)",
     "label.mode.brazilian-portuguese": "portuguais",
-    "menu.mode.brazilian-portuguese": "Portugues do Brasil (portuguais Brésilien)",
+    "menu.mode.brazilian-portuguese": "Portugues do Brasil (portuguais brésilien)",
+    "label.mode.slovenian-orthographic": "slovène",
+    "menu.mode.slovenian-orthographic": "Slovenščina (slovène)",
+    "label.mode.romanian": "roumain",
+    "menu.mode.romanian": "Română (roumain)",
     "label.mode.sindarin": "sindarin",
+    "menu.mode.sindarin": "sindarin",
     "label.mode.quenya": "quenya",
+    "menu.mode.quenya": "quenya",
     "label.mode.beleriand": "beleriand",
+    "menu.mode.beleriand": "beleriand",
     "label.mode.erebor": "cirth",
+    "menu.mode.erebor": "cirth",
 
-    "warning.elvish": "<p><b>ATTENTION</b> Cela ne ressemble pas à l'anglais. Est-ce Sindarin ou Quenya? Pour une transcription précise, sélectionnes le mode Sindarin, Quenya ou Beleriand.</p>",
+    "warning.elvish": "<p><b>ATTENTION</b> Cela ne ressemble pas à l'anglais. Est-ce sindarin ou quenya? Pour une transcription précise, sélectionner le mode sindarin, quenya ou beleriand.</p>",
 
     "tooltip.download": "Télécharger",
     "filename.screenshot": "Tecendil capture d'écran",
@@ -445,6 +459,12 @@
     "welcome.4": "Tape une phrase ou un nom et vois-le transcrit en Tengwar",
     "welcome.5": "Note que le texte <b>n'est pas traduit </b>, il est simplement écrit en utilisant les caractères Tengwar.",
     "welcome.6": "Pour que la transcription soit correcte, sélectionne la langue appropriée dans le menu <i> Mode </i>: anglais, espagnol, italien, quenya ou sindarin. Malheureusement, le francais n'est pas supporté pour l'instant. Si tu es intéressé à supporter d'autres langues, contacte moi.",
+
+    "label.wikipedia.intro-random": "Entraînez-vous à lire les tengwar avec cet article aléatoire de Wikipedia:",
+    "label.wikipedia.intro": "Entraînez-vous à lire les tengwar avec cet article sur “",
+    "label.wikipedia.intro.close": "” de Wikipedia:",
+    "button.wikipedia.next": "Article Suivant",
+    "button.wikipedia.next-random": "Article Aléatoire de Wikipedia",
 
     "dialog-title.settings": "Réglages",
     "button.close": "Fermer",
@@ -480,7 +500,7 @@
     "button.install": "Telepítés",
     "button.not-now": "Most nem",
 
-    "prompt.drop": "Húzz egy fájlt bárhová az átíráshoz.",
+    "prompt.drop-file": "Húzz egy fájlt bárhová az átíráshoz.",
 
     "label.placeholder.try": "Próbáld ki: “${placeholder}”",
 
@@ -659,7 +679,7 @@
     "button.install": "Zainstaluj",
     "button.not-now": "Nie teraz",
 
-    "prompt.drop": "Przeciągnij i upuść plik by rozpocząć transkrypcję!",
+    "prompt.drop-file": "Przeciągnij i upuść plik by rozpocząć transkrypcję!",
 
     "label.placeholder.try": "Wypróbuj: “${placeholder}”",
 
@@ -767,7 +787,7 @@
     "button.install": "Instalar",
     "button.not-now": "Talvez depois",
 
-    "prompt.drop": "Solte um arquivo em qualquer lugar para transcrevê-lo",
+    "prompt.drop-file": "Solte um arquivo em qualquer lugar para transcrevê-lo",
 
     "label.placeholder.try": "Tente: “${placeholder}”",
 
@@ -870,7 +890,7 @@
     "button.install": "Instalare",
     "button.not-now": "Nu Acum",
 
-    "prompt.drop": "Plasează un fișier oriunde pentru a-l transcrie.",
+    "prompt.drop-file": "Plasează un fișier oriunde pentru a-l transcrie.",
 
     "label.placeholder.try": "Încearcă: “${placeholder}”",
 
