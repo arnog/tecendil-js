@@ -991,6 +991,8 @@
     "menu.install": "安装",
     "menu.settings": "设置",
 
+    "message.loading": "加载中…",
+
     "footer.contact": "有任何问题？希望提供反馈？想要确认转写结果是否正确？请联系 ",
     "footer.support-intro": "你喜欢Tecendil吗？",
     "footer.patreon": "在Patreon上支持我",
@@ -1091,6 +1093,8 @@
     "menu.install": "安裝",
     "menu.settings": "設定",
 
+    "message.loading": "載入中…",
+
     "footer.contact": "有任何問題？希望提供意見回饋？想要確認轉寫結果是否正確？請聯絡 ",
     "footer.support-intro": "你喜欢Tecendil吗？",
     "footer.patreon": "在Patreon上支持我",
@@ -1099,6 +1103,8 @@
     "prompt.install": "您可以在裝置安裝Tecendil以用於離線存取。",
     "button.install": "安裝",
     "button.not-now": "稍後",
+
+    "prompt.drop-file": "在此拖放檔案以轉寫。",
 
     "label.placeholder.try": "嘗試：「${placeholder}」",
 
@@ -1193,6 +1199,8 @@
     "menu.install": "安裝",
     "menu.settings": "設定",
 
+    "message.loading": "載入中…",
+
     "footer.contact": "有任何問題？希望提供意見回饋？想要確認轉寫結果是否正確？請聯絡 ",
     "footer.support-intro": "你喜欢Tecendil吗？",
     "footer.patreon": "在Patreon上支持我",
@@ -1201,6 +1209,8 @@
     "prompt.install": "您可以在裝置安裝Tecendil以用於離線存取。",
     "button.install": "安裝",
     "button.not-now": "稍後",
+
+    "prompt.drop-file": "在此拖放檔案以轉寫。",
 
     "label.placeholder.try": "嘗試：「${placeholder}」",
 
