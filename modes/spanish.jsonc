@@ -270,7 +270,7 @@ accent - lambe - malta + right curl.
     "r": "{oore}", // "Soft" "r"
     "rr": "{roomen}", // "Hard" "r"
     "s": "{silme}",
-    "s$": "[hook]", // Final "s"
+    "s$": "{hook}", // Final "s"
     "t": "{tinco}",
     "v": "{ampa}",
     "w": "{vala}",

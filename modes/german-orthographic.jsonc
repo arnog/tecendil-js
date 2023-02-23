@@ -404,148 +404,148 @@
     // -ahs, -ohs, do not occur TODO LATER CHECK
     // TODO LATER check if -ähs, -öhs, -ühs occur
     // NOTES: Only looks good in some fonts.
-    "ehs$": "[acute][hook]{aara}",
-    "uhs$": "[left-curl][hook]{aara}",
+    "ehs$": "[acute]{aara}{hook}",
+    "uhs$": "[left-curl]{aara}{hook}",
 
-    "aas$": "[triple-dot-above][hook]{osse}",
-    "ees$": "[acute][hook]{yanta}",
-    "ies$": "[dot-above][hook]{yanta}",
-    "ais$": "[triple-dot-above][hook]{anna}",
-    "eis$": "[acute][hook]{anna}",
-    "aus$": "[triple-dot-above][hook]{vala}",
-    "eus$": "[acute][hook]{vala}",
-    "oys$": "[right-curl][hook]{anna}",
+    "aas$": "[triple-dot-above]{osse}{hook}",
+    "ees$": "[acute]{yanta}{hook}",
+    "ies$": "[dot-above]{yanta}{hook}",
+    "ais$": "[triple-dot-above]{anna}{hook}",
+    "eis$": "[acute]{anna}{hook}",
+    "aus$": "[triple-dot-above]{vala}{hook}",
+    "eus$": "[acute]{vala}{hook}",
+    "oys$": "[right-curl]{anna}{hook}",
 
-    "ts$": "[hook]{tinco}",
-    "ds$": "[hook]{ando}",
-    "ns$": "[hook]{nuumen}",
-    "rs$": "[hook]{oore}",
+    "ts$": "{tinco}{hook}",
+    "ds$": "{ando}{hook}",
+    "ns$": "{nuumen}{hook}",
+    "rs$": "{oore}{hook}",
 
-    "ps$": "[hook]{parma}",
-    "bs$": "[hook]{umbar}",
-    "fs$": "[hook]{formen}",
+    "ps$": "{parma}{hook}",
+    "bs$": "{umbar}{hook}",
+    "fs$": "{formen}{hook}",
     // vs does not occur TODO LATER CHECK
-    "ms$": "[hook]{malta}",
+    "ms$": "{malta}{hook}",
     // ws does not occur TODO LATER CHECK
-    "pfs$": "[hook]{extended-parma}",
+    "pfs$": "{extended-parma}{hook}",
 
     // -schs, -js does not occur TODO LATER CHECK
-    "ks$": "[hook]{quesse}",
-    "gs$": "[hook]{ungwe}",
-    "chs$": "[hook]{hwesta}",
-    "ngs$": "[hook]{nwalme}",
+    "ks$": "{quesse}{hook}",
+    "gs$": "{ungwe}{hook}",
+    "chs$": "{hwesta}{hook}",
+    "ngs$": "{nwalme}{hook}",
 
-    "ls$": "[hook]{lambe}",
+    "ls$": "{lambe}{hook}",
 
-    "cs$": "[hook]{quesse}",
+    "cs$": "{quesse}{hook}",
     // -qus, -qs, -xs does not occur TODO LATER CHECK
 
     // -dds, -rrs, -zzs, -tzs, -bbs, -kks, -ccs, -ggs do not occur TODO LATER CHECK
-    "tts$": "[bar-below][hook]{tinco}",
-    "nns$": "[bar-below][hook]{nuumen}",
-    "pps$": "[bar-below][hook]{parma}",
-    "ffs$": "[bar-below][hook]{formen}",
-    "mms$": "[bar-below][hook]{malta}",
-    "cks$": "[bar-below][hook]{quesse}",
-    "lls$": "[bar-below][hook]{lambe}",
+    "tts$": "[bar-below]{tinco}{hook}",
+    "nns$": "[bar-below]{nuumen}{hook}",
+    "pps$": "[bar-below]{parma}{hook}",
+    "ffs$": "[bar-below]{formen}{hook}",
+    "mms$": "[bar-below]{malta}{hook}",
+    "cks$": "[bar-below]{quesse}{hook}",
+    "lls$": "[bar-below]{lambe}{hook}",
 
     // -schws, -zws do not occur
 
     // -rhs, -ghs, do not occur TODO LATER CHECK
-    "ths$": "[thinnas][hook]{tinco}",
-    "phs$": "[thinnas][hook]{parma}",
+    "ths$": "[thinnas]{tinco}{hook}",
+    "phs$": "[thinnas]{parma}{hook}",
 
     // -nzs, -mbs, -mfs, -mws, -nschs, -njs, -nchs do not occur TODO LATER CHECK
-    "nts$": "[tilde-above][hook]{tinco}",
-    "nds$": "[tilde-above][hook]{ando}",
-    "mps$": "[tilde-above][hook]{parma}",
-    "mpfs$": "[tilde-above][hook]{extended-parma}",
-    "nks$": "[tilde-above][hook]{quesse}",
-    "ncks$": "[tilde-above][bar-below][hook]{quesse}",
-    "nths$": "[tilde-above][thinnas][hook]{tinco}",
-    "mphs$": "[tilde-above][thinnas][hook]{parma}",
+    "nts$": "[tilde-above]{tinco}{hook}",
+    "nds$": "[tilde-above]{ando}{hook}",
+    "mps$": "[tilde-above]{parma}{hook}",
+    "mpfs$": "[tilde-above]{extended-parma}{hook}",
+    "nks$": "[tilde-above]{quesse}{hook}",
+    "ncks$": "[tilde-above][bar-below]{quesse}{hook}",
+    "nths$": "[tilde-above][thinnas]{tinco}{hook}",
+    "mphs$": "[tilde-above][thinnas]{parma}{hook}",
 
     // -sions, -ssions, -tions, -xions do not occur TODO LATER CHECK
-    "xioms$": "[double-dot-below][right-curl-below]{quesse}[right-curl][hook]{malta}",
+    "xioms$": "[double-dot-below][right-curl-below]{quesse}[right-curl]{malta}{hook}",
 
     // -----------------------------------------------------------------------
     //
     // FINAL -ES
     // -ehes, öhes do not occur TODO LATER CHECK
-    "ahes$": "[triple-dot-above][hook][dot-below]{aara}",
-    "ehes$": "[acute][hook][dot-below]{aara}",
-    "ohes$": "[right-curl][hook][dot-below]{aara}",
-    "uhes$": "[left-curl][hook][dot-below]{aara}",
-    "ähes$": "[reversed-triple-dot-above][hook][dot-below]{aara}",
-    "ühes$": "[double-dot-above][hook][dot-below]{aara}",
+    "ahes$": "[triple-dot-above][dot-below]{aara}{hook}",
+    "ehes$": "[acute][dot-below]{aara}{hook}",
+    "ohes$": "[right-curl][dot-below]{aara}{hook}",
+    "uhes$": "[left-curl][dot-below]{aara}{hook}",
+    "ähes$": "[reversed-triple-dot-above][dot-below]{aara}{hook}",
+    "ühes$": "[double-dot-above][dot-below]{aara}{hook}",
 
     // -aaes, -eees, -iees, -yoes do not occur TODO LATER CHECK
-    "aies$": "[triple-dot-above][hook][dot-below]{anna}",
-    "eies$": "[acute][hook][dot-below]{anna}",
-    "aues$": "[triple-dot-above][hook][dot-below]{vala}",
-    "eues$": "[acute][hook][dot-below]{vala}",
+    "aies$": "[triple-dot-above][dot-below]{anna}{hook}",
+    "eies$": "[acute][dot-below]{anna}{hook}",
+    "aues$": "[triple-dot-above][dot-below]{vala}{hook}",
+    "eues$": "[acute][dot-below]{vala}{hook}",
 
-    "tes$": "[hook][dot-below]{tinco}",
-    "des$": "[hook][dot-below]{ando}",
-    "nes$": "[hook][dot-below]{nuumen}",
+    "tes$": "[dot-below]{tinco}{hook}",
+    "des$": "[dot-below]{ando}{hook}",
+    "nes$": "[dot-below]{nuumen}{hook}",
     // does not look good
-    // "res$": "[hook][dot-below]{roomen}"
+    // "res$": "[dot-below]{roomen}{hook}"
 
-    "pes$": "[hook][dot-below]{parma}",
-    "bes$": "[hook][dot-below]{umbar}",
-    "fes$": "[hook][dot-below]{formen}",
-    "ves$": "[hook][dot-below]{ampa}",
-    "mes$": "[hook][dot-below]{malta}",
-    "wes$": "[hook][dot-below]{vala}",
-    "pfes$": "[hook][dot-below]{extended-parma}",
+    "pes$": "[dot-below]{parma}{hook}",
+    "bes$": "[dot-below]{umbar}{hook}",
+    "fes$": "[dot-below]{formen}{hook}",
+    "ves$": "[dot-below]{ampa}{hook}",
+    "mes$": "[dot-below]{malta}{hook}",
+    "wes$": "[dot-below]{vala}{hook}",
+    "pfes$": "[dot-below]{extended-parma}{hook}",
 
     // -dsches, -jes does not occur TODO LATER CHECK
-    "tsches$": "[hook][dot-below]{calma}",
-    "sches$": "[hook][dot-below]{harma}",
+    "tsches$": "[dot-below]{calma}{hook}",
+    "sches$": "[dot-below]{harma}{hook}",
 
     // -kes does not occur, only -nkes and -ckes TODO LATER CHECK
-    "ges$": "[hook][dot-below]{ungwe}",
-    "ches$": "[hook][dot-below]{hwesta}",
-    "nges$": "[hook][dot-below]{nwalme}",
+    "ges$": "[dot-below]{ungwe}{hook}",
+    "ches$": "[dot-below]{hwesta}{hook}",
+    "nges$": "[dot-below]{nwalme}{hook}",
 
-    "les$": "[hook][dot-below]{lambe}",
+    "les$": "[dot-below]{lambe}{hook}",
 
     // -ces, -ques, -qes does not occur TODO LATER CHECK
-    "xes$": "[right-curl-below][hook][dot-below]{quesse}",
+    "xes$": "[right-curl-below][dot-below]{quesse}{hook}",
 
     // -ddes, -bbes, -kkes, -cces, -gges do not occur TODO LATER CHECK
-    "ttes$": "[bar-below][hook][dot-below]{tinco}",
-    "nnes$": "[bar-below][hook][dot-below]{nuumen}",
+    "ttes$": "[bar-below][dot-below]{tinco}{hook}",
+    "nnes$": "[bar-below][dot-below]{nuumen}{hook}",
     // does not look good
-    //"rres$": "[bar-below][hook][dot-below]{roomen}",
-    "zzes$": "[bar-below][hook][dot-below]{extended-tinco}",
-    "tzes$": "[bar-below][hook][dot-below]{extended-tinco}",
-    "ppes$": "[bar-below][hook][dot-below]{parma}",
-    "ffes$": "[bar-below][hook][dot-below]{formen}",
-    "mmes$": "[bar-below][hook][dot-below]{malta}",
-    "ckes$": "[bar-below][hook][dot-below]{quesse}",
-    "lles$": "[bar-below][hook][dot-below]{lambe}",
+    //"rres$": "[bar-below][dot-below]{roomen}{hook}",
+    "zzes$": "[bar-below][dot-below]{extended-tinco}{hook}",
+    "tzes$": "[bar-below][dot-below]{extended-tinco}{hook}",
+    "ppes$": "[bar-below][dot-below]{parma}{hook}",
+    "ffes$": "[bar-below][dot-below]{formen}{hook}",
+    "mmes$": "[bar-below][dot-below]{malta}{hook}",
+    "ckes$": "[bar-below][dot-below]{quesse}{hook}",
+    "lles$": "[bar-below][dot-below]{lambe}{hook}",
 
     // -schwes, -zwes do not occur
 
     // -rhes, -ghes, do not occur TODO LATER CHECK
     // possible, but does not look good
-    // "thes$": "[thinnas][hook][dot-below]{tinco}",
-    // "phes$": "[thinnas][hook][dot-below]{parma}"
+    // "thes$": "[thinnas][dot-below]{tinco}{hook}",
+    // "phes$": "[thinnas][dot-below]{parma}{hook}"
 
     // -mfes, -mwes, -njes, -nckes do not occur TODO LATER CHECK
-    "ntes$": "[tilde-above][hook][dot-below]{tinco}",
-    "ndes$": "[tilde-above][hook][dot-below]{ando}",
-    "nzes$": "[tilde-above][hook][dot-below]{extended-tinco}",
-    "mpes$": "[tilde-above][hook][dot-below]{parma}",
-    "mbes$": "[tilde-above][hook][dot-below]{umbar}",
-    "mpfes$": "[tilde-above][hook][dot-below]{extended-parma}",
-    "nsches$": "[tilde-above][hook][dot-below]{harma}",
-    "nkes$": "[tilde-above][hook][dot-below]{quesse}",
-    "nches$": "[tilde-above][hook][dot-below]{hwesta}"
+    "ntes$": "[tilde-above][dot-below]{tinco}{hook}",
+    "ndes$": "[tilde-above][dot-below]{ando}{hook}",
+    "nzes$": "[tilde-above][dot-below]{extended-tinco}{hook}",
+    "mpes$": "[tilde-above][dot-below]{parma}{hook}",
+    "mbes$": "[tilde-above][dot-below]{umbar}{hook}",
+    "mpfes$": "[tilde-above][dot-below]{extended-parma}{hook}",
+    "nsches$": "[tilde-above][dot-below]{harma}{hook}",
+    "nkes$": "[tilde-above][dot-below]{quesse}{hook}",
+    "nches$": "[tilde-above][dot-below]{hwesta}{hook}"
     // possible, but does not look good
-    // "nthes$": "[tilde-above][thinnas][hook][dot-below]{tinco}",
-    // "mphes$": "[tilde-above][thinnas][hook][dot-below]{parma}"
+    // "nthes$": "[tilde-above][thinnas][dot-below]{tinco}{hook}",
+    // "mphes$": "[tilde-above][thinnas][dot-below]{parma}{hook}"
 
     // -siones, -ssiones, -tiones, -xiones, -xiomes do not occur TODO LATER CHECK
   },

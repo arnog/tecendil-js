@@ -118,7 +118,7 @@ For Michael son of Middle-earth
 
     "ng": "{nwalme}", // for english, /ng/ sound
     //     "rd":	"{arda}",
-    //     "rds": "[hook]{arda}",
+    //     "rds": "{arda}{hook}",
 
     "ph": "{extended-parma}",
     "^uph": "[left-curl]{parma}{hyarmen}", // Not "ph" sound, e.g. "up-hea-val"
@@ -209,28 +209,28 @@ For Michael son of Middle-earth
     // Following s can be indicated by a downward hook
     // "“especially in the combinations ts, ps, ks (x), that were favoured in Quenya”
     // http://at.mansbjorkman.net/teng_quenya.htm
-    "ays$": "[triple-dot-above]{anna}[hook]{}",
-    "bs$": "[hook-looped-left]{umbar}",
-    "des$": "[hook][dot-below]{ando}",
-    "ds$": "[hook]{ando}",
-    "fs$": "[hook]{formen}",
-    "gs$": "[hook]{ungwe}",
-    "ks$": "[hook]{quesse}",
-    "ngs$": "[hook-looped-left]{nwalme}",
-    "kes$": "[dot-below][hook]{quesse}",
-    "ls$": "[lifted-hook]{lambe}",
-    "les$": "[hook][dot-inside]{lambe}",
-    "ms$": "[hook]{malta}",
-    "mes$": "[dot-below][hook-looped-left]{malta}",
-    "nds$": "[tilde-above][hook]{ando}",
-    "ns$": "[hook]{nuumen}",
-    "ps$": "[hook]{parma}",
-    "rs$": "[hook]{oore}",
-    "ts$": "[hook]{tinco}",
-    "ves$": "[hook][dot-below]{ampa}",
-    "ys$": "{anna}[hook]",
-    "oes$": "[right-curl]{telco}[acute][hook]{telco}",
-    "s$": "[hook]", // /u/machsna: Tolkien has consistently spelled every
+    "ays$": "[triple-dot-above]{anna}{hook}",
+    "bs$": "{umbar}{hook-looped-left}",
+    "des$": "[dot-below]{ando}{hook}",
+    "ds$": "{ando}{hook}",
+    "fs$": "{formen}{hook}",
+    "gs$": "{ungwe}{hook}",
+    "ks$": "{quesse}{hook}",
+    "ngs$": "{nwalme}{hook-looped-left}",
+    "kes$": "[dot-below]{quesse}{hook}",
+    "ls$": "{lambe}{lifted-hook}",
+    "les$": "[dot-inside]{lambe}{hook}",
+    "ms$": "{malta}{hook}",
+    "mes$": "[dot-below]{malta}{hook-looped-left}",
+    "nds$": "[tilde-above]{ando}{hook}",
+    "ns$": "{nuumen}{hook}",
+    "ps$": "{parma}{hook}",
+    "rs$": "{oore}{hook}",
+    "ts$": "{tinco}{hook}",
+    "ves$": "[dot-below]{ampa}{hook}",
+    "ys$": "{anna}{hook}",
+    "oes$": "[right-curl]{telco}[acute]{telco}{hook}",
+    "s$": "{hook}", // /u/machsna: Tolkien has consistently spelled every
     // final -S ending with a sa-rince
     // (sometimes with the looped variant form that indicates voicedness).
 
@@ -282,15 +282,15 @@ For Michael son of Middle-earth
     "war": "{vala}{oore}[right-curl]",
 
     "these": "{anto}{alt-silme}[dot-below][acute]",
-    "this": "{anto}[dot-above][hook]",
+    "this": "{anto}[dot-above]{hook}",
 
     "return": "{roomen}{tinco}[dot-above]{oore}[dot-below]{nuumen}", // VT # 23
 
     "ancient": "{calma}[tilde-above][triple-dot-above]{telco}[dot-above]{tinco}[tilde-above][acute]", // "ci" -> CH I
     "caesar": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below]",
-    "caearas": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below][hook]",
+    "caearas": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below]{hook}",
     "facade": "{formen}{alt-silme}[triple-dot-above]{ando}[dot-below][triple-dot-above]",
-    "facades": "{formen}{alt-silme}[triple-dot-above]{ando}[dot-below][triple-dot-above][hook]",
+    "facades": "{formen}{alt-silme}[triple-dot-above]{ando}[dot-below][triple-dot-above]{hook}",
     "cello": "{calma}{lambe}[bar-inside][acute]{telco}[right-curl]",
     "concerto": "{quesse}{nuumen}[right-curl]{calma}{oore}[acute]{tinco}{telco}[right-curl]",
     "cappuccino": "{quesse}{parma}[triple-dot-above][bar-below]{calma}[left-curl]{nuumen}[dot-above]{telco}[right-curl]",

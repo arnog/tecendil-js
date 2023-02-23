@@ -395,7 +395,7 @@
 
     //---------------------------------------------------------------------
     // Combinations with "s"
-    "ts": "{tinco}[hook]",
+    "ts": "{tinco}{hook}",
     "cs": "{quesse}[right-curl-below]",
     "ks": "{quesse}[right-curl-below]",
 

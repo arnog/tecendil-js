@@ -213,7 +213,7 @@ fire sour door
     "n'y": "{noldo}",
     "n'd": "[tilde-above]{ando}",
     "n't": "[tilde-above]{tinco}",
-    "n's$": "[hook]{nuumen}",
+    "n's$": "{nuumen}{hook}",
     "n'sh": "[bar-above]{harma}",
     "n'zh": "[bar-above]{anca}",
     "ng": "{nwalme}",

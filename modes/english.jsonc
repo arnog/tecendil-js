@@ -4,7 +4,7 @@
 //
 // -----------------------------------------------------------------------------
 // Target:
-// agencies: {anga}[triple-dot-above]{nuumen}[acute]{alt-silme}[double-dot-below][hook-looped-left]
+// agencies: {anga}[triple-dot-above]{nuumen}[acute]{alt-silme}[double-dot-below]{hook-looped-left}
 // (current: {ungwe}[triple-dot-above]{quesse}[tilde-above][acute]{telco}[dot-above]{silme}[acute])
 
 {
@@ -284,7 +284,7 @@
 
     "ng": "{nwalme}", // for english, /ng/ sound
     // "rd": "{arda}",
-    // "rds": "[hook]{arda}",
+    // "rds": "{arda}{hook}",
     //     "ld":		"{alda}",	For all we know, it does not represent LD in
     // this particular mode, since in this particular mode, Tolkien has written
     // LD with the sequence lambe, ando (see DTS 5 “Ronald”). If anything, then
@@ -458,25 +458,25 @@
     // Following s can be indicated by a downward hook
     // "“especially in the combinations ts, ps, ks (x), that were favoured in Quenya”
     // http://at.mansbjorkman.net/teng_quenya.htm
-    "ays$": "[triple-dot-above][hook]{anna}",
-    "bs$": "[hook-looped-left]{umbar}",
-    "des$": "[hook][dot-below]{ando}",
-    "ds$": "[hook]{ando}",
-    "fs$": "[hook]{formen}",
-    "gs$": "[hook]{ungwe}",
-    "ks$": "[hook]{quesse}",
-    "ngs$": "[hook-looped-left]{nwalme}",
-    "kes$": "[dot-below][hook]{quesse}",
-    "ls$": "[lifted-hook]{lambe}",
-    "les$": "[hook][dot-inside]{lambe}",
-    "ms$": "[hook]{malta}",
-    "mes$": "[dot-below][hook-looped-left]{malta}",
-    "nds$": "[tilde-above][hook]{ando}",
-    "ns$": "[hook]{nuumen}",
-    "ps$": "[hook]{parma}",
-    "rs$": "[hook]{oore}",
-    "ts$": "[hook]{tinco}",
-    "ves$": "{ampa}[dot-below][hook]"
+    "ays$": "[triple-dot-above]{anna}{hook}",
+    "bs$": "{umbar}{hook-looped-left}",
+    "des$": "[dot-below]{ando}{hook}",
+    "ds$": "{ando}{hook}",
+    "fs$": "{formen}{hook}",
+    "gs$": "{ungwe}{hook}",
+    "ks$": "{quesse}{hook}",
+    "ngs$": "{nwalme}{hook-looped-left}",
+    "kes$": "[dot-below]{quesse}{hook}",
+    "ls$": "{lambe}{lifted-hook}",
+    "les$": "[dot-inside]{lambe}{hook}",
+    "ms$": "{malta}{hook}",
+    "mes$": "[dot-below]{malta}{hook-looped-left}",
+    "nds$": "[tilde-above]{ando}{hook}",
+    "ns$": "{nuumen}{hook}",
+    "ps$": "{parma}{hook}",
+    "rs$": "{oore}{hook}",
+    "ts$": "{tinco}{hook}",
+    "ves$": "{ampa}[dot-below]{hook}"
   },
 
   // Note: all the entries should be lower-case only
@@ -502,7 +502,7 @@
     "chose": "{calma}{esse-nuquerna}[right-curl][dot-below]", // "s'->'z'
     "create": "{quesse}{roomen}{telco}[acute]{tinco}[triple-dot-above][dot-below]", // "ea' -> "e' + "a'
     "die": "{ando}{yanta}[dot-above]", // End in "ay" sound
-    "does": "d{yanta}[right-curl][hook]",
+    "does": "d{yanta}[right-curl]{hook}",
     "exact": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}", // e-gz-act
     "exactly": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}{lambe}[breve]",
     "examine": "{ungwe}[acute][right-curl-below]{malta}[triple-dot-above]{nuumen}[dot-above][dot-below]",
@@ -530,7 +530,7 @@
     "she": "{harma}{telco}[acute]", // non-silent final-e
     "sure": "{harma}{oore}[left-curl][dot-below]",
     // "time": "{tinco}{malta}[dot-above][dot-below]",
-    // "times": "{tinco}{malta}[dot-above][dot-below][hook-looped-left]",
+    // "times": "{tinco}{malta}[dot-above][dot-below]{hook-looped-left}",
     "tolkien": "{TINCO}{lambe}[right-curl]{quesse}{aara}[dot-above]{nuumen}[acute]", // JRR Tolkien wrote his name with a long-carrier in DTS-5. Christopher Tolkien used a short-carrier.
     "tie": "{ampa}{yanta}[dot-above]", // End in "a-y" sound
     "underlie": "{ando}[left-curl][tilde-above]{oore}[acute]{lambe}{yanta}[dot-above]", // End in "a-y" sound
@@ -543,9 +543,9 @@
 
     "ancient": "{calma}[triple-dot-above][tilde-above]{telco}[dot-above]{tinco}[acute][tilde-above]", // "ci' -> CH I
     "caesar": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below]",
-    "caesars": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below][hook]",
+    "caesars": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below]{hook}",
     "facade": "{formen}{silme}[triple-dot-above]{ando}[dot-below][triple-dot-above]",
-    "facades": "{formen}{silme}[triple-dot-above]{ando}[dot-below][triple-dot-above][hook]",
+    "facades": "{formen}{silme}[triple-dot-above]{ando}[dot-below][triple-dot-above]{hook}",
     "cello": "{calma}{lambe}[bar-inside][acute]{telco}[right-curl]",
     "concerto": "{quesse}{nuumen}[right-curl]{calma}{oore}[acute]{tinco}{telco}[right-curl]",
     "cappuccino": "{quesse}{parma}[triple-dot-above]{calma}[left-curl]{nuumen}[dot-above]{telco}[right-curl]",
@@ -704,7 +704,7 @@
     "monarchist": "monarkxist",
     "monarchy": "monarkxy",
     "mother": "{malta}{anto}[right-curl]{oore}[acute]",
-    "mothers": "{malta}{anto}[right-curl]{oore}[hook][acute]",
+    "mothers": "{malta}{anto}[right-curl]{oore}[acute]{hook}",
     "motherhood": "{malta}{anto}[right-curl]{oore}[acute]{hyarmen}{telco}[right-curl]{ando}[right-curl]",
     "motherly": "{malta}{anto}[right-curl]{oore}[acute]{lambe}[breve]",
     "neither": "{nuumen}{anna}[acute]{anto}{oore}[acute]",
@@ -752,7 +752,7 @@
     "teethe": "{tinco}{telco}[double-acute]{anto}[dot-below]",
     "tether": "{tinco}{anto}[acute]{oore}[acute]",
     "thames": "{EXTENDED-TINCO}ames", // "th" pronounced /t/ uses extended tinco
-    "things": "{thuule}{nwalme}[dot-above][hook]",
+    "things": "{thuule}{nwalme}[dot-above]{hook}",
     "this": "{anto}{alt-silme}[dot-above]",
     "than": "{anto}{nuumen}[triple-dot-above]",
     "that": "{anto}{tinco}[triple-dot-above]",

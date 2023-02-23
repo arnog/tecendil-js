@@ -68,7 +68,7 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     // Desambiguar pronúncia, "s" -> "z". Usa-se S com som de Z entre duas vogais. Exs.: crise, aviso, empresa, raposa, tesouro
     "/([aeiouà-úAEIOUÀ-Ú])[sS]([aeiouà-úAEIOUÀ-Ú])/": "$1z$2",
 
-    "/([aeiouà-úAEIOU])[lL]([^haeiouà-úHAEIOUÀ-Ú])/": "$1u$2", 
+    "/([aeiouà-úAEIOU])[lL]([^haeiouà-úHAEIOUÀ-Ú])/": "$1u$2",
 
     // Desambiguar pronúncia, "z" -> "s". Usa-se Z com som de S antes de uma consoante ou no final das palavras. Exs.: nariz, dez, xadrez
     "/[zZ]$/": "s",
@@ -236,7 +236,7 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
     "s": "{silme}",
     "ss": "{silme}",
     "^s": "{silme}",
-    "s$": "[hook]",
+    "s$": "{hook}",
 
     "t": "{tinco}",
     "v": "{ampa}",
@@ -249,10 +249,10 @@ https://www.valinor.com.br/forum/topico/modo-tengwar-portugues-mtp.94672/
   "words": {
     // Banana -> som nasal de banãna
     "banana": "{umbar}[triple-dot-above]{nuumen}[triple-dot-above][tilde-above]{nuumen}[triple-dot-above]",
-    "bananas": "{umbar}[triple-dot-above]{nuumen}[triple-dot-above][tilde-above]{nuumen}[triple-dot-above][hook]",
+    "bananas": "{umbar}[triple-dot-above]{nuumen}[triple-dot-above][tilde-above]{nuumen}[triple-dot-above]{hook}",
     // Cama -> som nasal de cãma
     "cama": "{calma}[triple-dot-above][tilde-above]{malta}[triple-dot-above]",
-    "camas": "{calma}[triple-dot-above][tilde-above]{malta}[triple-dot-above][hook]",
+    "camas": "{calma}[triple-dot-above][tilde-above]{malta}[triple-dot-above]{hook}",
     "porém": "{parma}[right-curl]{uure}[tilde-above]{malta}{yanta}[tilde-above]"
   }
 }

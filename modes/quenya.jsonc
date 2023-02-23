@@ -270,8 +270,8 @@ accent - lambe - malta + right curl.
     "mp": "{ampa}",
 
     // Combinations with "s"
-    "ts": "{tinco}[hook]",
-    "ps": "{parma}[hook]",
+    "ts": "{tinco}{hook}",
+    "ps": "{parma}{hook}",
     "cs": "{calma}[right-curl-below]", // Rare: "CSara"
 
     // Combinations with "y"
