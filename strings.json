@@ -1240,7 +1240,7 @@
     "menu.mode.hungarian": "匈牙利語（magyar）",
     "label.mode.italian": "義大利語",
     "menu.mode.italian": "義大利語（Italiano）",
-    "label.mode.italian-full": "義大利語（元音附標）",
+    "label.mode.italian-full": "義大利語（元音非附標）",
     "menu.mode.italian-full": "義大利語，元音非附標（Italiano Esteso）",
     "label.mode.lojban": "邏輯語",
     "menu.mode.lojban": "邏輯語（jbobau）",
