@@ -771,8 +771,9 @@
     "thorough": "thorou{extended-ungwe}", // `ough$` exception
     "those": "{anto}{esse-nuquerna}[right-curl][dot-below]",
     "thou": "{anto}{vala}[right-curl]",
-    "thomas": "{EXTENDED-TINCO}oma{silme}", // "th" pronounced /t/ uses extended tinco
     "though": "{anto}{vala}[right-curl]{extended-ungwe}",
+    "Thomas": "{EXTENDED-TINCO}om{alt-silme}[triple-dot-above]", // "th" pronounced /t/ uses extended tinco
+    "thomas": "{extended-tinco}om{alt-silme}[triple-dot-above]", // "th" pronounced /t/ uses extended tinco
     "through": "throu{extended-ungwe}", // `ough$` exception
     "thus": "{anto}{alt-silme}[left-curl]",
     "thy": "{anto}{telco}[breve]",
