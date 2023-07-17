@@ -4,6 +4,7 @@
 
     "button.open-menu": "Open Menu",
     "button.close-menu": "Close Menu",
+
     "menu.home": "Home",
     "menu.handbook": "Tengwar Handbook",
     "menu.inside-tecendil": "Inside Tecendil",
@@ -33,22 +34,22 @@
     "font-name.annatar-italic": "Annatar Italic",
 
     "label.mode": "Mode: ",
-    "label.mode.dutch": "Dutch",
-    "menu.mode.dutch": "Dutch",
+
     "label.mode.english": "English",
     "menu.mode.english": "English",
     "label.mode.english-classical": "English Traditional",
     "menu.mode.english-classical": "English Traditional",
     "label.mode.english-phonemic": "English Phonemic",
     "menu.mode.english-phonemic": "English Phonemic",
-    "label.mode.esperanto": "Esperanto",
-    "menu.mode.esperanto": "Esperanto",
     "label.mode.westron": "Westron",
     "menu.mode.westron-orthographic": "Westron Orthographic",
+
     "label.mode.czech": "Czech",
     "menu.mode.czech": "čeština (Czech)",
     "label.mode.german-orthographic": "German",
     "menu.mode.german-orthographic": "Deutsch (German)",
+    "label.mode.esperanto-basic": "Esperanto",
+    "menu.mode.esperanto-basic": "Esperanto",
     "label.mode.spanish": "Español",
     "menu.mode.spanish": "Español (Spanish)",
     "label.mode.hungarian": "Hungarian",
@@ -59,6 +60,8 @@
     "menu.mode.italian-full": "Italiano Esteso (Italian Full Mode)",
     "label.mode.lojban": "Lojban",
     "menu.mode.lojban": "jbobau (Lojban)",
+    "label.mode.dutch": "Dutch",
+    "menu.mode.dutch": "Dutch (Nederlands)",
     "label.mode.polish-classic": "Polish",
     "menu.mode.polish-classic": "polski (Polish)",
     "label.mode.brazilian-portuguese": "Portuguese",
@@ -67,6 +70,7 @@
     "menu.mode.romanian": "Română (Romanian)",
     "label.mode.slovenian-orthographic": "Slovenian",
     "menu.mode.slovenian-orthographic": "Slovenščina (Slovenian)",
+
     "label.mode.sindarin": "Sindarin",
     "menu.mode.sindarin": "Sindarin",
     "label.mode.quenya": "Quenya",
@@ -122,6 +126,7 @@
 
     "button.open-menu": "Otevřít menu",
     "button.close-menu": "Zavřít menu",
+
     "menu.home": "Domů",
     "menu.handbook": "Příručka Tengwar",
     "menu.inside-tecendil": "Uvnitř Tecendilu",
@@ -147,12 +152,14 @@
     "font-name.annatar-italic": "Annatar Italic",
 
     "label.mode": "Mód: ",
+
     "label.mode.english": "Anglicky",
     "menu.mode.english": "Anglicky",
     "label.mode.english-classical": "Anglicky tradičně",
     "menu.mode.english-classical": "Anglicky tradičně",
     "label.mode.english-phonemic": "Anglicky foneticky",
     "menu.mode.english-phonemic": "Anglicky foneticky",
+
     "label.mode.spanish": "Španělsky",
     "menu.mode.spanish": "Español (Španělsky)",
     "label.mode.hungarian": "Maďarský",
@@ -162,6 +169,7 @@
     "label.mode.italian-full": "Italiano Esteso",
     "menu.mode.italian-full": "Italiano Esteso (Italsky plný mód)",
     "label.mode.lojban": "Lojban",
+
     "label.mode.sindarin": "Sindarština",
     "menu.mode.sindarin": "Sindarština",
     "label.mode.quenya": "Quenijština",
@@ -211,6 +219,7 @@
 
     "button.open-menu": "Menü öffnen",
     "button.close-menu": "Menü schließen",
+
     "menu.home": "Zuhause",
     "menu.handbook": "Tengwar Handbuch",
     "menu.install": "Installieren",
@@ -233,6 +242,7 @@
     "font-name.annatar-italic": "Annatar Kursiv",
 
     "label.mode": "Modus : ",
+
     "label.mode.english": "Englisch",
     "menu.mode.english": "English (Englisch)",
     "label.mode.english-classical": "Englisch (traditionell)",
@@ -241,6 +251,7 @@
     "menu.mode.english-phonemic": "English Phonemic (Englisch - phonemisch)",
     "menu.mode.westron-orthographic": "Westron orthographisch",
     "label.mode.westron": "Westron",
+
     "label.mode.gernman": "Deutsch",
     "menu.mode.gernman": "Deutsch",
     "label.mode.spanish": "Spanisch",
@@ -250,6 +261,7 @@
     "label.mode.italian": "Italienisch",
     "menu.mode.italian": "Italiano (Italienisch)",
     "label.mode.lojban": "Lojban",
+
     "label.mode.sindarin": "Sindarin",
     "label.mode.quenya": "Quenya",
     "label.mode.beleriand": "Beleriand",
@@ -295,6 +307,7 @@
 
     "button.open-menu": "Malfermu menuo",
     "button.close-menu": "Fermu menuo",
+
     "menu.home": "Ĉefpago",
     "menu.handbook": "Manlibro de Tengvaro (angla)",
     "menu.inside-tecendil": "Kiel Tecendil funkcias?",
@@ -324,11 +337,8 @@
     "font-name.annatar-italic": "Annatar Italic",
 
     "label.mode": "Modo: ",
+
     "label.mode.english": "Angllingva",
-
-    "label.mode.esperanto-basic": "Esperanto",
-    "menu.mode.esperanto-basic": "Esperanto (A. Cockroft)",
-
     "menu.mode.english": "Angllingva",
     "label.mode.english-classical": "Angllingva tradicia",
     "menu.mode.english-classical": "English Tr. (angl. tradicia)",
@@ -336,10 +346,13 @@
     "menu.mode.english-phonemic": "English Ph. (angl. fonetika)",
     "label.mode.westron": "Westron",
     "menu.mode.westron-orthographic": "Westron ortografia",
+
     "label.mode.czech": "Ĉeĥlingva",
     "menu.mode.czech": "čeština (Ĉeĥlingva)",
     "label.mode.german-orthographic": "Germanlingva",
     "menu.mode.german-orthographic": "Deutsch (Germanlingva)",
+    "label.mode.esperanto-basic": "Esperanto",
+    "menu.mode.esperanto-basic": "Esperanto (A. Cockroft)",
     "label.mode.spanish": "Hispanlingva",
     "menu.mode.spanish": "Español (Hispanlingva)",
     "label.mode.hungarian": "Hungarlingva",
@@ -354,10 +367,11 @@
     "menu.mode.polish-classic": "polski (Pollingva klasika)",
     "label.mode.brazilian-portuguese": "Brazil-Portugallingva",
     "menu.mode.brazilian-portuguese": "Portugues do Brasil (Brazil-Portugallingva)",
-    "label.mode.slovenian-orthographic": "Slovenlingva",
-    "menu.mode.slovenian-orthographic": "Slovenščina (Slovenlingva)",
     "label.mode.romanian": "Rumanlingva",
     "menu.mode.romanian": "Română (Rumanlingva)",
+    "label.mode.slovenian-orthographic": "Slovenlingva",
+    "menu.mode.slovenian-orthographic": "Slovenščina (Slovenlingva)",
+
     "label.mode.sindarin": "Sindarin",
     "menu.mode.sindarin": "Sindarin",
     "label.mode.quenya": "Quenya",
@@ -414,6 +428,7 @@
 
     "button.open-menu": "Abrir el menú",
     "button.close-menu": "Cerrar el menú",
+
     "menu.home": "Bienvenida",
     "menu.handbook": "Manual de Tengwar",
     "menu.inside-tecendil": "Tecendil de cerca",
@@ -437,6 +452,7 @@
     "font-name.annatar-italic": "Annatar Itálico",
 
     "label.mode": "Modo : ",
+
     "label.mode.english": "inglés",
     "menu.mode.english": "Inglés",
     "label.mode.english-classical": "inglés tradicional",
@@ -445,6 +461,7 @@
     "menu.mode.english-phonemic": "Inglés fonémico",
     "menu.mode.westron-orthographic": "Westron ortográfico",
     "label.mode.westron": "westron",
+
     "label.mode.czech": "Checo",
     "menu.mode.czech": "čeština (Checo)",
     "label.mode.german-orthographic": "Alemán",
@@ -462,6 +479,7 @@
     "menu.mode.brazilian-portuguese": "Portugués brasileño (Brazilian Portuguese)",
     "label.mode.slovenian-orthographic": "Esloveno",
     "menu.mode.slovenian-orthographic": "Slovenščina (Esloveno)",
+
     "label.mode.sindarin": "sindarin",
     "label.mode.quenya": "quenya",
     "label.mode.beleriand": "beleriand",
@@ -502,6 +520,7 @@
 
     "button.open-menu": "Ouvrir le menu",
     "button.close-menu": "Fermer le menu",
+
     "menu.home": "Accueil",
     "menu.handbook": "Manuel de Tengwar",
     "menu.inside-tecendil": "Tecendil à la loupe",
@@ -529,6 +548,7 @@
     "font-name.annatar-italic": "Annatar Italique",
 
     "label.mode": "Mode : ",
+
     "label.mode.english": "anglais",
     "menu.mode.english": "English (anglais)",
     "label.mode.english-classical": "anglais traditionnel",
@@ -537,6 +557,7 @@
     "menu.mode.english-phonemic": "English Phonemic (anglais phonémique)",
     "label.mode.westron": "westron",
     "menu.mode.westron-orthographic": "westron orthographique",
+
     "label.mode.czech": "tchèque",
     "menu.mode.czech": "čeština (tchèque)",
     "label.mode.german-orthographic": "allemand",
@@ -559,6 +580,7 @@
     "menu.mode.romanian": "Română (roumain)",
     "label.mode.slovenian-orthographic": "slovène",
     "menu.mode.slovenian-orthographic": "Slovenščina (slovène)",
+
     "label.mode.sindarin": "sindarin",
     "menu.mode.sindarin": "sindarin",
     "label.mode.quenya": "quenya",
@@ -606,6 +628,7 @@
 
     "button.open-menu": "Menü megnyitása",
     "button.close-menu": "Menü bezárása",
+
     "menu.home": "Kezdőlap",
     "menu.handbook": "Tengwar-kézikönyv",
     "menu.inside-tecendil": "Útmutató a Tecendilhez",
@@ -631,6 +654,7 @@
     "font-name.annatar-italic": "Annatar Dőlt",
 
     "label.mode": "Mód: ",
+
     "label.mode.english": "Angol",
     "menu.mode.english": "English (angol)",
     "label.mode.english-classical": "Angol (hagyományos)",
@@ -639,6 +663,7 @@
     "menu.mode.english-phonemic": "English Phonemic (kiejtés szerinti angol)",
     "label.mode.westron": "Nyugori",
     "menu.mode.westron-orthographic": "nyugori",
+
     "label.mode.czech": "Cseh",
     "menu.mode.czech": "čeština (cseh)",
     "label.mode.german-orthographic": "Német",
@@ -659,6 +684,7 @@
     "menu.mode.brazilian-portuguese": "Portugues do Brasil (brazil portugál)",
     "label.mode.slovenian-orthographic": "Slovenian",
     "menu.mode.slovenian-orthographic": "Slovenščina (Slovenian)",
+
     "label.mode.sindarin": "Sindarin",
     "menu.mode.sindarin": "sindarin",
     "label.mode.quenya": "Quenya",
@@ -709,6 +735,7 @@
 
     "button.open-menu": "Apri menù",
     "button.close-menu": "Chiudi menù",
+
     "menu.home": "Benvenuto",
     "menu.handbook": "Manuale Tengwar",
     "menu.whats-new": "Cosa c'è di nuovo?",
@@ -731,12 +758,14 @@
     "font-name.annatar-italic": "Annatar Corsivo",
 
     "label.mode": "Modalità: ",
+
     "label.mode.english": "Inglese",
     "menu.mode.english": "Inglese",
     "label.mode.english-classical": "Inglese Tradizionale",
     "menu.mode.english-classical": "Inglese Tradizionale",
     "label.mode.english-phonemic": "Inglese Fonetico",
     "menu.mode.english-phonemic": "Inglese Fonetico",
+
     "label.mode.spanish": "Spagnolo",
     "menu.mode.spanish": "Spagnolo",
     "label.mode.hungarian": "Ungherese",
@@ -746,6 +775,7 @@
     "label.mode.italian-full": "Italiano Esteso",
     "menu.mode.italian-full": "Italiano Esteso",
     "label.mode.lojban": "Lojban",
+
     "label.mode.sindarin": "Sindarin",
     "label.mode.quenya": "Quenya",
     "label.mode.beleriand": "Beleriand",
@@ -785,6 +815,7 @@
 
     "button.open-menu": "Otwórz menu",
     "button.close-menu": "Zamknij menu",
+
     "menu.home": "Strona główna",
     "menu.handbook": "Podręcznik Tengwaru (ang.)",
     "menu.inside-tecendil": "Jak działa Tecendil?",
@@ -810,6 +841,7 @@
     "font-name.annatar-italic": "Annatar Italic",
 
     "label.mode": "Tryb: ",
+
     "label.mode.quenya": "klasyczny",
     "menu.mode.quenya": "quenya",
     "label.mode.sindarin": "dla sindarinu",
@@ -826,6 +858,7 @@
     "menu.mode.english-phonemic": "angielski fonetyczny",
     "label.mode.westron": "dla westronu",
     "menu.mode.westron": "orthograficzny (westron)",
+
     "label.mode.czech": "dla czeskiego",
     "menu.mode.czech": "czeski",
     "label.mode.spanish": "dla hiszpańskiego",
@@ -893,6 +926,7 @@
 
     "button.open-menu": "Abrir Menu",
     "button.close-menu": "Fechar Menu",
+
     "menu.home": "início",
     "menu.handbook": "Manual Tengwar",
     "menu.inside-tecendil": "Por Dentro do Tecendil",
@@ -918,6 +952,7 @@
     "font-name.annatar-italic": "Annatar Italic",
 
     "label.mode": "Modo: ",
+
     "label.mode.english": "English",
     "menu.mode.english": "English",
     "label.mode.english-classical": "English Traditional",
@@ -926,6 +961,7 @@
     "menu.mode.english-phonemic": "English Phonemic",
     "label.mode.westron": "Westron",
     "menu.mode.westron-orthographic": "Westron Orthographic",
+
     "label.mode.czech": "Czech",
     "menu.mode.czech": "čeština (Czech)",
     "label.mode.german-orthographic": "German",
@@ -944,6 +980,7 @@
     "menu.mode.polish-classic": "polski (Polish)",
     "label.mode.brazilian-portuguese": "Português BR",
     "menu.mode.brazilian-portuguese": "Português Brasileiro",
+
     "label.mode.sindarin": "Sindarin",
     "menu.mode.sindarin": "Sindarin",
     "label.mode.quenya": "Quenya",
@@ -995,6 +1032,7 @@
 
     "button.open-menu": "Deschidere Meniu",
     "button.close-menu": "Închidere Meniu",
+
     "menu.home": "Acasă",
     "menu.handbook": "Manual Tengwar",
     "menu.inside-tecendil": "Interiorul Tecendil-ului",
@@ -1020,6 +1058,7 @@
     "font-name.annatar-italic": "Annatar Italic",
 
     "label.mode": "Mod: ",
+
     "label.mode.english": "Engleză",
     "menu.mode.english": "Engleză",
     "label.mode.english-classical": "Engleză Tradițională",
@@ -1028,6 +1067,7 @@
     "menu.mode.english-phonemic": "Engleză Fonemică",
     "label.mode.westron": "Westron",
     "menu.mode.westron-orthographic": "Westron Ortografic",
+
     "label.mode.czech": "Cehă",
     "menu.mode.czech": "čeština (Cehă)",
     "label.mode.german-orthographic": "Germană",
@@ -1050,6 +1090,7 @@
     "menu.mode.romanian": "Română",
     "label.mode.slovenian-orthographic": "Slovenă",
     "menu.mode.slovenian-orthographic": "Slovenščina (Slovenă)",
+
     "label.mode.sindarin": "Sindarin",
     "menu.mode.sindarin": "Sindarin",
     "label.mode.quenya": "Quenya",
@@ -1105,6 +1146,7 @@
 
     "button.open-menu": "打开菜单",
     "button.close-menu": "关闭菜单",
+
     "menu.home": "首页",
     "menu.handbook": "滕格瓦手册",
     "menu.inside-tecendil": "Tecendil内在机制",
@@ -1129,6 +1171,7 @@
     "font-name.annatar-italic": "Annatar 斜体",
 
     "label.mode": "模式：",
+
     "label.mode.english": "英语",
     "menu.mode.english": "英语（English）",
     "label.mode.english-classical": "英语传统",
@@ -1137,10 +1180,13 @@
     "menu.mode.english-phonemic": "英语语音（English Phonemic）",
     "label.mode.westron": "西部语",
     "menu.mode.westron-orthographic": "西部语正字法（Westron Orthographic）",
+
     "label.mode.czech": "捷克语",
     "menu.mode.czech": "捷克语（čeština）",
     "label.mode.german-orthographic": "德语",
     "menu.mode.german-orthographic": "德语（Deutsch）",
+    "label.mode.esperanto-basic": "世界语",
+    "menu.mode.esperanto-basic": "世界语（Esperanto）",
     "label.mode.spanish": "西班牙语",
     "menu.mode.spanish": "西班牙语（español）",
     "label.mode.hungarian": "匈牙利语",
@@ -1151,6 +1197,8 @@
     "menu.mode.italian-full": "意大利语，元音非附标（Italiano Esteso）",
     "label.mode.lojban": "逻辑语",
     "menu.mode.lojban": "逻辑语（jbobau）",
+    "label.mode.dutch": "荷兰语",
+    "menu.mode.dutch": "荷兰语（Nederlands）",
     "label.mode.polish-classic": "波兰语",
     "menu.mode.polish-classic": "波兰语（polski）",
     "label.mode.brazilian-portuguese": "巴西葡萄牙语",
@@ -1159,6 +1207,7 @@
     "menu.mode.romanian": "罗马尼亚语（Română）",
     "label.mode.slovenian-orthographic": "斯洛文尼亚语",
     "menu.mode.slovenian-orthographic": "斯洛文尼亚语（Slovenščina）",
+
     "label.mode.sindarin": "辛达林语",
     "menu.mode.sindarin": "辛达林语（Sindarin）",
     "label.mode.quenya": "昆雅语",
@@ -1209,6 +1258,7 @@
 
     "button.open-menu": "開啟選單",
     "button.close-menu": "關閉選單",
+
     "menu.home": "首頁",
     "menu.handbook": "談格瓦手冊",
     "menu.inside-tecendil": "Tecendil 內在機制",
@@ -1235,6 +1285,7 @@
     "font-name.annatar-italic": "Annatar 斜體",
 
     "label.mode": "模式：",
+
     "label.mode.english": "英語",
     "menu.mode.english": "英語（English）",
     "label.mode.english-classical": "英語傳統",
@@ -1243,10 +1294,13 @@
     "menu.mode.english-phonemic": "英語語音（English Phonemic）",
     "label.mode.westron": "Westron",
     "menu.mode.westron-orthographic": "Westron Orthographic",
+
     "label.mode.czech": "捷克語",
     "menu.mode.czech": "捷克語（čeština）",
     "label.mode.german-orthographic": "德語",
     "menu.mode.german-orthographic": "德語（Deutsch）",
+    "label.mode.esperanto-basic": "世界語",
+    "menu.mode.esperanto-basic": "世界語（Esperanto）",
     "label.mode.spanish": "西班牙語",
     "menu.mode.spanish": "西班牙語（Español）",
     "label.mode.hungarian": "匈牙利語",
@@ -1257,6 +1311,8 @@
     "menu.mode.italian-full": "意大利語，元音非附標（Italiano Esteso）",
     "label.mode.lojban": "邏輯語",
     "menu.mode.lojban": "邏輯語（jbobau）",
+    "label.mode.dutch": "荷蘭語",
+    "menu.mode.dutch": "荷蘭語（Nederlands）",
     "label.mode.polish-classic": "波蘭語",
     "menu.mode.polish-classic": "波蘭語（polski）",
     "label.mode.brazilian-portuguese": "巴西葡萄牙語",
@@ -1265,6 +1321,7 @@
     "menu.mode.romanian": "羅馬尼亞語（Română）",
     "label.mode.slovenian-orthographic": "斯洛文尼亞語",
     "menu.mode.slovenian-orthographic": "斯洛文尼亞語（Slovenščina）",
+
     "label.mode.sindarin": "辛達林語",
     "menu.mode.sindarin": "辛達林語（Sindarin）",
     "label.mode.quenya": "昆雅語",
@@ -1317,6 +1374,7 @@
 
     "button.open-menu": "開啟選單",
     "button.close-menu": "關閉選單",
+
     "menu.home": "首頁",
     "menu.handbook": "談格瓦手冊",
     "menu.inside-tecendil": "Tecendil 內在機制",
@@ -1343,18 +1401,22 @@
     "font-name.annatar-italic": "Annatar 斜體",
 
     "label.mode": "模式：",
+
     "label.mode.english": "英語",
     "menu.mode.english": "英語（English）",
     "label.mode.english-classical": "英語傳統",
     "menu.mode.english-classical": "英語傳統（English Traditional）",
     "label.mode.english-phonemic": "英語語音",
     "menu.mode.english-phonemic": "英語語音（English Phonemic）",
-    "label.mode.westron": "Westron",
-    "menu.mode.westron-orthographic": "Westron Orthographic",
+    "label.mode.westron": "西部語",
+    "menu.mode.westron-orthographic": "西部語正字法（Westron Orthographic）",
+
     "label.mode.czech": "捷克語",
     "menu.mode.czech": "捷克語（čeština）",
     "label.mode.german-orthographic": "德語",
     "menu.mode.german-orthographic": "德語（Deutsch）",
+    "label.mode.esperanto-basic": "世界語",
+    "menu.mode.esperanto-basic": "世界語（Esperanto）",
     "label.mode.spanish": "西班牙語",
     "menu.mode.spanish": "西班牙語（Español）",
     "label.mode.hungarian": "匈牙利語",
@@ -1365,6 +1427,8 @@
     "menu.mode.italian-full": "義大利語，元音非附標（Italiano Esteso）",
     "label.mode.lojban": "邏輯語",
     "menu.mode.lojban": "邏輯語（jbobau）",
+    "label.mode.dutch": "荷蘭語",
+    "menu.mode.dutch": "荷蘭語（Nederlands）",
     "label.mode.polish-classic": "波蘭語",
     "menu.mode.polish-classic": "波蘭語（polski）",
     "label.mode.brazilian-portuguese": "巴西葡萄牙語",
@@ -1373,6 +1437,7 @@
     "menu.mode.romanian": "羅馬尼亞語（Română）",
     "label.mode.slovenian-orthographic": "斯洛維尼亞語",
     "menu.mode.slovenian-orthographic": "斯洛維尼亞語（Slovenščina）",
+
     "label.mode.sindarin": "辛達林語",
     "menu.mode.sindarin": "辛達林語（Sindarin）",
     "label.mode.quenya": "昆雅語",
