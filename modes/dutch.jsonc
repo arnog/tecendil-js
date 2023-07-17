@@ -1,6 +1,6 @@
 {
   "name": "Dutch",
-  "languageCode": "nld", // Netherlands
+  "languageCode": "nl", // Netherlands
   "info": "Gebaseerd op <a href='https://syboor.eu/tengwar/'>Liesbeth Flobbe's Tengwar-mode</a>, aangepast door Freek Maes",
   "normalizeVowels": false,
   "tehtarFollow": true,
@@ -14,7 +14,7 @@
     "o": "[right-curl]",
     "u": "[dot-below]{telco}",
     //
-    //Doubled Vowels
+    // Doubled Vowels
     //
     "oe": "[left-curl]",
     "aa": "[reversed-triple-dot-above]",
