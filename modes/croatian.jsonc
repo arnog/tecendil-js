@@ -1,0 +1,88 @@
+//
+//Croatian Tengwar mode
+{
+    "name":"Croatian",
+    "languageCode":"hr", // ISO 639-2
+    "info":"Priredio u/vljukap98",
+
+    "normalizeVowels": false,
+    "tehtarFollow": false,
+    "rrule": false,
+    "preprocess":{
+        "à": "a",
+        "á": "a",
+        "ȁ": "a",
+        "â": "a",
+        "ā": "a",
+
+        "è": "e",
+        "é": "e",
+        "ẹ́": "e",
+        "ȅ": "e",
+        "ə̀": "e",
+        "ê": "e",
+        "ẹ̑": "e",
+        "ə": "e",
+        "ē": "e",
+
+        "ì": "i",
+        "í": "i",
+        "ȉ": "i",
+        "î": "i",
+        "ī": "i",
+
+        "ò": "o",
+        "ó": "o",
+        "ȍ": "o",
+        "ọ̑": "o",
+        "ô": "o",
+
+        "ù": "u",
+        "ú": "u",
+        "ȕ": "u",
+        "û": "u",
+
+        "ŕ": "r",
+
+        "ł": "l"
+    },
+    "map": {
+        "t": "{tinco}",
+        "p": "{parma}",
+        "đ": "{calma}",
+        "k": "{quesse}",
+        "d": "{ando}",
+        "b": "{umbar}",
+        "dž": "{anga}",
+        "g": "{ungwe}",
+        "f": "{formen}",
+        "š": "{harma}",
+        "v": "{ampa}",
+        "ž": "{anca}",
+        "n": "{nuumen}",
+        "m": "{malta}",
+        "r": "{roomen}",
+        "l": "{lambe}",
+        "s": "{silme}",
+        "z": "{esse}",
+        "h": "{hyarmen}",
+        "j": "{yanta}",
+        "c": "{tinco}[right-hook-below]",
+        "č": "{calma}",
+        "dz": "{ando}[right-hook-below]",
+
+        "ai": "[triple-dot-above]{anna}",
+        "au": "[triple-dot-above]{vala}",
+        "ei": "[acute]{anna}",
+        "oi": "[right-curl]{anna}",
+        "ui": "[left-curl]{anna}",
+        "aw": "[triple-dot-above]{vala}",
+        "iu": "[dot-above]{vala}",
+        "eu": "[acute]{vala}",
+        "ou": "[right-curl]{vala}",
+
+        "nj$":"{nuumen}[double-dot-below]",
+
+        "lj$":"{lambe}[double-dot-below]"
+    }
+}
