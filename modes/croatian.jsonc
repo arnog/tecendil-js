@@ -14,6 +14,7 @@
         "ȁ": "a",
         "â": "a",
         "ā": "a",
+        "ȃ": "a",
 
         "è": "e",
         "é": "e",
@@ -49,16 +50,12 @@
     "map": {
         "t": "{tinco}",
         "p": "{parma}",
-        "đ": "{calma}",
         "k": "{quesse}",
         "d": "{ando}",
         "b": "{umbar}",
-        "dž": "{anga}",
         "g": "{ungwe}",
         "f": "{formen}",
-        "š": "{harma}",
         "v": "{ampa}",
-        "ž": "{anca}",
         "n": "{nuumen}",
         "m": "{malta}",
         "r": "{roomen}",
@@ -68,9 +65,8 @@
         "h": "{hyarmen}",
         "j": "{yanta}",
         "c": "{tinco}[right-hook-below]",
-        "č": "{calma}",
-        "dz": "{ando}[right-hook-below]",
 
+        //hirnamae diphthongs
         "ai": "[triple-dot-above]{anna}",
         "au": "[triple-dot-above]{vala}",
         "ei": "[acute]{anna}",
@@ -81,8 +77,18 @@
         "eu": "[acute]{vala}",
         "ou": "[right-curl]{vala}",
 
-        "nj$":"{nuumen}[double-dot-below]",
+        //letter 'lj' and 'nj'
+        "nj":"{nuumen}[double-dot-below]",
+        "lj":"{lambe}[double-dot-below]",
 
-        "lj$":"{lambe}[double-dot-below]"
+        //diacritics
+        "đ": "{anga}",
+        "č": "{calma}",
+        "ć": "{calma}[left-hook-below]",
+        "ž": "{anca}",
+        "š": "{harma}",
+
+        //doubled consonants
+        "jj": "{yanta}[bar-below]"
     }
 }
