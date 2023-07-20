@@ -2,7 +2,7 @@
 //Croatian Tengwar mode
 {
     "name":"Croatian",
-    "languageCode":"hr", // ISO 639-2
+    "languageCode":"hr", // BCP 47 / ISO 639-1
     "info":"Priredio u/vljukap98",
 
     "normalizeVowels": false,
