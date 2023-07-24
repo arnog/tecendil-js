@@ -44,6 +44,8 @@
     "label.mode.westron": "Westron",
     "menu.mode.westron-orthographic": "Westron Orthographic",
 
+    "label.mode.croatian": "Croatian",
+    "menu.mode.croatian": "Hrvatski (Croatian)",
     "label.mode.czech": "Czech",
     "menu.mode.czech": "čeština (Czech)",
     "label.mode.german-orthographic": "German",
