@@ -1,0 +1,95 @@
+// -----------------------------------------------------------------------------
+//
+// ESPERANTO MODE as described by Eric S. Raymond with changes made by Andrew Cockroft
+// Based on https://omniglot.com/conscripts/tengwareo.htm and http://www.catb.org/~esr/tengwar/esperanto-tengwar.html
+//
+// -----------------------------------------------------------------------------
+
+{
+  "name": "esperanto-basic",
+  "languageCode": "eo",
+  "info": "Adaptis Adam „ThelmOS” Jendruś, bazinte sur laboro de Andrew Cockroft kaj Eric S. Raymond",
+
+  "normalizeVowels": false,
+  "tehtarFollow": true,
+  "rrule": true,
+
+  "preprocess": {
+    "cx": "ĉ",
+    "gx": "ĝ",
+    "hx": "ĥ",
+    "jx": "ĵ",
+    "sx": "ŝ",
+    "ux": "ŭ"
+  },
+
+  "map": {
+    "b": "{umbar}",
+    "c": "{thuule}",
+    "d": "{ando}",
+    "f": "{formen}",
+    "g": "{ungwe}",
+    "h": "{hyarmen}",
+    "k": "{quesse}",
+    "j": "{anna}",
+    "l": "{lambe}",
+    "m": "{malta}",
+    "n": "{nuumen}",
+    "p": "{parma}",
+    "r": "{roomen}",
+    "s": "{silme}",
+    "t": "{tinco}",
+    "v": "{ampa}",
+    "z": "{esse}",
+
+    "ĉ": "{calma}",
+    "ĝ": "{anga}",
+    "ĥ": "{hwesta}",
+    "ĵ": "{anca}",
+    "ŭ": "{vala}",
+    "ŝ": "{harma}",
+
+    "bb": "[bar-below]{umbar}",
+    "cc": "[bar-below]{thuule}",
+    "ĉĉ": "[bar-below]{calma}",
+    "dd": "[bar-below]{ando}",
+    "ff": "[bar-below]{formen}",
+    "gg": "[bar-below]{ungwe}",
+    "ĝĝ": "[bar-below]{anga}",
+    "hh": "[bar-below]{hyarmen}",
+    "ĥĥ": "[bar-below]{hwesta}",
+    "kk": "[bar-below]{quesse}",
+    "jj": "[bar-below]{anna}",
+    "ĵĵ": "[bar-below]{anca}",
+    "ll": "[bar-inside]{lambe}",
+    "mm": "[bar-below]{malta}",
+    "nn": "[bar-below]{nuumen}",
+    "pp": "[bar-below]{parma}",
+    "rr": "[bar-below]{oore}",
+    "ŝŝ": "[bar-below]{harma}",
+    "tt": "[bar-below]{tinco}",
+    "vv": "[bar-below]{ampa}",
+
+    "ee": "[acute]{telco}[acute]{telco}",
+    "ii": "[dot-above]{telco}[dot-above]{telco}",
+    "oo": "[right-curl]{telco}[right-curl]{telco}",
+    "uu": "[left-curl]{telco}[left-curl]{telco}",
+
+    "as": "[triple-dot-above]{silme-nuquerna}",
+    "es": "[acute]{silme-nuquerna}",
+    "is": "[dot-above]{silme-nuquerna}",
+    "os": "[right-curl]{silme-nuquerna}",
+    "us": "[left-curl]{silme-nuquerna}",
+
+    "az": "[triple-dot-above]{esse-nuquerna}",
+    "ez": "[acute]{esse-nuquerna}",
+    "iz": "[dot-above]{esse-nuquerna}",
+    "oz": "[right-curl]{esse-nuquerna}",
+    "uz": "[left-curl]{esse-nuquerna}",
+
+    "aŭ": "[triple-dot-above]{uure}",
+    "eŭ": "[acute]{uure}",
+    "oj": "[left-curl]{anna}",
+    "oŭ": "[right-curl]{anna}"
+  }
+}

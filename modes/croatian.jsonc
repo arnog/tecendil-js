@@ -1,0 +1,94 @@
+//
+//Croatian Tengwar mode
+{
+    "name":"Croatian",
+    "languageCode":"hr", // BCP 47 / ISO 639-1
+    "info":"Priredio u/vljukap98",
+
+    "normalizeVowels": false,
+    "tehtarFollow": false,
+    "rrule": false,
+    "preprocess":{
+        "à": "a",
+        "á": "a",
+        "ȁ": "a",
+        "â": "a",
+        "ā": "a",
+        "ȃ": "a",
+
+        "è": "e",
+        "é": "e",
+        "ẹ́": "e",
+        "ȅ": "e",
+        "ə̀": "e",
+        "ê": "e",
+        "ẹ̑": "e",
+        "ə": "e",
+        "ē": "e",
+
+        "ì": "i",
+        "í": "i",
+        "ȉ": "i",
+        "î": "i",
+        "ī": "i",
+
+        "ò": "o",
+        "ó": "o",
+        "ȍ": "o",
+        "ọ̑": "o",
+        "ô": "o",
+
+        "ù": "u",
+        "ú": "u",
+        "ȕ": "u",
+        "û": "u",
+
+        "ŕ": "r",
+
+        "ł": "l"
+    },
+    "map": {
+        "t": "{tinco}",
+        "p": "{parma}",
+        "k": "{quesse}",
+        "d": "{ando}",
+        "b": "{umbar}",
+        "g": "{ungwe}",
+        "f": "{formen}",
+        "v": "{ampa}",
+        "n": "{nuumen}",
+        "m": "{malta}",
+        "r": "{roomen}",
+        "l": "{lambe}",
+        "s": "{silme}",
+        "z": "{esse}",
+        "h": "{hyarmen}",
+        "j": "{yanta}",
+        "c": "{tinco}[right-hook-below]",
+
+        //hirnamae diphthongs
+        "ai": "[triple-dot-above]{anna}",
+        "au": "[triple-dot-above]{vala}",
+        "ei": "[acute]{anna}",
+        "oi": "[right-curl]{anna}",
+        "ui": "[left-curl]{anna}",
+        "aw": "[triple-dot-above]{vala}",
+        "iu": "[dot-above]{vala}",
+        "eu": "[acute]{vala}",
+        "ou": "[right-curl]{vala}",
+
+        //letter 'lj' and 'nj'
+        "nj":"{nuumen}[double-dot-below]",
+        "lj":"{lambe}[double-dot-below]",
+
+        //diacritics
+        "đ": "{anga}",
+        "č": "{calma}",
+        "ć": "{calma}[left-hook-below]",
+        "ž": "{anca}",
+        "š": "{harma}",
+
+        //doubled consonants
+        "jj": "{yanta}[bar-below]"
+    }
+}
