@@ -1,0 +1,69 @@
+{
+  "name": "Dutch",
+  "languageCode": "nl", // Netherlands
+  "info": "Gebaseerd op <a href='https://syboor.eu/tengwar/'>Liesbeth Flobbe's Tengwar-mode</a>, aangepast door Freek Maes",
+  "normalizeVowels": false,
+  "tehtarFollow": true,
+  "map": {
+    //
+    // Vowels
+    //
+    "a": "[triple-dot-above]",
+    "e": "[acute]",
+    "i": "[dot-above]",
+    "o": "[right-curl]",
+    "u": "[dot-below]{telco}",
+    //
+    // Doubled Vowels
+    //
+    "oe": "[left-curl]",
+    "aa": "[reversed-triple-dot-above]",
+    "ee": "[double-acute]",
+    "ie": "[double-dot-above]",
+    "oo": "[double-right-curl]",
+    "uu": "[double-left-curl]",
+    "eu": "[dot-below]{aara}",
+    //
+    // Diphtongs
+    //
+    "aai": "[triple-dot-above]{yanta}",
+    "ei": "[acute]{yanta}",
+    "ij": "[acute]{yanta}",
+    "oi": "[right-curl]{yanta}",
+    "ooi": "[double-right-curl]{yanta}",
+    "oei": "[left-curl]{yanta}",
+    "ui": "[dot-below]{yanta}",
+    "au": "[triple-dot-above]{uure}",
+    "auw": "[triple-dot-above]{uure}",
+    "ou": "[triple-dot-above]{uure}",
+    "ouw": "[triple-dot-above]{uure}",
+    "ieuw": "[double-dot-above]{uure}",
+    "uw": "[double-left-curl]{uure}",
+    "eeuw": "[double-acute]{uure}",
+    //
+    // Consonants
+    //
+    "t": "{tinco}",
+    "p": "{parma}",
+    "tj": "{calma}",
+    "k": "{quesse}",
+    "d": "{ando}",
+    "b": "{umbar}",
+    "dj": "{anga}",
+    "s": "{thuule}",
+    "f": "{formen}",
+    "sj": "{harma}",
+    "g": "{hwesta}",
+    "z": "{anto}",
+    "v": "{ampa}",
+    "zj": "{anca}",
+    "n": "{nuumen}",
+    "m": "{malta}",
+    "ng": "{nwalme}",
+    "r": "{oore}",
+    "w": "{vala}",
+    "j": "{anna}",
+    "l": "{lambe}",
+    "h": "{hyarmen}"
+  }
+}
