@@ -87,9 +87,11 @@
     "oz": "[right-curl]{esse-nuquerna}",
     "uz": "[left-curl]{esse-nuquerna}",
 
-    "aŭ": "[triple-dot-above]{uure}",
-    "eŭ": "[acute]{uure}",
-    "oj": "[left-curl]{anna}",
-    "oŭ": "[right-curl]{anna}"
+    "aj": "[triple-dot-above]{anna}",
+    "aŭ": "[triple-dot-above]{vala}",
+    "ej": "[acute]{anna}",
+    "eŭ": "[acute]{vala}",
+    "oj": "[right-curl]{anna}",
+    "uj": "[left-curl]{anna}"
   }
 }
