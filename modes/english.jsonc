@@ -457,7 +457,7 @@
     // Final-s
     // Following s can be indicated by a downward hook
     // "“especially in the combinations ts, ps, ks (x), that were favoured in Quenya”
-    // http://at.mansbjorkman.net/teng_quenya.htm
+    // https://at.boktypografen.se/teng_quenya.htm
     "ays$": "[triple-dot-above]{anna}{hook}",
     "bs$": "{umbar}{hook-looped-left}",
     "des$": "[dot-below]{ando}{hook}",
@@ -471,6 +471,7 @@
     "les$": "[dot-inside]{lambe}{hook}",
     "ms$": "{malta}{hook}",
     "mes$": "[dot-below]{malta}{hook-looped-left}",
+    "nes$": "[dot-below]{nuumen}{hook-looped-left}",
     "nds$": "[tilde-above]{ando}{hook}",
     "ns$": "{nuumen}{hook}",
     "ps$": "{parma}{hook}",
