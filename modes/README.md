@@ -50,8 +50,8 @@ So the pattern "^t" would only apply if a word begins with "t" and a pattern of
 "s$" would only apply if a word ends with "s".
 
 The right hand side of a rule indicate which tengwa (in `{...}`) and which
-diacritics (in `[...]`) to replace the target with.
-Read more about [Tengwar Literals](https://www.tecendil.com/inside-tecendil/)
+diacritics (in `[...]`) to replace the target with. Read more about
+[Tengwar Literals](https://www.tecendil.com/inside-tecendil/)
 
 The Tecendil engine will apply these rules to the letters in a word to derive
 the transcription.
@@ -69,8 +69,8 @@ table to specify how to handle them.
 For example, in German you could indicate that the `ß` letter maps to `ss` or
 that `ö` maps to `oe`.
 
-This can be useful to normalize some notations. Each key is a string that will be
-interpreted as a regular expression, and the value is the value it will be
+This can be useful to normalize some notations. Each key is a string that will
+be interpreted as a regular expression, and the value is the value it will be
 replaced with. For example:
 
 ```
@@ -154,8 +154,9 @@ this encoding, to represent "hello" you would need to type <kbd>9j$¸`N</kbd> on
 your keyboard.
 
 A more recent Unicode encoding [2] has also been proposed, but it has not been
-formalized yet and there are several variants of it in use. Most of the characters
-in this encoding cannot readily be typed on keyboards, i.e. <kbd></kbd>.
+formalized yet and there are several variants of it in use. Most of the
+characters in this encoding cannot readily be typed on keyboards, i.e.
+<kbd></kbd>.
 
 Therefore, it is generally quite tricky to get Tengwar to display correctly in
 other software.

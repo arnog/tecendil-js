@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+//
+// HEBREW MODE
+//
+// -----------------------------------------------------------------------------
+
+// Based on the works of Andre Ity Ben Arie, and Chris McKay's brilliant research and documentation of the script //
+
+{
+  "name": "Hebrew",
+  "languageCode": "he",
+
+  "wordPattern": "\u0590-\u05FF", // "\p{Script=Hebrew}"
+  "dir": "rtl",
+
+  ////"tehtarFollow": true,
+  "rrule": true, // Implement the R-rule
+
+  "map": {
+    "א": "{osse}",
+    "ב": "{of-shorthand}",
+    "ג": "{ungwe}",
+    "ד": "{ando}",
+    "ה": "{hyarmen}",
+    "ו": "{ampa}",
+    "ז": "{esse-nuquerna}",
+    "ח": "{hwesta}",
+    "ט": "{tinco}",
+    "י": "{yanta}",
+    "כ": "{hwesta}[bar-above]",
+    "ך": "{hwesta}[bar-above][dot-below]",
+    "ל": "{lambe}",
+    "מ": "{malta}",
+    "ם": "{malta}[dot-below]",
+    "נ": "{nuumen}",
+    "ן": "{nuumen}[dot-below]",
+    "ס": "{silme-nuquerna}",
+    "ע": "{osse}",
+    "פ": "{extended-parma}",
+    "ף": "{extended-parma}[dot-below]",
+    "צ": "{parma}{hook}",
+    "ץ": "{parma}{hook}[dot-below]",
+    "ק": "{quesse}",
+    "ר": "{roomen}",
+    "ש": "{silme-nuquerna}[double-dot-above]",
+    "ת": "{tinco}[double-dot-above]"
+  }
+}
+//sofiot #has a different form in the original script when placed in a final position in a word
+
+//"ך" "ם" "ן" "ף" "ץ"
+//"ר" //special sofit

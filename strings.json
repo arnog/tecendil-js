@@ -35,6 +35,8 @@
 
     "label.mode": "Mode: ",
 
+    "label.mode.arabic": "Arabic",
+    "menu.mode.arabic": "اللغة العربية (Arabic)",
     "label.mode.english": "English",
     "menu.mode.english": "English",
     "label.mode.english-classical": "English Traditional",
@@ -54,6 +56,8 @@
     "menu.mode.esperanto": "Esperanto",
     "label.mode.spanish": "Español",
     "menu.mode.spanish": "Español (Spanish)",
+    "label.mode.hebrew": "Hebrew",
+    "menu.mode.hebrew": "עִברִית (Hebrew)",
     "label.mode.hungarian": "Hungarian",
     "menu.mode.hungarian": "magyar (Hungarian)",
     "label.mode.italian": "Italian",
