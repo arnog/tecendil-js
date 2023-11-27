@@ -124,7 +124,7 @@
     "mf": "[tilde-above]{formen}",
     "mv": "[tilde-above]{ampa}",
     
-    "y": "[breve]",
+    "y": "[breve]{telco}",
 	
 	"^rh": "{arda}"
   },
