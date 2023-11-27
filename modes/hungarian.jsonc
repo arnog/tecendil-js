@@ -32,8 +32,8 @@
     "i": "[dot-above]",
     "o": "[right-curl]",
     "u": "[left-curl]",
-    "ö": "[double-dot-above]",
-    "ü": "[breve]",
+    "ö": "[double-acute]",
+    "ü": "[double-dot-above]",
 
     // long vowels
     "á": "[triple-dot-above]{aara}",
@@ -41,8 +41,8 @@
     "í": "[dot-above]{aara}",
     "ó": "[right-curl]{aara}",
     "ú": "[left-curl]{aara}",
-    "ő": "[double-dot-above]{aara}",
-    "ű": "[breve]{aara}",
+    "ő": "[double-acute]{aara}",
+    "ű": "[double-dot-above]{aara}",
 	
 	// vowel clusters
 	"ee": "[acute]{telco}[acute]",
@@ -53,8 +53,8 @@
 	"oó": "[right-curl]{telco}[right-curl]{aara}",
 	"uu": "[left-curl]{telco}[left-curl]",
 	"uú": "[left-curl]{telco}[left-curl]{aara}",
-	"üü": "[breve]{telco}[breve]",
-	"üű": "[breve]{telco}[breve]{aara}",
+	"üü": "[double-dot-above]{telco}[double-dot-above]",
+	"üű": "[double-dot-above]{telco}[double-dot-above]{aara}",
 
     //
     // CONSONANTS
@@ -124,7 +124,7 @@
     "mf": "[tilde-above]{formen}",
     "mv": "[tilde-above]{ampa}",
     
-    "y": "[dot-above]",
+    "y": "[breve]",
 	
 	"^rh": "{arda}"
   },
