@@ -289,5 +289,7 @@ accent - lambe - malta + right curl.
     "ng": "{ungwe}[tilde-above]"
   },
 
-  "words": {}
+  "words": {
+    "jeans": "{hwesta}[i]ns"
+  }
 }
