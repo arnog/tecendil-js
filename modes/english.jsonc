@@ -432,6 +432,7 @@
     "w": "{vala}",
     "x": "[right-curl-below]{quesse}", // for /ks/, Use [right-curl-below]{ungwe} for /gz/ (PE20-58)
     "z": "{esse}", // for english (= /zh/, e.g. azure)
+    "z*": "{alt-esse}",
 
     // In English, /c/ is pronounced [s] before e, i, y
     "mce": "{malta}{silme-nuquerna}[acute]", // necessary to override "mc'
