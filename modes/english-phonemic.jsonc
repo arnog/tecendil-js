@@ -105,7 +105,7 @@ fire sour door
 
 {
   // Short-name
-  "name": "phonemic",
+  "name": "english-phonemic",
   "languageCode": "en",
   "normalizeVowels": false,
 
@@ -257,6 +257,7 @@ fire sour door
   },
 
   "words": {
+    "of the": "{of-the-shorthand}",
     "ofthe": "{of-the-shorthand}",
     "of": "{of-shorthand}",
     "the": "{the-shorthand}",
