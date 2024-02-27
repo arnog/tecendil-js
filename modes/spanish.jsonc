@@ -8,24 +8,6 @@
 
 // Check: [tbd]
 
-/*
-Endorion Dedication - DTS 62
-
-Elen síla lúmenn" omentielmo
-
-short carrier + acute accent - lambe + acute accent - númen
-
-silme + double dots - lambe + circumflex accent
-
-lambe + double left curl - malta + acute accent - númen + under bar
-
-short carrier + right curl - malta + acute accent - anto + single over-dot - short carrier + acute
-accent - lambe - malta + right curl.
-
-
-
-*/
-
 {
   // Short-name
   "name": "spanish",
@@ -71,15 +53,18 @@ accent - lambe - malta + right curl.
 
     // Strengthen "r" (-> "rr") at beginning or after consonant
     "/^r/": "rr",
-    "/([^AaEeIiOoUuÁáÉéÍíÓóÚúRr])r/": "$1rr"
+    "/([^AaEeIiOoUuÁáÉéÍíÓóÚúRr])r/": "$1rr",
+
+    // "y" in consonantic position and falling dipthongs
+    "/y([AaEeIiOoUuÁáÉéÍíÓóÚú])/": "ŷ$1",
+    "/([AaEeIiOoÁáÉéÍíÓó])y$/": "$1i",
+    "/([AaEeIiOoÁáÉéÍíÓó])y([^AaEeIiOoUuÁáÉéÍíÓóÚúYy])/": "$1i$2"
   },
 
   "map": {
     // ----------------------------------------------------------------------------
     //
     // VOWELS
-    // y (as a single word)
-    "^y$": "{telco}[breve]",
 
     // Accented vowels
     "á": "{aara}[triple-dot-above]{}",
@@ -87,6 +72,7 @@ accent - lambe - malta + right curl.
     "í": "{aara}[dot-above]{}",
     "ó": "[double-right-curl]{}",
     "ú": "[double-left-curl]{}",
+    "ý": "{aara}[breve]{}",
 
     // ----------------------------------------------------------------------------
     // DIPHTHONGS
@@ -95,24 +81,22 @@ accent - lambe - malta + right curl.
 
     // Raising diphthongs
     "ai": "{yanta}[triple-dot-above]{}",
-    "ay$": "{yanta}[triple-dot-above]{}",
     "au": "{uure}[triple-dot-above]{}",
     "ái": "{aara}[triple-dot-above]{yanta}{}",
     "áu": "{aara}[triple-dot-above]{uure}{}",
 
     "ei": "{yanta}[acute]{}",
-    "ey$": "{yanta}[acute]{}",
     "eu": "{uure}[acute]{}",
     "éi": "{yanta}[double-acute]{}",
     "éu": "{uure}[double-acute]{}",
 
     "oi": "{yanta}[right-curl]{}",
-    "oy$": "{yanta}[right-curl]{}",
     "ou": "{uure}[right-curl]{}",
     "ói": "{yanta}[double-acute]{}",
     "óu": "{uure}[double-acute]{}",
 
-    "uy$": "{yanta}[left-curl]{}", // Marks falling diphthong - vs. "ui$""
+    "uy": "{yanta}[left-curl]{}", // Marks falling diphthong - vs. "ui$"
+    "úy": "{yanta}[double-left-curl]{}",
 
     // Falling diphthongs
     "ia": "[double-dot-below][triple-dot-above]{}",
@@ -127,51 +111,46 @@ accent - lambe - malta + right curl.
 
     // The tehtar of u-dipthongs may overlap
     // Recommend using tengwar Telcontar for this purpose
-    "ua": "[triple-dot-above][over-twist]{}",
-    "ue": "[acute][over-twist]{}",
-    "uo": "[right-curl][over-twist]{}",
-    "ui": "[dot-above][over-twist]{}",
+    "ua": "[over-twist][triple-dot-above]{}",
+    "ue": "[over-twist][acute]{}",
+    "uo": "[over-twist][right-curl]{}",
+    "ui": "[over-twist][dot-above]{}",
 
     "uá": "[over-twist]{aara}[triple-dot-above]{}",
-    "ué": "[double-acute][over-twist]{}",
-    "uó": "[double-acute][over-twist]{}",
+    "ué": "[over-twist][double-acute]{}",
+    "uó": "[over-twist][right-curl]{}",
     "uí": "[over-twist]{aara}[dot-above]{}",
 
     // TRIPHTHONGS
     "iai": "[double-dot-below]{yanta}[triple-dot-above]{}",
-    "iay$": "[double-dot-below]{yanta}[triple-dot-above]{}",
     "iau": "[double-dot-below]{uure}[triple-dot-above]{}",
     "iái": "[double-dot-below]{aara}[triple-dot-above]{yanta}{}",
     "iáu": "[double-dot-below]{aara}[triple-dot-above]{uure}{}",
 
     "iei": "[double-dot-below]{yanta}[acute]{}",
-    "iey$": "[double-dot-below]{yanta}[acute]{}",
     "ieu": "[double-dot-below]{uure}[acute]{}",
     "iéi": "[double-dot-below]{yanta}[double-acute]{}",
     "iéu": "[double-dot-below]{uure}[double-acute]{}",
 
     "ioi": "[double-dot-below]{yanta}[right-curl]{}",
-    "ioy$": "[double-dot-below]{yanta}[right-curl]{}",
     "iou": "[double-dot-below]{uure}[right-curl]{}",
     "iói": "[double-dot-below]{yanta}[double-acute]{}",
     "ióu": "[double-dot-below]{uure}[double-acute]{}",
 
-    "iuy$": "[double-dot-below]{yanta}[left-curl]{}",
+    "iuy": "[double-dot-below]{yanta}[left-curl]{}",
+    "iúy": "[double-dot-below]{yanta}[double-left-curl]{}",
 
     "uai": "[over-twist]{yanta}[triple-dot-above]{}",
-    "uay$": "[over-twist]{yanta}[triple-dot-above]{}",
     "uau": "[over-twist]{uure}[triple-dot-above]{}",
     "uái": "[over-twist]{aara}[triple-dot-above]{yanta}{}",
     "uáu": "[over-twist]{aara}[triple-dot-above]{uure}{}",
 
     "uei": "[over-twist]{yanta}[acute]{}",
-    "uey$": "[over-twist]{yanta}[acute]{}",
     "ueu": "[over-twist]{uure}[acute]{}",
     "uéi": "[over-twist]{yanta}[double-acute]{}",
     "uéu": "[over-twist]{uure}[double-acute]{}",
 
     "uoi": "[over-twist]{yanta}[right-curl]{}",
-    "uoy$": "[over-twist]{yanta}[right-curl]{}",
     "uou": "[over-twist]{uure}[right-curl]{}",
     "uói": "[over-twist]{yanta}[double-acute]{}",
     "uóu": "[over-twist]{uure}[double-acute]{}",
@@ -186,13 +165,13 @@ accent - lambe - malta + right curl.
     "aié": "[triple-dot-above]{telco}[double-dot-below][double-acute]{}",
     "aió": "[triple-dot-above]{telco}[double-dot-below][double-acute]{}",
     "aiú": "[triple-dot-above]{telco}[double-dot-below][double-left-curl]{}",
-    "aua": "[triple-dot-above]{telco}[triple-dot-above][over-twist]{}",
-    "aue": "[triple-dot-above]{telco}[acute][over-twist]{}",
-    "auo": "[triple-dot-above]{telco}[right-curl][over-twist]{}",
-    "aui": "[triple-dot-above]{telco}[dot-above][over-twist]{}",
+    "aua": "[triple-dot-above]{telco}[over-twist][triple-dot-above]{}",
+    "aue": "[triple-dot-above]{telco}[over-twist][acute]{}",
+    "auo": "[triple-dot-above]{telco}[over-twist][right-curl]{}",
+    "aui": "[triple-dot-above]{telco}[over-twist][dot-above]{}",
     "auá": "[triple-dot-above]{telco}[over-twist]{aara}[triple-dot-above]{}",
-    "aué": "[triple-dot-above]{telco}[double-acute][over-twist]{}",
-    "auó": "[triple-dot-above]{telco}[double-acute][over-twist]{}",
+    "aué": "[triple-dot-above]{telco}[over-twist][double-acute]{}",
+    "auó": "[triple-dot-above]{telco}[over-twist][double-acute]{}",
     "auí": "[triple-dot-above]{telco}[over-twist]{aara}[dot-above]{}",
 
     "eia": "[acute]{telco}[double-dot-below][triple-dot-above]{}",
@@ -203,13 +182,13 @@ accent - lambe - malta + right curl.
     "eié": "[acute]{telco}[double-dot-below][double-acute]{}",
     "eió": "[acute]{telco}[double-dot-below][double-acute]{}",
     "eiú": "[acute]{telco}[double-dot-below][double-left-curl]{}",
-    "eua": "[acute]{telco}[triple-dot-above][over-twist]{}",
-    "eue": "[acute]{telco}[acute][over-twist]{}",
-    "euo": "[acute]{telco}[right-curl][over-twist]{}",
-    "eui": "[acute]{telco}[dot-above][over-twist]{}",
+    "eua": "[acute]{telco}[over-twist][triple-dot-above]{}",
+    "eue": "[acute]{telco}[over-twist][acute]{}",
+    "euo": "[acute]{telco}[over-twist][right-curl]{}",
+    "eui": "[acute]{telco}[over-twist][dot-above]{}",
     "euá": "[acute]{telco}[over-twist]{aara}[triple-dot-above]{}",
-    "eué": "[acute]{telco}[double-acute][over-twist]{}",
-    "euó": "[acute]{telco}[double-acute][over-twist]{}",
+    "eué": "[acute]{telco}[over-twist][double-acute]{}",
+    "euó": "[acute]{telco}[over-twist][double-acute]{}",
     "euí": "[acute]{telco}[over-twist]{aara}[dot-above]{}",
 
     "oia": "[right-curl]{telco}[double-dot-below][triple-dot-above]{}",
@@ -220,22 +199,22 @@ accent - lambe - malta + right curl.
     "oié": "[right-curl]{telco}[double-dot-below][double-acute]{}",
     "oió": "[right-curl]{telco}[double-dot-below][double-acute]{}",
     "oiú": "[right-curl]{telco}[double-dot-below][double-left-curl]{}",
-    "oua": "[right-curl]{telco}[triple-dot-above][over-twist]{}",
-    "oue": "[right-curl]{telco}[acute][over-twist]{}",
-    "ouo": "[right-curl]{telco}[right-curl][over-twist]{}",
-    "oui": "[right-curl]{telco}[dot-above][over-twist]{}",
+    "oua": "[right-curl]{telco}[over-twist][triple-dot-above]{}",
+    "oue": "[right-curl]{telco}[over-twist][acute]{}",
+    "ouo": "[right-curl]{telco}[over-twist][right-curl]{}",
+    "oui": "[right-curl]{telco}[over-twist][dot-above]{}",
     "ouá": "[right-curl]{telco}[over-twist]{aara}[triple-dot-above]{}",
-    "oué": "[right-curl]{telco}[double-acute][over-twist]{}",
-    "ouó": "[right-curl]{telco}[double-acute][over-twist]{}",
+    "oué": "[right-curl]{telco}[over-twist][double-acute]{}",
+    "ouó": "[right-curl]{telco}[over-twist][double-acute]{}",
     "ouí": "[right-curl]{telco}[over-twist]{aara}[dot-above]{}",
 
-    "iua": "[dot-above]{telco}[triple-dot-above][over-twist]{}",
-    "iue": "[dot-above]{telco}[acute][over-twist]{}",
-    "iuo": "[dot-above]{telco}[right-curl][over-twist]{}",
-    "iui": "[dot-above]{telco}[dot-above][over-twist]{}",
+    "iua": "[dot-above]{telco}[over-twist][triple-dot-above]{}",
+    "iue": "[dot-above]{telco}[over-twist][acute]{}",
+    "iuo": "[dot-above]{telco}[over-twist][right-curl]{}",
+    "iui": "[dot-above]{telco}[over-twist][dot-above]{}",
     "iuá": "[dot-above]{telco}[over-twist]{aara}[triple-dot-above]{}",
-    "iué": "[dot-above]{telco}[double-acute][over-twist]{}",
-    "iuó": "[dot-above]{telco}[double-acute][over-twist]{}",
+    "iué": "[dot-above]{telco}[over-twist][double-acute]{}",
+    "iuó": "[dot-above]{telco}[over-twist][double-acute]{}",
     "iuí": "[dot-above]{telco}[over-twist]{aara}[dot-above]{}",
 
     "uia": "[dot-above]{telco}[double-dot-below][triple-dot-above]{}",
@@ -275,7 +254,7 @@ accent - lambe - malta + right curl.
     "v": "{ampa}",
     "w": "{vala}",
     "x": "{quesse}[right-curl-below]", // As per http://lambenor.free.fr/tengwar/espanol_2006.html
-    "y": "{anca}",
+    "ŷ": "{anca}",
     "z": "{thuule}",
 
     // Combinations with "m/n" -- nasalized consonants
@@ -290,6 +269,7 @@ accent - lambe - malta + right curl.
   },
 
   "words": {
+    "y": "{telco}[breve]",
     "jeans": "{hwesta}[i]ns"
   }
 }
