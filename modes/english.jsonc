@@ -55,7 +55,7 @@
   "map": {
     // ----- soft-C -> silme-nuquerna, S -> silme, hard-C -> quesse
     // 	    egrep "ca" ~/cmu.txt | grep -v "NG E" | grep -v "JH" | grep -v "ZH" | awk "{printf $1 ", "}'
-    // 	    egrep "ca" ~/cmu.txt | grep -v "K A" | grep -v "K E" | grep -v "K " | awk "{printf $1 ", "}'
+    // 	    egrep "ca" ~/cmu.txt | grep -v "k A" | grep -v "k E" | grep -v "k " | awk "{printf $1 ", "}'
 
     // "ca" is K except caesar S, caesars S, facade S, facades S
     // "co" is K
@@ -358,7 +358,7 @@
     // Except `uncharacteristic`, `uncharacteristically`
 
     // "amc": "[tilde-above][triple-dot-above]{quesse}",
-    "amch": "[tilde-above][triple-dot-above]{calma}", // "Kamchatka"
+    "amch": "[tilde-above][triple-dot-above]{calma}", // "kamchatka"
     // "emc": "[tilde-above][acute]{quesse}",
     "emch": "[tilde-above][acute]{calma}",
     // "imc": "[tilde-above][dot-above]{quesse}",
@@ -492,11 +492,11 @@
 
     // "to": "{tinco}[right-curl-below]", // Christopher Tolkien: Used in the Silmarilion inscription
 
-    "alexander": "{LAMBE}[triple-dot-above]{ungwe}[acute][right-curl-below]{ando}[triple-dot-above][tilde-above]{oore}[acute]", // ale-gz-ander
+    "alexander": "{lambe}[triple-dot-above]{ungwe}[acute][right-curl-below]{ando}[triple-dot-above][tilde-above]{oore}[acute]", // ale-gz-ander
     "are": "{oore}[dot-below][triple-dot-above]",
     // "age": "{anga}[triple-dot-above][dot-below]", // a-zh   -- Christopher Tolkien-ism
     "as": "{esse-nuquerna}[triple-dot-above]",
-    "bach": "{UMBAR}{hwesta}[triple-dot-above]",
+    "bach": "{umbar}{hwesta}[triple-dot-above]",
     "be": "{umbar}{telco}[acute]", // non-silent final-e
     "because": "{umbar}{quesse}[acute]{vala}[triple-dot-above]{esse-nuquerna}[dot-below]",
     "by": "{umbar}{telco}[breve]", // b-a-i
@@ -509,7 +509,7 @@
     "exactly": "{ungwe}[acute][right-curl-below]{quesse}[triple-dot-above]{tinco}{lambe}[breve]",
     "examine": "{ungwe}[acute][right-curl-below]{malta}[triple-dot-above]{nuumen}[dot-above][dot-below]",
     "example": "{ungwe}[acute][right-curl-below]{malta}[triple-dot-above]{parma}{lambe}[dot-inside]",
-    "fernanda": "{FORMEN}{oore}[acute]{nuumen}[triple-dot-above][bar-above]{ando}{telco}[triple-dot-above]",
+    "fernanda": "{formen}{oore}[acute]{nuumen}[triple-dot-above][bar-above]{ando}{telco}[triple-dot-above]",
     "fie": "{formen}{yanta}[dot-above]", // End in "ay" sound
     "giant": "{ungwe}{telco}[dot-above]{tinco}[triple-dot-above][bar-above]", // dj-iant
     "goes": "{ungwe}{telco}[right-curl]{esse}[acute]", // "s' -> "z'
@@ -519,7 +519,7 @@
     "hers": "{hyarmen}{oore}[acute]{esse}",
     "his": "{hyarmen}{esse-nuquerna}[dot-above]",
     "is": "{alt-esse}[dot-above]",
-    "joel": "{ANGA}{telco}[right-curl]{lambe}[acute]", // like "jo-el"
+    "joel": "{anga}{telco}[right-curl]{lambe}[acute]", // like "jo-el"
     "larceny": "{lambe}{oore}[triple-dot-above]{silme-nuquerna}{nuumen}[acute]{telco}[breve]",
     "lie": "{lambe}{yanta}[dot-above]", // End in "a-y" sound
     "loch": "{lambe}{hwesta}[right-curl]",
@@ -528,12 +528,12 @@
     "ocean": "{silme}[right-curl]{telco}[acute]{nuumen}[triple-dot-above]",
     "pie": "{parma}{yanta}[dot-above]", // End in "a-y" sound
     "please": "{parma}{lambe}{telco}[dot-above]{esse-nuquerna}",
-    "reuel": "{ROOMEN}{telco}[acute]{telco}[left-curl]{lambe}[acute]", // Tolkien's middle name
+    "reuel": "{roomen}{telco}[acute]{telco}[left-curl]{lambe}[acute]", // Tolkien's middle name
     "she": "{harma}{telco}[acute]", // non-silent final-e
     "sure": "{harma}{oore}[left-curl][dot-below]",
     // "time": "{tinco}{malta}[dot-above][dot-below]",
     // "times": "{tinco}{malta}[dot-above][dot-below]{hook-looped-left}",
-    "tolkien": "{TINCO}{lambe}[right-curl]{quesse}{aara}[dot-above]{nuumen}[acute]", // JRR Tolkien wrote his name with a long-carrier in DTS-5. Christopher Tolkien used a short-carrier.
+    "tolkien": "{tinco}{lambe}[right-curl]{quesse}{aara}[dot-above]{nuumen}[acute]", // JRR Tolkien wrote his name with a long-carrier in DTS-5. Christopher Tolkien used a short-carrier.
     "tie": "{ampa}{yanta}[dot-above]", // End in "a-y" sound
     "underlie": "{ando}[left-curl][tilde-above]{oore}[acute]{lambe}{yanta}[dot-above]", // End in "a-y" sound
     "untie": "{tinco}[left-curl][tilde-above]{yanta}[dot-above]", // End in "ay" sound
@@ -541,7 +541,7 @@
     "war": "{vala}{oore}[right-curl]", // wor, Tolkien spelling
     "we": "{vala}{telco}[acute]", // non-silent, long, final-e
     "xanadu": "{ungwe}[right-curl-below]{nuumen}[triple-dot-above]{ando}[triple-dot-above]{telco}[left-curl]",
-    "zoe": "{ESSE-NUQUERNA}{telco}[right-curl]{telco}[acute]",
+    "zoe": "{esse-nuquerna}{telco}[right-curl]{telco}[acute]",
 
     "ancient": "{calma}[triple-dot-above][tilde-above]{telco}[dot-above]{tinco}[acute][tilde-above]", // "ci' -> CH I
     "caesar": "{alt-silme}{aara}[dot-above]{alt-esse}{roomen}[dot-below]",
@@ -672,7 +672,7 @@
     "clothing": "{quesse}{lambe}{anto}[right-curl]{nwalme}[dot-above]",
     "either": "{anna}[acute]{anto}{oore}[acute]",
     "epitome": "epitom'í", // user request (GEONE)
-    "esther": "Es{extended-tinco}er", // "th" pronounced /t/ uses extended tinco
+    "esther": "es{extended-tinco}er", // "th" pronounced /t/ uses extended tinco
     "father": "{formen}{anto}[triple-dot-above]{oore}[acute]",
     "fathers": "{formen}{anto}[triple-dot-above]{oore}[acute]{esse-nuquerna}",
     "fatherhood": "{formen}{anto}[triple-dot-above]{oore}[acute]{hyarmen}{telco}[right-curl]{ando}[right-curl]",
@@ -699,8 +699,8 @@
     "loathe": "{lambe}{telco}[right-curl]{anto}[dot-below][triple-dot-above]",
     "melancholy": "{malta}{lambe}[acute]{extended-quesse}[triple-dot-above][tilde-above]{lambe}[right-curl]{telco}[breve]",
     "melancholic": "{malta}{lambe}[acute]{extended-quesse}[triple-dot-above][tilde-above]{lambe}[right-curl]{quesse}[dot-above]",
-    "michael": "{MALTA}{extended-quesse}[dot-above]{telco}[triple-dot-above]{lambe}[acute]",
-    "mikael": "{MALTA}{hwesta}[dot-above]{telco}[triple-dot-above]{lambe}[acute]",
+    "michael": "{malta}{extended-quesse}[dot-above]{telco}[triple-dot-above]{lambe}[acute]",
+    "mikael": "{malta}{hwesta}[dot-above]{telco}[triple-dot-above]{lambe}[acute]",
     "mocha": "mokxa",
     "monarch": "monarkx",
     "monarchist": "monarkxist",
@@ -750,10 +750,10 @@
     "sourdough": "sourdou{extended-ungwe}", // `ough$` exception
     "southern": "{silme}{vala}[right-curl]{anto}{oore}[acute]{nuumen}",
     "stomach": "stoma{extended-quesse}", // <ch> pronounced as /k/
-    "tecendil": "{TINCO}{quesse}[acute]{ando}[acute][bar-above]{lambe}[dot-above]",
+    "tecendil": "{tinco}{quesse}[acute]{ando}[acute][bar-above]{lambe}[dot-above]",
     "teethe": "{tinco}{telco}[double-acute]{anto}[dot-below]",
     "tether": "{tinco}{anto}[acute]{oore}[acute]",
-    "thames": "{EXTENDED-TINCO}ames", // "th" pronounced /t/ uses extended tinco
+    "thames": "{extended-tinco}ames", // "th" pronounced /t/ uses extended tinco
     "things": "{thuule}{nwalme}[dot-above]{hook}",
     "this": "{anto}{alt-silme}[dot-above]",
     "than": "{anto}{nuumen}[triple-dot-above]",
@@ -774,7 +774,6 @@
     "those": "{anto}{esse-nuquerna}[right-curl][dot-below]",
     "thou": "{anto}{vala}[right-curl]",
     "though": "{anto}{vala}[right-curl]{extended-ungwe}",
-    "Thomas": "{EXTENDED-TINCO}om{alt-silme}[triple-dot-above]", // "th" pronounced /t/ uses extended tinco
     "thomas": "{extended-tinco}om{alt-silme}[triple-dot-above]", // "th" pronounced /t/ uses extended tinco
     "through": "throu{extended-ungwe}", // `ough$` exception
     "thus": "{anto}{alt-silme}[left-curl]",
@@ -795,35 +794,35 @@
     "worthy": "{vala}{oore}[right-curl]{anto}{telco}[breve]",
 
     // Sindarin words with [ce] that are pronounced /k/ rather than /s/
-    "celebdil": "Kelebdil",
-    "celebros": "Kelebro{silme}",
-    "celegorm": "Kelegorm",
-    "celebrían": "{QUESSE}{lambe}[acute]{umbar}[acute]{roomen}{aara}[dot-above]{nuumen}[triple-dot-above]",
-    "celebrian": "{QUESSE}{lambe}[acute]{umbar}[acute]{roomen}{aara}[dot-above]{nuumen}[triple-dot-above]",
-    "celecormë": "{QUESSE}{lambe}[acute]{quesse}[acute]{roomen}[right-curl]{malta}{telco}[acute]",
-    "celecorme": "Kelekormë",
-    "celeborn": "Keleborn",
-    "celepharn": "{QUESSE}{lambe}[acute]{formen}[acute]{roomen}[triple-dot-above]{nuumen}",
-    "celebrimbor": "Kelebrimbor",
-    "celebrindor": "Kelebrindor",
-    "celebrindal": "Kelebrindal",
-    "celerdain": "Kelerdain",
-    "celebrant": "Kelebrant",
+    "celebdil": "kelebdil",
+    "celebros": "kelebro{silme}",
+    "celegorm": "kelegorm",
+    "celebrían": "{quesse}{lambe}[acute]{umbar}[acute]{roomen}{aara}[dot-above]{nuumen}[triple-dot-above]",
+    "celebrian": "{quesse}{lambe}[acute]{umbar}[acute]{roomen}{aara}[dot-above]{nuumen}[triple-dot-above]",
+    "celecormë": "{quesse}{lambe}[acute]{quesse}[acute]{roomen}[right-curl]{malta}{telco}[acute]",
+    "celecorme": "kelekormë",
+    "celeborn": "keleborn",
+    "celepharn": "{quesse}{lambe}[acute]{formen}[acute]{roomen}[triple-dot-above]{nuumen}",
+    "celebrimbor": "kelebrimbor",
+    "celebrindor": "kelebrindor",
+    "celebrindal": "kelebrindal",
+    "celerdain": "kelerdain",
+    "celebrant": "kelebrant",
 
-    "cemendur": "Kemendur",
-    "cermie": "Kermie",
-    "ciriáran": "Kiriaran",
-    "ciryaher": "Kiryaher",
-    "ciryandil": "Kiryandil",
-    "ciryatan": "Kiryatan",
-    "ciryatur": "Kiryatur",
-    "ciryon": "Kiryon",
-    "círdan": "Kirdan",
-    "cirdan": "Kirdan",
-    "ciril": "Kiril",
-    "cirion": "Kirion",
-    "cirith": "Kirith",
-    "cirth": "Kirth",
+    "cemendur": "kemendur",
+    "cermie": "kermie",
+    "ciriáran": "kiriaran",
+    "ciryaher": "kiryaher",
+    "ciryandil": "kiryandil",
+    "ciryatan": "kiryatan",
+    "ciryatur": "kiryatur",
+    "ciryon": "kiryon",
+    "círdan": "kirdan",
+    "cirdan": "kirdan",
+    "ciril": "kiril",
+    "cirion": "kirion",
+    "cirith": "kirith",
+    "cirth": "kirth",
 
     // Ordinal numbers
     // See http://www.gweep.net/~slarti/Gweep/Tengwar/#ordinal
