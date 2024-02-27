@@ -646,7 +646,10 @@
     // yother, youths, zither
 
     "ache": "a{extended-quesse}e", // <ch> pronounced as /k/
-    "anchor": "{extended-quesse}[triple-dot-above][tilde-above]{oore}[right-curl]", // <ch> pronounced as /k/
+    "aches": "a{extended-quesse}es", // <ch> pronounced as /k/
+    "aching": "a{extended-quesse}ing", // <ch> pronounced as /k/
+    "anchor": "anchor'{hook}",
+    "anchored": "anchor'ed",
     "anchorage": "{extended-quesse}[triple-dot-above][tilde-above]{roomen}[right-curl]{ungwe}[triple-dot-above][dot-below]", // <ch> pronounced as /k/
     "anchoring": "{extended-quesse}[triple-dot-above][tilde-above]{roomen}[right-curl]{nwalme}[dot-above] ", // <ch> pronounced as /k/
     "anchorman": "{extended-quesse}[triple-dot-above][tilde-above]{oore}[right-curl]{malta}{nuumen}[triple-dot-above]", // <ch> pronounced as /k/
@@ -657,19 +660,25 @@
     "altogether": "{lambe}[triple-dot-above]{tinco}{ungwe}[right-curl]{anto}[acute]{oore}[acute]",
     "another": "{nuumen}[triple-dot-above]{anto}[right-curl]{oore}[acute]",
     "bathe": "{umbar}{anto}[dot-below][triple-dot-above]",
+    "bathes": "bathe'{hook}",
+    "bathed": "bathe'ed",
     "bathing": "{umbar}{anto}[triple-dot-above]{nwalme}[dot-above]",
     "borough": "borou{extended-ungwe}", // `ough$` exception
     "breakthrough": "breakthrou{extended-ungwe}", // `ough$` exception
     "breathe": "{umbar}{roomen}{osse}[acute]{anto}[dot-below]",
+    "breathes": "breathe'{hook}",
     "breathing": "{umbar}{roomen}{osse}[acute]{anto}{nwalme}[dot-above]",
     "bronchitis": "{umbar}{roomen}{extended-quesse}[right-curl][tilde-above]{tinco}[dot-above]{alt-silme}[dot-above] ",
     "bronchoscope": "{umbar}{roomen}{extended-quesse}[right-curl][tilde-above]{silme}[right-curl]{quesse}{parma}[right-curl][dot-below]",
+    "bronchoscopes": "bronchoscope'{hook}",
     "brother": "{umbar}{roomen}{anto}[right-curl]{oore}[acute]",
-    "brotherly": "{umbar}{roomen}{anto}[right-curl]{oore}[acute]{lambe}[breve]",
     "brothers": "{umbar}{roomen}{anto}[right-curl]{oore}[acute]{esse-nuquerna}",
+    "brotherly": "{umbar}{roomen}{anto}[right-curl]{oore}[acute]{lambe}[breve]",
+    "brotherhood": "brother'hood",
     "chianti": "{extended-quesse}ianti",
     "chiaoscuro": "{extended-quesse}iaoscuro",
     "choir": "{extended-quesse}oir", // <ch> pronounced as /k/
+    "choirs": "choir'{hook}",
     "clothing": "{quesse}{lambe}{anto}[right-curl]{nwalme}[dot-above]",
     "either": "{anna}[acute]{anto}{oore}[acute]",
     "epitome": "epitom'í", // user request (GEONE)
@@ -680,12 +689,15 @@
     "fatherly": "{formen}{anto}[triple-dot-above]{oore}[acute]{lambe}[breve]",
     "farewell": "fare'well",
     "feather": "{formen}{osse}[acute]{anto}{oore}[acute]",
+    "feathers": "feather'{hook}",
     "furlough": "furlou{extended-ungwe}", // `ough$` exception
     "further": "{formen}{oore}[left-curl]{anto}{oore}[acute]",
     "gather": "{ungwe}{anto}[triple-dot-above]{oore}[acute]",
+    "gathered": "gather'ed",
     "gathering": "{ungwe}{anto}[triple-dot-above]{roomen}[acute]{nwalme}[dot-above]",
     "goatherd": "goat'herd",
     "glass": "gl{alt-silme}[triple-dot-above][bar-below]",
+    "glasses": "gl{alt-silme}[triple-dot-above][bar-below]es",
     "grandfather": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{formen}{anto}[triple-dot-above]{oore}[acute]",
     "grandfathers": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{formen}{anto}[triple-dot-above]{oore}[acute]{esse-nuquerna}",
     "grandmother": "{ungwe}{roomen}{ando}[triple-dot-above][tilde-above]{malta}{anto}[right-curl]{oore}[acute]",
@@ -694,10 +706,14 @@
     "inchoate": "{extended-quesse}[dot-above][tilde-above]{telco}[right-curl]{tinco}[triple-dot-above][dot-below]",
     "knighthood": "knight'hood",
     "lathe": "{lambe}{anto}[dot-below][triple-dot-above]",
+    "lathes": "lathe'{hook}",
     "leather": "{lambe}{osse}[acute]{anto}{oore}[acute]",
+    "leathers": "leather'{hook}",
     "lightheaded": "light'headed",
     "lighthouse": "light'house",
+    "lighthouses": "light'houses",
     "loathe": "{lambe}{telco}[right-curl]{anto}[dot-below][triple-dot-above]",
+    "loathes": "loathe'{hook}",
     "melancholy": "{malta}{lambe}[acute]{extended-quesse}[triple-dot-above][tilde-above]{lambe}[right-curl]{telco}[breve]",
     "melancholic": "{malta}{lambe}[acute]{extended-quesse}[triple-dot-above][tilde-above]{lambe}[right-curl]{quesse}[dot-above]",
     "michael": "{malta}{extended-quesse}[dot-above]{telco}[triple-dot-above]{lambe}[acute]",
@@ -705,6 +721,7 @@
     "mocha": "mokxa",
     "monarch": "monarkx",
     "monarchist": "monarkxist",
+    "monarchists": "monarkxists",
     "monarchy": "monarkxy",
     "mother": "{malta}{anto}[right-curl]{oore}[acute]",
     "mothers": "{malta}{anto}[right-curl]{oore}[acute]{hook}",
@@ -713,19 +730,27 @@
     "neither": "{nuumen}{anna}[acute]{anto}{oore}[acute]",
     "noone": "no'one",
     "orchestra": "orkxestra",
+    "orchestras": "orkxestras",
     "orchestral": "orkxestral",
     "orchestrate": "orkxestrate",
     "orchestration": "orkxestration",
     "orchid": "orkxid",
+    "orchids": "orkxids",
     "other": "{anto}[right-curl]{oore}[acute]",
     "outhouse": "out'house", //  not th
+    "outhouses": "out'houses", //  not th
     "pancake": "pan'cake",
+    "pancakes": "pan'cakes",
     "parchisi": "par'chisi", // 'arch' does not not use 'extended-quesse' here, pronounced "tch"
     "plough": "plow",
+    "ploughs": "plows",
     "pothead": "pot'head", //  not "th"
+    "potheads": "pot'heads", //  not "th"
     "rather": "{roomen}{anto}[triple-dot-above]{oore}[acute]",
     "rhythm": "{roomen}{hyarmen}{anto}[breve]{malta}",
+    "rhythms": "{roomen}{hyarmen}{anto}[breve]{malta}{hook}",
     "science": "{silme}{yanta}[dot-above]{silme-nuquerna}[bar-above][dot-below]", // "science", latin "to know"
+    "sciences": "{silme}{yanta}[dot-above]{silme-nuquerna}[bar-above][dot-below]{hook}",
     "scientific": "{silme}{yanta}[dot-above]{tinco}[bar-above]ific",
     "scientist": "{silme}{yanta}[dot-above]{tinco}[bar-above]ist",
     "scientists": "{silme}{yanta}[dot-above]{tinco}[bar-above]ists",
@@ -750,6 +775,7 @@
     "soothing": "{silme}{telco}[right-curl]{anto}[right-curl]{nwalme}[dot-above]",
     "sourdough": "sourdou{extended-ungwe}", // `ough$` exception
     "southern": "{silme}{vala}[right-curl]{anto}{oore}[acute]{nuumen}",
+    "southerner": "south'erner",
     "stomach": "stoma{extended-quesse}", // <ch> pronounced as /k/
     "tecendil": "{tinco}{quesse}[acute]{ando}[acute][bar-above]{lambe}[dot-above]",
     "teethe": "{tinco}{telco}[double-acute]{anto}[dot-below]",
