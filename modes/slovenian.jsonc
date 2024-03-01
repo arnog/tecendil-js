@@ -58,7 +58,7 @@
 
     // Diphthongal i
     // i as j
-    "aj$": "ai"
+    "aj$": "ai",
     "ajm": "aim",
     "ajl": "ail",
     "ajn": "ain",
@@ -81,7 +81,7 @@
     "ajš": "aiš",
     "ajč": "aič",
 
-    "ej$": "ei"
+    "ej$": "ei",
     "ejm": "eim",
     "ejl": "eil",
     "ejn": "ein",
@@ -103,10 +103,10 @@
     "ejp": "eip",
     "ejš": "eiš",
     "ejč": "eič",
-
+    //
     //"ij": "ii", j direct to {anna} in map
 
-    "oj$": "oi"
+    "oj$": "oi",
     "ojm": "oim",
     "ojl": "oil",
     "ojn": "oin",
@@ -129,7 +129,7 @@
     "ojš": "oiš",
     "ojč": "oič",
 
-    "uj$": "ui"
+    "uj$": "ui",
     "ujm": "uim",
     "ujl": "uil",
     "ujn": "uin",
@@ -152,7 +152,7 @@
     "ujš": "uiš",
     "ujč": "uič",
 
-    "əj$": "əi"
+    "əj$": "əi",
     "əjm": "əim",
     "əjl": "əil",
     "əjn": "əin",
@@ -177,7 +177,7 @@
 
     // Diphthongal u
     // w as v
-    "av$": "au"
+    "av$": "au",
     "avm": "aum",
     "avl": "aul",
     "avn": "aun",
@@ -200,7 +200,7 @@
     "avš": "auš",
     "avč": "auč",
 
-    "ev$": "eu"
+    "ev$": "eu",
     "evm": "eum",
     "evl": "eul",
     "evn": "eun",
@@ -223,7 +223,7 @@
     "evš": "euš",
     "evč": "euč",
 
-    "iv$": "iu"
+    "iv$": "iu",
     "ivm": "ium",
     "ivl": "iul",
     "ivn": "iun",
@@ -246,7 +246,7 @@
     "ivš": "iuš",
     "ivč": "iuč",
 
-    "ov$": "ow"
+    "ov$": "ow",
     "ovm": "oum",
     "ovl": "oul",
     "ovn": "oun",
@@ -269,7 +269,7 @@
     "ovš": "ouš",
     "ovč": "ouč",
 
-    "uv$": "uw"
+    "uv$": "uw",
     "uvm": "uum",
     "uvl": "uul",
     "uvn": "uun",
@@ -292,7 +292,7 @@
     "uvš": "uuš",
     "uvč": "uuč",
 
-    "əv$": "əu"
+    "əv$": "əu",
     "əvm": "əum",
     "əvl": "əul",
     "əvn": "əun",
