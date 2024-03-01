@@ -44,14 +44,8 @@
     "û": "u",
     //
     "ŕ": "r",
-    "ə": "e",
     "dž": "ǆ",
     "Dž": "ǅ",
-
-    //n preceding velar consonants is velar ŋ
-    "ng": "ŋg",
-    "nk": "ŋk",
-    "nh": "ŋh",
 
     "rv$": "rw",
     "rl$": "rw",
@@ -475,6 +469,10 @@
     "n": "{nuumen}",
     "m": "{malta}",
     "ŋ": "{nwalme}",
+        //n preceding velar consonants is velar ŋ
+        "ng": "{nwalme}{ungwe}",
+        "nk": "{nwalme}{quesse}",
+        "nh": "{nwalme}{hyarmen}",
     "w": "{vala}",
       "ʍ": "{vala}",
     "r": "{roomen}",
