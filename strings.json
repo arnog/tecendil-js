@@ -102,6 +102,11 @@
     "welcome.4": "Type a sentence or name and see it transcribed into Tengwar.",
     "welcome.5": "Note the text is <b>not translated</b>, it is simply written using the Tengwar characters.",
     "welcome.6": "For a correct transcription, select the appropriate language in the <i>Mode</i> menu: English, Italian, Spanish, Quenya or Sindarin. If you're interested in support for other languages, contact me.",
+
+    "welcome.7": "Tecendil is a Tengwar transcriber, not a translator",
+    "welcome.8": "The text you type is not <i>translated</i>, it is simply written using the Tengwar characters.",
+    "welcome.9": "For a correct transcription, pick the language you are writing in from the <b>Mode</b> menu.",
+
     "label.source-eldamo": "Source: <a href=\"https://eldamo.org\">Eldamo</a>",
 
     "label.wikipedia.intro-random": "Practice reading Tengwar with this random article from Wikipedia:",
@@ -201,6 +206,11 @@
     "welcome.4": "Napište větu nebo libovolné jméno a podívejte se, jak vypadá přepsaná do Tengwaru.",
     "welcome.5": "Pozor, text <b>není přeložený</b>, je jenom přepsaný pomocí znaků Tengwar.",
     "welcome.6": "Pro správný přepis zvolte odpovídající jazyk v menu <i>Mód</i>: anglicky, italsky, španělsky, česky, quenijsky, sindarijsky. Pokud vás zajímá podpora i pro nějaký jiný jazyk, kontaktujte mě.",
+
+    "welcome.7": "Tecendil je transkriptor Tengwaru, ne překladač",
+    "welcome.8": "Text, který napíšete, není <i>přeložen</i>, je jednoduše napsán pomocí znaků Tengwar.",
+    "welcome.9": "Pro správný přepis vyberte jazyk, ve kterém píšete, z nabídky <b>Režim</b>.",
+
     "label.source-eldamo": "Zdroj: <a href=\"https://eldamo.org\">Eldamo</a>",
 
     "label.wikipedia.intro-random": "Procvičte si čtení Tengwaru v tomto náhodném článku z Wikipedie:",
@@ -288,6 +298,10 @@
     "welcome.4": "Gib einen Satz oder Namen ein um ihn in Tengwar zu transkribieren.",
     "welcome.5": "Beachte, dass der Text <b>nicht übersetzt</b>, sondern nur mit Tengwar-Zeichen geschrieben wird.",
     "welcome.6": "Um eine korrekte Transkription zu erhalten, muss im Menü Modus die richtige Sprache ausgewählt werden: Englisch, Spanisch, Italienisch, Quenya oder Sindarin. Wenn Du Unterstützung für andere Sprachen brauchst, kontaktiere mich unter",
+
+    "welcome.7": "Tecendil ist ein Tengwar-Transkriptor, kein Übersetzer",
+    "welcome.8": "Der Text, den Sie eingeben, wird nicht <i>übersetzt</i>, sondern einfach mit den Tengwar-Zeichen geschrieben.",
+    "welcome.9": "Für eine korrekte Transkription wählen Sie die Sprache, in der Sie schreiben, aus dem <b>Modus</b>-Menü.",
 
     "label.wikipedia.intro-random": "Üben Sie das Lesen von Tengwar mit diesem zufälligen Artikel aus Wikipedia:",
     "label.wikipedia.intro": "Üben Sie das Lesen von Tengwar mit diesem Artikel über„",
@@ -404,6 +418,11 @@
     "welcome.4": "Enskribu ian vorton, frazon aŭ nomon kaj vidu kiel ĝi aspektas transskribinta en Tengvaro",
     "welcome.5": "Memoru <i>tio ne estas tradukaĵo en elfajn lingvojn!</i> Simple, tio estas la teksto skribita per signoj de Tengvaro.",
     "welcome.6": "Por ke la ĝusta transskribo, en la menuo <i>Modo</i> elektu la ĝustan lingvon: la angla, esperanto, la itala, quenya, sindarin, aŭ alia. Se vi volas helpi efektivigi modojn por aliaj lingvoj, bonvolu kontakti min.",
+
+    "welcome.7": "Tecendil estas Tengwar transskribilo, ne tradukilo",
+    "welcome.8": "La teksto, kiun vi tajpas, ne estas <i>tradukita</i>, ĝi estas simple skribita uzante la Tengwar-karakterojn.",
+    "welcome.9": "Por ĝusta transskribo, elektu la lingvon, en kiu vi skribas, el la <b>Modo</b> menuo.",
+
     "label.source-eldamo": "Fonto: <a href=\"https://eldamo.org\">Eldamo</a>",
 
     "label.wikipedia.intro-random": "Praktiku legi Tengvaron en ĉi tiu hazarda paĝo el Vikipedio:",
@@ -510,6 +529,10 @@
     "welcome.4": "Grabe una frase o nombre y véala transcrita en Tengwar",
     "welcome.5": "Tenga en cuenta que el texto <b>no está traducido,</b> simplemente se escribe usando los caracteres Tengwar.",
     "welcome.6": "Para que la transcripción sea correcta, debe seleccionar el idioma apropiado en el menú <i>Modo</i>:  español, italiano, inglés, quenya o sindarin. Si estás interesado en apoyar otros idiomas, contáctame..",
+
+    "welcome.7": "Tecendil es un transcriptor de Tengwar, no un traductor",
+    "welcome.8": "El texto que escribes no está <i>traducido</i>, simplemente está escrito usando los caracteres Tengwar.",
+    "welcome.9": "Para una transcripción correcta, selecciona el idioma en el que estás escribiendo desde el menú <b>Modo</b>.",
 
     "dialog-title.settings": "Ajustes",
     "button.close": "Cerrar",
@@ -620,6 +643,10 @@
     "welcome.4": "Tape une phrase ou un nom et vois-le transcrit en Tengwar",
     "welcome.5": "Note que le texte <b>n'est pas traduit </b>, il est simplement écrit en utilisant les caractères Tengwar.",
     "welcome.6": "Pour que la transcription soit correcte, sélectionne la langue appropriée dans le menu <i> Mode </i>: anglais, espagnol, italien, quenya ou sindarin. Malheureusement, le francais n'est pas supporté pour l'instant. Si tu es intéressé à supporter d'autres langues, contacte moi.",
+
+    "welcome.7": "Tecendil est un transcripteur de Tengwar, pas un traducteur",
+    "welcome.8": "Le texte que vous tapez n'est pas <i>traduit</i>, il est simplement écrit en utilisant les caractères Tengwar.",
+    "welcome.9": "Pour une transcription correcte, choisissez la langue dans laquelle vous écrivez dans le menu <b>Mode</b>.",
 
     "label.wikipedia.intro-random": "Entraînez-vous à lire les tengwar avec cet article aléatoire de Wikipedia:",
     "label.wikipedia.intro": "Entraînez-vous à lire les tengwar avec cet article sur “",
@@ -739,6 +766,10 @@
     "welcome.6": "Za ispravnu transkripciju odaberite odgovarajući jezik u izborniku <i>Mod</i>",
     "label.source-eldamo": "Izvor: <a href=\"https://eldamo.org\">Eldamo</a>",
 
+    "welcome.7": "Tecendil je Tengwar transkriptor, ne prevoditelj",
+    "welcome.8": "Tekst koji upišete nije <i>preveden</i>, jednostavno je napisan koristeći Tengwar znakove.",
+    "welcome.9": "Za ispravnu transkripciju, odaberite jezik na kojem pišete iz <b>Mod</b> izbornika.",
+
     "label.wikipedia.intro-random": "Vježbajte čitanje Tengwara uz pomoć nasumičnog članka s Wikipedije:",
     "label.wikipedia.intro": "Vježbajte čitanje Tengwara uz pomoć članka o “",
     "label.wikipedia.intro.close": "” s Wikipedije:",
@@ -848,6 +879,11 @@
     "welcome.4": "Írj egy mondatot vagy nevet, és a program átírja tengwarra.",
     "welcome.5": "A keletkezett szöveg <b>nem fordítás</b>, hanem csak a szöveg tengwar-betűkkel írt változata.",
     "welcome.6": "A megfelelő átíráshoz válaszd ki a megfelelő nyelvet a <i>Mód</i> menüben: angol, cseh, lengyel, lojban, magyar, nyugori, olasz, quenya, sindarin, spanyol. Ha szeretnél segíteni más nyelvek átírásában, lépjünk kapcsolatba.",
+
+    "welcome.7": "Tecendil egy Tengwar átíró, nem fordító",
+    "welcome.8": "A szöveg, amit beírsz, nincs <i>lefordítva</i>, egyszerűen csak Tengwar karakterekkel van írva.",
+    "welcome.9": "A helyes átíráshoz válaszd ki a nyelvet, amelyen írsz a <b>Mod</b> menüből.",
+
     "label.source-eldamo": "Forrás: <a href=\"https://eldamo.org\">Eldamo</a>",
 
     "label.wikipedia.intro-random": "Gyakorold a tengwar olvasását ezzel a véletlenszerűen választott Wikipédia-szócikkel:",
@@ -936,6 +972,10 @@
     "welcome.4": "Scrivi una frase o un nome e guardalo trascritto in Tengwar",
     "welcome.5": "Tieni presente che il testo <b>non è tradotto</b>, ma è semplicemente scritto usando i caratteri Tengwar.",
     "welcome.6": "Affinché la trascrizione sia corretta, è necessario selezionare la lingua appropriata nel menù <i>Modalità</i>: italiano, inglese, spagnolo, Quenya o Sindarin. Se sei interessato a supportare altre lingue, contattami.",
+
+    "welcome.7": "Tecendil è un trascrittore di Tengwar, non un traduttore",
+    "welcome.8": "Il testo che digiti non è <i>tradotto</i>, è semplicemente scritto usando i caratteri Tengwar.",
+    "welcome.9": "Per una trascrizione corretta, scegli la lingua in cui stai scrivendo dal menu <b>Modalità</b>.",
 
     "label.wikipedia.intro": "Esercitati a leggere Tengwar con questo articolo su  “",
     "label.wikipedia.intro.close": "” di Wikipedia:",
@@ -1039,6 +1079,11 @@
     "welcome.4": "Wpisz jakieś słowo, zdanie, albo imię i zobacz, jak wygląda zapisane Tengwarem.",
     "welcome.5": "Pamiętaj, że <i>to nie jest tłumaczenie na języki elfów</i>, tylko po prostu zapis przy użyciu znakow pisma tengwarowego.",
     "welcome.6": "Żeby transkrypcja przebiegła poprawnie, w menu <i>Tryb</i> należy wybrać właściwy język: angielski, polski, quenya, sindarin, lub inny. Jeżeli chcesz pomóc w implementowaniu innych trybów, skontaktuj się ze mną.",
+
+    "welcome.7": "Tecendil to transkryber Tengwaru, nie tłumacz",
+    "welcome.8": "Tekst, który wpisujesz, nie jest <i>tłumaczony</i>, jest po prostu zapisany przy użyciu znaków Tengwar.",
+    "welcome.9": "Aby uzyskać poprawną transkrypcję, wybierz język, w którym piszesz, z menu <b>Tryb</b>.",
+
     "label.source-eldamo": "Źródło: <a href=\"https://eldamo.org\">Eldamo</a>",
 
     "label.wikipedia.intro-random": "Poćwicz czytanie Tengwaru zapoznając się z tym losowo wybranym artykułem z Wikipedii:",
@@ -1148,6 +1193,10 @@
     "welcome.4": "Digite uma frase ou nome e veja sua transcrição em Tengwar.",
     "welcome.5": "Note que o texto <b>não é traduzido</b>, ele é apenas escrito usando os caracteres Tengwar.",
     "welcome.6": "Para uma transcrição correta, selecione a língua apropriada no menu <i>Modo</i>: Ingles, Portugues, Italiano, Espanhol, Quenya ou Sindarin. Se está interessado em adicionar sua própria língua me contate.",
+
+    "welcome.7": "Tecendil é um transcritor de Tengwar, não um tradutor",
+    "welcome.8": "O texto que você digita não é <i>traduzido</i>, ele é simplesmente escrito usando os caracteres Tengwar.",
+    "welcome.9": "Para uma transcrição correta, escolha o idioma em que você está escrevendo no menu <b>Modo</b>.",
 
     "label.wikipedia.intro-random": "Pratique Tengwar lendo este artigo aleatório da Wikipédia:",
     "label.wikipedia.intro": "Pratique Tengwar com este artigo sobre “",
@@ -1263,6 +1312,11 @@
     "welcome.4": "Scrie o propoziție sau un nume și privește-l transcris în Tengwar.",
     "welcome.5": "Ține minte că textul <b>nu este tradus</b>,este pur și simplu scris folosind caractere Tengwar.",
     "welcome.6": "Pentru o transcriere corectă, selectează limba corespunzătoare în <i>Meniul cu Moduri</i>: Engleză, Italiană, Spaniolă, Cehă, Slovenă, Poloneză, Maghiară,  Lojban, Portugheză Braziliană, Germană, Română, Quenya sau Sindarin. Dacă ești interesat în implementarea altor limbi, contactează-mă.",
+
+    "welcome.7": "Tecendil este un transcriptor Tengwar, nu un traducător",
+    "welcome.8": "Textul pe care îl tastezi nu este <i>tradus</i>, este pur și simplu scris folosind caracterele Tengwar.",
+    "welcome.9": "Pentru o transcriere corectă, alege limba în care scrii din meniul <b>Mod</b>.",
+
     "label.source-eldamo": "Sursă: <a href=\"https://eldamo.org\">Eldamo</a>",
 
     "label.wikipedia.intro-random": "Exersează cititul în Tengwar cu acest articol aleatoriu de pe Wikipedia:",
@@ -1380,6 +1434,10 @@
     "welcome.5": "请注意，结果文本<b>并未被翻译</b>，只是转写成了使用滕格瓦文字的形式。",
     "welcome.6": "要使转录结果正确，您必须在“模式”菜单中选择合适的语言：英语、西班牙语、昆雅语或辛达林语。",
 
+    "welcome.7": "Tecendil 是一个 Tengwar 转写器，不是翻译器",
+    "welcome.8": "您输入的文本没有被<i>翻译</i>，它只是使用 Tengwar 字符书写。",
+    "welcome.9": "为了正确的转写，请从<b>模式</b>菜单中选择您正在书写的语言。",
+
     "button.wikipedia.next": "下一篇条目",
     "button.wikipedia.next-random": "随机条目",
 
@@ -1496,6 +1554,10 @@
     "welcome.5": "請注意，文字<b>並未被翻譯</b>，只是變成了談格瓦文字的形式。",
     "welcome.6": "要使轉錄正確，您必須在「模式」選單中選擇適當的語言：英語，西班牙語，昆雅語或辛達林語。",
 
+    "welcome.7": "Tecendil 是一个 Tengwar 转写器，不是翻译器",
+    "welcome.8": "您输入的文本没有被<i>翻译</i>，它只是使用 Tengwar 字符书写。",
+    "welcome.9": "为了正确的转写，请从<b>模式</b>菜单中选择您正在书写的语言。",
+
     "button.wikipedia.next": "下一篇條目",
     "button.wikipedia.next-random": "隨機條目",
 
@@ -1611,6 +1673,10 @@
     "welcome.4": "輸入一句話或一個名字，然後將其轉寫為談格瓦文字（Tengwar）。",
     "welcome.5": "請注意，文字<b>並未被翻譯</b>，只是變成了談格瓦文字的形式。",
     "welcome.6": "要使轉錄正確，您必須在「模式」選單中選擇適當的語言：英語、西班牙語、昆雅語或辛達林語。",
+
+    "welcome.7": "Tecendil 是一个 Tengwar 转写器，不是翻译器",
+    "welcome.8": "您输入的文本没有被<i>翻译</i>，它只是使用 Tengwar 字符书写。",
+    "welcome.9": "为了正确的转写，请从<b>模式</b>菜单中选择您正在书写的语言。",
 
     "button.wikipedia.next": "下一篇條目",
     "button.wikipedia.next-random": "隨機條目",
@@ -1731,6 +1797,11 @@
     "welcome.4": "Napiši poved ali ime in poglejte kako se prepiše v tengvar.",
     "welcome.5": "Upoštevajte, da besedilo <b>ni prevedeno</b>, ampak je preprosto zapisano s znaki tengavarja.",
     "welcome.6": "Za pravilen prepis izberite ustrezen jezik v meniju <i>Način</i>: angleški, italijanski, španski, kvenjski ali sindarinski jezik. Če vas zanima podpora za druge jezike, se obrnite name.",
+
+    "welcome.7": "Tecendil je prepisovalec tengvarja, ne prevajalnik",
+    "welcome.8": "Besedilo, ki ga vnesete, ni <i>prevedeno</i>, ampak je preprosto zapisano z znaki tengvar.",
+    "welcome.9": "Za pravilen prepis izberite jezik, v katerem pišete, iz menija <b>Način</b>.",
+
     "label.source-eldamo": "Vir: <a href=\"https://eldamo.org\">Eldamo</a>",
 
     "label.wikipedia.intro-random": "Vadi branje tengvarja s tem naključnim člankom z Wikipedije:",
