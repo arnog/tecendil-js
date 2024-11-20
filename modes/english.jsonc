@@ -242,7 +242,6 @@
     "dd": "[bar-below]{ando}", // suddenly
     "ff": "[bar-below]{formen}", // off
     "gg": "[bar-below]{ungwe}", // suggests
-    "ll": "[bar-inside]{lambe}", // will
     "mm": "[bar-below]{malta}", // community
     "nn": "[bar-below]{nuumen}", // dinner
     "pp": "[bar-below]{parma}", // support
@@ -285,12 +284,9 @@
     "ng": "{nwalme}", // for english, /ng/ sound
     // "rd": "{arda}",
     // "rds": "{arda}{hook}",
-    //     "ld":		"{alda}",	For all we know, it does not represent LD in
-    // this particular mode, since in this particular mode, Tolkien has written
-    // LD with the sequence lambe, ando (see DTS 5 “Ronald”). If anything, then
-    // we can hypothesize that alda is a sign for double LL in this particular
-    // mode, since that is what it represents in the corresponding full writing
-    // mode (see DTS 13, DTS 45, DTS 48).
+    "ll": "{alda}", // We can hypothesize that alda is a sign for double
+    // LL in this particular mode, since that is what it represents in the
+    // corresponding full writing mode (see DTS 13, DTS 45, DTS 48).
 
     "ph": "{extended-parma}",
     "^uph": "[left-curl]{parma}{hyarmen}", // Not "ph' sound, e.g. "up-hea-val'
