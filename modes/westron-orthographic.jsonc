@@ -81,6 +81,7 @@
     "m": "{malta}",
     "n": "{nuumen}",
     "p": "{parma}",
+    "q": "{quesse}", // "iraq", "qatar", "qi"
     "r*": "{roomen}", //	"r":	special case
     "s": "{alt-silme}",
     "ç": "{silme-nuquerna}",
