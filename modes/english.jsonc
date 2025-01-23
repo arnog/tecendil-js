@@ -644,7 +644,8 @@
     "ache": "a{extended-quesse}e", // <ch> pronounced as /k/
     "aches": "a{extended-quesse}es", // <ch> pronounced as /k/
     "aching": "a{extended-quesse}ing", // <ch> pronounced as /k/
-    "anchor": "anchor'{hook}",
+    "anchor": "{extended-quesse}[triple-dot-above][tilde-above]{oore}[right-curl]",
+    "anchors": "anchor'{hook}",
     "anchored": "anchor'ed",
     "anchorage": "{extended-quesse}[triple-dot-above][tilde-above]{roomen}[right-curl]{ungwe}[triple-dot-above][dot-below]", // <ch> pronounced as /k/
     "anchoring": "{extended-quesse}[triple-dot-above][tilde-above]{roomen}[right-curl]{nwalme}[dot-above] ", // <ch> pronounced as /k/
