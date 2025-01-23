@@ -475,6 +475,7 @@
     "ns$": "{nuumen}{hook}",
     "ps$": "{parma}{hook}",
     "rs$": "{oore}{hook}",
+    "res$": "[dot-below]{oore}{{hook-looped-left}}", // See https://github.com/arnog/tecendil-js/issues/99
     "ts$": "{tinco}{hook}",
     "ves$": "{ampa}[dot-below]{hook}"
   },
@@ -818,7 +819,49 @@
     "withstand": "{vala}{anto}[dot-above]{silme}{tinco}{ando}[triple-dot-above][tilde-above]",
     "worthy": "{vala}{oore}[right-curl]{anto}{telco}[breve]",
 
+    //
+    // Exceptions to final "res" rule.
+    // For those we use their phonemic transcription
+    //
+    "antares": "{tinco}[reversed-triple-dot-above][tilde-above]{roomen}[acute]{aara}[dot-above]{esse}",
+    // "apres": "{aara}[acute]{parma}{roomen}{esse-nuquerna}",
+    "ares": "{roomen}[triple-dot-above]{esse}",
+    // "belles-lettres": "{umbar}{esse-nuquerna}[acute]{lambe}{lambe}[acute]{tinco}{roomen}{esse-nuquerna}",
+    "benares": "{umbar}{aara}[acute]{nuumen}{aara}[acute]{roomen}{esse-nuquerna}",
+    // "buenos aires": "{umbar}{vala}[acute]{nuumen}{aara}[acute]{roomen}{esse-nuquerna}",
+    "ceres": "{alt-silme}{roomen}[dot-above]{aara}[dot-above]{esse}",
+    // "confrères": "{quesse}{nuumen}{aara}[acute]{roomen}{esse-nuquerna}",
+    // "conquistadores": "{quesse}{nuumen}{quesse}{aara}[acute]{roomen}{esse-nuquerna}",
+    // "cres": "{quesse}{roomen}{esse-nuquerna}",
+    // "crores": "{quesse}{roomen}{roomen}{esse-nuquerna}",
+    // "curés": "{quesse}{roomen}{esse-nuquerna}",
+    // "cypres": "{silme}[acute]{parma}{roomen}{esse-nuquerna}",
+    "degeneres": "{ando}{anga}[dot-above]{nuumen}[dot-above]{roomen}[acute]{alt-silme}[acute]",
+    "dolores": "{ando}[dot-below]{lambe}{aara}[right-curl]{roomen}{alt-silme}[dot-above]",
+    // "émigrés": "{aara}[acute]{malta}{roomen}{esse-nuquerna}",
+    "flores": "{formen}{lambe}{aara}[right-curl]{roomen}{esse}[acute]",
+    // "furores": "{formen}{roomen}{roomen}{esse-nuquerna}",
+    "genres": "{anca}{nuumen}[triple-dot-above]{roomen}[dot-below]{esse}",
+    // "glires": "{ungwe}{lambe}{roomen}{esse-nuquerna}",
+    // "high-res": "{hyarmen}{ungwe}{roomen}{esse-nuquerna}",
+    // "ingres": "{anna}{ungwe}{roomen}{esse-nuquerna}",
+    // "in medias res": "{anna}{nuumen}{roomen}{esse-nuquerna}",
+    "mores": "{malta}{aara}[right-curl]{roomen}{anna}[acute]{esse}",
+    // "oeuvres": "{aara}[acute]{roomen}{esse-nuquerna}",
+    "padres": "{parma}{ando}[reversed-triple-dot-above]{roomen}{anna}[acute]{esse}",
+    "pres": "{parma}{roomen}{esse}[acute]",
+    // "primus inter pares": "{parma}{roomen}{esse-nuquerna}",
+    "res": "{roomen}{anna}[acute]{esse}",
+    // "senores": "{silme}{nuumen}{roomen}{esse-nuquerna}",
+    // "silures": "{silme}{lambe}{roomen}{esse-nuquerna}",
+    // "subgenres": "{silme}{umbar}{ungwe}{roomen}{esse-nuquerna}",
+    "torres": "{tinco}{aara}[right-curl]{roomen}{esse}[acute]",
+    // "ultra vires": "{umbar}{lambe}{roomen}{esse-nuquerna}",
+    // "ypres": "{anna}{parma}{roomen}{esse-nuquerna}",
+
+    //
     // Sindarin words with [ce] that are pronounced /k/ rather than /s/
+    //
     "celebdil": "kelebdil",
     "celebros": "kelebro{silme}",
     "celegorm": "kelegorm",
