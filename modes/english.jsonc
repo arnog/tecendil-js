@@ -320,6 +320,7 @@
     "nt": "[tilde-above]{tinco}",
     "nth": "[tilde-above]{thuule}",
     "mp": "[tilde-above]{parma}",
+    "mph": "[tilde-above]{extended-parma}",
     "mt": "[tilde-above]{tinco}",
     //	"am":	"[triple-dot-above][tilde-above]",		family -> should not use a nasalization mark
     // "im": "[dot-above][tilde-above]",        animal -> should not use a nasalization mark
