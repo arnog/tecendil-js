@@ -79,6 +79,10 @@
     "mv": "[tilde-above]{ampa}",
     "mw": "[tilde-above]{vala}",
     "ngk": "[tilde-above]{quesse}",
-    "ngg": "[tilde-above]{hyarmen}"
+    "ngg": "[tilde-above]{hyarmen}",
+    //
+    // Final -s
+    //
+    "s$": "{hook}"
   }
 }
