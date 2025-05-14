@@ -66,6 +66,11 @@
     "l": "{lambe}",
     "h": "{hyarmen}",
     //
+    // sch-/-sch
+    //
+    "^sch": "{thuule}{hwesta}",
+    "sch": "{harma}",
+    //
     // Nasalization
     //
     "nt": "[tilde-above]{tinco}",
