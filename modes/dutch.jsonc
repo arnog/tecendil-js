@@ -64,6 +64,21 @@
     "w": "{vala}",
     "j": "{anna}",
     "l": "{lambe}",
-    "h": "{hyarmen}"
+    "h": "{hyarmen}",
+    //
+    // Nasalization
+    //
+    "nt": "[tilde-above]{tinco}",
+    "nd": "[tilde-above]{ando}",
+    "ns": "[tilde-above]{thuule}",
+    "nz": "[tilde-above]{anto}",
+    "nr": "[tilde-above]{oore}",
+    "mp": "[tilde-above]{parma}",
+    "mb": "[tilde-above]{umbar}",
+    "mf": "[tilde-above]{formen}",
+    "mv": "[tilde-above]{ampa}",
+    "mw": "[tilde-above]{vala}",
+    "ngk": "[tilde-above]{quesse}",
+    "ngg": "[tilde-above]{hyarmen}"
   }
 }
