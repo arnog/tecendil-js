@@ -4,6 +4,27 @@
   "info": "Gebaseerd op <a href='https://syboor.eu/tengwar/'>Liesbeth Flobbe's Tengwar-mode</a>, aangepast door Freek Maes",
   "normalizeVowels": false,
   "tehtarFollow": true,
+  "preprocess": {
+    //
+    // Acute accent
+    "á": "aa",
+    "é": "ee",
+    "í": "ie",
+    //
+    // Accent circumflex
+    //
+    "â": "a",
+    "ê": "e",
+    "û": "u",
+    //
+    // Diaeresis
+    //
+    "ä": "'a",
+    "ë": "'e",
+    "ï": "'i",
+    "ö": "'o",
+    "ü": "'u"
+  },
   "map": {
     //
     // Vowels
