@@ -475,7 +475,7 @@
     "ns$": "{nuumen}{hook}",
     "ps$": "{parma}{hook}",
     "rs$": "{oore}{hook}",
-    "res$": "[dot-below]{oore}{{hook-looped-left}}", // See https://github.com/arnog/tecendil-js/issues/99
+    "res$": "[dot-below]{oore}{hook-looped-left}", // See https://github.com/arnog/tecendil-js/issues/99
     "ts$": "{tinco}{hook}",
     "ves$": "{ampa}[dot-below]{hook}"
   },
