@@ -103,8 +103,10 @@
     "warning.nl": "<p><b>OPGELET</b> Tecendil vertaalt niet. Wat je hebt geschreven lijkt op Nederlands. Voor een nauwkeurige transcriptie, selecteer een Nederlandse modus.</p>",
 
     "tooltip.download": "download",
-    "filename.screenshot": "Tecendil screenshot",
+    "tooltip.layout": "layout",
     "tooltip.share": "share",
+
+    "filename.screenshot": "Tecendil screenshot",
 
     "button.patron": "Become a Patron!",
     "welcome": "Welcome to Tecendil",
