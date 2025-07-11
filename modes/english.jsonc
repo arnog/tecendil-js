@@ -784,7 +784,7 @@
     "this": "{anto}{alt-silme}[dot-above]",
     "than": "{anto}{nuumen}[triple-dot-above]",
     "that": "{anto}{tinco}[triple-dot-above]",
-    "thee": "{anto}{telco}[acute]{telco}[acute]",
+    "thee": "{anto}{telco}[double-acute]",
     "them": "{anto}{malta}[acute]",
     "then": "{anto}{nuumen}[acute]",
     "these": "{anto}{esse-nuquerna}[dot-above]",
@@ -813,7 +813,7 @@
     "us": "{alt-silme}[left-curl]",
     "weather": "{vala}{osse}[acute]{anto}{oore}[acute]",
     "weatherman": "{vala}{osse}[acute]{anto}{oore}[acute]{malta}{nuumen}[triple-dot-above]",
-    "with": "{vala}{anto}[dot-above]",
+    "with": "{vala}{anto}[dot-above]", // Also: w{thuule}[dot-above]
     "wither": "widher",
     "withdraw": "{vala}{anto}[dot-above]{ando}{roomen}{vala}[triple-dot-above]",
     "withstand": "{vala}{anto}[dot-above]{silme}{tinco}{ando}[triple-dot-above][tilde-above]",
