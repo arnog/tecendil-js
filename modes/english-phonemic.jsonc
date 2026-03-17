@@ -107,7 +107,7 @@ fire sour door
   // Short-name
   "name": "english-phonemic",
   "languageCode": "en",
-  "wordPattern": "A-Za-zÀ-ÖØ-öø-ÿĀ-ſ*+~#'",
+  "wordPattern": "A-Za-zÀ-ÖØ-öø-ÿĀ-ſ*+~#'’",
   "normalizeVowels": false,
 
   // If true, the vowels are represented by diacritics
