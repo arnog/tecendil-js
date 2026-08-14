@@ -53,6 +53,7 @@
 
     // Strengthen "r" (-> "rr") at beginning or after consonant
     "/^r/": "rr",
+    "/^R/": "RR",
     "/([^AaEeIiOoUuÁáÉéÍíÓóÚúRr])r/": "$1rr",
 
     // "y" in consonantic position and falling dipthongs
