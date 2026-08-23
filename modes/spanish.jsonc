@@ -18,47 +18,37 @@
 
   "preprocess": {
     // Disambiguate pronounciation, "ce" -> "ze", "ci" -> "zi"
-    "ce": "ze",
-    "ci": "zi",
-    "cé": "zé",
-    "cí": "zí",
+    "/c([EÉIÍeéií])/": "z$1",
+    "/C([EÉIÍeéií])/": "Z$1",
 
     // Disambiguate pronounciation, "ge" -> "je", "gi" -> "ji"
-    "ge": "je",
-    "gi": "ji",
-    "gé": "jé",
-    "gí": "jí",
+    "/g([EÉIÍeéií])/": "j$1",
+    "/G([EÉIÍeéií])/": "J$1",
 
     // Disambiguate pronounciation, "gue" -> "ge", "gui" -> "gi"
-    "gue": "ge",
-    "gui": "gi",
-    "gué": "gé",
-    "guí": "gí",
-
+    "/g[Uu]([EÉIÍeéií])/": "g$1",
+    "/G[Uu]([EÉIÍeéií])/": "G$1",
+    
     // Disambiguate pronounciation, "que" -> "ke", "qui" -> "ki"
-    "que": "ke",
-    "qui": "ki",
-    "qué": "ké",
-    "quí": "kí",
+    "/q[Uu]([EÉIÍeéií])/": "k$1",
+    "/Q[Uu]([EÉIÍeéií])/": "K$1",
 
     // Retain "ü" in "qüe", "qüi", "güe", "güi" as "u"
-    "güe": "gue",
-    "güi": "gui",
-    "güé": "gué",
-    "güí": "guí",
-    "qüe": "kue",
-    "qüi": "kui",
-    "qüé": "kué",
-    "qüí": "kuí",
+    "/g[Üü]([EÉIÍeéií])/": "gu$1",
+    "/G[Üü]([EÉIÍeéií])/": "GU$1",
+    "/q[Üü]([EÉIÍeéií])/": "ku$1",
+    "/Q[Üü]([EÉIÍeéií])/": "KU$1",
 
     // Strengthen "r" (-> "rr") at beginning or after consonant
     "/^r/": "rr",
-    "/([^AaEeIiOoUuÁáÉéÍíÓóÚúRr])r/": "$1rr",
+    "/^R/": "RR",
+    "/([^AaEeIiOoUuÁáÉéÍíÓóÚúRr])[Rr]/": "$1rr",
 
     // "y" in consonantic position and falling dipthongs
     "/y([AaEeIiOoUuÁáÉéÍíÓóÚú])/": "ŷ$1",
-    "/([AaEeIiOoÁáÉéÍíÓó])y$/": "$1i",
-    "/([AaEeIiOoÁáÉéÍíÓó])y([^AaEeIiOoUuÁáÉéÍíÓóÚúYy])/": "$1i$2"
+    "/Y([AaEeIiOoUuÁáÉéÍíÓóÚú])/": "Ŷ$1",
+    "/([AaEeIiOoÁáÉéÍíÓó])[Yy]$/": "$1i",
+    "/([AaEeIiOoÁáÉéÍíÓó])[Yy]([^AaEeIiOoUuÁáÉéÍíÓóÚúYy])/": "$1i$2"
   },
 
   "map": {
